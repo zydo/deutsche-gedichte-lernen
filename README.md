@@ -1,5 +1,7 @@
 # 德语诗歌学习画册 · Deutsche Gedichte — Ein Lernbuch
 
+**🌐 在线阅读：<https://zydo.github.io/deutsche-gedichte-lernen/>**
+
 一个面向德语学习者与文学爱好者的**数据驱动静态网站**。收录德语经典诗歌，每首诗配有：德文原诗（含可核实出处）、本站学习中译（AI 辅助，明确标注）、逐行注释、重点词汇、动词变位表、语法要点、文学与文化背景、image brief、译文说明、校对记录与上线前 checklist。
 
 视觉风格：纸张质感米白背景 + 优雅衬线字体（德文用 Cormorant/EB Garamond，中文用 Noto Serif SC）+ 暗金/灰蓝点缀，目标是"打开一本文学画册，旁边有位德语老师做精炼注释"的阅读体验。

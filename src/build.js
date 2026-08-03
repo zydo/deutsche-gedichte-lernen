@@ -102,6 +102,9 @@ function build() {
     }
   }
 
+  // GitHub Pages 默认会用 Jekyll 处理产物（忽略以 _ 开头的文件等），加 .nojekyll 原样发布
+  writeFileSync(path.join(DIST_DIR, ".nojekyll"), "", "utf-8");
+
   console.log(`✅ 构建完成：dist/index.html, dist/about.html, ${poems.length} 个诗歌页面`);
 }
 
