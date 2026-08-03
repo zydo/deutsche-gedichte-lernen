@@ -1,0 +1,322 @@
+{
+  "id": "10",
+  "slug": "herbsttag",
+  "author": "Rainer Maria Rilke",
+  "author_zh": "赖内·马利亚·里尔克",
+  "title_de": "Herbsttag",
+  "title_zh": "秋日",
+  "year": "1902年秋作于巴黎",
+  "collection": "Das Buch der Bilder（形象之书）",
+  "period": "象征主义 / 世纪末（Fin de Siècle）过渡至现代主义早期",
+  "difficulty": "B1–B2",
+  "tags": [
+    "秋天",
+    "孤独",
+    "祈祷体",
+    "时间",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Herr: es ist Zeit. Der Sommer war sehr groß.",
+      "Leg deinen Schatten auf die Sonnenuhren,",
+      "und auf den Fluren laß die Winde los."
+    ],
+    [
+      "Befiehl den letzten Früchten, voll zu sein;",
+      "gib ihnen noch zwei südlichere Tage,",
+      "dränge sie zur Vollendung hin, und jage",
+      "die letzte Süße in den schweren Wein."
+    ],
+    [
+      "Wer jetzt kein Haus hat, baut sich keines mehr.",
+      "Wer jetzt allein ist, wird es lange bleiben,",
+      "wird wachen, lesen, lange Briefe schreiben",
+      "und wird in den Alleen hin und her",
+      "unruhig wandern, wenn die Blätter treiben."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗祈祷体的语气与三节由自然到人的推进结构",
+    "text": [
+      [
+        "主啊：是时候了。这个夏天曾如此浩大。",
+        "把你的影子投在日晷之上，",
+        "让风在田野上尽情吹拂。"
+      ],
+      [
+        "命令最后的果实饱满成熟；",
+        "再给它们两天南方般的暖日，",
+        "催促它们走向完满，把",
+        "最后的甘甜压进浓酒之中。"
+      ],
+      [
+        "此刻没有房子的人，将不再建造。",
+        "此刻孤独的人，将长久孤独下去，",
+        "会醒着、读书、写长长的信，",
+        "会在林荫道上",
+        "不安地往来游荡，当落叶纷飞之时。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Herr: es ist Zeit. Der Sommer war sehr groß.",
+      "zh": "全诗以呼告 \"Herr\"（主啊）开篇，采用祈祷/祈求的语式，直接称呼一个未明确身份的“主”（可理解为上帝，也可理解为诗人对时间、自然力量的拟人化祈求）；war（过去式）表明夏天已然过去，为全诗定下“时不我与”的基调。"
+    },
+    {
+      "de": "Leg deinen Schatten auf die Sonnenuhren,",
+      "zh": "legen 的命令式 \"Leg\"（第二人称单数祈使句）；Schatten（阴影）与 Sonnenuhren（日晷，靠阳光计时的仪器）构成意象上的对立——日晷失去阳光便无法计时，象征夏天到秋天的季节/时间转折。"
+    },
+    {
+      "de": "Befiehl den letzten Früchten, voll zu sein;",
+      "zh": "befehlen 支配第三格间接宾语（den letzten Früchten）+ zu 不定式短语（voll zu sein）：“命令最后的果实变得饱满”，延续第一节祈使/祈祷的语气，但内容从“让秋天到来”转为“让丰收完成”。"
+    },
+    {
+      "de": "dränge sie zur Vollendung hin, und jage",
+      "zh": "drängen … zu + Dativ：“催促……走向……”；jagen 本义“追赶、驱赶（猎物）”，此处转喻为“把（最后的甘甜）压榨进酒中”，动作感强烈，呼应酿酒过程中果实被压榨的意象。"
+    },
+    {
+      "de": "Wer jetzt kein Haus hat, baut sich keines mehr.",
+      "zh": "第三节从对自然的祈求转向对人类处境的冷峻断言，jetzt（此刻）强调一种“时机已过、无可挽回”的宿命感；baut sich keines（反身用法，为自己建造）中 keines 指代前文的 Haus。"
+    },
+    {
+      "de": "und wird in den Alleen hin und her",
+      "zh": "hin und her（来来回回）是固定副词短语，常用于描写漫无目的的往返走动；此句与下一行 \"unruhig wandern\" 共同构成全诗结尾处孤独者的核心意象。"
+    },
+    {
+      "de": "unruhig wandern, wenn die Blätter treiben.",
+      "zh": "treiben 在此为不及物用法，形容落叶“随风飘荡”，与孤独者“不安地游荡”（unruhig wandern）形成人与自然处境的呼应，是全诗收束处最动人的意象叠合。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "die Sonnenuhr, -en",
+      "pos": "n.（阴性复合词）",
+      "meaning": "日晷",
+      "note": "由 Sonne（太阳）+ Uhr（钟表）构成，靠日影计时的古老计时工具。"
+    },
+    {
+      "term": "die Flur, -en",
+      "pos": "n.（阴性，文学用词）",
+      "meaning": "田野、原野",
+      "note": "诗歌/文学语域词汇，日常口语更常用 das Feld。"
+    },
+    {
+      "term": "befehlen, befiehlt, befahl, befohlen",
+      "pos": "v.（强变化）",
+      "meaning": "命令",
+      "note": "支配第三格间接宾语（人/事物）+ zu 不定式或第四格直接宾语，诗中为 befehlen + Dat. + zu-Infinitiv 结构。"
+    },
+    {
+      "term": "drängen",
+      "pos": "v.（弱变化）",
+      "meaning": "催促、推挤",
+      "note": "常搭配介词 zu（催促……走向……）或 auf（催促……做……）。"
+    },
+    {
+      "term": "jagen",
+      "pos": "v.（弱变化）",
+      "meaning": "追赶、猎捕；（转喻）急速驱使",
+      "note": "诗中转喻用法：把“最后的甘甜”像追猎般“驱赶/压榨”进酒中，赋予酿酒过程以动感和紧迫感。"
+    },
+    {
+      "term": "die Vollendung",
+      "pos": "n.（阴性）",
+      "meaning": "完成、完满",
+      "note": "由动词 vollenden（完成）派生的名词化形式，比 das Ende（结束）更强调“达至圆满/完善状态”的过程性含义。"
+    },
+    {
+      "term": "die Allee, -n",
+      "pos": "n.（阴性，源自法语）",
+      "meaning": "林荫道",
+      "note": "外来词，复数 Alleen；常见于描写公园、林间步道的文学场景。"
+    },
+    {
+      "term": "treiben, treibt, trieb, getrieben",
+      "pos": "v.（强变化）",
+      "meaning": "驱使、驱赶；（不及物）随波逐流、飘荡",
+      "note": "诗中为不及物用法，形容落叶被风吹得四处飘散；此动词及物用法（驱赶）与不及物用法（漂流）需根据语境区分。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "legen",
+      "present_3sg": "legt",
+      "preterite": "legte",
+      "perfect": "hat gelegt",
+      "participle_ii": "gelegt",
+      "subjunctive_ii": "legte",
+      "auxiliary": "haben",
+      "note": "诗中用命令式 \"Leg\"（第二人称单数祈使句，省去词尾 -e）。"
+    },
+    {
+      "infinitive": "befehlen",
+      "present_3sg": "befiehlt",
+      "preterite": "befahl",
+      "perfect": "hat befohlen",
+      "participle_ii": "befohlen",
+      "subjunctive_ii": "befähle/beföhle",
+      "auxiliary": "haben",
+      "note": "诗中用命令式 \"Befiehl\"。"
+    },
+    {
+      "infinitive": "drängen",
+      "present_3sg": "drängt",
+      "preterite": "drängte",
+      "perfect": "hat gedrängt",
+      "participle_ii": "gedrängt",
+      "subjunctive_ii": "drängte",
+      "auxiliary": "haben",
+      "note": "诗中用虚拟式一式/命令式并用形式 \"dränge\"（此处为祈使句延伸用法）。"
+    },
+    {
+      "infinitive": "jagen",
+      "present_3sg": "jagt",
+      "preterite": "jagte",
+      "perfect": "hat gejagt",
+      "participle_ii": "gejagt",
+      "subjunctive_ii": "jagte",
+      "auxiliary": "haben",
+      "note": "诗中用命令式并列形式 \"jage\"，与 dränge 并列，共享主语 du（隐含）。"
+    },
+    {
+      "infinitive": "treiben",
+      "present_3sg": "treibt",
+      "preterite": "trieb",
+      "perfect": "hat/ist getrieben",
+      "participle_ii": "getrieben",
+      "subjunctive_ii": "triebe",
+      "auxiliary": "haben（及物）/ sein（不及物，表位移）",
+      "note": "诗中末行用现在式不及物用法 \"die Blätter treiben\"。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "祈祷体的祈使句串联",
+      "quote": "Leg deinen Schatten … laß die Winde los. / Befiehl den letzten Früchten … dränge sie … und jage",
+      "body": "前两节几乎全部由第二人称单数命令式（Leg, laß, Befiehl, gib, dränge, jage）串联而成，模拟祈祷或吁请的语气，诗人以“命令者”的姿态吁请一个更高的力量（\"Herr\"）来完成季节的转换与果实的成熟，这种“以祈使句写祈祷”的手法是本诗最鲜明的语言特征。"
+    },
+    {
+      "title": "befehlen + Dativ + zu-Infinitiv",
+      "quote": "Befiehl den letzten Früchten, voll zu sein;",
+      "body": "befehlen（命令）的典型支配结构为 befehlen + 第三格（命令的对象）+ zu 不定式（命令做的事），诗中 \"den letzten Früchten\"（第三格）是被命令的对象，\"voll zu sein\"（变得饱满）是命令的内容。"
+    },
+    {
+      "title": "第三节的时态与情态转变：从祈使到陈述",
+      "quote": "Wer jetzt kein Haus hat, baut sich keines mehr. / Wer jetzt allein ist, wird es lange bleiben,",
+      "body": "第三节不再使用命令式，转为陈述句加 wird（werden 构成的将来时），语气从“吁请自然完成转变”转为对人类命运近乎宿命论式的冷静陈述，werden + Infinitiv 构成的将来时（wird … bleiben, wird wachen … wird … wandern）层层铺展，营造出孤独状态将无限延续的沉重感。"
+    },
+    {
+      "title": "重复的 Wer … 句式（首语重复/排比）",
+      "quote": "Wer jetzt kein Haus hat, … / Wer jetzt allein ist, …",
+      "body": "两个以 Wer（谁、……的人）引导的条件式关系从句并列排比，是一种修辞上的首语重复（Anapher）手法，强化了“此刻”（jetzt）这一时间节点的决定性——错过此刻，便再无转圜余地。"
+    }
+  ],
+  "cultural_notes": "《秋日》写于1902年秋，正值里尔克离开在柏林的妻子——雕塑家克拉拉·韦斯特霍夫（Clara Westhoff）——独自迁居巴黎，为撰写关于雕塑家罗丹（Auguste Rodin）的专著做准备的时期。这一传记背景常被用于解读诗中强烈的孤独感与漂泊感。诗歌收录于里尔克早期重要诗集《形象之书》（Das Buch der Bilder）。\n\n全诗结构精巧：三节的行数逐节递增（3行、4行、5行），韵式也随之扩展，这种“越写越长”的形式本身即被学者解读为对第三节中“孤独者在林荫道上不安游荡、似乎没有尽头”这一内容的形式呼应。诗歌以“主啊”（Herr）的祈祷口吻开篇，前两节吁求自然完成从夏到秋的过渡与果实的成熟，第三节视角陡然转向人类处境：凡是在这个时间点尚未“安家”或“不再孤身一人”的人，将不得不长久地承受孤独——不少论者认为，这里的“季节”同时也是人生阶段的隐喻（“人生之秋”）。\n\n此诗是里尔克传诵最广的作品之一，被多位现代作曲家谱写为艺术歌曲，也常被引用于讨论“存在的完满与匮乏”这一里尔克式主题的经典文本。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗祈祷体的命令式语气以及第三节从自然转向人类处境的关键转折。里尔克作品德文原文已于1996年（作者1926年逝世 + 70年保护期）进入公有领域，可放心使用；但目前存在的多个中文译本（如冯至、绿原、黄灿然等译者的版本）均由现代译者完成，版权仍在保护期内，本站不转载具体译本全文，仅在此说明存在这些广受认可的译本，供读者自行查阅。",
+  "image_prompt": {
+    "imagery": "秋日田野中的日晷、渐长的阴影，果园里沉甸甸的果实，以及林荫道上一个孤独行走的身影",
+    "mood": "庄重、沉思，略带秋日特有的丰收后的疲惫与孤独感，非绝望，而是一种清醒的接受",
+    "elements": "日晷与拉长的阴影、成熟的葡萄或果实、金黄色的林荫道与飘落的树叶、远处一个孤独行走的剪影（不露正面）",
+    "era": "无需具体历史时代标识，可参考20世纪初欧洲乡村/公园秋景",
+    "taboos": "不得出现文字、水印；避免过度戏剧化或悲情化人物姿态，孤独感应通过环境（空旷的林荫道、飘落的叶子）而非夸张的人物表情传达",
+    "style": "19世纪末至20世纪初象征主义绘画风格（可参考同时期欧洲秋景油画传统），暖金色与深褐色调为主，光影对比强烈"
+  },
+  "image_path": "/images/herbsttag.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Herbsttag (1902)“",
+      "url": "https://www.deutschelyrik.de/herbsttag.html",
+      "note": "现代规范化拼写版本（gib、Früchten 后加逗号），全文三节十二行完整。"
+    },
+    {
+      "name": "German Wikipedia — \"Herbsttag\"",
+      "url": "https://de.wikipedia.org/wiki/Herbsttag",
+      "note": "独立引用全文，采用旧式拼写 \"gieb\"（今 gib）且第4行 \"Befiehl den letzten Früchten voll zu sein\" 无逗号；内容与词序与 deutschelyrik.de 版本完全一致，仅存在拼写现代化与标点的细微差异；并提供详细的格律分析（五步抑扬格、逐节递增的诗行数）与创作背景（1902年秋，里尔克赴巴黎撰写罗丹专著期间）。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在冯至、绿原、黄灿然等译者的中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容完全一致，仅存在正字法（gieb/gib）与标点（第4行逗号有无）的细微差异，不影响文本内容，判定为高可信度文本。Wikipedia 词条并提供了详实的创作背景（1902年秋，里尔克赴巴黎期间）与格律结构分析，与deutschelyrik.de 标注的\"1902\"年份一致。里尔克1926年逝世，德文原文已于1996年进入公有领域，版权状态明确。",
+  "checklist": [
+    {
+      "label": "确认作者：Rainer Maria Rilke",
+      "done": true
+    },
+    {
+      "label": "确认标题：Herbsttag",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：German Wikipedia",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（gieb/gib 拼写、标点差异）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（德文原文公版，现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

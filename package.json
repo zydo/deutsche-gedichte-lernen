@@ -1,0 +1,15 @@
+{
+  "name": "deutsche-gedichte-lernen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "德语诗歌学习型静态网站 — 数据驱动的诗歌学习画册（德文原诗 + 学习译文 + 词汇语法注释）",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.js",
+    "serve": "node src/serve.js",
+    "dev": "node src/build.js && node src/serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

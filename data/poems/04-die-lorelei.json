@@ -1,0 +1,348 @@
+{
+  "id": "04",
+  "slug": "die-lorelei",
+  "author": "Heinrich Heine",
+  "author_zh": "海因里希·海涅",
+  "title_de": "Die Lorelei",
+  "title_zh": "罗蕾莱",
+  "year": "1824年作，收入《Buch der Lieder》(1827)",
+  "collection": "Buch der Lieder · Die Heimkehr（1823–1824），第II首",
+  "period": "浪漫主义 Romantik（晚期）",
+  "difficulty": "A2–B1",
+  "tags": [
+    "莱茵河",
+    "水妖传说",
+    "民歌体",
+    "经典必读",
+    "音乐性"
+  ],
+  "german_text": [
+    [
+      "Ich weiß nicht, was soll es bedeuten,",
+      "Daß ich so traurig bin;",
+      "Ein Märchen aus alten Zeiten,",
+      "Das kommt mir nicht aus dem Sinn."
+    ],
+    [
+      "Die Luft ist kühl und es dunkelt,",
+      "Und ruhig fließt der Rhein;",
+      "Der Gipfel des Berges funkelt",
+      "Im Abendsonnenschein."
+    ],
+    [
+      "Die schönste Jungfrau sitzet",
+      "Dort oben wunderbar,",
+      "Ihr gold'nes Geschmeide blitzet,",
+      "Sie kämmt ihr goldenes Haar."
+    ],
+    [
+      "Sie kämmt es mit goldenem Kamme,",
+      "Und singt ein Lied dabei;",
+      "Das hat eine wundersame,",
+      "Gewaltige Melodei."
+    ],
+    [
+      "Den Schiffer im kleinen Schiffe",
+      "Ergreift es mit wildem Weh';",
+      "Er schaut nicht die Felsenriffe,",
+      "Er schaut nur hinauf in die Höh'."
+    ],
+    [
+      "Ich glaube, die Wellen verschlingen",
+      "Am Ende Schiffer und Kahn;",
+      "Und das hat mit ihrem Singen",
+      "Die Lorelei getan."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译为主，保留原诗叙述者“我”的口吻",
+    "text": [
+      [
+        "我不知道这是为何，",
+        "我竟如此忧伤；",
+        "一个古老年代的传说，",
+        "总萦绕在我心上，挥之不去。"
+      ],
+      [
+        "空气清凉，暮色渐深，",
+        "莱茵河静静流淌；",
+        "山峰的顶端",
+        "在夕阳余晖中闪耀。"
+      ],
+      [
+        "最美的少女坐在",
+        "那高处，美得惊人，",
+        "她的金饰闪闪发光，",
+        "她梳理着她的金发。"
+      ],
+      [
+        "她用金梳子梳着头发，",
+        "一边梳一边唱歌；",
+        "那歌声有一种奇异、",
+        "摄人心魄的旋律。"
+      ],
+      [
+        "小船上的船夫",
+        "被这歌声攫住，涌起狂野的哀伤；",
+        "他不再看那礁石，",
+        "只顾抬头望向那高处。"
+      ],
+      [
+        "我相信，那波浪最终会",
+        "吞没船夫与小船；",
+        "而这一切，都是罗蕾莱",
+        "用她的歌声造成的。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Ich weiß nicht, was soll es bedeuten,",
+      "zh": "was soll es bedeuten 直译为“这应当意味着什么”，soll 在此不表示“应该做”，而是表达一种困惑、探询的语气（“这到底是怎么回事”），是德语中 sollen 的一种特殊情态用法。"
+    },
+    {
+      "de": "Das kommt mir nicht aus dem Sinn.",
+      "zh": "固定搭配 jemandem nicht aus dem Sinn kommen：“萦绕在某人心头、挥之不去”，Sinn 在此指“心思、脑海”，而非“意义”。"
+    },
+    {
+      "de": "Der Gipfel des Berges funkelt",
+      "zh": "funkeln（闪烁）常用于描写星光、宝石、水面反光等，比 glänzen（发光）更强调跳动、闪烁的光感。"
+    },
+    {
+      "de": "Ihr gold'nes Geschmeide blitzet,",
+      "zh": "gold'nes 是 goldenes 的诗歌省音形式；Geschmeide 是集合名词，泛指“首饰、珠宝”整体，而非单件饰品。"
+    },
+    {
+      "de": "Gewaltige Melodei.",
+      "zh": "Melodei 是 Melodie 的诗歌变体拼写，专为与前文 \"wundersame\" 及全诗尾韵配合；gewaltig 在此不作“暴力的”解，而是“惊人的、摄人心魄的”（强调程度之深）。"
+    },
+    {
+      "de": "Ergreift es mit wildem Weh';",
+      "zh": "ergreifen 本义“抓住”，此处主语是“它”（指歌声/情绪），宾语是船夫（Den Schiffer，第四格前置），意为“这歌声以狂野的哀伤攫住了船夫”；Weh' 为 Wehe 的省音形式。"
+    },
+    {
+      "de": "Ich glaube, die Wellen verschlingen",
+      "zh": "verschlingen（强变化，吞没、吞噬）比 schlingen 语气更强烈，常用于描写灾难性的吞噬（水、火、深渊等）。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "bedeuten",
+      "pos": "v.（弱变化）",
+      "meaning": "意味着",
+      "note": "was soll es bedeuten：固定表达“这到底意味着什么”，soll 表困惑而非义务。"
+    },
+    {
+      "term": "das Märchen, -",
+      "pos": "n.（中性）",
+      "meaning": "童话、古老传说",
+      "note": "复数同形（无词尾变化的中性名词类型之一）。"
+    },
+    {
+      "term": "funkeln",
+      "pos": "v.（弱变化）",
+      "meaning": "闪烁、闪耀",
+      "note": "多用于星光、水面反光、宝石等跳动式的光感描写。"
+    },
+    {
+      "term": "das Geschmeide",
+      "pos": "n.（中性，集合名词）",
+      "meaning": "首饰、珠宝（总称）",
+      "note": "文学/诗歌词汇，日常口语更常用 der Schmuck。"
+    },
+    {
+      "term": "der Schiffer, -",
+      "pos": "n.（阳性）",
+      "meaning": "船夫、舵手",
+      "note": "古旧用词，现代口语多用 der Schiffer 仍可用但更常见 der Bootsführer/Kapitän 视语境而定。"
+    },
+    {
+      "term": "das Felsenriff, -e",
+      "pos": "n.（中性复合词）",
+      "meaning": "礁石",
+      "note": "由 Fels（岩石）+ Riff（礁）构成。"
+    },
+    {
+      "term": "verschlingen, verschlingt, verschlang, verschlungen",
+      "pos": "v.（强变化）",
+      "meaning": "吞没、吞噬",
+      "note": "支配第四格：die Wellen verschlingen Schiffer und Kahn。"
+    },
+    {
+      "term": "die Lorelei / Loreley",
+      "pos": "n.（专有名词，阴性水妖/礁石之名）",
+      "meaning": "罗蕾莱（莱茵河畔传说中的水妖，亦为该处礁石之名）",
+      "note": "海涅笔下的罗蕾莱传说并非中世纪古老民间传说，而是19世纪初由布伦塔诺（Clemens Brentano，1801年叙事诗《Zu Bacharach am Rheine》）首创的“文学传说”，海涅在此基础上再创作，使其广为流传。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "fließen",
+      "present_3sg": "fließt",
+      "preterite": "floss",
+      "perfect": "ist geflossen",
+      "participle_ii": "geflossen",
+      "subjunctive_ii": "flösse",
+      "auxiliary": "sein",
+      "note": "诗中用现在式 \"fließt\"；表位移的不及物动词，完成时用 sein。"
+    },
+    {
+      "infinitive": "kämmen",
+      "present_3sg": "kämmt",
+      "preterite": "kämmte",
+      "perfect": "hat gekämmt",
+      "participle_ii": "gekämmt",
+      "subjunctive_ii": "kämmte",
+      "auxiliary": "haben",
+      "note": "诗中出现现在式 \"kämmt\"；常搭配反身用法 sich kämmen，诗中为及物用法 (ihr Haar) kämmen。"
+    },
+    {
+      "infinitive": "ergreifen",
+      "present_3sg": "ergreift",
+      "preterite": "ergriff",
+      "perfect": "hat ergriffen",
+      "participle_ii": "ergriffen",
+      "subjunctive_ii": "ergriffe",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"Ergreift\"，句首倒装（宾语 Den Schiffer 前置）。"
+    },
+    {
+      "infinitive": "verschlingen",
+      "present_3sg": "verschlingt",
+      "preterite": "verschlang",
+      "perfect": "hat verschlungen",
+      "participle_ii": "verschlungen",
+      "subjunctive_ii": "verschlänge",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"verschlingen\"，表将来/推测意味（配合 Ich glaube 与 Am Ende）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "sollen 表困惑、探询语气",
+      "quote": "Ich weiß nicht, was soll es bedeuten,",
+      "body": "情态动词 sollen 除了表示“应当”之外，在疑问句/间接问句中还可以表达说话人的困惑或不解（相当于“这到底……”），此处并非“它应该意味着什么”的义务义，而是“我不明白这究竟意味着什么”的探询语气。"
+    },
+    {
+      "title": "宾语前置的诗歌倒装",
+      "quote": "Den Schiffer im kleinen Schiffe / Ergreift es mit wildem Weh';",
+      "body": "标准语序应为 \"Es ergreift den Schiffer … mit wildem Weh\"；诗中将第四格宾语 Den Schiffer 提到句首、动词 ergreift 紧随其后，主语 es（指代歌声）反而延后，是德语诗歌中常见的强调性倒装，突出被歌声攫住的“船夫”这一形象。"
+    },
+    {
+      "title": "固定搭配 jemandem nicht aus dem Sinn kommen",
+      "quote": "Das kommt mir nicht aus dem Sinn.",
+      "body": "这是德语中表达“某事萦绕心头、无法忘怀”的固定搭配，字面是“它不从我的心思中出来”，mir 为第三格间接宾语。学习者应整体记忆这一短语，而非逐词直译。"
+    },
+    {
+      "title": "诗歌拼写变体：Melodei / gold'nes / Weh'",
+      "quote": "Gewaltige Melodei. … Ihr gold'nes Geschmeide … mit wildem Weh'",
+      "body": "Melodei（今 Melodie）、gold'nes（今 goldenes 的省音）、Weh'（今 Wehe 的省音）都是为配合诗歌的韵律与尾韵而做的历史性/诗歌性拼写调整，属于诗歌语言现象，日常写作中应使用现代标准拼写。"
+    }
+  ],
+  "cultural_notes": "值得说明的是，“罗蕾莱”并非古老的中世纪民间传说，而是19世纪初德国浪漫主义诗人克莱门斯·布伦塔诺（Clemens Brentano）在其1801年叙事诗《Zu Bacharach am Rheine》中首创的“文学传说”：一位因美貌招致祸端的女子最终投入莱茵河、化身为礁石上的幽灵。海涅1824年的这首诗对这一“新传说”进行了再创作，以更简洁的民歌体语言、更强的音乐性重新讲述，最终使“罗蕾莱”成为德语文化中最广为人知的莱茵河意象。\n\n这首诗曾长期以“作者不详的民歌”流传（尤其在纳粹时期，因海涅是犹太裔作家，其作品被查禁，但这首诗因太过流行而未被禁唱，只能以“佚名”标注作者）。诗中莱茵河畔圣戈阿斯豪森（St. Goarshausen）附近确有一块名为“罗蕾莱岩”（Loreley-Felsen）的真实礁石，是莱茵河航道最狭窄、最危险的路段之一，为传说提供了地理基础。\n\n此诗被弗里德里希·西尔歇尔（Friedrich Silcher，1837年）谱曲后成为广为传唱的民歌，也是德语学习者最早接触的经典诗歌之一。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，保留原诗第一人称“我”的叙述口吻与逐节推进的画面感。已知存在钱春绮、冯至等多位译者的中文译本，因版权原因本站不转载全文，感兴趣的读者可自行查阅相关诗歌选集。标题在德语原文中有 \"Lorelei\" 与 \"Loreley\" 两种拼法并存，本站依据 textlog.de 与 deutschelyrik.de 两个来源均采用的 \"Lorelei\"（正文最后一行）及 \"Die Loreley\"（deutschelyrik.de 标题）情况，在页面标题中统一使用更常见的 \"Die Lorelei\"，并在校对记录中说明此拼写差异。",
+  "image_prompt": {
+    "imagery": "莱茵河峡谷、暮色中高耸的礁石之巅坐着一位梳理金发的少女，山下小船与船夫",
+    "mood": "浪漫、忧郁、带有致命诱惑的静谧氛围",
+    "elements": "莱茵河、陡峭岩壁、夕阳余晖、金色长发、小型木船与船夫剪影",
+    "era": "19世纪初莱茵河沿岸，船夫应着简朴船工服饰，礁石少女形象应保持神秘朦胧，不宜过分具象化五官",
+    "taboos": "不得出现暴露、性化的描绘；不得出现文字、水印；不宜将少女画成完全写实的“美人鱼”式形象，应保留几分神秘与不确定感",
+    "style": "19世纪浪漫主义风景油画风格，可参考莱茵河浪漫主义画派（如同期风景画传统）的构图与光影处理，暖金色夕阳与冷蓝色河水对比"
+  },
+  "image_path": "/images/die-lorelei.png",
+  "german_sources": [
+    {
+      "name": "textlog.de — Heinrich Heine, Buch der Lieder, Die Heimkehr, „Ich weiß nicht, was soll es bedeuten“ (II)",
+      "url": "https://www.textlog.de/heine/gedichte/ich-weiss-nicht-was-soll-es-bedeuten",
+      "note": "确认此诗为《Die Heimkehr》组诗第II首，1823–1824年创作。"
+    },
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Die Loreley (1824)“",
+      "url": "https://www.deutschelyrik.de/die-loreley-1824.html",
+      "note": "与 textlog.de 版本内容完全一致，仅个别省音撇号（gold'nes/goldnes、Weh'/Weh、Höh'/Höh）与标题拼写（Lorelei/Loreley）存在细微差异，属正字法/排版差异，不影响文本内容。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮、冯至等中文名家译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立、长期运营的德语文学资源网站（textlog.de 与 deutschelyrik.de）交叉核对，六节24行内容完全一致，仅存在省音撇号使用（gold'nes vs goldnes 等）及标题拼写（Lorelei vs Loreley）的细微差异，均已在“译文说明”中注明，不构成实质性异文。textlog.de 并提供了明确的诗集分组信息（Buch der Lieder → Die Heimkehr → 第II首），与该诗1823–1824年创作背景相符，进一步提升可信度。",
+  "checklist": [
+    {
+      "label": "确认作者：Heinrich Heine",
+      "done": true
+    },
+    {
+      "label": "确认标题：Die Lorelei / Die Loreley（两种拼写并存，已说明）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：textlog.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（标题拼写、省音撇号）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "id": "09",
+  "slug": "haelfte-des-lebens",
+  "author": "Friedrich Hölderlin",
+  "author_zh": "弗里德里希·荷尔德林",
+  "title_de": "Hälfte des Lebens",
+  "title_zh": "生命的中途",
+  "year": "1803年底/1804年初完成，1804年发表于《Taschenbuch für das Jahr 1805》",
+  "collection": "Nachtgesänge（夜歌九首）",
+  "period": "浪漫主义晚期 / 古典—浪漫过渡（近晚期风格 Spätstil）",
+  "difficulty": "B2",
+  "tags": [
+    "生命",
+    "季节",
+    "对称结构",
+    "冥想",
+    "经典必读",
+    "晚期风格"
+  ],
+  "german_text": [
+    [
+      "Mit gelben Birnen hänget",
+      "Und voll mit wilden Rosen",
+      "Das Land in den See,",
+      "Ihr holden Schwäne,",
+      "Und trunken von Küssen",
+      "Tunkt ihr das Haupt",
+      "Ins heilignüchterne Wasser."
+    ],
+    [
+      "Weh mir, wo nehm' ich, wenn",
+      "Es Winter ist, die Blumen, und wo",
+      "Den Sonnenschein,",
+      "Und Schatten der Erde?",
+      "Die Mauern stehn",
+      "Sprachlos und kalt, im Winde",
+      "Klirren die Fahnen."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗两节之间夏与冬、丰盈与匮乏的强烈对照",
+    "text": [
+      [
+        "缀满黄色的梨子，",
+        "又开满野玫瑰，",
+        "大地垂入湖中，",
+        "你们可爱的天鹅，",
+        "沉醉于亲吻，",
+        "把头浸入",
+        "那神圣而清醒的水中。"
+      ],
+      [
+        "可叹啊，当冬天来临，",
+        "我到哪里去寻花朵，到哪里",
+        "去寻阳光，",
+        "去寻大地的荫凉？",
+        "高墙伫立着，",
+        "沉默而冰冷，风中",
+        "旗帜叮当作响。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Mit gelben Birnen hänget",
+      "zh": "全诗开篇即以介词短语起句（正常语序主语 Das Land 直到第3行才出现），是典型的悬置句式；hänget 是 hängt 的诗歌延长形式。"
+    },
+    {
+      "de": "Das Land in den See,",
+      "zh": "hängen … in（第四格 den See）：陆地仿佛“垂挂”进湖中，是一种打破常规空间逻辑的隐喻，暗示大地与湖水在视觉/意象上的交融。"
+    },
+    {
+      "de": "Ihr holden Schwäne,",
+      "zh": "呼语（第二人称复数呼告），holden 是 hold（可爱的，参见《你像一朵花》一诗）的第一格复数变格形式；天鹅在此象征夏日丰盈、美与和谐的顶点。"
+    },
+    {
+      "de": "Ins heilignüchterne Wasser.",
+      "zh": "heilignüchtern 是荷尔德林自创的复合形容词，将 heilig（神圣的）与 nüchtern（清醒的、朴素的）两个看似矛盾的性质并置，是荷尔德林晚期诗歌中标志性的“矛盾修饰法”（Oxymoron），极难翻译，中译只能勉强以“神圣而清醒”传达其张力。"
+    },
+    {
+      "de": "Weh mir, wo nehm' ich, wenn",
+      "zh": "第二节开篇的 \"Weh mir\"（可叹啊、我好可怜）与第一节的丰盈形成剧烈反差，标志全诗情感基调的骤然翻转；不同权威版本对此处标点略有差异（斯图加特版无感叹号，不来梅版作 \"Weh mir!\"），详见校对记录。"
+    },
+    {
+      "de": "Die Mauern stehn",
+      "zh": "stehn 是 stehen 的诗歌省音形式；从此句起，意象从自然（花、阳光、荫凉的缺席）转向人造物（高墙、旗帜），暗示诗人内心从对自然的失落感延伸至对自身、对存在本身的疏离感。"
+    },
+    {
+      "de": "Klirren die Fahnen.",
+      "zh": "klirren（叮当作响、铿锵作响）常用于形容金属碰撞声，此处形容风中旗帜（Fahnen）拍打旗杆发出的刺耳声响，与全诗开篇的“亲吻”“沉醉”形成听觉与情感上的尖锐对比，是全诗收束处最具张力的意象。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "die Birne, -n",
+      "pos": "n.（阴性）",
+      "meaning": "梨（果实）",
+      "note": "重要版本差异：1846年 Schwab 编订全集曾将此词篡改为 \"Blumen\"（花），现代权威版本（斯图加特版，Beißner 编）已恢复为 \"Birnen\"，详见校对记录。"
+    },
+    {
+      "term": "hold（复数变格 holden）",
+      "pos": "adj.（古雅用词）",
+      "meaning": "可爱的、优雅的",
+      "note": "第一格复数呼语形式为 \"ihr holden Schwäne\"；参见《你像一朵花》中的同源用法。"
+    },
+    {
+      "term": "tunken",
+      "pos": "v.（弱变化）",
+      "meaning": "浸、蘸",
+      "note": "常用于日常语境（如 Brot in Soße tunken“把面包蘸进酱汁”），诗中用于描写天鹅将头浸入水中，赋予日常动词以庄重的诗意。"
+    },
+    {
+      "term": "heilignüchtern",
+      "pos": "adj.（荷尔德林自创复合词）",
+      "meaning": "神圣而清醒的",
+      "note": "由 heilig（神圣的）+ nüchtern（清醒的、朴素的）构成的矛盾修饰复合词，是荷尔德林晚期诗歌语言实验的代表性例证。"
+    },
+    {
+      "term": "die Schatten（复数, 单数 der Schatten）",
+      "pos": "n.（阳性）",
+      "meaning": "阴影、荫凉",
+      "note": "诗中 \"Schatten der Erde\" 意为大地提供的荫凉庇护，而非负面意义上的“阴影”。"
+    },
+    {
+      "term": "sprachlos",
+      "pos": "adj.",
+      "meaning": "无言的、说不出话的",
+      "note": "由 Sprache（语言）+ -los（无……的）构成，诗中用以形容高墙的“沉默”，是拟人化的修辞。"
+    },
+    {
+      "term": "klirren",
+      "pos": "v.（弱变化，拟声词）",
+      "meaning": "叮当作响、铿锵作响",
+      "note": "多形容金属、玻璃碰撞的尖锐声响，与前文柔和的“亲吻”“沉醉”形成听觉对比。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "hängen（诗中不及物用法，此处历史上强弱变化并存）",
+      "present_3sg": "hängt（诗中 hänget）",
+      "preterite": "hing",
+      "perfect": "hat gehangen",
+      "participle_ii": "gehangen",
+      "subjunctive_ii": "hinge",
+      "auxiliary": "haben",
+      "note": "诗中用延长形式 \"hänget\"（今 hängt）以配合音节数。"
+    },
+    {
+      "infinitive": "tunken",
+      "present_3sg": "tunkt",
+      "preterite": "tunkte",
+      "perfect": "hat getunkt",
+      "participle_ii": "getunkt",
+      "subjunctive_ii": "tunkte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"Tunkt ihr\"（第二人称复数倒装疑问式语序，实为陈述句）。"
+    },
+    {
+      "infinitive": "nehmen",
+      "present_3sg": "nimmt",
+      "preterite": "nahm",
+      "perfect": "hat genommen",
+      "participle_ii": "genommen",
+      "subjunctive_ii": "nähme",
+      "auxiliary": "haben",
+      "note": "诗中用第一人称现在式省音形式 \"nehm' ich\"（= nehme ich）。"
+    },
+    {
+      "infinitive": "stehen",
+      "present_3sg": "steht",
+      "preterite": "stand",
+      "perfect": "hat gestanden",
+      "participle_ii": "gestanden",
+      "subjunctive_ii": "stünde",
+      "auxiliary": "haben",
+      "note": "诗中用省音形式 \"stehn\"（今 stehen）。"
+    },
+    {
+      "infinitive": "klirren",
+      "present_3sg": "klirrt",
+      "preterite": "klirrte",
+      "perfect": "hat geklirrt",
+      "participle_ii": "geklirrt",
+      "subjunctive_ii": "klirrte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式倒装 \"Klirren die Fahnen\"（主语后置）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "悬置主语的介词短语开篇",
+      "quote": "Mit gelben Birnen hänget / Und voll mit wilden Rosen / Das Land in den See,",
+      "body": "全句主干为 \"Das Land hänget mit gelben Birnen … in den See\"（大地缀满黄梨……垂入湖中），但荷尔德林将两个状语（Mit gelben Birnen、voll mit wilden Rosen）提到句首，主语 Das Land 延后至第三行才出现，制造出意象先行、主体延迟浮现的悬念效果，是荷尔德林晚期诗歌句法复杂化的典型特征。"
+    },
+    {
+      "title": "矛盾修饰复合词 heilignüchtern",
+      "quote": "Ins heilignüchterne Wasser.",
+      "body": "将“神圣”（宗教性的、超越性的）与“清醒/朴素”（理性的、日常的）两种看似对立的性质压缩进一个复合形容词中，是荷尔德林语言实验的核心手法之一，学界对此词的具体含义历来争议不断，本站不作定论，仅提示学习者关注这种“矛盾修饰”（Oxymoron）的构词与修辞方式。"
+    },
+    {
+      "title": "疑问副词 wo 的重复与省略",
+      "quote": "wo nehm' ich, wenn / Es Winter ist, die Blumen, und wo / Den Sonnenschein,",
+      "body": "第二节连用两个 wo（哪里）引导的疑问，但第二个 wo 后省略了重复的动词 nehm' ich，只保留宾语 den Sonnenschein，是德语中并列疑问句常见的动词省略现象（Ellipse），翻译与朗读时需在心中补全省略部分。"
+    },
+    {
+      "title": "诗歌省音形式 hänget / stehn / nehm'",
+      "quote": "全诗多处：hänget, stehn, nehm' ich",
+      "body": "hänget（今 hängt，添音）、stehn（今 stehen，省音）、nehm'（今 nehme，省音）体现了德语诗歌为配合音节数与格律而对动词词尾进行的灵活调整，添音与省音可能同时出现在同一首诗中，学习时应理解这是格律需要而非语法错误。"
+    }
+  ],
+  "cultural_notes": "《生命的中途》是荷尔德林1803年底/1804年初完成、题献给出版商弗里德里希·维尔曼斯（Friedrich Wilmans）的“九首夜歌”（Nachtgesänge）之一，1804年发表于《Taschenbuch für das Jahr 1805》。全诗仅两节十四行，却以近乎数学般精确的对称结构著称：两节音节数分别为42与41，几乎完全对等，学者们认为诗中意象序列（梨树—玫瑰—水—高墙—铿锵的旗帜）暗合抛物线（Parabel）的形态，其“顶点”正落在两节之间的断裂处，这一断裂被部分研究者解读为荷尔德林诗学中“崇高”（das Erhabene）的象征。\n\n此诗的接受史本身也颇具戏剧性：1826年由施瓦布（Christoph Theodor Schwab）与乌兰德（Ludwig Uhland）编订的首部荷尔德林诗集，因认定“夜歌”组诗是诗人精神疾病的产物而将其整体删去；直到1846年施瓦布编订的全集才重新收录，但该版本竟将关键词“Birnen”（梨）篡改为“Blumen”（花），这一误植版本长期流传，直到后世学者依据手稿校勘（斯图加特版，Beißner 编）才恢复“Birnen”为标准文本——本站采用的即是这一经过校勘的权威版本。\n\n1976年，东德异见歌手沃尔夫·比尔曼（Wolf Biermann）在被剥夺东德国籍前不久的科隆体育馆音乐会上朗诵此诗（尤其强调结尾三行），借荷尔德林之口影射当时的政治处境，该音乐会经西德电视台转播，成为许多东德民众第一次接触比尔曼作品与其政治化荷尔德林解读的契机。文学学者呂迪格·格尔纳（Rüdiger Görner）2016年称此诗的十四行是“德语诗歌中被最深入阐释的十四行”。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，尽量保留两节之间“丰盈（夏）—匮乏（冬）”的强烈对照结构。诗中关键复合词 \"heilignüchtern\"（神圣而清醒）在中文中极难对应，译文采用直译加保留原词双重性质的方式处理，建议学习者结合“语法要点”中的说明理解其深层含义。已知此诗存在多个中文译本（如先刚、林克等学者的翻译），因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "夏日丰盈的湖畔景象（梨树、野玫瑰、天鹅）与冬日荒芜的高墙意象在同一构图中形成对照或渐变过渡",
+    "mood": "从丰盈、陶醉过渡到荒凉、孤寂的强烈情绪断裂感，整体应保持沉思、庄重而非戏剧化的基调",
+    "elements": "垂满黄梨的枝条、野玫瑰、湖面天鹅、渐变为光秃的石墙与在风中飘动的旗帜",
+    "era": "无需具体历史时代标识，可采用寓言化、超现实的季节并置构图",
+    "taboos": "不得出现文字、水印；避免直白的“悲伤脸谱化”表现，应通过环境与光线的对比传达情绪，而非人物表情",
+    "style": "19世纪浪漫主义风景油画风格，可采用左右分屏或上下渐变的构图手法表现两节诗的季节对照，色调从暖金色（夏）渐变为冷灰色（冬）"
+  },
+  "image_path": "/images/haelfte-des-lebens.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Hälfte des Lebens (1804)“",
+      "url": "https://www.deutschelyrik.de/haelfte-des-lebens.html",
+      "note": "全文两节十四行完整。"
+    },
+    {
+      "name": "German Wikipedia — \"Hälfte des Lebens\"",
+      "url": "https://de.wikipedia.org/wiki/H%C3%A4lfte_des_Lebens",
+      "note": "独立引用全文（标注出处为 Stuttgarter Ausgabe, hrsg. von Friedrich Beißner, Bd. 2, S. 117），与 deutschelyrik.de 版本逐字一致；并说明存在权威版本间的标点异文（不来梅版第8行作 \"Weh mir!, wo nehm' ich, wenn\"，斯图加特版无感叹号）及1846年 Schwab 版曾将 \"Birnen\" 误植为 \"Blumen\" 的重要版本史。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在先刚、林克等学者译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia，后者标注引自权威的斯图加特版 Beißner 校勘本）逐字核对，两节十四行内容完全一致，采用 \"Birnen\"（梨）而非曾经误植的 \"Blumen\"（花），符合当代学术界公认的权威文本。Wikipedia 词条明确说明了两处重要版本差异：(1) 第8行开头标点在不同校勘版本间存在 \"Weh mir\" / \"Weh mir!\" 的差异；(2) 1846年 Schwab 编订全集曾将 \"Birnen\" 误植为 \"Blumen\"，这一错误版本一度广泛流传，现代权威版本已予以校正。本站均已在“语法要点”与“文化背景”中说明，不采用错误版本。",
+  "checklist": [
+    {
+      "label": "确认作者：Friedrich Hölderlin",
+      "done": true
+    },
+    {
+      "label": "确认标题：Hälfte des Lebens",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：German Wikipedia（引斯图加特版 Beißner 校勘本）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（Birnen/Blumen 误植史；Weh mir 标点差异）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 heilignüchtern 一词的阐释）",
+      "done": false
+    }
+  ]
+}

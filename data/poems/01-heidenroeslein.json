@@ -1,0 +1,371 @@
+{
+  "id": "01",
+  "slug": "heidenroeslein",
+  "author": "Johann Wolfgang von Goethe",
+  "author_zh": "约翰·沃尔夫冈·冯·歌德",
+  "title_de": "Heidenröslein",
+  "title_zh": "野玫瑰",
+  "year": "约1771年作，1789年首次发表；此处采用1827年《Ausgabe letzter Hand》定本",
+  "collection": "Gedichte（Ausgabe letzter Hand，1827）· Balladen",
+  "period": "狂飙突进 Sturm und Drang",
+  "difficulty": "A2–B1",
+  "tags": [
+    "爱情",
+    "自然",
+    "民歌体",
+    "叙事诗",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Sah ein Knab' ein Röslein stehn,",
+      "Röslein auf der Heiden,",
+      "War so jung und morgenschön,",
+      "Lief er schnell, es nah zu sehn,",
+      "Sah's mit vielen Freuden.",
+      "Röslein, Röslein, Röslein rot,",
+      "Röslein auf der Heiden."
+    ],
+    [
+      "Knabe sprach: »Ich breche dich,",
+      "Röslein auf der Heiden!«",
+      "Röslein sprach: »Ich steche dich,",
+      "Daß du ewig denkst an mich,",
+      "Und ich will's nicht leiden.«",
+      "Röslein, Röslein, Röslein rot,",
+      "Röslein auf der Heiden."
+    ],
+    [
+      "Und der wilde Knabe brach",
+      "'s Röslein auf der Heiden;",
+      "Röslein wehrte sich und stach,",
+      "Half ihm doch kein Weh und Ach,",
+      "Mußt' es eben leiden.",
+      "Röslein, Röslein, Röslein rot,",
+      "Röslein auf der Heiden."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），力求贴近原文词序与副歌重复结构，便于对照学习；不追求独立诗意",
+    "text": [
+      [
+        "少年看见一朵小玫瑰，",
+        "荒地上的小玫瑰，",
+        "它这样年轻、美如朝霞，",
+        "他飞快跑去，要看个仔细，",
+        "满心欢喜地望着它。",
+        "玫瑰，玫瑰，红玫瑰，",
+        "荒地上的玫瑰。"
+      ],
+      [
+        "少年说：“我要摘下你，",
+        "荒地上的玫瑰！”",
+        "玫瑰说：“我要刺痛你，",
+        "让你永远记得我，",
+        "我不愿忍受被摘。”",
+        "玫瑰，玫瑰，红玫瑰，",
+        "荒地上的玫瑰。"
+      ],
+      [
+        "那任性的少年终究摘下了",
+        "荒地上的玫瑰；",
+        "玫瑰奋力抵抗、刺痛了他，",
+        "可是哀叫也无济于事，",
+        "它终究只能忍受。",
+        "玫瑰，玫瑰，红玫瑰，",
+        "荒地上的玫瑰。"
+      ]
+    ]
+  },
+  "translation_en": {
+    "type": "public-domain",
+    "translator": "Edgar Alfred Bowring, The Poems of Goethe (London, 1853) — 公版译本（译者1911年逝世，译文早已进入公有领域），转引自英文维基百科 \"Heidenröslein\" 词条",
+    "text": [
+      [
+        "Once a boy a Rosebud spied,",
+        "Heathrose fair and tender,",
+        "All array'd in youthful pride,–",
+        "Quickly to the spot he hied,",
+        "Ravished by her splendour.",
+        "Rosebud, rosebud, rosebud red,",
+        "Heathrose fair and tender!"
+      ],
+      [
+        "Said the boy, \"I'll now pick thee,",
+        "Heathrose fair and tender!\"",
+        "Said the rosebud, \"I'll prick thee,",
+        "So that thou'lt remember me,",
+        "Ne'er will I surrender!\"",
+        "Rosebud, rosebud, rosebud red,",
+        "Heathrose fair and tender!"
+      ],
+      [
+        "Now the cruel boy must pick",
+        "Heathrose fair and tender;",
+        "Rosebud did her best to prick,–",
+        "Vain 'twas 'gainst her fate to kick–",
+        "She must needs surrender.",
+        "Rosebud, rosebud, rosebud red,",
+        "Heathrose fair and tender!"
+      ]
+    ]
+  },
+  "line_notes": [
+    {
+      "de": "Sah ein Knab' ein Röslein stehn,",
+      "zh": "诗歌倒装：动词 Sah 置于句首（正常语序应为 Ein Knabe sah…），是民歌体常见的开篇手法，制造叙事的直接感。"
+    },
+    {
+      "de": "Röslein auf der Heiden,",
+      "zh": "Heiden 是 Heide（荒地）的古旧与格形式，现代德语应作 der Heide；此处为凑韵（与 Freuden、leiden 押韵）保留古拼法。"
+    },
+    {
+      "de": "Knabe sprach: »Ich breche dich,",
+      "zh": "brechen 本义为“折断”，此处引申为“摘（花）”，隐含粗暴、不容分说的动作。"
+    },
+    {
+      "de": "Röslein sprach: »Ich steche dich,",
+      "zh": "拟人化：玫瑰被赋予说话能力，与少年形成对话/对峙结构，是全诗的核心张力所在。"
+    },
+    {
+      "de": "Und ich will's nicht leiden.«",
+      "zh": "leiden 在此不是“悲伤”而是“忍受、容许”之意；will's = will es，es 指代“被摘”这件事。"
+    },
+    {
+      "de": "Half ihm doch kein Weh und Ach,",
+      "zh": "helfen 支配第三格（Dativ），ihm 即为其第三格宾语；注意：1789年 Göschen 初版此处作 \"ihr\"（指玫瑰），1827年定本改为 \"ihm\"（指少年）— 详见“校对记录”。"
+    },
+    {
+      "de": "Mußt' es eben leiden.",
+      "zh": "eben 在此作语气小品词，意为“也就（不得不）”，带有无奈、听天由命的语气，而非“恰好”之意。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "das Röslein",
+      "pos": "n.（中性，Rose 的指小形式）",
+      "meaning": "小玫瑰",
+      "note": "-lein 后缀构成指小名词，词性一律变为中性，与原词 die Rose（阴性）性不同。"
+    },
+    {
+      "term": "die Heide, -n",
+      "pos": "n.（阴性）",
+      "meaning": "荒地、石楠荒原",
+      "note": "诗中 \"auf der Heiden\" 为古旧与格拼法，现代标准形式为 \"auf der Heide\"。"
+    },
+    {
+      "term": "brechen, bricht, brach, gebrochen",
+      "pos": "v.（强变化）",
+      "meaning": "折断；（诗歌用法）摘（花）",
+      "note": "支配第四格：Ich breche dich。"
+    },
+    {
+      "term": "stechen, sticht, stach, gestochen",
+      "pos": "v.（强变化）",
+      "meaning": "刺、扎",
+      "note": "支配第四格：Ich steche dich。"
+    },
+    {
+      "term": "sich wehren",
+      "pos": "v.（反身动词）",
+      "meaning": "抵抗、自卫",
+      "note": "反身代词用第四格：Röslein wehrte sich。"
+    },
+    {
+      "term": "leiden, leidet, litt, gelitten",
+      "pos": "v.（强变化）",
+      "meaning": "遭受、忍受；（口语固定搭配）ich kann … nicht leiden 表示“不喜欢”",
+      "note": "诗中 \"nicht leiden\" 意为“不愿容许（被摘）”。"
+    },
+    {
+      "term": "der Knabe, -n, -n",
+      "pos": "n.（阳性弱变化名词）",
+      "meaning": "男孩、少年",
+      "note": "n-Deklination：单数第二、三、四格及复数均加 -n，如 des Knaben, dem Knaben, den Knaben。诗歌/古语用词，现代口语用 der Junge。"
+    },
+    {
+      "term": "Weh und Ach",
+      "pos": "固定搭配",
+      "meaning": "哀叫、痛苦的呻吟",
+      "note": "Weh（痛苦）与 Ach（表痛苦的感叹词）并列构成的诗歌固定搭配，现代德语已罕用。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "brechen",
+      "present_3sg": "bricht",
+      "preterite": "brach",
+      "perfect": "hat gebrochen",
+      "participle_ii": "gebrochen",
+      "subjunctive_ii": "bräche",
+      "auxiliary": "haben",
+      "note": "诗中用简单过去式 \"brach\"。"
+    },
+    {
+      "infinitive": "stechen",
+      "present_3sg": "sticht",
+      "preterite": "stach",
+      "perfect": "hat gestochen",
+      "participle_ii": "gestochen",
+      "subjunctive_ii": "stäche",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"steche\" 与简单过去式 \"stach\"。"
+    },
+    {
+      "infinitive": "leiden",
+      "present_3sg": "leidet",
+      "preterite": "litt",
+      "perfect": "hat gelitten",
+      "participle_ii": "gelitten",
+      "subjunctive_ii": "litte",
+      "auxiliary": "haben",
+      "note": "诗中出现现在式 \"leiden\"（不定式用法 will's nicht leiden）与简单过去式 \"mußt' … leiden\"。"
+    },
+    {
+      "infinitive": "sehen",
+      "present_3sg": "sieht",
+      "preterite": "sah",
+      "perfect": "hat gesehen",
+      "participle_ii": "gesehen",
+      "subjunctive_ii": "sähe",
+      "auxiliary": "haben",
+      "note": "诗中首行 \"Sah ein Knab'…\" 为简单过去式，倒装开篇。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "诗歌倒装（Inversion）与省音（Apokope）",
+      "quote": "Sah ein Knab' ein Röslein stehn,",
+      "body": "民歌/叙事谣曲常将动词提前以加强叙事的动感；同时 \"Knab'\"（Knabe 省去词尾 -e）、\"stehn\"（stehen 省去 -e）都是为了配合歌唱节奏和押韵而做的省音，属诗歌语言现象，日常德语中不这样使用。"
+    },
+    {
+      "title": "古旧与格词尾 -(e)n",
+      "quote": "Röslein auf der Heiden",
+      "body": "现代德语阴性名词的与格单数不再加 -n（应为 auf der Heide）。这里的 \"Heiden\" 保留了更早期德语（近代早期高地德语）阴性弱变化残余的与格词尾，纯粹是为了与 \"Freuden\"\"leiden\" 押韵。"
+    },
+    {
+      "title": "helfen 支配第三格",
+      "quote": "Half ihm doch kein Weh und Ach",
+      "body": "动词 helfen（帮助）在德语中固定支配第三格（Dativ）宾语，而非第四格。此句主语是 \"kein Weh und Ach\"（无济于事的哀叫），ihm 是被帮助（未能帮助）的对象。此处 ihm/ihr 的版本差异直接影响“到底是谁在哀叫、无济于事”的解读，是本诗最著名的校勘问题。"
+    },
+    {
+      "title": "反身动词 + 第四格反身代词",
+      "quote": "Röslein wehrte sich und stach",
+      "body": "sich wehren（抵抗、自卫）中的 sich 是第四格反身代词。诗句省略了并列结构中第二个动词 stach 的显性主语，但仍与前句共享主语 Röslein。"
+    }
+  ],
+  "cultural_notes": "《野玫瑰》据信写于1771年歌德在斯特拉斯堡求学期间，一般认为与他和牧师之女弗里德莉克·布里翁（Friederike Brion）的恋情有关；诗歌采用当时赫尔德（Herder）等人所倡导的“民歌体”（Volkslied）风格：简单的分节歌形式、反复的副歌、口语化的省音拼写，模仿民间歌谣的质朴感。\n\n这首诗后来被舒伯特（Franz Schubert，1815年，D. 257）等多位作曲家谱曲，成为德语世界流传最广的艺术歌曲之一。\n\n诗歌表层是一则简单的“少年摘花”寓言，但“摘花—刺痛—忍受”的意象长期引发文学研究者的讨论：一些学者将其读作民间文学中常见的求爱/拒绝母题的程式化表达，另一些现代研究则关注其中隐含的强制与越界意味。本站不对此作定论，仅作背景说明，供学习者自行思考。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），在人工核对德文原意基础上完成，目标是尽量贴近原文的词序、重复结构与副歌形式，便于逐句对照学习德语，而非追求独立的文学译诗效果。已知存在多个中文名家译本（如郭沫若等译者的版本），因版权原因本站不转载全文，感兴趣的读者可自行查阅相关出版物或授权网络资源。英文译文采用可确认已进入公有领域的 Edgar Alfred Bowring 1853年译本。",
+  "image_prompt": {
+    "imagery": "荒地上的一朵红玫瑰、一名少年俯身靠近玫瑰；玫瑰似乎在“回望”少年，形成对峙感",
+    "mood": "表面天真烂漫的民歌气息之下，隐含一丝紧张与不安",
+    "elements": "石楠荒原、清晨微光、一朵鲜红玫瑰特写、少年侧影（不露正面五官）、荆棘与刺",
+    "era": "18世纪末德国乡野，非宫廷场景，服饰应为朴素乡村装束",
+    "taboos": "禁止出现任何暴力、伤害或性暗示的直白描绘；不得出现现代服饰、文字、水印",
+    "style": "19世纪浪漫主义油画质感，或古典植物学绘本式的精细自然插画风格，色调以晨曦金色与荒原灰绿为主"
+  },
+  "image_path": "/images/heidenroeslein.png",
+  "german_sources": [
+    {
+      "name": "Zeno.org — Goethe, Johann Wolfgang: Gedichte (Ausgabe letzter Hand, 1827), Balladen, „Heidenröslein“",
+      "url": "http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Gedichte/Gedichte+(Ausgabe+letzter+Hand.+1827)/Lieder/Heidenr%C3%B6slein",
+      "note": "1827年《Ausgabe letzter Hand》定本文字，'ihm' + 'Mußt' 版本。"
+    },
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Heidenröslein (1771)“",
+      "url": "https://www.deutschelyrik.de/heidenroeslein.html",
+      "note": "与 Zeno.org 版本核心异文一致（'ihm' + 'Mußt'），可互证。"
+    },
+    {
+      "name": "English Wikipedia — \"Heidenröslein\"",
+      "url": "https://en.wikipedia.org/wiki/Heidenr%C3%B6slein",
+      "note": "辅助来源，引用 Göschen 1789年初版原文（'ihr' + 'Mußte' 版本）及校勘学界讨论，用于说明版本差异背景。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "Edgar Alfred Bowring, The Poems of Goethe (1853)",
+      "note": "公版英译，转引自英文维基百科 \"Heidenröslein\" 词条脚注，原始出处见 archive.org 扫描本 The Poems of Goethe。"
+    },
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文名家译本，因版权原因未在本站转载全文。"
+    }
+  ],
+  "verification_notes": "德文原文用两个独立来源（Zeno.org 与 deutschelyrik.de）交叉核对，二者在核心异文（第三节第4行代词、第5行动词）上完全一致，均代表1827年《Ausgabe letzter Hand》传统，可信度较高。另通过英文维基百科确认1789年 Göschen 初版存在不同文字（'ihr' 而非 'ihm'，'Mußte' 而非 'Mußt'），已在“语法要点”与“逐行注释”中说明，不作为正文采用。\n\n本次未能成功访问 de.wikisource.org 对应页面（工具返回空白，判断为该站点对本环境不可达），故未将其计入独立来源；如后续可访问，建议补充核对一次。\n\n押韵拼写（如 rot vs roth、Heiden vs Heide）经核实属正字法历史演变，不影响诗歌内容，本站正文采用两个主要来源共同显示的现代化拼写（rot、fasst 等现代形式除外——本诗采用的是仍保留历史拼写 'Weh und Ach' 等的版本，与两个来源一致）。",
+  "checklist": [
+    {
+      "label": "确认作者：Johann Wolfgang von Goethe",
+      "done": true
+    },
+    {
+      "label": "确认标题：Heidenröslein",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（1789 Göschen vs 1827 Ausgabe letzter Hand）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用，公版英译可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Der Panther · 豹 — Rainer Maria Rilke | 德语诗歌学习画册</title>
+  <meta name="description" content="Der Panther（豹）— Rainer Maria Rilke。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="herbsttag.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">秋日</span></a>
+<span class="poem-nav__spacer" aria-hidden="true"></span>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Der Panther</h1>
+      <p class="poem-titleblock__author">Rainer Maria Rilke</p>
+      <p class="poem-titleblock__zh">豹</p>
+      <p class="poem-titleblock__author-zh">赖内·马利亚·里尔克</p>
+      <div class="poem-titleblock__biblio">
+        <p>Neue Gedichte（新诗集，1907）· 副标题 „Im Jardin des Plantes, Paris“</p>
+        <p>象征主义 / 事物诗（Dinggedicht）</p>
+        <p>1902–1903年间作于巴黎，1903年9月首次发表</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B1–B2</span>
+        <span class="tag ">动物</span>
+        <span class="tag ">囚禁</span>
+        <span class="tag ">事物诗</span>
+        <span class="tag ">存在主义</span>
+        <span class="tag ">经典必读</span>
+      </div>
+          <figure class="image-slot image-slot--filled">
+      <img src="../images/der-panther.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+    </figure>
+    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+      <header class="modal__head">
+        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      </header>
+      <div class="modal__body">
+        <div class="image-slot">
+      <dl>
+        <dt>意象</dt><dd>笼中踱步的黑豹，目光疲惫、步伐在极小的圆圈中循环往复，铁栏杆的重复线条贯穿画面</dd>
+        <dt>情绪</dt><dd>压抑、疲惫却仍蕴藏着未熄灭的野性与力量感，克制而非煽情</dd>
+        <dt>画面元素</dt><dd>密集排列的铁栏杆、豹柔韧有力的躯体轮廓、微微睁大又迷离的双眼特写，可参考19世纪末巴黎植物园动物园的历史氛围</dd>
+        <dt>时代感</dt><dd>1900年代初巴黎植物园动物园场景，避免任何现代化的动物园围栏/标识设计</dd>
+        <dt>推荐风格</dt><dd>19世纪末至20世纪初学院派动物绘画或象征主义绘画风格（可参考同时期动物题材油画传统），低饱和度、暗色调背景中透出豹眼的一点光亮</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；不得表现虐待动物的血腥或过度悲惨的画面，应保持古典绘画式的克制与庄重；不宜将豹画得过于卡通化</dd>
+      </dl>
+          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+        </div>
+      </div>
+    </dialog>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Sein Blick ist vom Vorübergehn der Stäbe<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">它的目光，被那些不断掠过的栏杆</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">so müd geworden, daß er nichts mehr hält.<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">拖得如此疲惫，以至于什么也不再留存。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Ihm ist, als ob es tausend Stäbe gäbe<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">对它而言，仿佛有一千根栏杆存在，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">und hinter tausend Stäben keine Welt.</span></div>
+          <div class="pline__zh">而一千根栏杆之后，再没有世界。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Der weiche Gang geschmeidig starker Schritte,</span></div>
+          <div class="pline__zh">那强壮而柔韧的步伐，轻软地</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">der sich im allerkleinsten Kreise dreht,<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">在极小的圆圈中不断兜转，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">ist wie ein Tanz von Kraft um eine Mitte,</span></div>
+          <div class="pline__zh">仿佛一场围绕着中心的力之舞，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">in der betäubt ein großer Wille steht.<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">在那中心，一个伟大的意志正麻痹地伫立。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Nur manchmal schiebt der Vorhang der Pupille<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">只是偶尔，瞳孔的帘幕</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">sich lautlos auf –. Dann geht ein Bild hinein,</span></div>
+          <div class="pline__zh">会无声地拉开——于是一个影像便进入，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">geht durch der Glieder angespannte Stille –</span></div>
+          <div class="pline__zh">穿过四肢紧绷的寂静——</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">und hört im Herzen auf zu sein.<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">到达心中，便不复存在。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗三节由外部观察逐渐深入内在的结构</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Sein Blick ist vom Vorübergehn der Stäbe</p>
+        <p class="lnote__zh">Vorübergehn 是名词化的不定式（das Vorübergehen 的省音形式），意为“掠过、经过”这一动作本身；von + 第三格 der Stäbe 表原因（“被栏杆的不断掠过……”）。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">so müd geworden, daß er nichts mehr hält.</p>
+        <p class="lnote__zh">so … daß …（如此……以至于……）是德语中经典的结果状语从句结构；hält 在此并非“握住”，而是“留存、抓住（视线的焦点）”之意，形容目光已无法聚焦于任何具体事物。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Ihm ist, als ob es tausend Stäbe gäbe</p>
+        <p class="lnote__zh">"Ihm ist, als ob …" 句型与《你像一朵花》中的 "Mir ist, als ob …" 相同，表主观感受的比拟，从句用虚拟式二式（gäbe，geben 的虚拟式二式）。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">der sich im allerkleinsten Kreise dreht,</p>
+        <p class="lnote__zh">allerkleinst 是形容词最高级 kleinst（最小的）再加前缀 aller-（强调级，“所有之中最……”）构成的“最高级的最高级”，德语中常见的加强修辞手法。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">in der betäubt ein großer Wille steht.</p>
+        <p class="lnote__zh">betäubt（麻痹的、被麻醉的，动词 betäuben 的过去分词作状语）修饰 steht 的方式：“意志”被麻痹地伫立在圆圈的中心，暗示豹强大的生命意志因囚禁而陷入停滞、无法施展。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Nur manchmal schiebt der Vorhang der Pupille</p>
+        <p class="lnote__zh">der Vorhang der Pupille（瞳孔的帘幕）是全诗最著名的隐喻，将瞳孔的张合比作舞台幕布的拉开，暗示豹与外部世界之间如同隔着一层“表演/观看”的屏障。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">und hört im Herzen auf zu sein.</p>
+        <p class="lnote__zh">aufhören + zu + Infinitiv（停止做……）："hört … auf zu sein" 意为“不再存在”；全诗以这一近乎虚无主义的短句收尾——外界影像进入豹的身体后，最终在“心”中归于虚无，无法真正抵达或留存。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Stab, Stäbe</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">栏杆、条棍</div>
+        <div class="vocab-card__note">诗中特指笼子的铁栏杆，复数 Stäbe。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">müde（müd，诗歌省音）</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">疲惫的</div>
+        <div class="vocab-card__note">诗中省去词尾 -e 以配合音节。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">geschmeidig</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">柔韧的、灵活的</div>
+        <div class="vocab-card__note">常用于形容动物或人的肢体动作流畅有力。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">betäuben</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">使麻醉、使麻痹</div>
+        <div class="vocab-card__note">诗中用过去分词 betäubt 作状语，描写“意志”被囚禁生活麻痹的状态。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Vorhang, Vorhänge</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">帷幕、窗帘</div>
+        <div class="vocab-card__note">诗中喻指瞳孔的开合，是全诗的核心隐喻。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Pupille, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">瞳孔</div>
+        <div class="vocab-card__note">生理学词汇，诗歌中较少见，此处因隐喻需要而入诗。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">das Glied, -er</span></div>
+        <span class="vocab-card__pos">n.（中性）</span>
+        <div class="vocab-card__meaning">肢体、关节</div>
+        <div class="vocab-card__note">复数 Glieder 泛指四肢/躯体各部分。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">aufhören + zu + Infinitiv</span></div>
+        <span class="vocab-card__pos">固定搭配（可分动词 + 不定式结构）</span>
+        <div class="vocab-card__meaning">停止做……</div>
+        <div class="vocab-card__note">diesem aufhören 为可分动词，诗中为 "hört … auf zu sein"（前缀 auf 置于句尾）。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">halten</td>
+          <td class="de">hält</td>
+          <td class="de">hielt</td>
+          <td class="de">hat gehalten</td>
+          <td class="de">gehalten</td>
+          <td class="de">hielte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用现在式 "hält"，意为“留存、抓住（焦点）”。</td></tr>
+        <tr>
+          <td class="de">geben（es gibt 句型）</td>
+          <td class="de">gibt</td>
+          <td class="de">gab</td>
+          <td class="de">hat gegeben</td>
+          <td class="de">gegeben</td>
+          <td class="de">gäbe</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用虚拟式二式 "es … gäbe"（als ob 从句）。</td></tr>
+        <tr>
+          <td class="de">sich drehen</td>
+          <td class="de">dreht sich</td>
+          <td class="de">drehte sich</td>
+          <td class="de">hat sich gedreht</td>
+          <td class="de">gedreht</td>
+          <td class="de">drehte sich</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用现在式 "sich … dreht"（反身动词，反身代词 sich 位于从句内部）。</td></tr>
+        <tr>
+          <td class="de">schieben</td>
+          <td class="de">schiebt</td>
+          <td class="de">schob</td>
+          <td class="de">hat geschoben</td>
+          <td class="de">geschoben</td>
+          <td class="de">schöbe</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用现在式 "schiebt … sich … auf"（可分动词 aufschieben 在此为反身及物：“（帘幕）自行拉开”）。</td></tr>
+        <tr>
+          <td class="de">aufhören</td>
+          <td class="de">hört auf</td>
+          <td class="de">hörte auf</td>
+          <td class="de">hat aufgehört</td>
+          <td class="de">aufgehört</td>
+          <td class="de">hörte auf</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用现在式 "hört … auf zu sein"，可分动词，前缀置于句末。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">Ihm ist, als ob + Konjunktiv II</h3>
+        <p class="grammar-item__quote">Ihm ist, als ob es tausend Stäbe gäbe / und hinter tausend Stäben keine Welt.</p>
+        <div class="grammar-item__body">与《你像一朵花》中的 "Mir ist, als ob …" 结构相同，表达主观、假设性的感受，从句动词用虚拟式二式（gäbe）。此句型是德语中表达“仿佛、好像”这一主观心理状态的固定模式，值得反复操练。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">过去分词作方式状语</h3>
+        <p class="grammar-item__quote">so müd geworden, daß er nichts mehr hält. … in der betäubt ein großer Wille steht.</p>
+        <div class="grammar-item__body">betäubt（被麻痹地）是过去分词直接作状语修饰动词 steht 的方式，说明“意志”是以“被麻痹”的状态伫立着；这种“过去分词+动词”的紧凑结构在德语诗歌与书面语中很常见，比用从句更凝练。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">可分动词在诗行中的拆分与破折号的运用</h3>
+        <p class="grammar-item__quote">Nur manchmal schiebt der Vorhang der Pupille / sich lautlos auf –.</p>
+        <div class="grammar-item__body">可分动词 aufschieben（推开/拉开）的前缀 auf 因诗行断句被延后至下一行行首，紧跟破折号与句号（auf –.），制造出动作“戛然而止”的视觉与节奏效果，恰好模拟瞳孔骤然开合的瞬间感。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">aufhören zu + Infinitiv 表“停止/不再”</h3>
+        <p class="grammar-item__quote">und hört im Herzen auf zu sein.</p>
+        <div class="grammar-item__body">aufhören zu + 不定式（停止做某事）是德语中表达动作终止的常见结构，诗末以此收束：外界的“影像”（Bild）穿越豹紧绷的身体、最终抵达“心”，却在那里"停止存在"——用最基础的语法结构承载了全诗最沉重的存在主义式结论。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《豹》副标题“巴黎植物园”（Im Jardin des Plantes, Paris）明确指出诗歌观察对象来自巴黎植物园附设的动物园——该园当时展出包括一只被囚于笼中的黑豹，很可能正是诗中反复兜圈踱步（一种圈养动物常见的“刻板行为” stereotypisches Verhalten）行为的直接观察来源。里尔克在1902年写给妻子克拉拉·韦斯特霍夫的信中也提到雕塑家罗丹（Auguste Rodin）工作室里一件豹的石膏模型对他的启发。</p>
+<p>这首诗被公认为里尔克“事物诗”（Dinggedicht）风格的开山之作与最著名代表：诗人尝试像罗丹雕塑一件“物”那样，用语言精确“雕刻”出一只动物的外在形态（目光、步态、瞳孔）及其被囚禁后逐渐丧失与外部世界联系的内在状态，而非直接抒发诗人自己的情感。全诗1903年9月首次发表于布拉格的月刊《Deutsche Arbeit》，后作为里尔克最早期的作品收入1907年出版的重要诗集《新诗集》（Neue Gedichte）。</p>
+<p>此诗在流行文化中也屡被引用，例如电影《无语问苍天》（Awakenings，改编自神经学家奥利弗·萨克斯的同名著作）中，一位患者用这首诗描述自己被禁锢的生命状态；伍迪·艾伦电影《另一个女人》（1988）中也曾引用此诗作为主角内心世界的隐喻。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗三节从“目光的疲惫”到“步态的循环”再到“瞳孔骤开、影像消逝于心”的递进结构，以及诗中几处关键隐喻（栏杆、帘幕、力之舞）的意象完整性。里尔克作品德文原文已于1996年进入公有领域，可放心使用；但目前存在的中文译本（如冯至、绿原、黄灿然等译者的版本）均由现代译者完成，版权仍在保护期内，本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Der Panther (1903)“</span><a class="source-url" href="https://www.deutschelyrik.de/der-panther.html" target="_blank" rel="noopener">https://www.deutschelyrik.de/der-panther.html</a>
+        <span class="source-note">全文三节十二行完整，含副标题 „Im Jardin des Plantes, Paris“。</span>
+      </li>
+      <li>
+        <span class="source-name">German Wikipedia — "Der Panther"</span><a class="source-url" href="https://de.wikipedia.org/wiki/Der_Panther" target="_blank" rel="noopener">https://de.wikipedia.org/wiki/Der_Panther</a>
+        <span class="source-note">独立引用全文，与 deutschelyrik.de 版本逐字一致；并提供详实的创作背景（1902–1903年间，巴黎植物园观察 + 罗丹工作室石膏模型的双重启发）、1903年9月首次发表于《Deutsche Arbeit》月刊、后收入1907年《新诗集》的出版史信息。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在冯至、绿原、黄灿然等译者的中文译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容（含标点、破折号位置）完全一致，未发现任何异文，可信度很高。Wikipedia 词条并提供了详实的创作背景与出版史，与 deutschelyrik.de 标注的"1903"年份及副标题吻合。里尔克1926年逝世，德文原文已于1996年进入公有领域，版权状态明确。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Rainer Maria Rilke</li>
+        <li>确认标题：Der Panther</li>
+        <li>德文原文主来源：deutschelyrik.de</li>
+        <li>德文原文辅助来源：German Wikipedia</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（未发现异文）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（德文原文公版，现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li>生成 AI 配图（已接入）</li>
+        <li>页面视觉检查</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+{
+  "id": "07",
+  "slug": "mondnacht",
+  "author": "Joseph von Eichendorff",
+  "author_zh": "约瑟夫·冯·艾兴多夫",
+  "title_de": "Mondnacht",
+  "title_zh": "月夜",
+  "year": "约1835年作，1837年首次发表",
+  "collection": "自然抒情诗（Naturlyrik）",
+  "period": "晚期浪漫主义 Spätromantik",
+  "difficulty": "A2–B1",
+  "tags": [
+    "自然",
+    "夜晚",
+    "灵魂",
+    "冥想",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Es war, als hätt' der Himmel",
+      "Die Erde still geküßt,",
+      "Daß sie im Blütenschimmer",
+      "Von ihm nun träumen müßt'."
+    ],
+    [
+      "Die Luft ging durch die Felder,",
+      "Die Ähren wogten sacht,",
+      "Es rauschten leis' die Wälder,",
+      "So sternklar war die Nacht."
+    ],
+    [
+      "Und meine Seele spannte",
+      "Weit ihre Flügel aus,",
+      "Flog durch die stillen Lande,",
+      "Als flöge sie nach Haus."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗从“天地”到“灵魂”的视角推进",
+    "text": [
+      [
+        "仿佛天空",
+        "曾静静吻过大地，",
+        "让她在花影微光中",
+        "如今只能梦见天空。"
+      ],
+      [
+        "风穿过田野，",
+        "麦穗轻轻起伏摇曳，",
+        "森林发出低低的沙响，",
+        "夜色如此繁星满天。"
+      ],
+      [
+        "而我的灵魂",
+        "展开它的双翼，",
+        "飞过这寂静的大地，",
+        "仿佛正飞向家园。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Es war, als hätt' der Himmel",
+      "zh": "\"als hätte\" 引导虚拟式二式从句，表示一种想象性的比拟（“仿佛……曾……”），并非真实发生的事件；hätt' 是 hätte 的省音形式。"
+    },
+    {
+      "de": "Die Erde still geküßt,",
+      "zh": "küssen 的过去分词 geküßt（现代拼写 geküsst），与 hätte 构成虚拟式过去时（Konjunktiv II der Vergangenheit），表达对一个假设性过去动作的描绘。"
+    },
+    {
+      "de": "Von ihm nun träumen müßt'.",
+      "zh": "müßt' 是 müßte 的省音形式（müssen 的虚拟式二式），与上文 hätte 呼应，共同构成整节的虚拟式语气：天空与大地之间发生的一切都是诗人“仿佛觉得”的想象，而非陈述事实。"
+    },
+    {
+      "de": "Die Ähren wogten sacht,",
+      "zh": "wogen（如波浪般起伏）本用于描写水面，此处转用于形容风中麦穗的摆动，是一种通感式的动词借用；sacht（轻柔地）是副词，修饰起伏的幅度与力度。"
+    },
+    {
+      "de": "Und meine Seele spannte",
+      "zh": "从第三节起，视角由外部的天地风景转向诗人内心的 Seele（灵魂），是全诗结构上的关键转折——前两节的自然描写至此被揭示为灵魂“飞升”体验的铺垫。"
+    },
+    {
+      "de": "Als flöge sie nach Haus.",
+      "zh": "\"als flöge sie\" 再次使用虚拟式二式（fliegen 的虚拟式二式 flöge），表比拟“仿佛飞向家园”；这里的“家”并非具体的地理位置，而多被解读为灵魂对宇宙、对神性本源的向往与回归。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "küssen",
+      "pos": "v.（弱变化）",
+      "meaning": "亲吻",
+      "note": "诗中过去分词用旧拼法 geküßt（现代拼写 geküsst）。"
+    },
+    {
+      "term": "der Blütenschimmer",
+      "pos": "n.（阳性复合词）",
+      "meaning": "花影微光、花丛间的微光",
+      "note": "由 Blüte（花）+ Schimmer（微光）构成，是典型的浪漫主义文学复合词，用于营造朦胧、梦幻的自然意象。"
+    },
+    {
+      "term": "die Ähre, -n",
+      "pos": "n.（阴性）",
+      "meaning": "麦穗、谷穗",
+      "note": "常见于田园/自然诗，注意与同音异形词区分（如 Ehre“荣誉”）。"
+    },
+    {
+      "term": "wogen",
+      "pos": "v.（弱变化）",
+      "meaning": "（如波浪般）起伏、涌动",
+      "note": "本义描写水面波涛，诗中转喻用于麦穗随风摆动，是一种拟态修辞。"
+    },
+    {
+      "term": "rauschen",
+      "pos": "v.（弱变化）",
+      "meaning": "沙沙作响、哗哗作响",
+      "note": "常用于描写风吹树叶、流水等自然声响，与前一首诗中的 säuseln（更轻柔的沙沙声）构成近义词群，可比较记忆。"
+    },
+    {
+      "term": "die Seele, -n",
+      "pos": "n.（阴性）",
+      "meaning": "灵魂",
+      "note": "浪漫主义诗歌核心词汇之一，常与自然景物构成呼应或对话关系。"
+    },
+    {
+      "term": "spannen（die Flügel spannen）",
+      "pos": "v.（弱变化）",
+      "meaning": "展开、张开（翅膀）",
+      "note": "固定搭配 die Flügel ausspannen/spannen：“展翅”，可分动词 ausspannen 在诗中以 \"spannte … aus\" 的形式出现于诗行两端。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "küssen",
+      "present_3sg": "küsst",
+      "preterite": "küsste",
+      "perfect": "hat geküsst",
+      "participle_ii": "geküsst（旧拼: geküßt）",
+      "subjunctive_ii": "küsste",
+      "auxiliary": "haben",
+      "note": "诗中用于虚拟式过去时 \"hätte … geküßt\"。"
+    },
+    {
+      "infinitive": "müssen",
+      "present_3sg": "muss",
+      "preterite": "musste",
+      "perfect": "hat gemusst",
+      "participle_ii": "gemusst",
+      "subjunctive_ii": "müsste（旧拼: müßte）",
+      "auxiliary": "haben",
+      "note": "诗中用省音形式 \"müßt'\"（= müßte = 现代 müsste）。"
+    },
+    {
+      "infinitive": "wogen",
+      "present_3sg": "wogt",
+      "preterite": "wogte",
+      "perfect": "hat gewogt",
+      "participle_ii": "gewogt",
+      "subjunctive_ii": "wogte",
+      "auxiliary": "haben",
+      "note": "诗中用简单过去式 \"wogten\"。"
+    },
+    {
+      "infinitive": "ausspannen",
+      "present_3sg": "spannt aus",
+      "preterite": "spannte aus",
+      "perfect": "hat ausgespannt",
+      "participle_ii": "ausgespannt",
+      "subjunctive_ii": "spannte aus",
+      "auxiliary": "haben",
+      "note": "可分动词，诗中为 \"spannte … aus\"（简单过去式，前缀置于句尾）。"
+    },
+    {
+      "infinitive": "fliegen",
+      "present_3sg": "fliegt",
+      "preterite": "flog",
+      "perfect": "ist geflogen",
+      "participle_ii": "geflogen",
+      "subjunctive_ii": "flöge",
+      "auxiliary": "sein",
+      "note": "诗中既有简单过去式 \"Flog\"，也有虚拟式二式 \"flöge\"（als flöge sie）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "贯穿全诗的虚拟式二式（Konjunktiv II）",
+      "quote": "Es war, als hätt' der Himmel / Die Erde still geküßt … Als flöge sie nach Haus.",
+      "body": "全诗首尾两节都以 \"als hätte/als flöge\"（仿佛……）这一虚拟式二式结构收束，将天地之吻与灵魂归乡都框定为一种诗意的想象、比拟，而非陈述性的事实判断，是理解全诗“非写实、重体验”基调的语法关键。"
+    },
+    {
+      "title": "旧正字法 ß 的使用",
+      "quote": "geküßt, müßt', leis'",
+      "body": "本诗写作年代早于1901年及1996年两次德语正字法改革，diesem geküßt（今 geküsst）等词沿用旧式 ß 拼写；本站按权威文本来源保留原始拼写，学习者书写现代德语时应使用改革后的拼写（geküsst、müsste）。"
+    },
+    {
+      "title": "第三节的视角转换（外景→内心）",
+      "quote": "Und meine Seele spannte / Weit ihre Flügel aus,",
+      "body": "前两节皆以第三人称/无人称视角描写天地自然（Es war…、Die Luft ging…），第三节突然引入第一人称所属的 \"meine Seele\"，完成了从客观自然描写到主观灵魂体验的转折，这是解读全诗“天人合一”主题的关键结构点。"
+    },
+    {
+      "title": "交叉韵（Kreuzreim）与半 Hildebrandsstrophe",
+      "quote": "全诗三节，每节四行，abab 交叉韵",
+      "body": "全诗采用 abab 交叉韵（Kreuzreim）的格律形式，且第一、三行为“响韵”（双音节结尾）、第二、四行为“钝韵”（单音节结尾），德语诗律学称之为（半）Hildebrandsstrophe，是德国浪漫主义诗歌常见的格律形式之一。"
+    }
+  ],
+  "cultural_notes": "《月夜》被广泛认为是艾兴多夫最杰出、也是德语浪漫主义自然抒情诗的巅峰之作。托马斯·曼（Thomas Mann）称其为“珍珠中的珍珠”（die Perle der Perlen），阿多诺（Theodor W. Adorno）形容其“仿佛是被琴弓拉奏出来的”。诗歌的核心意象是“内在风景与外在风景的融合”（诗人乌拉·哈恩语）：天空与大地之吻、麦田与森林的私语，最终都汇入诗人灵魂“展翅飞向家园”的体验，是德国浪漫主义“自然与心灵合一”（Einheit von Natur und Seele）美学理想的典范表达。\n\n舒曼（Robert Schumann）1840年将其收入声乐套曲《Liederkreis》Op. 39 并置于全曲核心位置进行谱曲，勃拉姆斯（Johannes Brahms）1853年也曾为其谱曲，19世纪末已有超过40种曲谱版本。诗歌末节常被用于德语讣告（Todesanzeige）中，可见其在德语文化中已成为表达“灵魂归于安息/故土”的经典意象。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗“虚拟式—比拟”的语气以及从自然描写到灵魂体验的视角转换。已知此诗有多个中文译本流传，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "星光下的田野与森林，天空与大地在月色中仿佛交融为一体；一只展翅的灵魂/剪影般的翅膀飞越寂静的原野",
+    "mood": "空灵、宁静、带有神秘的宗教性庄严感，非悲伤而是超脱",
+    "elements": "繁星满天的夜空、随风起伏的麦田、静谧的森林轮廓、一对隐约的翅膀或灵魂剪影掠过田野",
+    "era": "无需具体历史时代标识，德国乡村田野景观，19世纪初氛围",
+    "taboos": "不得出现文字、水印；避免过于具象化“灵魂”为宗教图腾或天使形象，应保持抽象、诗意的处理；避免现代光污染式的夜空描绘",
+    "style": "19世纪浪漫主义风景油画风格，参考卡斯帕·大卫·弗里德里希的静谧夜景构图，深蓝与银白色调为主"
+  },
+  "image_path": "/images/mondnacht.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Mondnacht (1835)“",
+      "url": "https://www.deutschelyrik.de/mondnacht.html",
+      "note": "全文三节完整，旧式 ß 拼写。"
+    },
+    {
+      "name": "German Wikipedia — \"Mondnacht (Eichendorff)\"",
+      "url": "https://de.wikipedia.org/wiki/Mondnacht_(Eichendorff)",
+      "note": "独立引用全文，与 deutschelyrik.de 版本逐字一致；并提供详细的格律分析（Kreuzreim、Hildebrandsstrophe）、手稿收藏（柏林国立图书馆）及接受史信息，另链接 Zeno.org 与 Projekt Gutenberg-DE 作为补充来源。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容完全一致（含旧式 ß 拼写），未发现任何异文，可信度很高。Wikipedia 词条另指出该诗手稿现存于柏林国立图书馆，写作时间约1835–1840年间，与创作背景描述吻合。",
+  "checklist": [
+    {
+      "label": "确认作者：Joseph von Eichendorff",
+      "done": true
+    },
+    {
+      "label": "确认标题：Mondnacht",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：German Wikipedia",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（未发现异文）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "id": "02",
+  "slug": "wandrers-nachtlied-ii",
+  "author": "Johann Wolfgang von Goethe",
+  "author_zh": "约翰·沃尔夫冈·冯·歌德",
+  "title_de": "Wandrers Nachtlied (Ein Gleiches)",
+  "title_zh": "流浪者的夜歌（其二）",
+  "year": "1780年9月6日夜作于伊尔默瑙基克尔汉山（Kickelhahn）；1815年首次收入歌德本人编订的诗集",
+  "collection": "Goethe's Werke, Bd. I（1815）· 题作 \"Ein Gleiches\"，紧接1776年同题诗作之后",
+  "period": "古典主义 Weimarer Klassik（近狂飙突进末期）",
+  "difficulty": "A2",
+  "tags": [
+    "自然",
+    "夜晚",
+    "静谧",
+    "冥想",
+    "极短诗"
+  ],
+  "german_text": [
+    [
+      "Über allen Gipfeln",
+      "Ist Ruh,",
+      "In allen Wipfeln",
+      "Spürest du",
+      "Kaum einen Hauch;",
+      "Die Vögelein schweigen im Walde.",
+      "Warte nur, balde",
+      "Ruhest du auch."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），逐句直译，保留原诗的简短断行",
+    "text": [
+      [
+        "群峰之上",
+        "一片静谧，",
+        "林梢之间",
+        "你几乎",
+        "感觉不到一丝气息；",
+        "林中的小鸟沉默无声。",
+        "且等着吧，很快",
+        "你也将安息。"
+      ]
+    ]
+  },
+  "translation_en": {
+    "type": "public-domain",
+    "translator": "Henry Wadsworth Longfellow（1807–1882）译本，公版；转引自英文维基百科 \"Wanderer's Nightsong\" 词条及多种公开引用来源",
+    "text": [
+      [
+        "O'er all the hilltops",
+        "Is quiet now,",
+        "In all the treetops",
+        "Hearest thou",
+        "Hardly a breath;",
+        "The birds are asleep in the trees:",
+        "Wait; soon like these",
+        "Thou too shalt rest."
+      ]
+    ]
+  },
+  "line_notes": [
+    {
+      "de": "Über allen Gipfeln",
+      "zh": "开篇即以介词短语起句，无主句动词，是德语诗歌中常见的“悬浮式”开篇，制造画面先行、判断后至的效果。"
+    },
+    {
+      "de": "Ist Ruh,",
+      "zh": "完整应为 \"Ist Ruhe\"，诗中省去词尾 -e（Apokope）以配合短促的音节与韵律；Ruh 与下文 du、Hauch 等构成疏松的音韵呼应。"
+    },
+    {
+      "de": "In allen Wipfeln / Spürest du",
+      "zh": "Spürest du 为古典诗歌中保留的第二人称单数动词词尾 -est（现代口语多简化为 spürst du），且主谓倒装，突出韵律。"
+    },
+    {
+      "de": "Kaum einen Hauch;",
+      "zh": "kaum（几乎不）+ einen Hauch（第四格，一丝气息）：spüren 支配第四格宾语。整句意为“你几乎感觉不到一丝气息”。"
+    },
+    {
+      "de": "Die Vögelein schweigen im Walde.",
+      "zh": "Vögelein 是 Vogel 的指小形式（中性名词），比 Vögel 更显轻柔、亲昵，符合全诗静谧的氛围；schweigen（沉默）与鸟鸣的“不在场”共同渲染寂静。"
+    },
+    {
+      "de": "Warte nur, balde",
+      "zh": "warte 是 warten 的命令式（Imperativ），nur 在此为语气小品词，加强“只管、姑且”的劝慰语气；balde 是 bald 的诗歌延长形式，为凑音节与韵脚（与 Walde 押韵）。"
+    },
+    {
+      "de": "Ruhest du auch.",
+      "zh": "呼应第二行 \"Ist Ruh\"：从“万物静息”过渡到“你也将静息”，完成全诗从自然到自我、从观察到生死冥想的收束。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Gipfel, -",
+      "pos": "n.（阳性）",
+      "meaning": "山顶、峰顶",
+      "note": "常与 Wipfel（树梢）在朗读/记忆中混淆，请注意区分：Gipfel=山峰，Wipfel=树梢。"
+    },
+    {
+      "term": "der Wipfel, -",
+      "pos": "n.（阳性）",
+      "meaning": "树梢",
+      "note": "诗歌史上曾有以讹传讹将两词顺序颠倒的著名误记案例（如布莱希特的戏仿诗故意对调二词），提醒学习者格外注意区分。"
+    },
+    {
+      "term": "spüren",
+      "pos": "v.（弱变化，规则）",
+      "meaning": "感觉到、察觉到",
+      "note": "支配第四格：Spürest du kaum einen Hauch。"
+    },
+    {
+      "term": "der Hauch, -e",
+      "pos": "n.（阳性）",
+      "meaning": "气息、微风般的触感",
+      "note": "常用于诗歌语域，日常口语较少使用，近义词有 der Atem（呼吸）、die Brise（微风）。"
+    },
+    {
+      "term": "schweigen, schwieg, geschwiegen",
+      "pos": "v.（强变化）",
+      "meaning": "沉默、不作声",
+      "note": "与 schweigen über + Akk.（对……保持沉默）搭配；诗中为不及物用法。"
+    },
+    {
+      "term": "balde（诗歌用法，= bald）",
+      "pos": "adv.",
+      "meaning": "很快，不久",
+      "note": "标准现代德语作 bald；诗中的 -e 结尾属诗歌语言中为押韵、凑音节而添加的延长形式（可比较 Munde/Mund 等类似现象）。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "spüren",
+      "present_3sg": "spürt",
+      "preterite": "spürte",
+      "perfect": "hat gespürt",
+      "participle_ii": "gespürt",
+      "subjunctive_ii": "spürte",
+      "auxiliary": "haben",
+      "note": "诗中用古典第二人称词尾 \"Spürest du\"（现代作 spürst du）。"
+    },
+    {
+      "infinitive": "schweigen",
+      "present_3sg": "schweigt",
+      "preterite": "schwieg",
+      "perfect": "hat geschwiegen",
+      "participle_ii": "geschwiegen",
+      "subjunctive_ii": "schwiege",
+      "auxiliary": "haben",
+      "note": "诗中用现在式复数 \"schweigen\"。"
+    },
+    {
+      "infinitive": "warten",
+      "present_3sg": "wartet",
+      "preterite": "wartete",
+      "perfect": "hat gewartet",
+      "participle_ii": "gewartet",
+      "subjunctive_ii": "wartete",
+      "auxiliary": "haben",
+      "note": "诗中用命令式 \"Warte nur\"（第二人称单数祈使句）。"
+    },
+    {
+      "infinitive": "ruhen",
+      "present_3sg": "ruht",
+      "preterite": "ruhte",
+      "perfect": "hat geruht",
+      "participle_ii": "geruht",
+      "subjunctive_ii": "ruhte",
+      "auxiliary": "haben",
+      "note": "诗中用古典第二人称词尾 \"Ruhest du auch\"（现代作 ruhst du auch）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "古典诗歌第二人称词尾 -est",
+      "quote": "Spürest du … Ruhest du auch.",
+      "body": "18–19世纪德语诗歌中，第二人称单数动词常保留更古老、更完整的词尾 -est（而非现代口语简化后的 -st），如 spürest（今 spürst）、ruhest（今 ruhst）。这属于诗歌/庄重语域的标记，现代日常德语中已不使用。"
+    },
+    {
+      "title": "无动词的悬浮开篇句",
+      "quote": "Über allen Gipfeln / Ist Ruh,",
+      "body": "全诗第一、二行合起来才构成一个完整主谓句（Über allen Gipfeln ist Ruh，“群峰之上是静谧”），但断行方式让介词短语先独立出现，造成先见画面、后知判断的诗歌效果，是德语诗歌常见的跨行（Enjambement）手法。"
+    },
+    {
+      "title": "省音 / 添音以适配格律",
+      "quote": "Ist Ruh, … Warte nur, balde",
+      "body": "\"Ruh\" 省去 Ruhe 的词尾 -e（Apokope），\"balde\" 则在 bald 后添加 -e（Paragoge）；两种手法方向相反，但目的相同：让诗行的音节数与韵脚服务于朗读节奏，这在德语格律诗中十分常见。"
+    },
+    {
+      "title": "关于 \"Gipfeln\" 与 \"Wipfeln\" 的著名误传",
+      "quote": "Über allen Gipfeln … In allen Wipfeln",
+      "body": "由于两词发音、拼写相近，后世常有人将其顺序记错或颠倒（如贝托尔特·布莱希特在戏仿诗中故意颠倒二词制造陌生化效果）。学习本诗时建议特别记忆：第一行是 Gipfeln（山顶），第三行是 Wipfeln（树梢）。"
+    }
+  ],
+  "cultural_notes": "据信这首诗是歌德于1780年9月6日夜宿伊尔默瑙（Ilmenau）附近基克尔汉山（Kickelhahn）顶的一座猎场看守小屋时，用铅笔题写在小屋木墙上的。歌德在给友人夏洛特·冯·施泰因（Charlotte von Stein）的信中提及此事；1831年8月27日，即去世前约半年，歌德重访此地，据说在认出自己当年的笔迹后落泪。该诗直到1815年才由歌德本人正式编入诗集，题作《Ein Gleiches》（意为“又一首同类的诗”），紧接在他1776年所作的第一首《Wandrers Nachtlied》之后。\n\n此诗常被认为是德语抒情诗中最凝练、最接近“完美”的范例之一：全诗仅8个短行、不足30个词，却完成了从宏观自然（群峰）到微观细节（树梢、气息、鸟鸣）再到诗人自身命运（安息，隐约暗示死亡）的完整过渡。舒伯特（1823年，Op. 96 No. 3）等作曲家为其谱曲，20/21世纪的多部小说与影视作品（如电影《瓦尔基里》配乐）也引用了此诗。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），力求逐句直译并保留原诗的短行断句方式，便于学习者对照记忆。由于原诗极短、意象凝练，任何翻译都难以完全还原其音韵效果，本站译文以“达意、贴近词序”为首要目标。英文译文采用亨利·沃兹沃斯·朗费罗（Henry Wadsworth Longfellow，1807–1882）的译本，该译本创作于19世纪、译者已故超过70年，属公有领域文本，被广泛引用于英语世界的歌德诗歌介绍中。",
+  "image_prompt": {
+    "imagery": "群山之巅、林海树梢在暮色中归于寂静，无风、无鸟鸣",
+    "mood": "极致的宁静与庄严，带有一丝对死亡/安息的隐约冥想，不悲伤，是平和的",
+    "elements": "连绵山峰剪影、暮色或月光、静止的树冠、远处小木屋的轮廓（呼应基克尔汉山小屋典故）",
+    "era": "18世纪末德国图林根森林地区，不出现人物或仅以极远景剪影出现",
+    "taboos": "不得出现文字、水印；不得有现代建筑、电线塔等违和元素；避免过度阴森或恐怖的死亡意象，应保持“安宁”而非“悲凉”的基调",
+    "style": "19世纪浪漫主义风景油画风格（可参考卡斯帕·大卫·弗里德里希 Caspar David Friedrich 的构图气质），大面积留白与低饱和度暮色色调"
+  },
+  "image_path": "/images/wandrers-nachtlied-ii.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Ein Gleiches (1780)“",
+      "url": "https://www.deutschelyrik.de/ein-gleiches.html",
+      "note": "现代规范化拼写版本，与英文维基百科所引1815年 Cotta 初版内容一致，仅拼写/标点做了现代化处理。"
+    },
+    {
+      "name": "English Wikipedia — \"Wanderer's Nightsong\"",
+      "url": "https://en.wikipedia.org/wiki/Wanderer%27s_Nightsong",
+      "note": "引用1815年 Cotta 版原文（Ueber allen Gipfeln 等旧拼写），并说明写作背景、手稿异文（如更早手抄本作 \"Gefilden\"\"Vögel\" 而非 \"Gipfeln\"\"Vögelein\"）。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "Henry Wadsworth Longfellow 译本",
+      "note": "19世纪译本，译者卒于1882年，早已进入公有领域；文字转引自英文维基百科词条及多个公开学术/教育资源对该译本的引用。"
+    },
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途。"
+    }
+  ],
+  "verification_notes": "德文正文经两个独立来源核对：deutschelyrik.de（现代拼写）与英文维基百科所引1815年 Cotta 初版（旧拼写 \"Ueber\"、\"Ruh'\"、\"Spürest Du\" 大写等）。两者除拼写现代化、标点符号（如第7行末尾感叹号/逗号）外，词序与内容完全一致，未发现实质性异文。\n\n维基百科另指出更早期赫尔德与冯·格希豪森的手抄本中，第1行作 \"Über allen Gefilden\"、第6行作 \"Die Vögel\"（无 -lein 后缀），与1869年小屋墙面题字照片的\"Vögel\"部分吻合；但学界公认1815年歌德本人授权的定本（即本站采用的版本）为标准文本，故手稿异文仅作背景说明，不采入正文。\n\n本次未能独立访问 zeno.org 对应页面核对（工具超时/受限），建议后续补充第三来源核对一次。",
+  "checklist": [
+    {
+      "label": "确认作者：Johann Wolfgang von Goethe",
+      "done": true
+    },
+    {
+      "label": "确认标题：Wandrers Nachtlied（Ein Gleiches）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：English Wikipedia（引1815 Cotta初版）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（手稿异文 Gefilden/Vögel vs 定本）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（常见但版权状态多不明，未采用）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（公版英译可用，中译用本站译文）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

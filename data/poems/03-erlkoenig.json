@@ -1,0 +1,399 @@
+{
+  "id": "03",
+  "slug": "erlkoenig",
+  "author": "Johann Wolfgang von Goethe",
+  "author_zh": "约翰·沃尔夫冈·冯·歌德",
+  "title_de": "Erlkönig",
+  "title_zh": "魔王",
+  "year": "1782年（原为歌唱剧《Die Fischerin》插曲）",
+  "collection": "Balladen（叙事谣曲）",
+  "period": "狂飙突进 Sturm und Drang",
+  "difficulty": "B1–B2",
+  "tags": [
+    "叙事诗",
+    "超自然",
+    "死亡",
+    "父子",
+    "经典必读",
+    "民间传说"
+  ],
+  "german_text": [
+    [
+      "Wer reitet so spät durch Nacht und Wind?",
+      "Es ist der Vater mit seinem Kind;",
+      "er hat den Knaben wohl in dem Arm,",
+      "er fasst ihn sicher, er hält ihn warm."
+    ],
+    [
+      "Mein Sohn, was birgst du so bang dein Gesicht? –",
+      "Siehst Vater, du den Erlkönig nicht?",
+      "Den Erlenkönig mit Kron' und Schweif? –",
+      "Mein Sohn, es ist ein Nebelstreif."
+    ],
+    [
+      "„Du liebes Kind, komm, geh mit mir!",
+      "Gar schöne Spiele spiel' ich mit dir;",
+      "manch bunte Blumen sind an dem Strand,",
+      "meine Mutter hat manch gülden Gewand.“"
+    ],
+    [
+      "Mein Vater, mein Vater, und hörest du nicht,",
+      "was Erlenkönig mir leise verspricht? –",
+      "Sei ruhig, bleibe ruhig, mein Kind:",
+      "In dürren Blättern säuselt der Wind."
+    ],
+    [
+      "„Willst, feiner Knabe, du mit mir gehn?",
+      "Meine Töchter sollen dich warten schön;",
+      "meine Töchter führen den nächtlichen Reihn,",
+      "und wiegen und tanzen und singen dich ein.“"
+    ],
+    [
+      "Mein Vater, mein Vater und siehst du nicht dort",
+      "Erlkönigs Töchter am düstern Ort? –",
+      "Mein Sohn, mein Sohn, ich seh es genau:",
+      "Es scheinen die alten Weiden so grau."
+    ],
+    [
+      "„Ich liebe dich, mich reizt deine schöne Gestalt;",
+      "und bist du nicht willig, so brauch ich Gewalt.“",
+      "Mein Vater, mein Vater, jetzt fasst er mich an!",
+      "Erlkönig hat mir ein Leids getan! –"
+    ],
+    [
+      "Dem Vater grauset's, er reitet geschwind,",
+      "er hält in Armen das ächzende Kind,",
+      "erreicht den Hof mit Mühe und Not;",
+      "in seinen Armen das Kind war tot."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），叙事体直译，力求还原父子对话与魔王引诱之间的语气对比",
+    "text": [
+      [
+        "是谁在深夜与风中骑行？",
+        "是那位父亲带着他的孩子；",
+        "他把男孩紧紧搂在怀中，",
+        "他抱得稳，护得暖。"
+      ],
+      [
+        "“我儿，你为何惶恐地藏起脸庞？”——",
+        "“父亲，您没看见那魔王吗？",
+        "戴着王冠、拖着长袍的魔王？”——",
+        "“我儿，那只是一缕薄雾。”"
+      ],
+      [
+        "“可爱的孩子，来，跟我走！",
+        "我会陪你玩美妙的游戏；",
+        "岸边开着五彩缤纷的花，",
+        "我母亲还有许多金缕衣裳。”"
+      ],
+      [
+        "“父亲，父亲，难道您听不见，",
+        "魔王在低声向我许诺的话？”——",
+        "“安静，安静，我的孩子：",
+        "那是风在枯叶间沙沙作响。”"
+      ],
+      [
+        "“俊美的男孩，你愿意跟我走吗？",
+        "我的女儿们会好好照料你；",
+        "我的女儿们会在夜里领舞，",
+        "摇你、伴你起舞、唱你入眠。”"
+      ],
+      [
+        "“父亲，父亲，难道您没看见那边，",
+        "魔王的女儿们就在那阴暗之地？”——",
+        "“我儿，我儿，我看得清楚：",
+        "那是老柳树在灰暗中闪着微光。”"
+      ],
+      [
+        "“我爱你，你美丽的模样令我着迷；",
+        "你若不愿，我便要动用强力。”",
+        "“父亲，父亲，他正抓住我了！",
+        "魔王已经伤害了我！”——"
+      ],
+      [
+        "父亲惊恐万分，策马疾驰，",
+        "怀中抱着痛苦呻吟的孩子，",
+        "好不容易才赶到家中；",
+        "他怀里的孩子，已经死了。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Wer reitet so spät durch Nacht und Wind?",
+      "zh": "以疑问句开篇，制造悬念，是叙事谣曲（Ballade）的典型开场方式；durch Nacht und Wind 是介词短语作状语，无冠词的并列名词强调抽象、氛围化的“暗夜与风”。"
+    },
+    {
+      "de": "Siehst Vater, du den Erlkönig nicht?",
+      "zh": "呼语 Vater 插入主谓之间，是口语/诗歌中常见的插入语序；孩子与父亲的对话贯穿全诗，且不加引号区分——原文中只有魔王的话使用引号，暗示魔王的“话语”在文本层面被特殊标记，也许象征其虚实难辨的地位。"
+    },
+    {
+      "de": "Den Erlenkönig mit Kron' und Schweif? –",
+      "zh": "Kron' und Schweif（王冠与尾饰/长袍）是固定搭配式的意象并列，Kron' 为 Krone 的省音形式；破折号标记说话的中断或语气的悬置。"
+    },
+    {
+      "de": "„Du liebes Kind, komm, geh mit mir!",
+      "zh": "全诗唯一被引号标出的话语是魔王的引诱之词，三次诱惑（游戏、女儿、强力）层层递进，体现魔王话语的“甜蜜—亲密—威胁”变化。"
+    },
+    {
+      "de": "In dürren Blättern säuselt der Wind.",
+      "zh": "父亲每次都用自然现象（薄雾、风声、老柳树）来“合理化”解释孩子所见所闻，形成全诗“超自然 vs. 理性解释”的核心张力。"
+    },
+    {
+      "de": "und bist du nicht willig, so brauch ich Gewalt.“",
+      "zh": "这是全诗语气转折的关键句：魔王从温柔诱惑转为赤裸威胁，brauchen 在此为“需要、动用”之意（不同于现代口语中作助动词的 brauchen + zu）。"
+    },
+    {
+      "de": "Dem Vater grauset's, er reitet geschwind,",
+      "zh": "grausen 是非人称动词（unpersönliches Verb），固定结构为 es graust jmandem（第三格），诗中省略 es，倒装为 \"Dem Vater grauset's\"（= Es grauset dem Vater = 父亲感到恐惧）。"
+    },
+    {
+      "de": "in seinen Armen das Kind war tot.",
+      "zh": "全诗最后一行以极简的陈述句收尾，不加任何修饰或解释，与前面层层递进的悬念、对话形成强烈反差，制造震撼的戏剧效果。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "reiten, reitet, ritt, ist geritten",
+      "pos": "v.（强变化，移动动词，用 sein 作完成时助动词）",
+      "meaning": "骑马",
+      "note": "移动类动词（表示方向性位移）完成时用 sein，而非 haben。"
+    },
+    {
+      "term": "bergen, birgt, barg, geborgen",
+      "pos": "v.（强变化，元音变化 e→i）",
+      "meaning": "藏起、隐藏；救助",
+      "note": "诗中 \"was birgst du dein Gesicht\" 意为“你为何藏起你的脸”，支配第四格 dein Gesicht。"
+    },
+    {
+      "term": "der Erlkönig / Erlenkönig",
+      "pos": "n.（阳性专有名词）",
+      "meaning": "魔王、榿木王",
+      "note": "源自赫尔德对丹麦民谣的德译 \"Erlkönigs Tochter\"，据考证可能是对丹麦语 \"ellerkonge\"（精灵之王）的误译，本应为“精灵王”而非“榿木（Erle，一种树）之王”，但这一“美丽的误译”已成为德语文学的固定意象。"
+    },
+    {
+      "term": "der Nebelstreif(en)",
+      "pos": "n.（阳性复合名词）",
+      "meaning": "一缕薄雾",
+      "note": "由 Nebel（雾）+ Streifen（条纹）构成的复合词，诗歌中简化词尾为 Nebelstreif。"
+    },
+    {
+      "term": "säuseln",
+      "pos": "v.（弱变化）",
+      "meaning": "（风）沙沙作响、飒飒作响",
+      "note": "拟声词性质的动词，专门用于形容风吹树叶的轻柔声响。"
+    },
+    {
+      "term": "wiegen（在此义项为弱变化）",
+      "pos": "v.",
+      "meaning": "摇晃、摇（哄睡）",
+      "note": "注意与同形的强变化动词 wiegen（wiegt, wog, gewogen，“称重”）区分：此处“摇晃/哄睡”义为规则弱变化 wiegen, wiegte, gewiegt。"
+    },
+    {
+      "term": "die Gestalt, -en",
+      "pos": "n.（阴性）",
+      "meaning": "身形、体态、样貌",
+      "note": "文学用词，比 Aussehen（外表）更强调整体的、近乎神秘的形态感。"
+    },
+    {
+      "term": "die Gewalt, -en",
+      "pos": "n.（阴性）",
+      "meaning": "暴力、强力；权力",
+      "note": "brauchen + Gewalt：“动用暴力”；也是复合词 Elterngewalt（监护权）等的词根。"
+    },
+    {
+      "term": "grausen（es graust jemandem）",
+      "pos": "v.（非人称动词）",
+      "meaning": "感到恐惧、毛骨悚然",
+      "note": "固定非人称结构，逻辑主语用第三格：诗中 \"Dem Vater grauset's\" = Es grauset dem Vater（省略 es，dem Vater 前置）。"
+    },
+    {
+      "term": "mit Mühe und Not",
+      "pos": "固定搭配",
+      "meaning": "好不容易、费尽周折",
+      "note": "Mühe（辛劳）与 Not（困苦）并列构成的固定短语，现代德语中仍常用。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "reiten",
+      "present_3sg": "reitet",
+      "preterite": "ritt",
+      "perfect": "ist geritten",
+      "participle_ii": "geritten",
+      "subjunctive_ii": "ritte",
+      "auxiliary": "sein",
+      "note": "诗中出现现在式（reitet）与叙事中的隐含完成时用法背景。"
+    },
+    {
+      "infinitive": "bergen",
+      "present_3sg": "birgt",
+      "preterite": "barg",
+      "perfect": "hat geborgen",
+      "participle_ii": "geborgen",
+      "subjunctive_ii": "bärge",
+      "auxiliary": "haben",
+      "note": "诗中用第二人称现在式 \"birgst\"，注意 e→i 元音变化。"
+    },
+    {
+      "infinitive": "hören",
+      "present_3sg": "hört",
+      "preterite": "hörte",
+      "perfect": "hat gehört",
+      "participle_ii": "gehört",
+      "subjunctive_ii": "hörte",
+      "auxiliary": "haben",
+      "note": "诗中用古典第二人称词尾 \"hörest du\"（今 hörst du）。"
+    },
+    {
+      "infinitive": "sehen",
+      "present_3sg": "sieht",
+      "preterite": "sah",
+      "perfect": "hat gesehen",
+      "participle_ii": "gesehen",
+      "subjunctive_ii": "sähe",
+      "auxiliary": "haben",
+      "note": "诗中多次出现 \"siehst du\" \"ich seh\"（口语化省去 -e）等形式。"
+    },
+    {
+      "infinitive": "grausen（unpersönlich）",
+      "present_3sg": "graust",
+      "preterite": "grauste",
+      "perfect": "hat gegraust",
+      "participle_ii": "gegraust",
+      "subjunctive_ii": "grauste",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"grauset's\"（= grauset es）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "移动动词的完成时助动词 sein",
+      "quote": "Wer reitet so spät durch Nacht und Wind?",
+      "body": "reiten（骑马）属于表示位置移动的不及物动词，其完成时使用 sein 而非 haben（er ist geritten）。全诗虽以现在时叙述增强临场感，但了解这一助动词规则有助于日后正确使用完成时。"
+    },
+    {
+      "title": "非人称动词结构 es graust jemandem",
+      "quote": "Dem Vater grauset's, er reitet geschwind,",
+      "body": "grausen 是典型的非人称心理动词，固定搭配 es graust + Dativ（对某人而言感到恐惧）。诗中省略主语 es 并将其缩写附着在动词后（grauset's = grauset es），第三格宾语 dem Vater 前置至句首，是诗歌语序调整的例子。"
+    },
+    {
+      "title": "疑问句中的呼语插入",
+      "quote": "Siehst Vater, du den Erlkönig nicht?",
+      "body": "标准语序应为 \"Siehst du, Vater, den Erlkönig nicht?\"；诗中省略逗号并将呼语 Vater 直接插入动词与主语之间，是诗歌口语化、急促语气的体现，朗读时应在 Vater 前后有轻微停顿。"
+    },
+    {
+      "title": "情态动词 wollen / sollen 表引诱与许诺",
+      "quote": "Willst, feiner Knabe, du mit mir gehn? … Meine Töchter sollen dich warten schön;",
+      "body": "魔王用 willst du（你是否愿意，表询问意愿）引诱孩子，又用 sollen（本义“应当”，此处转为“将会、会负责”的许诺语气）描述女儿们的照料，两种情态动词的连用强化了魔王话语中“温柔的强迫感”。"
+    }
+  ],
+  "cultural_notes": "《魔王》取材于丹麦民谣传说，经赫尔德（Johann Gottfried Herder）译为德文《Erlkönigs Tochter》（收入《Stimmen der Völker in Liedern》，1778）后传入德语世界；一般认为 \"Erlkönig\" 是对丹麦语 \"ellerkonge\"（精灵之王）的误译（本应译作“精灵王”而非与榿木 Erle 相关的“榿木王”），但这一误译反而催生了德语文学史上最著名的超自然意象之一。\n\n歌德1782年将其写作为歌唱剧《Die Fischerin》中的插曲。舒伯特1815年为其谱写的同名艺术歌曲（D. 328，作品第1号）以钢琴伴奏模拟疾驰的马蹄声、并用不同音区区分叙述者、父亲、孩子、魔王四种声音，成为艺术歌曲史上的里程碑，据传是舒伯特17、18岁时的作品。\n\n全诗的核心张力在于“理性解释 vs. 超自然真实”：父亲始终用自然现象（雾、风、柳树）解释孩子的恐惧，但结局证明孩子的感知才是“真实”的——这种叙事结构常被视为浪漫主义文学中“表象与本质”命题的经典范例。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用叙事体直译，尽量保留原诗对话体的语气变化（父亲的安抚、孩子的惊恐、魔王的诱惑与威胁）。由于原诗押韵严谨（AABB 双行体），中译未强求押韵，以准确传达内容与语气为优先。已知存在钱春绮等译者的中文译本，因版权原因本站不转载全文。",
+  "image_prompt": {
+    "imagery": "深夜林间疾驰的骑马父子剪影，雾气中若隐若现的诡异王者身形",
+    "mood": "紧张、不安、逐渐逼近的恐惧感，但整体仍需保持古典绘画的克制与美感，不走血腥/惊悚路线",
+    "elements": "夜色森林、薄雾、快速奔跑的马匹剪影、怀抱孩子的父亲、远处半透明/ 若隐若现的魔王形象（不直接描绘恐怖面容）",
+    "era": "18世纪德国乡野，父亲应着骑马斗篷等朴素装束",
+    "taboos": "禁止出现血腥、恐怖惊悚风格画面；禁止清晰描绘魔王正面五官（应保持朦胧、若隐若现）；不得出现文字、水印、现代元素",
+    "style": "19世纪浪漫主义油画风格，色调以深蓝、墨绿与雾白为主，可参考同时期歌德叙事诗插画传统（如同期木刻/铜版画的氛围）"
+  },
+  "image_path": "/images/erlkoenig.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Erlkönig (1782)“",
+      "url": "https://www.deutschelyrik.de/erlkoenig.html",
+      "note": "现代规范化拼写版本（fasst、faßt→fasst 等），全文8节完整。"
+    },
+    {
+      "name": "English Wikipedia — \"Erlkönig\"",
+      "url": "https://en.wikipedia.org/wiki/Erlk%C3%B6nig",
+      "note": "引用较旧拼写版本（faßt、hält 等），逐行对照后与 deutschelyrik.de 版本内容、诗节、行数完全一致，仅拼写现代化程度不同（faßt/fasst、Weh's/grauset's 拼写细节），未发现实质性异文。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮等中文名家译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源逐节核对（deutschelyrik.de 与英文维基百科所引版本），8节32行内容、词序完全一致，仅存在正字法层面的新旧拼写差异（如 faßt/fasst、Weh's 的撇号使用等），不影响文本内容，判定为高可信度文本。\n\n未能成功访问 de.wikisource.org 与 zeno.org 对应页面进行第三方比对（工具访问受限/超时），建议后续有条件时补充核对一次，尤其是标点符号（引号、破折号的具体位置）的细节。",
+  "checklist": [
+    {
+      "label": "确认作者：Johann Wolfgang von Goethe",
+      "done": true
+    },
+    {
+      "label": "确认标题：Erlkönig",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：English Wikipedia",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（正字法层面，无实质异文）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其标点细节）",
+      "done": false
+    }
+  ]
+}

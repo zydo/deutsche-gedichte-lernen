@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Herbsttag · 秋日 — Rainer Maria Rilke | 德语诗歌学习画册</title>
+  <meta name="description" content="Herbsttag（秋日）— Rainer Maria Rilke。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="haelfte-des-lebens.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">生命的中途</span></a>
+<a class="poem-nav__link poem-nav__next" href="der-panther.html" rel="next"><span class="poem-nav__title">豹</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Herbsttag</h1>
+      <p class="poem-titleblock__author">Rainer Maria Rilke</p>
+      <p class="poem-titleblock__zh">秋日</p>
+      <p class="poem-titleblock__author-zh">赖内·马利亚·里尔克</p>
+      <div class="poem-titleblock__biblio">
+        <p>Das Buch der Bilder（形象之书）</p>
+        <p>象征主义 / 世纪末（Fin de Siècle）过渡至现代主义早期</p>
+        <p>1902年秋作于巴黎</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B1–B2</span>
+        <span class="tag ">秋天</span>
+        <span class="tag ">孤独</span>
+        <span class="tag ">祈祷体</span>
+        <span class="tag ">时间</span>
+        <span class="tag ">经典必读</span>
+      </div>
+          <figure class="image-slot image-slot--filled">
+      <img src="../images/herbsttag.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+    </figure>
+    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+      <header class="modal__head">
+        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      </header>
+      <div class="modal__body">
+        <div class="image-slot">
+      <dl>
+        <dt>意象</dt><dd>秋日田野中的日晷、渐长的阴影，果园里沉甸甸的果实，以及林荫道上一个孤独行走的身影</dd>
+        <dt>情绪</dt><dd>庄重、沉思，略带秋日特有的丰收后的疲惫与孤独感，非绝望，而是一种清醒的接受</dd>
+        <dt>画面元素</dt><dd>日晷与拉长的阴影、成熟的葡萄或果实、金黄色的林荫道与飘落的树叶、远处一个孤独行走的剪影（不露正面）</dd>
+        <dt>时代感</dt><dd>无需具体历史时代标识，可参考20世纪初欧洲乡村/公园秋景</dd>
+        <dt>推荐风格</dt><dd>19世纪末至20世纪初象征主义绘画风格（可参考同时期欧洲秋景油画传统），暖金色与深褐色调为主，光影对比强烈</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；避免过度戏剧化或悲情化人物姿态，孤独感应通过环境（空旷的林荫道、飘落的叶子）而非夸张的人物表情传达</dd>
+      </dl>
+          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+        </div>
+      </div>
+    </dialog>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Herr: es ist Zeit. Der Sommer war sehr groß.<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">主啊：是时候了。这个夏天曾如此浩大。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Leg deinen Schatten auf die Sonnenuhren,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">把你的影子投在日晷之上，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">und auf den Fluren laß die Winde los.</span></div>
+          <div class="pline__zh">让风在田野上尽情吹拂。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Befiehl den letzten Früchten, voll zu sein;<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">命令最后的果实饱满成熟；</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">gib ihnen noch zwei südlichere Tage,</span></div>
+          <div class="pline__zh">再给它们两天南方般的暖日，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">dränge sie zur Vollendung hin, und jage<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">催促它们走向完满，把</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">die letzte Süße in den schweren Wein.</span></div>
+          <div class="pline__zh">最后的甘甜压进浓酒之中。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">Wer jetzt kein Haus hat, baut sich keines mehr.<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">此刻没有房子的人，将不再建造。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Wer jetzt allein ist, wird es lange bleiben,</span></div>
+          <div class="pline__zh">此刻孤独的人，将长久孤独下去，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">wird wachen, lesen, lange Briefe schreiben</span></div>
+          <div class="pline__zh">会醒着、读书、写长长的信，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">und wird in den Alleen hin und her<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">会在林荫道上</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">unruhig wandern, wenn die Blätter treiben.<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">不安地往来游荡，当落叶纷飞之时。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗祈祷体的语气与三节由自然到人的推进结构</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Herr: es ist Zeit. Der Sommer war sehr groß.</p>
+        <p class="lnote__zh">全诗以呼告 "Herr"（主啊）开篇，采用祈祷/祈求的语式，直接称呼一个未明确身份的“主”（可理解为上帝，也可理解为诗人对时间、自然力量的拟人化祈求）；war（过去式）表明夏天已然过去，为全诗定下“时不我与”的基调。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Leg deinen Schatten auf die Sonnenuhren,</p>
+        <p class="lnote__zh">legen 的命令式 "Leg"（第二人称单数祈使句）；Schatten（阴影）与 Sonnenuhren（日晷，靠阳光计时的仪器）构成意象上的对立——日晷失去阳光便无法计时，象征夏天到秋天的季节/时间转折。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Befiehl den letzten Früchten, voll zu sein;</p>
+        <p class="lnote__zh">befehlen 支配第三格间接宾语（den letzten Früchten）+ zu 不定式短语（voll zu sein）：“命令最后的果实变得饱满”，延续第一节祈使/祈祷的语气，但内容从“让秋天到来”转为“让丰收完成”。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">dränge sie zur Vollendung hin, und jage</p>
+        <p class="lnote__zh">drängen … zu + Dativ：“催促……走向……”；jagen 本义“追赶、驱赶（猎物）”，此处转喻为“把（最后的甘甜）压榨进酒中”，动作感强烈，呼应酿酒过程中果实被压榨的意象。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">Wer jetzt kein Haus hat, baut sich keines mehr.</p>
+        <p class="lnote__zh">第三节从对自然的祈求转向对人类处境的冷峻断言，jetzt（此刻）强调一种“时机已过、无可挽回”的宿命感；baut sich keines（反身用法，为自己建造）中 keines 指代前文的 Haus。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">und wird in den Alleen hin und her</p>
+        <p class="lnote__zh">hin und her（来来回回）是固定副词短语，常用于描写漫无目的的往返走动；此句与下一行 "unruhig wandern" 共同构成全诗结尾处孤独者的核心意象。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">unruhig wandern, wenn die Blätter treiben.</p>
+        <p class="lnote__zh">treiben 在此为不及物用法，形容落叶“随风飘荡”，与孤独者“不安地游荡”（unruhig wandern）形成人与自然处境的呼应，是全诗收束处最动人的意象叠合。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Sonnenuhr, -en</span></div>
+        <span class="vocab-card__pos">n.（阴性复合词）</span>
+        <div class="vocab-card__meaning">日晷</div>
+        <div class="vocab-card__note">由 Sonne（太阳）+ Uhr（钟表）构成，靠日影计时的古老计时工具。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Flur, -en</span></div>
+        <span class="vocab-card__pos">n.（阴性，文学用词）</span>
+        <div class="vocab-card__meaning">田野、原野</div>
+        <div class="vocab-card__note">诗歌/文学语域词汇，日常口语更常用 das Feld。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">befehlen, befiehlt, befahl, befohlen</span></div>
+        <span class="vocab-card__pos">v.（强变化）</span>
+        <div class="vocab-card__meaning">命令</div>
+        <div class="vocab-card__note">支配第三格间接宾语（人/事物）+ zu 不定式或第四格直接宾语，诗中为 befehlen + Dat. + zu-Infinitiv 结构。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">drängen</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">催促、推挤</div>
+        <div class="vocab-card__note">常搭配介词 zu（催促……走向……）或 auf（催促……做……）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">jagen</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">追赶、猎捕；（转喻）急速驱使</div>
+        <div class="vocab-card__note">诗中转喻用法：把“最后的甘甜”像追猎般“驱赶/压榨”进酒中，赋予酿酒过程以动感和紧迫感。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Vollendung</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">完成、完满</div>
+        <div class="vocab-card__note">由动词 vollenden（完成）派生的名词化形式，比 das Ende（结束）更强调“达至圆满/完善状态”的过程性含义。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Allee, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性，源自法语）</span>
+        <div class="vocab-card__meaning">林荫道</div>
+        <div class="vocab-card__note">外来词，复数 Alleen；常见于描写公园、林间步道的文学场景。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">treiben, treibt, trieb, getrieben</span></div>
+        <span class="vocab-card__pos">v.（强变化）</span>
+        <div class="vocab-card__meaning">驱使、驱赶；（不及物）随波逐流、飘荡</div>
+        <div class="vocab-card__note">诗中为不及物用法，形容落叶被风吹得四处飘散；此动词及物用法（驱赶）与不及物用法（漂流）需根据语境区分。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">legen</td>
+          <td class="de">legt</td>
+          <td class="de">legte</td>
+          <td class="de">hat gelegt</td>
+          <td class="de">gelegt</td>
+          <td class="de">legte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用命令式 "Leg"（第二人称单数祈使句，省去词尾 -e）。</td></tr>
+        <tr>
+          <td class="de">befehlen</td>
+          <td class="de">befiehlt</td>
+          <td class="de">befahl</td>
+          <td class="de">hat befohlen</td>
+          <td class="de">befohlen</td>
+          <td class="de">befähle/beföhle</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用命令式 "Befiehl"。</td></tr>
+        <tr>
+          <td class="de">drängen</td>
+          <td class="de">drängt</td>
+          <td class="de">drängte</td>
+          <td class="de">hat gedrängt</td>
+          <td class="de">gedrängt</td>
+          <td class="de">drängte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用虚拟式一式/命令式并用形式 "dränge"（此处为祈使句延伸用法）。</td></tr>
+        <tr>
+          <td class="de">jagen</td>
+          <td class="de">jagt</td>
+          <td class="de">jagte</td>
+          <td class="de">hat gejagt</td>
+          <td class="de">gejagt</td>
+          <td class="de">jagte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用命令式并列形式 "jage"，与 dränge 并列，共享主语 du（隐含）。</td></tr>
+        <tr>
+          <td class="de">treiben</td>
+          <td class="de">treibt</td>
+          <td class="de">trieb</td>
+          <td class="de">hat/ist getrieben</td>
+          <td class="de">getrieben</td>
+          <td class="de">triebe</td>
+          <td>haben（及物）/ sein（不及物，表位移）</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中末行用现在式不及物用法 "die Blätter treiben"。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">祈祷体的祈使句串联</h3>
+        <p class="grammar-item__quote">Leg deinen Schatten … laß die Winde los. / Befiehl den letzten Früchten … dränge sie … und jage</p>
+        <div class="grammar-item__body">前两节几乎全部由第二人称单数命令式（Leg, laß, Befiehl, gib, dränge, jage）串联而成，模拟祈祷或吁请的语气，诗人以“命令者”的姿态吁请一个更高的力量（"Herr"）来完成季节的转换与果实的成熟，这种“以祈使句写祈祷”的手法是本诗最鲜明的语言特征。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">befehlen + Dativ + zu-Infinitiv</h3>
+        <p class="grammar-item__quote">Befiehl den letzten Früchten, voll zu sein;</p>
+        <div class="grammar-item__body">befehlen（命令）的典型支配结构为 befehlen + 第三格（命令的对象）+ zu 不定式（命令做的事），诗中 "den letzten Früchten"（第三格）是被命令的对象，"voll zu sein"（变得饱满）是命令的内容。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">第三节的时态与情态转变：从祈使到陈述</h3>
+        <p class="grammar-item__quote">Wer jetzt kein Haus hat, baut sich keines mehr. / Wer jetzt allein ist, wird es lange bleiben,</p>
+        <div class="grammar-item__body">第三节不再使用命令式，转为陈述句加 wird（werden 构成的将来时），语气从“吁请自然完成转变”转为对人类命运近乎宿命论式的冷静陈述，werden + Infinitiv 构成的将来时（wird … bleiben, wird wachen … wird … wandern）层层铺展，营造出孤独状态将无限延续的沉重感。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">重复的 Wer … 句式（首语重复/排比）</h3>
+        <p class="grammar-item__quote">Wer jetzt kein Haus hat, … / Wer jetzt allein ist, …</p>
+        <div class="grammar-item__body">两个以 Wer（谁、……的人）引导的条件式关系从句并列排比，是一种修辞上的首语重复（Anapher）手法，强化了“此刻”（jetzt）这一时间节点的决定性——错过此刻，便再无转圜余地。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《秋日》写于1902年秋，正值里尔克离开在柏林的妻子——雕塑家克拉拉·韦斯特霍夫（Clara Westhoff）——独自迁居巴黎，为撰写关于雕塑家罗丹（Auguste Rodin）的专著做准备的时期。这一传记背景常被用于解读诗中强烈的孤独感与漂泊感。诗歌收录于里尔克早期重要诗集《形象之书》（Das Buch der Bilder）。</p>
+<p>全诗结构精巧：三节的行数逐节递增（3行、4行、5行），韵式也随之扩展，这种“越写越长”的形式本身即被学者解读为对第三节中“孤独者在林荫道上不安游荡、似乎没有尽头”这一内容的形式呼应。诗歌以“主啊”（Herr）的祈祷口吻开篇，前两节吁求自然完成从夏到秋的过渡与果实的成熟，第三节视角陡然转向人类处境：凡是在这个时间点尚未“安家”或“不再孤身一人”的人，将不得不长久地承受孤独——不少论者认为，这里的“季节”同时也是人生阶段的隐喻（“人生之秋”）。</p>
+<p>此诗是里尔克传诵最广的作品之一，被多位现代作曲家谱写为艺术歌曲，也常被引用于讨论“存在的完满与匮乏”这一里尔克式主题的经典文本。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗祈祷体的命令式语气以及第三节从自然转向人类处境的关键转折。里尔克作品德文原文已于1996年（作者1926年逝世 + 70年保护期）进入公有领域，可放心使用；但目前存在的多个中文译本（如冯至、绿原、黄灿然等译者的版本）均由现代译者完成，版权仍在保护期内，本站不转载具体译本全文，仅在此说明存在这些广受认可的译本，供读者自行查阅。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Herbsttag (1902)“</span><a class="source-url" href="https://www.deutschelyrik.de/herbsttag.html" target="_blank" rel="noopener">https://www.deutschelyrik.de/herbsttag.html</a>
+        <span class="source-note">现代规范化拼写版本（gib、Früchten 后加逗号），全文三节十二行完整。</span>
+      </li>
+      <li>
+        <span class="source-name">German Wikipedia — "Herbsttag"</span><a class="source-url" href="https://de.wikipedia.org/wiki/Herbsttag" target="_blank" rel="noopener">https://de.wikipedia.org/wiki/Herbsttag</a>
+        <span class="source-note">独立引用全文，采用旧式拼写 "gieb"（今 gib）且第4行 "Befiehl den letzten Früchten voll zu sein" 无逗号；内容与词序与 deutschelyrik.de 版本完全一致，仅存在拼写现代化与标点的细微差异；并提供详细的格律分析（五步抑扬格、逐节递增的诗行数）与创作背景（1902年秋，里尔克赴巴黎撰写罗丹专著期间）。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在冯至、绿原、黄灿然等译者的中文译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容完全一致，仅存在正字法（gieb/gib）与标点（第4行逗号有无）的细微差异，不影响文本内容，判定为高可信度文本。Wikipedia 词条并提供了详实的创作背景（1902年秋，里尔克赴巴黎期间）与格律结构分析，与deutschelyrik.de 标注的"1902"年份一致。里尔克1926年逝世，德文原文已于1996年进入公有领域，版权状态明确。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Rainer Maria Rilke</li>
+        <li>确认标题：Herbsttag</li>
+        <li>德文原文主来源：deutschelyrik.de</li>
+        <li>德文原文辅助来源：German Wikipedia</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（gieb/gib 拼写、标点差异）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（德文原文公版，现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li>生成 AI 配图（已接入）</li>
+        <li>页面视觉检查</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

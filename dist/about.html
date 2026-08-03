@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>关于本站 / 校对说明 | 德语诗歌学习画册</title>
+  <meta name="description" content="关于本站的资料来源、校对原则、译文版权策略与配图说明。">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="index.html">诗歌总览</a>
+          <a href="about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <header class="poem-titleblock reveal">
+      <p class="poem-titleblock__eyebrow">Vorwort · 编者前言</p>
+      <h1 class="poem-titleblock__de" style="font-size: clamp(2rem,5vw,3rem);">关于本站 · 校对说明</h1>
+      <div class="poem-titleblock__ornament"><svg class="ornament" viewBox="0 0 120 10" width="120" height="10" aria-hidden="true">
+  <line x1="0" y1="5" x2="48" y2="5" stroke="currentColor" stroke-width="0.8"/>
+  <line x1="72" y1="5" x2="120" y2="5" stroke="currentColor" stroke-width="0.8"/>
+  <path d="M60 0.5 L64.5 5 L60 9.5 L55.5 5 Z" fill="currentColor"/>
+</svg></div>
+    </header>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">项目定位</span>
+        <span class="section__de">Profil</span>
+      </header>
+      <div class="prose"><p>本站是面向德语学习者与文学爱好者的诗歌学习资料库，目前收录 11 首德语经典诗歌（第一批）。每首诗提供德文原诗（含出处）、本站学习中译（AI 辅助）、逐行注释、重点词汇、动词变位、语法要点、文学背景与完整的校对记录，目标是成为“可信的文学学习资料”，而不是“看起来像真的 AI 内容”。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文的校对原则</span>
+        <span class="section__de">Korrekturprinzip</span>
+      </header>
+      <div class="prose"><p>每首诗的德文原文均来自公开、可核实的文本来源（如 deutschelyrik.de、textlog.de、Zeno.org、维基百科所引权威版本等），并至少用两个独立来源交叉核对诗节、行数、标点与新旧拼法差异。凡两来源之间存在异文（例如 Goethe《Heidenröslein》1789 年 Göschen 版与 1827 年 Ausgabe letzter Hand 版的代词/动词差异），均在该诗页面的“校对记录”中说明，不擅自取舍或改写。少数诗仅取得单一直接来源核对、尚待第二独立来源复核的，会在“校对记录”中明确标注“待进一步核实”。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">中文 / 英文译文策略</span>
+        <span class="section__de">Übersetzungsweise</span>
+      </header>
+      <div class="prose"><p>已出版的现代译本（如钱春绮、冯至、杨武能等译者的中译）大多仍在版权保护期内，本站不会未经授权大段复制其译文全文；页面中仅以文字提及这些译本的存在，供读者自行查阅，不作为可核实的书目引用。</p>
+<p>本站展示的中文译文为“本站学习译文（AI 辅助）”：在人工核对德文原意的基础上，由本站编写/AI 辅助生成，以贴近原文结构、便于学习者对照单词与语法为首要目标，不追求诗意的独立文学价值，页面中均以徽标明确标注。</p>
+<p>英文译文分两种情况：对于 Goethe、Heine 等作者的作品，如确认存在已进入公有领域的 19 世纪译本（如 Edgar Alfred Bowring 译 Goethe，1853），会标注为公版译本并说明出处；否则同样使用本站学习译文（AI 辅助），并明确标注。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">图片说明</span>
+        <span class="section__de">Bildnachweis</span>
+      </header>
+      <div class="prose"><p>当前部署环境未接入可用的 AI 图像生成模型，因此本批内容尚未生成配图。每首诗页面保留了完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容），供后续使用受信任的图像生成工具补充。生成后的插图应在图下统一标注“图片由 AI 生成”，并需人工检查确认无文字、水印、肢体错误或明显违和的现代元素后方可上线。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">局限性与后续工作</span>
+        <span class="section__de">Grenzen</span>
+      </header>
+      <div class="prose"><p>本项目为第一批内容（11 首），后续会按照 README 中“如何添加一首新诗”的流程持续扩充。所有标注为“待核实”的信息，欢迎读者对照来源自行验证；如发现错误，请以 README 中的方式反馈或直接修改对应的诗歌 JSON 数据文件。</p></div>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

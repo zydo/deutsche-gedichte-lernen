@@ -1,0 +1,288 @@
+{
+  "id": "06",
+  "slug": "du-bist-wie-eine-blume",
+  "author": "Heinrich Heine",
+  "author_zh": "海因里希·海涅",
+  "title_de": "Du bist wie eine Blume",
+  "title_zh": "你像一朵花",
+  "year": "1823年作，1827年收入《Buch der Lieder》",
+  "collection": "Buch der Lieder · Die Heimkehr，第XLVII首",
+  "period": "浪漫主义 Romantik（晚期）",
+  "difficulty": "A1–A2",
+  "tags": [
+    "爱情",
+    "纯真",
+    "祝愿",
+    "极短诗",
+    "入门必读"
+  ],
+  "german_text": [
+    [
+      "Du bist wie eine Blume,",
+      "So hold und schön und rein;",
+      "Ich schau' dich an, und Wehmut",
+      "Schleicht mir in's Herz hinein."
+    ],
+    [
+      "Mir ist, als ob ich die Hände",
+      "Auf's Haupt dir legen sollt',",
+      "Betend, daß Gott dich erhalte",
+      "So rein und schön und hold."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗首尾呼应的形容词结构",
+    "text": [
+      [
+        "你像一朵花，",
+        "如此可爱、美丽而纯洁；",
+        "我望着你，一阵忧伤",
+        "悄悄潜入我的心里。"
+      ],
+      [
+        "我仿佛觉得，我应当",
+        "把双手按在你的头上，",
+        "祈祷上帝保佑你，",
+        "永远这样纯洁、美丽、可爱。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Du bist wie eine Blume,",
+      "zh": "以明喻（wie，如同）开篇，是德语诗歌中最简单直接的修辞手法之一，适合初学者理解比喻句型 \"jemand/etwas ist wie …\"。"
+    },
+    {
+      "de": "So hold und schön und rein;",
+      "zh": "hold（可爱的、亲切的）是较为古雅的形容词，现代口语已罕用，常见于诗歌与童话语域，近义词有 lieblich、anmutig。"
+    },
+    {
+      "de": "Ich schau' dich an, und Wehmut",
+      "zh": "anschauen（注视）为可分动词，诗中 \"schau' … an\" 因诗行断句被拆开；schau' 是 schaue 的省音形式。"
+    },
+    {
+      "de": "Schleicht mir in's Herz hinein.",
+      "zh": "schleichen（悄悄潜入、蹑手蹑脚地走）本义描写人或动物的隐秘移动，此处拟物化用于描写情绪（Wehmut，一种淡淡的忧伤）如何不知不觉地涌上心头；in's Herz hinein 强调“向内、深入”的方向感。"
+    },
+    {
+      "de": "Mir ist, als ob ich die Hände",
+      "zh": "固定句型 \"Mir ist, als ob …\"（我感觉仿佛……）后接虚拟式二式（Konjunktiv II），是表达主观感受、假设性想法的常见德语句式。"
+    },
+    {
+      "de": "Auf's Haupt dir legen sollt',",
+      "zh": "sollt' 是 sollte 的省音形式（虚拟式二式，表委婉的“应当”）；Haupt 是 Kopf（头）的雅语/诗歌用词。"
+    },
+    {
+      "de": "Betend, daß Gott dich erhalte",
+      "zh": "betend 是现在分词作伴随状语（“一边祈祷”）；erhalte 是虚拟式一式（Konjunktiv I），用于表达祈愿内容，是德语中表达“愿……”的经典语法结构。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "hold",
+      "pos": "adj.（古雅用词）",
+      "meaning": "可爱的、令人喜爱的",
+      "note": "现代德语中已较少独立使用，常见于诗歌、童话或固定搭配（如 die holde Braut）。"
+    },
+    {
+      "term": "rein",
+      "pos": "adj.",
+      "meaning": "纯洁的、干净的",
+      "note": "此处形容人的品格/气质纯洁无瑕，与物理意义上的“干净”（sauber）用法不同。"
+    },
+    {
+      "term": "die Wehmut",
+      "pos": "n.（阴性，不可数）",
+      "meaning": "淡淡的忧伤、伤感",
+      "note": "比 Trauer（悲伤）更轻、更带诗意，常与美好事物易逝的感慨相关联。"
+    },
+    {
+      "term": "schleichen, schleicht, schlich, ist geschlichen",
+      "pos": "v.（强变化，移动动词，sein 作助动词）",
+      "meaning": "潜行、悄悄移动",
+      "note": "诗中拟物化用于抽象情绪 Wehmut 的“潜入”。"
+    },
+    {
+      "term": "das Haupt, Häupter",
+      "pos": "n.（中性，雅语）",
+      "meaning": "头、头颅",
+      "note": "日常口语用 der Kopf；Haupt 多见于诗歌、成语（如 Oberhaupt“首领”）及固定搭配。"
+    },
+    {
+      "term": "erhalten, erhält, erhielt, erhalten",
+      "pos": "v.（强变化）",
+      "meaning": "保持、使……维持（某状态）",
+      "note": "诗中为虚拟式一式 \"erhalte\"，表祈愿：“愿上帝使你保持……”。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "anschauen",
+      "present_3sg": "schaut an",
+      "preterite": "schaute an",
+      "perfect": "hat angeschaut",
+      "participle_ii": "angeschaut",
+      "subjunctive_ii": "schaute an",
+      "auxiliary": "haben",
+      "note": "可分动词，诗中为 \"schau' dich an\"（第一人称现在式，省音）。"
+    },
+    {
+      "infinitive": "schleichen",
+      "present_3sg": "schleicht",
+      "preterite": "schlich",
+      "perfect": "ist geschlichen",
+      "participle_ii": "geschlichen",
+      "subjunctive_ii": "schliche",
+      "auxiliary": "sein",
+      "note": "诗中用现在式 \"Schleicht\"。"
+    },
+    {
+      "infinitive": "sollen",
+      "present_3sg": "soll",
+      "preterite": "sollte",
+      "perfect": "hat gesollt",
+      "participle_ii": "gesollt",
+      "subjunctive_ii": "sollte",
+      "auxiliary": "haben",
+      "note": "诗中用虚拟式二式 \"sollt'\"（= sollte，省音），表委婉的应当/仿佛该做之事。"
+    },
+    {
+      "infinitive": "erhalten",
+      "present_3sg": "erhält",
+      "preterite": "erhielt",
+      "perfect": "hat erhalten",
+      "participle_ii": "erhalten",
+      "subjunctive_ii": "erhielte",
+      "auxiliary": "haben",
+      "note": "诗中用虚拟式一式 \"erhalte\"（用于间接引语/祈愿句，区别于虚拟式二式 erhielte）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "Mir ist, als ob + Konjunktiv II",
+      "quote": "Mir ist, als ob ich die Hände / Auf's Haupt dir legen sollt',",
+      "body": "\"Mir ist, als ob …\"（我感觉仿佛……）是表达主观、非真实感受的常见句型，从句中动词需用虚拟式二式（这里的 sollt' 即 sollte 的省音形式），表示一种假设性的冲动，而非真实发生的动作。"
+    },
+    {
+      "title": "虚拟式一式表祈愿：daß Gott … erhalte",
+      "quote": "Betend, daß Gott dich erhalte",
+      "body": "erhalte 是动词 erhalten 的虚拟式一式（Konjunktiv I）第三人称单数形式，用于宗教祈祷、祝愿等表达“愿……”的语境中，是德语中虚拟式一式除间接引语外的另一典型用法。"
+    },
+    {
+      "title": "可分动词在诗行中被拆分",
+      "quote": "Ich schau' dich an, und Wehmut / Schleicht mir in's Herz hinein.",
+      "body": "anschauen 是可分动词，诗行断句恰好把前缀 an 留到下一行开头前的位置（本例中 an 紧跟在 dich 后但因换行造成视觉上的延迟），提醒学习者可分动词的前缀在从句/陈述句中位置固定在句尾，朗读时需连贯处理。"
+    },
+    {
+      "title": "首尾呼应的形容词链",
+      "quote": "So hold und schön und rein; … So rein und schön und hold.",
+      "body": "第一节以 hold – schön – rein 的顺序出现，第二节结尾以 rein – schön – hold 的倒序再次出现，形成回文式的呼应结构，是全诗形式上最精巧之处，翻译时建议保留这三个形容词的呼应关系。"
+    }
+  ],
+  "cultural_notes": "这首诗是海涅《归乡集》（Die Heimkehr）中最广为传诵的短诗之一，以极简的语言表达一种混合着爱慕、忧伤与近乎宗教性祝愿的复杂情感：诗人凝视所爱之人的纯洁美好，涌起的不是单纯的喜悦，而是一种“Wehmut”（对美好易逝的淡淡感伤），并转而以近乎祈祷的姿态祝愿对方永远保有这份纯真。\n\n这种“美即脆弱、故而心生忧伤”的情感模式，是德国浪漫主义诗歌的典型母题之一。此诗后被多位作曲家谱曲，其中以罗伯特·舒曼（Robert Schumann）与安东·布鲁克纳（Anton Bruckner，1861年，WAB 64）的版本最为知名，是德语艺术歌曲教学中常见的入门曲目。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，并尽量保留原诗首尾呼应的三个形容词（hold, schön, rein）顺序变化这一形式特点。已知海涅这首诗有多个中文译本流传，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一朵盛开的白色或浅色花朵特写，或一位少女侧影与花朵并置的意象",
+    "mood": "温柔、纯净，夹杂一丝对美好易逝的淡淡忧伤",
+    "elements": "单朵纯洁色调的花（如白玫瑰、百合），柔和的自然光线，避免直接描绘具体人物面容以保持诗意的普遍性",
+    "era": "无需具体历史时代标识，可采用静物/植物绘本式构图",
+    "taboos": "不得性化或过度浪漫化人物形象；不得出现文字、水印；避免过于甜腻、廉价贺卡风格的处理",
+    "style": "19世纪浪漫主义静物油画或植物学绘本插画风格，柔和光影，色调清雅"
+  },
+  "image_path": "/images/du-bist-wie-eine-blume.png",
+  "german_sources": [
+    {
+      "name": "textlog.de — Heinrich Heine, Buch der Lieder, Die Heimkehr, „Du bist wie eine Blume“ (XLVII)",
+      "url": "https://www.textlog.de/heine/gedichte/du-bist-wie-eine-blume",
+      "note": "确认为《Die Heimkehr》组诗第XLVII首。"
+    },
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Du bist wie eine Blume (1823)“",
+      "url": "https://www.deutschelyrik.de/du-bist-wie-eine-blume.html",
+      "note": "与 textlog.de 版本内容完全一致，仅个别省音撇号写法（schau'/schau、Auf's/Aufs、sollt'/sollt）存在细微差异，属排版/正字法差异。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（textlog.de 与 deutschelyrik.de）交叉核对，两节八行内容完全一致，仅存在省音撇号使用习惯的细微差异（如是否保留 '），不影响文本内容与词序，可信度很高。",
+  "checklist": [
+    {
+      "label": "确认作者：Heinrich Heine",
+      "done": true
+    },
+    {
+      "label": "确认标题：Du bist wie eine Blume",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：textlog.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（省音撇号差异）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

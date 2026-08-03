@@ -1,0 +1,322 @@
+{
+  "id": "11",
+  "slug": "der-panther",
+  "author": "Rainer Maria Rilke",
+  "author_zh": "赖内·马利亚·里尔克",
+  "title_de": "Der Panther",
+  "title_zh": "豹",
+  "year": "1902–1903年间作于巴黎，1903年9月首次发表",
+  "collection": "Neue Gedichte（新诗集，1907）· 副标题 „Im Jardin des Plantes, Paris“",
+  "period": "象征主义 / 事物诗（Dinggedicht）",
+  "difficulty": "B1–B2",
+  "tags": [
+    "动物",
+    "囚禁",
+    "事物诗",
+    "存在主义",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Sein Blick ist vom Vorübergehn der Stäbe",
+      "so müd geworden, daß er nichts mehr hält.",
+      "Ihm ist, als ob es tausend Stäbe gäbe",
+      "und hinter tausend Stäben keine Welt."
+    ],
+    [
+      "Der weiche Gang geschmeidig starker Schritte,",
+      "der sich im allerkleinsten Kreise dreht,",
+      "ist wie ein Tanz von Kraft um eine Mitte,",
+      "in der betäubt ein großer Wille steht."
+    ],
+    [
+      "Nur manchmal schiebt der Vorhang der Pupille",
+      "sich lautlos auf –. Dann geht ein Bild hinein,",
+      "geht durch der Glieder angespannte Stille –",
+      "und hört im Herzen auf zu sein."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗三节由外部观察逐渐深入内在的结构",
+    "text": [
+      [
+        "它的目光，被那些不断掠过的栏杆",
+        "拖得如此疲惫，以至于什么也不再留存。",
+        "对它而言，仿佛有一千根栏杆存在，",
+        "而一千根栏杆之后，再没有世界。"
+      ],
+      [
+        "那强壮而柔韧的步伐，轻软地",
+        "在极小的圆圈中不断兜转，",
+        "仿佛一场围绕着中心的力之舞，",
+        "在那中心，一个伟大的意志正麻痹地伫立。"
+      ],
+      [
+        "只是偶尔，瞳孔的帘幕",
+        "会无声地拉开——于是一个影像便进入，",
+        "穿过四肢紧绷的寂静——",
+        "到达心中，便不复存在。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Sein Blick ist vom Vorübergehn der Stäbe",
+      "zh": "Vorübergehn 是名词化的不定式（das Vorübergehen 的省音形式），意为“掠过、经过”这一动作本身；von + 第三格 der Stäbe 表原因（“被栏杆的不断掠过……”）。"
+    },
+    {
+      "de": "so müd geworden, daß er nichts mehr hält.",
+      "zh": "so … daß …（如此……以至于……）是德语中经典的结果状语从句结构；hält 在此并非“握住”，而是“留存、抓住（视线的焦点）”之意，形容目光已无法聚焦于任何具体事物。"
+    },
+    {
+      "de": "Ihm ist, als ob es tausend Stäbe gäbe",
+      "zh": "\"Ihm ist, als ob …\" 句型与《你像一朵花》中的 \"Mir ist, als ob …\" 相同，表主观感受的比拟，从句用虚拟式二式（gäbe，geben 的虚拟式二式）。"
+    },
+    {
+      "de": "der sich im allerkleinsten Kreise dreht,",
+      "zh": "allerkleinst 是形容词最高级 kleinst（最小的）再加前缀 aller-（强调级，“所有之中最……”）构成的“最高级的最高级”，德语中常见的加强修辞手法。"
+    },
+    {
+      "de": "in der betäubt ein großer Wille steht.",
+      "zh": "betäubt（麻痹的、被麻醉的，动词 betäuben 的过去分词作状语）修饰 steht 的方式：“意志”被麻痹地伫立在圆圈的中心，暗示豹强大的生命意志因囚禁而陷入停滞、无法施展。"
+    },
+    {
+      "de": "Nur manchmal schiebt der Vorhang der Pupille",
+      "zh": "der Vorhang der Pupille（瞳孔的帘幕）是全诗最著名的隐喻，将瞳孔的张合比作舞台幕布的拉开，暗示豹与外部世界之间如同隔着一层“表演/观看”的屏障。"
+    },
+    {
+      "de": "und hört im Herzen auf zu sein.",
+      "zh": "aufhören + zu + Infinitiv（停止做……）：\"hört … auf zu sein\" 意为“不再存在”；全诗以这一近乎虚无主义的短句收尾——外界影像进入豹的身体后，最终在“心”中归于虚无，无法真正抵达或留存。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Stab, Stäbe",
+      "pos": "n.（阳性）",
+      "meaning": "栏杆、条棍",
+      "note": "诗中特指笼子的铁栏杆，复数 Stäbe。"
+    },
+    {
+      "term": "müde（müd，诗歌省音）",
+      "pos": "adj.",
+      "meaning": "疲惫的",
+      "note": "诗中省去词尾 -e 以配合音节。"
+    },
+    {
+      "term": "geschmeidig",
+      "pos": "adj.",
+      "meaning": "柔韧的、灵活的",
+      "note": "常用于形容动物或人的肢体动作流畅有力。"
+    },
+    {
+      "term": "betäuben",
+      "pos": "v.（弱变化）",
+      "meaning": "使麻醉、使麻痹",
+      "note": "诗中用过去分词 betäubt 作状语，描写“意志”被囚禁生活麻痹的状态。"
+    },
+    {
+      "term": "der Vorhang, Vorhänge",
+      "pos": "n.（阳性）",
+      "meaning": "帷幕、窗帘",
+      "note": "诗中喻指瞳孔的开合，是全诗的核心隐喻。"
+    },
+    {
+      "term": "die Pupille, -n",
+      "pos": "n.（阴性）",
+      "meaning": "瞳孔",
+      "note": "生理学词汇，诗歌中较少见，此处因隐喻需要而入诗。"
+    },
+    {
+      "term": "das Glied, -er",
+      "pos": "n.（中性）",
+      "meaning": "肢体、关节",
+      "note": "复数 Glieder 泛指四肢/躯体各部分。"
+    },
+    {
+      "term": "aufhören + zu + Infinitiv",
+      "pos": "固定搭配（可分动词 + 不定式结构）",
+      "meaning": "停止做……",
+      "note": "diesem aufhören 为可分动词，诗中为 \"hört … auf zu sein\"（前缀 auf 置于句尾）。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "halten",
+      "present_3sg": "hält",
+      "preterite": "hielt",
+      "perfect": "hat gehalten",
+      "participle_ii": "gehalten",
+      "subjunctive_ii": "hielte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"hält\"，意为“留存、抓住（焦点）”。"
+    },
+    {
+      "infinitive": "geben（es gibt 句型）",
+      "present_3sg": "gibt",
+      "preterite": "gab",
+      "perfect": "hat gegeben",
+      "participle_ii": "gegeben",
+      "subjunctive_ii": "gäbe",
+      "auxiliary": "haben",
+      "note": "诗中用虚拟式二式 \"es … gäbe\"（als ob 从句）。"
+    },
+    {
+      "infinitive": "sich drehen",
+      "present_3sg": "dreht sich",
+      "preterite": "drehte sich",
+      "perfect": "hat sich gedreht",
+      "participle_ii": "gedreht",
+      "subjunctive_ii": "drehte sich",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"sich … dreht\"（反身动词，反身代词 sich 位于从句内部）。"
+    },
+    {
+      "infinitive": "schieben",
+      "present_3sg": "schiebt",
+      "preterite": "schob",
+      "perfect": "hat geschoben",
+      "participle_ii": "geschoben",
+      "subjunctive_ii": "schöbe",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"schiebt … sich … auf\"（可分动词 aufschieben 在此为反身及物：“（帘幕）自行拉开”）。"
+    },
+    {
+      "infinitive": "aufhören",
+      "present_3sg": "hört auf",
+      "preterite": "hörte auf",
+      "perfect": "hat aufgehört",
+      "participle_ii": "aufgehört",
+      "subjunctive_ii": "hörte auf",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"hört … auf zu sein\"，可分动词，前缀置于句末。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "Ihm ist, als ob + Konjunktiv II",
+      "quote": "Ihm ist, als ob es tausend Stäbe gäbe / und hinter tausend Stäben keine Welt.",
+      "body": "与《你像一朵花》中的 \"Mir ist, als ob …\" 结构相同，表达主观、假设性的感受，从句动词用虚拟式二式（gäbe）。此句型是德语中表达“仿佛、好像”这一主观心理状态的固定模式，值得反复操练。"
+    },
+    {
+      "title": "过去分词作方式状语",
+      "quote": "so müd geworden, daß er nichts mehr hält. … in der betäubt ein großer Wille steht.",
+      "body": "betäubt（被麻痹地）是过去分词直接作状语修饰动词 steht 的方式，说明“意志”是以“被麻痹”的状态伫立着；这种“过去分词+动词”的紧凑结构在德语诗歌与书面语中很常见，比用从句更凝练。"
+    },
+    {
+      "title": "可分动词在诗行中的拆分与破折号的运用",
+      "quote": "Nur manchmal schiebt der Vorhang der Pupille / sich lautlos auf –.",
+      "body": "可分动词 aufschieben（推开/拉开）的前缀 auf 因诗行断句被延后至下一行行首，紧跟破折号与句号（auf –.），制造出动作“戛然而止”的视觉与节奏效果，恰好模拟瞳孔骤然开合的瞬间感。"
+    },
+    {
+      "title": "aufhören zu + Infinitiv 表“停止/不再”",
+      "quote": "und hört im Herzen auf zu sein.",
+      "body": "aufhören zu + 不定式（停止做某事）是德语中表达动作终止的常见结构，诗末以此收束：外界的“影像”（Bild）穿越豹紧绷的身体、最终抵达“心”，却在那里\"停止存在\"——用最基础的语法结构承载了全诗最沉重的存在主义式结论。"
+    }
+  ],
+  "cultural_notes": "《豹》副标题“巴黎植物园”（Im Jardin des Plantes, Paris）明确指出诗歌观察对象来自巴黎植物园附设的动物园——该园当时展出包括一只被囚于笼中的黑豹，很可能正是诗中反复兜圈踱步（一种圈养动物常见的“刻板行为” stereotypisches Verhalten）行为的直接观察来源。里尔克在1902年写给妻子克拉拉·韦斯特霍夫的信中也提到雕塑家罗丹（Auguste Rodin）工作室里一件豹的石膏模型对他的启发。\n\n这首诗被公认为里尔克“事物诗”（Dinggedicht）风格的开山之作与最著名代表：诗人尝试像罗丹雕塑一件“物”那样，用语言精确“雕刻”出一只动物的外在形态（目光、步态、瞳孔）及其被囚禁后逐渐丧失与外部世界联系的内在状态，而非直接抒发诗人自己的情感。全诗1903年9月首次发表于布拉格的月刊《Deutsche Arbeit》，后作为里尔克最早期的作品收入1907年出版的重要诗集《新诗集》（Neue Gedichte）。\n\n此诗在流行文化中也屡被引用，例如电影《无语问苍天》（Awakenings，改编自神经学家奥利弗·萨克斯的同名著作）中，一位患者用这首诗描述自己被禁锢的生命状态；伍迪·艾伦电影《另一个女人》（1988）中也曾引用此诗作为主角内心世界的隐喻。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗三节从“目光的疲惫”到“步态的循环”再到“瞳孔骤开、影像消逝于心”的递进结构，以及诗中几处关键隐喻（栏杆、帘幕、力之舞）的意象完整性。里尔克作品德文原文已于1996年进入公有领域，可放心使用；但目前存在的中文译本（如冯至、绿原、黄灿然等译者的版本）均由现代译者完成，版权仍在保护期内，本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "笼中踱步的黑豹，目光疲惫、步伐在极小的圆圈中循环往复，铁栏杆的重复线条贯穿画面",
+    "mood": "压抑、疲惫却仍蕴藏着未熄灭的野性与力量感，克制而非煽情",
+    "elements": "密集排列的铁栏杆、豹柔韧有力的躯体轮廓、微微睁大又迷离的双眼特写，可参考19世纪末巴黎植物园动物园的历史氛围",
+    "era": "1900年代初巴黎植物园动物园场景，避免任何现代化的动物园围栏/标识设计",
+    "taboos": "不得出现文字、水印；不得表现虐待动物的血腥或过度悲惨的画面，应保持古典绘画式的克制与庄重；不宜将豹画得过于卡通化",
+    "style": "19世纪末至20世纪初学院派动物绘画或象征主义绘画风格（可参考同时期动物题材油画传统），低饱和度、暗色调背景中透出豹眼的一点光亮"
+  },
+  "image_path": "/images/der-panther.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Der Panther (1903)“",
+      "url": "https://www.deutschelyrik.de/der-panther.html",
+      "note": "全文三节十二行完整，含副标题 „Im Jardin des Plantes, Paris“。"
+    },
+    {
+      "name": "German Wikipedia — \"Der Panther\"",
+      "url": "https://de.wikipedia.org/wiki/Der_Panther",
+      "note": "独立引用全文，与 deutschelyrik.de 版本逐字一致；并提供详实的创作背景（1902–1903年间，巴黎植物园观察 + 罗丹工作室石膏模型的双重启发）、1903年9月首次发表于《Deutsche Arbeit》月刊、后收入1907年《新诗集》的出版史信息。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在冯至、绿原、黄灿然等译者的中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容（含标点、破折号位置）完全一致，未发现任何异文，可信度很高。Wikipedia 词条并提供了详实的创作背景与出版史，与 deutschelyrik.de 标注的\"1903\"年份及副标题吻合。里尔克1926年逝世，德文原文已于1996年进入公有领域，版权状态明确。",
+  "checklist": [
+    {
+      "label": "确认作者：Rainer Maria Rilke",
+      "done": true
+    },
+    {
+      "label": "确认标题：Der Panther",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：German Wikipedia",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（未发现异文）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（德文原文公版，现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

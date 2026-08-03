@@ -1,0 +1,290 @@
+{
+  "id": "05",
+  "slug": "ein-fichtenbaum-steht-einsam",
+  "author": "Heinrich Heine",
+  "author_zh": "海因里希·海涅",
+  "title_de": "Ein Fichtenbaum steht einsam",
+  "title_zh": "一株松树孤独地立着",
+  "year": "约1822年春作，1823年首次发表，1827年收入《Buch der Lieder》",
+  "collection": "Buch der Lieder · Lyrisches Intermezzo，第XXXIII首",
+  "period": "浪漫主义 Romantik（晚期）",
+  "difficulty": "A2",
+  "tags": [
+    "孤独",
+    "自然",
+    "梦境",
+    "象征",
+    "极短诗"
+  ],
+  "german_text": [
+    [
+      "Ein Fichtenbaum steht einsam",
+      "Im Norden auf kahler Höh'.",
+      "Ihn schläfert; mit weißer Decke",
+      "Umhüllen ihn Eis und Schnee."
+    ],
+    [
+      "Er träumt von einer Palme,",
+      "Die, fern im Morgenland,",
+      "Einsam und schweigend trauert",
+      "Auf brennender Felsenwand."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗两节的对称结构",
+    "text": [
+      [
+        "一株松树孤独地立着",
+        "在北方光秃秃的高处。",
+        "它昏昏欲睡；白色的被子——",
+        "冰与雪——将它包裹。"
+      ],
+      [
+        "它梦见一株棕榈，",
+        "在遥远的东方，",
+        "孤独而沉默地忧伤，",
+        "立在灼热的岩壁上。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Ein Fichtenbaum steht einsam",
+      "zh": "Fichtenbaum（松/云杉树）在德语中为阳性名词（der Baum），而下文的 Palme（棕榈）为阴性名词（die Palme）——两棵树的语法性别对立，被许多学者解读为暗示一段无法结合的爱恋关系（阳性的“他”与阴性的“她”）。"
+    },
+    {
+      "de": "Im Norden auf kahler Höh'.",
+      "zh": "kahl（光秃秃的）修饰 Höh'（Höhe 的省音形式，高处），描绘北方荒凉、缺乏植被的严酷环境。"
+    },
+    {
+      "de": "Ihn schläfert;",
+      "zh": "schläfern 是非人称动词，固定结构 es schläfert jemanden（某人感到困倦），诗中省略 es，Ihn（第四格）前置：Ihn schläfert = Es schläfert ihn（他/它感到困倦）。"
+    },
+    {
+      "de": "Umhüllen ihn Eis und Schnee.",
+      "zh": "宾语 ihn 前置于动词与主语之前（正常语序：Eis und Schnee umhüllen ihn），是诗歌倒装，强调“包裹”这一动作及其承受者。"
+    },
+    {
+      "de": "Er träumt von einer Palme,",
+      "zh": "träumen von + Dativ：“梦见……”，固定搭配需用介词 von 加第三格，不能直接接第四格宾语。"
+    },
+    {
+      "de": "Auf brennender Felsenwand.",
+      "zh": "brennend（燃烧着的，现在分词作形容词）在此并非真的“着火”，而是形容烈日炙烤下滚烫的岩壁，与松树所在的冰雪世界形成强烈的冷热对比。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Fichtenbaum / die Fichte, -n",
+      "pos": "n.（阳性/阴性，诗中作阳性 Baum 复合词处理）",
+      "meaning": "云杉、松树",
+      "note": "诗中为文学性复合构词 Fichten + Baum，凸显“树”这一意象，日常口语中通常直接说 die Fichte。"
+    },
+    {
+      "term": "kahl",
+      "pos": "adj.",
+      "meaning": "光秃秃的、荒芜的",
+      "note": "常用于形容无叶的树木、无发的头顶或荒凉的地貌。"
+    },
+    {
+      "term": "schläfern（es schläfert jemanden）",
+      "pos": "v.（非人称动词）",
+      "meaning": "使人困倦、令人昏昏欲睡",
+      "note": "与 grausen（见《魔王》）同类的非人称心理动词，逻辑主语用第四格（注意：与 grausen 的第三格不同，需分别记忆）。"
+    },
+    {
+      "term": "umhüllen",
+      "pos": "v.（弱变化，可分前缀 um- 在此不可分）",
+      "meaning": "包裹、笼罩",
+      "note": "um- 作不可分前缀时（如 umhüllen, umgeben, umarmen 等描述“环绕”义的动词）不可分离，注意与可分动词 umziehen（搬家）等区分。"
+    },
+    {
+      "term": "träumen von + Dativ",
+      "pos": "固定搭配",
+      "meaning": "梦见……",
+      "note": "固定介词搭配，von 之后接第三格。"
+    },
+    {
+      "term": "das Morgenland",
+      "pos": "n.（中性，文学/诗歌用词）",
+      "meaning": "东方（字面：晨曦之地）",
+      "note": "与 das Abendland（西方，字面：暮色之地）相对，是德语文学中常见的诗意地理概念，现代口语已不使用，改用 der Orient / der Osten。"
+    },
+    {
+      "term": "trauern",
+      "pos": "v.（弱变化）",
+      "meaning": "悲伤、哀悼",
+      "note": "常搭配介词 um（为……哀悼），诗中为不及物用法。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "schläfern（unpersönlich）",
+      "present_3sg": "schläfert",
+      "preterite": "schläferte",
+      "perfect": "hat geschläfert",
+      "participle_ii": "geschläfert",
+      "subjunctive_ii": "schläferte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"Ihn schläfert\"。"
+    },
+    {
+      "infinitive": "umhüllen",
+      "present_3sg": "umhüllt",
+      "preterite": "umhüllte",
+      "perfect": "hat umhüllt",
+      "participle_ii": "umhüllt",
+      "subjunctive_ii": "umhüllte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式复数 \"Umhüllen\"（主语 Eis und Schnee 后置）。"
+    },
+    {
+      "infinitive": "träumen",
+      "present_3sg": "träumt",
+      "preterite": "träumte",
+      "perfect": "hat geträumt",
+      "participle_ii": "geträumt",
+      "subjunctive_ii": "träumte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"träumt\"，搭配介词 von。"
+    },
+    {
+      "infinitive": "trauern",
+      "present_3sg": "trauert",
+      "preterite": "trauerte",
+      "perfect": "hat getrauert",
+      "participle_ii": "getrauert",
+      "subjunctive_ii": "trauerte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式 \"trauert\"。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "名词语法性别的象征意义",
+      "quote": "Ein Fichtenbaum … Er träumt von einer Palme",
+      "body": "der Fichtenbaum 为阳性、die Palme 为阴性，诗中用 er（他）指代松树、用 einer Palme（阴性第三格）指代棕榈，这一语法性别的天然对立，是许多文学评论者将全诗解读为“无法相聚的恋人”寓言的重要依据——这种解读高度依赖德语的语法性别，翻译成不区分名词性别的语言（如中文、英文）时会自然丧失。"
+    },
+    {
+      "title": "非人称动词 schläfern",
+      "quote": "Ihn schläfert;",
+      "body": "与《魔王》中的 grausen 类似，schläfern 也是非人称心理动词，固定结构为 es schläfert + Akkusativ（而非 Dativ）。诗中省略了形式主语 es，仅保留第四格代词 Ihn，是诗歌语言中常见的省略现象。"
+    },
+    {
+      "title": "宾语前置强调句式",
+      "quote": "Umhüllen ihn Eis und Schnee.",
+      "body": "标准语序应为 \"Eis und Schnee umhüllen ihn\"；诗中将动词与宾语提前、主语 Eis und Schnee 后置，制造出先感受“被包裹”的动作、再揭示包裹之物的效果，是诗歌倒装的又一例证。"
+    },
+    {
+      "title": "现在分词作定语形容词",
+      "quote": "Auf brennender Felsenwand.",
+      "body": "brennend 是动词 brennen（燃烧）的现在分词，在此直接作形容词修饰 Felsenwand（岩壁），表示“正在燃烧着一般滚烫的”，是德语中现在分词转化为形容词的常见构词方式（类似英语的 -ing 分词形容词用法）。"
+    }
+  ],
+  "cultural_notes": "全诗仅两节八行，却是海涅《抒情插曲》（Lyrisches Intermezzo）组诗中流传最广的作品之一，据信作于1822年春，1827年收入《Buch der Lieder》（诗歌集）。诗歌以“北方孤松”与“东方孤棕榈”这两个天各一方、永难相聚的意象，构成一则简短的寓言：松树身处冰雪，梦中所见却是烈日灼烤下同样孤独忧伤的棕榈。\n\n由于德语中“松树”（der Fichtenbaum）为阳性、“棕榈”（die Palme）为阴性，文学研究者常将全诗解读为一段因地理阻隔而无法结合的爱情寓言；也有研究者（如 Kathrin Wittler）从海涅的犹太裔身份出发，将“北方”与“东方”的对照解读为对自身文化身份归属的隐喻性思考。诗人卡尔·克劳斯（Karl Kraus）则曾对这首诗的“精巧却矫饰”提出批评，反映出该诗在接受史上评价的分歧。\n\n此诗被超过140次谱曲，其中包括卡尔·罗威（Carl Loewe）与弗朗茨·李斯特（Franz Liszt，约1848年）的版本，是德语艺术歌曲中反复被谱曲最多的文本之一。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译并尽量保留原诗两节结构上的对称性（“孤独”“沉默”等词在两节中呼应出现）。由于中文名词无语法性别，原诗中“阳性松树/阴性棕榈”所暗示的性别化爱情寓言在译文中自然消解，这是德汉翻译中难以避免的信息损耗，已在“文学意象与文化背景”中说明，供学习者理解原文的深层含义。",
+  "image_prompt": {
+    "imagery": "两幅对照的孤独意象：白雪覆盖的孤松与烈日下的孤棕榈，可用左右分屏或梦境浮现的构图表现",
+    "mood": "静谧的忧伤、遥不可及的思念感",
+    "elements": "冰雪覆盖的北方孤峰、一棵孤立的松/云杉树、模糊叠印出的棕榈树梦境剪影、炽热的岩壁",
+    "era": "无具体历史时代，属于寓言化、去时代化的自然场景，不出现人物",
+    "taboos": "不得出现文字、水印；避免过于卡通化或对称到僵硬的构图，应保留自然主义的诗意质感",
+    "style": "19世纪浪漫主义风景油画风格，冷色调（北方雪景）与暖色调（东方岩壁）在同一画面或对照构图中并置"
+  },
+  "image_path": "/images/ein-fichtenbaum-steht-einsam.png",
+  "german_sources": [
+    {
+      "name": "textlog.de — Heinrich Heine, Buch der Lieder, Lyrisches Intermezzo, „Ein Fichtenbaum steht einsam“ (XXXIII)",
+      "url": "https://www.textlog.de/heine/gedichte/ein-fichtenbaum-steht-einsam",
+      "note": "确认为《Lyrisches Intermezzo》组诗第XXXIII首。"
+    },
+    {
+      "name": "German Wikipedia — \"Ein Fichtenbaum steht einsam\"",
+      "url": "https://de.wikipedia.org/wiki/Ein_Fichtenbaum_steht_einsam",
+      "note": "独立引用全文，与 textlog.de 版本逐字一致；并提供1823年首次发表、1822年春创作的背景信息及详细接受史资料。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知中文世界有多个译本（常见译名如《一棵松树孤独地站立》），因版权原因未转载具体译本全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（textlog.de 与 German Wikipedia）逐字核对，两节八行内容完全一致，未发现任何异文，可信度很高。Wikipedia 词条并提供了详实的创作年代、发表历史与学术接受史信息，与 textlog.de 的诗集分组信息（Lyrisches Intermezzo 第XXXIII首）相互印证。",
+  "checklist": [
+    {
+      "label": "确认作者：Heinrich Heine",
+      "done": true
+    },
+    {
+      "label": "确认标题：Ein Fichtenbaum steht einsam",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：textlog.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：German Wikipedia",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（未发现异文）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}

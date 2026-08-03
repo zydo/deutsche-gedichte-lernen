@@ -1,0 +1,308 @@
+{
+  "id": "08",
+  "slug": "er-ists",
+  "author": "Eduard Mörike",
+  "author_zh": "爱德华·默里克",
+  "title_de": "Er ist's",
+  "title_zh": "是他（春天）",
+  "year": "约1829年作，1832年首次发表于小说《画家诺尔腾》（Maler Nolten）中",
+  "collection": "选自小说《Maler Nolten》插入诗；后独立收录于诗集",
+  "period": "毕德麦耶 Biedermeier",
+  "difficulty": "A2",
+  "tags": [
+    "春天",
+    "自然",
+    "喜悦",
+    "极短诗",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Frühling läßt sein blaues Band",
+      "Wieder flattern durch die Lüfte;",
+      "Süße, wohlbekannte Düfte",
+      "Streifen ahnungsvoll das Land.",
+      "Veilchen träumen schon,",
+      "Wollen balde kommen.",
+      "– Horch, von fern ein leiser Harfenton!",
+      "Frühling, ja du bist's!",
+      "Dich hab' ich vernommen!"
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗单节九行的独特结构",
+    "text": [
+      [
+        "春天让他那蓝色的丝带",
+        "再次在空中飘扬；",
+        "甜美、熟悉的芬芳",
+        "满怀预感地拂过大地。",
+        "紫罗兰已在梦中，",
+        "就要苏醒开放。",
+        "——听，远处传来一声轻柔的竖琴声！",
+        "春天，是的，是你！",
+        "我已经听见你了！"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Frühling läßt sein blaues Band",
+      "zh": "全诗开篇即将“春天”拟人化为一个无冠词的专有名词式主语（如同人名），并赋予其“丝带”这一意象；lassen + Infinitiv（让……做）结构：läßt … flattern（让……飘扬）。"
+    },
+    {
+      "de": "Wieder flattern durch die Lüfte;",
+      "zh": "flattern（飘动、扑扇）多用于描写轻薄之物（丝带、旗帜、翅膀）随风摆动，wieder（再次）暗示这是一种季节的循环、回归。"
+    },
+    {
+      "de": "Süße, wohlbekannte Düfte",
+      "zh": "wohlbekannt（熟悉的）由 wohl（副词，加强语气）+ bekannt（已知的）构成复合形容词，强调这种春天的气息是“早已熟悉、一年一度”的。"
+    },
+    {
+      "de": "Streifen ahnungsvoll das Land.",
+      "zh": "streifen（掠过、轻拂）及物动词，支配第四格 das Land；ahnungsvoll（预感满满地）是副词，描写气息“仿佛带着预兆般”拂过大地，将嗅觉体验诗化为一种预示。"
+    },
+    {
+      "de": "Veilchen träumen schon,",
+      "zh": "拟人化：紫罗兰被赋予“做梦”的能力，暗示花朵尚未开放，却已“梦见”自己即将绽放，是含苞待放状态的诗意表达。"
+    },
+    {
+      "de": "– Horch, von fern ein leiser Harfenton!",
+      "zh": "Horch！是动词 horchen（倾听）的命令式，独立成句起呼告作用；破折号标记语气与视角的突然转换——从静态描写转为动态的、当下发生的听觉事件。"
+    },
+    {
+      "de": "Frühling, ja du bist's!",
+      "zh": "全诗唯一使用 du（你）直接称呼“春天”的诗行，标志着从“描写春天将至”到“确认春天已至、与之对话”的情感高潮；bist's = bist es。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "das Band, Bänder",
+      "pos": "n.（中性）",
+      "meaning": "丝带、带子",
+      "note": "注意与阳性 der Band（书卷、册）区分：同形异义词，复数形式不同（Bänder vs Bände）。"
+    },
+    {
+      "term": "flattern",
+      "pos": "v.（弱变化）",
+      "meaning": "（旗帜、丝带等轻薄之物）飘动、扑扇",
+      "note": "常用于描写风中轻盈摆动之物，亦可形容心情忐忑（das Herz flattert）。"
+    },
+    {
+      "term": "wohlbekannt",
+      "pos": "adj.（复合形容词）",
+      "meaning": "早已熟知的",
+      "note": "由 wohl + bekannt 构成，比单独的 bekannt 语气更强调“早已、深深地”熟悉。"
+    },
+    {
+      "term": "streifen",
+      "pos": "v.（弱变化）",
+      "meaning": "轻拂、掠过；触及（话题）",
+      "note": "字面义为物理上的“轻轻擦过”，也常用于比喻义“略微触及某话题”（ein Thema streifen）。"
+    },
+    {
+      "term": "ahnungsvoll",
+      "pos": "adj./adv.",
+      "meaning": "满怀预感地、有预兆地",
+      "note": "由 Ahnung（预感）+ -voll（充满……的）构成，德语中 -voll 是常见的构词后缀（如 hoffnungsvoll 满怀希望的）。"
+    },
+    {
+      "term": "das Veilchen, -",
+      "pos": "n.（中性）",
+      "meaning": "紫罗兰",
+      "note": "自中世纪起在德语文学传统中即为“报春之花”的象征。"
+    },
+    {
+      "term": "horchen",
+      "pos": "v.（弱变化）",
+      "meaning": "（用心）倾听",
+      "note": "比 hören（听到）更强调主动、专注地竖起耳朵听；诗中用命令式 \"Horch!\"。"
+    },
+    {
+      "term": "vernehmen, vernimmt, vernahm, vernommen",
+      "pos": "v.（强变化，文学用词）",
+      "meaning": "听见、察觉到",
+      "note": "比日常用词 hören 更正式、更具文学色彩，也用于法律语境（“讯问、听证”）。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "lassen",
+      "present_3sg": "lässt",
+      "preterite": "ließ",
+      "perfect": "hat gelassen/lassen",
+      "participle_ii": "gelassen",
+      "subjunctive_ii": "ließe",
+      "auxiliary": "haben",
+      "note": "诗中用旧拼写 \"läßt\"（现代拼写 lässt），搭配不带 zu 的第二不定式：läßt … flattern。"
+    },
+    {
+      "infinitive": "flattern",
+      "present_3sg": "flattert",
+      "preterite": "flatterte",
+      "perfect": "hat/ist geflattert",
+      "participle_ii": "geflattert",
+      "subjunctive_ii": "flatterte",
+      "auxiliary": "haben（表动作）/ sein（表位移）",
+      "note": "诗中作不带 zu 不定式，跟在 läßt 之后。"
+    },
+    {
+      "infinitive": "streifen",
+      "present_3sg": "streift",
+      "preterite": "streifte",
+      "perfect": "hat gestreift",
+      "participle_ii": "gestreift",
+      "subjunctive_ii": "streifte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式复数 \"Streifen\"。"
+    },
+    {
+      "infinitive": "träumen",
+      "present_3sg": "träumt",
+      "preterite": "träumte",
+      "perfect": "hat geträumt",
+      "participle_ii": "geträumt",
+      "subjunctive_ii": "träumte",
+      "auxiliary": "haben",
+      "note": "诗中用现在式复数 \"träumen\"。"
+    },
+    {
+      "infinitive": "vernehmen",
+      "present_3sg": "vernimmt",
+      "preterite": "vernahm",
+      "perfect": "hat vernommen",
+      "participle_ii": "vernommen",
+      "subjunctive_ii": "vernähme",
+      "auxiliary": "haben",
+      "note": "诗中用现在完成时 \"hab' ich vernommen\"（第一人称，助动词 habe 省音为 hab'）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "lassen + 不带 zu 的不定式",
+      "quote": "Frühling läßt sein blaues Band / Wieder flattern durch die Lüfte;",
+      "body": "lassen（让、任由）作使役动词时，后接不带 zu 的第二不定式（此处为 flattern），构成“让……做某事”的结构，是德语中最常见的使役句型之一，日常口语（如 Ich lasse mir die Haare schneiden）中同样适用。"
+    },
+    {
+      "title": "无冠词的拟人化专有名词用法",
+      "quote": "Frühling läßt sein blaues Band … Frühling, ja du bist's!",
+      "body": "Frühling（春天）本应用中性名词加定冠词（der Frühling），但全诗中始终不加冠词直接使用，如同称呼一个人名，强化了拟人化效果，也是诗歌语言中人格化抽象概念时常见的省略冠词现象。"
+    },
+    {
+      "title": "现在完成时表刚刚发生的确定事实",
+      "quote": "Dich hab' ich vernommen!",
+      "body": "全诗以现在完成时收尾（hab' … vernommen = habe … vernommen），标志着从此前的“预感、猜测”（Konjunktiv/Präsens 的悬置状态）转为“已经确证发生”的既成事实，是全诗情感从期待走向确信的语法印证。"
+    },
+    {
+      "title": "呼告与命令式独立成句",
+      "quote": "– Horch, von fern ein leiser Harfenton!",
+      "body": "Horch！是 horchen 的命令式，独立于句子主干之外使用，起到打断、呼唤读者注意力的修辞效果，是德语诗歌中呼告（Apostrophe）手法与祈使句结合的典型例子。"
+    }
+  ],
+  "cultural_notes": "《是他》最初并非独立发表的诗歌，而是默里克小说《画家诺尔腾》（Maler Nolten，1832年出版）中穿插的一首诗，后来因其精巧的形式与广受喜爱的开篇诗句“Frühling läßt sein blaues Band”而独立流传，成为德语世界最著名的春天诗之一，被收入几乎所有重要的德语诗歌选集。\n\n全诗仅一节九行，却在格律与韵式上极为讲究：前四行为抱韵（umarmender Reim），第五至九行转为交叉韵，而第八行（“Frühling, ja du bist's!”，恰与标题《Er ist's》押韵）则打破了整体韵式，形成一个“游离于韵律之外却又与标题呼应”的特殊诗行——这种形式上的“突破常规”恰好对应内容上“春天终于到来的惊喜确认”，被视为形式与内容高度统一的典范之作。\n\n诗中“蓝色丝带”的意象历来众说纷纭：有学者认为呼应旧时人们互赠彩绘丝带作为问候礼物的习俗，也有解读认为象征云开雾散后重现的蓝天。雨果·沃尔夫（Hugo Wolf）1888年为此诗谱写的艺术歌曲（收录于《默里克歌曲集》）是该诗最著名的音乐诠释。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译并保留原诗单节九行的独特结构（不做分节处理）。已知此诗有多个中文译本流传，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一条蓝色丝带般的云雾/光带在早春天空中飘扬，地面上紫罗兰含苞待放",
+    "mood": "轻盈、雀跃、充满期待与惊喜的复苏感",
+    "elements": "早春原野、蓝天云带、含苞的紫罗兰特写、远处若隐若现的暖色调光线（象征远处的竖琴声/春天的临近）",
+    "era": "无需具体历史时代标识，德国乡野早春景观",
+    "taboos": "不得出现文字、水印；避免过于卡通化、幼稚化的处理，应保持古典绘本式的细腻质感",
+    "style": "19世纪浪漫主义/毕德麦耶时期植物学绘本或风景水彩画风格，色调清新明快，蓝、紫、嫩绿为主"
+  },
+  "image_path": "/images/er-ists.png",
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Er ist's (1829)“",
+      "url": "https://www.deutschelyrik.de/er-ists.html",
+      "note": "现代规范化拼写版本（läßt→lässt 等），全文九行完整，单节。"
+    },
+    {
+      "name": "wortwuchs.net — „Er ist's (Eduard Mörike)“",
+      "url": "https://wortwuchs.net/werke/er-ists/",
+      "note": "独立引用全文，采用旧式拼写（läßt），内容、行数、词序与 deutschelyrik.de 版本完全一致；并提供详细的格律、韵式与写作背景分析（1829年作，1832年发表于小说《Maler Nolten》）。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 wortwuchs.net）逐字核对，单节九行内容完全一致，仅存在正字法层面的新旧拼写差异（läßt/lässt），不影响文本内容。wortwuchs.net 并提供了详实的格律分析（抱韵转交叉韵、第八行为孤韵并与标题押韵）与创作背景（约1829年作，1832年发表于小说《Maler Nolten》），与本站记录的背景信息一致，交叉印证可信度高。",
+  "checklist": [
+    {
+      "label": "确认作者：Eduard Mörike",
+      "done": true
+    },
+    {
+      "label": "确认标题：Er ist's",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：wortwuchs.net",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（新旧拼写差异）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
+  ]
+}
