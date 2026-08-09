@@ -125,38 +125,54 @@ npm run check
 运行 `npm run check` 可随时得到最新名单。以下是发现问题时的完整快照与**已探明的候选 URL**，
 按此清单逐首补验证即可，不必再重新检索。
 
-### 已完成 ✅
+### 已完成 ✅（5 首）
 
-| #   | 诗                   | 补入的第三来源                                    | 比对结果                                |
-| --- | -------------------- | ------------------------------------------------- | --------------------------------------- |
-| 26  | Der römische Brunnen | `deutschelyrik.de/der-roemische-brunnen.423.html` | 完全一致，另确证单节排版                |
-| 33  | Weltende             | `deutschelyrik.de/weltende-1911.html`             | 用词一致，**新发现第 3 行行末逗号异文** |
+| # | 诗 | 补入的来源 | 比对结果 |
+|---|---|---|---|
+| 08 | Er ist's | Zeno（Mörike SW Bd.1, 1967, S.684）**一级** | 一致；第 9 行 `hab`/`hab'` 省字符差异 |
+| 25 | Die Stadt | Zeno（Storm SW Bd.1, ⁴1978, S.112）**一级** | 一致；第 7 行 `ohn`/`ohn'`/`ohne` **三方各异** |
+| 26 | Der römische Brunnen | deutschelyrik.de | 完全一致，另确证单节排版 |
+| 28 | Die Beiden | Zeno（Hofmannsthal GW Bd.1, 1924, S.7）**一级** | **查出本站转录错误**；`glich` 与标题大小写定案 |
+| 33 | Weltende | deutschelyrik.de | 用词一致；第 3 行行末逗号异文 |
 
-### 待补 ⏳
+> **28 Die Beiden 最能说明补验证的价值**：Zeno 的一级来源查出本站把首行行末的破折号误置于第 2 行行首
+> —— 这是录入疏忽而非版本差异，已改正并同步更新逐行注释锚点。同时定案了两个悬案：
+> 第 2 行确为单数 `glich`（作者生前《全集》本），标题应作大写 `Die Beiden`（`title_de` 已据此修改）。
 
-deutschelyrik.de 上**已确认存在**（URL 摘自该站作者索引，可直接抓取）：
+### 待补 ⏳（12 首）
 
-| #   | 诗               | 候选 URL                                                              |
-| --- | ---------------- | --------------------------------------------------------------------- |
-| 24  | Herbstbild       | `deutschelyrik.de/herbstbild.435.html`                                |
-| 25  | Die Stadt        | `deutschelyrik.de/die-stadt.427.html`                                 |
-| 27  | Herr von Ribbeck | `deutschelyrik.de/herr-von-ribbeck-auf-ribbeck-im-havelland.436.html` |
+**已实测有效的 Zeno URL 模式**，可直接套用：
 
-需先在 deutschelyrik.de 作者页（或 Zeno.org / textlog.de）检索的：
+```
+http://www.zeno.org/Literatur/M/<作者姓,+名>/Gedichte/<诗集名>/<辑名>/<诗题>
+```
 
-| #   | 诗                                 | 建议来源组           | 备注                                      |
-| --- | ---------------------------------- | -------------------- | ----------------------------------------- |
-| 08  | Er ist's                           | zeno / textlog       | 现有第二来源 wortwuchs.net 属三级，需替换 |
-| 16  | Das Mädchen aus der Fremde         | deutschelyrik        | 作者页 `schiller.html`                    |
-| 17  | Wenn nicht mehr Zahlen und Figuren | deutschelyrik        | 作者页 `novalis.html`                     |
-| 18  | Am Turme                           | zeno / textlog       | deutschelyrik 直接抓取曾返回空            |
-| 20  | Abendlied                          | deutschelyrik / zeno | 作者页 `claudius.html`                    |
-| 21  | Der Spinnerin Nachtlied            | deutschelyrik        | 作者页 `brentano.html`                    |
-| 22  | Frühlingsglaube                    | deutschelyrik        | 作者页 `uhland.html`                      |
-| 28  | Die beiden                         | zeno / deutschelyrik | 现有两源均非一级，需补一级来源            |
-| 30  | Es ist alles eitel                 | deutschelyrik        | 作者页 `gryphius.html`                    |
-| 31  | Tränen des Vaterlandes             | zeno                 | 与现有 Wikipedia 来源不同组               |
-| 32  | An Sich                            | zeno                 | 作者页 `fleming.html`；现有两源均非一级   |
+诗集名与辑名必须精确，例如 `Gedichte+(Ausgabe+1885)/Erstes+Buch`、`Die+Gedichte:+Ausgabe+1924`。
+**猜错只返回空页、几乎不耗成本，可放心批量试**；试不出时用一次 WebSearch 检索
+`zeno.org <作者> <诗题> <首行>` 即可拿到准确 URL。
 
-> **注意**：`deutschelyrik.de` 单页输出体积较大（含全站作者导航），逐首抓取成本较高。
-> 若批量处理，建议优先用 `zeno.org` —— 页面更紧凑，且属一级来源，能同时消除两类 WARN。
+deutschelyrik.de 上**已确认存在**的（URL 摘自该站作者索引）：
+
+| # | 诗 | 候选 URL |
+|---|---|---|
+| 24 | Herbstbild | `deutschelyrik.de/herbstbild.435.html` |
+| 27 | Herr von Ribbeck | `deutschelyrik.de/herr-von-ribbeck-auf-ribbeck-im-havelland.436.html` |
+
+其余需检索的：
+
+| # | 诗 | 建议来源 | 备注 |
+|---|---|---|---|
+| 16 | Das Mädchen aus der Fremde | deutschelyrik | 现有 zeno，需一个非 zeno 的独立源 |
+| 17 | Wenn nicht mehr Zahlen und Figuren | zeno / deutschelyrik | 现有 wikimedia |
+| 18 | Am Turme | zeno | 辑名为「Fels, Wald und See」而非「Heidebilder」，本轮试错未中，需检索 |
+| 20 | Abendlied | zeno / deutschelyrik | 现有 wikimedia |
+| 21 | Der Spinnerin Nachtlied | deutschelyrik | 现有 zeno |
+| 22 | Frühlingsglaube | deutschelyrik | 现有 zeno |
+| 24 | Herbstbild | zeno | 现有两源均非一级，补 zeno 可同时消两类 WARN |
+| 30 | Es ist alles eitel | deutschelyrik | 现有 zeno |
+| 31 | Tränen des Vaterlandes | zeno | 现有 wikimedia；zeno 藏有 Gryphius 十四行全集 |
+| 32 | An Sich | zeno | 现有两源均非一级 |
+| 33 | Weltende | — | 已有 3 源但均非一级；1911 年《Der Demokrat》初刊本待查 |
+
+> **批量策略**：优先 `zeno.org` —— 页面比 `deutschelyrik.de` 紧凑得多（后者每页附全站作者导航），
+> 且属一级来源，能一次消除「独立性不足」与「无一级来源」两类 WARN。
