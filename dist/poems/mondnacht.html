@@ -1,609 +1,768 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Mondnacht · 月夜 — Joseph von Eichendorff | 德语诗歌学习画册</title>
-  <meta name="description" content="Mondnacht（月夜）— Joseph von Eichendorff。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Mondnacht · 月夜 — Joseph von Eichendorff | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Mondnacht（月夜）— Joseph von Eichendorff。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="du-bist-wie-eine-blume.html" rel="prev"><span
-            class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">你像一朵花</span></a>
-        <a class="poem-nav__link poem-nav__next" href="er-ists.html" rel="next"><span
-            class="poem-nav__title">是他（春天）</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Mondnacht</h1>
-        <p class="poem-titleblock__author">Joseph von Eichendorff</p>
-        <p class="poem-titleblock__zh">月夜</p>
-        <p class="poem-titleblock__author-zh">约瑟夫·冯·艾兴多夫</p>
-        <div class="poem-titleblock__biblio">
-          <p>自然抒情诗（Naturlyrik）</p>
-          <p>晚期浪漫主义 Spätromantik</p>
-          <p>约1835年作，1837年首次发表</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--a">A2–B1</span>
-          <span class="tag ">自然</span>
-          <span class="tag ">夜晚</span>
-          <span class="tag ">灵魂</span>
-          <span class="tag ">冥想</span>
-          <span class="tag ">经典必读</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/mondnacht.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
-            loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="du-bist-wie-eine-blume.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">你像一朵花</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="er-ists.html" rel="next"
+            ><span class="poem-nav__title">是他（春天）</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Mondnacht</h1>
+          <p class="poem-titleblock__author">Joseph von Eichendorff</p>
+          <p class="poem-titleblock__zh">月夜</p>
+          <p class="poem-titleblock__author-zh">约瑟夫·冯·艾兴多夫</p>
+          <div class="poem-titleblock__biblio">
+            <p>自然抒情诗（Naturlyrik）</p>
+            <p>晚期浪漫主义 Spätromantik</p>
+            <p>约1835年作，1837年首次发表</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2–B1</span>
+            <span class="tag">自然</span>
+            <span class="tag">夜晚</span>
+            <span class="tag">灵魂</span>
+            <span class="tag">冥想</span>
+            <span class="tag">经典必读</span>
+          </div>
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/mondnacht.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    星光下的田野与森林，天空与大地在月色中仿佛交融为一体；一只展翅的灵魂/剪影般的翅膀飞越寂静的原野
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>空灵、宁静、带有神秘的宗教性庄严感，非悲伤而是超脱</dd>
+                  <dt>画面元素</dt>
+                  <dd>繁星满天的夜空、随风起伏的麦田、静谧的森林轮廓、一对隐约的翅膀或灵魂剪影掠过田野</dd>
+                  <dt>时代感</dt>
+                  <dd>无需具体历史时代标识，德国乡村田野景观，19世纪初氛围</dd>
+                  <dt>推荐风格</dt>
+                  <dd>19世纪浪漫主义风景油画风格，参考卡斯帕·大卫·弗里德里希的静谧夜景构图，深蓝与银白色调为主</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现文字、水印；避免过于具象化“灵魂”为宗教图腾或天使形象，应保持抽象、诗意的处理；避免现代光污染式的夜空描绘
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
           </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>星光下的田野与森林，天空与大地在月色中仿佛交融为一体；一只展翅的灵魂/剪影般的翅膀飞越寂静的原野</dd>
-                <dt>情绪</dt>
-                <dd>空灵、宁静、带有神秘的宗教性庄严感，非悲伤而是超脱</dd>
-                <dt>画面元素</dt>
-                <dd>繁星满天的夜空、随风起伏的麦田、静谧的森林轮廓、一对隐约的翅膀或灵魂剪影掠过田野</dd>
-                <dt>时代感</dt>
-                <dd>无需具体历史时代标识，德国乡村田野景观，19世纪初氛围</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义风景油画风格，参考卡斯帕·大卫·弗里德里希的静谧夜景构图，深蓝与银白色调为主</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得出现文字、水印；避免过于具象化“灵魂”为宗教图腾或天使形象，应保持抽象、诗意的处理；避免现代光污染式的夜空描绘</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Es war, als hätt' der Himmel<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">仿佛天空</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Die Erde still geküßt,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">曾静静吻过大地，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Daß sie im Blütenschimmer</span></div>
+                <div class="pline__zh">让她在花影微光中</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Von ihm nun träumen müßt'.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">如今只能梦见天空。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Luft ging durch die Felder,</span></div>
+                <div class="pline__zh">风穿过田野，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Die Ähren wogten sacht,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">麦穗轻轻起伏摇曳，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Es rauschten leis' die Wälder,</span></div>
+                <div class="pline__zh">森林发出低低的沙响，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">So sternklar war die Nacht.</span></div>
+                <div class="pline__zh">夜色如此繁星满天。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Und meine Seele spannte<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">而我的灵魂</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Weit ihre Flügel aus,</span></div>
+                <div class="pline__zh">展开它的双翼，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Flog durch die stillen Lande,</span></div>
+                <div class="pline__zh">飞过这寂静的大地，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Als flöge sie nach Haus.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">仿佛正飞向家园。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗从“天地”到“灵魂”的视角推进</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Es war, als hätt' der Himmel</p>
+              <p class="lnote__zh">
+                "als hätte" 引导虚拟式二式从句，表示一种想象性的比拟（“仿佛……曾……”），并非真实发生的事件；hätt' 是 hätte
+                的省音形式。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Die Erde still geküßt,</p>
+              <p class="lnote__zh">
+                küssen 的过去分词 geküßt（现代拼写 geküsst），与 hätte 构成虚拟式过去时（Konjunktiv II der
+                Vergangenheit），表达对一个假设性过去动作的描绘。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Von ihm nun träumen müßt'.</p>
+              <p class="lnote__zh">
+                müßt' 是 müßte 的省音形式（müssen 的虚拟式二式），与上文 hätte
+                呼应，共同构成整节的虚拟式语气：天空与大地之间发生的一切都是诗人“仿佛觉得”的想象，而非陈述事实。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Die Ähren wogten sacht,</p>
+              <p class="lnote__zh">
+                wogen（如波浪般起伏）本用于描写水面，此处转用于形容风中麦穗的摆动，是一种通感式的动词借用；sacht（轻柔地）是副词，修饰起伏的幅度与力度。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Und meine Seele spannte</p>
+              <p class="lnote__zh">
+                从第三节起，视角由外部的天地风景转向诗人内心的
+                Seele（灵魂），是全诗结构上的关键转折——前两节的自然描写至此被揭示为灵魂“飞升”体验的铺垫。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Als flöge sie nach Haus.</p>
+              <p class="lnote__zh">
+                "als flöge sie" 再次使用虚拟式二式（fliegen 的虚拟式二式
+                flöge），表比拟“仿佛飞向家园”；这里的“家”并非具体的地理位置，而多被解读为灵魂对宇宙、对神性本源的向往与回归。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">küssen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">亲吻</div>
+              <div class="vocab-card__note">诗中过去分词用旧拼法 geküßt（现代拼写 geküsst）。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Blütenschimmer</span></div>
+              <span class="vocab-card__pos">n.（阳性复合词）</span>
+              <div class="vocab-card__meaning">花影微光、花丛间的微光</div>
+              <div class="vocab-card__note">
+                由 Blüte（花）+ Schimmer（微光）构成，是典型的浪漫主义文学复合词，用于营造朦胧、梦幻的自然意象。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Ähre, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">麦穗、谷穗</div>
+              <div class="vocab-card__note">常见于田园/自然诗，注意与同音异形词区分（如 Ehre“荣誉”）。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">wogen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">（如波浪般）起伏、涌动</div>
+              <div class="vocab-card__note">本义描写水面波涛，诗中转喻用于麦穗随风摆动，是一种拟态修辞。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">rauschen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">沙沙作响、哗哗作响</div>
+              <div class="vocab-card__note">
+                常用于描写风吹树叶、流水等自然声响，与前一首诗中的 säuseln（更轻柔的沙沙声）构成近义词群，可比较记忆。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Seele, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">灵魂</div>
+              <div class="vocab-card__note">浪漫主义诗歌核心词汇之一，常与自然景物构成呼应或对话关系。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">spannen（die Flügel spannen）</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">展开、张开（翅膀）</div>
+              <div class="vocab-card__note">
+                固定搭配 die Flügel ausspannen/spannen：“展翅”，可分动词 ausspannen 在诗中以 "spannte … aus"
+                的形式出现于诗行两端。
+              </div>
             </div>
           </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Es war, als hätt' der Himmel<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">仿佛天空</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Die Erde still geküßt,<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">曾静静吻过大地，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Daß sie im Blütenschimmer</span></div>
-              <div class="pline__zh">让她在花影微光中</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Von ihm nun träumen müßt'.<sup
-                    class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">如今只能梦见天空。</div>
-            </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">küssen</td>
+                  <td class="de">küsst</td>
+                  <td class="de">küsste</td>
+                  <td class="de">hat geküsst</td>
+                  <td class="de">geküsst（旧拼: geküßt）</td>
+                  <td class="de">küsste</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用于虚拟式过去时 "hätte … geküßt"。</td>
+                </tr>
+                <tr>
+                  <td class="de">müssen</td>
+                  <td class="de">muss</td>
+                  <td class="de">musste</td>
+                  <td class="de">hat gemusst</td>
+                  <td class="de">gemusst</td>
+                  <td class="de">müsste（旧拼: müßte）</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用省音形式 "müßt'"（= müßte = 现代 müsste）。</td>
+                </tr>
+                <tr>
+                  <td class="de">wogen</td>
+                  <td class="de">wogt</td>
+                  <td class="de">wogte</td>
+                  <td class="de">hat gewogt</td>
+                  <td class="de">gewogt</td>
+                  <td class="de">wogte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用简单过去式 "wogten"。</td>
+                </tr>
+                <tr>
+                  <td class="de">ausspannen</td>
+                  <td class="de">spannt aus</td>
+                  <td class="de">spannte aus</td>
+                  <td class="de">hat ausgespannt</td>
+                  <td class="de">ausgespannt</td>
+                  <td class="de">spannte aus</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 可分动词，诗中为 "spannte … aus"（简单过去式，前缀置于句尾）。</td>
+                </tr>
+                <tr>
+                  <td class="de">fliegen</td>
+                  <td class="de">fliegt</td>
+                  <td class="de">flog</td>
+                  <td class="de">ist geflogen</td>
+                  <td class="de">geflogen</td>
+                  <td class="de">flöge</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中既有简单过去式 "Flog"，也有虚拟式二式 "flöge"（als flöge sie）。</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Die Luft ging durch die Felder,</span></div>
-              <div class="pline__zh">风穿过田野，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Die Ähren wogten sacht,<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">麦穗轻轻起伏摇曳，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Es rauschten leis' die Wälder,</span></div>
-              <div class="pline__zh">森林发出低低的沙响，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">So sternklar war die Nacht.</span></div>
-              <div class="pline__zh">夜色如此繁星满天。</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">贯穿全诗的虚拟式二式（Konjunktiv II）</h3>
+              <p class="grammar-item__quote">
+                Es war, als hätt' der Himmel / Die Erde still geküßt … Als flöge sie nach Haus.
+              </p>
+              <div class="grammar-item__body">
+                全诗首尾两节都以 "als hätte/als
+                flöge"（仿佛……）这一虚拟式二式结构收束，将天地之吻与灵魂归乡都框定为一种诗意的想象、比拟，而非陈述性的事实判断，是理解全诗“非写实、重体验”基调的语法关键。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">旧正字法 ß 的使用</h3>
+              <p class="grammar-item__quote">geküßt, müßt', leis'</p>
+              <div class="grammar-item__body">
+                本诗写作年代早于1901年及1996年两次德语正字法改革，diesem geküßt（今 geküsst）等词沿用旧式 ß
+                拼写；本站按权威文本来源保留原始拼写，学习者书写现代德语时应使用改革后的拼写（geküsst、müsste）。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">第三节的视角转换（外景→内心）</h3>
+              <p class="grammar-item__quote">Und meine Seele spannte / Weit ihre Flügel aus,</p>
+              <div class="grammar-item__body">
+                前两节皆以第三人称/无人称视角描写天地自然（Es war…、Die Luft ging…），第三节突然引入第一人称所属的
+                "meine Seele"，完成了从客观自然描写到主观灵魂体验的转折，这是解读全诗“天人合一”主题的关键结构点。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">交叉韵（Kreuzreim）与半 Hildebrandsstrophe</h3>
+              <p class="grammar-item__quote">全诗三节，每节四行，abab 交叉韵</p>
+              <div class="grammar-item__body">
+                全诗采用 abab
+                交叉韵（Kreuzreim）的格律形式，且第一、三行为“响韵”（双音节结尾）、第二、四行为“钝韵”（单音节结尾），德语诗律学称之为（半）Hildebrandsstrophe，是德国浪漫主义诗歌常见的格律形式之一。
+              </div>
+            </article>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Und meine Seele spannte<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">而我的灵魂</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Weit ihre Flügel aus,</span></div>
-              <div class="pline__zh">展开它的双翼，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Flog durch die stillen Lande,</span></div>
-              <div class="pline__zh">飞过这寂静的大地，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Als flöge sie nach Haus.<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">仿佛正飞向家园。</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              《月夜》被广泛认为是艾兴多夫最杰出、也是德语浪漫主义自然抒情诗的巅峰之作。托马斯·曼（Thomas
+              Mann）称其为“珍珠中的珍珠”（die Perle der Perlen），阿多诺（Theodor W.
+              Adorno）形容其“仿佛是被琴弓拉奏出来的”。诗歌的核心意象是“内在风景与外在风景的融合”（诗人乌拉·哈恩语）：天空与大地之吻、麦田与森林的私语，最终都汇入诗人灵魂“展翅飞向家园”的体验，是德国浪漫主义“自然与心灵合一”（Einheit
+              von Natur und Seele）美学理想的典范表达。
+            </p>
+            <p>
+              舒曼（Robert Schumann）1840年将其收入声乐套曲《Liederkreis》Op. 39
+              并置于全曲核心位置进行谱曲，勃拉姆斯（Johannes
+              Brahms）1853年也曾为其谱曲，19世纪末已有超过40种曲谱版本。诗歌末节常被用于德语讣告（Todesanzeige）中，可见其在德语文化中已成为表达“灵魂归于安息/故土”的经典意象。
+            </p>
           </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗从“天地”到“灵魂”的视角推进</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Es war, als hätt' der Himmel</p>
-            <p class="lnote__zh">"als hätte" 引导虚拟式二式从句，表示一种想象性的比拟（“仿佛……曾……”），并非真实发生的事件；hätt' 是 hätte 的省音形式。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Die Erde still geküßt,</p>
-            <p class="lnote__zh">küssen 的过去分词 geküßt（现代拼写 geküsst），与 hätte 构成虚拟式过去时（Konjunktiv II der
-              Vergangenheit），表达对一个假设性过去动作的描绘。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Von ihm nun träumen müßt'.</p>
-            <p class="lnote__zh">müßt' 是 müßte 的省音形式（müssen 的虚拟式二式），与上文 hätte
-              呼应，共同构成整节的虚拟式语气：天空与大地之间发生的一切都是诗人“仿佛觉得”的想象，而非陈述事实。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Die Ähren wogten sacht,</p>
-            <p class="lnote__zh">wogen（如波浪般起伏）本用于描写水面，此处转用于形容风中麦穗的摆动，是一种通感式的动词借用；sacht（轻柔地）是副词，修饰起伏的幅度与力度。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Und meine Seele spannte</p>
-            <p class="lnote__zh">从第三节起，视角由外部的天地风景转向诗人内心的 Seele（灵魂），是全诗结构上的关键转折——前两节的自然描写至此被揭示为灵魂“飞升”体验的铺垫。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Als flöge sie nach Haus.</p>
-            <p class="lnote__zh">"als flöge sie" 再次使用虚拟式二式（fliegen 的虚拟式二式
-              flöge），表比拟“仿佛飞向家园”；这里的“家”并非具体的地理位置，而多被解读为灵魂对宇宙、对神性本源的向往与回归。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">küssen</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">亲吻</div>
-            <div class="vocab-card__note">诗中过去分词用旧拼法 geküßt（现代拼写 geküsst）。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI
+              辅助），采用直译，力求保留原诗“虚拟式—比拟”的语气以及从自然描写到灵魂体验的视角转换。已知此诗有多个中文译本流传，因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Blütenschimmer</span></div>
-            <span class="vocab-card__pos">n.（阳性复合词）</span>
-            <div class="vocab-card__meaning">花影微光、花丛间的微光</div>
-            <div class="vocab-card__note">由 Blüte（花）+ Schimmer（微光）构成，是典型的浪漫主义文学复合词，用于营造朦胧、梦幻的自然意象。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Mondnacht (1835)“</span
+              ><a class="source-url" href="https://www.deutschelyrik.de/mondnacht.html" target="_blank" rel="noopener"
+                >https://www.deutschelyrik.de/mondnacht.html</a
+              >
+              <span class="source-note">全文三节完整，旧式 ß 拼写。</span>
+            </li>
+            <li>
+              <span class="source-name">German Wikipedia — "Mondnacht (Eichendorff)"</span
+              ><a
+                class="source-url"
+                href="https://de.wikipedia.org/wiki/Mondnacht_(Eichendorff)"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikipedia.org/wiki/Mondnacht_(Eichendorff)</a
+              >
+              <span class="source-note"
+                >独立引用全文，与 deutschelyrik.de
+                版本逐字一致；并提供详细的格律分析（Kreuzreim、Hildebrandsstrophe）、手稿收藏（柏林国立图书馆）及接受史信息，另链接
+                Zeno.org 与 Projekt Gutenberg-DE 作为补充来源。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容完全一致（含旧式 ß
+              拼写），未发现任何异文，可信度很高。Wikipedia
+              词条另指出该诗手稿现存于柏林国立图书馆，写作时间约1835–1840年间，与创作背景描述吻合。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Ähre, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">麦穗、谷穗</div>
-            <div class="vocab-card__note">常见于田园/自然诗，注意与同音异形词区分（如 Ehre“荣誉”）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">wogen</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">（如波浪般）起伏、涌动</div>
-            <div class="vocab-card__note">本义描写水面波涛，诗中转喻用于麦穗随风摆动，是一种拟态修辞。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">rauschen</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">沙沙作响、哗哗作响</div>
-            <div class="vocab-card__note">常用于描写风吹树叶、流水等自然声响，与前一首诗中的 säuseln（更轻柔的沙沙声）构成近义词群，可比较记忆。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Seele, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">灵魂</div>
-            <div class="vocab-card__note">浪漫主义诗歌核心词汇之一，常与自然景物构成呼应或对话关系。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">spannen（die Flügel spannen）</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">展开、张开（翅膀）</div>
-            <div class="vocab-card__note">固定搭配 die Flügel ausspannen/spannen：“展翅”，可分动词 ausspannen 在诗中以 "spannte … aus"
-              的形式出现于诗行两端。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">küssen</td>
-                <td class="de">küsst</td>
-                <td class="de">küsste</td>
-                <td class="de">hat geküsst</td>
-                <td class="de">geküsst（旧拼: geküßt）</td>
-                <td class="de">küsste</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用于虚拟式过去时 "hätte … geküßt"。</td>
-              </tr>
-              <tr>
-                <td class="de">müssen</td>
-                <td class="de">muss</td>
-                <td class="de">musste</td>
-                <td class="de">hat gemusst</td>
-                <td class="de">gemusst</td>
-                <td class="de">müsste（旧拼: müßte）</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用省音形式 "müßt'"（= müßte = 现代 müsste）。</td>
-              </tr>
-              <tr>
-                <td class="de">wogen</td>
-                <td class="de">wogt</td>
-                <td class="de">wogte</td>
-                <td class="de">hat gewogt</td>
-                <td class="de">gewogt</td>
-                <td class="de">wogte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用简单过去式 "wogten"。</td>
-              </tr>
-              <tr>
-                <td class="de">ausspannen</td>
-                <td class="de">spannt aus</td>
-                <td class="de">spannte aus</td>
-                <td class="de">hat ausgespannt</td>
-                <td class="de">ausgespannt</td>
-                <td class="de">spannte aus</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 可分动词，诗中为 "spannte … aus"（简单过去式，前缀置于句尾）。</td>
-              </tr>
-              <tr>
-                <td class="de">fliegen</td>
-                <td class="de">fliegt</td>
-                <td class="de">flog</td>
-                <td class="de">ist geflogen</td>
-                <td class="de">geflogen</td>
-                <td class="de">flöge</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中既有简单过去式 "Flog"，也有虚拟式二式 "flöge"（als flöge sie）。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">贯穿全诗的虚拟式二式（Konjunktiv II）</h3>
-            <p class="grammar-item__quote">Es war, als hätt' der Himmel / Die Erde still geküßt … Als flöge sie nach
-              Haus.</p>
-            <div class="grammar-item__body">全诗首尾两节都以 "als hätte/als
-              flöge"（仿佛……）这一虚拟式二式结构收束，将天地之吻与灵魂归乡都框定为一种诗意的想象、比拟，而非陈述性的事实判断，是理解全诗“非写实、重体验”基调的语法关键。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">旧正字法 ß 的使用</h3>
-            <p class="grammar-item__quote">geküßt, müßt', leis'</p>
-            <div class="grammar-item__body">本诗写作年代早于1901年及1996年两次德语正字法改革，diesem geküßt（今 geküsst）等词沿用旧式 ß
-              拼写；本站按权威文本来源保留原始拼写，学习者书写现代德语时应使用改革后的拼写（geküsst、müsste）。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">第三节的视角转换（外景→内心）</h3>
-            <p class="grammar-item__quote">Und meine Seele spannte / Weit ihre Flügel aus,</p>
-            <div class="grammar-item__body">前两节皆以第三人称/无人称视角描写天地自然（Es war…、Die Luft ging…），第三节突然引入第一人称所属的 "meine
-              Seele"，完成了从客观自然描写到主观灵魂体验的转折，这是解读全诗“天人合一”主题的关键结构点。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">交叉韵（Kreuzreim）与半 Hildebrandsstrophe</h3>
-            <p class="grammar-item__quote">全诗三节，每节四行，abab 交叉韵</p>
-            <div class="grammar-item__body">全诗采用 abab
-              交叉韵（Kreuzreim）的格律形式，且第一、三行为“响韵”（双音节结尾）、第二、四行为“钝韵”（单音节结尾），德语诗律学称之为（半）Hildebrandsstrophe，是德国浪漫主义诗歌常见的格律形式之一。
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>《月夜》被广泛认为是艾兴多夫最杰出、也是德语浪漫主义自然抒情诗的巅峰之作。托马斯·曼（Thomas Mann）称其为“珍珠中的珍珠”（die Perle der Perlen），阿多诺（Theodor W.
-            Adorno）形容其“仿佛是被琴弓拉奏出来的”。诗歌的核心意象是“内在风景与外在风景的融合”（诗人乌拉·哈恩语）：天空与大地之吻、麦田与森林的私语，最终都汇入诗人灵魂“展翅飞向家园”的体验，是德国浪漫主义“自然与心灵合一”（Einheit
-            von Natur und Seele）美学理想的典范表达。</p>
-          <p>舒曼（Robert Schumann）1840年将其收入声乐套曲《Liederkreis》Op. 39 并置于全曲核心位置进行谱曲，勃拉姆斯（Johannes
-            Brahms）1853年也曾为其谱曲，19世纪末已有超过40种曲谱版本。诗歌末节常被用于德语讣告（Todesanzeige）中，可见其在德语文化中已成为表达“灵魂归于安息/故土”的经典意象。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗“虚拟式—比拟”的语气以及从自然描写到灵魂体验的视角转换。已知此诗有多个中文译本流传，因版权原因本站不转载具体译本全文。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Mondnacht (1835)“</span><a class="source-url"
-              href="https://www.deutschelyrik.de/mondnacht.html" target="_blank"
-              rel="noopener">https://www.deutschelyrik.de/mondnacht.html</a>
-            <span class="source-note">全文三节完整，旧式 ß 拼写。</span>
-          </li>
-          <li>
-            <span class="source-name">German Wikipedia — "Mondnacht (Eichendorff)"</span><a class="source-url"
-              href="https://de.wikipedia.org/wiki/Mondnacht_(Eichendorff)" target="_blank"
-              rel="noopener">https://de.wikipedia.org/wiki/Mondnacht_(Eichendorff)</a>
-            <span class="source-note">独立引用全文，与 deutschelyrik.de
-              版本逐字一致；并提供详细的格律分析（Kreuzreim、Hildebrandsstrophe）、手稿收藏（柏林国立图书馆）及接受史信息，另链接 Zeno.org 与 Projekt Gutenberg-DE
-              作为补充来源。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，三节十二行内容完全一致（含旧式 ß 拼写），未发现任何异文，可信度很高。Wikipedia
-            词条另指出该诗手稿现存于柏林国立图书馆，写作时间约1835–1840年间，与创作背景描述吻合。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Joseph von Eichendorff</li>
-          <li>确认标题：Mondnacht</li>
-          <li>德文原文主来源：deutschelyrik.de</li>
-          <li>德文原文辅助来源：German Wikipedia</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（未发现异文）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Joseph von Eichendorff</li>
+            <li>确认标题：Mondnacht</li>
+            <li>德文原文主来源：deutschelyrik.de</li>
+            <li>德文原文辅助来源：German Wikipedia</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（未发现异文）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

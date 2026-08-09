@@ -1,683 +1,899 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Es ist alles eitel · 一切都是虚空 — Andreas Gryphius | 德语诗歌学习画册</title>
-  <meta name="description" content="Es ist alles eitel（一切都是虚空）— Andreas Gryphius。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Es ist alles eitel · 一切都是虚空 — Andreas Gryphius | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Es ist alles eitel（一切都是虚空）— Andreas Gryphius。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="der-werwolf.html" rel="prev"><span class="poem-nav__arrow"
-            aria-hidden="true">←</span><span class="poem-nav__title">狼人（求变格的狼）</span></a>
-        <a class="poem-nav__link poem-nav__next" href="traenen-des-vaterlandes.html" rel="next"><span
-            class="poem-nav__title">祖国之泪 · 1636年</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Es ist alles eitel</h1>
-        <p class="poem-titleblock__author">Andreas Gryphius</p>
-        <p class="poem-titleblock__zh">一切都是虚空</p>
-        <p class="poem-titleblock__author-zh">安德烈亚斯·格吕菲乌斯</p>
-        <div class="poem-titleblock__biblio">
-          <p>《十四行诗·第一卷》（Sonnette. Das erste Buch）第8首</p>
-          <p>巴洛克（三十年战争时期）</p>
-          <p>1637年首刊于《利萨十四行诗集》，1643年起以修订形式收入《十四行诗·第一卷》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--b">B2</span>
-          <span class="tag ">虚空</span>
-          <span class="tag ">无常</span>
-          <span class="tag ">十四行诗</span>
-          <span class="tag ">亚历山大体</span>
-          <span class="tag ">三十年战争</span>
-          <span class="tag ">巴洛克入门</span>
-        </div>
-        <div class="image-slot">
-          <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="der-werwolf.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">狼人（求变格的狼）</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="traenen-des-vaterlandes.html" rel="next"
+            ><span class="poem-nav__title">祖国之泪 · 1636年</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Es ist alles eitel</h1>
+          <p class="poem-titleblock__author">Andreas Gryphius</p>
+          <p class="poem-titleblock__zh">一切都是虚空</p>
+          <p class="poem-titleblock__author-zh">安德烈亚斯·格吕菲乌斯</p>
+          <div class="poem-titleblock__biblio">
+            <p>《十四行诗·第一卷》（Sonnette. Das erste Buch）第8首</p>
+            <p>巴洛克（三十年战争时期）</p>
+            <p>1637年首刊于《利萨十四行诗集》，1643年起以修订形式收入《十四行诗·第一卷》</p>
           </div>
-          <dl>
-            <dt>意象</dt>
-            <dd>一片开阔的草地缓坡，草间隐约露出倒塌的石砌墙基与断柱；一个牧童与几只羊在废墟间走过；远处地平线上有焚毁城市的余烟</dd>
-            <dt>情绪</dt>
-            <dd>宁静中带着荒凉；不应恐怖或血腥，而应传达"灾难已经过去很久、草已长回来"的时间感</dd>
-            <dt>画面元素</dt>
-            <dd>及膝的野草与一两朵小白花、埋在草中的石基与断裂的柱础、牧童与羊群的远景、天边的一缕烟、低垂的云</dd>
-            <dt>时代感</dt>
-            <dd>17世纪中欧（三十年战争后期），服饰与建筑遗迹应为该时代样式</dd>
-            <dt>推荐风格</dt>
-            <dd>17世纪荷兰风景画式的写实油画风格，天空占画面三分之二，光线为阴天的散射光，色调以灰绿、土黄与铅灰为主</dd>
-            <dt>比例</dt>
-            <dd>4:3（横版）</dd>
-            <dt>禁忌</dt>
-            <dd>不得出现文字、水印；不得出现尸体、血迹、武器等直接的战争暴力；不得出现骷髅、沙漏、蜡烛等巴洛克 vanitas 静物画的标准符号（诗中并未使用这些俗套）；不得出现现代元素</dd>
-          </dl>
-          <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-            4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-        </div>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2</span>
+            <span class="tag">虚空</span>
+            <span class="tag">无常</span>
+            <span class="tag">十四行诗</span>
+            <span class="tag">亚历山大体</span>
+            <span class="tag">三十年战争</span>
+            <span class="tag">巴洛克入门</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一片开阔的草地缓坡，草间隐约露出倒塌的石砌墙基与断柱；一个牧童与几只羊在废墟间走过；远处地平线上有焚毁城市的余烟
+              </dd>
+              <dt>情绪</dt>
+              <dd>宁静中带着荒凉；不应恐怖或血腥，而应传达"灾难已经过去很久、草已长回来"的时间感</dd>
+              <dt>画面元素</dt>
+              <dd>及膝的野草与一两朵小白花、埋在草中的石基与断裂的柱础、牧童与羊群的远景、天边的一缕烟、低垂的云</dd>
+              <dt>时代感</dt>
+              <dd>17世纪中欧（三十年战争后期），服饰与建筑遗迹应为该时代样式</dd>
+              <dt>推荐风格</dt>
+              <dd>
+                17世纪荷兰风景画式的写实油画风格，天空占画面三分之二，光线为阴天的散射光，色调以灰绿、土黄与铅灰为主
+              </dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得出现文字、水印；不得出现尸体、血迹、武器等直接的战争暴力；不得出现骷髅、沙漏、蜡烛等巴洛克 vanitas
+                静物画的标准符号（诗中并未使用这些俗套）；不得出现现代元素
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
         </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Du siehst, wohin du siehst, nur
-                  Eitelkeit auf Erden,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">你举目所见，尘世上无非虚空，</div>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Du siehst, wohin du siehst, nur Eitelkeit auf Erden,<sup class="refmark"
+                      ><a href="#note-1">1</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">你举目所见，尘世上无非虚空，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Was dieser heute baut, reißt jener morgen ein;<sup class="refmark"
+                      ><a href="#note-2">2</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">此人今日所建，彼人明日拆毁；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Wo jetzund Städte stehn, wird eine Wiese sein,<sup class="refmark"
+                      ><a href="#note-3">3</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">如今城池矗立之处，将成为一片草地，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Auf der ein Schäferskind wird spielen mit den Herden.</span>
+                </div>
+                <div class="pline__zh">有个牧童将在那里与畜群嬉戏。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Was dieser heute baut, reißt jener
-                  morgen ein;<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">此人今日所建，彼人明日拆毁；</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Was jetzund prächtig blüht, soll bald zertreten werden;</span>
+                </div>
+                <div class="pline__zh">如今华美地绽放的，不久将被践踏；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Was jetzt so pocht und trotzt, ist morgen Asch und Bein;<sup class="refmark"
+                      ><a href="#note-4">4</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">如今这般张扬跋扈的，明日便是灰与骨；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Nichts ist, das ewig sei, kein Erz, kein Marmorstein.</span>
+                </div>
+                <div class="pline__zh">没有什么是永恒的，青铜不是，大理石也不是。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Jetzt lacht das Glück uns an, bald donnern die Beschwerden.</span>
+                </div>
+                <div class="pline__zh">此刻幸运朝我们微笑，转眼灾祸便如雷降临。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Wo jetzund Städte stehn, wird eine
-                  Wiese sein,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">如今城池矗立之处，将成为一片草地，</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Der hohen Taten Ruhm muß wie ein Traum vergehn.<sup class="refmark"
+                      ><a href="#note-5">5</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">丰功伟绩的荣名必将如梦消散。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Soll denn das Spiel der Zeit, der leichte Mensch bestehn?<sup class="refmark"
+                      ><a href="#note-6">6</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">那么，时间的玩物、这轻飘飘的人，还能存留吗？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Ach, was ist alles dies, was wir vor köstlich achten,<sup class="refmark"
+                      ><a href="#note-7">7</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">唉，我们视为珍贵的这一切，究竟是什么呢——</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Auf der ein Schäferskind wird spielen mit den
-                  Herden.</span></div>
-              <div class="pline__zh">有个牧童将在那里与畜群嬉戏。</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Als schlechte Nichtigkeit, als Schatten, Staub und Wind,</span>
+                </div>
+                <div class="pline__zh">无非是拙劣的虚无，是影子、尘土与风，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Als eine Wiesenblum, die man nicht wieder findt!<sup class="refmark"
+                      ><a href="#note-8">8</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">是一朵草地上的花，人再也找不回它！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Noch will, was ewig ist, kein einig Mensch betrachten.<sup class="refmark"
+                      ><a href="#note-9">9</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">然而那永恒之物，竟没有一个人愿意去凝视。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留亚历山大体两个半句的对偶结构与末行的反讽收束
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Du siehst, wohin du siehst, nur Eitelkeit auf Erden,</p>
+              <p class="lnote__zh">
+                全诗没有"我"，只有对读者的直接称呼 du。die Eitelkeit 在此取路德《圣经》中的古义"虚空、虚无"（拉丁语
+                vanitas），而非现代的"虚荣心"——诗题即引自《传道书》1:2 路德译本 "Es ist alles ganz
+                eitel"。本站《晚歌》中的 eitel 亦取此古义，可对照。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Was dieser heute baut, reißt jener morgen ein;</p>
+              <p class="lnote__zh">
+                dieser … jener（这一个……那一个）是德语的对举代词。可分动词 einreißen（拆毁）的前缀落在行末。heute /
+                morgen 的对立将在下一节以 jetzund / morgen 重现，构成全诗的时间骨架。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Wo jetzund Städte stehn, wird eine Wiese sein,</p>
+              <p class="lnote__zh">
+                jetzund 是 jetzt
+                的巴洛克形式，今已废弃。这一行是全诗最著名的意象：城市化为草地。写于三十年战争期间，它并非修辞夸张，而是当时西里西亚的实景。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Was jetzt so pocht und trotzt, ist morgen Asch und Bein;</p>
+              <p class="lnote__zh">
+                pochen（敲、逞强）与 trotzen（对抗、逞能）近义连用，是巴洛克诗歌惯用的同义堆叠（Häufung）。Asch und
+                Bein（灰与骨）为不带冠词的固定对举，指焚毁后的残余。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Der hohen Taten Ruhm muß wie ein Traum vergehn.</p>
+              <p class="lnote__zh">
+                前置第二格：der hohen Taten Ruhm = der Ruhm der hohen
+                Taten（丰功伟绩的荣名）。第三节（第一个三行诗节）开始由描写转入论断，这是十四行诗结构上的"转折"（Volta）。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Soll denn das Spiel der Zeit, der leichte Mensch bestehn?</p>
+              <p class="lnote__zh">
+                das Spiel der Zeit（时间的玩物）与 der leichte Mensch（轻飘飘的人）是同位语，指同一对象。leicht
+                在此非"容易"，而是"轻若无物、经不起分量"。全诗唯一的疑问句，也是全诗的重心。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Ach, was ist alles dies, was wir vor köstlich achten,</p>
+              <p class="lnote__zh">
+                vor 是 für 的巴洛克拼法（etwas für köstlich achten =
+                视某物为珍贵）。这一句的谓语要跨过诗节界限、到下一节的三个 als
+                才补全——十四行诗的两个三行诗节被一个句子缝在一起，这是格吕菲乌斯常用的手法。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Als eine Wiesenblum, die man nicht wieder findt!</p>
+              <p class="lnote__zh">
+                Wiesenblum（草地上的花）省略了词尾 -e；findt 为 findet
+                的省音形式。此喻出自《诗篇》103:15—16（"至于世人，他的年日如草一样……风一吹便归无有"）。它同时回指第4行的"草地"——城市变成草地，人变成草地上的一朵花。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Noch will, was ewig ist, kein einig Mensch betrachten.</p>
+              <p class="lnote__zh">
+                全诗的最后一击。noch 在此为"然而、尽管如此"；kein einig Mensch = kein einziger
+                Mensch（没有一个人）。前十三行都在讲万物皆空，末行却把矛头转向读者：既然如此，为什么没有人去看那唯一不空的东西？巴洛克
+                vanitas 诗的目的从来不是绝望，而是把目光引向永恒。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Eitelkeit, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">①（古义／圣经）虚空、虚无；②（今义）虚荣心</div>
+              <div class="vocab-card__note">
+                诗题引自路德译《传道书》1:2；今义"虚荣"由古义引申而来（把心思放在虚无之物上）。阅读17—18世纪文本时必须优先考虑古义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">jetzund</span></div>
+              <span class="vocab-card__pos">adv.（巴洛克形式）</span>
+              <div class="vocab-card__meaning">如今、此刻</div>
+              <div class="vocab-card__note">= jetzt；17世纪常见，今已完全废弃。同类古形还有 itzt / itzund。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">einreißen</span></div>
+              <span class="vocab-card__pos">v.（可分，强变化）</span>
+              <div class="vocab-card__meaning">拆毁、推倒；（陋习）蔓延开来</div>
+              <div class="vocab-card__note">
+                变位 reißt ein – riss ein – hat eingerissen；与 aufbauen（建造）构成本诗第2行的对立。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">trotzen</span></div>
+              <span class="vocab-card__pos">v.（弱变化，支配第三格）</span>
+              <div class="vocab-card__meaning">对抗、逞强、赌气</div>
+              <div class="vocab-card__note">
+                der Trotz（倔强）、trotzdem（尽管如此）、trotz + 第二格（尽管）同源；诗中与 pochen 同义连用。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Erz, -e</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">矿石；青铜（诗歌用法）</div>
+              <div class="vocab-card__note">
+                诗中与 Marmorstein 并列，指最坚固耐久的材料——纪念碑的材料。前缀 Erz-（如 Erzbischof
+                大主教）与之无关，源自希腊语。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Beschwerde, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">①（古义）苦难、重负；②（今义）投诉；③（复数）病痛</div>
+              <div class="vocab-card__note">
+                诗中取古义；今义"投诉"（eine Beschwerde einreichen）与"身体不适"（Beschwerden
+                haben）都由"负担"引申而来。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Nichtigkeit, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">虚无、微不足道之物；（法律）无效</div>
+              <div class="vocab-card__note">来自 nichtig（无效的、微不足道的）；诗中与 Eitelkeit 同义呼应。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">achten (für/als)</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">视为、认为</div>
+              <div class="vocab-card__note">
+                诗中为 "etwas vor (= für) köstlich achten"；今日多用 halten für。另有"尊敬"（jemanden
+                achten）与"注意"（auf etwas achten）两义。
+              </div>
             </div>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Was jetzund prächtig blüht, soll bald zertreten
-                  werden;</span></div>
-              <div class="pline__zh">如今华美地绽放的，不久将被践踏；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Was jetzt so pocht und trotzt, ist
-                  morgen Asch und Bein;<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">如今这般张扬跋扈的，明日便是灰与骨；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Nichts ist, das ewig sei, kein Erz, kein
-                  Marmorstein.</span></div>
-              <div class="pline__zh">没有什么是永恒的，青铜不是，大理石也不是。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Jetzt lacht das Glück uns an, bald donnern die
-                  Beschwerden.</span></div>
-              <div class="pline__zh">此刻幸运朝我们微笑，转眼灾祸便如雷降临。</div>
-            </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">sehen</td>
+                  <td class="de">sieht</td>
+                  <td class="de">sah</td>
+                  <td class="de">hat gesehen</td>
+                  <td class="de">gesehen</td>
+                  <td class="de">sähe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化，现在时单数变元音 e→ie；诗中首行两次出现第二人称 siehst。</td>
+                </tr>
+                <tr>
+                  <td class="de">einreißen</td>
+                  <td class="de">reißt ein</td>
+                  <td class="de">riss ein（旧 riß ein）</td>
+                  <td class="de">hat eingerissen</td>
+                  <td class="de">eingerissen</td>
+                  <td class="de">risse ein</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 可分动词，强变化（ei–i–i）。</td>
+                </tr>
+                <tr>
+                  <td class="de">zertreten</td>
+                  <td class="de">zertritt</td>
+                  <td class="de">zertrat</td>
+                  <td class="de">hat zertreten</td>
+                  <td class="de">zertreten</td>
+                  <td class="de">zerträte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 不可分动词（前缀 zer- 永不分离），强变化；诗中作被动不定式 "soll … zertreten werden"。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">vergehen</td>
+                  <td class="de">vergeht</td>
+                  <td class="de">verging</td>
+                  <td class="de">ist vergangen</td>
+                  <td class="de">vergangen</td>
+                  <td class="de">verginge</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 不可分动词；派生词 die Vergänglichkeit（无常）正是巴洛克诗歌的核心概念。</td>
+                </tr>
+                <tr>
+                  <td class="de">bestehen</td>
+                  <td class="de">besteht</td>
+                  <td class="de">bestand</td>
+                  <td class="de">hat bestanden</td>
+                  <td class="de">bestanden</td>
+                  <td class="de">bestünde / bestände</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中取"存续、经受住"义；另有"通过（考试）"（eine Prüfung bestehen）、"由……构成"（aus etwas
+                    bestehen）、"坚持"（auf etwas bestehen）三义。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">betrachten</td>
+                  <td class="de">betrachtet</td>
+                  <td class="de">betrachtete</td>
+                  <td class="de">hat betrachtet</td>
+                  <td class="de">betrachtet</td>
+                  <td class="de">betrachtete</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 不可分动词，弱变化；意为"凝视、审视、（作为……）看待"，是全诗最后一个词，也是它真正的祈使。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Der hohen Taten Ruhm muß wie ein
-                  Traum vergehn.<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">丰功伟绩的荣名必将如梦消散。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Soll denn das Spiel der Zeit, der
-                  leichte Mensch bestehn?<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">那么，时间的玩物、这轻飘飘的人，还能存留吗？</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Ach, was ist alles dies, was wir vor
-                  köstlich achten,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">唉，我们视为珍贵的这一切，究竟是什么呢——</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">亚历山大体（Alexandriner）与中间停顿</h3>
+              <p class="grammar-item__quote">Du siehst, wohin du siehst, ‖ nur Eitelkeit auf Erden,</p>
+              <div class="grammar-item__body">
+                亚历山大体是巴洛克德语诗歌的标准诗行：六音步抑扬格，共12或13个音节，第三个重音之后有一个固定的中间停顿（Zäsur），把诗行切成对称的两半。这一形式天然适合表达对立与平衡——本诗几乎每一行都是"前半句／后半句"的对偶（今日建的／明日拆的、如今绽放的／不久被踏的）。朗读时务必在中间停一下，整首诗的节奏才立得住。这一诗体由马丁·奥皮茨1624年的《德国诗学》确立为规范。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">十四行诗的结构与转折（Volta）</h3>
+              <p class="grammar-item__quote">全诗 4+4+3+3 行，韵式 abba abba ccd eed</p>
+              <div class="grammar-item__body">
+                两个四行诗节（Quartette）用抱韵，两个三行诗节（Terzette）以对句韵开始、第三行相互勾连。前八行铺陈现象，第九行开始转入论断——这个转折点称为
+                Volta。本诗的特别之处在于：第11行的句子跨过诗节界限延伸到第12—14行（"was ist alles dies … Als …, Als …,
+                Als …"），使最后六行成为一个不可分割的长句。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">前置第二格</h3>
+              <p class="grammar-item__quote">Der hohen Taten Ruhm muß wie ein Traum vergehn.</p>
+              <div class="grammar-item__body">
+                = der Ruhm der hohen
+                Taten。第二格前置在巴洛克诗歌中是常态而非例外，本站在荷尔德林、里尔克、特拉克尔、施托姆诸诗中标注过的同一结构，其源头正在这里。阅读窍门不变：看到
+                der/des + 名词后紧跟另一个名词，先把前者读作后者的修饰语。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">巴洛克拼写与省音</h3>
+              <p class="grammar-item__quote">jetzund / vor (= für) / Wiesenblum / findt / einig (= einzig)</p>
+              <div class="grammar-item__body">
+                本站呈现的是现代化正字法的通行文本，但仍保留了几处17世纪的词形：jetzund（= jetzt）、vor（= für，在 "für
+                etwas achten" 结构中）、einig（= einzig，唯一的）、以及为格律省去词尾的
+                Wiesenblum、findt、vergehn。学习者应能在阅读中还原为现代形式，同时明白这些不是错误。关于本站对巴洛克文本正字法的处理原则，详见"校对记录"。
+              </div>
+            </article>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Als schlechte Nichtigkeit, als Schatten, Staub und
-                  Wind,</span></div>
-              <div class="pline__zh">无非是拙劣的虚无，是影子、尘土与风，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Als eine Wiesenblum, die man nicht
-                  wieder findt!<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">是一朵草地上的花，人再也找不回它！</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="9"><span class="linetext">Noch will, was ewig ist, kein einig
-                  Mensch betrachten.<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
-              <div class="pline__zh">然而那永恒之物，竟没有一个人愿意去凝视。</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              格吕菲乌斯（1616—1664）是德语巴洛克最重要的诗人。他的一生几乎与三十年战争（1618—1648）完全重合：五岁丧父，十一岁丧母，家乡格洛高在战争中数度易手、被焚被劫，他本人多次逃难。这首十四行首刊于1637年——距战争结束还有十一年。
+            </p>
+            <p>
+              诗的主题是 vanitas（虚空）。拉丁语 vanitas
+              在当时的德语中意为"空洞的表象、虚无、徒劳"，也包括"夸耀、失败"，而不是今天"自负、爱慕虚荣"的性格义——今义正是从古义引申出来的：把心思放在虚无易逝之物（例如美貌）上的人，才被叫作"虚荣"。路德把《传道书》1:2
+              译作 "Es ist alles ganz eitel"，这首诗的标题即由此而来。
+            </p>
+            <p>
+              值得注意的是全诗的结尾。前十三行列举万物之空，读到第13行会以为这是一首绝望的诗；但最后一行突然把方向反转："然而那永恒之物，竟没有一个人愿意去凝视。"在
+              vanitas
+              的修辞里，万物的消逝并不是坏消息，而是神所安排的生灭；真正的问题在于人只盯着会消失的东西看。这首诗因此不是虚无主义的，而是一次劝诫。
+            </p>
+            <p>
+              本诗几乎是所有德语文学课接触巴洛克的第一篇。它与本站已收录的《眼泪·祖国之泪》（编号31）常被并读：一首写世界本身的无常，一首写具体的一场战争。
+            </p>
           </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留亚历山大体两个半句的对偶结构与末行的反讽收束</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Du siehst, wohin du siehst, nur Eitelkeit auf Erden,</p>
-            <p class="lnote__zh">全诗没有"我"，只有对读者的直接称呼 du。die Eitelkeit 在此取路德《圣经》中的古义"虚空、虚无"（拉丁语
-              vanitas），而非现代的"虚荣心"——诗题即引自《传道书》1:2 路德译本 "Es ist alles ganz eitel"。本站《晚歌》中的 eitel 亦取此古义，可对照。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Was dieser heute baut, reißt jener morgen ein;</p>
-            <p class="lnote__zh">dieser … jener（这一个……那一个）是德语的对举代词。可分动词 einreißen（拆毁）的前缀落在行末。heute / morgen 的对立将在下一节以
-              jetzund / morgen 重现，构成全诗的时间骨架。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Wo jetzund Städte stehn, wird eine Wiese sein,</p>
-            <p class="lnote__zh">jetzund 是 jetzt 的巴洛克形式，今已废弃。这一行是全诗最著名的意象：城市化为草地。写于三十年战争期间，它并非修辞夸张，而是当时西里西亚的实景。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Was jetzt so pocht und trotzt, ist morgen Asch und Bein;</p>
-            <p class="lnote__zh">pochen（敲、逞强）与 trotzen（对抗、逞能）近义连用，是巴洛克诗歌惯用的同义堆叠（Häufung）。Asch und
-              Bein（灰与骨）为不带冠词的固定对举，指焚毁后的残余。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Der hohen Taten Ruhm muß wie ein Traum vergehn.</p>
-            <p class="lnote__zh">前置第二格：der hohen Taten Ruhm = der Ruhm der hohen
-              Taten（丰功伟绩的荣名）。第三节（第一个三行诗节）开始由描写转入论断，这是十四行诗结构上的"转折"（Volta）。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Soll denn das Spiel der Zeit, der leichte Mensch bestehn?</p>
-            <p class="lnote__zh">das Spiel der Zeit（时间的玩物）与 der leichte Mensch（轻飘飘的人）是同位语，指同一对象。leicht
-              在此非"容易"，而是"轻若无物、经不起分量"。全诗唯一的疑问句，也是全诗的重心。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Ach, was ist alles dies, was wir vor köstlich achten,</p>
-            <p class="lnote__zh">vor 是 für 的巴洛克拼法（etwas für köstlich achten = 视某物为珍贵）。这一句的谓语要跨过诗节界限、到下一节的三个 als
-              才补全——十四行诗的两个三行诗节被一个句子缝在一起，这是格吕菲乌斯常用的手法。</p>
-          </article>
-          <article class="lnote" id="note-8" data-noteref="8">
-            <span class="lnote__mark">8</span>
-            <p class="lnote__de">Als eine Wiesenblum, die man nicht wieder findt!</p>
-            <p class="lnote__zh">Wiesenblum（草地上的花）省略了词尾 -e；findt 为 findet
-              的省音形式。此喻出自《诗篇》103:15—16（"至于世人，他的年日如草一样……风一吹便归无有"）。它同时回指第4行的"草地"——城市变成草地，人变成草地上的一朵花。</p>
-          </article>
-          <article class="lnote" id="note-9" data-noteref="9">
-            <span class="lnote__mark">9</span>
-            <p class="lnote__de">Noch will, was ewig ist, kein einig Mensch betrachten.</p>
-            <p class="lnote__zh">全诗的最后一击。noch 在此为"然而、尽管如此"；kein einig Mensch = kein einziger
-              Mensch（没有一个人）。前十三行都在讲万物皆空，末行却把矛头转向读者：既然如此，为什么没有人去看那唯一不空的东西？巴洛克 vanitas 诗的目的从来不是绝望，而是把目光引向永恒。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Eitelkeit, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">①（古义／圣经）虚空、虚无；②（今义）虚荣心</div>
-            <div class="vocab-card__note">诗题引自路德译《传道书》1:2；今义"虚荣"由古义引申而来（把心思放在虚无之物上）。阅读17—18世纪文本时必须优先考虑古义。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) Eitelkeit
+              取古义"虚空"而非"虚荣"，译文一律作"虚空／虚无"，这是理解全诗的前提；(2)
+              亚历山大体的中间停顿在中文中无法用音步复制，译文以句读位置近似传达其对偶感；(3) 末行的 noch
+              是转折词"然而"，译文以"然而……竟"传达其反讽语气——若读成"还有"，全诗的方向就反了。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">jetzund</span></div>
-            <span class="vocab-card__pos">adv.（巴洛克形式）</span>
-            <div class="vocab-card__meaning">如今、此刻</div>
-            <div class="vocab-card__note">= jetzt；17世纪常见，今已完全废弃。同类古形还有 itzt / itzund。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Zeno.org — Andreas Gryphius: Gesamtausgabe der deutschsprachigen Werke. Band 1, Tübingen 1963, S.
+                33–34（Sonnette. Das erste Buch, Nr. 8 „Es ist alles eitell“）</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Gryphius,+Andreas/Gedichte/Sonette/Sonnette.+Das+erste+Buch/8.+Es+ist+alles+eitell"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Gryphius,+Andreas/Gedichte/Sonette/Sonnette.+Das+erste+Buch/8.+Es+ist+alles+eitell</a
+              >
+              <span class="source-note"
+                >主来源（原始正字法）。依 Szyrocki/Powell
+                编《格吕菲乌斯德语作品全集》第1卷，保留17世纪拼写与斜线标点："Dv sihst/ wohin du sihst nur eitelkeit
+                auff erden."，并确认此诗在《十四行诗·第一卷》中编号为第8首。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — „Es ist alles eitel – Gryphius“</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/es-ist-alles-eitel.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/es-ist-alles-eitel.html</a
+              >
+              <span class="source-note"
+                >辅助来源（现代化正字法）。十四行的分节、韵式与语序与主来源一致，用于确定本站所采用的现代化通行文本；并提供格律分析（亚历山大体、abba
+                abba ccd eed）。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              【本站对巴洛克文本的正字法处理原则】本诗与本站收录的其他17世纪作品一样，正文采用**现代化正字法的通行文本**（即今日德语选本、教科书与课堂使用的形式），而非17世纪原刊的拼写。这是一个明确的编辑决定，理由是本站面向德语学习者：原刊的
+              "Dv sihst/ wohin du sihst nur eitelkeit auff erden."
+              对初学者近乎不可读，且会妨碍词典查询。原始形态在本记录中完整说明，绝不隐瞒。
+            </p>
+            <p>
+              德文正文通过两个独立来源核对：Zeno.org 转录的 Szyrocki/Powell
+              版《格吕菲乌斯德语作品全集》第1卷（1963年，第33—34页，原始正字法）与
+              gedichte7.de（现代化正字法）。十四行的行数、语序、韵式与内容完全一致。原刊形态与现代化文本之间的系统性差异包括：(1)
+              大小写——原刊名词一律小写（eitelkeit, städte, wiesen）；(2)
+              拼写——sihst/siehst、bawt/baut、itzund/jetzund、schäffers kind/Schäferskind、blüht sol/blüht
+              soll、vndt·vnd/und、mus/muß、dis/dies、für(vor)/für、nichtikeitt/Nichtigkeit、schaten/Schatten、windt/Wind、wiederfindt/wieder
+              findt；(3)
+              标点——原刊用斜线（Virgel）"/"代替逗号，且第9行前后多处用句号而非现代的问号／逗号。此外还有一处词形差异值得注意：原刊第10行末为句号（陈述），现代化文本作问号（疑问），这会改变该行的语气；本站从现代化文本的问号，因其与
+              "Soll denn …" 的句式相合，但此处属编辑判断而非文献事实，特此标明。
+            </p>
+            <p>
+              待核实项：(1) 1637年《利萨十四行诗集》首刊本与1643年后各版之间的具体异文，本站未逐一比对（据 German
+              Wikipedia 关于格吕菲乌斯十四行的说明，1637年版与后来各版差异可能较大）；(2)
+              本站未直接查阅任何原刊影印件，原始正字法依据 Zeno.org
+              对全集的转录，且该转录在本站抓取时存在字符编码损坏（变元音显示异常），故上文对原刊拼写的复述可能有个别不准确之处，建议对照全集纸本核实。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">einreißen</span></div>
-            <span class="vocab-card__pos">v.（可分，强变化）</span>
-            <div class="vocab-card__meaning">拆毁、推倒；（陋习）蔓延开来</div>
-            <div class="vocab-card__note">变位 reißt ein – riss ein – hat eingerissen；与 aufbauen（建造）构成本诗第2行的对立。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">trotzen</span></div>
-            <span class="vocab-card__pos">v.（弱变化，支配第三格）</span>
-            <div class="vocab-card__meaning">对抗、逞强、赌气</div>
-            <div class="vocab-card__note">der Trotz（倔强）、trotzdem（尽管如此）、trotz + 第二格（尽管）同源；诗中与 pochen 同义连用。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Erz, -e</span></div>
-            <span class="vocab-card__pos">n.（中性）</span>
-            <div class="vocab-card__meaning">矿石；青铜（诗歌用法）</div>
-            <div class="vocab-card__note">诗中与 Marmorstein 并列，指最坚固耐久的材料——纪念碑的材料。前缀 Erz-（如 Erzbischof 大主教）与之无关，源自希腊语。
-            </div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Beschwerde, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">①（古义）苦难、重负；②（今义）投诉；③（复数）病痛</div>
-            <div class="vocab-card__note">诗中取古义；今义"投诉"（eine Beschwerde einreichen）与"身体不适"（Beschwerden haben）都由"负担"引申而来。
-            </div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Nichtigkeit, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">虚无、微不足道之物；（法律）无效</div>
-            <div class="vocab-card__note">来自 nichtig（无效的、微不足道的）；诗中与 Eitelkeit 同义呼应。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">achten (für/als)</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">视为、认为</div>
-            <div class="vocab-card__note">诗中为 "etwas vor (= für) köstlich achten"；今日多用 halten für。另有"尊敬"（jemanden
-              achten）与"注意"（auf etwas achten）两义。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">sehen</td>
-                <td class="de">sieht</td>
-                <td class="de">sah</td>
-                <td class="de">hat gesehen</td>
-                <td class="de">gesehen</td>
-                <td class="de">sähe</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化，现在时单数变元音 e→ie；诗中首行两次出现第二人称 siehst。</td>
-              </tr>
-              <tr>
-                <td class="de">einreißen</td>
-                <td class="de">reißt ein</td>
-                <td class="de">riss ein（旧 riß ein）</td>
-                <td class="de">hat eingerissen</td>
-                <td class="de">eingerissen</td>
-                <td class="de">risse ein</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 可分动词，强变化（ei–i–i）。</td>
-              </tr>
-              <tr>
-                <td class="de">zertreten</td>
-                <td class="de">zertritt</td>
-                <td class="de">zertrat</td>
-                <td class="de">hat zertreten</td>
-                <td class="de">zertreten</td>
-                <td class="de">zerträte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 不可分动词（前缀 zer- 永不分离），强变化；诗中作被动不定式 "soll … zertreten werden"。</td>
-              </tr>
-              <tr>
-                <td class="de">vergehen</td>
-                <td class="de">vergeht</td>
-                <td class="de">verging</td>
-                <td class="de">ist vergangen</td>
-                <td class="de">vergangen</td>
-                <td class="de">verginge</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 不可分动词；派生词 die Vergänglichkeit（无常）正是巴洛克诗歌的核心概念。</td>
-              </tr>
-              <tr>
-                <td class="de">bestehen</td>
-                <td class="de">besteht</td>
-                <td class="de">bestand</td>
-                <td class="de">hat bestanden</td>
-                <td class="de">bestanden</td>
-                <td class="de">bestünde / bestände</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中取"存续、经受住"义；另有"通过（考试）"（eine Prüfung bestehen）、"由……构成"（aus etwas bestehen）、"坚持"（auf
-                  etwas bestehen）三义。</td>
-              </tr>
-              <tr>
-                <td class="de">betrachten</td>
-                <td class="de">betrachtet</td>
-                <td class="de">betrachtete</td>
-                <td class="de">hat betrachtet</td>
-                <td class="de">betrachtet</td>
-                <td class="de">betrachtete</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 不可分动词，弱变化；意为"凝视、审视、（作为……）看待"，是全诗最后一个词，也是它真正的祈使。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">亚历山大体（Alexandriner）与中间停顿</h3>
-            <p class="grammar-item__quote">Du siehst, wohin du siehst, ‖ nur Eitelkeit auf Erden,</p>
-            <div class="grammar-item__body">
-              亚历山大体是巴洛克德语诗歌的标准诗行：六音步抑扬格，共12或13个音节，第三个重音之后有一个固定的中间停顿（Zäsur），把诗行切成对称的两半。这一形式天然适合表达对立与平衡——本诗几乎每一行都是"前半句／后半句"的对偶（今日建的／明日拆的、如今绽放的／不久被踏的）。朗读时务必在中间停一下，整首诗的节奏才立得住。这一诗体由马丁·奥皮茨1624年的《德国诗学》确立为规范。
-            </div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">十四行诗的结构与转折（Volta）</h3>
-            <p class="grammar-item__quote">全诗 4+4+3+3 行，韵式 abba abba ccd eed</p>
-            <div class="grammar-item__body">
-              两个四行诗节（Quartette）用抱韵，两个三行诗节（Terzette）以对句韵开始、第三行相互勾连。前八行铺陈现象，第九行开始转入论断——这个转折点称为
-              Volta。本诗的特别之处在于：第11行的句子跨过诗节界限延伸到第12—14行（"was ist alles dies … Als …, Als …, Als …"），使最后六行成为一个不可分割的长句。
-            </div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">前置第二格</h3>
-            <p class="grammar-item__quote">Der hohen Taten Ruhm muß wie ein Traum vergehn.</p>
-            <div class="grammar-item__body">= der Ruhm der hohen
-              Taten。第二格前置在巴洛克诗歌中是常态而非例外，本站在荷尔德林、里尔克、特拉克尔、施托姆诸诗中标注过的同一结构，其源头正在这里。阅读窍门不变：看到 der/des +
-              名词后紧跟另一个名词，先把前者读作后者的修饰语。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">巴洛克拼写与省音</h3>
-            <p class="grammar-item__quote">jetzund / vor (= für) / Wiesenblum / findt / einig (= einzig)</p>
-            <div class="grammar-item__body">本站呈现的是现代化正字法的通行文本，但仍保留了几处17世纪的词形：jetzund（= jetzt）、vor（= für，在 "für etwas
-              achten" 结构中）、einig（= einzig，唯一的）、以及为格律省去词尾的
-              Wiesenblum、findt、vergehn。学习者应能在阅读中还原为现代形式，同时明白这些不是错误。关于本站对巴洛克文本正字法的处理原则，详见"校对记录"。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>
-            格吕菲乌斯（1616—1664）是德语巴洛克最重要的诗人。他的一生几乎与三十年战争（1618—1648）完全重合：五岁丧父，十一岁丧母，家乡格洛高在战争中数度易手、被焚被劫，他本人多次逃难。这首十四行首刊于1637年——距战争结束还有十一年。
-          </p>
-          <p>诗的主题是 vanitas（虚空）。拉丁语 vanitas
-            在当时的德语中意为"空洞的表象、虚无、徒劳"，也包括"夸耀、失败"，而不是今天"自负、爱慕虚荣"的性格义——今义正是从古义引申出来的：把心思放在虚无易逝之物（例如美貌）上的人，才被叫作"虚荣"。路德把《传道书》1:2
-            译作 "Es ist alles ganz eitel"，这首诗的标题即由此而来。</p>
-          <p>值得注意的是全诗的结尾。前十三行列举万物之空，读到第13行会以为这是一首绝望的诗；但最后一行突然把方向反转："然而那永恒之物，竟没有一个人愿意去凝视。"在 vanitas
-            的修辞里，万物的消逝并不是坏消息，而是神所安排的生灭；真正的问题在于人只盯着会消失的东西看。这首诗因此不是虚无主义的，而是一次劝诫。</p>
-          <p>本诗几乎是所有德语文学课接触巴洛克的第一篇。它与本站已收录的《眼泪·祖国之泪》（编号31）常被并读：一首写世界本身的无常，一首写具体的一场战争。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) Eitelkeit 取古义"虚空"而非"虚荣"，译文一律作"虚空／虚无"，这是理解全诗的前提；(2)
-            亚历山大体的中间停顿在中文中无法用音步复制，译文以句读位置近似传达其对偶感；(3) 末行的 noch
-            是转折词"然而"，译文以"然而……竟"传达其反讽语气——若读成"还有"，全诗的方向就反了。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">Zeno.org — Andreas Gryphius: Gesamtausgabe der deutschsprachigen Werke. Band 1,
-              Tübingen 1963, S. 33–34（Sonnette. Das erste Buch, Nr. 8 „Es ist alles eitell“）</span><a class="source-url"
-              href="http://www.zeno.org/Literatur/M/Gryphius,+Andreas/Gedichte/Sonette/Sonnette.+Das+erste+Buch/8.+Es+ist+alles+eitell"
-              target="_blank"
-              rel="noopener">http://www.zeno.org/Literatur/M/Gryphius,+Andreas/Gedichte/Sonette/Sonnette.+Das+erste+Buch/8.+Es+ist+alles+eitell</a>
-            <span class="source-note">主来源（原始正字法）。依 Szyrocki/Powell 编《格吕菲乌斯德语作品全集》第1卷，保留17世纪拼写与斜线标点："Dv sihst/ wohin du
-              sihst nur eitelkeit auff erden."，并确认此诗在《十四行诗·第一卷》中编号为第8首。</span>
-          </li>
-          <li>
-            <span class="source-name">gedichte7.de — „Es ist alles eitel – Gryphius“</span><a class="source-url"
-              href="https://www.gedichte7.de/es-ist-alles-eitel.html" target="_blank"
-              rel="noopener">https://www.gedichte7.de/es-ist-alles-eitel.html</a>
-            <span class="source-note">辅助来源（现代化正字法）。十四行的分节、韵式与语序与主来源一致，用于确定本站所采用的现代化通行文本；并提供格律分析（亚历山大体、abba abba ccd
-              eed）。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>
-            【本站对巴洛克文本的正字法处理原则】本诗与本站收录的其他17世纪作品一样，正文采用**现代化正字法的通行文本**（即今日德语选本、教科书与课堂使用的形式），而非17世纪原刊的拼写。这是一个明确的编辑决定，理由是本站面向德语学习者：原刊的
-            "Dv sihst/ wohin du sihst nur eitelkeit auff erden." 对初学者近乎不可读，且会妨碍词典查询。原始形态在本记录中完整说明，绝不隐瞒。</p>
-          <p>德文正文通过两个独立来源核对：Zeno.org 转录的 Szyrocki/Powell 版《格吕菲乌斯德语作品全集》第1卷（1963年，第33—34页，原始正字法）与
-            gedichte7.de（现代化正字法）。十四行的行数、语序、韵式与内容完全一致。原刊形态与现代化文本之间的系统性差异包括：(1) 大小写——原刊名词一律小写（eitelkeit, städte,
-            wiesen）；(2) 拼写——sihst/siehst、bawt/baut、itzund/jetzund、schäffers kind/Schäferskind、blüht sol/blüht
-            soll、vndt·vnd/und、mus/muß、dis/dies、für(vor)/für、nichtikeitt/Nichtigkeit、schaten/Schatten、windt/Wind、wiederfindt/wieder
-            findt；(3)
-            标点——原刊用斜线（Virgel）"/"代替逗号，且第9行前后多处用句号而非现代的问号／逗号。此外还有一处词形差异值得注意：原刊第10行末为句号（陈述），现代化文本作问号（疑问），这会改变该行的语气；本站从现代化文本的问号，因其与
-            "Soll denn …" 的句式相合，但此处属编辑判断而非文献事实，特此标明。</p>
-          <p>待核实项：(1) 1637年《利萨十四行诗集》首刊本与1643年后各版之间的具体异文，本站未逐一比对（据 German Wikipedia 关于格吕菲乌斯十四行的说明，1637年版与后来各版差异可能较大）；(2)
-            本站未直接查阅任何原刊影印件，原始正字法依据 Zeno.org 对全集的转录，且该转录在本站抓取时存在字符编码损坏（变元音显示异常），故上文对原刊拼写的复述可能有个别不准确之处，建议对照全集纸本核实。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Andreas Gryphius</li>
-          <li>确认标题与出处：Sonnette. Das erste Buch, Nr. 8</li>
-          <li>德文原文主来源：Zeno.org（Szyrocki/Powell 版全集第1卷，原始正字法）</li>
-          <li>德文原文辅助来源：gedichte7.de（现代化正字法）</li>
-          <li>核对诗节、行数、韵式</li>
-          <li>明确记录本站对巴洛克正字法的编辑处理原则</li>
-          <li>记录原刊与现代化文本的系统性差异</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇（含 eitel 的古今两义）</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点（含亚历山大体说明）</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li class="pending">生成 AI 配图</li>
-          <li class="pending">页面视觉检查</li>
-          <li class="pending">核实第10行末标点（陈述 vs. 疑问，现为编辑判断）</li>
-          <li class="pending">比对1637年首刊本与1643年后各版的异文</li>
-          <li class="pending">对照全集纸本核实原刊拼写（现依存在编码损坏的转录）</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Andreas Gryphius</li>
+            <li>确认标题与出处：Sonnette. Das erste Buch, Nr. 8</li>
+            <li>德文原文主来源：Zeno.org（Szyrocki/Powell 版全集第1卷，原始正字法）</li>
+            <li>德文原文辅助来源：gedichte7.de（现代化正字法）</li>
+            <li>核对诗节、行数、韵式</li>
+            <li>明确记录本站对巴洛克正字法的编辑处理原则</li>
+            <li>记录原刊与现代化文本的系统性差异</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇（含 eitel 的古今两义）</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点（含亚历山大体说明）</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">核实第10行末标点（陈述 vs. 疑问，现为编辑判断）</li>
+            <li class="pending">比对1637年首刊本与1643年后各版的异文</li>
+            <li class="pending">对照全集纸本核实原刊拼写（现依存在编码损坏的转录）</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

@@ -1,914 +1,1173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Abendlied · 晚歌（月亮已经升起） — Matthias Claudius | 德语诗歌学习画册</title>
-  <meta name="description" content="Abendlied（晚歌（月亮已经升起））— Matthias Claudius。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Abendlied · 晚歌（月亮已经升起） — Matthias Claudius | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Abendlied（晚歌（月亮已经升起））— Matthias Claudius。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="ein-winterabend.html" rel="prev"><span class="poem-nav__arrow"
-            aria-hidden="true">←</span><span class="poem-nav__title">一个冬夜</span></a>
-        <a class="poem-nav__link poem-nav__next" href="der-spinnerin-nachtlied.html" rel="next"><span
-            class="poem-nav__title">纺纱女的夜歌</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Abendlied</h1>
-        <p class="poem-titleblock__author">Matthias Claudius</p>
-        <p class="poem-titleblock__zh">晚歌（月亮已经升起）</p>
-        <p class="poem-titleblock__author-zh">马蒂亚斯·克劳迪乌斯</p>
-        <div class="poem-titleblock__biblio">
-          <p>《万茨贝克信使全集》第四部（Asmus omnia sua secum portans, 1783）</p>
-          <p>感伤主义（Empfindsamkeit）／启蒙晚期</p>
-          <p>约1778年作于汉堡万茨贝克（一说更早作于达姆施塔特），1778年刊于《缪斯年鉴 1779》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--a">A2–B1</span>
-          <span class="tag ">夜</span>
-          <span class="tag ">月亮</span>
-          <span class="tag ">祈祷</span>
-          <span class="tag ">死亡</span>
-          <span class="tag ">德语最著名的诗</span>
-          <span class="tag ">民歌·教会诗歌</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/abendlied.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
-            loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="ein-winterabend.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">一个冬夜</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="der-spinnerin-nachtlied.html" rel="next"
+            ><span class="poem-nav__title">纺纱女的夜歌</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Abendlied</h1>
+          <p class="poem-titleblock__author">Matthias Claudius</p>
+          <p class="poem-titleblock__zh">晚歌（月亮已经升起）</p>
+          <p class="poem-titleblock__author-zh">马蒂亚斯·克劳迪乌斯</p>
+          <div class="poem-titleblock__biblio">
+            <p>《万茨贝克信使全集》第四部（Asmus omnia sua secum portans, 1783）</p>
+            <p>感伤主义（Empfindsamkeit）／启蒙晚期</p>
+            <p>约1778年作于汉堡万茨贝克（一说更早作于达姆施塔特），1778年刊于《缪斯年鉴 1779》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2–B1</span>
+            <span class="tag">夜</span>
+            <span class="tag">月亮</span>
+            <span class="tag">祈祷</span>
+            <span class="tag">死亡</span>
+            <span class="tag">德语最著名的诗</span>
+            <span class="tag">民歌·教会诗歌</span>
+          </div>
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/abendlied.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    夏末或初秋的乡村夜景：一轮升起不久的月亮悬在天边，天空缀满细密星点，远处森林呈黑色剪影，近处草地上白雾正缓缓升起
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>宁静、开阔、微凉的安慰；不应甜美化为童话夜景，也不应阴森——它应当同时容得下安睡与死亡两种含义</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    半圆或近圆的月亮、密布的星、黑色的森林轮廓线、草地上贴地升起的白雾、远处一两间亮着微光的农舍窗口
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>18世纪末德国北部乡村，建筑为该时代样式；亦可完全不出现人造物</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    19世纪浪漫主义夜景油画风格（可参考月夜风景画的传统），主色为深蓝、墨绿与雾白，月光是画面唯一的光源，笔触柔和，星点宜小而密
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现文字、水印；不得出现十字架、教堂内景、天使等直白的宗教符号；不得出现人物；不得出现现代路灯、电线、车辆；避免过度饱和的"星空摄影"式处理
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
           </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>夏末或初秋的乡村夜景：一轮升起不久的月亮悬在天边，天空缀满细密星点，远处森林呈黑色剪影，近处草地上白雾正缓缓升起</dd>
-                <dt>情绪</dt>
-                <dd>宁静、开阔、微凉的安慰；不应甜美化为童话夜景，也不应阴森——它应当同时容得下安睡与死亡两种含义</dd>
-                <dt>画面元素</dt>
-                <dd>半圆或近圆的月亮、密布的星、黑色的森林轮廓线、草地上贴地升起的白雾、远处一两间亮着微光的农舍窗口</dd>
-                <dt>时代感</dt>
-                <dd>18世纪末德国北部乡村，建筑为该时代样式；亦可完全不出现人造物</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义夜景油画风格（可参考月夜风景画的传统），主色为深蓝、墨绿与雾白，月光是画面唯一的光源，笔触柔和，星点宜小而密</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得出现文字、水印；不得出现十字架、教堂内景、天使等直白的宗教符号；不得出现人物；不得出现现代路灯、电线、车辆；避免过度饱和的"星空摄影"式处理</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Der Mond ist aufgegangen,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">月亮已经升起，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Die goldnen Sternlein prangen<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">金色的小星闪耀</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Am Himmel hell und klar.</span></div>
+                <div class="pline__zh">在明净清朗的天上。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Der Wald steht schwarz und schweiget,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">森林黑黢黢地立着，默不作声，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Und aus den Wiesen steiget<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">而从草地上升起</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Der weiße Nebel wunderbar.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">白色的雾，奇异非常。</div>
+              </div>
             </div>
-          </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Der Mond ist aufgegangen,<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">月亮已经升起，</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie ist die Welt so stille,</span></div>
+                <div class="pline__zh">世界是何等寂静，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Und in der Dämmrung Hülle<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在暮色的笼罩之中</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">So traulich und so hold!</span></div>
+                <div class="pline__zh">何等亲切、何等可爱！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Als eine stille Kammer,</span></div>
+                <div class="pline__zh">如同一间安静的卧房，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Wo ihr des Tages Jammer<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你们可以在其中</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Verschlafen und vergessen sollt.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">把白日的愁苦睡去、忘掉。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Die goldnen Sternlein prangen<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">金色的小星闪耀</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Seht ihr den Mond dort stehen? –<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你们看见那边的月亮吗？——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Er ist nur halb zu sehen,</span></div>
+                <div class="pline__zh">它只有一半可见，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und ist doch rund und schön!</span></div>
+                <div class="pline__zh">却依然是圆的、美的！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">So sind wohl manche Sachen,</span></div>
+                <div class="pline__zh">许多事情大约也是这样，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Die wir getrost belachen,<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我们心安理得地一笑置之，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Weil unsre Augen sie nicht sehn.</span></div>
+                <div class="pline__zh">只因我们的眼睛看不见它们。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Am Himmel hell und klar.</span></div>
-              <div class="pline__zh">在明净清朗的天上。</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wir stolze Menschenkinder</span></div>
+                <div class="pline__zh">我们这些骄傲的人子</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Sind eitel arme Sünder,<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">无非是可怜的罪人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und wissen gar nicht viel.</span></div>
+                <div class="pline__zh">所知实在有限。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Wir spinnen Luftgespinnste<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我们编织空中的丝网，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und suchen viele Künste,</span></div>
+                <div class="pline__zh">追寻种种技艺，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und kommen weiter von dem Ziel.</span></div>
+                <div class="pline__zh">却离目标越来越远。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Der Wald steht schwarz und
-                  schweiget,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">森林黑黢黢地立着，默不作声，</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Gott, laß uns dein Heil schauen,</span></div>
+                <div class="pline__zh">上帝啊，让我们看见你的拯救，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="11">
+                  <span class="linetext"
+                    >Auf nichts Vergänglichs trauen,<sup class="refmark"><a href="#note-11">11</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">不去信靠任何易逝之物，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Nicht Eitelkeit uns freun!</span></div>
+                <div class="pline__zh">不以虚荣自娱！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Laß uns einfältig werden,</span></div>
+                <div class="pline__zh">让我们变得单纯，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und vor dir hier auf Erden</span></div>
+                <div class="pline__zh">在你面前、在这地上</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="12">
+                  <span class="linetext"
+                    >Wie Kinder fromm und fröhlich seyn!<sup class="refmark"><a href="#note-12">12</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">像孩子一样虔敬而快乐！</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Und aus den Wiesen steiget<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">而从草地上升起</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="13">
+                  <span class="linetext"
+                    >Wollst endlich sonder Grämen<sup class="refmark"><a href="#note-13">13</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">愿你最终不使我们悲苦，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Aus dieser Welt uns nehmen</span></div>
+                <div class="pline__zh">以一场温柔的死</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Durch einen sanften Tod!</span></div>
+                <div class="pline__zh">把我们从这世界带走！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und, wenn du uns genommen,</span></div>
+                <div class="pline__zh">而当你把我们带走之后，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="14">
+                  <span class="linetext"
+                    >Laß uns im Himmel kommen,<sup class="refmark"><a href="#note-14">14</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">让我们进入天国，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Du unser Herr und unser Gott!</span></div>
+                <div class="pline__zh">你，我们的主，我们的上帝！</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Der weiße Nebel wunderbar.<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">白色的雾，奇异非常。</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="15">
+                  <span class="linetext"
+                    >So legt euch denn, ihr Brüder,<sup class="refmark"><a href="#note-15">15</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">那么躺下吧，弟兄们，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">In Gottes Namen nieder;</span></div>
+                <div class="pline__zh">以上帝的名义躺下；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Kalt ist der Abendhauch.</span></div>
+                <div class="pline__zh">晚风是凉的。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Verschon’ uns, Gott! mit Strafen,</span></div>
+                <div class="pline__zh">上帝啊，饶恕我们，不要降罚，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und laß uns ruhig schlafen!</span></div>
+                <div class="pline__zh">让我们安睡！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="16">
+                  <span class="linetext"
+                    >Und unsern kranken Nachbar auch!<sup class="refmark"><a href="#note-16">16</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">也让我们生病的邻人安睡！</div>
+              </div>
             </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Wie ist die Welt so stille,</span></div>
-              <div class="pline__zh">世界是何等寂静，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Und in der Dämmrung Hülle<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">在暮色的笼罩之中</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">So traulich und so hold!</span></div>
-              <div class="pline__zh">何等亲切、何等可爱！</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Als eine stille Kammer,</span></div>
-              <div class="pline__zh">如同一间安静的卧房，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Wo ihr des Tages Jammer<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">你们可以在其中</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Verschlafen und vergessen sollt.<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">把白日的愁苦睡去、忘掉。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Seht ihr den Mond dort stehen? –<sup
-                    class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">你们看见那边的月亮吗？——</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Er ist nur halb zu sehen,</span></div>
-              <div class="pline__zh">它只有一半可见，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und ist doch rund und schön!</span></div>
-              <div class="pline__zh">却依然是圆的、美的！</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">So sind wohl manche Sachen,</span></div>
-              <div class="pline__zh">许多事情大约也是这样，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Die wir getrost belachen,<sup
-                    class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">我们心安理得地一笑置之，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Weil unsre Augen sie nicht sehn.</span></div>
-              <div class="pline__zh">只因我们的眼睛看不见它们。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Wir stolze Menschenkinder</span></div>
-              <div class="pline__zh">我们这些骄傲的人子</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="9"><span class="linetext">Sind eitel arme Sünder,<sup
-                    class="refmark"><a href="#note-9">9</a></sup></span></div>
-              <div class="pline__zh">无非是可怜的罪人，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und wissen gar nicht viel.</span></div>
-              <div class="pline__zh">所知实在有限。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="10"><span class="linetext">Wir spinnen Luftgespinnste<sup
-                    class="refmark"><a href="#note-10">10</a></sup></span></div>
-              <div class="pline__zh">我们编织空中的丝网，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und suchen viele Künste,</span></div>
-              <div class="pline__zh">追寻种种技艺，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und kommen weiter von dem Ziel.</span></div>
-              <div class="pline__zh">却离目标越来越远。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Gott, laß uns dein Heil schauen,</span></div>
-              <div class="pline__zh">上帝啊，让我们看见你的拯救，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="11"><span class="linetext">Auf nichts Vergänglichs trauen,<sup
-                    class="refmark"><a href="#note-11">11</a></sup></span></div>
-              <div class="pline__zh">不去信靠任何易逝之物，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Nicht Eitelkeit uns freun!</span></div>
-              <div class="pline__zh">不以虚荣自娱！</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Laß uns einfältig werden,</span></div>
-              <div class="pline__zh">让我们变得单纯，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und vor dir hier auf Erden</span></div>
-              <div class="pline__zh">在你面前、在这地上</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="12"><span class="linetext">Wie Kinder fromm und fröhlich
-                  seyn!<sup class="refmark"><a href="#note-12">12</a></sup></span></div>
-              <div class="pline__zh">像孩子一样虔敬而快乐！</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="13"><span class="linetext">Wollst endlich sonder Grämen<sup
-                    class="refmark"><a href="#note-13">13</a></sup></span></div>
-              <div class="pline__zh">愿你最终不使我们悲苦，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Aus dieser Welt uns nehmen</span></div>
-              <div class="pline__zh">以一场温柔的死</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Durch einen sanften Tod!</span></div>
-              <div class="pline__zh">把我们从这世界带走！</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und, wenn du uns genommen,</span></div>
-              <div class="pline__zh">而当你把我们带走之后，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="14"><span class="linetext">Laß uns im Himmel kommen,<sup
-                    class="refmark"><a href="#note-14">14</a></sup></span></div>
-              <div class="pline__zh">让我们进入天国，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Du unser Herr und unser Gott!</span></div>
-              <div class="pline__zh">你，我们的主，我们的上帝！</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="15"><span class="linetext">So legt euch denn, ihr Brüder,<sup
-                    class="refmark"><a href="#note-15">15</a></sup></span></div>
-              <div class="pline__zh">那么躺下吧，弟兄们，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">In Gottes Namen nieder;</span></div>
-              <div class="pline__zh">以上帝的名义躺下；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Kalt ist der Abendhauch.</span></div>
-              <div class="pline__zh">晚风是凉的。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Verschon’ uns, Gott! mit Strafen,</span></div>
-              <div class="pline__zh">上帝啊，饶恕我们，不要降罚，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und laß uns ruhig schlafen!</span></div>
-              <div class="pline__zh">让我们安睡！</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="16"><span class="linetext">Und unsern kranken Nachbar auch!<sup
-                    class="refmark"><a href="#note-16">16</a></sup></span></div>
-              <div class="pline__zh">也让我们生病的邻人安睡！</div>
-            </div>
-          </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留七节各六行的"自然—沉思—祈祷—安睡"推进，以及末行由宏大祈祷落回一位邻人的收束</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Der Mond ist aufgegangen,</p>
-            <p class="lnote__zh">全诗以现在完成时开篇（aufgehen 的完成时用 sein 作助动词），描述一个刚刚完成、结果仍在眼前的状态。此句化自保罗·格哈特1647年圣诗《Nun ruhen
-              alle Wälder》第三节首行 "Der Tag ist nun vergangen / die güldnen Sternlein
-              prangen"，克劳迪乌斯只改了第一行——这是德语文学中最著名的一次"改写致敬"。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Die goldnen Sternlein prangen</p>
-            <p class="lnote__zh">Sternlein 是 Stern 的指小形式（-lein），带亲切、稚拙的语感，也是虔敬主义（Pietismus）常用词。prangen
-              意为"炫耀般地闪现、盛装呈现"，今已近乎古语。goldnen 为 goldenen 的省音形式。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Der Wald steht schwarz und schweiget,</p>
-            <p class="lnote__zh">schweigen（沉默）用于森林是拟人。schweiget 为诗歌延长形式（今 schweigt）。此行与下一行的 steiget
-              押韵，是全诗最常被引用的句子之一（2012年德国《犯罪现场》有一集即以此为剧名）。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Und aus den Wiesen steiget / Der weiße Nebel wunderbar.</p>
-            <p class="lnote__zh">语序为状语—动词—主语（Der weiße Nebel 在动词之后）。wunderbar 在此为副词，修饰
-              steiget（"奇异地升起"），而非定语。德国作家阿克塞尔·哈克曾以某个孩子把这两行听成 "der weiße Neger
-              Wumbaba"（白人黑人翁巴巴）为题写成一本关于听错歌词的书，可见此句在德语文化中的普及程度。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Und in der Dämmrung Hülle</p>
-            <p class="lnote__zh">前置第二格："in [der Dämmrung] Hülle" = "in der Hülle der Dämmerung"（在暮色的包裹之中）。Dämmrung 为
-              Dämmerung 的省音形式，指黎明或黄昏的微光时分。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Wo ihr des Tages Jammer / Verschlafen und vergessen sollt.</p>
-            <p class="lnote__zh">关系从句，动词 sollt 后置于末尾。des Tages Jammer 又是一个前置第二格（= der Jammer des Tages
-              白日的愁苦）。注意人称：全诗至此突然出现第二人称复数 ihr——说话者是一位对家人／会众讲话的"家父"，这一角色是理解全诗语气的关键。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Seht ihr den Mond dort stehen? –</p>
-            <p class="lnote__zh">第三节是全诗的思想核心，也是它区别于一般晚祷诗的地方。这里以最日常的观察（半月其实是圆的）引出一个认识论论点：看不见并不等于不存在。这一转折使全诗从自然描写进入沉思。</p>
-          </article>
-          <article class="lnote" id="note-8" data-noteref="8">
-            <span class="lnote__mark">8</span>
-            <p class="lnote__de">Die wir getrost belachen,</p>
-            <p class="lnote__zh">getrost 意为"心安理得地、放心大胆地"（而非"被安慰"）；belachen
-              为及物动词"嘲笑某事"。这两行是对启蒙理性自信的温和批评：我们嘲笑的许多事情，只是因为我们看不见它们的全貌。</p>
-          </article>
-          <article class="lnote" id="note-9" data-noteref="9">
-            <span class="lnote__mark">9</span>
-            <p class="lnote__de">Sind eitel arme Sünder,</p>
-            <p class="lnote__zh">eitel 在此不是常见的"虚荣的"，而是路德《圣经》中的古义"纯然、不过是"（如 "es ist alles ganz eitel"
-              传道书"凡事都是虚空"）。整句意为"无非是可怜的罪人"。这是全诗最容易误读的一个词。</p>
-          </article>
-          <article class="lnote" id="note-10" data-noteref="10">
-            <span class="lnote__mark">10</span>
-            <p class="lnote__de">Wir spinnen Luftgespinnste</p>
-            <p class="lnote__zh">Luftgespinst（空中的织物／幻想）是罕见的复合词，由 Luft + Gespinst（蛛网般的织物，来自 spinnen 纺织）构成，与动词 spinnen
-              构成同源反复（"纺织空纺之物"）。spinnen 在口语中另有"发疯、胡说"之义。1779年《缪斯年鉴》版此处作 Luftgespinste，1783年版作 Luftgespinnste，拼写略异。</p>
-          </article>
-          <article class="lnote" id="note-11" data-noteref="11">
-            <span class="lnote__mark">11</span>
-            <p class="lnote__de">Auf nichts Vergänglichs trauen,</p>
-            <p class="lnote__zh">auf etwas trauen（今多作 auf etwas vertrauen）意为"信靠某物"。nichts Vergänglichs 是"nichts +
-              形容词名词化"结构，词尾 -s 为省音形式（今作 nichts Vergängliches）："任何易逝之物"。</p>
-          </article>
-          <article class="lnote" id="note-12" data-noteref="12">
-            <span class="lnote__mark">12</span>
-            <p class="lnote__de">Wie Kinder fromm und fröhlich seyn!</p>
-            <p class="lnote__zh">seyn 为18世纪 sein 的旧拼法。fromm（虔敬）与
-              fröhlich（快乐）的并置是本诗的核心价值取向——虔敬不是苦修，而是孩童式的、轻快的信赖。头韵（fromm–fröhlich）加强了这一效果。</p>
-          </article>
-          <article class="lnote" id="note-13" data-noteref="13">
-            <span class="lnote__mark">13</span>
-            <p class="lnote__de">Wollst endlich sonder Grämen</p>
-            <p class="lnote__zh">Wollst 是 wollen 的第一虚拟式（Konjunktiv I）第二人称单数，用于表达祈愿（"愿你……"），今已仅存于祷词与固定表达中。sonder
-              是古老的介词，意为"没有、免于"（同英语 without、法语 sans），支配第四格；今仅存于 sonderbar、sondern 等派生词中。das Grämen 为动词 sich
-              grämen（忧伤）的名词化。</p>
-          </article>
-          <article class="lnote" id="note-14" data-noteref="14">
-            <span class="lnote__mark">14</span>
-            <p class="lnote__de">Laß uns im Himmel kommen,</p>
-            <p class="lnote__zh">1783年版此处作 "im Himmel"（第三格），从现代语法看应为 "in den Himmel"（第四格，表方向）——1779年《缪斯年鉴》版正作 "in
-              Himmel"。这属于18世纪的用法波动，也可能是排印之误，本站保留1783年版原样并在此说明。</p>
-          </article>
-          <article class="lnote" id="note-15" data-noteref="15">
-            <span class="lnote__mark">15</span>
-            <p class="lnote__de">So legt euch denn, ihr Brüder,</p>
-            <p class="lnote__zh">sich legen（躺下）的第二人称复数命令式，可分前缀 nieder 落在下一行（niederlegen）。denn
-              在此为语气词，表示"那么、既然如此"。全诗至此从祈祷回到具体的睡前动作。</p>
-          </article>
-          <article class="lnote" id="note-16" data-noteref="16">
-            <span class="lnote__mark">16</span>
-            <p class="lnote__de">Und unsern kranken Nachbar auch!</p>
-            <p class="lnote__zh">
-              全诗最著名的一行。经过六节关于宇宙、罪、死亡与天国的宏大言说之后，最后一句突然缩小到隔壁那位生病的邻人身上。这一"缩小"被公认为全诗最动人的笔法。2017年德国语言协会曾因新教教会将此行改为"也让所有生病的人"（性别中立版）而颁发"年度语言糟蹋者"负面奖，可见这一行在德语文化中的分量。
+            <p class="translation-meta">
+              本站学习译文（AI
+              辅助），直译，保留七节各六行的"自然—沉思—祈祷—安睡"推进，以及末行由宏大祈祷落回一位邻人的收束
             </p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">aufgehen</span></div>
-            <span class="vocab-card__pos">v.（可分，强变化）</span>
-            <div class="vocab-card__meaning">（日月）升起；（种子）发芽；（谜）解开</div>
-            <div class="vocab-card__note">完成时用 sein：ist aufgegangen。习语 "mir geht ein Licht auf" 意为"我恍然大悟"。</div>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">prangen</span></div>
-            <span class="vocab-card__pos">v.（弱变化，古雅）</span>
-            <div class="vocab-card__meaning">炫耀般地呈现、辉映、赫然在目</div>
-            <div class="vocab-card__note">今日多用于书面语（"auf dem Plakat prangte sein Name" 海报上赫然是他的名字）；与 der Prunk（华丽）同源。
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Der Mond ist aufgegangen,</p>
+              <p class="lnote__zh">
+                全诗以现在完成时开篇（aufgehen 的完成时用 sein
+                作助动词），描述一个刚刚完成、结果仍在眼前的状态。此句化自保罗·格哈特1647年圣诗《Nun ruhen alle
+                Wälder》第三节首行 "Der Tag ist nun vergangen / die güldnen Sternlein
+                prangen"，克劳迪乌斯只改了第一行——这是德语文学中最著名的一次"改写致敬"。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Die goldnen Sternlein prangen</p>
+              <p class="lnote__zh">
+                Sternlein 是 Stern 的指小形式（-lein），带亲切、稚拙的语感，也是虔敬主义（Pietismus）常用词。prangen
+                意为"炫耀般地闪现、盛装呈现"，今已近乎古语。goldnen 为 goldenen 的省音形式。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Der Wald steht schwarz und schweiget,</p>
+              <p class="lnote__zh">
+                schweigen（沉默）用于森林是拟人。schweiget 为诗歌延长形式（今 schweigt）。此行与下一行的 steiget
+                押韵，是全诗最常被引用的句子之一（2012年德国《犯罪现场》有一集即以此为剧名）。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Und aus den Wiesen steiget / Der weiße Nebel wunderbar.</p>
+              <p class="lnote__zh">
+                语序为状语—动词—主语（Der weiße Nebel 在动词之后）。wunderbar 在此为副词，修饰
+                steiget（"奇异地升起"），而非定语。德国作家阿克塞尔·哈克曾以某个孩子把这两行听成 "der weiße Neger
+                Wumbaba"（白人黑人翁巴巴）为题写成一本关于听错歌词的书，可见此句在德语文化中的普及程度。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Und in der Dämmrung Hülle</p>
+              <p class="lnote__zh">
+                前置第二格："in [der Dämmrung] Hülle" = "in der Hülle der Dämmerung"（在暮色的包裹之中）。Dämmrung 为
+                Dämmerung 的省音形式，指黎明或黄昏的微光时分。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Wo ihr des Tages Jammer / Verschlafen und vergessen sollt.</p>
+              <p class="lnote__zh">
+                关系从句，动词 sollt 后置于末尾。des Tages Jammer 又是一个前置第二格（= der Jammer des Tages
+                白日的愁苦）。注意人称：全诗至此突然出现第二人称复数
+                ihr——说话者是一位对家人／会众讲话的"家父"，这一角色是理解全诗语气的关键。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Seht ihr den Mond dort stehen? –</p>
+              <p class="lnote__zh">
+                第三节是全诗的思想核心，也是它区别于一般晚祷诗的地方。这里以最日常的观察（半月其实是圆的）引出一个认识论论点：看不见并不等于不存在。这一转折使全诗从自然描写进入沉思。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Die wir getrost belachen,</p>
+              <p class="lnote__zh">
+                getrost 意为"心安理得地、放心大胆地"（而非"被安慰"）；belachen
+                为及物动词"嘲笑某事"。这两行是对启蒙理性自信的温和批评：我们嘲笑的许多事情，只是因为我们看不见它们的全貌。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Sind eitel arme Sünder,</p>
+              <p class="lnote__zh">
+                eitel 在此不是常见的"虚荣的"，而是路德《圣经》中的古义"纯然、不过是"（如 "es ist alles ganz eitel"
+                传道书"凡事都是虚空"）。整句意为"无非是可怜的罪人"。这是全诗最容易误读的一个词。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Wir spinnen Luftgespinnste</p>
+              <p class="lnote__zh">
+                Luftgespinst（空中的织物／幻想）是罕见的复合词，由 Luft + Gespinst（蛛网般的织物，来自 spinnen
+                纺织）构成，与动词 spinnen 构成同源反复（"纺织空纺之物"）。spinnen
+                在口语中另有"发疯、胡说"之义。1779年《缪斯年鉴》版此处作 Luftgespinste，1783年版作
+                Luftgespinnste，拼写略异。
+              </p>
+            </article>
+            <article class="lnote" id="note-11" data-noteref="11">
+              <span class="lnote__mark">11</span>
+              <p class="lnote__de">Auf nichts Vergänglichs trauen,</p>
+              <p class="lnote__zh">
+                auf etwas trauen（今多作 auf etwas vertrauen）意为"信靠某物"。nichts Vergänglichs 是"nichts +
+                形容词名词化"结构，词尾 -s 为省音形式（今作 nichts Vergängliches）："任何易逝之物"。
+              </p>
+            </article>
+            <article class="lnote" id="note-12" data-noteref="12">
+              <span class="lnote__mark">12</span>
+              <p class="lnote__de">Wie Kinder fromm und fröhlich seyn!</p>
+              <p class="lnote__zh">
+                seyn 为18世纪 sein 的旧拼法。fromm（虔敬）与
+                fröhlich（快乐）的并置是本诗的核心价值取向——虔敬不是苦修，而是孩童式的、轻快的信赖。头韵（fromm–fröhlich）加强了这一效果。
+              </p>
+            </article>
+            <article class="lnote" id="note-13" data-noteref="13">
+              <span class="lnote__mark">13</span>
+              <p class="lnote__de">Wollst endlich sonder Grämen</p>
+              <p class="lnote__zh">
+                Wollst 是 wollen 的第一虚拟式（Konjunktiv
+                I）第二人称单数，用于表达祈愿（"愿你……"），今已仅存于祷词与固定表达中。sonder
+                是古老的介词，意为"没有、免于"（同英语 without、法语 sans），支配第四格；今仅存于 sonderbar、sondern
+                等派生词中。das Grämen 为动词 sich grämen（忧伤）的名词化。
+              </p>
+            </article>
+            <article class="lnote" id="note-14" data-noteref="14">
+              <span class="lnote__mark">14</span>
+              <p class="lnote__de">Laß uns im Himmel kommen,</p>
+              <p class="lnote__zh">
+                1783年版此处作 "im Himmel"（第三格），从现代语法看应为 "in den
+                Himmel"（第四格，表方向）——1779年《缪斯年鉴》版正作 "in
+                Himmel"。这属于18世纪的用法波动，也可能是排印之误，本站保留1783年版原样并在此说明。
+              </p>
+            </article>
+            <article class="lnote" id="note-15" data-noteref="15">
+              <span class="lnote__mark">15</span>
+              <p class="lnote__de">So legt euch denn, ihr Brüder,</p>
+              <p class="lnote__zh">
+                sich legen（躺下）的第二人称复数命令式，可分前缀 nieder 落在下一行（niederlegen）。denn
+                在此为语气词，表示"那么、既然如此"。全诗至此从祈祷回到具体的睡前动作。
+              </p>
+            </article>
+            <article class="lnote" id="note-16" data-noteref="16">
+              <span class="lnote__mark">16</span>
+              <p class="lnote__de">Und unsern kranken Nachbar auch!</p>
+              <p class="lnote__zh">
+                全诗最著名的一行。经过六节关于宇宙、罪、死亡与天国的宏大言说之后，最后一句突然缩小到隔壁那位生病的邻人身上。这一"缩小"被公认为全诗最动人的笔法。2017年德国语言协会曾因新教教会将此行改为"也让所有生病的人"（性别中立版）而颁发"年度语言糟蹋者"负面奖，可见这一行在德语文化中的分量。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">aufgehen</span></div>
+              <span class="vocab-card__pos">v.（可分，强变化）</span>
+              <div class="vocab-card__meaning">（日月）升起；（种子）发芽；（谜）解开</div>
+              <div class="vocab-card__note">
+                完成时用 sein：ist aufgegangen。习语 "mir geht ein Licht auf" 意为"我恍然大悟"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">prangen</span></div>
+              <span class="vocab-card__pos">v.（弱变化，古雅）</span>
+              <div class="vocab-card__meaning">炫耀般地呈现、辉映、赫然在目</div>
+              <div class="vocab-card__note">
+                今日多用于书面语（"auf dem Plakat prangte sein Name" 海报上赫然是他的名字）；与 der Prunk（华丽）同源。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Dämmerung, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">曙光或暮色、微明时分</div>
+              <div class="vocab-card__note">兼指晨昏（Morgendämmerung / Abenddämmerung）；诗中省音作 Dämmrung。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">traulich</span></div>
+              <span class="vocab-card__pos">adj.（古雅）</span>
+              <div class="vocab-card__meaning">亲切的、令人安心的</div>
+              <div class="vocab-card__note">
+                与 trauen（信赖）、vertraut（熟悉的）、traut 同源；今日基本被 gemütlich、vertraut 取代。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hold</span></div>
+              <span class="vocab-card__pos">adj.（古雅）</span>
+              <div class="vocab-card__meaning">可爱的、温婉的、有好感的</div>
+              <div class="vocab-card__note">
+                本站《你像一朵花》《生命的中途》中亦出现此词；今存于 holdselig、Unhold（恶魔）等派生词。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Jammer</span></div>
+              <span class="vocab-card__pos">n.（阳性，通常无复数）</span>
+              <div class="vocab-card__meaning">悲苦、哀愁、可怜的状况</div>
+              <div class="vocab-card__note">
+                口语中 "es ist ein Jammer" 意为"真可惜"；形容词 jämmerlich（可怜的、糟糕的）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">getrost</span></div>
+              <span class="vocab-card__pos">adv./adj.</span>
+              <div class="vocab-card__meaning">心安理得地、放心地</div>
+              <div class="vocab-card__note">
+                形式上是 trösten（安慰）的第二分词，但用作"无所顾虑地"（"du kannst getrost gehen"
+                你尽管去好了）；不可按被动理解为"被安慰的"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">eitel</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">①（古义，不变格）纯然、不过是；②（今义）虚荣的、空虚的</div>
+              <div class="vocab-card__note">
+                本诗第4节取古义（"eitel arme Sünder" 无非是可怜的罪人），第5节的名词 Eitelkeit
+                则取今义（虚荣）。同一首诗中两义并存，是阅读18世纪文本时的典型陷阱。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Gespinst, -e</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">纺出的丝、蛛网状之物；（引申）幻想的编织物</div>
+              <div class="vocab-card__note">
+                来自 spinnen（纺；口语"发疯"）；诗中复合为 Luftgespinst（空中的织物＝空想）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">einfältig</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">①单纯的、质朴的；②（今多为贬义）头脑简单的</div>
+              <div class="vocab-card__note">
+                字面为"只有一折的"（ein + Falte），与
+                vielfältig（多样的）相对。诗中取正面的"单纯"义——这在今日德语中已很难直接使用，须靠语境理解。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">sonder</span></div>
+              <span class="vocab-card__pos">介词（古语，支配第四格）</span>
+              <div class="vocab-card__meaning">没有、免于</div>
+              <div class="vocab-card__note">
+                同英语 without；今已废弃，仅存于 sonderbar（奇特的）、besonders（特别地）、sondern（而是）等词中。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Abendhauch</span></div>
+              <span class="vocab-card__pos">n.（阳性，复合词）</span>
+              <div class="vocab-card__meaning">晚风、夜晚的气息</div>
+              <div class="vocab-card__note">
+                der Hauch 指极轻微的气息或一丝（ein Hauch von …）；英格丽·诺尔1996年的犯罪小说即以 "Kalt ist der
+                Abendhauch" 为题。
+              </div>
             </div>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Dämmerung, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">曙光或暮色、微明时分</div>
-            <div class="vocab-card__note">兼指晨昏（Morgendämmerung / Abenddämmerung）；诗中省音作 Dämmrung。</div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">aufgehen</td>
+                  <td class="de">geht auf</td>
+                  <td class="de">ging auf</td>
+                  <td class="de">ist aufgegangen</td>
+                  <td class="de">aufgegangen</td>
+                  <td class="de">ginge auf</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中首行用现在完成时 "ist aufgegangen"，强调升起后的当下状态。</td>
+                </tr>
+                <tr>
+                  <td class="de">schweigen</td>
+                  <td class="de">schweigt</td>
+                  <td class="de">schwieg</td>
+                  <td class="de">hat geschwiegen</td>
+                  <td class="de">geschwiegen</td>
+                  <td class="de">schwiege</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化（ei–ie–ie）；诗中用延长形式 schweiget（今 schweigt）。</td>
+                </tr>
+                <tr>
+                  <td class="de">steigen</td>
+                  <td class="de">steigt</td>
+                  <td class="de">stieg</td>
+                  <td class="de">ist gestiegen</td>
+                  <td class="de">gestiegen</td>
+                  <td class="de">stiege</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中延长形式 steiget，与 schweiget 押韵。</td>
+                </tr>
+                <tr>
+                  <td class="de">verschlafen</td>
+                  <td class="de">verschläft</td>
+                  <td class="de">verschlief</td>
+                  <td class="de">hat verschlafen</td>
+                  <td class="de">verschlafen</td>
+                  <td class="de">verschliefe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 前缀 ver- 在此表"通过睡眠而消除"；日常义为"睡过头"（Ich habe verschlafen）。</td>
+                </tr>
+                <tr>
+                  <td class="de">lassen</td>
+                  <td class="de">lässt</td>
+                  <td class="de">ließ</td>
+                  <td class="de">hat gelassen / hat … lassen</td>
+                  <td class="de">gelassen / lassen</td>
+                  <td class="de">ließe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中多次用命令式 Laß（今 Lass），构成祈祷句"让我们……"（Laß uns + 不定式）。</td>
+                </tr>
+                <tr>
+                  <td class="de">wollen</td>
+                  <td class="de">will</td>
+                  <td class="de">wollte</td>
+                  <td class="de">hat gewollt</td>
+                  <td class="de">gewollt / wollen</td>
+                  <td class="de">wollte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第六节首词 Wollst 为第一虚拟式第二人称单数（愿望式），今仅存于祷词与固定表达。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">sich niederlegen</td>
+                  <td class="de">legt sich nieder</td>
+                  <td class="de">legte sich nieder</td>
+                  <td class="de">hat sich niedergelegt</td>
+                  <td class="de">niedergelegt</td>
+                  <td class="de">legte sich nieder</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 可分动词；诗中命令式 "legt euch … nieder"，前缀跨行落在下一行。</td>
+                </tr>
+                <tr>
+                  <td class="de">verschonen</td>
+                  <td class="de">verschont</td>
+                  <td class="de">verschonte</td>
+                  <td class="de">hat verschont</td>
+                  <td class="de">verschont</td>
+                  <td class="de">verschonte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ "jemanden mit etwas verschonen" 意为"免除某人某事"；诗中命令式作 Verschon’（省去 -e）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">traulich</span></div>
-            <span class="vocab-card__pos">adj.（古雅）</span>
-            <div class="vocab-card__meaning">亲切的、令人安心的</div>
-            <div class="vocab-card__note">与 trauen（信赖）、vertraut（熟悉的）、traut 同源；今日基本被 gemütlich、vertraut 取代。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">前置第二格（三例）</h3>
+              <p class="grammar-item__quote">in der Dämmrung Hülle / des Tages Jammer</p>
+              <div class="grammar-item__body">
+                现代德语把第二格放在被修饰名词之后（die Hülle der Dämmerung、der Jammer des
+                Tages），18世纪诗歌则常用前置语序。识别方法：看到两个连续的名词而前一个带第二格冠词（der/des）时，先把它读作后一个名词的修饰语。这一结构在本站收录的荷尔德林、里尔克、特拉克尔诸诗中反复出现，值得作为固定的阅读技能训练。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">第一虚拟式表祈愿</h3>
+              <p class="grammar-item__quote">Wollst endlich sonder Grämen / Aus dieser Welt uns nehmen</p>
+              <div class="grammar-item__body">
+                德语第一虚拟式（Konjunktiv I）除用于间接引语外，还可表达愿望与劝告。今日只剩少数固定表达（Es lebe die
+                Freiheit! 自由万岁；Gott sei Dank 感谢上帝；Man nehme … 取……〔食谱用语〕）。本诗的
+                Wollst（愿你欲……）是第二人称单数形式，在现代德语中已完全消失，只能在祷词与古典文本中遇到。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">指小后缀 -lein / -chen</h3>
+              <p class="grammar-item__quote">Die goldnen Sternlein prangen</p>
+              <div class="grammar-item__body">
+                德语用后缀 -lein（偏南德、书面雅语）或 -chen（更通用）构成指小词，一律变为中性，词干元音多变音：Stern →
+                Sternlein、Haus → Häuschen、Blume → Blümchen。指小词不只表示"小"，更常表示亲切、怜爱或稚拙的语气。本诗用
+                Sternlein 而非 Sterne，一举定下了全诗孩童式的信赖基调（第五节"像孩子一样虔敬而快乐"正与之呼应）。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">命令式的诸种形式</h3>
+              <p class="grammar-item__quote">
+                Seht ihr den Mond …? / Laß uns einfältig werden / So legt euch denn, ihr Brüder, / Verschon’ uns, Gott!
+              </p>
+              <div class="grammar-item__body">
+                本诗几乎用齐了德语命令式的全部形式：第二人称复数 seht / legt（与陈述式同形，但不加主语
+                ihr）、第二人称单数 Laß / Verschon’（省去词尾 -e，是诗歌与口语的常见做法）、以及 "Laß uns + 不定式"
+                这一相当于英语 let us 的劝诱结构。请注意区分第二节 "Seht ihr den Mond dort stehen?"——它带主语 ihr
+                且句末为问号，是疑问句而非命令句。
+              </div>
+            </article>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">hold</span></div>
-            <span class="vocab-card__pos">adj.（古雅）</span>
-            <div class="vocab-card__meaning">可爱的、温婉的、有好感的</div>
-            <div class="vocab-card__note">本站《你像一朵花》《生命的中途》中亦出现此词；今存于 holdselig、Unhold（恶魔）等派生词。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              《晚歌》1778年首刊于约翰·海因里希·福斯主编的《缪斯年鉴
+              1779》，此后几乎没有一部德语诗选会漏掉它。1783年克劳迪乌斯本人把它收入《万茨贝克信使全集》第四部，并修改了第六节的最后一行。它的蓝本是保罗·格哈特1647年的圣诗《Nun
+              ruhen alle
+              Wälder》——克劳迪乌斯本打算让自己的诗按同一旋律演唱，因此两首在格律与韵式上完全一致（六行诗节，尾韵
+              aabccb，第三、六行构成"尾韵包"
+              Schweifreim）。1790年约翰·亚伯拉罕·彼得·舒尔茨在《以民歌风格演唱的歌曲》中为它谱写的旋律，使它进入德语歌唱曲目的核心，今天新教《福音赞美诗集》（EG
+              482）与2013年起的天主教《赞美上帝》（Gotteslob
+              93）都以此曲收录。全部谱曲版本超过70种，舒伯特1816年11月也写过一首（D 499）。
+            </p>
+            <p>
+              这首诗长期在评价上存有争议：一些读者只看到"孩童式的虔敬"，因其所谓的天真与浅白而拒斥它；恩斯特·维歇特则赞赏它质朴而在手艺上极为高明，认为简单本身正是一种风格手段。文学学者温弗里德·弗罗因德指出，它与其说是一首田园诗，不如说是一首死亡之诗——只不过是在一个信者的救恩期待背景之下写成的。最广为传唱的通常只有第一、二、三与最后一节，中间几节谈罪、谈死、谈天国的部分反而常被略去；赫尔德早在收录此诗进《民歌集》时就已删去最后两节。
+            </p>
+            <p>
+              它在德语文化中的地位可由几个细节看出：赫尔穆特·施密特生前指定在自己2015年的追思礼拜上唱这首歌；安塞尔姆·基弗1971年画过一幅题为《月亮已经升起》的作品；2020年新冠疫情初期，德国福音教会曾邀请所有人每晚19点在阳台合唱此曲。也正因如此，它被戏拟的次数同样惊人，其中最著名的是彼得·吕姆科夫1962年的《对马蒂亚斯·克劳迪乌斯〈晚歌〉的变奏》。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Jammer</span></div>
-            <span class="vocab-card__pos">n.（阳性，通常无复数）</span>
-            <div class="vocab-card__meaning">悲苦、哀愁、可怜的状况</div>
-            <div class="vocab-card__note">口语中 "es ist ein Jammer" 意为"真可惜"；形容词 jämmerlich（可怜的、糟糕的）。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。需要特别说明的是第四节 "Sind eitel arme Sünder" 中的
+              eitel：此处并非今义的"虚荣"，而是路德《圣经》语言中的"纯然、不过是"，译文作"无非是可怜的罪人"；而第五节的名词
+              Eitelkeit
+              则取今义"虚荣"，译文作"虚荣"——同一词根在同一首诗中两义并用，是本诗翻译中最需要留心之处。此外，译文保留了第七节末行由宏大祈祷突然收缩到"生病的邻人"这一落差，未作任何铺垫或修饰。本诗因作者1815年逝世，德文原文早已进入公有领域；已知存在多个中文译本，因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">getrost</span></div>
-            <span class="vocab-card__pos">adv./adj.</span>
-            <div class="vocab-card__meaning">心安理得地、放心地</div>
-            <div class="vocab-card__note">形式上是 trösten（安慰）的第二分词，但用作"无所顾虑地"（"du kannst getrost gehen"
-              你尽管去好了）；不可按被动理解为"被安慰的"。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >German Wikipedia — „Der Mond ist aufgegangen“（Abendlied von Matthias Claudius）</span
+              ><a
+                class="source-url"
+                href="https://de.wikipedia.org/wiki/Der_Mond_ist_aufgegangen"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikipedia.org/wiki/Der_Mond_ist_aufgegangen</a
+              >
+              <span class="source-note"
+                >主来源。同时给出两个权威版本的全文并标注出处：Musen Almanach für 1779（Hamburg 1778, S. 184–186）与
+                Asmus omnia sua secum portans, Vierter Theil（Wandsbeck 1783, S. 57
+                f.），两版可逐行对照。本站从1783年作者本人修订的版本。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — „Der Mond ist aufgegangen (Abendlied) – Claudius“</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/abendlied-claudius.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/abendlied-claudius.html</a
+              >
+              <span class="source-note"
+                >辅助来源。七节四十二行，用词与1783年版一致（含 "Du unser Herr und unser
+                Gott!"），采用现代化正字法（laß→laß/lass、seyn→sein、Luftgespinnste→Luftgespinste、im Himmel→in Himmel
+                处作 in Himmel 的现代化改写），用于独立交叉核对。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源核对：German Wikipedia
+              同时转录了1779年《缪斯年鉴》版与1783年《万茨贝克信使全集》第四部版，gedichte7.de
+              提供了一个现代化排印的通行本。七节各六行的结构在所有版本中一致。已核实的版本差异如下：(1)
+              作者本人的修订：1779年版第六节末行作 "Du lieber treuer frommer Gott!"，1783年版改为 "Du unser Herr und
+              unser Gott!"；Wikipedia
+              注释明确指出克劳迪乌斯1783年收入全集时修改了第六节第六行。本站从1783年作者手定版。(2)
+              标点与分行细节：1779年版第3行末为冒号、第13行末无破折号、第15行末为句号，1783年版分别作句号、破折号、感叹号；本站从1783年版。(3)
+              正字法：1783年版保留 seyn（今 sein）、Luftgespinnste（1779年版作 Luftgespinste）、laß（今
+              lass）等旧拼法，本站予以保留。(4) 一处语法疑点：1783年版第六节第五行作 "Laß uns im Himmel
+              kommen"（第三格），而1779年版作 "Laß uns in Himmel kommen"；按现代语法表方向应为 "in den
+              Himmel"。本站保留1783年版原样并在逐行注释中标明，但此处究竟是18世纪的用法波动还是排印之误，本站未能确定，属待核实项。(5)
+              另需说明：新教《福音赞美诗集》（1993）将第五节首行改作 "Gott, laß dein Heil uns
+              schauen"，天主教《赞美上帝》（2013）作 "Gott, lass uns dein Heil
+              schauen"，两者均标注为"教会合一"版本；本站采用克劳迪乌斯原诗的语序，不采教会歌本的改动。本站未直接查阅1778年《缪斯年鉴》与1783年全集的影印件，上述采择依据
+              Wikipedia 的转录（该词条已给出两版的 Google Books 数字化链接），建议有条件的读者对照原书核实。
+            </p>
+            <p>
+              【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de
+              属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4
+              节属三级来源；去掉三级来源后，本诗仅剩 1
+              个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
+              SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方
+              checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">eitel</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">①（古义，不变格）纯然、不过是；②（今义）虚荣的、空虚的</div>
-            <div class="vocab-card__note">本诗第4节取古义（"eitel arme Sünder" 无非是可怜的罪人），第5节的名词 Eitelkeit
-              则取今义（虚荣）。同一首诗中两义并存，是阅读18世纪文本时的典型陷阱。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Gespinst, -e</span></div>
-            <span class="vocab-card__pos">n.（中性）</span>
-            <div class="vocab-card__meaning">纺出的丝、蛛网状之物；（引申）幻想的编织物</div>
-            <div class="vocab-card__note">来自 spinnen（纺；口语"发疯"）；诗中复合为 Luftgespinst（空中的织物＝空想）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">einfältig</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">①单纯的、质朴的；②（今多为贬义）头脑简单的</div>
-            <div class="vocab-card__note">字面为"只有一折的"（ein + Falte），与
-              vielfältig（多样的）相对。诗中取正面的"单纯"义——这在今日德语中已很难直接使用，须靠语境理解。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">sonder</span></div>
-            <span class="vocab-card__pos">介词（古语，支配第四格）</span>
-            <div class="vocab-card__meaning">没有、免于</div>
-            <div class="vocab-card__note">同英语 without；今已废弃，仅存于 sonderbar（奇特的）、besonders（特别地）、sondern（而是）等词中。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Abendhauch</span></div>
-            <span class="vocab-card__pos">n.（阳性，复合词）</span>
-            <div class="vocab-card__meaning">晚风、夜晚的气息</div>
-            <div class="vocab-card__note">der Hauch 指极轻微的气息或一丝（ein Hauch von …）；英格丽·诺尔1996年的犯罪小说即以 "Kalt ist der
-              Abendhauch" 为题。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">aufgehen</td>
-                <td class="de">geht auf</td>
-                <td class="de">ging auf</td>
-                <td class="de">ist aufgegangen</td>
-                <td class="de">aufgegangen</td>
-                <td class="de">ginge auf</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中首行用现在完成时 "ist aufgegangen"，强调升起后的当下状态。</td>
-              </tr>
-              <tr>
-                <td class="de">schweigen</td>
-                <td class="de">schweigt</td>
-                <td class="de">schwieg</td>
-                <td class="de">hat geschwiegen</td>
-                <td class="de">geschwiegen</td>
-                <td class="de">schwiege</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化（ei–ie–ie）；诗中用延长形式 schweiget（今 schweigt）。</td>
-              </tr>
-              <tr>
-                <td class="de">steigen</td>
-                <td class="de">steigt</td>
-                <td class="de">stieg</td>
-                <td class="de">ist gestiegen</td>
-                <td class="de">gestiegen</td>
-                <td class="de">stiege</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中延长形式 steiget，与 schweiget 押韵。</td>
-              </tr>
-              <tr>
-                <td class="de">verschlafen</td>
-                <td class="de">verschläft</td>
-                <td class="de">verschlief</td>
-                <td class="de">hat verschlafen</td>
-                <td class="de">verschlafen</td>
-                <td class="de">verschliefe</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 前缀 ver- 在此表"通过睡眠而消除"；日常义为"睡过头"（Ich habe verschlafen）。</td>
-              </tr>
-              <tr>
-                <td class="de">lassen</td>
-                <td class="de">lässt</td>
-                <td class="de">ließ</td>
-                <td class="de">hat gelassen / hat … lassen</td>
-                <td class="de">gelassen / lassen</td>
-                <td class="de">ließe</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中多次用命令式 Laß（今 Lass），构成祈祷句"让我们……"（Laß uns + 不定式）。</td>
-              </tr>
-              <tr>
-                <td class="de">wollen</td>
-                <td class="de">will</td>
-                <td class="de">wollte</td>
-                <td class="de">hat gewollt</td>
-                <td class="de">gewollt / wollen</td>
-                <td class="de">wollte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中第六节首词 Wollst 为第一虚拟式第二人称单数（愿望式），今仅存于祷词与固定表达。</td>
-              </tr>
-              <tr>
-                <td class="de">sich niederlegen</td>
-                <td class="de">legt sich nieder</td>
-                <td class="de">legte sich nieder</td>
-                <td class="de">hat sich niedergelegt</td>
-                <td class="de">niedergelegt</td>
-                <td class="de">legte sich nieder</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 可分动词；诗中命令式 "legt euch … nieder"，前缀跨行落在下一行。</td>
-              </tr>
-              <tr>
-                <td class="de">verschonen</td>
-                <td class="de">verschont</td>
-                <td class="de">verschonte</td>
-                <td class="de">hat verschont</td>
-                <td class="de">verschont</td>
-                <td class="de">verschonte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ "jemanden mit etwas verschonen" 意为"免除某人某事"；诗中命令式作 Verschon’（省去 -e）。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">前置第二格（三例）</h3>
-            <p class="grammar-item__quote">in der Dämmrung Hülle / des Tages Jammer</p>
-            <div class="grammar-item__body">现代德语把第二格放在被修饰名词之后（die Hülle der Dämmerung、der Jammer des
-              Tages），18世纪诗歌则常用前置语序。识别方法：看到两个连续的名词而前一个带第二格冠词（der/des）时，先把它读作后一个名词的修饰语。这一结构在本站收录的荷尔德林、里尔克、特拉克尔诸诗中反复出现，值得作为固定的阅读技能训练。
-            </div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">第一虚拟式表祈愿</h3>
-            <p class="grammar-item__quote">Wollst endlich sonder Grämen / Aus dieser Welt uns nehmen</p>
-            <div class="grammar-item__body">德语第一虚拟式（Konjunktiv I）除用于间接引语外，还可表达愿望与劝告。今日只剩少数固定表达（Es lebe die Freiheit!
-              自由万岁；Gott sei Dank 感谢上帝；Man nehme … 取……〔食谱用语〕）。本诗的 Wollst（愿你欲……）是第二人称单数形式，在现代德语中已完全消失，只能在祷词与古典文本中遇到。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">指小后缀 -lein / -chen</h3>
-            <p class="grammar-item__quote">Die goldnen Sternlein prangen</p>
-            <div class="grammar-item__body">德语用后缀 -lein（偏南德、书面雅语）或 -chen（更通用）构成指小词，一律变为中性，词干元音多变音：Stern → Sternlein、Haus
-              → Häuschen、Blume → Blümchen。指小词不只表示"小"，更常表示亲切、怜爱或稚拙的语气。本诗用 Sternlein 而非
-              Sterne，一举定下了全诗孩童式的信赖基调（第五节"像孩子一样虔敬而快乐"正与之呼应）。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">命令式的诸种形式</h3>
-            <p class="grammar-item__quote">Seht ihr den Mond …? / Laß uns einfältig werden / So legt euch denn, ihr
-              Brüder, / Verschon’ uns, Gott!</p>
-            <div class="grammar-item__body">本诗几乎用齐了德语命令式的全部形式：第二人称复数 seht / legt（与陈述式同形，但不加主语 ihr）、第二人称单数 Laß /
-              Verschon’（省去词尾 -e，是诗歌与口语的常见做法）、以及 "Laß uns + 不定式" 这一相当于英语 let us 的劝诱结构。请注意区分第二节 "Seht ihr den Mond dort
-              stehen?"——它带主语 ihr 且句末为问号，是疑问句而非命令句。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>《晚歌》1778年首刊于约翰·海因里希·福斯主编的《缪斯年鉴
-            1779》，此后几乎没有一部德语诗选会漏掉它。1783年克劳迪乌斯本人把它收入《万茨贝克信使全集》第四部，并修改了第六节的最后一行。它的蓝本是保罗·格哈特1647年的圣诗《Nun ruhen alle
-            Wälder》——克劳迪乌斯本打算让自己的诗按同一旋律演唱，因此两首在格律与韵式上完全一致（六行诗节，尾韵 aabccb，第三、六行构成"尾韵包"
-            Schweifreim）。1790年约翰·亚伯拉罕·彼得·舒尔茨在《以民歌风格演唱的歌曲》中为它谱写的旋律，使它进入德语歌唱曲目的核心，今天新教《福音赞美诗集》（EG
-            482）与2013年起的天主教《赞美上帝》（Gotteslob 93）都以此曲收录。全部谱曲版本超过70种，舒伯特1816年11月也写过一首（D 499）。</p>
-          <p>
-            这首诗长期在评价上存有争议：一些读者只看到"孩童式的虔敬"，因其所谓的天真与浅白而拒斥它；恩斯特·维歇特则赞赏它质朴而在手艺上极为高明，认为简单本身正是一种风格手段。文学学者温弗里德·弗罗因德指出，它与其说是一首田园诗，不如说是一首死亡之诗——只不过是在一个信者的救恩期待背景之下写成的。最广为传唱的通常只有第一、二、三与最后一节，中间几节谈罪、谈死、谈天国的部分反而常被略去；赫尔德早在收录此诗进《民歌集》时就已删去最后两节。
-          </p>
-          <p>
-            它在德语文化中的地位可由几个细节看出：赫尔穆特·施密特生前指定在自己2015年的追思礼拜上唱这首歌；安塞尔姆·基弗1971年画过一幅题为《月亮已经升起》的作品；2020年新冠疫情初期，德国福音教会曾邀请所有人每晚19点在阳台合唱此曲。也正因如此，它被戏拟的次数同样惊人，其中最著名的是彼得·吕姆科夫1962年的《对马蒂亚斯·克劳迪乌斯〈晚歌〉的变奏》。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译。需要特别说明的是第四节 "Sind eitel arme Sünder" 中的
-            eitel：此处并非今义的"虚荣"，而是路德《圣经》语言中的"纯然、不过是"，译文作"无非是可怜的罪人"；而第五节的名词 Eitelkeit
-            则取今义"虚荣"，译文作"虚荣"——同一词根在同一首诗中两义并用，是本诗翻译中最需要留心之处。此外，译文保留了第七节末行由宏大祈祷突然收缩到"生病的邻人"这一落差，未作任何铺垫或修饰。本诗因作者1815年逝世，德文原文早已进入公有领域；已知存在多个中文译本，因版权原因本站不转载具体译本全文。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">German Wikipedia — „Der Mond ist aufgegangen“（Abendlied von Matthias
-              Claudius）</span><a class="source-url" href="https://de.wikipedia.org/wiki/Der_Mond_ist_aufgegangen"
-              target="_blank" rel="noopener">https://de.wikipedia.org/wiki/Der_Mond_ist_aufgegangen</a>
-            <span class="source-note">主来源。同时给出两个权威版本的全文并标注出处：Musen Almanach für 1779（Hamburg 1778, S. 184–186）与 Asmus
-              omnia sua secum portans, Vierter Theil（Wandsbeck 1783, S. 57 f.），两版可逐行对照。本站从1783年作者本人修订的版本。</span>
-          </li>
-          <li>
-            <span class="source-name">gedichte7.de — „Der Mond ist aufgegangen (Abendlied) – Claudius“</span><a
-              class="source-url" href="https://www.gedichte7.de/abendlied-claudius.html" target="_blank"
-              rel="noopener">https://www.gedichte7.de/abendlied-claudius.html</a>
-            <span class="source-note">辅助来源。七节四十二行，用词与1783年版一致（含 "Du unser Herr und unser
-              Gott!"），采用现代化正字法（laß→laß/lass、seyn→sein、Luftgespinnste→Luftgespinste、im Himmel→in Himmel 处作 in Himmel
-              的现代化改写），用于独立交叉核对。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源核对：German Wikipedia 同时转录了1779年《缪斯年鉴》版与1783年《万茨贝克信使全集》第四部版，gedichte7.de
-            提供了一个现代化排印的通行本。七节各六行的结构在所有版本中一致。已核实的版本差异如下：(1) 作者本人的修订：1779年版第六节末行作 "Du lieber treuer frommer
-            Gott!"，1783年版改为 "Du unser Herr und unser Gott!"；Wikipedia 注释明确指出克劳迪乌斯1783年收入全集时修改了第六节第六行。本站从1783年作者手定版。(2)
-            标点与分行细节：1779年版第3行末为冒号、第13行末无破折号、第15行末为句号，1783年版分别作句号、破折号、感叹号；本站从1783年版。(3) 正字法：1783年版保留 seyn（今
-            sein）、Luftgespinnste（1779年版作 Luftgespinste）、laß（今 lass）等旧拼法，本站予以保留。(4) 一处语法疑点：1783年版第六节第五行作 "Laß uns im
-            Himmel kommen"（第三格），而1779年版作 "Laß uns in Himmel kommen"；按现代语法表方向应为 "in den
-            Himmel"。本站保留1783年版原样并在逐行注释中标明，但此处究竟是18世纪的用法波动还是排印之误，本站未能确定，属待核实项。(5) 另需说明：新教《福音赞美诗集》（1993）将第五节首行改作 "Gott,
-            laß dein Heil uns schauen"，天主教《赞美上帝》（2013）作 "Gott, lass uns dein Heil
-            schauen"，两者均标注为"教会合一"版本；本站采用克劳迪乌斯原诗的语序，不采教会歌本的改动。本站未直接查阅1778年《缪斯年鉴》与1783年全集的影印件，上述采择依据 Wikipedia
-            的转录（该词条已给出两版的 Google Books 数字化链接），建议有条件的读者对照原书核实。</p>
-          <p>【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B
-            不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1
-            个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
-            SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Matthias Claudius</li>
-          <li>确认标题与出处：Abendlied，首刊《缪斯年鉴 1779》</li>
-          <li>德文原文主来源：German Wikipedia（并列转录1779年版与1783年版）</li>
-          <li>德文原文辅助来源：gedichte7.de</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（1779 vs 1783 作者修订；教会歌本改写；旧新正字法）</li>
-          <li>确认蓝本关系（Paul Gerhardt《Nun ruhen alle Wälder》）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（德文原文已公版；现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇（含 eitel 一词的古今两义）</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">核实第六节 "im Himmel" 是用法波动还是排印之误</li>
-          <li class="pending">对照1778/1783年原刊影印件核实标点</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-          <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Matthias Claudius</li>
+            <li>确认标题与出处：Abendlied，首刊《缪斯年鉴 1779》</li>
+            <li>德文原文主来源：German Wikipedia（并列转录1779年版与1783年版）</li>
+            <li>德文原文辅助来源：gedichte7.de</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（1779 vs 1783 作者修订；教会歌本改写；旧新正字法）</li>
+            <li>确认蓝本关系（Paul Gerhardt《Nun ruhen alle Wälder》）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（德文原文已公版；现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇（含 eitel 一词的古今两义）</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">核实第六节 "im Himmel" 是用法波动还是排印之误</li>
+            <li class="pending">对照1778/1783年原刊影印件核实标点</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+            <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

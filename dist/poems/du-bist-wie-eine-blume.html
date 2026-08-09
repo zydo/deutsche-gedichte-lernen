@@ -1,576 +1,744 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Du bist wie eine Blume · 你像一朵花 — Heinrich Heine | 德语诗歌学习画册</title>
-  <meta name="description" content="Du bist wie eine Blume（你像一朵花）— Heinrich Heine。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Du bist wie eine Blume · 你像一朵花 — Heinrich Heine | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Du bist wie eine Blume（你像一朵花）— Heinrich Heine。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="ein-fichtenbaum-steht-einsam.html" rel="prev"><span
-            class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">一株松树孤独地立着</span></a>
-        <a class="poem-nav__link poem-nav__next" href="mondnacht.html" rel="next"><span
-            class="poem-nav__title">月夜</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Du bist wie eine Blume</h1>
-        <p class="poem-titleblock__author">Heinrich Heine</p>
-        <p class="poem-titleblock__zh">你像一朵花</p>
-        <p class="poem-titleblock__author-zh">海因里希·海涅</p>
-        <div class="poem-titleblock__biblio">
-          <p>Buch der Lieder · Die Heimkehr，第XLVII首</p>
-          <p>浪漫主义 Romantik（晚期）</p>
-          <p>1823年作，1827年收入《Buch der Lieder》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--a">A1–A2</span>
-          <span class="tag ">爱情</span>
-          <span class="tag ">纯真</span>
-          <span class="tag ">祝愿</span>
-          <span class="tag ">极短诗</span>
-          <span class="tag ">入门必读</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/du-bist-wie-eine-blume.png"
-            alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="ein-fichtenbaum-steht-einsam.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">一株松树孤独地立着</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="mondnacht.html" rel="next"
+            ><span class="poem-nav__title">月夜</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Du bist wie eine Blume</h1>
+          <p class="poem-titleblock__author">Heinrich Heine</p>
+          <p class="poem-titleblock__zh">你像一朵花</p>
+          <p class="poem-titleblock__author-zh">海因里希·海涅</p>
+          <div class="poem-titleblock__biblio">
+            <p>Buch der Lieder · Die Heimkehr，第XLVII首</p>
+            <p>浪漫主义 Romantik（晚期）</p>
+            <p>1823年作，1827年收入《Buch der Lieder》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A1–A2</span>
+            <span class="tag">爱情</span>
+            <span class="tag">纯真</span>
+            <span class="tag">祝愿</span>
+            <span class="tag">极短诗</span>
+            <span class="tag">入门必读</span>
+          </div>
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/du-bist-wie-eine-blume.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>一朵盛开的白色或浅色花朵特写，或一位少女侧影与花朵并置的意象</dd>
+                  <dt>情绪</dt>
+                  <dd>温柔、纯净，夹杂一丝对美好易逝的淡淡忧伤</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    单朵纯洁色调的花（如白玫瑰、百合），柔和的自然光线，避免直接描绘具体人物面容以保持诗意的普遍性
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>无需具体历史时代标识，可采用静物/植物绘本式构图</dd>
+                  <dt>推荐风格</dt>
+                  <dd>19世纪浪漫主义静物油画或植物学绘本插画风格，柔和光影，色调清雅</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>不得性化或过度浪漫化人物形象；不得出现文字、水印；避免过于甜腻、廉价贺卡风格的处理</dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
           </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>一朵盛开的白色或浅色花朵特写，或一位少女侧影与花朵并置的意象</dd>
-                <dt>情绪</dt>
-                <dd>温柔、纯净，夹杂一丝对美好易逝的淡淡忧伤</dd>
-                <dt>画面元素</dt>
-                <dd>单朵纯洁色调的花（如白玫瑰、百合），柔和的自然光线，避免直接描绘具体人物面容以保持诗意的普遍性</dd>
-                <dt>时代感</dt>
-                <dd>无需具体历史时代标识，可采用静物/植物绘本式构图</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义静物油画或植物学绘本插画风格，柔和光影，色调清雅</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得性化或过度浪漫化人物形象；不得出现文字、水印；避免过于甜腻、廉价贺卡风格的处理</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Du bist wie eine Blume,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你像一朵花，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >So hold und schön und rein;<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">如此可爱、美丽而纯洁；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Ich schau' dich an, und Wehmut<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我望着你，一阵忧伤</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Schleicht mir in's Herz hinein.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">悄悄潜入我的心里。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Mir ist, als ob ich die Hände<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我仿佛觉得，我应当</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Auf's Haupt dir legen sollt',<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">把双手按在你的头上，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Betend, daß Gott dich erhalte<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">祈祷上帝保佑你，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">So rein und schön und hold.</span></div>
+                <div class="pline__zh">永远这样纯洁、美丽、可爱。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗首尾呼应的形容词结构</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Du bist wie eine Blume,</p>
+              <p class="lnote__zh">
+                以明喻（wie，如同）开篇，是德语诗歌中最简单直接的修辞手法之一，适合初学者理解比喻句型 "jemand/etwas ist
+                wie …"。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">So hold und schön und rein;</p>
+              <p class="lnote__zh">
+                hold（可爱的、亲切的）是较为古雅的形容词，现代口语已罕用，常见于诗歌与童话语域，近义词有
+                lieblich、anmutig。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Ich schau' dich an, und Wehmut</p>
+              <p class="lnote__zh">
+                anschauen（注视）为可分动词，诗中 "schau' … an" 因诗行断句被拆开；schau' 是 schaue 的省音形式。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Schleicht mir in's Herz hinein.</p>
+              <p class="lnote__zh">
+                schleichen（悄悄潜入、蹑手蹑脚地走）本义描写人或动物的隐秘移动，此处拟物化用于描写情绪（Wehmut，一种淡淡的忧伤）如何不知不觉地涌上心头；in's
+                Herz hinein 强调“向内、深入”的方向感。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Mir ist, als ob ich die Hände</p>
+              <p class="lnote__zh">
+                固定句型 "Mir ist, als ob …"（我感觉仿佛……）后接虚拟式二式（Konjunktiv
+                II），是表达主观感受、假设性想法的常见德语句式。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Auf's Haupt dir legen sollt',</p>
+              <p class="lnote__zh">
+                sollt' 是 sollte 的省音形式（虚拟式二式，表委婉的“应当”）；Haupt 是 Kopf（头）的雅语/诗歌用词。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Betend, daß Gott dich erhalte</p>
+              <p class="lnote__zh">
+                betend 是现在分词作伴随状语（“一边祈祷”）；erhalte 是虚拟式一式（Konjunktiv
+                I），用于表达祈愿内容，是德语中表达“愿……”的经典语法结构。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hold</span></div>
+              <span class="vocab-card__pos">adj.（古雅用词）</span>
+              <div class="vocab-card__meaning">可爱的、令人喜爱的</div>
+              <div class="vocab-card__note">
+                现代德语中已较少独立使用，常见于诗歌、童话或固定搭配（如 die holde Braut）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">rein</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">纯洁的、干净的</div>
+              <div class="vocab-card__note">
+                此处形容人的品格/气质纯洁无瑕，与物理意义上的“干净”（sauber）用法不同。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Wehmut</span></div>
+              <span class="vocab-card__pos">n.（阴性，不可数）</span>
+              <div class="vocab-card__meaning">淡淡的忧伤、伤感</div>
+              <div class="vocab-card__note">比 Trauer（悲伤）更轻、更带诗意，常与美好事物易逝的感慨相关联。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">schleichen, schleicht, schlich, ist geschlichen</span>
+              </div>
+              <span class="vocab-card__pos">v.（强变化，移动动词，sein 作助动词）</span>
+              <div class="vocab-card__meaning">潜行、悄悄移动</div>
+              <div class="vocab-card__note">诗中拟物化用于抽象情绪 Wehmut 的“潜入”。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Haupt, Häupter</span></div>
+              <span class="vocab-card__pos">n.（中性，雅语）</span>
+              <div class="vocab-card__meaning">头、头颅</div>
+              <div class="vocab-card__note">
+                日常口语用 der Kopf；Haupt 多见于诗歌、成语（如 Oberhaupt“首领”）及固定搭配。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">erhalten, erhält, erhielt, erhalten</span>
+              </div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">保持、使……维持（某状态）</div>
+              <div class="vocab-card__note">诗中为虚拟式一式 "erhalte"，表祈愿：“愿上帝使你保持……”。</div>
             </div>
           </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Du bist wie eine Blume,<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">你像一朵花，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">So hold und schön und rein;<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">如此可爱、美丽而纯洁；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Ich schau' dich an, und Wehmut<sup
-                    class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">我望着你，一阵忧伤</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Schleicht mir in's Herz hinein.<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">悄悄潜入我的心里。</div>
-            </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">anschauen</td>
+                  <td class="de">schaut an</td>
+                  <td class="de">schaute an</td>
+                  <td class="de">hat angeschaut</td>
+                  <td class="de">angeschaut</td>
+                  <td class="de">schaute an</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 可分动词，诗中为 "schau' dich an"（第一人称现在式，省音）。</td>
+                </tr>
+                <tr>
+                  <td class="de">schleichen</td>
+                  <td class="de">schleicht</td>
+                  <td class="de">schlich</td>
+                  <td class="de">ist geschlichen</td>
+                  <td class="de">geschlichen</td>
+                  <td class="de">schliche</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用现在式 "Schleicht"。</td>
+                </tr>
+                <tr>
+                  <td class="de">sollen</td>
+                  <td class="de">soll</td>
+                  <td class="de">sollte</td>
+                  <td class="de">hat gesollt</td>
+                  <td class="de">gesollt</td>
+                  <td class="de">sollte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用虚拟式二式 "sollt'"（= sollte，省音），表委婉的应当/仿佛该做之事。</td>
+                </tr>
+                <tr>
+                  <td class="de">erhalten</td>
+                  <td class="de">erhält</td>
+                  <td class="de">erhielt</td>
+                  <td class="de">hat erhalten</td>
+                  <td class="de">erhalten</td>
+                  <td class="de">erhielte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用虚拟式一式 "erhalte"（用于间接引语/祈愿句，区别于虚拟式二式 erhielte）。</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Mir ist, als ob ich die Hände<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">我仿佛觉得，我应当</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Auf's Haupt dir legen sollt',<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">把双手按在你的头上，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Betend, daß Gott dich erhalte<sup
-                    class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">祈祷上帝保佑你，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">So rein und schön und hold.</span></div>
-              <div class="pline__zh">永远这样纯洁、美丽、可爱。</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">Mir ist, als ob + Konjunktiv II</h3>
+              <p class="grammar-item__quote">Mir ist, als ob ich die Hände / Auf's Haupt dir legen sollt',</p>
+              <div class="grammar-item__body">
+                "Mir ist, als ob …"（我感觉仿佛……）是表达主观、非真实感受的常见句型，从句中动词需用虚拟式二式（这里的
+                sollt' 即 sollte 的省音形式），表示一种假设性的冲动，而非真实发生的动作。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">虚拟式一式表祈愿：daß Gott … erhalte</h3>
+              <p class="grammar-item__quote">Betend, daß Gott dich erhalte</p>
+              <div class="grammar-item__body">
+                erhalte 是动词 erhalten 的虚拟式一式（Konjunktiv
+                I）第三人称单数形式，用于宗教祈祷、祝愿等表达“愿……”的语境中，是德语中虚拟式一式除间接引语外的另一典型用法。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">可分动词在诗行中被拆分</h3>
+              <p class="grammar-item__quote">Ich schau' dich an, und Wehmut / Schleicht mir in's Herz hinein.</p>
+              <div class="grammar-item__body">
+                anschauen 是可分动词，诗行断句恰好把前缀 an 留到下一行开头前的位置（本例中 an 紧跟在 dich
+                后但因换行造成视觉上的延迟），提醒学习者可分动词的前缀在从句/陈述句中位置固定在句尾，朗读时需连贯处理。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">首尾呼应的形容词链</h3>
+              <p class="grammar-item__quote">So hold und schön und rein; … So rein und schön und hold.</p>
+              <div class="grammar-item__body">
+                第一节以 hold – schön – rein 的顺序出现，第二节结尾以 rein – schön – hold
+                的倒序再次出现，形成回文式的呼应结构，是全诗形式上最精巧之处，翻译时建议保留这三个形容词的呼应关系。
+              </div>
+            </article>
           </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗首尾呼应的形容词结构</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Du bist wie eine Blume,</p>
-            <p class="lnote__zh">以明喻（wie，如同）开篇，是德语诗歌中最简单直接的修辞手法之一，适合初学者理解比喻句型 "jemand/etwas ist wie …"。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">So hold und schön und rein;</p>
-            <p class="lnote__zh">hold（可爱的、亲切的）是较为古雅的形容词，现代口语已罕用，常见于诗歌与童话语域，近义词有 lieblich、anmutig。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Ich schau' dich an, und Wehmut</p>
-            <p class="lnote__zh">anschauen（注视）为可分动词，诗中 "schau' … an" 因诗行断句被拆开；schau' 是 schaue 的省音形式。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Schleicht mir in's Herz hinein.</p>
-            <p class="lnote__zh">schleichen（悄悄潜入、蹑手蹑脚地走）本义描写人或动物的隐秘移动，此处拟物化用于描写情绪（Wehmut，一种淡淡的忧伤）如何不知不觉地涌上心头；in's Herz
-              hinein 强调“向内、深入”的方向感。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Mir ist, als ob ich die Hände</p>
-            <p class="lnote__zh">固定句型 "Mir ist, als ob …"（我感觉仿佛……）后接虚拟式二式（Konjunktiv II），是表达主观感受、假设性想法的常见德语句式。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Auf's Haupt dir legen sollt',</p>
-            <p class="lnote__zh">sollt' 是 sollte 的省音形式（虚拟式二式，表委婉的“应当”）；Haupt 是 Kopf（头）的雅语/诗歌用词。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Betend, daß Gott dich erhalte</p>
-            <p class="lnote__zh">betend 是现在分词作伴随状语（“一边祈祷”）；erhalte 是虚拟式一式（Konjunktiv I），用于表达祈愿内容，是德语中表达“愿……”的经典语法结构。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">hold</span></div>
-            <span class="vocab-card__pos">adj.（古雅用词）</span>
-            <div class="vocab-card__meaning">可爱的、令人喜爱的</div>
-            <div class="vocab-card__note">现代德语中已较少独立使用，常见于诗歌、童话或固定搭配（如 die holde Braut）。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              这首诗是海涅《归乡集》（Die
+              Heimkehr）中最广为传诵的短诗之一，以极简的语言表达一种混合着爱慕、忧伤与近乎宗教性祝愿的复杂情感：诗人凝视所爱之人的纯洁美好，涌起的不是单纯的喜悦，而是一种“Wehmut”（对美好易逝的淡淡感伤），并转而以近乎祈祷的姿态祝愿对方永远保有这份纯真。
+            </p>
+            <p>
+              这种“美即脆弱、故而心生忧伤”的情感模式，是德国浪漫主义诗歌的典型母题之一。此诗后被多位作曲家谱曲，其中以罗伯特·舒曼（Robert
+              Schumann）与安东·布鲁克纳（Anton Bruckner，1861年，WAB
+              64）的版本最为知名，是德语艺术歌曲教学中常见的入门曲目。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">rein</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">纯洁的、干净的</div>
-            <div class="vocab-card__note">此处形容人的品格/气质纯洁无瑕，与物理意义上的“干净”（sauber）用法不同。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译，并尽量保留原诗首尾呼应的三个形容词（hold, schön,
+              rein）顺序变化这一形式特点。已知海涅这首诗有多个中文译本流传，因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Wehmut</span></div>
-            <span class="vocab-card__pos">n.（阴性，不可数）</span>
-            <div class="vocab-card__meaning">淡淡的忧伤、伤感</div>
-            <div class="vocab-card__note">比 Trauer（悲伤）更轻、更带诗意，常与美好事物易逝的感慨相关联。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >textlog.de — Heinrich Heine, Buch der Lieder, Die Heimkehr, „Du bist wie eine Blume“ (XLVII)</span
+              ><a
+                class="source-url"
+                href="https://www.textlog.de/heine/gedichte/du-bist-wie-eine-blume"
+                target="_blank"
+                rel="noopener"
+                >https://www.textlog.de/heine/gedichte/du-bist-wie-eine-blume</a
+              >
+              <span class="source-note">确认为《Die Heimkehr》组诗第XLVII首。</span>
+            </li>
+            <li>
+              <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Du bist wie eine Blume (1823)“</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/du-bist-wie-eine-blume.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/du-bist-wie-eine-blume.html</a
+              >
+              <span class="source-note"
+                >与 textlog.de
+                版本内容完全一致，仅个别省音撇号写法（schau'/schau、Auf's/Aufs、sollt'/sollt）存在细微差异，属排版/正字法差异。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源（textlog.de 与
+              deutschelyrik.de）交叉核对，两节八行内容完全一致，仅存在省音撇号使用习惯的细微差异（如是否保留
+              '），不影响文本内容与词序，可信度很高。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">schleichen, schleicht, schlich, ist
-                geschlichen</span></div>
-            <span class="vocab-card__pos">v.（强变化，移动动词，sein 作助动词）</span>
-            <div class="vocab-card__meaning">潜行、悄悄移动</div>
-            <div class="vocab-card__note">诗中拟物化用于抽象情绪 Wehmut 的“潜入”。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Haupt, Häupter</span></div>
-            <span class="vocab-card__pos">n.（中性，雅语）</span>
-            <div class="vocab-card__meaning">头、头颅</div>
-            <div class="vocab-card__note">日常口语用 der Kopf；Haupt 多见于诗歌、成语（如 Oberhaupt“首领”）及固定搭配。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">erhalten, erhält, erhielt, erhalten</span>
-            </div>
-            <span class="vocab-card__pos">v.（强变化）</span>
-            <div class="vocab-card__meaning">保持、使……维持（某状态）</div>
-            <div class="vocab-card__note">诗中为虚拟式一式 "erhalte"，表祈愿：“愿上帝使你保持……”。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">anschauen</td>
-                <td class="de">schaut an</td>
-                <td class="de">schaute an</td>
-                <td class="de">hat angeschaut</td>
-                <td class="de">angeschaut</td>
-                <td class="de">schaute an</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 可分动词，诗中为 "schau' dich an"（第一人称现在式，省音）。</td>
-              </tr>
-              <tr>
-                <td class="de">schleichen</td>
-                <td class="de">schleicht</td>
-                <td class="de">schlich</td>
-                <td class="de">ist geschlichen</td>
-                <td class="de">geschlichen</td>
-                <td class="de">schliche</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在式 "Schleicht"。</td>
-              </tr>
-              <tr>
-                <td class="de">sollen</td>
-                <td class="de">soll</td>
-                <td class="de">sollte</td>
-                <td class="de">hat gesollt</td>
-                <td class="de">gesollt</td>
-                <td class="de">sollte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用虚拟式二式 "sollt'"（= sollte，省音），表委婉的应当/仿佛该做之事。</td>
-              </tr>
-              <tr>
-                <td class="de">erhalten</td>
-                <td class="de">erhält</td>
-                <td class="de">erhielt</td>
-                <td class="de">hat erhalten</td>
-                <td class="de">erhalten</td>
-                <td class="de">erhielte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用虚拟式一式 "erhalte"（用于间接引语/祈愿句，区别于虚拟式二式 erhielte）。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">Mir ist, als ob + Konjunktiv II</h3>
-            <p class="grammar-item__quote">Mir ist, als ob ich die Hände / Auf's Haupt dir legen sollt',</p>
-            <div class="grammar-item__body">"Mir ist, als ob …"（我感觉仿佛……）是表达主观、非真实感受的常见句型，从句中动词需用虚拟式二式（这里的 sollt' 即
-              sollte 的省音形式），表示一种假设性的冲动，而非真实发生的动作。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">虚拟式一式表祈愿：daß Gott … erhalte</h3>
-            <p class="grammar-item__quote">Betend, daß Gott dich erhalte</p>
-            <div class="grammar-item__body">erhalte 是动词 erhalten 的虚拟式一式（Konjunktiv
-              I）第三人称单数形式，用于宗教祈祷、祝愿等表达“愿……”的语境中，是德语中虚拟式一式除间接引语外的另一典型用法。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">可分动词在诗行中被拆分</h3>
-            <p class="grammar-item__quote">Ich schau' dich an, und Wehmut / Schleicht mir in's Herz hinein.</p>
-            <div class="grammar-item__body">anschauen 是可分动词，诗行断句恰好把前缀 an 留到下一行开头前的位置（本例中 an 紧跟在 dich
-              后但因换行造成视觉上的延迟），提醒学习者可分动词的前缀在从句/陈述句中位置固定在句尾，朗读时需连贯处理。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">首尾呼应的形容词链</h3>
-            <p class="grammar-item__quote">So hold und schön und rein; … So rein und schön und hold.</p>
-            <div class="grammar-item__body">第一节以 hold – schön – rein 的顺序出现，第二节结尾以 rein – schön – hold
-              的倒序再次出现，形成回文式的呼应结构，是全诗形式上最精巧之处，翻译时建议保留这三个形容词的呼应关系。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>这首诗是海涅《归乡集》（Die
-            Heimkehr）中最广为传诵的短诗之一，以极简的语言表达一种混合着爱慕、忧伤与近乎宗教性祝愿的复杂情感：诗人凝视所爱之人的纯洁美好，涌起的不是单纯的喜悦，而是一种“Wehmut”（对美好易逝的淡淡感伤），并转而以近乎祈祷的姿态祝愿对方永远保有这份纯真。
-          </p>
-          <p>这种“美即脆弱、故而心生忧伤”的情感模式，是德国浪漫主义诗歌的典型母题之一。此诗后被多位作曲家谱曲，其中以罗伯特·舒曼（Robert Schumann）与安东·布鲁克纳（Anton
-            Bruckner，1861年，WAB 64）的版本最为知名，是德语艺术歌曲教学中常见的入门曲目。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译，并尽量保留原诗首尾呼应的三个形容词（hold, schön, rein）顺序变化这一形式特点。已知海涅这首诗有多个中文译本流传，因版权原因本站不转载具体译本全文。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">textlog.de — Heinrich Heine, Buch der Lieder, Die Heimkehr, „Du bist wie eine
-              Blume“ (XLVII)</span><a class="source-url"
-              href="https://www.textlog.de/heine/gedichte/du-bist-wie-eine-blume" target="_blank"
-              rel="noopener">https://www.textlog.de/heine/gedichte/du-bist-wie-eine-blume</a>
-            <span class="source-note">确认为《Die Heimkehr》组诗第XLVII首。</span>
-          </li>
-          <li>
-            <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Du bist wie eine Blume (1823)“</span><a
-              class="source-url" href="https://www.deutschelyrik.de/du-bist-wie-eine-blume.html" target="_blank"
-              rel="noopener">https://www.deutschelyrik.de/du-bist-wie-eine-blume.html</a>
-            <span class="source-note">与 textlog.de
-              版本内容完全一致，仅个别省音撇号写法（schau'/schau、Auf's/Aufs、sollt'/sollt）存在细微差异，属排版/正字法差异。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源（textlog.de 与 deutschelyrik.de）交叉核对，两节八行内容完全一致，仅存在省音撇号使用习惯的细微差异（如是否保留 '），不影响文本内容与词序，可信度很高。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Heinrich Heine</li>
-          <li>确认标题：Du bist wie eine Blume</li>
-          <li>德文原文主来源：textlog.de</li>
-          <li>德文原文辅助来源：deutschelyrik.de</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（省音撇号差异）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Heinrich Heine</li>
+            <li>确认标题：Du bist wie eine Blume</li>
+            <li>德文原文主来源：textlog.de</li>
+            <li>德文原文辅助来源：deutschelyrik.de</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（省音撇号差异）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

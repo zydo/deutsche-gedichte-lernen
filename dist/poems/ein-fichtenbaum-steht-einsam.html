@@ -1,580 +1,749 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Ein Fichtenbaum steht einsam · 一株松树孤独地立着 — Heinrich Heine | 德语诗歌学习画册</title>
-  <meta name="description" content="Ein Fichtenbaum steht einsam（一株松树孤独地立着）— Heinrich Heine。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Ein Fichtenbaum steht einsam · 一株松树孤独地立着 — Heinrich Heine | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Ein Fichtenbaum steht einsam（一株松树孤独地立着）— Heinrich Heine。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="die-lorelei.html" rel="prev"><span class="poem-nav__arrow"
-            aria-hidden="true">←</span><span class="poem-nav__title">罗蕾莱</span></a>
-        <a class="poem-nav__link poem-nav__next" href="du-bist-wie-eine-blume.html" rel="next"><span
-            class="poem-nav__title">你像一朵花</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de poem-titleblock__de--long">Ein Fichtenbaum steht einsam</h1>
-        <p class="poem-titleblock__author">Heinrich Heine</p>
-        <p class="poem-titleblock__zh">一株松树孤独地立着</p>
-        <p class="poem-titleblock__author-zh">海因里希·海涅</p>
-        <div class="poem-titleblock__biblio">
-          <p>Buch der Lieder · Lyrisches Intermezzo，第XXXIII首</p>
-          <p>浪漫主义 Romantik（晚期）</p>
-          <p>约1822年春作，1823年首次发表，1827年收入《Buch der Lieder》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--a">A2</span>
-          <span class="tag ">孤独</span>
-          <span class="tag ">自然</span>
-          <span class="tag ">梦境</span>
-          <span class="tag ">象征</span>
-          <span class="tag ">极短诗</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/ein-fichtenbaum-steht-einsam.png"
-            alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="die-lorelei.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">罗蕾莱</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="du-bist-wie-eine-blume.html" rel="next"
+            ><span class="poem-nav__title">你像一朵花</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de poem-titleblock__de--long">Ein Fichtenbaum steht einsam</h1>
+          <p class="poem-titleblock__author">Heinrich Heine</p>
+          <p class="poem-titleblock__zh">一株松树孤独地立着</p>
+          <p class="poem-titleblock__author-zh">海因里希·海涅</p>
+          <div class="poem-titleblock__biblio">
+            <p>Buch der Lieder · Lyrisches Intermezzo，第XXXIII首</p>
+            <p>浪漫主义 Romantik（晚期）</p>
+            <p>约1822年春作，1823年首次发表，1827年收入《Buch der Lieder》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2</span>
+            <span class="tag">孤独</span>
+            <span class="tag">自然</span>
+            <span class="tag">梦境</span>
+            <span class="tag">象征</span>
+            <span class="tag">极短诗</span>
+          </div>
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/ein-fichtenbaum-steht-einsam.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>两幅对照的孤独意象：白雪覆盖的孤松与烈日下的孤棕榈，可用左右分屏或梦境浮现的构图表现</dd>
+                  <dt>情绪</dt>
+                  <dd>静谧的忧伤、遥不可及的思念感</dd>
+                  <dt>画面元素</dt>
+                  <dd>冰雪覆盖的北方孤峰、一棵孤立的松/云杉树、模糊叠印出的棕榈树梦境剪影、炽热的岩壁</dd>
+                  <dt>时代感</dt>
+                  <dd>无具体历史时代，属于寓言化、去时代化的自然场景，不出现人物</dd>
+                  <dt>推荐风格</dt>
+                  <dd>19世纪浪漫主义风景油画风格，冷色调（北方雪景）与暖色调（东方岩壁）在同一画面或对照构图中并置</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>不得出现文字、水印；避免过于卡通化或对称到僵硬的构图，应保留自然主义的诗意质感</dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
           </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>两幅对照的孤独意象：白雪覆盖的孤松与烈日下的孤棕榈，可用左右分屏或梦境浮现的构图表现</dd>
-                <dt>情绪</dt>
-                <dd>静谧的忧伤、遥不可及的思念感</dd>
-                <dt>画面元素</dt>
-                <dd>冰雪覆盖的北方孤峰、一棵孤立的松/云杉树、模糊叠印出的棕榈树梦境剪影、炽热的岩壁</dd>
-                <dt>时代感</dt>
-                <dd>无具体历史时代，属于寓言化、去时代化的自然场景，不出现人物</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义风景油画风格，冷色调（北方雪景）与暖色调（东方岩壁）在同一画面或对照构图中并置</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得出现文字、水印；避免过于卡通化或对称到僵硬的构图，应保留自然主义的诗意质感</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Ein Fichtenbaum steht einsam<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一株松树孤独地立着</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Im Norden auf kahler Höh'.<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在北方光秃秃的高处。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Ihn schläfert; mit weißer Decke<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">它昏昏欲睡；白色的被子——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Umhüllen ihn Eis und Schnee.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">冰与雪——将它包裹。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Er träumt von einer Palme,<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">它梦见一株棕榈，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die, fern im Morgenland,</span></div>
+                <div class="pline__zh">在遥远的东方，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Einsam und schweigend trauert</span></div>
+                <div class="pline__zh">孤独而沉默地忧伤，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Auf brennender Felsenwand.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">立在灼热的岩壁上。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗两节的对称结构</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Ein Fichtenbaum steht einsam</p>
+              <p class="lnote__zh">
+                Fichtenbaum（松/云杉树）在德语中为阳性名词（der Baum），而下文的 Palme（棕榈）为阴性名词（die
+                Palme）——两棵树的语法性别对立，被许多学者解读为暗示一段无法结合的爱恋关系（阳性的“他”与阴性的“她”）。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Im Norden auf kahler Höh'.</p>
+              <p class="lnote__zh">
+                kahl（光秃秃的）修饰 Höh'（Höhe 的省音形式，高处），描绘北方荒凉、缺乏植被的严酷环境。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Ihn schläfert;</p>
+              <p class="lnote__zh">
+                schläfern 是非人称动词，固定结构 es schläfert jemanden（某人感到困倦），诗中省略
+                es，Ihn（第四格）前置：Ihn schläfert = Es schläfert ihn（他/它感到困倦）。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Umhüllen ihn Eis und Schnee.</p>
+              <p class="lnote__zh">
+                宾语 ihn 前置于动词与主语之前（正常语序：Eis und Schnee umhüllen
+                ihn），是诗歌倒装，强调“包裹”这一动作及其承受者。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Er träumt von einer Palme,</p>
+              <p class="lnote__zh">
+                träumen von + Dativ：“梦见……”，固定搭配需用介词 von 加第三格，不能直接接第四格宾语。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Auf brennender Felsenwand.</p>
+              <p class="lnote__zh">
+                brennend（燃烧着的，现在分词作形容词）在此并非真的“着火”，而是形容烈日炙烤下滚烫的岩壁，与松树所在的冰雪世界形成强烈的冷热对比。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Fichtenbaum / die Fichte, -n</span></div>
+              <span class="vocab-card__pos">n.（阳性/阴性，诗中作阳性 Baum 复合词处理）</span>
+              <div class="vocab-card__meaning">云杉、松树</div>
+              <div class="vocab-card__note">
+                诗中为文学性复合构词 Fichten + Baum，凸显“树”这一意象，日常口语中通常直接说 die Fichte。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">kahl</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">光秃秃的、荒芜的</div>
+              <div class="vocab-card__note">常用于形容无叶的树木、无发的头顶或荒凉的地貌。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">schläfern（es schläfert jemanden）</span>
+              </div>
+              <span class="vocab-card__pos">v.（非人称动词）</span>
+              <div class="vocab-card__meaning">使人困倦、令人昏昏欲睡</div>
+              <div class="vocab-card__note">
+                与 grausen（见《魔王》）同类的非人称心理动词，逻辑主语用第四格（注意：与 grausen
+                的第三格不同，需分别记忆）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">umhüllen</span></div>
+              <span class="vocab-card__pos">v.（弱变化，可分前缀 um- 在此不可分）</span>
+              <div class="vocab-card__meaning">包裹、笼罩</div>
+              <div class="vocab-card__note">
+                um- 作不可分前缀时（如 umhüllen, umgeben, umarmen 等描述“环绕”义的动词）不可分离，注意与可分动词
+                umziehen（搬家）等区分。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">träumen von + Dativ</span></div>
+              <span class="vocab-card__pos">固定搭配</span>
+              <div class="vocab-card__meaning">梦见……</div>
+              <div class="vocab-card__note">固定介词搭配，von 之后接第三格。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Morgenland</span></div>
+              <span class="vocab-card__pos">n.（中性，文学/诗歌用词）</span>
+              <div class="vocab-card__meaning">东方（字面：晨曦之地）</div>
+              <div class="vocab-card__note">
+                与 das Abendland（西方，字面：暮色之地）相对，是德语文学中常见的诗意地理概念，现代口语已不使用，改用 der
+                Orient / der Osten。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">trauern</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">悲伤、哀悼</div>
+              <div class="vocab-card__note">常搭配介词 um（为……哀悼），诗中为不及物用法。</div>
             </div>
           </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Ein Fichtenbaum steht einsam<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">一株松树孤独地立着</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Im Norden auf kahler Höh'.<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">在北方光秃秃的高处。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Ihn schläfert; mit weißer Decke<sup
-                    class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">它昏昏欲睡；白色的被子——</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Umhüllen ihn Eis und Schnee.<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">冰与雪——将它包裹。</div>
-            </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">schläfern（unpersönlich）</td>
+                  <td class="de">schläfert</td>
+                  <td class="de">schläferte</td>
+                  <td class="de">hat geschläfert</td>
+                  <td class="de">geschläfert</td>
+                  <td class="de">schläferte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用现在式 "Ihn schläfert"。</td>
+                </tr>
+                <tr>
+                  <td class="de">umhüllen</td>
+                  <td class="de">umhüllt</td>
+                  <td class="de">umhüllte</td>
+                  <td class="de">hat umhüllt</td>
+                  <td class="de">umhüllt</td>
+                  <td class="de">umhüllte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用现在式复数 "Umhüllen"（主语 Eis und Schnee 后置）。</td>
+                </tr>
+                <tr>
+                  <td class="de">träumen</td>
+                  <td class="de">träumt</td>
+                  <td class="de">träumte</td>
+                  <td class="de">hat geträumt</td>
+                  <td class="de">geträumt</td>
+                  <td class="de">träumte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用现在式 "träumt"，搭配介词 von。</td>
+                </tr>
+                <tr>
+                  <td class="de">trauern</td>
+                  <td class="de">trauert</td>
+                  <td class="de">trauerte</td>
+                  <td class="de">hat getrauert</td>
+                  <td class="de">getrauert</td>
+                  <td class="de">trauerte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用现在式 "trauert"。</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Er träumt von einer Palme,<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">它梦见一株棕榈，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Die, fern im Morgenland,</span></div>
-              <div class="pline__zh">在遥远的东方，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Einsam und schweigend trauert</span></div>
-              <div class="pline__zh">孤独而沉默地忧伤，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Auf brennender Felsenwand.<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">立在灼热的岩壁上。</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">名词语法性别的象征意义</h3>
+              <p class="grammar-item__quote">Ein Fichtenbaum … Er träumt von einer Palme</p>
+              <div class="grammar-item__body">
+                der Fichtenbaum 为阳性、die Palme 为阴性，诗中用 er（他）指代松树、用 einer
+                Palme（阴性第三格）指代棕榈，这一语法性别的天然对立，是许多文学评论者将全诗解读为“无法相聚的恋人”寓言的重要依据——这种解读高度依赖德语的语法性别，翻译成不区分名词性别的语言（如中文、英文）时会自然丧失。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">非人称动词 schläfern</h3>
+              <p class="grammar-item__quote">Ihn schläfert;</p>
+              <div class="grammar-item__body">
+                与《魔王》中的 grausen 类似，schläfern 也是非人称心理动词，固定结构为 es schläfert + Akkusativ（而非
+                Dativ）。诗中省略了形式主语 es，仅保留第四格代词 Ihn，是诗歌语言中常见的省略现象。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">宾语前置强调句式</h3>
+              <p class="grammar-item__quote">Umhüllen ihn Eis und Schnee.</p>
+              <div class="grammar-item__body">
+                标准语序应为 "Eis und Schnee umhüllen ihn"；诗中将动词与宾语提前、主语 Eis und Schnee
+                后置，制造出先感受“被包裹”的动作、再揭示包裹之物的效果，是诗歌倒装的又一例证。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">现在分词作定语形容词</h3>
+              <p class="grammar-item__quote">Auf brennender Felsenwand.</p>
+              <div class="grammar-item__body">
+                brennend 是动词 brennen（燃烧）的现在分词，在此直接作形容词修饰
+                Felsenwand（岩壁），表示“正在燃烧着一般滚烫的”，是德语中现在分词转化为形容词的常见构词方式（类似英语的
+                -ing 分词形容词用法）。
+              </div>
+            </article>
           </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗两节的对称结构</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Ein Fichtenbaum steht einsam</p>
-            <p class="lnote__zh">Fichtenbaum（松/云杉树）在德语中为阳性名词（der Baum），而下文的 Palme（棕榈）为阴性名词（die
-              Palme）——两棵树的语法性别对立，被许多学者解读为暗示一段无法结合的爱恋关系（阳性的“他”与阴性的“她”）。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Im Norden auf kahler Höh'.</p>
-            <p class="lnote__zh">kahl（光秃秃的）修饰 Höh'（Höhe 的省音形式，高处），描绘北方荒凉、缺乏植被的严酷环境。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Ihn schläfert;</p>
-            <p class="lnote__zh">schläfern 是非人称动词，固定结构 es schläfert jemanden（某人感到困倦），诗中省略 es，Ihn（第四格）前置：Ihn schläfert =
-              Es schläfert ihn（他/它感到困倦）。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Umhüllen ihn Eis und Schnee.</p>
-            <p class="lnote__zh">宾语 ihn 前置于动词与主语之前（正常语序：Eis und Schnee umhüllen ihn），是诗歌倒装，强调“包裹”这一动作及其承受者。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Er träumt von einer Palme,</p>
-            <p class="lnote__zh">träumen von + Dativ：“梦见……”，固定搭配需用介词 von 加第三格，不能直接接第四格宾语。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Auf brennender Felsenwand.</p>
-            <p class="lnote__zh">brennend（燃烧着的，现在分词作形容词）在此并非真的“着火”，而是形容烈日炙烤下滚烫的岩壁，与松树所在的冰雪世界形成强烈的冷热对比。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Fichtenbaum / die Fichte, -n</span></div>
-            <span class="vocab-card__pos">n.（阳性/阴性，诗中作阳性 Baum 复合词处理）</span>
-            <div class="vocab-card__meaning">云杉、松树</div>
-            <div class="vocab-card__note">诗中为文学性复合构词 Fichten + Baum，凸显“树”这一意象，日常口语中通常直接说 die Fichte。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              全诗仅两节八行，却是海涅《抒情插曲》（Lyrisches
+              Intermezzo）组诗中流传最广的作品之一，据信作于1822年春，1827年收入《Buch der
+              Lieder》（诗歌集）。诗歌以“北方孤松”与“东方孤棕榈”这两个天各一方、永难相聚的意象，构成一则简短的寓言：松树身处冰雪，梦中所见却是烈日灼烤下同样孤独忧伤的棕榈。
+            </p>
+            <p>
+              由于德语中“松树”（der Fichtenbaum）为阳性、“棕榈”（die
+              Palme）为阴性，文学研究者常将全诗解读为一段因地理阻隔而无法结合的爱情寓言；也有研究者（如 Kathrin
+              Wittler）从海涅的犹太裔身份出发，将“北方”与“东方”的对照解读为对自身文化身份归属的隐喻性思考。诗人卡尔·克劳斯（Karl
+              Kraus）则曾对这首诗的“精巧却矫饰”提出批评，反映出该诗在接受史上评价的分歧。
+            </p>
+            <p>
+              此诗被超过140次谱曲，其中包括卡尔·罗威（Carl Loewe）与弗朗茨·李斯特（Franz
+              Liszt，约1848年）的版本，是德语艺术歌曲中反复被谱曲最多的文本之一。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">kahl</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">光秃秃的、荒芜的</div>
-            <div class="vocab-card__note">常用于形容无叶的树木、无发的头顶或荒凉的地貌。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI
+              辅助），采用直译并尽量保留原诗两节结构上的对称性（“孤独”“沉默”等词在两节中呼应出现）。由于中文名词无语法性别，原诗中“阳性松树/阴性棕榈”所暗示的性别化爱情寓言在译文中自然消解，这是德汉翻译中难以避免的信息损耗，已在“文学意象与文化背景”中说明，供学习者理解原文的深层含义。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">schläfern（es schläfert jemanden）</span></div>
-            <span class="vocab-card__pos">v.（非人称动词）</span>
-            <div class="vocab-card__meaning">使人困倦、令人昏昏欲睡</div>
-            <div class="vocab-card__note">与 grausen（见《魔王》）同类的非人称心理动词，逻辑主语用第四格（注意：与 grausen 的第三格不同，需分别记忆）。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >textlog.de — Heinrich Heine, Buch der Lieder, Lyrisches Intermezzo, „Ein Fichtenbaum steht einsam“
+                (XXXIII)</span
+              ><a
+                class="source-url"
+                href="https://www.textlog.de/heine/gedichte/ein-fichtenbaum-steht-einsam"
+                target="_blank"
+                rel="noopener"
+                >https://www.textlog.de/heine/gedichte/ein-fichtenbaum-steht-einsam</a
+              >
+              <span class="source-note">确认为《Lyrisches Intermezzo》组诗第XXXIII首。</span>
+            </li>
+            <li>
+              <span class="source-name">German Wikipedia — "Ein Fichtenbaum steht einsam"</span
+              ><a
+                class="source-url"
+                href="https://de.wikipedia.org/wiki/Ein_Fichtenbaum_steht_einsam"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikipedia.org/wiki/Ein_Fichtenbaum_steht_einsam</a
+              >
+              <span class="source-note"
+                >独立引用全文，与 textlog.de
+                版本逐字一致；并提供1823年首次发表、1822年春创作的背景信息及详细接受史资料。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note"
+                >AI
+                辅助生成，标注为学习用途；已知中文世界有多个译本（常见译名如《一棵松树孤独地站立》），因版权原因未转载具体译本全文。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源（textlog.de 与 German
+              Wikipedia）逐字核对，两节八行内容完全一致，未发现任何异文，可信度很高。Wikipedia
+              词条并提供了详实的创作年代、发表历史与学术接受史信息，与 textlog.de 的诗集分组信息（Lyrisches Intermezzo
+              第XXXIII首）相互印证。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">umhüllen</span></div>
-            <span class="vocab-card__pos">v.（弱变化，可分前缀 um- 在此不可分）</span>
-            <div class="vocab-card__meaning">包裹、笼罩</div>
-            <div class="vocab-card__note">um- 作不可分前缀时（如 umhüllen, umgeben, umarmen 等描述“环绕”义的动词）不可分离，注意与可分动词
-              umziehen（搬家）等区分。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">träumen von + Dativ</span></div>
-            <span class="vocab-card__pos">固定搭配</span>
-            <div class="vocab-card__meaning">梦见……</div>
-            <div class="vocab-card__note">固定介词搭配，von 之后接第三格。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Morgenland</span></div>
-            <span class="vocab-card__pos">n.（中性，文学/诗歌用词）</span>
-            <div class="vocab-card__meaning">东方（字面：晨曦之地）</div>
-            <div class="vocab-card__note">与 das Abendland（西方，字面：暮色之地）相对，是德语文学中常见的诗意地理概念，现代口语已不使用，改用 der Orient / der
-              Osten。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">trauern</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">悲伤、哀悼</div>
-            <div class="vocab-card__note">常搭配介词 um（为……哀悼），诗中为不及物用法。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">schläfern（unpersönlich）</td>
-                <td class="de">schläfert</td>
-                <td class="de">schläferte</td>
-                <td class="de">hat geschläfert</td>
-                <td class="de">geschläfert</td>
-                <td class="de">schläferte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在式 "Ihn schläfert"。</td>
-              </tr>
-              <tr>
-                <td class="de">umhüllen</td>
-                <td class="de">umhüllt</td>
-                <td class="de">umhüllte</td>
-                <td class="de">hat umhüllt</td>
-                <td class="de">umhüllt</td>
-                <td class="de">umhüllte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在式复数 "Umhüllen"（主语 Eis und Schnee 后置）。</td>
-              </tr>
-              <tr>
-                <td class="de">träumen</td>
-                <td class="de">träumt</td>
-                <td class="de">träumte</td>
-                <td class="de">hat geträumt</td>
-                <td class="de">geträumt</td>
-                <td class="de">träumte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在式 "träumt"，搭配介词 von。</td>
-              </tr>
-              <tr>
-                <td class="de">trauern</td>
-                <td class="de">trauert</td>
-                <td class="de">trauerte</td>
-                <td class="de">hat getrauert</td>
-                <td class="de">getrauert</td>
-                <td class="de">trauerte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在式 "trauert"。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">名词语法性别的象征意义</h3>
-            <p class="grammar-item__quote">Ein Fichtenbaum … Er träumt von einer Palme</p>
-            <div class="grammar-item__body">der Fichtenbaum 为阳性、die Palme 为阴性，诗中用 er（他）指代松树、用 einer
-              Palme（阴性第三格）指代棕榈，这一语法性别的天然对立，是许多文学评论者将全诗解读为“无法相聚的恋人”寓言的重要依据——这种解读高度依赖德语的语法性别，翻译成不区分名词性别的语言（如中文、英文）时会自然丧失。
-            </div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">非人称动词 schläfern</h3>
-            <p class="grammar-item__quote">Ihn schläfert;</p>
-            <div class="grammar-item__body">与《魔王》中的 grausen 类似，schläfern 也是非人称心理动词，固定结构为 es schläfert + Akkusativ（而非
-              Dativ）。诗中省略了形式主语 es，仅保留第四格代词 Ihn，是诗歌语言中常见的省略现象。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">宾语前置强调句式</h3>
-            <p class="grammar-item__quote">Umhüllen ihn Eis und Schnee.</p>
-            <div class="grammar-item__body">标准语序应为 "Eis und Schnee umhüllen ihn"；诗中将动词与宾语提前、主语 Eis und Schnee
-              后置，制造出先感受“被包裹”的动作、再揭示包裹之物的效果，是诗歌倒装的又一例证。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">现在分词作定语形容词</h3>
-            <p class="grammar-item__quote">Auf brennender Felsenwand.</p>
-            <div class="grammar-item__body">brennend 是动词 brennen（燃烧）的现在分词，在此直接作形容词修饰
-              Felsenwand（岩壁），表示“正在燃烧着一般滚烫的”，是德语中现在分词转化为形容词的常见构词方式（类似英语的 -ing 分词形容词用法）。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>全诗仅两节八行，却是海涅《抒情插曲》（Lyrisches Intermezzo）组诗中流传最广的作品之一，据信作于1822年春，1827年收入《Buch der
-            Lieder》（诗歌集）。诗歌以“北方孤松”与“东方孤棕榈”这两个天各一方、永难相聚的意象，构成一则简短的寓言：松树身处冰雪，梦中所见却是烈日灼烤下同样孤独忧伤的棕榈。</p>
-          <p>由于德语中“松树”（der Fichtenbaum）为阳性、“棕榈”（die Palme）为阴性，文学研究者常将全诗解读为一段因地理阻隔而无法结合的爱情寓言；也有研究者（如 Kathrin
-            Wittler）从海涅的犹太裔身份出发，将“北方”与“东方”的对照解读为对自身文化身份归属的隐喻性思考。诗人卡尔·克劳斯（Karl Kraus）则曾对这首诗的“精巧却矫饰”提出批评，反映出该诗在接受史上评价的分歧。
-          </p>
-          <p>此诗被超过140次谱曲，其中包括卡尔·罗威（Carl Loewe）与弗朗茨·李斯特（Franz Liszt，约1848年）的版本，是德语艺术歌曲中反复被谱曲最多的文本之一。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI
-            辅助），采用直译并尽量保留原诗两节结构上的对称性（“孤独”“沉默”等词在两节中呼应出现）。由于中文名词无语法性别，原诗中“阳性松树/阴性棕榈”所暗示的性别化爱情寓言在译文中自然消解，这是德汉翻译中难以避免的信息损耗，已在“文学意象与文化背景”中说明，供学习者理解原文的深层含义。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">textlog.de — Heinrich Heine, Buch der Lieder, Lyrisches Intermezzo, „Ein
-              Fichtenbaum steht einsam“ (XXXIII)</span><a class="source-url"
-              href="https://www.textlog.de/heine/gedichte/ein-fichtenbaum-steht-einsam" target="_blank"
-              rel="noopener">https://www.textlog.de/heine/gedichte/ein-fichtenbaum-steht-einsam</a>
-            <span class="source-note">确认为《Lyrisches Intermezzo》组诗第XXXIII首。</span>
-          </li>
-          <li>
-            <span class="source-name">German Wikipedia — "Ein Fichtenbaum steht einsam"</span><a class="source-url"
-              href="https://de.wikipedia.org/wiki/Ein_Fichtenbaum_steht_einsam" target="_blank"
-              rel="noopener">https://de.wikipedia.org/wiki/Ein_Fichtenbaum_steht_einsam</a>
-            <span class="source-note">独立引用全文，与 textlog.de 版本逐字一致；并提供1823年首次发表、1822年春创作的背景信息及详细接受史资料。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知中文世界有多个译本（常见译名如《一棵松树孤独地站立》），因版权原因未转载具体译本全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源（textlog.de 与 German Wikipedia）逐字核对，两节八行内容完全一致，未发现任何异文，可信度很高。Wikipedia
-            词条并提供了详实的创作年代、发表历史与学术接受史信息，与 textlog.de 的诗集分组信息（Lyrisches Intermezzo 第XXXIII首）相互印证。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Heinrich Heine</li>
-          <li>确认标题：Ein Fichtenbaum steht einsam</li>
-          <li>德文原文主来源：textlog.de</li>
-          <li>德文原文辅助来源：German Wikipedia</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（未发现异文）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Heinrich Heine</li>
+            <li>确认标题：Ein Fichtenbaum steht einsam</li>
+            <li>德文原文主来源：textlog.de</li>
+            <li>德文原文辅助来源：German Wikipedia</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（未发现异文）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

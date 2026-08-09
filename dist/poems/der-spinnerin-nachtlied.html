@@ -1,740 +1,962 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Der Spinnerin Nachtlied · 纺纱女的夜歌 — Clemens Brentano | 德语诗歌学习画册</title>
-  <meta name="description" content="Der Spinnerin Nachtlied（纺纱女的夜歌）— Clemens Brentano。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Der Spinnerin Nachtlied · 纺纱女的夜歌 — Clemens Brentano | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Der Spinnerin Nachtlied（纺纱女的夜歌）— Clemens Brentano。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="abendlied.html" rel="prev"><span class="poem-nav__arrow"
-            aria-hidden="true">←</span><span class="poem-nav__title">晚歌（月亮已经升起）</span></a>
-        <a class="poem-nav__link poem-nav__next" href="fruehlingsglaube.html" rel="next"><span
-            class="poem-nav__title">春天的信念</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Der Spinnerin Nachtlied</h1>
-        <p class="poem-titleblock__author">Clemens Brentano</p>
-        <p class="poem-titleblock__zh">纺纱女的夜歌</p>
-        <p class="poem-titleblock__author-zh">克莱门斯·布伦塔诺</p>
-        <div class="poem-titleblock__biblio">
-          <p>《一个游学生的编年史》（Aus der Chronicka eines fahrenden Schülers）</p>
-          <p>早期浪漫主义（海德堡浪漫派）</p>
-          <p>约1802年夏作，1818年发表于小说《一个游学生的编年史》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--b">B1</span>
-          <span class="tag ">夜莺</span>
-          <span class="tag ">分离</span>
-          <span class="tag ">纺织</span>
-          <span class="tag ">循环结构</span>
-          <span class="tag ">民歌体</span>
-          <span class="tag ">经典必读</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/der-spinnerin-nachtlied.png"
-            alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="abendlied.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">晚歌（月亮已经升起）</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="fruehlingsglaube.html" rel="next"
+            ><span class="poem-nav__title">春天的信念</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Der Spinnerin Nachtlied</h1>
+          <p class="poem-titleblock__author">Clemens Brentano</p>
+          <p class="poem-titleblock__zh">纺纱女的夜歌</p>
+          <p class="poem-titleblock__author-zh">克莱门斯·布伦塔诺</p>
+          <div class="poem-titleblock__biblio">
+            <p>《一个游学生的编年史》（Aus der Chronicka eines fahrenden Schülers）</p>
+            <p>早期浪漫主义（海德堡浪漫派）</p>
+            <p>约1802年夏作，1818年发表于小说《一个游学生的编年史》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1</span>
+            <span class="tag">夜莺</span>
+            <span class="tag">分离</span>
+            <span class="tag">纺织</span>
+            <span class="tag">循环结构</span>
+            <span class="tag">民歌体</span>
+            <span class="tag">经典必读</span>
+          </div>
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/der-spinnerin-nachtlied.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    夜晚的农舍室内，一位年轻女子独自坐在纺车前，月光从小窗斜射进来落在纺出的线上；窗外是黑暗的树影，看不见鸟
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>安静、克制、绵长的哀伤；不应表现哭泣或戏剧化的悲痛，人物姿态应是专注于劳作的</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    木制纺车与卷线杆、纺出的一缕细线、粗糙的木桌与土墙、小方窗与窗外的月、地面上的一道月光、无灯或仅有一盏将熄的油灯
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>无需精确断代；可取中世纪晚期至18世纪的乡村室内样式（诗的叙事框架设定在14世纪）</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    17世纪荷兰室内画式的写实油画风格（可参考单一光源的室内人物画传统），主光为冷月光，色调深褐与灰蓝，线与月光是画面中唯二的亮部
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现文字、水印；不得出现夜莺的具象形象（诗中夜莺只以声音存在）；不得作面部特写或泪水；不得出现现代照明、家具、纺织机械
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
           </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>夜晚的农舍室内，一位年轻女子独自坐在纺车前，月光从小窗斜射进来落在纺出的线上；窗外是黑暗的树影，看不见鸟</dd>
-                <dt>情绪</dt>
-                <dd>安静、克制、绵长的哀伤；不应表现哭泣或戏剧化的悲痛，人物姿态应是专注于劳作的</dd>
-                <dt>画面元素</dt>
-                <dd>木制纺车与卷线杆、纺出的一缕细线、粗糙的木桌与土墙、小方窗与窗外的月、地面上的一道月光、无灯或仅有一盏将熄的油灯</dd>
-                <dt>时代感</dt>
-                <dd>无需精确断代；可取中世纪晚期至18世纪的乡村室内样式（诗的叙事框架设定在14世纪）</dd>
-                <dt>推荐风格</dt>
-                <dd>17世纪荷兰室内画式的写实油画风格（可参考单一光源的室内人物画传统），主光为冷月光，色调深褐与灰蓝，线与月光是画面中唯二的亮部</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得出现文字、水印；不得出现夜莺的具象形象（诗中夜莺只以声音存在）；不得作面部特写或泪水；不得出现现代照明、家具、纺织机械</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Es sang vor langen Jahren<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">许多年前也曾有</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Wohl auch die Nachtigall,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">夜莺这样歌唱，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Das war wohl süßer Schall,</span></div>
+                <div class="pline__zh">那确是甜美的声响，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Da wir zusammen waren.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">当我们还在一起的时候。</div>
+              </div>
             </div>
-          </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Es sang vor langen Jahren<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">许多年前也曾有</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Ich sing' und kann nicht weinen,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我唱着，却不能哭，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und spinne so allein</span></div>
+                <div class="pline__zh">就这样独自纺线，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Den Faden klar und rein<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">把线纺得清亮洁净，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >So lang der Mond wird scheinen.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">只要月亮还照着。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Wohl auch die Nachtigall,<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">夜莺这样歌唱，</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Als wir zusammen waren</span></div>
+                <div class="pline__zh">当我们还在一起时</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Da sang die Nachtigall</span></div>
+                <div class="pline__zh">夜莺曾这样歌唱</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Nun mahnet mich ihr Schall<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">如今它的声响提醒我</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Daß du von mir gefahren.<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你已离我而去。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Das war wohl süßer Schall,</span></div>
-              <div class="pline__zh">那确是甜美的声响，</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">So oft der Mond mag scheinen,</span></div>
+                <div class="pline__zh">每当月亮照耀，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Denk' ich wohl dein allein,<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我总只思念你，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mein Herz ist klar und rein,</span></div>
+                <div class="pline__zh">我的心清亮而洁净，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Gott wolle uns vereinen.<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">但愿上帝让我们重聚。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Da wir zusammen waren.<sup
-                    class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">当我们还在一起的时候。</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Seit du von mir gefahren,</span></div>
+                <div class="pline__zh">自从你离我而去，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Singt stets die Nachtigall,</span></div>
+                <div class="pline__zh">夜莺就不停地歌唱，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich denk' bei ihrem Schall,</span></div>
+                <div class="pline__zh">听着它的声响我便想起</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie wir zusammen waren.</span></div>
+                <div class="pline__zh">我们曾怎样在一起。</div>
+              </div>
             </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Ich sing' und kann nicht weinen,<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">我唱着，却不能哭，</div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Gott wolle uns vereinen<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">但愿上帝让我们重聚</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hier spinn' ich so allein,</span></div>
+                <div class="pline__zh">我在这里独自纺线，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Der Mond scheint klar und rein,</span></div>
+                <div class="pline__zh">月亮照着，清亮而洁净，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="11">
+                  <span class="linetext"
+                    >Ich sing' und möchte weinen.<sup class="refmark"><a href="#note-11">11</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我唱着，而想哭。</div>
+              </div>
             </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und spinne so allein</span></div>
-              <div class="pline__zh">就这样独自纺线，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Den Faden klar und rein<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">把线纺得清亮洁净，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">So lang der Mond wird scheinen.<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">只要月亮还照着。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Als wir zusammen waren</span></div>
-              <div class="pline__zh">当我们还在一起时</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Da sang die Nachtigall</span></div>
-              <div class="pline__zh">夜莺曾这样歌唱</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Nun mahnet mich ihr Schall<sup
-                    class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">如今它的声响提醒我</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Daß du von mir gefahren.<sup
-                    class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">你已离我而去。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">So oft der Mond mag scheinen,</span></div>
-              <div class="pline__zh">每当月亮照耀，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="9"><span class="linetext">Denk' ich wohl dein allein,<sup
-                    class="refmark"><a href="#note-9">9</a></sup></span></div>
-              <div class="pline__zh">我总只思念你，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Mein Herz ist klar und rein,</span></div>
-              <div class="pline__zh">我的心清亮而洁净，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="10"><span class="linetext">Gott wolle uns vereinen.<sup
-                    class="refmark"><a href="#note-10">10</a></sup></span></div>
-              <div class="pline__zh">但愿上帝让我们重聚。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Seit du von mir gefahren,</span></div>
-              <div class="pline__zh">自从你离我而去，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Singt stets die Nachtigall,</span></div>
-              <div class="pline__zh">夜莺就不停地歌唱，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Ich denk' bei ihrem Schall,</span></div>
-              <div class="pline__zh">听着它的声响我便想起</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Wie wir zusammen waren.</span></div>
-              <div class="pline__zh">我们曾怎样在一起。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="10"><span class="linetext">Gott wolle uns vereinen<sup
-                    class="refmark"><a href="#note-10">10</a></sup></span></div>
-              <div class="pline__zh">但愿上帝让我们重聚</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Hier spinn' ich so allein,</span></div>
-              <div class="pline__zh">我在这里独自纺线，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Der Mond scheint klar und rein,</span></div>
-              <div class="pline__zh">月亮照着，清亮而洁净，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="11"><span class="linetext">Ich sing' und möchte weinen.<sup
-                    class="refmark"><a href="#note-11">11</a></sup></span></div>
-              <div class="pline__zh">我唱着，而想哭。</div>
-            </div>
-          </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，尽量保留全诗只用四个韵脚循环往复的结构，以及首尾"不能哭—想哭"的一字之转</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Es sang vor langen Jahren</p>
-            <p class="lnote__zh">以形式主语 es 开篇，真正的主语 die Nachtigall 到第二行才出现——这是德语中把新信息后置的常见手法（"es kommt ein Mann" 型）。vor
-              langen Jahren（许多年前）用第三格复数，是叙事套语，与童话的 "vor langer Zeit" 同类。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Wohl auch die Nachtigall,</p>
-            <p class="lnote__zh">wohl 在此不是"很好地"，而是表示推测与追忆的语气词，可译为"想必、确实"。全诗四次出现 wohl（第2、3、14行等），使整首诗笼罩在一种半确定、半回忆的语调中。
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，尽量保留全诗只用四个韵脚循环往复的结构，以及首尾"不能哭—想哭"的一字之转
             </p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Da wir zusammen waren.</p>
-            <p class="lnote__zh">da 在此是时间连词"当……时"（等于 als），非因果的"因为"。这一用法在19世纪诗歌中很常见，今日已基本被 als
-              取代。此行是全诗四个核心句之一，将在第9、20行以变形重现。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Ich sing' und kann nicht weinen,</p>
-            <p class="lnote__zh">全诗的第一个关键句。sing' 是 singe 的省音形式。"唱着却哭不出来"意味着悲痛尚未化开；与全诗最后一行 "Ich sing' und möchte
-              weinen"（唱着而想哭）只差两个词，却标记了整首诗的全部进展——从麻木到能够悲伤。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Den Faden klar und rein</p>
-            <p class="lnote__zh">klar und
-              rein（清亮而洁净）这一组词在诗中三次出现，分别用于"线"（第7行）、"心"（第15行）和"月"（第23行）——纺线、内心与月光被同一个形容词组联结起来，是全诗最精巧的编织手法，也呼应了"纺纱"这一动作本身。
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Es sang vor langen Jahren</p>
+              <p class="lnote__zh">
+                以形式主语 es 开篇，真正的主语 die Nachtigall 到第二行才出现——这是德语中把新信息后置的常见手法（"es
+                kommt ein Mann" 型）。vor langen Jahren（许多年前）用第三格复数，是叙事套语，与童话的 "vor langer Zeit"
+                同类。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Wohl auch die Nachtigall,</p>
+              <p class="lnote__zh">
+                wohl 在此不是"很好地"，而是表示推测与追忆的语气词，可译为"想必、确实"。全诗四次出现
+                wohl（第2、3、14行等），使整首诗笼罩在一种半确定、半回忆的语调中。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Da wir zusammen waren.</p>
+              <p class="lnote__zh">
+                da 在此是时间连词"当……时"（等于 als），非因果的"因为"。这一用法在19世纪诗歌中很常见，今日已基本被 als
+                取代。此行是全诗四个核心句之一，将在第9、20行以变形重现。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Ich sing' und kann nicht weinen,</p>
+              <p class="lnote__zh">
+                全诗的第一个关键句。sing' 是 singe 的省音形式。"唱着却哭不出来"意味着悲痛尚未化开；与全诗最后一行 "Ich
+                sing' und möchte weinen"（唱着而想哭）只差两个词，却标记了整首诗的全部进展——从麻木到能够悲伤。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Den Faden klar und rein</p>
+              <p class="lnote__zh">
+                klar und
+                rein（清亮而洁净）这一组词在诗中三次出现，分别用于"线"（第7行）、"心"（第15行）和"月"（第23行）——纺线、内心与月光被同一个形容词组联结起来，是全诗最精巧的编织手法，也呼应了"纺纱"这一动作本身。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">So lang der Mond wird scheinen.</p>
+              <p class="lnote__zh">
+                so lang（今作 solange）引导时间从句；wird scheinen
+                为第一将来时。纺纱女把自己的劳作与月亮的运行绑在一起，暗示一种没有终点的等待。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Nun mahnet mich ihr Schall</p>
+              <p class="lnote__zh">
+                mahnen（提醒、告诫）支配第四格人称宾语（mich）；mahnet 为诗歌延长形式（今
+                mahnt）。同一种夜莺的鸣声，在第一节里是甜美的回忆，到这里变成了提醒分离的声音——声音没变，变的是听者。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Daß du von mir gefahren.</p>
+              <p class="lnote__zh">
+                从句省略了助动词（完整应为 daß du von mir gefahren bist），这是德语从句中"助动词省略"的诗歌用法。fahren
+                在此取古义"离去、动身"（参见 wohlfahren、Fahrt），而非现代的"驾车"。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Denk' ich wohl dein allein,</p>
+              <p class="lnote__zh">
+                denken 在此支配第二格宾语 dein（= deiner，你的），这是古典德语用法（今作 an dich denken）。allein
+                是副词"仅仅、唯独"，不是形容词"孤独的"：整句意为"我只思念你一人"。另有版本作 "Gedenk ich dein
+                allein"，详见校对记录。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Gott wolle uns vereinen.</p>
+              <p class="lnote__zh">
+                wolle 是 wollen 的第一虚拟式，用于表达愿望（与本站《晚歌》中的 Wollst
+                同类），今日仅存于祷词。此句在第16行与第21行各出现一次，是全诗唯一朝向未来的句子。也正因如此，多数读者把这首诗理解为对亡者的哀悼，而非对远行者的思念。
+              </p>
+            </article>
+            <article class="lnote" id="note-11" data-noteref="11">
+              <span class="lnote__mark">11</span>
+              <p class="lnote__de">Ich sing' und möchte weinen.</p>
+              <p class="lnote__zh">
+                全诗末行，与第5行 "Ich sing' und kann nicht weinen" 构成呼应式的收束。möchte 是 mögen
+                的第二虚拟式，表委婉的愿望。从"哭不出来"到"想哭"，全诗的运动在这一步中完成——而纺车仍在转，月亮仍在照，什么外在的事都没有发生。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Nachtigall, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">夜莺</div>
+              <div class="vocab-card__note">
+                字面为"夜之歌者"；本站海涅《死亡，那是清凉的夜》中亦为核心意象，可对照阅读两位诗人对同一鸟的不同用法。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Schall, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">声响、回声</div>
+              <div class="vocab-card__note">
+                较 der Klang（乐音）更中性、更强调物理上的传播；派生词 Schallmauer（音障）、verschallen（消失无踪）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">spinnen</span></div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">纺（线）；（口语）发疯、胡说</div>
+              <div class="vocab-card__note">
+                变位 spinnt – spann – hat gesponnen。名词 die Spinnerin（女纺工）即诗题所本；口语中 "du spinnst!"
+                意为"你疯了吧"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Faden, Fäden</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">线、丝</div>
+              <div class="vocab-card__note">
+                习语 "den Faden verlieren"（失去话头）、"der rote Faden"（贯穿始终的线索，典出歌德）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">mahnen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">提醒、告诫；催缴</div>
+              <div class="vocab-card__note">
+                支配第四格人称宾语；今日常见于商务语境（eine Rechnung anmahnen 催付账单），亦见于
+                Mahnmal（警示纪念碑）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">fahren（古义）</span></div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">离去、动身、远行</div>
+              <div class="vocab-card__note">
+                现代德语中 fahren 主要指乘车/驾驶，但古义"行走、离去"仍保留在 die
+                Fahrt（旅程）、wohlfahren、dahinfahren（逝去）等词中；诗中 "von mir gefahren" 即取此义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">vereinen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">使结合、使联合</div>
+              <div class="vocab-card__note">
+                与 vereinigen 近义；die Vereinten Nationen（联合国）、der Verein（社团）同源。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">wohl</span></div>
+              <span class="vocab-card__pos">adv./语气词</span>
+              <div class="vocab-card__meaning">①想必、大概（推测）；②确实（加强）；③好、健康</div>
+              <div class="vocab-card__note">
+                本诗中主要取推测与追忆的语气义。这是德语中最难掌握的语气词之一，须结合语境判断。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">singen</td>
+                  <td class="de">singt</td>
+                  <td class="de">sang</td>
+                  <td class="de">hat gesungen</td>
+                  <td class="de">gesungen</td>
+                  <td class="de">sänge</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化第三类（i–a–u）；诗中过去时 sang 与第一人称省音现在时 sing'
+                    交替出现，正是全诗"过去/现在"来回摆荡的语法标志。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">spinnen</td>
+                  <td class="de">spinnt</td>
+                  <td class="de">spann</td>
+                  <td class="de">hat gesponnen</td>
+                  <td class="de">gesponnen</td>
+                  <td class="de">spönne / spänne</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化第三类；诗中第一人称省音形式 spinne / spinn'。</td>
+                </tr>
+                <tr>
+                  <td class="de">scheinen</td>
+                  <td class="de">scheint</td>
+                  <td class="de">schien</td>
+                  <td class="de">hat geschienen</td>
+                  <td class="de">geschienen</td>
+                  <td class="de">schiene</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化（ei–ie–ie）；兼有"照耀"与"看起来似乎"两义，诗中取前者。</td>
+                </tr>
+                <tr>
+                  <td class="de">mahnen</td>
+                  <td class="de">mahnt</td>
+                  <td class="de">mahnte</td>
+                  <td class="de">hat gemahnt</td>
+                  <td class="de">gemahnt</td>
+                  <td class="de">mahnte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用延长形式 mahnet（今 mahnt）。</td>
+                </tr>
+                <tr>
+                  <td class="de">fahren</td>
+                  <td class="de">fährt</td>
+                  <td class="de">fuhr</td>
+                  <td class="de">ist gefahren</td>
+                  <td class="de">gefahren</td>
+                  <td class="de">führe</td>
+                  <td>sein（表移动）</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中第二分词 gefahren 出现在省略了助动词 bist 的从句中。</td>
+                </tr>
+                <tr>
+                  <td class="de">wollen</td>
+                  <td class="de">will</td>
+                  <td class="de">wollte</td>
+                  <td class="de">hat gewollt</td>
+                  <td class="de">gewollt / wollen</td>
+                  <td class="de">wollte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中第一虚拟式 wolle 用于祈愿（"Gott wolle uns vereinen"）。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">抱韵与"只用四个韵脚"的循环结构</h3>
+              <p class="grammar-item__quote">waren – Nachtigall – Schall – waren / weinen – allein – rein – scheinen</p>
+              <div class="grammar-item__body">
+                全诗六节二十四行，韵式为抱韵（abba / cddc 交替）。但真正惊人的是：整首诗只用了四个韵脚音节——奇数节用
+                -aren / -all，偶数节用 -einen / -ein。同一批词（waren, Nachtigall, Schall, scheinen, allein, rein,
+                weinen, vereinen）在六节中不断重排，就像纺车一圈圈转动却始终在原地。形式本身即是内容。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">动词支配第二格：dein denken</h3>
+              <p class="grammar-item__quote">Denk' ich wohl dein allein,</p>
+              <div class="grammar-item__body">
+                德语中曾有一批动词支配第二格宾语：gedenken（纪念）、sich erinnern（回忆，今用 an +
+                第四格）、bedürfen（需要）、harren（等待）等。dein 在此是人称代词 du 的第二格（今作
+                deiner）。现代德语只保留了少数几个（gedenken、bedürfen、sich enthalten），日常表达用 "an dich denken"。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">从句中助动词的省略</h3>
+              <p class="grammar-item__quote">Daß du von mir gefahren.</p>
+              <div class="grammar-item__body">
+                完整形式应为 "Daß du von mir gefahren bist"。在从句中省略句末的助动词
+                sein/haben，是德语诗歌与旧式书面语的常见做法（今日仍见于关系从句："die Arbeit, die er
+                geleistet"）。学习者阅读时应能自动补出被省略的助动词，并据第二分词判断该用 sein 还是 haben。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">时间连词 da（= als）</h3>
+              <p class="grammar-item__quote">Da wir zusammen waren. / Als wir zusammen waren</p>
+              <div class="grammar-item__body">
+                本诗中 da 与 als 交替使用，意思相同，都是"当……时"。现代德语里 da
+                作时间连词的用法已经消失，只保留了因果义（"da es regnet, bleiben wir zu Hause"
+                因为下雨，我们待在家）。读19世纪文本时若把这里的 da
+                读成"因为"，整句就会不通——这是很常见的误读，值得留意。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              《纺纱女的夜歌》大约作于1802年夏天，1818年才随小说《一个游学生的编年史》发表。这部小说讲的是1358年出生的赤贫流浪儿约翰内斯被骑士费尔特林·冯·蒂尔林根雇为书记的故事——这位语言天赋极高的少年不仅写字，还为骑士和他的四个女儿讲述种种奇思妙想的故事。这首诗就镶嵌在这样一个伪中世纪的叙事框架里。
             </p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">So lang der Mond wird scheinen.</p>
-            <p class="lnote__zh">so lang（今作 solange）引导时间从句；wird scheinen 为第一将来时。纺纱女把自己的劳作与月亮的运行绑在一起，暗示一种没有终点的等待。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Nun mahnet mich ihr Schall</p>
-            <p class="lnote__zh">mahnen（提醒、告诫）支配第四格人称宾语（mich）；mahnet 为诗歌延长形式（今
-              mahnt）。同一种夜莺的鸣声，在第一节里是甜美的回忆，到这里变成了提醒分离的声音——声音没变，变的是听者。</p>
-          </article>
-          <article class="lnote" id="note-8" data-noteref="8">
-            <span class="lnote__mark">8</span>
-            <p class="lnote__de">Daß du von mir gefahren.</p>
-            <p class="lnote__zh">从句省略了助动词（完整应为 daß du von mir gefahren bist），这是德语从句中"助动词省略"的诗歌用法。fahren 在此取古义"离去、动身"（参见
-              wohlfahren、Fahrt），而非现代的"驾车"。</p>
-          </article>
-          <article class="lnote" id="note-9" data-noteref="9">
-            <span class="lnote__mark">9</span>
-            <p class="lnote__de">Denk' ich wohl dein allein,</p>
-            <p class="lnote__zh">denken 在此支配第二格宾语 dein（= deiner，你的），这是古典德语用法（今作 an dich denken）。allein
-              是副词"仅仅、唯独"，不是形容词"孤独的"：整句意为"我只思念你一人"。另有版本作 "Gedenk ich dein allein"，详见校对记录。</p>
-          </article>
-          <article class="lnote" id="note-10" data-noteref="10">
-            <span class="lnote__mark">10</span>
-            <p class="lnote__de">Gott wolle uns vereinen.</p>
-            <p class="lnote__zh">wolle 是 wollen 的第一虚拟式，用于表达愿望（与本站《晚歌》中的 Wollst
-              同类），今日仅存于祷词。此句在第16行与第21行各出现一次，是全诗唯一朝向未来的句子。也正因如此，多数读者把这首诗理解为对亡者的哀悼，而非对远行者的思念。</p>
-          </article>
-          <article class="lnote" id="note-11" data-noteref="11">
-            <span class="lnote__mark">11</span>
-            <p class="lnote__de">Ich sing' und möchte weinen.</p>
-            <p class="lnote__zh">全诗末行，与第5行 "Ich sing' und kann nicht weinen" 构成呼应式的收束。möchte 是 mögen
-              的第二虚拟式，表委婉的愿望。从"哭不出来"到"想哭"，全诗的运动在这一步中完成——而纺车仍在转，月亮仍在照，什么外在的事都没有发生。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Nachtigall, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">夜莺</div>
-            <div class="vocab-card__note">字面为"夜之歌者"；本站海涅《死亡，那是清凉的夜》中亦为核心意象，可对照阅读两位诗人对同一鸟的不同用法。</div>
+            <p>
+              纺车在浪漫派的意象体系中不只是劳动工具，也是时间的象征：线一寸寸从指间过去，正如生命。诗中对"重聚"的祈求（"Gott
+              wolle uns
+              vereinen"）指向的是天上而非人间的团圆，因此多数解释者把这首诗读作对亡故爱人的哀歌，而不是对远行者的思念。
+            </p>
+            <p>
+              这首诗的形式常被拿来当作"诗艺即织艺"的范例。全诗只用四个韵脚，八个韵词在六节之间反复重排；klar und
+              rein（清亮而洁净）一组词先后落在线、心、月三处，把外在劳作、内心状态与自然景象缝在一起。而全诗最重要的进展只发生在两个词之间：第五行的
+              "kann nicht weinen"（哭不出来）与末行的 "möchte
+              weinen"（想哭）。二十四行诗里什么也没有发生，唯有一个人终于能够悲伤——这正是这首诗被反复选入德语诗选的原因。
+            </p>
+            <p>此诗被谱曲多次，其中理夏德·施特劳斯（作品71之1，1918）与马克斯·雷格的版本较为知名。</p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Schall, -e</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">声响、回声</div>
-            <div class="vocab-card__note">较 der Klang（乐音）更中性、更强调物理上的传播；派生词 Schallmauer（音障）、verschallen（消失无踪）。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。两处需要说明的处理：(1)
+              全诗的核心是"哭不出来"与"想哭"这一字之差，译文严格保持了两处措辞的对称，未作文学化的润饰；(2) klar und
+              rein
+              在诗中三次分别修饰线、心、月，译文统一译作"清亮／洁净"以保留这条贯穿全诗的词链，尽管中文里"线清亮"略显生硬。此外，全诗只用四个韵脚的循环结构在中文中无法复制，请学习者结合"语法要点"与朗读体会。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">spinnen</span></div>
-            <span class="vocab-card__pos">v.（强变化）</span>
-            <div class="vocab-card__meaning">纺（线）；（口语）发疯、胡说</div>
-            <div class="vocab-card__note">变位 spinnt – spann – hat gesponnen。名词 die Spinnerin（女纺工）即诗题所本；口语中 "du spinnst!"
-              意为"你疯了吧"。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Zeno.org — Clemens Brentano: Werke. Band 1, München [1963–1968], S. 131（Ausgewählte Gedichte）</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Brentano,+Clemens/Gedichte/Ausgew%C3%A4hlte+Gedichte/Der+Spinnerin+Nachtlied"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Brentano,+Clemens/Gedichte/Ausgew%C3%A4hlte+Gedichte/Der+Spinnerin+Nachtlied</a
+              >
+              <span class="source-note"
+                >主来源。依 Hanser 版《布伦塔诺著作集》第1卷数字化本，六节二十四行完整，保留旧正字法 Daß。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — „Der Spinnerin Nachtlied – Brentano“</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/der-spinnerin-lied.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/der-spinnerin-lied.html</a
+              >
+              <span class="source-note"
+                >辅助来源。六节二十四行，与主来源在结构与韵词上一致，但第9行与第14行存在实质异文（Da/Als、Gedenk ich
+                dein/Denk' ich wohl dein），据此确认了本诗流通版本之间的差异，详见校对记录。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note"
+                >AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文以 Zeno.org 转录的 Hanser 版《布伦塔诺著作集》第1卷（第131页）为主来源，与 gedichte7.de
+              的通行版本逐词核对，六节各四行的结构与韵词完全一致，但发现两处实质异文，本站均采主来源并如实记录：(1)
+              第9行：主来源作 "Als wir zusammen waren"，gedichte7.de 作 "Da wir zusammen
+              waren"（与第4行完全相同）。若依后者，全诗第1、3节的首尾句便完全重复，循环感更强；本站从主来源的 Als。(2)
+              第14行：主来源作 "Denk' ich wohl dein allein"，gedichte7.de 作 "Gedenk ich dein
+              allein"。两者语法都成立（denken 与 gedenken
+              在古典用法中均可支配第二格），但音节数不同，影响格律；本站从主来源。此外，标点差异较多：主来源在第9—12行几乎不加标点，gedichte7.de
+              则补足了逗号；末行主来源作句号，gedichte7.de
+              作感叹号。本站保留主来源的标点原样。需说明的是，本站未直接查阅1818年《一个游学生的编年史》初刊本或布伦塔诺手稿，上述采择依据全集转录，两处异文孰为作者定本尚未查明，属待核实项。
+            </p>
+            <p>
+              【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de
+              属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4
+              节属三级来源；去掉三级来源后，本诗仅剩 1
+              个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
+              SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方
+              checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Faden, Fäden</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">线、丝</div>
-            <div class="vocab-card__note">习语 "den Faden verlieren"（失去话头）、"der rote Faden"（贯穿始终的线索，典出歌德）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">mahnen</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">提醒、告诫；催缴</div>
-            <div class="vocab-card__note">支配第四格人称宾语；今日常见于商务语境（eine Rechnung anmahnen 催付账单），亦见于 Mahnmal（警示纪念碑）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">fahren（古义）</span></div>
-            <span class="vocab-card__pos">v.（强变化）</span>
-            <div class="vocab-card__meaning">离去、动身、远行</div>
-            <div class="vocab-card__note">现代德语中 fahren 主要指乘车/驾驶，但古义"行走、离去"仍保留在 die
-              Fahrt（旅程）、wohlfahren、dahinfahren（逝去）等词中；诗中 "von mir gefahren" 即取此义。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">vereinen</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">使结合、使联合</div>
-            <div class="vocab-card__note">与 vereinigen 近义；die Vereinten Nationen（联合国）、der Verein（社团）同源。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">wohl</span></div>
-            <span class="vocab-card__pos">adv./语气词</span>
-            <div class="vocab-card__meaning">①想必、大概（推测）；②确实（加强）；③好、健康</div>
-            <div class="vocab-card__note">本诗中主要取推测与追忆的语气义。这是德语中最难掌握的语气词之一，须结合语境判断。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">singen</td>
-                <td class="de">singt</td>
-                <td class="de">sang</td>
-                <td class="de">hat gesungen</td>
-                <td class="de">gesungen</td>
-                <td class="de">sänge</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化第三类（i–a–u）；诗中过去时 sang 与第一人称省音现在时 sing' 交替出现，正是全诗"过去/现在"来回摆荡的语法标志。</td>
-              </tr>
-              <tr>
-                <td class="de">spinnen</td>
-                <td class="de">spinnt</td>
-                <td class="de">spann</td>
-                <td class="de">hat gesponnen</td>
-                <td class="de">gesponnen</td>
-                <td class="de">spönne / spänne</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化第三类；诗中第一人称省音形式 spinne / spinn'。</td>
-              </tr>
-              <tr>
-                <td class="de">scheinen</td>
-                <td class="de">scheint</td>
-                <td class="de">schien</td>
-                <td class="de">hat geschienen</td>
-                <td class="de">geschienen</td>
-                <td class="de">schiene</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化（ei–ie–ie）；兼有"照耀"与"看起来似乎"两义，诗中取前者。</td>
-              </tr>
-              <tr>
-                <td class="de">mahnen</td>
-                <td class="de">mahnt</td>
-                <td class="de">mahnte</td>
-                <td class="de">hat gemahnt</td>
-                <td class="de">gemahnt</td>
-                <td class="de">mahnte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用延长形式 mahnet（今 mahnt）。</td>
-              </tr>
-              <tr>
-                <td class="de">fahren</td>
-                <td class="de">fährt</td>
-                <td class="de">fuhr</td>
-                <td class="de">ist gefahren</td>
-                <td class="de">gefahren</td>
-                <td class="de">führe</td>
-                <td>sein（表移动）</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中第二分词 gefahren 出现在省略了助动词 bist 的从句中。</td>
-              </tr>
-              <tr>
-                <td class="de">wollen</td>
-                <td class="de">will</td>
-                <td class="de">wollte</td>
-                <td class="de">hat gewollt</td>
-                <td class="de">gewollt / wollen</td>
-                <td class="de">wollte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中第一虚拟式 wolle 用于祈愿（"Gott wolle uns vereinen"）。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">抱韵与"只用四个韵脚"的循环结构</h3>
-            <p class="grammar-item__quote">waren – Nachtigall – Schall – waren / weinen – allein – rein – scheinen</p>
-            <div class="grammar-item__body">全诗六节二十四行，韵式为抱韵（abba / cddc 交替）。但真正惊人的是：整首诗只用了四个韵脚音节——奇数节用 -aren / -all，偶数节用
-              -einen / -ein。同一批词（waren, Nachtigall, Schall, scheinen, allein, rein, weinen,
-              vereinen）在六节中不断重排，就像纺车一圈圈转动却始终在原地。形式本身即是内容。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">动词支配第二格：dein denken</h3>
-            <p class="grammar-item__quote">Denk' ich wohl dein allein,</p>
-            <div class="grammar-item__body">德语中曾有一批动词支配第二格宾语：gedenken（纪念）、sich erinnern（回忆，今用 an +
-              第四格）、bedürfen（需要）、harren（等待）等。dein 在此是人称代词 du 的第二格（今作 deiner）。现代德语只保留了少数几个（gedenken、bedürfen、sich
-              enthalten），日常表达用 "an dich denken"。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">从句中助动词的省略</h3>
-            <p class="grammar-item__quote">Daß du von mir gefahren.</p>
-            <div class="grammar-item__body">完整形式应为 "Daß du von mir gefahren bist"。在从句中省略句末的助动词
-              sein/haben，是德语诗歌与旧式书面语的常见做法（今日仍见于关系从句："die Arbeit, die er geleistet"）。学习者阅读时应能自动补出被省略的助动词，并据第二分词判断该用 sein
-              还是 haben。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">时间连词 da（= als）</h3>
-            <p class="grammar-item__quote">Da wir zusammen waren. / Als wir zusammen waren</p>
-            <div class="grammar-item__body">本诗中 da 与 als 交替使用，意思相同，都是"当……时"。现代德语里 da 作时间连词的用法已经消失，只保留了因果义（"da es regnet,
-              bleiben wir zu Hause" 因为下雨，我们待在家）。读19世纪文本时若把这里的 da 读成"因为"，整句就会不通——这是很常见的误读，值得留意。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>
-            《纺纱女的夜歌》大约作于1802年夏天，1818年才随小说《一个游学生的编年史》发表。这部小说讲的是1358年出生的赤贫流浪儿约翰内斯被骑士费尔特林·冯·蒂尔林根雇为书记的故事——这位语言天赋极高的少年不仅写字，还为骑士和他的四个女儿讲述种种奇思妙想的故事。这首诗就镶嵌在这样一个伪中世纪的叙事框架里。
-          </p>
-          <p>纺车在浪漫派的意象体系中不只是劳动工具，也是时间的象征：线一寸寸从指间过去，正如生命。诗中对"重聚"的祈求（"Gott wolle uns
-            vereinen"）指向的是天上而非人间的团圆，因此多数解释者把这首诗读作对亡故爱人的哀歌，而不是对远行者的思念。</p>
-          <p>这首诗的形式常被拿来当作"诗艺即织艺"的范例。全诗只用四个韵脚，八个韵词在六节之间反复重排；klar und
-            rein（清亮而洁净）一组词先后落在线、心、月三处，把外在劳作、内心状态与自然景象缝在一起。而全诗最重要的进展只发生在两个词之间：第五行的 "kann nicht weinen"（哭不出来）与末行的 "möchte
-            weinen"（想哭）。二十四行诗里什么也没有发生，唯有一个人终于能够悲伤——这正是这首诗被反复选入德语诗选的原因。</p>
-          <p>此诗被谱曲多次，其中理夏德·施特劳斯（作品71之1，1918）与马克斯·雷格的版本较为知名。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译。两处需要说明的处理：(1) 全诗的核心是"哭不出来"与"想哭"这一字之差，译文严格保持了两处措辞的对称，未作文学化的润饰；(2) klar und rein
-            在诗中三次分别修饰线、心、月，译文统一译作"清亮／洁净"以保留这条贯穿全诗的词链，尽管中文里"线清亮"略显生硬。此外，全诗只用四个韵脚的循环结构在中文中无法复制，请学习者结合"语法要点"与朗读体会。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">Zeno.org — Clemens Brentano: Werke. Band 1, München [1963–1968], S.
-              131（Ausgewählte Gedichte）</span><a class="source-url"
-              href="http://www.zeno.org/Literatur/M/Brentano,+Clemens/Gedichte/Ausgew%C3%A4hlte+Gedichte/Der+Spinnerin+Nachtlied"
-              target="_blank"
-              rel="noopener">http://www.zeno.org/Literatur/M/Brentano,+Clemens/Gedichte/Ausgew%C3%A4hlte+Gedichte/Der+Spinnerin+Nachtlied</a>
-            <span class="source-note">主来源。依 Hanser 版《布伦塔诺著作集》第1卷数字化本，六节二十四行完整，保留旧正字法 Daß。</span>
-          </li>
-          <li>
-            <span class="source-name">gedichte7.de — „Der Spinnerin Nachtlied – Brentano“</span><a class="source-url"
-              href="https://www.gedichte7.de/der-spinnerin-lied.html" target="_blank"
-              rel="noopener">https://www.gedichte7.de/der-spinnerin-lied.html</a>
-            <span class="source-note">辅助来源。六节二十四行，与主来源在结构与韵词上一致，但第9行与第14行存在实质异文（Da/Als、Gedenk ich dein/Denk' ich wohl
-              dein），据此确认了本诗流通版本之间的差异，详见校对记录。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文以 Zeno.org 转录的 Hanser 版《布伦塔诺著作集》第1卷（第131页）为主来源，与 gedichte7.de
-            的通行版本逐词核对，六节各四行的结构与韵词完全一致，但发现两处实质异文，本站均采主来源并如实记录：(1) 第9行：主来源作 "Als wir zusammen waren"，gedichte7.de 作 "Da
-            wir zusammen waren"（与第4行完全相同）。若依后者，全诗第1、3节的首尾句便完全重复，循环感更强；本站从主来源的 Als。(2) 第14行：主来源作 "Denk' ich wohl dein
-            allein"，gedichte7.de 作 "Gedenk ich dein allein"。两者语法都成立（denken 与 gedenken
-            在古典用法中均可支配第二格），但音节数不同，影响格律；本站从主来源。此外，标点差异较多：主来源在第9—12行几乎不加标点，gedichte7.de 则补足了逗号；末行主来源作句号，gedichte7.de
-            作感叹号。本站保留主来源的标点原样。需说明的是，本站未直接查阅1818年《一个游学生的编年史》初刊本或布伦塔诺手稿，上述采择依据全集转录，两处异文孰为作者定本尚未查明，属待核实项。</p>
-          <p>【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B
-            不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1
-            个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
-            SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Clemens Brentano</li>
-          <li>确认标题与出处：《一个游学生的编年史》</li>
-          <li>德文原文主来源：Zeno.org（Hanser 版著作集第1卷）</li>
-          <li>德文原文辅助来源：gedichte7.de</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（第9行 Als/Da；第14行 Denk' ich wohl dein/Gedenk ich dein；标点）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">查明两处异文孰为作者定本（需对照1818年初刊本）</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-          <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Clemens Brentano</li>
+            <li>确认标题与出处：《一个游学生的编年史》</li>
+            <li>德文原文主来源：Zeno.org（Hanser 版著作集第1卷）</li>
+            <li>德文原文辅助来源：gedichte7.de</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（第9行 Als/Da；第14行 Denk' ich wohl dein/Gedenk ich dein；标点）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">查明两处异文孰为作者定本（需对照1818年初刊本）</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+            <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

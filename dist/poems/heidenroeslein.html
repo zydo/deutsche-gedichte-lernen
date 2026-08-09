@@ -1,658 +1,838 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Heidenröslein · 野玫瑰 — Johann Wolfgang von Goethe | 德语诗歌学习画册</title>
-  <meta name="description" content="Heidenröslein（野玫瑰）— Johann Wolfgang von Goethe。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Heidenröslein · 野玫瑰 — Johann Wolfgang von Goethe | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Heidenröslein（野玫瑰）— Johann Wolfgang von Goethe。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <span class="poem-nav__spacer" aria-hidden="true"></span>
-        <a class="poem-nav__link poem-nav__next" href="wandrers-nachtlied-ii.html" rel="next"><span
-            class="poem-nav__title">流浪者的夜歌（其二）</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Heidenröslein</h1>
-        <p class="poem-titleblock__author">Johann Wolfgang von Goethe</p>
-        <p class="poem-titleblock__zh">野玫瑰</p>
-        <p class="poem-titleblock__author-zh">约翰·沃尔夫冈·冯·歌德</p>
-        <div class="poem-titleblock__biblio">
-          <p>Gedichte（Ausgabe letzter Hand，1827）· Balladen</p>
-          <p>狂飙突进 Sturm und Drang</p>
-          <p>约1771年作，1789年首次发表；此处采用1827年《Ausgabe letzter Hand》定本</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--a">A2–B1</span>
-          <span class="tag ">爱情</span>
-          <span class="tag ">自然</span>
-          <span class="tag ">民歌体</span>
-          <span class="tag ">叙事诗</span>
-          <span class="tag ">经典必读</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/heidenroeslein.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
-            loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
-          </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>荒地上的一朵红玫瑰、一名少年俯身靠近玫瑰；玫瑰似乎在“回望”少年，形成对峙感</dd>
-                <dt>情绪</dt>
-                <dd>表面天真烂漫的民歌气息之下，隐含一丝紧张与不安</dd>
-                <dt>画面元素</dt>
-                <dd>石楠荒原、清晨微光、一朵鲜红玫瑰特写、少年侧影（不露正面五官）、荆棘与刺</dd>
-                <dt>时代感</dt>
-                <dd>18世纪末德国乡野，非宫廷场景，服饰应为朴素乡村装束</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义油画质感，或古典植物学绘本式的精细自然插画风格，色调以晨曦金色与荒原灰绿为主</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>禁止出现任何暴力、伤害或性暗示的直白描绘；不得出现现代服饰、文字、水印</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
-            </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <span class="poem-nav__spacer" aria-hidden="true"></span>
+          <a class="poem-nav__link poem-nav__next" href="wandrers-nachtlied-ii.html" rel="next"
+            ><span class="poem-nav__title">流浪者的夜歌（其二）</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Heidenröslein</h1>
+          <p class="poem-titleblock__author">Johann Wolfgang von Goethe</p>
+          <p class="poem-titleblock__zh">野玫瑰</p>
+          <p class="poem-titleblock__author-zh">约翰·沃尔夫冈·冯·歌德</p>
+          <div class="poem-titleblock__biblio">
+            <p>Gedichte（Ausgabe letzter Hand，1827）· Balladen</p>
+            <p>狂飙突进 Sturm und Drang</p>
+            <p>约1771年作，1789年首次发表；此处采用1827年《Ausgabe letzter Hand》定本</p>
           </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Sah ein Knab' ein Röslein stehn,<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">少年看见一朵小玫瑰，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Röslein auf der Heiden,<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">荒地上的小玫瑰，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">War so jung und morgenschön,</span></div>
-              <div class="pline__zh">它这样年轻、美如朝霞，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Lief er schnell, es nah zu sehn,</span></div>
-              <div class="pline__zh">他飞快跑去，要看个仔细，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Sah's mit vielen Freuden.</span></div>
-              <div class="pline__zh">满心欢喜地望着它。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein, Röslein, Röslein rot,</span></div>
-              <div class="pline__zh">玫瑰，玫瑰，红玫瑰，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden.</span></div>
-              <div class="pline__zh">荒地上的玫瑰。</div>
-            </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2–B1</span>
+            <span class="tag">爱情</span>
+            <span class="tag">自然</span>
+            <span class="tag">民歌体</span>
+            <span class="tag">叙事诗</span>
+            <span class="tag">经典必读</span>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Knabe sprach: »Ich breche dich,<sup
-                    class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">少年说：“我要摘下你，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden!«</span></div>
-              <div class="pline__zh">荒地上的玫瑰！”</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Röslein sprach: »Ich steche dich,<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">玫瑰说：“我要刺痛你，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Daß du ewig denkst an mich,</span></div>
-              <div class="pline__zh">让你永远记得我，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Und ich will's nicht leiden.«<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">我不愿忍受被摘。”</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein, Röslein, Röslein rot,</span></div>
-              <div class="pline__zh">玫瑰，玫瑰，红玫瑰，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden.</span></div>
-              <div class="pline__zh">荒地上的玫瑰。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und der wilde Knabe brach</span></div>
-              <div class="pline__zh">那任性的少年终究摘下了</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">'s Röslein auf der Heiden;</span></div>
-              <div class="pline__zh">荒地上的玫瑰；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein wehrte sich und stach,</span></div>
-              <div class="pline__zh">玫瑰奋力抵抗、刺痛了他，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Half ihm doch kein Weh und Ach,<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">可是哀叫也无济于事，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Mußt' es eben leiden.<sup
-                    class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">它终究只能忍受。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein, Röslein, Röslein rot,</span></div>
-              <div class="pline__zh">玫瑰，玫瑰，红玫瑰，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden.</span></div>
-              <div class="pline__zh">荒地上的玫瑰。</div>
-            </div>
-          </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），力求贴近原文词序与副歌重复结构，便于对照学习；不追求独立诗意</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Sah ein Knab' ein Röslein stehn,</p>
-            <p class="lnote__zh">诗歌倒装：动词 Sah 置于句首（正常语序应为 Ein Knabe sah…），是民歌体常见的开篇手法，制造叙事的直接感。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Röslein auf der Heiden,</p>
-            <p class="lnote__zh">Heiden 是 Heide（荒地）的古旧与格形式，现代德语应作 der Heide；此处为凑韵（与 Freuden、leiden 押韵）保留古拼法。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Knabe sprach: »Ich breche dich,</p>
-            <p class="lnote__zh">brechen 本义为“折断”，此处引申为“摘（花）”，隐含粗暴、不容分说的动作。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Röslein sprach: »Ich steche dich,</p>
-            <p class="lnote__zh">拟人化：玫瑰被赋予说话能力，与少年形成对话/对峙结构，是全诗的核心张力所在。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Und ich will's nicht leiden.«</p>
-            <p class="lnote__zh">leiden 在此不是“悲伤”而是“忍受、容许”之意；will's = will es，es 指代“被摘”这件事。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Half ihm doch kein Weh und Ach,</p>
-            <p class="lnote__zh">helfen 支配第三格（Dativ），ihm 即为其第三格宾语；注意：1789年 Göschen 初版此处作 "ihr"（指玫瑰），1827年定本改为
-              "ihm"（指少年）— 详见“校对记录”。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Mußt' es eben leiden.</p>
-            <p class="lnote__zh">eben 在此作语气小品词，意为“也就（不得不）”，带有无奈、听天由命的语气，而非“恰好”之意。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Röslein</span></div>
-            <span class="vocab-card__pos">n.（中性，Rose 的指小形式）</span>
-            <div class="vocab-card__meaning">小玫瑰</div>
-            <div class="vocab-card__note">-lein 后缀构成指小名词，词性一律变为中性，与原词 die Rose（阴性）性不同。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Heide, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">荒地、石楠荒原</div>
-            <div class="vocab-card__note">诗中 "auf der Heiden" 为古旧与格拼法，现代标准形式为 "auf der Heide"。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">brechen, bricht, brach, gebrochen</span></div>
-            <span class="vocab-card__pos">v.（强变化）</span>
-            <div class="vocab-card__meaning">折断；（诗歌用法）摘（花）</div>
-            <div class="vocab-card__note">支配第四格：Ich breche dich。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">stechen, sticht, stach, gestochen</span></div>
-            <span class="vocab-card__pos">v.（强变化）</span>
-            <div class="vocab-card__meaning">刺、扎</div>
-            <div class="vocab-card__note">支配第四格：Ich steche dich。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">sich wehren</span></div>
-            <span class="vocab-card__pos">v.（反身动词）</span>
-            <div class="vocab-card__meaning">抵抗、自卫</div>
-            <div class="vocab-card__note">反身代词用第四格：Röslein wehrte sich。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">leiden, leidet, litt, gelitten</span></div>
-            <span class="vocab-card__pos">v.（强变化）</span>
-            <div class="vocab-card__meaning">遭受、忍受；（口语固定搭配）ich kann … nicht leiden 表示“不喜欢”</div>
-            <div class="vocab-card__note">诗中 "nicht leiden" 意为“不愿容许（被摘）”。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Knabe, -n, -n</span></div>
-            <span class="vocab-card__pos">n.（阳性弱变化名词）</span>
-            <div class="vocab-card__meaning">男孩、少年</div>
-            <div class="vocab-card__note">n-Deklination：单数第二、三、四格及复数均加 -n，如 des Knaben, dem Knaben, den
-              Knaben。诗歌/古语用词，现代口语用 der Junge。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">Weh und Ach</span></div>
-            <span class="vocab-card__pos">固定搭配</span>
-            <div class="vocab-card__meaning">哀叫、痛苦的呻吟</div>
-            <div class="vocab-card__note">Weh（痛苦）与 Ach（表痛苦的感叹词）并列构成的诗歌固定搭配，现代德语已罕用。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">brechen</td>
-                <td class="de">bricht</td>
-                <td class="de">brach</td>
-                <td class="de">hat gebrochen</td>
-                <td class="de">gebrochen</td>
-                <td class="de">bräche</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用简单过去式 "brach"。</td>
-              </tr>
-              <tr>
-                <td class="de">stechen</td>
-                <td class="de">sticht</td>
-                <td class="de">stach</td>
-                <td class="de">hat gestochen</td>
-                <td class="de">gestochen</td>
-                <td class="de">stäche</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在式 "steche" 与简单过去式 "stach"。</td>
-              </tr>
-              <tr>
-                <td class="de">leiden</td>
-                <td class="de">leidet</td>
-                <td class="de">litt</td>
-                <td class="de">hat gelitten</td>
-                <td class="de">gelitten</td>
-                <td class="de">litte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中出现现在式 "leiden"（不定式用法 will's nicht leiden）与简单过去式 "mußt' … leiden"。</td>
-              </tr>
-              <tr>
-                <td class="de">sehen</td>
-                <td class="de">sieht</td>
-                <td class="de">sah</td>
-                <td class="de">hat gesehen</td>
-                <td class="de">gesehen</td>
-                <td class="de">sähe</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中首行 "Sah ein Knab'…" 为简单过去式，倒装开篇。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">诗歌倒装（Inversion）与省音（Apokope）</h3>
-            <p class="grammar-item__quote">Sah ein Knab' ein Röslein stehn,</p>
-            <div class="grammar-item__body">民歌/叙事谣曲常将动词提前以加强叙事的动感；同时 "Knab'"（Knabe 省去词尾 -e）、"stehn"（stehen 省去
-              -e）都是为了配合歌唱节奏和押韵而做的省音，属诗歌语言现象，日常德语中不这样使用。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">古旧与格词尾 -(e)n</h3>
-            <p class="grammar-item__quote">Röslein auf der Heiden</p>
-            <div class="grammar-item__body">现代德语阴性名词的与格单数不再加 -n（应为 auf der Heide）。这里的 "Heiden"
-              保留了更早期德语（近代早期高地德语）阴性弱变化残余的与格词尾，纯粹是为了与 "Freuden""leiden" 押韵。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">helfen 支配第三格</h3>
-            <p class="grammar-item__quote">Half ihm doch kein Weh und Ach</p>
-            <div class="grammar-item__body">动词 helfen（帮助）在德语中固定支配第三格（Dativ）宾语，而非第四格。此句主语是 "kein Weh und
-              Ach"（无济于事的哀叫），ihm 是被帮助（未能帮助）的对象。此处 ihm/ihr 的版本差异直接影响“到底是谁在哀叫、无济于事”的解读，是本诗最著名的校勘问题。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">反身动词 + 第四格反身代词</h3>
-            <p class="grammar-item__quote">Röslein wehrte sich und stach</p>
-            <div class="grammar-item__body">sich wehren（抵抗、自卫）中的 sich 是第四格反身代词。诗句省略了并列结构中第二个动词 stach 的显性主语，但仍与前句共享主语
-              Röslein。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>《野玫瑰》据信写于1771年歌德在斯特拉斯堡求学期间，一般认为与他和牧师之女弗里德莉克·布里翁（Friederike
-            Brion）的恋情有关；诗歌采用当时赫尔德（Herder）等人所倡导的“民歌体”（Volkslied）风格：简单的分节歌形式、反复的副歌、口语化的省音拼写，模仿民间歌谣的质朴感。</p>
-          <p>这首诗后来被舒伯特（Franz Schubert，1815年，D. 257）等多位作曲家谱曲，成为德语世界流传最广的艺术歌曲之一。</p>
-          <p>
-            诗歌表层是一则简单的“少年摘花”寓言，但“摘花—刺痛—忍受”的意象长期引发文学研究者的讨论：一些学者将其读作民间文学中常见的求爱/拒绝母题的程式化表达，另一些现代研究则关注其中隐含的强制与越界意味。本站不对此作定论，仅作背景说明，供学习者自行思考。
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/heidenroeslein.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
           </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>荒地上的一朵红玫瑰、一名少年俯身靠近玫瑰；玫瑰似乎在“回望”少年，形成对峙感</dd>
+                  <dt>情绪</dt>
+                  <dd>表面天真烂漫的民歌气息之下，隐含一丝紧张与不安</dd>
+                  <dt>画面元素</dt>
+                  <dd>石楠荒原、清晨微光、一朵鲜红玫瑰特写、少年侧影（不露正面五官）、荆棘与刺</dd>
+                  <dt>时代感</dt>
+                  <dd>18世纪末德国乡野，非宫廷场景，服饰应为朴素乡村装束</dd>
+                  <dt>推荐风格</dt>
+                  <dd>19世纪浪漫主义油画质感，或古典植物学绘本式的精细自然插画风格，色调以晨曦金色与荒原灰绿为主</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>禁止出现任何暴力、伤害或性暗示的直白描绘；不得出现现代服饰、文字、水印</dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
         </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI
-            辅助），在人工核对德文原意基础上完成，目标是尽量贴近原文的词序、重复结构与副歌形式，便于逐句对照学习德语，而非追求独立的文学译诗效果。已知存在多个中文名家译本（如郭沫若等译者的版本），因版权原因本站不转载全文，感兴趣的读者可自行查阅相关出版物或授权网络资源。英文译文采用可确认已进入公有领域的
-            Edgar Alfred Bowring 1853年译本。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">Zeno.org — Goethe, Johann Wolfgang: Gedichte (Ausgabe letzter Hand, 1827),
-              Balladen, „Heidenröslein“</span><a class="source-url"
-              href="http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Gedichte/Gedichte+(Ausgabe+letzter+Hand.+1827)/Lieder/Heidenr%C3%B6slein"
-              target="_blank"
-              rel="noopener">http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Gedichte/Gedichte+(Ausgabe+letzter+Hand.+1827)/Lieder/Heidenr%C3%B6slein</a>
-            <span class="source-note">1827年《Ausgabe letzter Hand》定本文字，'ihm' + 'Mußt' 版本。</span>
-          </li>
-          <li>
-            <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Heidenröslein (1771)“</span><a
-              class="source-url" href="https://www.deutschelyrik.de/heidenroeslein.html" target="_blank"
-              rel="noopener">https://www.deutschelyrik.de/heidenroeslein.html</a>
-            <span class="source-note">与 Zeno.org 版本核心异文一致（'ihm' + 'Mußt'），可互证。</span>
-          </li>
-          <li>
-            <span class="source-name">English Wikipedia — "Heidenröslein"</span><a class="source-url"
-              href="https://en.wikipedia.org/wiki/Heidenr%C3%B6slein" target="_blank"
-              rel="noopener">https://en.wikipedia.org/wiki/Heidenr%C3%B6slein</a>
-            <span class="source-note">辅助来源，引用 Göschen 1789年初版原文（'ihr' + 'Mußte' 版本）及校勘学界讨论，用于说明版本差异背景。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">Edgar Alfred Bowring, The Poems of Goethe (1853)</span>
-            <span class="source-note">公版英译，转引自英文维基百科 "Heidenröslein" 词条脚注，原始出处见 archive.org 扫描本 The Poems of
-              Goethe。</span>
-          </li>
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文名家译本，因版权原因未在本站转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文原文用两个独立来源（Zeno.org 与 deutschelyrik.de）交叉核对，二者在核心异文（第三节第4行代词、第5行动词）上完全一致，均代表1827年《Ausgabe letzter
-            Hand》传统，可信度较高。另通过英文维基百科确认1789年 Göschen 初版存在不同文字（'ihr' 而非 'ihm'，'Mußte' 而非
-            'Mußt'），已在“语法要点”与“逐行注释”中说明，不作为正文采用。</p>
-          <p>本次未能成功访问 de.wikisource.org 对应页面（工具返回空白，判断为该站点对本环境不可达），故未将其计入独立来源；如后续可访问，建议补充核对一次。</p>
-          <p>押韵拼写（如 rot vs roth、Heiden vs Heide）经核实属正字法历史演变，不影响诗歌内容，本站正文采用两个主要来源共同显示的现代化拼写（rot、fasst
-            等现代形式除外——本诗采用的是仍保留历史拼写 'Weh und Ach' 等的版本，与两个来源一致）。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Johann Wolfgang von Goethe</li>
-          <li>确认标题：Heidenröslein</li>
-          <li>德文原文主来源：Zeno.org</li>
-          <li>德文原文辅助来源：deutschelyrik.de</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（1789 Göschen vs 1827 Ausgabe letzter Hand）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用，公版英译可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Sah ein Knab' ein Röslein stehn,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">少年看见一朵小玫瑰，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Röslein auf der Heiden,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">荒地上的小玫瑰，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">War so jung und morgenschön,</span></div>
+                <div class="pline__zh">它这样年轻、美如朝霞，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Lief er schnell, es nah zu sehn,</span></div>
+                <div class="pline__zh">他飞快跑去，要看个仔细，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Sah's mit vielen Freuden.</span></div>
+                <div class="pline__zh">满心欢喜地望着它。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein, Röslein, Röslein rot,</span></div>
+                <div class="pline__zh">玫瑰，玫瑰，红玫瑰，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden.</span></div>
+                <div class="pline__zh">荒地上的玫瑰。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Knabe sprach: »Ich breche dich,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">少年说：“我要摘下你，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden!«</span></div>
+                <div class="pline__zh">荒地上的玫瑰！”</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Röslein sprach: »Ich steche dich,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">玫瑰说：“我要刺痛你，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Daß du ewig denkst an mich,</span></div>
+                <div class="pline__zh">让你永远记得我，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Und ich will's nicht leiden.«<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我不愿忍受被摘。”</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein, Röslein, Röslein rot,</span></div>
+                <div class="pline__zh">玫瑰，玫瑰，红玫瑰，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden.</span></div>
+                <div class="pline__zh">荒地上的玫瑰。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und der wilde Knabe brach</span></div>
+                <div class="pline__zh">那任性的少年终究摘下了</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">'s Röslein auf der Heiden;</span></div>
+                <div class="pline__zh">荒地上的玫瑰；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein wehrte sich und stach,</span></div>
+                <div class="pline__zh">玫瑰奋力抵抗、刺痛了他，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Half ihm doch kein Weh und Ach,<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">可是哀叫也无济于事，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Mußt' es eben leiden.<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">它终究只能忍受。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein, Röslein, Röslein rot,</span></div>
+                <div class="pline__zh">玫瑰，玫瑰，红玫瑰，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Röslein auf der Heiden.</span></div>
+                <div class="pline__zh">荒地上的玫瑰。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），力求贴近原文词序与副歌重复结构，便于对照学习；不追求独立诗意
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Sah ein Knab' ein Röslein stehn,</p>
+              <p class="lnote__zh">
+                诗歌倒装：动词 Sah 置于句首（正常语序应为 Ein Knabe sah…），是民歌体常见的开篇手法，制造叙事的直接感。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Röslein auf der Heiden,</p>
+              <p class="lnote__zh">
+                Heiden 是 Heide（荒地）的古旧与格形式，现代德语应作 der Heide；此处为凑韵（与 Freuden、leiden
+                押韵）保留古拼法。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Knabe sprach: »Ich breche dich,</p>
+              <p class="lnote__zh">brechen 本义为“折断”，此处引申为“摘（花）”，隐含粗暴、不容分说的动作。</p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Röslein sprach: »Ich steche dich,</p>
+              <p class="lnote__zh">拟人化：玫瑰被赋予说话能力，与少年形成对话/对峙结构，是全诗的核心张力所在。</p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Und ich will's nicht leiden.«</p>
+              <p class="lnote__zh">
+                leiden 在此不是“悲伤”而是“忍受、容许”之意；will's = will es，es 指代“被摘”这件事。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Half ihm doch kein Weh und Ach,</p>
+              <p class="lnote__zh">
+                helfen 支配第三格（Dativ），ihm 即为其第三格宾语；注意：1789年 Göschen 初版此处作
+                "ihr"（指玫瑰），1827年定本改为 "ihm"（指少年）— 详见“校对记录”。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Mußt' es eben leiden.</p>
+              <p class="lnote__zh">
+                eben 在此作语气小品词，意为“也就（不得不）”，带有无奈、听天由命的语气，而非“恰好”之意。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Röslein</span></div>
+              <span class="vocab-card__pos">n.（中性，Rose 的指小形式）</span>
+              <div class="vocab-card__meaning">小玫瑰</div>
+              <div class="vocab-card__note">
+                -lein 后缀构成指小名词，词性一律变为中性，与原词 die Rose（阴性）性不同。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Heide, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">荒地、石楠荒原</div>
+              <div class="vocab-card__note">诗中 "auf der Heiden" 为古旧与格拼法，现代标准形式为 "auf der Heide"。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">brechen, bricht, brach, gebrochen</span>
+              </div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">折断；（诗歌用法）摘（花）</div>
+              <div class="vocab-card__note">支配第四格：Ich breche dich。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">stechen, sticht, stach, gestochen</span>
+              </div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">刺、扎</div>
+              <div class="vocab-card__note">支配第四格：Ich steche dich。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">sich wehren</span></div>
+              <span class="vocab-card__pos">v.（反身动词）</span>
+              <div class="vocab-card__meaning">抵抗、自卫</div>
+              <div class="vocab-card__note">反身代词用第四格：Röslein wehrte sich。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">leiden, leidet, litt, gelitten</span></div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">遭受、忍受；（口语固定搭配）ich kann … nicht leiden 表示“不喜欢”</div>
+              <div class="vocab-card__note">诗中 "nicht leiden" 意为“不愿容许（被摘）”。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Knabe, -n, -n</span></div>
+              <span class="vocab-card__pos">n.（阳性弱变化名词）</span>
+              <div class="vocab-card__meaning">男孩、少年</div>
+              <div class="vocab-card__note">
+                n-Deklination：单数第二、三、四格及复数均加 -n，如 des Knaben, dem Knaben, den
+                Knaben。诗歌/古语用词，现代口语用 der Junge。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">Weh und Ach</span></div>
+              <span class="vocab-card__pos">固定搭配</span>
+              <div class="vocab-card__meaning">哀叫、痛苦的呻吟</div>
+              <div class="vocab-card__note">
+                Weh（痛苦）与 Ach（表痛苦的感叹词）并列构成的诗歌固定搭配，现代德语已罕用。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">brechen</td>
+                  <td class="de">bricht</td>
+                  <td class="de">brach</td>
+                  <td class="de">hat gebrochen</td>
+                  <td class="de">gebrochen</td>
+                  <td class="de">bräche</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用简单过去式 "brach"。</td>
+                </tr>
+                <tr>
+                  <td class="de">stechen</td>
+                  <td class="de">sticht</td>
+                  <td class="de">stach</td>
+                  <td class="de">hat gestochen</td>
+                  <td class="de">gestochen</td>
+                  <td class="de">stäche</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用现在式 "steche" 与简单过去式 "stach"。</td>
+                </tr>
+                <tr>
+                  <td class="de">leiden</td>
+                  <td class="de">leidet</td>
+                  <td class="de">litt</td>
+                  <td class="de">hat gelitten</td>
+                  <td class="de">gelitten</td>
+                  <td class="de">litte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中出现现在式 "leiden"（不定式用法 will's nicht leiden）与简单过去式 "mußt' … leiden"。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">sehen</td>
+                  <td class="de">sieht</td>
+                  <td class="de">sah</td>
+                  <td class="de">hat gesehen</td>
+                  <td class="de">gesehen</td>
+                  <td class="de">sähe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中首行 "Sah ein Knab'…" 为简单过去式，倒装开篇。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">诗歌倒装（Inversion）与省音（Apokope）</h3>
+              <p class="grammar-item__quote">Sah ein Knab' ein Röslein stehn,</p>
+              <div class="grammar-item__body">
+                民歌/叙事谣曲常将动词提前以加强叙事的动感；同时 "Knab'"（Knabe 省去词尾 -e）、"stehn"（stehen 省去
+                -e）都是为了配合歌唱节奏和押韵而做的省音，属诗歌语言现象，日常德语中不这样使用。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">古旧与格词尾 -(e)n</h3>
+              <p class="grammar-item__quote">Röslein auf der Heiden</p>
+              <div class="grammar-item__body">
+                现代德语阴性名词的与格单数不再加 -n（应为 auf der Heide）。这里的 "Heiden"
+                保留了更早期德语（近代早期高地德语）阴性弱变化残余的与格词尾，纯粹是为了与 "Freuden""leiden" 押韵。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">helfen 支配第三格</h3>
+              <p class="grammar-item__quote">Half ihm doch kein Weh und Ach</p>
+              <div class="grammar-item__body">
+                动词 helfen（帮助）在德语中固定支配第三格（Dativ）宾语，而非第四格。此句主语是 "kein Weh und
+                Ach"（无济于事的哀叫），ihm 是被帮助（未能帮助）的对象。此处 ihm/ihr
+                的版本差异直接影响“到底是谁在哀叫、无济于事”的解读，是本诗最著名的校勘问题。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">反身动词 + 第四格反身代词</h3>
+              <p class="grammar-item__quote">Röslein wehrte sich und stach</p>
+              <div class="grammar-item__body">
+                sich wehren（抵抗、自卫）中的 sich 是第四格反身代词。诗句省略了并列结构中第二个动词 stach
+                的显性主语，但仍与前句共享主语 Röslein。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              《野玫瑰》据信写于1771年歌德在斯特拉斯堡求学期间，一般认为与他和牧师之女弗里德莉克·布里翁（Friederike
+              Brion）的恋情有关；诗歌采用当时赫尔德（Herder）等人所倡导的“民歌体”（Volkslied）风格：简单的分节歌形式、反复的副歌、口语化的省音拼写，模仿民间歌谣的质朴感。
+            </p>
+            <p>
+              这首诗后来被舒伯特（Franz Schubert，1815年，D. 257）等多位作曲家谱曲，成为德语世界流传最广的艺术歌曲之一。
+            </p>
+            <p>
+              诗歌表层是一则简单的“少年摘花”寓言，但“摘花—刺痛—忍受”的意象长期引发文学研究者的讨论：一些学者将其读作民间文学中常见的求爱/拒绝母题的程式化表达，另一些现代研究则关注其中隐含的强制与越界意味。本站不对此作定论，仅作背景说明，供学习者自行思考。
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI
+              辅助），在人工核对德文原意基础上完成，目标是尽量贴近原文的词序、重复结构与副歌形式，便于逐句对照学习德语，而非追求独立的文学译诗效果。已知存在多个中文名家译本（如郭沫若等译者的版本），因版权原因本站不转载全文，感兴趣的读者可自行查阅相关出版物或授权网络资源。英文译文采用可确认已进入公有领域的
+              Edgar Alfred Bowring 1853年译本。
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Zeno.org — Goethe, Johann Wolfgang: Gedichte (Ausgabe letzter Hand, 1827), Balladen,
+                „Heidenröslein“</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Gedichte/Gedichte+(Ausgabe+letzter+Hand.+1827)/Lieder/Heidenr%C3%B6slein"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Gedichte/Gedichte+(Ausgabe+letzter+Hand.+1827)/Lieder/Heidenr%C3%B6slein</a
+              >
+              <span class="source-note">1827年《Ausgabe letzter Hand》定本文字，'ihm' + 'Mußt' 版本。</span>
+            </li>
+            <li>
+              <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Heidenröslein (1771)“</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/heidenroeslein.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/heidenroeslein.html</a
+              >
+              <span class="source-note">与 Zeno.org 版本核心异文一致（'ihm' + 'Mußt'），可互证。</span>
+            </li>
+            <li>
+              <span class="source-name">English Wikipedia — "Heidenröslein"</span
+              ><a
+                class="source-url"
+                href="https://en.wikipedia.org/wiki/Heidenr%C3%B6slein"
+                target="_blank"
+                rel="noopener"
+                >https://en.wikipedia.org/wiki/Heidenr%C3%B6slein</a
+              >
+              <span class="source-note"
+                >辅助来源，引用 Göschen 1789年初版原文（'ihr' + 'Mußte'
+                版本）及校勘学界讨论，用于说明版本差异背景。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Edgar Alfred Bowring, The Poems of Goethe (1853)</span>
+              <span class="source-note"
+                >公版英译，转引自英文维基百科 "Heidenröslein" 词条脚注，原始出处见 archive.org 扫描本 The Poems of
+                Goethe。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note"
+                >AI 辅助生成，标注为学习用途；已知存在多个中文名家译本，因版权原因未在本站转载全文。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文原文用两个独立来源（Zeno.org 与
+              deutschelyrik.de）交叉核对，二者在核心异文（第三节第4行代词、第5行动词）上完全一致，均代表1827年《Ausgabe
+              letzter Hand》传统，可信度较高。另通过英文维基百科确认1789年 Göschen 初版存在不同文字（'ihr' 而非
+              'ihm'，'Mußte' 而非 'Mußt'），已在“语法要点”与“逐行注释”中说明，不作为正文采用。
+            </p>
+            <p>
+              本次未能成功访问 de.wikisource.org
+              对应页面（工具返回空白，判断为该站点对本环境不可达），故未将其计入独立来源；如后续可访问，建议补充核对一次。
+            </p>
+            <p>
+              押韵拼写（如 rot vs roth、Heiden vs
+              Heide）经核实属正字法历史演变，不影响诗歌内容，本站正文采用两个主要来源共同显示的现代化拼写（rot、fasst
+              等现代形式除外——本诗采用的是仍保留历史拼写 'Weh und Ach' 等的版本，与两个来源一致）。
+            </p>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Johann Wolfgang von Goethe</li>
+            <li>确认标题：Heidenröslein</li>
+            <li>德文原文主来源：Zeno.org</li>
+            <li>德文原文辅助来源：deutschelyrik.de</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（1789 Göschen vs 1827 Ausgabe letzter Hand）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用，公版英译可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

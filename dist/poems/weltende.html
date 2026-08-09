@@ -1,646 +1,840 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Weltende · 世界末日 — Jakob van Hoddis | 德语诗歌学习画册</title>
-  <meta name="description" content="Weltende（世界末日）— Jakob van Hoddis。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Weltende · 世界末日 — Jakob van Hoddis | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Weltende（世界末日）— Jakob van Hoddis。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="an-sich.html" rel="prev"><span class="poem-nav__arrow"
-            aria-hidden="true">←</span><span class="poem-nav__title">致自己</span></a>
-        <span class="poem-nav__spacer" aria-hidden="true"></span>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Weltende</h1>
-        <p class="poem-titleblock__author">Jakob van Hoddis</p>
-        <p class="poem-titleblock__zh">世界末日</p>
-        <p class="poem-titleblock__author-zh">雅各布·范·霍迪斯（本名 Hans Davidsohn）</p>
-        <div class="poem-titleblock__biblio">
-          <p>《诗作与书信》（Dichtungen und Briefe, Arche Verlag, Zürich 1987）</p>
-          <p>表现主义（开端之作）</p>
-          <p>1911年1月11日发表于杂志《Der Demokrat》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--b">B1</span>
-          <span class="tag ">表现主义</span>
-          <span class="tag ">末日</span>
-          <span class="tag ">反讽</span>
-          <span class="tag ">罗列式句法</span>
-          <span class="tag ">都市</span>
-          <span class="tag ">文学史转折点</span>
-        </div>
-        <div class="image-slot">
-          <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="an-sich.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">致自己</span></a
+          >
+          <span class="poem-nav__spacer" aria-hidden="true"></span>
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Weltende</h1>
+          <p class="poem-titleblock__author">Jakob van Hoddis</p>
+          <p class="poem-titleblock__zh">世界末日</p>
+          <p class="poem-titleblock__author-zh">雅各布·范·霍迪斯（本名 Hans Davidsohn）</p>
+          <div class="poem-titleblock__biblio">
+            <p>《诗作与书信》（Dichtungen und Briefe, Arche Verlag, Zürich 1987）</p>
+            <p>表现主义（开端之作）</p>
+            <p>1911年1月11日发表于杂志《Der Demokrat》</p>
           </div>
-          <dl>
-            <dt>意象</dt>
-            <dd>1910年前后德国城市的一条街道，构图刻意杂乱：一顶礼帽在半空中飞、远处屋顶上有工人失去平衡的剪影、路边报刊亭上摊着报纸、一个裹着围巾擤鼻涕的路人站在最前景</dd>
-            <dt>情绪</dt>
-            <dd>荒诞而非恐怖；灾难与琐事在同一画面里等价并置，观者应先觉得可笑、再觉得不安</dd>
-            <dt>画面元素</dt>
-            <dd>飞在空中的礼帽、倾斜的屋顶与远处的坠落剪影（不作血腥描绘）、报刊亭与摊开的报纸（版面不得有可读文字）、擤鼻涕的路人、远景中一座桥与桥上的火车、低压的乌云</dd>
-            <dt>时代感</dt>
-            <dd>1910年前后的德国城市，服饰、街具与车辆应为该时代样式</dd>
-            <dt>推荐风格</dt>
-            <dd>德国表现主义早期的城市画风格（可参考1910年代的木刻与油画传统），线条硬朗、透视略微扭曲、色彩偏冷，各个事件在画面中不分主次地并置</dd>
-            <dt>比例</dt>
-            <dd>4:3（横版）</dd>
-            <dt>禁忌</dt>
-            <dd>不得出现文字、水印、可辨识的报纸标题；不得出现血迹、尸体或对坠亡的正面描绘；不得使用恐怖片式的光效与构图；不得出现现代车辆、路牌、广告</dd>
-          </dl>
-          <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-            4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-        </div>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Dem Bürger fliegt vom spitzen Kopf
-                  der Hut,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">市民的帽子从尖脑袋上飞走了，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">In allen Lüften hallt es wie
-                  Geschrei.<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">所有的空气里都回荡着仿佛喊叫的声音。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Dachdecker stürzen ab und gehn
-                  entzwei,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">盖屋顶的工人坠落下来，摔成两半，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Und an den Küsten – liest man –
-                  steigt die Flut.<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">而在海岸边——据报载——潮水正在上涨。</div>
-            </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1</span>
+            <span class="tag">表现主义</span>
+            <span class="tag">末日</span>
+            <span class="tag">反讽</span>
+            <span class="tag">罗列式句法</span>
+            <span class="tag">都市</span>
+            <span class="tag">文学史转折点</span>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Der Sturm ist da, die wilden Meere
-                  hupfen<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">风暴来了，狂野的海蹦跳着</div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
             </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">An Land, um dicke Dämme zu
-                  zerdrücken.<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">上了岸，要把厚厚的堤坝压碎。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Die meisten Menschen haben einen
-                  Schnupfen.<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">大多数人都得了感冒。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Die Eisenbahnen fallen von den
-                  Brücken.<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">火车从桥上掉了下去。</div>
-            </div>
-          </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留八行之间毫无过渡的并置与第7行突兀的日常语调</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Dem Bürger fliegt vom spitzen Kopf der Hut,</p>
-            <p class="lnote__zh">开篇即是全诗的调子：世界末日的第一个征兆，是一位市民的帽子被吹掉了。dem Bürger
-              是"利益/损失第三格"（帽子从"他的"头上飞走）。spitz（尖的）用于人头是对市民阶层的漫画式贬低——不是恐怖，而是滑稽。der Bürger 在1911年的语境中特指自满的中产市民（Spießbürger）。
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                1910年前后德国城市的一条街道，构图刻意杂乱：一顶礼帽在半空中飞、远处屋顶上有工人失去平衡的剪影、路边报刊亭上摊着报纸、一个裹着围巾擤鼻涕的路人站在最前景
+              </dd>
+              <dt>情绪</dt>
+              <dd>荒诞而非恐怖；灾难与琐事在同一画面里等价并置，观者应先觉得可笑、再觉得不安</dd>
+              <dt>画面元素</dt>
+              <dd>
+                飞在空中的礼帽、倾斜的屋顶与远处的坠落剪影（不作血腥描绘）、报刊亭与摊开的报纸（版面不得有可读文字）、擤鼻涕的路人、远景中一座桥与桥上的火车、低压的乌云
+              </dd>
+              <dt>时代感</dt>
+              <dd>1910年前后的德国城市，服饰、街具与车辆应为该时代样式</dd>
+              <dt>推荐风格</dt>
+              <dd>
+                德国表现主义早期的城市画风格（可参考1910年代的木刻与油画传统），线条硬朗、透视略微扭曲、色彩偏冷，各个事件在画面中不分主次地并置
+              </dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得出现文字、水印、可辨识的报纸标题；不得出现血迹、尸体或对坠亡的正面描绘；不得使用恐怖片式的光效与构图；不得出现现代车辆、路牌、广告
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
             </p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">In allen Lüften hallt es wie Geschrei.</p>
-            <p class="lnote__zh">die Lüfte 是 Luft 的诗歌复数。无人称的 es hallt（回荡着）加上
-              wie（仿佛）——连声音是什么都不确定。这是全诗唯一带有传统"末日感"的一行，紧接着就被下一行的荒诞打断。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Dachdecker stürzen ab und gehn entzwei,</p>
-            <p class="lnote__zh">entzweigehen（碎成两半）通常用于杯子、盘子等器物；用在人身上，人就被降格为物。这是表现主义的核心手法之一：不作评论，只用一个错位的动词。gehn 为省音形式。
-            </p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Und an den Küsten – liest man – steigt die Flut.</p>
-            <p class="lnote__zh">全诗最关键的三个字："liest
-              man"（据报载）。灾难不是被经历的，而是被读到的——它是报纸上的一条消息。破折号中的插入语把整个末日推到了媒介的距离之外。这一细节使这首诗在一百多年后读起来仍然极为现代。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Der Sturm ist da, die wilden Meere hupfen</p>
-            <p class="lnote__zh">hupfen 是 hüpfen（蹦跳）的口语／方言变体，用于"狂野的海"是刻意的语域错位：宏大的意象配上幼儿般的动词。这种把崇高与滑稽强行焊在一起的做法，正是本诗的语言纲领。
-            </p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">An Land, um dicke Dämme zu zerdrücken.</p>
-            <p class="lnote__zh">dick（厚的、胖的）也是一个日常口语词，与"堤坝"这一工程术语并置。um … zu 引导目的从句——海"为了"压碎堤坝而上岸，仿佛它有计划。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Die meisten Menschen haben einen Schnupfen.</p>
-            <p class="lnote__zh">
-              全诗的落点，也是德语现代诗里最著名的一次反高潮（Antiklimax）。在洪水、风暴、坠亡之间，突然插进一句关于感冒的陈述，语法完全正规、语调完全平静。评论家米夏埃尔·布劳恩指出："大多数人"得的是"感冒"，这实在算不上世界末日的确凿证据。
-            </p>
-          </article>
-          <article class="lnote" id="note-8" data-noteref="8">
-            <span class="lnote__mark">8</span>
-            <p class="lnote__de">Die Eisenbahnen fallen von den Brücken.</p>
-            <p class="lnote__zh">
-              末行回到灾难，但依然用最平的陈述句写成——没有惊叹号，没有形容词。八行诗里的八个句子彼此没有任何连接词表明因果或轻重，这种句法称为"罗列式"（Reihungsstil），本诗是它最早也最纯粹的范例。本站格吕菲乌斯《祖国之泪》第二节可视为其三百年前的先声。
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
+          </div>
         </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Bürger, -</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">市民、公民；（贬义）庸常的中产者</div>
-            <div class="vocab-card__note">1911年前后的先锋文艺语境中，Bürger 常带强烈贬义，等同于 Spießbürger（庸人）；今日中性义为"公民"（Staatsbürger）。
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Dem Bürger fliegt vom spitzen Kopf der Hut,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">市民的帽子从尖脑袋上飞走了，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >In allen Lüften hallt es wie Geschrei.<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">所有的空气里都回荡着仿佛喊叫的声音。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Dachdecker stürzen ab und gehn entzwei,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">盖屋顶的工人坠落下来，摔成两半，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Und an den Küsten – liest man – steigt die Flut.<sup class="refmark"
+                      ><a href="#note-4">4</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">而在海岸边——据报载——潮水正在上涨。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Der Sturm ist da, die wilden Meere hupfen<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">风暴来了，狂野的海蹦跳着</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >An Land, um dicke Dämme zu zerdrücken.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">上了岸，要把厚厚的堤坝压碎。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Die meisten Menschen haben einen Schnupfen.<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">大多数人都得了感冒。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Die Eisenbahnen fallen von den Brücken.<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">火车从桥上掉了下去。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留八行之间毫无过渡的并置与第7行突兀的日常语调
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Dem Bürger fliegt vom spitzen Kopf der Hut,</p>
+              <p class="lnote__zh">
+                开篇即是全诗的调子：世界末日的第一个征兆，是一位市民的帽子被吹掉了。dem Bürger
+                是"利益/损失第三格"（帽子从"他的"头上飞走）。spitz（尖的）用于人头是对市民阶层的漫画式贬低——不是恐怖，而是滑稽。der
+                Bürger 在1911年的语境中特指自满的中产市民（Spießbürger）。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">In allen Lüften hallt es wie Geschrei.</p>
+              <p class="lnote__zh">
+                die Lüfte 是 Luft 的诗歌复数。无人称的 es hallt（回荡着）加上
+                wie（仿佛）——连声音是什么都不确定。这是全诗唯一带有传统"末日感"的一行，紧接着就被下一行的荒诞打断。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Dachdecker stürzen ab und gehn entzwei,</p>
+              <p class="lnote__zh">
+                entzweigehen（碎成两半）通常用于杯子、盘子等器物；用在人身上，人就被降格为物。这是表现主义的核心手法之一：不作评论，只用一个错位的动词。gehn
+                为省音形式。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Und an den Küsten – liest man – steigt die Flut.</p>
+              <p class="lnote__zh">
+                全诗最关键的三个字："liest
+                man"（据报载）。灾难不是被经历的，而是被读到的——它是报纸上的一条消息。破折号中的插入语把整个末日推到了媒介的距离之外。这一细节使这首诗在一百多年后读起来仍然极为现代。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Der Sturm ist da, die wilden Meere hupfen</p>
+              <p class="lnote__zh">
+                hupfen 是
+                hüpfen（蹦跳）的口语／方言变体，用于"狂野的海"是刻意的语域错位：宏大的意象配上幼儿般的动词。这种把崇高与滑稽强行焊在一起的做法，正是本诗的语言纲领。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">An Land, um dicke Dämme zu zerdrücken.</p>
+              <p class="lnote__zh">
+                dick（厚的、胖的）也是一个日常口语词，与"堤坝"这一工程术语并置。um … zu
+                引导目的从句——海"为了"压碎堤坝而上岸，仿佛它有计划。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Die meisten Menschen haben einen Schnupfen.</p>
+              <p class="lnote__zh">
+                全诗的落点，也是德语现代诗里最著名的一次反高潮（Antiklimax）。在洪水、风暴、坠亡之间，突然插进一句关于感冒的陈述，语法完全正规、语调完全平静。评论家米夏埃尔·布劳恩指出："大多数人"得的是"感冒"，这实在算不上世界末日的确凿证据。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Die Eisenbahnen fallen von den Brücken.</p>
+              <p class="lnote__zh">
+                末行回到灾难，但依然用最平的陈述句写成——没有惊叹号，没有形容词。八行诗里的八个句子彼此没有任何连接词表明因果或轻重，这种句法称为"罗列式"（Reihungsstil），本诗是它最早也最纯粹的范例。本站格吕菲乌斯《祖国之泪》第二节可视为其三百年前的先声。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Bürger, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">市民、公民；（贬义）庸常的中产者</div>
+              <div class="vocab-card__note">
+                1911年前后的先锋文艺语境中，Bürger 常带强烈贬义，等同于
+                Spießbürger（庸人）；今日中性义为"公民"（Staatsbürger）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hallen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">回响、回荡</div>
+              <div class="vocab-card__note">
+                与 die Halle（大厅）同源，指声音在空间中反射；复合词 widerhallen（回响）、der Nachhall（余音）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">entzweigehen</span></div>
+              <span class="vocab-card__pos">v.（可分，强变化）</span>
+              <div class="vocab-card__meaning">碎成两半、破裂</div>
+              <div class="vocab-card__note">entzwei（成两半）+ gehen；通常用于器物。诗中用于人，是刻意的降格。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Flut, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">涨潮；洪水</div>
+              <div class="vocab-card__note">
+                与 die Ebbe（退潮）相对；本站施托姆《那座城》与迈耶《罗马的喷泉》中亦出现此词，含义各异，可对照。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hüpfen（诗中 hupfen）</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">蹦跳、跳跃</div>
+              <div class="vocab-card__note">
+                多用于小动物或儿童的轻快跳动；hupfen 为南德／口语变体。用于"狂野的海"是全诗最明显的语域错位。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Damm, Dämme</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">堤坝、路堤</div>
+              <div class="vocab-card__note">
+                习语 "wieder auf dem Damm
+                sein"（恢复健康）；北德低地的防洪堤是当地生活的基本设施，因此这一意象对德语读者极具现实感。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Schnupfen, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">伤风、鼻塞感冒</div>
+              <div class="vocab-card__note">
+                特指鼻部症状，比 die Erkältung（感冒）更轻微、更日常；正是这种"微不足道"制造了全诗的反讽。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Eisenbahn, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">铁路；火车</div>
+              <div class="vocab-card__note">
+                字面"铁之路"；20世纪初仍是现代技术文明的标志物，因此它"从桥上掉下去"具有象征意味。
+              </div>
             </div>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">hallen</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">回响、回荡</div>
-            <div class="vocab-card__note">与 die Halle（大厅）同源，指声音在空间中反射；复合词 widerhallen（回响）、der Nachhall（余音）。</div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">fliegen</td>
+                  <td class="de">fliegt</td>
+                  <td class="de">flog</td>
+                  <td class="de">ist geflogen</td>
+                  <td class="de">geflogen</td>
+                  <td class="de">flöge</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（ie–o–o）；诗中主语 der Hut 后置于句末，是德语中把新信息放在句尾的常规做法。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">abstürzen</td>
+                  <td class="de">stürzt ab</td>
+                  <td class="de">stürzte ab</td>
+                  <td class="de">ist abgestürzt</td>
+                  <td class="de">abgestürzt</td>
+                  <td class="de">stürzte ab</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 可分动词，弱变化；今日亦用于飞机失事与电脑死机（der Rechner ist abgestürzt）。</td>
+                </tr>
+                <tr>
+                  <td class="de">entzweigehen</td>
+                  <td class="de">geht entzwei</td>
+                  <td class="de">ging entzwei</td>
+                  <td class="de">ist entzweigegangen</td>
+                  <td class="de">entzweigegangen</td>
+                  <td class="de">ginge entzwei</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 可分动词；诗中复数现在时省音作 gehn entzwei。</td>
+                </tr>
+                <tr>
+                  <td class="de">steigen</td>
+                  <td class="de">steigt</td>
+                  <td class="de">stieg</td>
+                  <td class="de">ist gestiegen</td>
+                  <td class="de">gestiegen</td>
+                  <td class="de">stiege</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化（ei–ie–ie）；本站施托姆与克劳迪乌斯诗中亦有此词，可对照复习。</td>
+                </tr>
+                <tr>
+                  <td class="de">zerdrücken</td>
+                  <td class="de">zerdrückt</td>
+                  <td class="de">zerdrückte</td>
+                  <td class="de">hat zerdrückt</td>
+                  <td class="de">zerdrückt</td>
+                  <td class="de">zerdrückte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 不可分动词（zer- 表示"弄碎、弄坏"）；同类构词
+                    zerbrechen、zerreißen、zerstören，是德语中一个高产的前缀，值得成组掌握。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">fallen</td>
+                  <td class="de">fällt</td>
+                  <td class="de">fiel</td>
+                  <td class="de">ist gefallen</td>
+                  <td class="de">gefallen</td>
+                  <td class="de">fiele</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化；诗中复数现在时 fallen，作全诗最后一个动作，语调却毫无起伏。</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">entzweigehen</span></div>
-            <span class="vocab-card__pos">v.（可分，强变化）</span>
-            <div class="vocab-card__meaning">碎成两半、破裂</div>
-            <div class="vocab-card__note">entzwei（成两半）+ gehen；通常用于器物。诗中用于人，是刻意的降格。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">罗列式句法（Reihungsstil）</h3>
+              <p class="grammar-item__quote">全诗八行 = 八个独立主句，无一个从属连词</p>
+              <div class="grammar-item__body">
+                本诗是德语"罗列式句法"最著名的范例：每行（或每两行）一个语法完整、彼此平行的主句，之间没有
+                weil、als、während
+                等连接词说明因果、时间或轻重。结果是所有事件同时、等价地发生——帽子飞掉与火车坠桥一样重要，或者说一样不重要。这种句法后来成为表现主义早期诗歌的标志。对学习者而言，本诗是练习"简单主句
+                + 正常语序/倒装"的极佳材料：句子结构简单，但每一句的成分排列都值得逐一分析。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">利益/损失第三格</h3>
+              <p class="grammar-item__quote">Dem Bürger fliegt vom spitzen Kopf der Hut,</p>
+              <div class="grammar-item__body">
+                dem Bürger
+                不是间接宾语（"给市民"），而是表示动作涉及谁的第三格：帽子从"他的"头上飞走。德语常用这一手法代替物主代词："Mir
+                tut der Kopf weh"（我头疼，而非 mein Kopf）、"Ihm ist das Glas
+                zerbrochen"（他的杯子碎了）。本站莱瑙《祈求》中的 "Nimm … diese Welt von hinnen mir"
+                是同一结构的另一种用法，可对照。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">插入语与信息来源标记</h3>
+              <p class="grammar-item__quote">Und an den Küsten – liest man – steigt die Flut.</p>
+              <div class="grammar-item__body">
+                "liest man" 是一个不带连词的插入句（Parenthese），用破折号隔开，不影响主句 "an den Küsten steigt die
+                Flut" 的语序（状语在前 → 动词 → 主语）。德语中同类的信息来源标记还有 "heißt es"（据说）、"wie es
+                scheint"（看来）、"sagt man"。诗中这一插入语承担的分量远超其长度：它把整场灾难标记为二手信息。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">语域错位（Stilbruch）作为构成原则</h3>
+              <p class="grammar-item__quote">die wilden Meere hupfen … Die meisten Menschen haben einen Schnupfen.</p>
+              <div class="grammar-item__body">
+                德语像其他语言一样有语体层级：hupfen、Schnupfen、dick 属日常口语，Weltende、Geschrei、Flut
+                属庄严语体。本诗系统性地把两者并置，而且让口语词落在押韵的位置上（hupfen–Schnupfen
+                是全诗最响亮的一组韵）。这不是不讲究，而是纲领：既然连世界末日都只是报纸上的一条消息，那么描写它的语言也不必庄严。学习德语时留意词汇的语体层级，是从"看懂"走向"听得出味道"的关键一步。
+              </div>
+            </article>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Flut, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">涨潮；洪水</div>
-            <div class="vocab-card__note">与 die Ebbe（退潮）相对；本站施托姆《那座城》与迈耶《罗马的喷泉》中亦出现此词，含义各异，可对照。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              1911年1月11日，二十三岁的雅各布·范·霍迪斯在柏林的杂志《Der
+              Demokrat》上发表了这首八行诗。它通常被视为德语表现主义的"开篇文献"——不是因为它最好，而是因为此后的整整一代诗人都记得它。作家约翰内斯·R·贝歇尔后来回忆说，这八行诗当时像"闪电"一样击中了他们，人们在咖啡馆里互相背诵。
+            </p>
+            <p>
+              它的直接背景是1910年5月哈雷彗星的回归。天文学家在彗尾中检测到氰的谱线，媒体随即掀起一轮世界末日恐慌。范·霍迪斯的诗正是对这场恐慌的反应——但不是加入，而是拆解。评论家米夏埃尔·布劳恩指出：这里的"世界末日"不是用许多表现主义诗歌那种高声的悲怆写出来的，而是用一种随口的、近乎油滑的语调；罗列式的诗行让末日场景显出可笑之处；事件被当作媒体奇观来把握，从反讽的距离外加以描述——人们只是"读到"这威胁。而"大多数人"得了"感冒"，实在算不上世界末日的确凿证据。
+            </p>
+            <p>
+              作者的生平与诗的轻快语调形成残酷的反差。雅各布·范·霍迪斯是汉斯·达维德松（Hans Davidsohn,
+              1887—1942）的易位构词笔名。他自1912年起精神状况恶化，此后长期在疗养机构中度过。1942年，他从图宾根附近的犹太人疗养院被纳粹当局遣送，在索比堡灭绝营遇害。他的作品自2013年1月1日起进入公有领域。
+            </p>
+            <p>
+              对德语学习者来说，这首诗还有一个特别的用处：它几乎不用生僻词，句子结构简单到极点，却是理解20世纪德语诗歌"发生了什么"的最短路径。把它和本站的克劳迪乌斯《晚歌》放在一起读——同样是八行以内的短诗，同样写世界的整体状况，相隔一百三十年——就能看清德语诗歌在这段时间里丢掉了什么、又获得了什么。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">hüpfen（诗中 hupfen）</span></div>
-            <span class="vocab-card__pos">v.（弱变化）</span>
-            <div class="vocab-card__meaning">蹦跳、跳跃</div>
-            <div class="vocab-card__note">多用于小动物或儿童的轻快跳动；hupfen 为南德／口语变体。用于"狂野的海"是全诗最明显的语域错位。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1)
+              全诗的效果依赖于"崇高词"与"日常词"的并置，中译尽量在词语选择上保持这一落差（如"狂野的海"配"蹦跳"、"世界末日"级的场面配"得了感冒"），未作统一的文学化提升；(2)
+              第4行的插入语 "– liest man –" 是全诗的枢纽，译作"——据报载——"并保留破折号；(3) 第3行 entzweigehen
+              本用于器物，译作"摔成两半"以保留其物化效果，未改用更"得体"的表达。另需说明：hupfen–Schnupfen
+              是全诗最响的一组韵，中文无法复现，请对照原文朗读。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Damm, Dämme</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">堤坝、路堤</div>
-            <div class="vocab-card__note">习语 "wieder auf dem Damm sein"（恢复健康）；北德低地的防洪堤是当地生活的基本设施，因此这一意象对德语读者极具现实感。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >planetlyrik.de — „Jakob van Hoddis' Gedicht ‚Weltende‘“（附 Michael Braun 在《德国广播电台抒情诗历
+                2007》中的评注）</span
+              ><a
+                class="source-url"
+                href="https://www.planetlyrik.de/lyrikkalender/jakob-van-hoddis-gedicht-weltende/"
+                target="_blank"
+                rel="noopener"
+                >https://www.planetlyrik.de/lyrikkalender/jakob-van-hoddis-gedicht-weltende/</a
+              >
+              <span class="source-note"
+                >主来源。两节八行完整，明确标注出处：Jakob van Hoddis, Dichtungen und Briefe, Arche Verlag, Zürich
+                1987；并标注写作/发表年份（1911）与创作背景（1910年哈雷彗星恐慌、1911年1月刊于《Der Demokrat》）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — „Weltende – Hoddis“</span
+              ><a class="source-url" href="https://www.gedichte7.de/weltende-hoddis.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/weltende-hoddis.html</a
+              >
+              <span class="source-note"
+                >辅助来源。两节八行与主来源逐词一致（含口语形式 hupfen 与插入语 – liest man
+                –），用于独立交叉核对用词与标点。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Weltende (1911)“</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/weltende-1911.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/weltende-1911.html</a
+              >
+              <span class="source-note"
+                >第三来源（二级，与 planetlyrik.de 相互独立）。八行用词与主来源一致（含口语形式
+                hupfen），唯第3行行末不加逗号，详见校对记录。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源（planetlyrik.de 依 Arche 版《诗作与书信》1987年本，与
+              gedichte7.de）逐词核对，两节各四行、内容一致，未发现字面异文。三处值得记录：(1) 第5行的 hupfen
+              是口语／方言形式（今日标准形式为 hüpfen），两个来源均作 hupfen，且它与第7行的 Schnupfen
+              构成全诗最重要的一组韵，因此确为作者原词而非讹误，本站保留。(2) 第4行的插入语在两来源中均以破折号标出（–
+              liest man –），本站保留该排印。(3) 本诗常见的转载中偶有把第3行 gehn 补全为 gehen
+              的情况，会破坏该行的音节数；本站从两来源的省音形式。
+            </p>
+            <p>
+              【版权状态】作者 Hans Davidsohn（笔名 Jakob van
+              Hoddis）1942年于索比堡灭绝营遇害，其作品依德国／欧盟法律于逝世后70年、即2013年1月1日起进入公有领域，本站收录无版权障碍。
+            </p>
+            <p>
+              待核实项：(1) 本站未直接查阅1911年1月11日《Der Demokrat》原刊影印件，文本依据 Arche
+              版全集的转录；该杂志初刊与后来结集之间是否存在异文，本站未查明。(2) 本诗在《Dichtungen und
+              Briefe》中的具体页码本站未记录。
+            </p>
+            <p>
+              【复核完成（2026年8月）】已补入 deutschelyrik.de 作为第三个独立来源（运营方组 deutschelyrik，与
+              planetlyrik.de 互不隶属）。三方逐词比对结果：八行的用词完全一致，**新发现一处标点异文**——第3行 "Dachdecker
+              stürzen ab und gehn entzwei" 行末，planetlyrik.de（依 Arche 版全集）与 gedichte7.de
+              均作逗号，deutschelyrik.de 不加标点。本站从主来源的逗号写法，因其所依据的 Arche
+              版《诗作与书信》为标注了出处的全集本。本诗现已满足规则
+              A、B；但三个来源均非一级来源（无标注纸质校勘版页码的数字化全集），规则 D 仍未完全满足，1911年《Der
+              Demokrat》初刊本的核实仍属待办。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Schnupfen, -</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">伤风、鼻塞感冒</div>
-            <div class="vocab-card__note">特指鼻部症状，比 die Erkältung（感冒）更轻微、更日常；正是这种"微不足道"制造了全诗的反讽。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Eisenbahn, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">铁路；火车</div>
-            <div class="vocab-card__note">字面"铁之路"；20世纪初仍是现代技术文明的标志物，因此它"从桥上掉下去"具有象征意味。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">fliegen</td>
-                <td class="de">fliegt</td>
-                <td class="de">flog</td>
-                <td class="de">ist geflogen</td>
-                <td class="de">geflogen</td>
-                <td class="de">flöge</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化（ie–o–o）；诗中主语 der Hut 后置于句末，是德语中把新信息放在句尾的常规做法。</td>
-              </tr>
-              <tr>
-                <td class="de">abstürzen</td>
-                <td class="de">stürzt ab</td>
-                <td class="de">stürzte ab</td>
-                <td class="de">ist abgestürzt</td>
-                <td class="de">abgestürzt</td>
-                <td class="de">stürzte ab</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 可分动词，弱变化；今日亦用于飞机失事与电脑死机（der Rechner ist abgestürzt）。</td>
-              </tr>
-              <tr>
-                <td class="de">entzweigehen</td>
-                <td class="de">geht entzwei</td>
-                <td class="de">ging entzwei</td>
-                <td class="de">ist entzweigegangen</td>
-                <td class="de">entzweigegangen</td>
-                <td class="de">ginge entzwei</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 可分动词；诗中复数现在时省音作 gehn entzwei。</td>
-              </tr>
-              <tr>
-                <td class="de">steigen</td>
-                <td class="de">steigt</td>
-                <td class="de">stieg</td>
-                <td class="de">ist gestiegen</td>
-                <td class="de">gestiegen</td>
-                <td class="de">stiege</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化（ei–ie–ie）；本站施托姆与克劳迪乌斯诗中亦有此词，可对照复习。</td>
-              </tr>
-              <tr>
-                <td class="de">zerdrücken</td>
-                <td class="de">zerdrückt</td>
-                <td class="de">zerdrückte</td>
-                <td class="de">hat zerdrückt</td>
-                <td class="de">zerdrückt</td>
-                <td class="de">zerdrückte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 不可分动词（zer- 表示"弄碎、弄坏"）；同类构词 zerbrechen、zerreißen、zerstören，是德语中一个高产的前缀，值得成组掌握。</td>
-              </tr>
-              <tr>
-                <td class="de">fallen</td>
-                <td class="de">fällt</td>
-                <td class="de">fiel</td>
-                <td class="de">ist gefallen</td>
-                <td class="de">gefallen</td>
-                <td class="de">fiele</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化；诗中复数现在时 fallen，作全诗最后一个动作，语调却毫无起伏。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">罗列式句法（Reihungsstil）</h3>
-            <p class="grammar-item__quote">全诗八行 = 八个独立主句，无一个从属连词</p>
-            <div class="grammar-item__body">本诗是德语"罗列式句法"最著名的范例：每行（或每两行）一个语法完整、彼此平行的主句，之间没有 weil、als、während
-              等连接词说明因果、时间或轻重。结果是所有事件同时、等价地发生——帽子飞掉与火车坠桥一样重要，或者说一样不重要。这种句法后来成为表现主义早期诗歌的标志。对学习者而言，本诗是练习"简单主句 +
-              正常语序/倒装"的极佳材料：句子结构简单，但每一句的成分排列都值得逐一分析。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">利益/损失第三格</h3>
-            <p class="grammar-item__quote">Dem Bürger fliegt vom spitzen Kopf der Hut,</p>
-            <div class="grammar-item__body">dem Bürger 不是间接宾语（"给市民"），而是表示动作涉及谁的第三格：帽子从"他的"头上飞走。德语常用这一手法代替物主代词："Mir tut
-              der Kopf weh"（我头疼，而非 mein Kopf）、"Ihm ist das Glas zerbrochen"（他的杯子碎了）。本站莱瑙《祈求》中的 "Nimm … diese Welt von
-              hinnen mir" 是同一结构的另一种用法，可对照。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">插入语与信息来源标记</h3>
-            <p class="grammar-item__quote">Und an den Küsten – liest man – steigt die Flut.</p>
-            <div class="grammar-item__body">"liest man" 是一个不带连词的插入句（Parenthese），用破折号隔开，不影响主句 "an den Küsten steigt die
-              Flut" 的语序（状语在前 → 动词 → 主语）。德语中同类的信息来源标记还有 "heißt es"（据说）、"wie es scheint"（看来）、"sagt
-              man"。诗中这一插入语承担的分量远超其长度：它把整场灾难标记为二手信息。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">语域错位（Stilbruch）作为构成原则</h3>
-            <p class="grammar-item__quote">die wilden Meere hupfen … Die meisten Menschen haben einen Schnupfen.</p>
-            <div class="grammar-item__body">德语像其他语言一样有语体层级：hupfen、Schnupfen、dick 属日常口语，Weltende、Geschrei、Flut
-              属庄严语体。本诗系统性地把两者并置，而且让口语词落在押韵的位置上（hupfen–Schnupfen
-              是全诗最响亮的一组韵）。这不是不讲究，而是纲领：既然连世界末日都只是报纸上的一条消息，那么描写它的语言也不必庄严。学习德语时留意词汇的语体层级，是从"看懂"走向"听得出味道"的关键一步。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>1911年1月11日，二十三岁的雅各布·范·霍迪斯在柏林的杂志《Der
-            Demokrat》上发表了这首八行诗。它通常被视为德语表现主义的"开篇文献"——不是因为它最好，而是因为此后的整整一代诗人都记得它。作家约翰内斯·R·贝歇尔后来回忆说，这八行诗当时像"闪电"一样击中了他们，人们在咖啡馆里互相背诵。
-          </p>
-          <p>
-            它的直接背景是1910年5月哈雷彗星的回归。天文学家在彗尾中检测到氰的谱线，媒体随即掀起一轮世界末日恐慌。范·霍迪斯的诗正是对这场恐慌的反应——但不是加入，而是拆解。评论家米夏埃尔·布劳恩指出：这里的"世界末日"不是用许多表现主义诗歌那种高声的悲怆写出来的，而是用一种随口的、近乎油滑的语调；罗列式的诗行让末日场景显出可笑之处；事件被当作媒体奇观来把握，从反讽的距离外加以描述——人们只是"读到"这威胁。而"大多数人"得了"感冒"，实在算不上世界末日的确凿证据。
-          </p>
-          <p>作者的生平与诗的轻快语调形成残酷的反差。雅各布·范·霍迪斯是汉斯·达维德松（Hans Davidsohn,
-            1887—1942）的易位构词笔名。他自1912年起精神状况恶化，此后长期在疗养机构中度过。1942年，他从图宾根附近的犹太人疗养院被纳粹当局遣送，在索比堡灭绝营遇害。他的作品自2013年1月1日起进入公有领域。
-          </p>
-          <p>
-            对德语学习者来说，这首诗还有一个特别的用处：它几乎不用生僻词，句子结构简单到极点，却是理解20世纪德语诗歌"发生了什么"的最短路径。把它和本站的克劳迪乌斯《晚歌》放在一起读——同样是八行以内的短诗，同样写世界的整体状况，相隔一百三十年——就能看清德语诗歌在这段时间里丢掉了什么、又获得了什么。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1)
-            全诗的效果依赖于"崇高词"与"日常词"的并置，中译尽量在词语选择上保持这一落差（如"狂野的海"配"蹦跳"、"世界末日"级的场面配"得了感冒"），未作统一的文学化提升；(2) 第4行的插入语 "– liest man
-            –" 是全诗的枢纽，译作"——据报载——"并保留破折号；(3) 第3行 entzweigehen 本用于器物，译作"摔成两半"以保留其物化效果，未改用更"得体"的表达。另需说明：hupfen–Schnupfen
-            是全诗最响的一组韵，中文无法复现，请对照原文朗读。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">planetlyrik.de — „Jakob van Hoddis' Gedicht ‚Weltende‘“（附 Michael Braun
-              在《德国广播电台抒情诗历 2007》中的评注）</span><a class="source-url"
-              href="https://www.planetlyrik.de/lyrikkalender/jakob-van-hoddis-gedicht-weltende/" target="_blank"
-              rel="noopener">https://www.planetlyrik.de/lyrikkalender/jakob-van-hoddis-gedicht-weltende/</a>
-            <span class="source-note">主来源。两节八行完整，明确标注出处：Jakob van Hoddis, Dichtungen und Briefe, Arche Verlag, Zürich
-              1987；并标注写作/发表年份（1911）与创作背景（1910年哈雷彗星恐慌、1911年1月刊于《Der Demokrat》）。</span>
-          </li>
-          <li>
-            <span class="source-name">gedichte7.de — „Weltende – Hoddis“</span><a class="source-url"
-              href="https://www.gedichte7.de/weltende-hoddis.html" target="_blank"
-              rel="noopener">https://www.gedichte7.de/weltende-hoddis.html</a>
-            <span class="source-note">辅助来源。两节八行与主来源逐词一致（含口语形式 hupfen 与插入语 – liest man –），用于独立交叉核对用词与标点。</span>
-          </li>
-          <li>
-            <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Weltende (1911)“</span><a class="source-url"
-              href="https://www.deutschelyrik.de/weltende-1911.html" target="_blank"
-              rel="noopener">https://www.deutschelyrik.de/weltende-1911.html</a>
-            <span class="source-note">第三来源（二级，与 planetlyrik.de 相互独立）。八行用词与主来源一致（含口语形式 hupfen），唯第3行行末不加逗号，详见校对记录。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源（planetlyrik.de 依 Arche 版《诗作与书信》1987年本，与 gedichte7.de）逐词核对，两节各四行、内容一致，未发现字面异文。三处值得记录：(1) 第5行的
-            hupfen 是口语／方言形式（今日标准形式为 hüpfen），两个来源均作 hupfen，且它与第7行的 Schnupfen 构成全诗最重要的一组韵，因此确为作者原词而非讹误，本站保留。(2)
-            第4行的插入语在两来源中均以破折号标出（– liest man –），本站保留该排印。(3) 本诗常见的转载中偶有把第3行 gehn 补全为 gehen 的情况，会破坏该行的音节数；本站从两来源的省音形式。</p>
-          <p>【版权状态】作者 Hans Davidsohn（笔名 Jakob van Hoddis）1942年于索比堡灭绝营遇害，其作品依德国／欧盟法律于逝世后70年、即2013年1月1日起进入公有领域，本站收录无版权障碍。
-          </p>
-          <p>待核实项：(1) 本站未直接查阅1911年1月11日《Der Demokrat》原刊影印件，文本依据 Arche 版全集的转录；该杂志初刊与后来结集之间是否存在异文，本站未查明。(2) 本诗在《Dichtungen
-            und Briefe》中的具体页码本站未记录。</p>
-          <p>【复核完成（2026年8月）】已补入 deutschelyrik.de 作为第三个独立来源（运营方组 deutschelyrik，与 planetlyrik.de
-            互不隶属）。三方逐词比对结果：八行的用词完全一致，**新发现一处标点异文**——第3行 "Dachdecker stürzen ab und gehn entzwei" 行末，planetlyrik.de（依
-            Arche 版全集）与 gedichte7.de 均作逗号，deutschelyrik.de 不加标点。本站从主来源的逗号写法，因其所依据的 Arche 版《诗作与书信》为标注了出处的全集本。本诗现已满足规则
-            A、B；但三个来源均非一级来源（无标注纸质校勘版页码的数字化全集），规则 D 仍未完全满足，1911年《Der Demokrat》初刊本的核实仍属待办。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Jakob van Hoddis (Hans Davidsohn)</li>
-          <li>确认发表信息：1911年1月11日《Der Demokrat》</li>
-          <li>确认公版状态（1942年逝世，作品自2013年1月1日起进入公有领域）</li>
-          <li>德文原文主来源：planetlyrik.de（依 Arche 版《诗作与书信》1987）</li>
-          <li>德文原文辅助来源：gedichte7.de</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录 hupfen（口语形式，与 Schnupfen 押韵）非讹误</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点（含 Reihungsstil 与语域错位）</li>
-          <li>撰写背景说明（含哈雷彗星恐慌与作者生平）</li>
-          <li>撰写 image brief</li>
-          <li class="pending">生成 AI 配图</li>
-          <li class="pending">页面视觉检查</li>
-          <li class="pending">对照1911年《Der Demokrat》原刊核实初刊文本</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Jakob van Hoddis (Hans Davidsohn)</li>
+            <li>确认发表信息：1911年1月11日《Der Demokrat》</li>
+            <li>确认公版状态（1942年逝世，作品自2013年1月1日起进入公有领域）</li>
+            <li>德文原文主来源：planetlyrik.de（依 Arche 版《诗作与书信》1987）</li>
+            <li>德文原文辅助来源：gedichte7.de</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录 hupfen（口语形式，与 Schnupfen 押韵）非讹误</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点（含 Reihungsstil 与语域错位）</li>
+            <li>撰写背景说明（含哈雷彗星恐慌与作者生平）</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">对照1911年《Der Demokrat》原刊核实初刊文本</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

@@ -1,812 +1,1061 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Am Turme · 在塔上 — Annette von Droste-Hülshoff | 德语诗歌学习画册</title>
-  <meta name="description" content="Am Turme（在塔上）— Annette von Droste-Hülshoff。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Am Turme · 在塔上 — Annette von Droste-Hülshoff | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Am Turme（在塔上）— Annette von Droste-Hülshoff。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="wenn-nicht-mehr-zahlen-und-figuren.html" rel="prev"><span
-            class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">当数字与图形不再</span></a>
-        <a class="poem-nav__link poem-nav__next" href="ein-winterabend.html" rel="next"><span
-            class="poem-nav__title">一个冬夜</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de">Am Turme</h1>
-        <p class="poem-titleblock__author">Annette von Droste-Hülshoff</p>
-        <p class="poem-titleblock__zh">在塔上</p>
-        <p class="poem-titleblock__author-zh">安内特·冯·德罗斯特-徽尔斯霍夫</p>
-        <div class="poem-titleblock__biblio">
-          <p>《诗集》（1844年版）·「岩、林与湖」（Fels, Wald und See）组诗</p>
-          <p>毕德麦耶／复辟时期（今学界多不作断代归类）</p>
-          <p>1841/42年冬春间作于梅尔斯堡，1842年8月25日首刊于《为受教育阶层的晨报》</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--b">B2–C1</span>
-          <span class="tag ">风暴</span>
-          <span class="tag ">女性处境</span>
-          <span class="tag ">自由渴望</span>
-          <span class="tag ">湖景</span>
-          <span class="tag ">女诗人</span>
-          <span class="tag ">经典必读</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/am-turme.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
-            loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
-          </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>一座中世纪城堡的圆塔高处阳台，风暴中的湖面在下方翻涌，一位女子背对观者立于栏杆内侧，长发被风吹散；远处湖面上有一条挂着小旗的帆船在浪中起伏</dd>
-                <dt>情绪</dt>
-                <dd>亢奋与受困并存；风与浪应显出真正的力量，而人物的姿态要克制、受限——她在栏杆之内，不越出边缘</dd>
-                <dt>画面元素</dt>
-                <dd>石砌塔楼与铁栏阳台、翻涌的湖浪与白沫、低压的铅灰云层、成群盘旋的椋鸟、远处一条小帆船与飘扬的三角旗、被风吹散的长发</dd>
-                <dt>时代感</dt>
-                <dd>19世纪中叶德国南部（博登湖／梅尔斯堡）风貌，人物服饰为该时代样式</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义风景油画风格，构图上人物小、天空与湖面占主导，色调为铅灰、墨绿与冷白，仅在云层裂口处透出一线冷光</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得出现文字、水印；不得出现海象、珊瑚等诗中想象之物（画面应只呈现她实际所处的场景）；不得作面部特写或戏剧化表情，人物宜取背影；不得出现现代船只、护栏、游客</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
-            </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="wenn-nicht-mehr-zahlen-und-figuren.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">当数字与图形不再</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="ein-winterabend.html" rel="next"
+            ><span class="poem-nav__title">一个冬夜</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Am Turme</h1>
+          <p class="poem-titleblock__author">Annette von Droste-Hülshoff</p>
+          <p class="poem-titleblock__zh">在塔上</p>
+          <p class="poem-titleblock__author-zh">安内特·冯·德罗斯特-徽尔斯霍夫</p>
+          <div class="poem-titleblock__biblio">
+            <p>《诗集》（1844年版）·「岩、林与湖」（Fels, Wald und See）组诗</p>
+            <p>毕德麦耶／复辟时期（今学界多不作断代归类）</p>
+            <p>1841/42年冬春间作于梅尔斯堡，1842年8月25日首刊于《为受教育阶层的晨报》</p>
           </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Ich steh’ auf hohem Balkone am
-                  Turm,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">我站在塔上高高的阳台，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Umstrichen vom schreienden Stare,<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">被尖叫的椋鸟绕飞，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Und laß’ gleich einer Mänade den
-                  Sturm<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">任那风暴如一个狂女</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Mir wühlen im flatternden Haare;</span></div>
-              <div class="pline__zh">在我飞扬的头发里翻搅；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">O wilder Geselle, o toller Fant,<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">哦，狂野的伙伴，哦，疯癫的小子，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Ich möchte dich kräftig umschlingen,</span></div>
-              <div class="pline__zh">我真想使劲把你缠住，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Und, Sehne an Sehne, zwei Schritte
-                  vom Rand<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">筋对着筋，在离边缘两步之处</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Auf Tod und Leben dann ringen!<sup
-                    class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">拼上生死地角力一场！</div>
-            </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2–C1</span>
+            <span class="tag">风暴</span>
+            <span class="tag">女性处境</span>
+            <span class="tag">自由渴望</span>
+            <span class="tag">湖景</span>
+            <span class="tag">女诗人</span>
+            <span class="tag">经典必读</span>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und drunten seh’ ich am Strand, so frisch</span></div>
-              <div class="pline__zh">而在下方，我看见岸边，那些浪</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Wie spielende Doggen, die Wellen<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">鲜活得像嬉戏的大犬，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Sich tummeln rings mit Geklaff und
-                  Gezisch,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">四处翻腾，带着吠叫与嘶响，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und glänzende Flocken schnellen.</span></div>
-              <div class="pline__zh">并抛起闪亮的白沫。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">O, springen möcht’ ich hinein alsbald,</span></div>
-              <div class="pline__zh">哦，我真想立刻跳进去，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Recht in die tobende Meute,</span></div>
-              <div class="pline__zh">径直跳进那狂吠的群兽里，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Und jagen durch den korallenen
-                  Wald<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">去珊瑚的森林中追猎</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Das Walroß, die lustige Beute!<sup
-                    class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">海象，那快活的猎物！</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und drüben seh’ ich ein Wimpel wehn</span></div>
-              <div class="pline__zh">而在对面，我看见一面小旗飘扬，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">So keck wie eine Standarte,</span></div>
-              <div class="pline__zh">神气得像一面军旗，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="9"><span class="linetext">Seh auf und nieder den Kiel sich
-                  drehn<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
-              <div class="pline__zh">从我这高踞风中的瞭望处，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="9"><span class="linetext">Von meiner luftigen Warte;<sup
-                    class="refmark"><a href="#note-9">9</a></sup></span></div>
-              <div class="pline__zh">看那船身一上一下地转动；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">O, sitzen möcht’ ich im kämpfenden Schiff,</span>
-              </div>
-              <div class="pline__zh">哦，我真想坐在那搏斗的船上，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Das Steuerruder ergreifen,</span></div>
-              <div class="pline__zh">握住舵柄，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Und zischend über das brandende Riff</span></div>
-              <div class="pline__zh">呼啸着越过拍岸的暗礁，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Wie eine Seemöwe streifen.</span></div>
-              <div class="pline__zh">像一只海鸥般掠过。</div>
-            </div>
-          </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="10"><span class="linetext">Wär ich ein Jäger auf freier
-                  Flur,<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
-              <div class="pline__zh">假如我是自由原野上的猎人，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="11"><span class="linetext">Ein Stück nur von einem
-                  Soldaten,<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
-              <div class="pline__zh">哪怕只是个当兵的一小块，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Wär ich ein Mann doch mindestens nur,</span></div>
-              <div class="pline__zh">假如我至少、哪怕只是个男人，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="12"><span class="linetext">So würde der Himmel mir raten;<sup
-                    class="refmark"><a href="#note-12">12</a></sup></span></div>
-              <div class="pline__zh">上天便会给我指路；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="13"><span class="linetext">Nun muß ich sitzen so fein und
-                  klar,<sup class="refmark"><a href="#note-13">13</a></sup></span></div>
-              <div class="pline__zh">如今我只能坐着，端庄而洁净，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline"><span class="linetext">Gleich einem artigen Kinde,</span></div>
-              <div class="pline__zh">像一个乖巧的孩子，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="14"><span class="linetext">Und darf nur heimlich lösen mein
-                  Haar,<sup class="refmark"><a href="#note-14">14</a></sup></span></div>
-              <div class="pline__zh">只许偷偷地解开我的头发，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="14"><span class="linetext">Und lassen es flattern im Winde!<sup
-                    class="refmark"><a href="#note-14">14</a></sup></span></div>
-              <div class="pline__zh">任它在风里飘散！</div>
-            </div>
-          </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留前三节"眺望—渴望"的三度递进与末节由虚拟语气跌回现实的落差</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Ich steh’ auf hohem Balkone am Turm,</p>
-            <p class="lnote__zh">全诗以第一人称直陈开篇。Balkone 是带旧式第三格词尾 -e 的形式（今作
-              Balkon）。此塔即博登湖畔梅尔斯堡城堡东北角的礼拜堂塔楼，德罗斯特1841—42年住在其中的圆形塔房。原刊标题写作 "Am Thurme"（旧拼法）。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Umstrichen vom schreienden Stare,</p>
-            <p class="lnote__zh">Umstrichen 是 umstreichen（绕飞、盘旋掠过）的第二分词，作前置的分词短语修饰"我"。der Star（椋鸟，复数 Stare）在此为集合性单数。注意
-              Star 另有"白内障"与"明星"两义，须靠语境判断。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Und laß’ gleich einer Mänade den Sturm</p>
-            <p class="lnote__zh">die Mänade（迈那得斯）是希腊神话中狄俄尼索斯的狂女信徒，以披发狂舞、忘我癫狂著称——这个比喻在19世纪一位天主教贵族女性笔下极为大胆。gleich +
-              第三格意为"像……一样"（今多说 wie）。lassen 在此为使役动词，其不定式宾语 wühlen 在下一行。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">O wilder Geselle, o toller Fant,</p>
-            <p class="lnote__zh">两个呼语都是对风暴的拟人化，且都用了男性称谓。der Geselle 本义为"帮工、伙计"，引申为"家伙"；der Fant
-              是古语，指轻浮傲慢的年轻男子（"毛头小子"），今已罕用。诗人把风暴设想为一个可以搏斗的男性对手。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Und, Sehne an Sehne, zwei Schritte vom Rand / Auf Tod und Leben dann ringen!</p>
-            <p class="lnote__zh">Sehne an Sehne（筋腱贴着筋腱）是身体贴身角力的描写；auf Tod und Leben
-              为固定搭配，意为"生死相搏"。"离边缘两步"点明这场想象中的搏斗就在坠落的危险边上进行。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Wie spielende Doggen, die Wellen</p>
-            <p class="lnote__zh">die Dogge 指獒犬类大型犬（如大丹犬）。把波浪比作嬉闹的大狗，是全诗最生动的一处比喻；下一行的 Geklaff（吠叫声）与
-              Meute（猎犬群）延续了这一犬类意象群，直到第14行"跳进那狂吠的群兽里"。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Sich tummeln rings mit Geklaff und Gezisch,</p>
-            <p class="lnote__zh">sich tummeln（欢腾、来回奔跑）为反身动词。das Geklaff 与 das Gezisch 都是以 Ge-
-              前缀构成的集合名词，表示持续、杂乱的声响（吠声一片／嘶嘶声一片）——这是德语中一个能产的构词模式（Gerede 闲话、Geschrei 叫喊声）。</p>
-          </article>
-          <article class="lnote" id="note-8" data-noteref="8">
-            <span class="lnote__mark">8</span>
-            <p class="lnote__de">Und jagen durch den korallenen Wald / Das Walroß, die lustige Beute!</p>
-            <p class="lnote__zh">珊瑚森林与海象都是博登湖里绝不可能有的东西——这两行明确暴露了全诗的"体验虚构"性质：所写并非真实所见，而是想象中的越界。korallenen 是形容词
-              korallen（珊瑚的）的变格形式。Walroß 为旧拼法（今作 Walross）。</p>
-          </article>
-          <article class="lnote" id="note-9" data-noteref="9">
-            <span class="lnote__mark">9</span>
-            <p class="lnote__de">Seh auf und nieder den Kiel sich drehn / Von meiner luftigen Warte;</p>
-            <p class="lnote__zh">der Kiel 本义为船的龙骨，此处提喻整条船。die Warte 指瞭望台（同源词 warten
-              原义"守望"）；"我这高踞风中的瞭望处"再次强调说话者只能"看"而不能"去"的位置。drehn 为 drehen 的省音形式。</p>
-          </article>
-          <article class="lnote" id="note-10" data-noteref="10">
-            <span class="lnote__mark">10</span>
-            <p class="lnote__de">Wär ich ein Jäger auf freier Flur,</p>
-            <p class="lnote__zh">第四节连用两个不带 wenn 的虚拟条件句（Wär ich
-              …），动词置于句首——这是德语条件从句的一种省略形式。全诗前三节的"möchte（我想要）"到这里变成了"wäre（假如我是）"，愿望的对象从行动转为身份，语气随之从亢奋转为苦涩。</p>
-          </article>
-          <article class="lnote" id="note-11" data-noteref="11">
-            <span class="lnote__mark">11</span>
-            <p class="lnote__de">Ein Stück nur von einem Soldaten,</p>
-            <p class="lnote__zh">"哪怕只是一个士兵的一小块"——这一夸张的自贬是全诗最尖锐的一句：说话者甚至不敢奢望成为完整的男性角色。nur 的位置（后置于 Stück）加强了让步语气。</p>
-          </article>
-          <article class="lnote" id="note-12" data-noteref="12">
-            <span class="lnote__mark">12</span>
-            <p class="lnote__de">So würde der Himmel mir raten;</p>
-            <p class="lnote__zh">主句用 würde + 不定式的第二虚拟式（Konjunktiv II），与前两行的条件句配套。jemandem raten
-              意为"给某人出主意、指点"；这句话的潜台词是：只要我是个男人，连老天都会站在我这边。</p>
-          </article>
-          <article class="lnote" id="note-13" data-noteref="13">
-            <span class="lnote__mark">13</span>
-            <p class="lnote__de">Nun muß ich sitzen so fein und klar,</p>
-            <p class="lnote__zh">nun（如今）把语气从虚拟拉回现实。fein und klar 在此指"举止得体、仪容洁净"，是当时对贵族女性的规范用语；muß 为旧拼法（今 muss）。</p>
-          </article>
-          <article class="lnote" id="note-14" data-noteref="14">
-            <span class="lnote__mark">14</span>
-            <p class="lnote__de">Und darf nur heimlich lösen mein Haar, / Und lassen es flattern im Winde!</p>
-            <p class="lnote__zh">
-              全诗收束于一个极小的动作：偷偷解开头发。这与第一节里"任风暴在飞扬的头发中翻搅"形成呼应——首尾都是头发，但一处是狂放的想象，一处是仅存的、必须"偷偷"进行的自由。近年的研究据此认为，全诗真正的言说时刻其实始于这个解发动作，前面的一切都发生在想象之中。
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Star, -e</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">椋鸟</div>
-            <div class="vocab-card__note">同形异义词：der Star 亦可指"白内障"（grauer Star）与"明星"（复数 Stars，英语借词）。诗中为鸟名。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Mänade, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">迈那得斯（酒神狄俄尼索斯的狂女信徒）</div>
-            <div class="vocab-card__note">希腊神话形象，欧里庇得斯悲剧《酒神的伴侣》塑造了其经典形象；德语中引申指"癫狂的女人"。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Fant, -e</span></div>
-            <span class="vocab-card__pos">n.（阳性，古语）</span>
-            <div class="vocab-card__meaning">轻浮傲慢的年轻男子、毛头小子</div>
-            <div class="vocab-card__note">今已基本废弃，仅存于文学文本与个别方言中；诗中用作对风暴的拟人称呼。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Sehne, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">筋、腱；（弓）弦；（几何）弦</div>
-            <div class="vocab-card__note">"Sehne an Sehne" 描写贴身角力时肌腱相抵的状态。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Dogge, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">獒犬、大型猛犬</div>
-            <div class="vocab-card__note">如 Deutsche Dogge（大丹犬）；诗中以之比喻翻腾的波浪。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Geklaff</span></div>
-            <span class="vocab-card__pos">n.（中性，集合名词）</span>
-            <div class="vocab-card__meaning">（此起彼伏的）犬吠声</div>
-            <div class="vocab-card__note">由 klaffen/kläffen（尖声吠叫）加集合前缀 Ge- 构成；同类构词还有
-              Gezisch（嘶嘶声）、Geschrei（喊叫声）、Gerede（闲话）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Meute, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">猎犬群；（贬义）一伙人</div>
-            <div class="vocab-card__note">延续本节的犬类意象；今日多用其贬义（eine Meute von Reportern 一群记者）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">der Wimpel, -</span></div>
-            <span class="vocab-card__pos">n.（阳性）</span>
-            <div class="vocab-card__meaning">（细长的）三角旗、船旗</div>
-            <div class="vocab-card__note">与 die Standarte（军旗、骑兵旗）在下一行形成大小对照：小小的船旗"神气得像一面军旗"。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Warte, -n</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">瞭望台、观察点</div>
-            <div class="vocab-card__note">与 warten（等待，原义"守望"）同源；引申义"立场、视角"（von hoher Warte aus 从高处着眼）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">das Steuerruder, -</span></div>
-            <span class="vocab-card__pos">n.（中性）</span>
-            <div class="vocab-card__meaning">舵、舵柄</div>
-            <div class="vocab-card__note">由 steuern（操纵、掌舵）+ Ruder（桨、舵）构成；"掌舵"在诗中即掌握自身方向的隐喻。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">artig</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">乖巧的、听话的（多用于儿童）</div>
-            <div class="vocab-card__note">词根为 Art（方式、种类），本义"合乎体统的"；诗中"像一个乖巧的孩子"带有强烈的自嘲。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">stehen</td>
-                <td class="de">steht</td>
-                <td class="de">stand</td>
-                <td class="de">hat gestanden</td>
-                <td class="de">gestanden</td>
-                <td class="de">stünde / stände</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中第一人称省音形式 steh’（今 stehe）。</td>
-              </tr>
-              <tr>
-                <td class="de">lassen</td>
-                <td class="de">lässt</td>
-                <td class="de">ließ</td>
-                <td class="de">hat gelassen / hat … lassen</td>
-                <td class="de">gelassen / lassen</td>
-                <td class="de">ließe</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中两次作使役动词（laß’ … wühlen；lassen es flattern），此时不定式不带 zu，完成时用"替代不定式"（hat … wühlen
-                  lassen）。</td>
-              </tr>
-              <tr>
-                <td class="de">sich tummeln</td>
-                <td class="de">tummelt sich</td>
-                <td class="de">tummelte sich</td>
-                <td class="de">hat sich getummelt</td>
-                <td class="de">getummelt</td>
-                <td class="de">tummelte sich</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 反身动词，意为"欢腾、来回奔跑"；诗中主语为 die Wellen。</td>
-              </tr>
-              <tr>
-                <td class="de">ergreifen</td>
-                <td class="de">ergreift</td>
-                <td class="de">ergriff</td>
-                <td class="de">hat ergriffen</td>
-                <td class="de">ergriffen</td>
-                <td class="de">ergriffe</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化（ei–i–i）；除"抓住"外亦有"（情感上）打动"之义（ergriffen sein 被深深触动）。</td>
-              </tr>
-              <tr>
-                <td class="de">sein</td>
-                <td class="de">ist</td>
-                <td class="de">war</td>
-                <td class="de">ist gewesen</td>
-                <td class="de">gewesen</td>
-                <td class="de">wäre</td>
-                <td>sein</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中第四节两次用第二虚拟式 Wär（= wäre）置于句首，构成不带 wenn 的条件从句。</td>
-              </tr>
-              <tr>
-                <td class="de">dürfen</td>
-                <td class="de">darf</td>
-                <td class="de">durfte</td>
-                <td class="de">hat gedurft</td>
-                <td class="de">gedurft / dürfen</td>
-                <td class="de">dürfte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 情态动词，表"被允许"；末节的 "darf nur heimlich" 与前一行的 "muß ich sitzen" 一起，把外部规范内化为语法上的必然。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">不带 wenn 的虚拟条件句</h3>
-            <p class="grammar-item__quote">Wär ich ein Jäger auf freier Flur, … Wär ich ein Mann doch mindestens nur, /
-              So würde der Himmel mir raten;</p>
-            <div class="grammar-item__body">德语条件从句可以省去连词 wenn，把变位动词提到句首："Wäre ich ein Mann, so würde …" = "Wenn ich ein
-              Mann wäre, würde …"。这种倒装条件句语体较正式、也更有力度，主句常以 so 或 dann 引导。本诗第四节连用两次，构成全诗情感的转折点。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">使役动词 lassen + 不带 zu 的不定式</h3>
-            <p class="grammar-item__quote">Und laß’ gleich einer Mänade den Sturm / Mir wühlen im flatternden Haare; …
-              Und lassen es flattern im Winde!</p>
-            <div class="grammar-item__body">lassen 作使役动词时，后接的不定式不带 zu，宾语用第四格（den
-              Sturm、es）。这一结构可表"让/任由某人某物做某事"（本诗用法），也可表"叫人去做某事"（Ich lasse mir die Haare schneiden 我去理发）。完成时中 lassen
-              不用第二分词而用不定式形式（"替代不定式"）：Ich habe ihn kommen lassen。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">Ge- 前缀构成的集合名词</h3>
-            <p class="grammar-item__quote">mit Geklaff und Gezisch</p>
-            <div class="grammar-item__body">德语可用前缀 Ge-（有时加词尾 -e）把动词转成中性名词，表示反复、持续或杂乱的整体声响与行为：klaffen → das
-              Geklaff、zischen → das Gezisch、reden → das Gerede、schreien → das Geschrei、laufen → das
-              Gelaufe。这类词常带轻微的贬义或不耐烦的语气，是德语中一个非常能产、值得主动掌握的构词法。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">旧式第三格词尾 -e 与诗歌省音</h3>
-            <p class="grammar-item__quote">auf hohem Balkone / im flatternden Haare / steh’ / laß’ / seh’ / möcht’ /
-              drehn / wehn</p>
-            <div class="grammar-item__body">本诗同时使用两种相反的手段来凑足音节：一是给阳性/中性名词的第三格加上今日已废的词尾
-              -e（Balkone、Haare），二是省去动词词尾并以省字符标出（steh’、laß’、möcht’）或直接省音（drehn、wehn）。同一首诗里既加又减，正说明这些变化服务于格律而非语法规则本身。
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>
-            《在塔上》写于德罗斯特-徽尔斯霍夫第一次在博登湖畔梅尔斯堡城堡逗留期间（1841年9月30日至1842年7月29日）。她去探望姐姐燕妮，后者与约瑟夫·冯·拉斯贝格结婚后自1838年起住在城堡里。诗人住在东北侧礼拜堂塔楼的圆形房间。此前几年，作家莱温·许金已成为她的密友，但两人在吕斯豪斯的会面通常在她母亲的注视下进行；姐妹俩为这次博登湖之行做了安排，让许金同期住到梅尔斯堡，并对母亲保密。摆脱了日常义务、又有许金的激励，这段时间成为她创作力极旺盛的阶段，她在此写下约60首诗，为1844年的第二部诗集打下基础，除《在塔上》外还有《紫杉墙》《荒原上的男孩》《泥灰坑》等。
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/am-turme.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
           </p>
-          <p>1842年初，许金把这首诗连同另外九首寄给《为受教育阶层的晨报》；同年8月25日刊出，此前三个月该刊刚发表了她的小说《犹太人的山毛榉》。《晨报》在这一期前面加了一段取自莎士比亚《亨利六世》的题词——贞德对王太子说的
-            "My courage try, / And thou shalt find, that I exceed my
-            sex"（试试我的勇气，你会发现我超出了我的性别）——与《在塔上》的主题正相呼应。1844年结集时，德罗斯特把此诗编入「岩、林与湖」组诗，位列第三。</p>
-          <p>
-            这首诗最初被当作"体验诗"（Erlebnisgedicht）来读，即按时间顺序记述的一次真实经历。近年的研究则强调其中的"体验虚构"：诗中所述的观察其实只发生在说话者的想象里（珊瑚森林与海象在博登湖并不存在），真正的言说情境要到诗末解开发辫的那一刻才开始。除了传记式解读之外，此诗也被作女性主义解读——文学学者露丝·克吕格尔（Ruth
-            Klüger）1994年称它是"德语中第一首、也许是最好的一首女性主义诗歌"。《在塔上》是德罗斯特最著名的抒情作品之一，也已进入德语诗歌的经典序列。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一座中世纪城堡的圆塔高处阳台，风暴中的湖面在下方翻涌，一位女子背对观者立于栏杆内侧，长发被风吹散；远处湖面上有一条挂着小旗的帆船在浪中起伏
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>亢奋与受困并存；风与浪应显出真正的力量，而人物的姿态要克制、受限——她在栏杆之内，不越出边缘</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    石砌塔楼与铁栏阳台、翻涌的湖浪与白沫、低压的铅灰云层、成群盘旋的椋鸟、远处一条小帆船与飘扬的三角旗、被风吹散的长发
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>19世纪中叶德国南部（博登湖／梅尔斯堡）风貌，人物服饰为该时代样式</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    19世纪浪漫主义风景油画风格，构图上人物小、天空与湖面占主导，色调为铅灰、墨绿与冷白，仅在云层裂口处透出一线冷光
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现文字、水印；不得出现海象、珊瑚等诗中想象之物（画面应只呈现她实际所处的场景）；不得作面部特写或戏剧化表情，人物宜取背影；不得出现现代船只、护栏、游客
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
         </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明的处理：(1) 前三节每节都以"O, … möcht’ ich …"的渴望句为核心，译文统一用"哦，我真想……"保持排比；(2)
-            第四节两个倒装虚拟条件句（Wär ich …）译作"假如我是……"，主句"So würde der Himmel mir raten"直译为"上天便会给我指路"，保留其略带反讽的口吻；(3)
-            全诗末尾的"heimlich"（偷偷地）是理解全诗的关键词，译文将其保留在动词之前的强调位置。第二节 Doggen / Geklaff / Meute
-            构成的犬类意象链，中文以"大犬／吠叫／群兽"对应，无法完全传达德语中同一词族的连贯性。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">German Wikipedia — „Am Turme“</span><a class="source-url"
-              href="https://de.wikipedia.org/wiki/Am_Turme" target="_blank"
-              rel="noopener">https://de.wikipedia.org/wiki/Am_Turme</a>
-            <span class="source-note">主来源。四节三十二行全文，依1844年《诗集》文本（原刊标题 Am Thurme），保留旧拼法 laß’ / Walroß / muß 与 Seemöwe
-              的写法；并提供创作背景、首刊信息与研究史。</span>
-          </li>
-          <li>
-            <span class="source-name">gedichte7.de — „Am Turme – Droste-Hülshoff“</span><a class="source-url"
-              href="https://www.gedichte7.de/am-turme.html" target="_blank"
-              rel="noopener">https://www.gedichte7.de/am-turme.html</a>
-            <span class="source-note">辅助来源。四节三十二行与主来源逐词一致，采用现代化正字法（lass’ / Walross / muss）并将 Seemöwe 印作
-              Seemöve，用于独立交叉核对词序与分行。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源（German Wikipedia 依1844年《诗集》，与 gedichte7.de）逐词核对，四节各八行、词序与内容完全一致。核实到的差异均属正字法与排印层面：(1)
-            标题与拼写：原刊及1844年版作 "Am Thurme"，现代通行标题作 "Am Turme"，本站从后者并在注释中说明；(2)
-            旧新正字法：laß’/lass’、Walroß/Walross、muß/muss，本站从 Wikipedia 所依 1844 年版的旧拼法；(3) 第24行 "Seemöwe"（Wikipedia）与
-            "Seemöve"（gedichte7.de）——两种写法在19世纪均通行，今日标准形式为 Seemöwe，本站从之。需说明的是，本站未直接查阅1844年《诗集》或1842年《晨报》的影印件，上述文本采择依据
-            Wikipedia 的转录，建议有条件的读者对照原刊核实；另，梅尔斯堡塔房、《晨报》题词等背景信息亦取自该词条，未经第三来源独立验证，属待核实项。</p>
-          <p>【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B
-            不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1
-            个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
-            SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Annette von Droste-Hülshoff</li>
-          <li>确认标题：Am Turme（原刊 Am Thurme）</li>
-          <li>德文原文主来源：German Wikipedia（依1844年《诗集》）</li>
-          <li>德文原文辅助来源：gedichte7.de</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（Thurme/Turme；旧新正字法；Seemöwe/Seemöve）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">对照1844年《诗集》与1842年《晨报》影印件核实文本与题词</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-          <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Ich steh’ auf hohem Balkone am Turm,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我站在塔上高高的阳台，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Umstrichen vom schreienden Stare,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">被尖叫的椋鸟绕飞，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Und laß’ gleich einer Mänade den Sturm<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">任那风暴如一个狂女</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mir wühlen im flatternden Haare;</span></div>
+                <div class="pline__zh">在我飞扬的头发里翻搅；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >O wilder Geselle, o toller Fant,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">哦，狂野的伙伴，哦，疯癫的小子，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich möchte dich kräftig umschlingen,</span></div>
+                <div class="pline__zh">我真想使劲把你缠住，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Und, Sehne an Sehne, zwei Schritte vom Rand<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">筋对着筋，在离边缘两步之处</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Auf Tod und Leben dann ringen!<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">拼上生死地角力一场！</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und drunten seh’ ich am Strand, so frisch</span>
+                </div>
+                <div class="pline__zh">而在下方，我看见岸边，那些浪</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Wie spielende Doggen, die Wellen<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">鲜活得像嬉戏的大犬，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Sich tummeln rings mit Geklaff und Gezisch,<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">四处翻腾，带着吠叫与嘶响，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und glänzende Flocken schnellen.</span></div>
+                <div class="pline__zh">并抛起闪亮的白沫。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">O, springen möcht’ ich hinein alsbald,</span></div>
+                <div class="pline__zh">哦，我真想立刻跳进去，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Recht in die tobende Meute,</span></div>
+                <div class="pline__zh">径直跳进那狂吠的群兽里，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Und jagen durch den korallenen Wald<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">去珊瑚的森林中追猎</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Das Walroß, die lustige Beute!<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">海象，那快活的猎物！</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und drüben seh’ ich ein Wimpel wehn</span></div>
+                <div class="pline__zh">而在对面，我看见一面小旗飘扬，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">So keck wie eine Standarte,</span></div>
+                <div class="pline__zh">神气得像一面军旗，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Seh auf und nieder den Kiel sich drehn<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">从我这高踞风中的瞭望处，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Von meiner luftigen Warte;<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">看那船身一上一下地转动；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">O, sitzen möcht’ ich im kämpfenden Schiff,</span>
+                </div>
+                <div class="pline__zh">哦，我真想坐在那搏斗的船上，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Das Steuerruder ergreifen,</span></div>
+                <div class="pline__zh">握住舵柄，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und zischend über das brandende Riff</span></div>
+                <div class="pline__zh">呼啸着越过拍岸的暗礁，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie eine Seemöwe streifen.</span></div>
+                <div class="pline__zh">像一只海鸥般掠过。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Wär ich ein Jäger auf freier Flur,<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">假如我是自由原野上的猎人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="11">
+                  <span class="linetext"
+                    >Ein Stück nur von einem Soldaten,<sup class="refmark"><a href="#note-11">11</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">哪怕只是个当兵的一小块，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wär ich ein Mann doch mindestens nur,</span></div>
+                <div class="pline__zh">假如我至少、哪怕只是个男人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="12">
+                  <span class="linetext"
+                    >So würde der Himmel mir raten;<sup class="refmark"><a href="#note-12">12</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">上天便会给我指路；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="13">
+                  <span class="linetext"
+                    >Nun muß ich sitzen so fein und klar,<sup class="refmark"><a href="#note-13">13</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">如今我只能坐着，端庄而洁净，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Gleich einem artigen Kinde,</span></div>
+                <div class="pline__zh">像一个乖巧的孩子，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="14">
+                  <span class="linetext"
+                    >Und darf nur heimlich lösen mein Haar,<sup class="refmark"><a href="#note-14">14</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">只许偷偷地解开我的头发，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="14">
+                  <span class="linetext"
+                    >Und lassen es flattern im Winde!<sup class="refmark"><a href="#note-14">14</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">任它在风里飘散！</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留前三节"眺望—渴望"的三度递进与末节由虚拟语气跌回现实的落差
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Ich steh’ auf hohem Balkone am Turm,</p>
+              <p class="lnote__zh">
+                全诗以第一人称直陈开篇。Balkone 是带旧式第三格词尾 -e 的形式（今作
+                Balkon）。此塔即博登湖畔梅尔斯堡城堡东北角的礼拜堂塔楼，德罗斯特1841—42年住在其中的圆形塔房。原刊标题写作
+                "Am Thurme"（旧拼法）。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Umstrichen vom schreienden Stare,</p>
+              <p class="lnote__zh">
+                Umstrichen 是 umstreichen（绕飞、盘旋掠过）的第二分词，作前置的分词短语修饰"我"。der Star（椋鸟，复数
+                Stare）在此为集合性单数。注意 Star 另有"白内障"与"明星"两义，须靠语境判断。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Und laß’ gleich einer Mänade den Sturm</p>
+              <p class="lnote__zh">
+                die
+                Mänade（迈那得斯）是希腊神话中狄俄尼索斯的狂女信徒，以披发狂舞、忘我癫狂著称——这个比喻在19世纪一位天主教贵族女性笔下极为大胆。gleich
+                + 第三格意为"像……一样"（今多说 wie）。lassen 在此为使役动词，其不定式宾语 wühlen 在下一行。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">O wilder Geselle, o toller Fant,</p>
+              <p class="lnote__zh">
+                两个呼语都是对风暴的拟人化，且都用了男性称谓。der Geselle 本义为"帮工、伙计"，引申为"家伙"；der Fant
+                是古语，指轻浮傲慢的年轻男子（"毛头小子"），今已罕用。诗人把风暴设想为一个可以搏斗的男性对手。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Und, Sehne an Sehne, zwei Schritte vom Rand / Auf Tod und Leben dann ringen!</p>
+              <p class="lnote__zh">
+                Sehne an Sehne（筋腱贴着筋腱）是身体贴身角力的描写；auf Tod und Leben
+                为固定搭配，意为"生死相搏"。"离边缘两步"点明这场想象中的搏斗就在坠落的危险边上进行。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Wie spielende Doggen, die Wellen</p>
+              <p class="lnote__zh">
+                die Dogge 指獒犬类大型犬（如大丹犬）。把波浪比作嬉闹的大狗，是全诗最生动的一处比喻；下一行的
+                Geklaff（吠叫声）与 Meute（猎犬群）延续了这一犬类意象群，直到第14行"跳进那狂吠的群兽里"。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Sich tummeln rings mit Geklaff und Gezisch,</p>
+              <p class="lnote__zh">
+                sich tummeln（欢腾、来回奔跑）为反身动词。das Geklaff 与 das Gezisch 都是以 Ge-
+                前缀构成的集合名词，表示持续、杂乱的声响（吠声一片／嘶嘶声一片）——这是德语中一个能产的构词模式（Gerede
+                闲话、Geschrei 叫喊声）。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Und jagen durch den korallenen Wald / Das Walroß, die lustige Beute!</p>
+              <p class="lnote__zh">
+                珊瑚森林与海象都是博登湖里绝不可能有的东西——这两行明确暴露了全诗的"体验虚构"性质：所写并非真实所见，而是想象中的越界。korallenen
+                是形容词 korallen（珊瑚的）的变格形式。Walroß 为旧拼法（今作 Walross）。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Seh auf und nieder den Kiel sich drehn / Von meiner luftigen Warte;</p>
+              <p class="lnote__zh">
+                der Kiel 本义为船的龙骨，此处提喻整条船。die Warte 指瞭望台（同源词 warten
+                原义"守望"）；"我这高踞风中的瞭望处"再次强调说话者只能"看"而不能"去"的位置。drehn 为 drehen 的省音形式。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Wär ich ein Jäger auf freier Flur,</p>
+              <p class="lnote__zh">
+                第四节连用两个不带 wenn 的虚拟条件句（Wär ich
+                …），动词置于句首——这是德语条件从句的一种省略形式。全诗前三节的"möchte（我想要）"到这里变成了"wäre（假如我是）"，愿望的对象从行动转为身份，语气随之从亢奋转为苦涩。
+              </p>
+            </article>
+            <article class="lnote" id="note-11" data-noteref="11">
+              <span class="lnote__mark">11</span>
+              <p class="lnote__de">Ein Stück nur von einem Soldaten,</p>
+              <p class="lnote__zh">
+                "哪怕只是一个士兵的一小块"——这一夸张的自贬是全诗最尖锐的一句：说话者甚至不敢奢望成为完整的男性角色。nur
+                的位置（后置于 Stück）加强了让步语气。
+              </p>
+            </article>
+            <article class="lnote" id="note-12" data-noteref="12">
+              <span class="lnote__mark">12</span>
+              <p class="lnote__de">So würde der Himmel mir raten;</p>
+              <p class="lnote__zh">
+                主句用 würde + 不定式的第二虚拟式（Konjunktiv II），与前两行的条件句配套。jemandem raten
+                意为"给某人出主意、指点"；这句话的潜台词是：只要我是个男人，连老天都会站在我这边。
+              </p>
+            </article>
+            <article class="lnote" id="note-13" data-noteref="13">
+              <span class="lnote__mark">13</span>
+              <p class="lnote__de">Nun muß ich sitzen so fein und klar,</p>
+              <p class="lnote__zh">
+                nun（如今）把语气从虚拟拉回现实。fein und klar
+                在此指"举止得体、仪容洁净"，是当时对贵族女性的规范用语；muß 为旧拼法（今 muss）。
+              </p>
+            </article>
+            <article class="lnote" id="note-14" data-noteref="14">
+              <span class="lnote__mark">14</span>
+              <p class="lnote__de">Und darf nur heimlich lösen mein Haar, / Und lassen es flattern im Winde!</p>
+              <p class="lnote__zh">
+                全诗收束于一个极小的动作：偷偷解开头发。这与第一节里"任风暴在飞扬的头发中翻搅"形成呼应——首尾都是头发，但一处是狂放的想象，一处是仅存的、必须"偷偷"进行的自由。近年的研究据此认为，全诗真正的言说时刻其实始于这个解发动作，前面的一切都发生在想象之中。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Star, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">椋鸟</div>
+              <div class="vocab-card__note">
+                同形异义词：der Star 亦可指"白内障"（grauer Star）与"明星"（复数 Stars，英语借词）。诗中为鸟名。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Mänade, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">迈那得斯（酒神狄俄尼索斯的狂女信徒）</div>
+              <div class="vocab-card__note">
+                希腊神话形象，欧里庇得斯悲剧《酒神的伴侣》塑造了其经典形象；德语中引申指"癫狂的女人"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Fant, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性，古语）</span>
+              <div class="vocab-card__meaning">轻浮傲慢的年轻男子、毛头小子</div>
+              <div class="vocab-card__note">今已基本废弃，仅存于文学文本与个别方言中；诗中用作对风暴的拟人称呼。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Sehne, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">筋、腱；（弓）弦；（几何）弦</div>
+              <div class="vocab-card__note">"Sehne an Sehne" 描写贴身角力时肌腱相抵的状态。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Dogge, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">獒犬、大型猛犬</div>
+              <div class="vocab-card__note">如 Deutsche Dogge（大丹犬）；诗中以之比喻翻腾的波浪。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Geklaff</span></div>
+              <span class="vocab-card__pos">n.（中性，集合名词）</span>
+              <div class="vocab-card__meaning">（此起彼伏的）犬吠声</div>
+              <div class="vocab-card__note">
+                由 klaffen/kläffen（尖声吠叫）加集合前缀 Ge- 构成；同类构词还有
+                Gezisch（嘶嘶声）、Geschrei（喊叫声）、Gerede（闲话）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Meute, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">猎犬群；（贬义）一伙人</div>
+              <div class="vocab-card__note">
+                延续本节的犬类意象；今日多用其贬义（eine Meute von Reportern 一群记者）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Wimpel, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">（细长的）三角旗、船旗</div>
+              <div class="vocab-card__note">
+                与 die Standarte（军旗、骑兵旗）在下一行形成大小对照：小小的船旗"神气得像一面军旗"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Warte, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">瞭望台、观察点</div>
+              <div class="vocab-card__note">
+                与 warten（等待，原义"守望"）同源；引申义"立场、视角"（von hoher Warte aus 从高处着眼）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Steuerruder, -</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">舵、舵柄</div>
+              <div class="vocab-card__note">
+                由 steuern（操纵、掌舵）+ Ruder（桨、舵）构成；"掌舵"在诗中即掌握自身方向的隐喻。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">artig</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">乖巧的、听话的（多用于儿童）</div>
+              <div class="vocab-card__note">
+                词根为 Art（方式、种类），本义"合乎体统的"；诗中"像一个乖巧的孩子"带有强烈的自嘲。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">stehen</td>
+                  <td class="de">steht</td>
+                  <td class="de">stand</td>
+                  <td class="de">hat gestanden</td>
+                  <td class="de">gestanden</td>
+                  <td class="de">stünde / stände</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中第一人称省音形式 steh’（今 stehe）。</td>
+                </tr>
+                <tr>
+                  <td class="de">lassen</td>
+                  <td class="de">lässt</td>
+                  <td class="de">ließ</td>
+                  <td class="de">hat gelassen / hat … lassen</td>
+                  <td class="de">gelassen / lassen</td>
+                  <td class="de">ließe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中两次作使役动词（laß’ … wühlen；lassen es flattern），此时不定式不带
+                    zu，完成时用"替代不定式"（hat … wühlen lassen）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">sich tummeln</td>
+                  <td class="de">tummelt sich</td>
+                  <td class="de">tummelte sich</td>
+                  <td class="de">hat sich getummelt</td>
+                  <td class="de">getummelt</td>
+                  <td class="de">tummelte sich</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 反身动词，意为"欢腾、来回奔跑"；诗中主语为 die Wellen。</td>
+                </tr>
+                <tr>
+                  <td class="de">ergreifen</td>
+                  <td class="de">ergreift</td>
+                  <td class="de">ergriff</td>
+                  <td class="de">hat ergriffen</td>
+                  <td class="de">ergriffen</td>
+                  <td class="de">ergriffe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（ei–i–i）；除"抓住"外亦有"（情感上）打动"之义（ergriffen sein 被深深触动）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">sein</td>
+                  <td class="de">ist</td>
+                  <td class="de">war</td>
+                  <td class="de">ist gewesen</td>
+                  <td class="de">gewesen</td>
+                  <td class="de">wäre</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中第四节两次用第二虚拟式 Wär（= wäre）置于句首，构成不带 wenn 的条件从句。</td>
+                </tr>
+                <tr>
+                  <td class="de">dürfen</td>
+                  <td class="de">darf</td>
+                  <td class="de">durfte</td>
+                  <td class="de">hat gedurft</td>
+                  <td class="de">gedurft / dürfen</td>
+                  <td class="de">dürfte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 情态动词，表"被允许"；末节的 "darf nur heimlich" 与前一行的 "muß ich sitzen"
+                    一起，把外部规范内化为语法上的必然。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">不带 wenn 的虚拟条件句</h3>
+              <p class="grammar-item__quote">
+                Wär ich ein Jäger auf freier Flur, … Wär ich ein Mann doch mindestens nur, / So würde der Himmel mir
+                raten;
+              </p>
+              <div class="grammar-item__body">
+                德语条件从句可以省去连词 wenn，把变位动词提到句首："Wäre ich ein Mann, so würde …" = "Wenn ich ein Mann
+                wäre, würde …"。这种倒装条件句语体较正式、也更有力度，主句常以 so 或 dann
+                引导。本诗第四节连用两次，构成全诗情感的转折点。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">使役动词 lassen + 不带 zu 的不定式</h3>
+              <p class="grammar-item__quote">
+                Und laß’ gleich einer Mänade den Sturm / Mir wühlen im flatternden Haare; … Und lassen es flattern im
+                Winde!
+              </p>
+              <div class="grammar-item__body">
+                lassen 作使役动词时，后接的不定式不带 zu，宾语用第四格（den
+                Sturm、es）。这一结构可表"让/任由某人某物做某事"（本诗用法），也可表"叫人去做某事"（Ich lasse mir die
+                Haare schneiden 我去理发）。完成时中 lassen 不用第二分词而用不定式形式（"替代不定式"）：Ich habe ihn
+                kommen lassen。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">Ge- 前缀构成的集合名词</h3>
+              <p class="grammar-item__quote">mit Geklaff und Gezisch</p>
+              <div class="grammar-item__body">
+                德语可用前缀 Ge-（有时加词尾 -e）把动词转成中性名词，表示反复、持续或杂乱的整体声响与行为：klaffen → das
+                Geklaff、zischen → das Gezisch、reden → das Gerede、schreien → das Geschrei、laufen → das
+                Gelaufe。这类词常带轻微的贬义或不耐烦的语气，是德语中一个非常能产、值得主动掌握的构词法。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">旧式第三格词尾 -e 与诗歌省音</h3>
+              <p class="grammar-item__quote">
+                auf hohem Balkone / im flatternden Haare / steh’ / laß’ / seh’ / möcht’ / drehn / wehn
+              </p>
+              <div class="grammar-item__body">
+                本诗同时使用两种相反的手段来凑足音节：一是给阳性/中性名词的第三格加上今日已废的词尾
+                -e（Balkone、Haare），二是省去动词词尾并以省字符标出（steh’、laß’、möcht’）或直接省音（drehn、wehn）。同一首诗里既加又减，正说明这些变化服务于格律而非语法规则本身。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              《在塔上》写于德罗斯特-徽尔斯霍夫第一次在博登湖畔梅尔斯堡城堡逗留期间（1841年9月30日至1842年7月29日）。她去探望姐姐燕妮，后者与约瑟夫·冯·拉斯贝格结婚后自1838年起住在城堡里。诗人住在东北侧礼拜堂塔楼的圆形房间。此前几年，作家莱温·许金已成为她的密友，但两人在吕斯豪斯的会面通常在她母亲的注视下进行；姐妹俩为这次博登湖之行做了安排，让许金同期住到梅尔斯堡，并对母亲保密。摆脱了日常义务、又有许金的激励，这段时间成为她创作力极旺盛的阶段，她在此写下约60首诗，为1844年的第二部诗集打下基础，除《在塔上》外还有《紫杉墙》《荒原上的男孩》《泥灰坑》等。
+            </p>
+            <p>
+              1842年初，许金把这首诗连同另外九首寄给《为受教育阶层的晨报》；同年8月25日刊出，此前三个月该刊刚发表了她的小说《犹太人的山毛榉》。《晨报》在这一期前面加了一段取自莎士比亚《亨利六世》的题词——贞德对王太子说的
+              "My courage try, / And thou shalt find, that I exceed my
+              sex"（试试我的勇气，你会发现我超出了我的性别）——与《在塔上》的主题正相呼应。1844年结集时，德罗斯特把此诗编入「岩、林与湖」组诗，位列第三。
+            </p>
+            <p>
+              这首诗最初被当作"体验诗"（Erlebnisgedicht）来读，即按时间顺序记述的一次真实经历。近年的研究则强调其中的"体验虚构"：诗中所述的观察其实只发生在说话者的想象里（珊瑚森林与海象在博登湖并不存在），真正的言说情境要到诗末解开发辫的那一刻才开始。除了传记式解读之外，此诗也被作女性主义解读——文学学者露丝·克吕格尔（Ruth
+              Klüger）1994年称它是"德语中第一首、也许是最好的一首女性主义诗歌"。《在塔上》是德罗斯特最著名的抒情作品之一，也已进入德语诗歌的经典序列。
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明的处理：(1) 前三节每节都以"O, … möcht’ ich
+              …"的渴望句为核心，译文统一用"哦，我真想……"保持排比；(2) 第四节两个倒装虚拟条件句（Wär ich
+              …）译作"假如我是……"，主句"So würde der Himmel mir
+              raten"直译为"上天便会给我指路"，保留其略带反讽的口吻；(3)
+              全诗末尾的"heimlich"（偷偷地）是理解全诗的关键词，译文将其保留在动词之前的强调位置。第二节 Doggen /
+              Geklaff / Meute
+              构成的犬类意象链，中文以"大犬／吠叫／群兽"对应，无法完全传达德语中同一词族的连贯性。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">German Wikipedia — „Am Turme“</span
+              ><a class="source-url" href="https://de.wikipedia.org/wiki/Am_Turme" target="_blank" rel="noopener"
+                >https://de.wikipedia.org/wiki/Am_Turme</a
+              >
+              <span class="source-note"
+                >主来源。四节三十二行全文，依1844年《诗集》文本（原刊标题 Am Thurme），保留旧拼法 laß’ / Walroß / muß 与
+                Seemöwe 的写法；并提供创作背景、首刊信息与研究史。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — „Am Turme – Droste-Hülshoff“</span
+              ><a class="source-url" href="https://www.gedichte7.de/am-turme.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/am-turme.html</a
+              >
+              <span class="source-note"
+                >辅助来源。四节三十二行与主来源逐词一致，采用现代化正字法（lass’ / Walross / muss）并将 Seemöwe 印作
+                Seemöve，用于独立交叉核对词序与分行。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note"
+                >AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源（German Wikipedia 依1844年《诗集》，与
+              gedichte7.de）逐词核对，四节各八行、词序与内容完全一致。核实到的差异均属正字法与排印层面：(1)
+              标题与拼写：原刊及1844年版作 "Am Thurme"，现代通行标题作 "Am Turme"，本站从后者并在注释中说明；(2)
+              旧新正字法：laß’/lass’、Walroß/Walross、muß/muss，本站从 Wikipedia 所依 1844 年版的旧拼法；(3) 第24行
+              "Seemöwe"（Wikipedia）与 "Seemöve"（gedichte7.de）——两种写法在19世纪均通行，今日标准形式为
+              Seemöwe，本站从之。需说明的是，本站未直接查阅1844年《诗集》或1842年《晨报》的影印件，上述文本采择依据
+              Wikipedia
+              的转录，建议有条件的读者对照原刊核实；另，梅尔斯堡塔房、《晨报》题词等背景信息亦取自该词条，未经第三来源独立验证，属待核实项。
+            </p>
+            <p>
+              【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de
+              属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4
+              节属三级来源；去掉三级来源后，本诗仅剩 1
+              个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
+              SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方
+              checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。
+            </p>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Annette von Droste-Hülshoff</li>
+            <li>确认标题：Am Turme（原刊 Am Thurme）</li>
+            <li>德文原文主来源：German Wikipedia（依1844年《诗集》）</li>
+            <li>德文原文辅助来源：gedichte7.de</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（Thurme/Turme；旧新正字法；Seemöwe/Seemöve）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">对照1844年《诗集》与1842年《晨报》影印件核实文本与题词</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+            <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

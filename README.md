@@ -81,7 +81,7 @@
 
 ## 如何安装依赖
 
-本项目**不需要安装任何 npm 依赖**（仅使用 Node.js 内置模块），因此没有 `npm install` 这一步。你只需要：
+**构建与运行不需要任何 npm 依赖**：`npm run build`、`npm run serve`、`npm run check` 全部只用 Node.js 内置模块，克隆后直接就能跑，CI 亦然（`.github/workflows/deploy.yml` 没有 install 步骤）。你只需要：
 
 - Node.js ≥ 18（推荐 LTS 版本）
 
@@ -90,6 +90,15 @@
 ```bash
 node -v
 ```
+
+唯一的例外是**开发期的代码格式化**：`prettier` 作为 `devDependencies` 仅供 `npm run format` 与 pre-commit hook 使用，不参与构建、不影响部署。如果你要参与提交，请执行：
+
+```bash
+npm install                        # 只装 prettier
+git config core.hooksPath .githooks # 启用 pre-commit 格式化 hook
+```
+
+不装也能正常构建和部署，只是提交 `dist/` 时不会自动格式化（hook 会打印提示并跳过）。
 
 ---
 
@@ -116,6 +125,7 @@ npm run build   # 等价于 node src/build.js
 npm run serve   # 等价于 node src/serve.js
 npm run dev     # 等价于先 build 再 serve
 npm run check   # 来源独立性校验（node src/validate-sources.js），规则见 SOURCES.md
+npm run format  # 格式化 dist/ 下的 HTML（需先 npm install；pre-commit hook 会自动执行）
 ```
 
 打开浏览器访问 `http://localhost:4321` 即可看到首页；也可以直接用浏览器打开 `dist/index.html`（部分相对路径在 `file://` 协议下也能正常工作，但仍推荐用本地服务器预览，行为更接近真实部署）。

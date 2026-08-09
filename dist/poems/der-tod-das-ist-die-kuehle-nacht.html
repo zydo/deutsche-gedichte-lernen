@@ -1,642 +1,837 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t !== 'dark' && t !== 'light') {
-          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
         }
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
-      }
-    })();
-  </script>
-  <title>Der Tod, das ist die kühle Nacht · 死亡，那是清凉的夜 — Heinrich Heine | 德语诗歌学习画册</title>
-  <meta name="description" content="Der Tod, das ist die kühle Nacht（死亡，那是清凉的夜）— Heinrich Heine。德文原诗、学习译文、词汇语法注释与出处校对。">
-  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../theme.css">
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="brand" href="../index.html">
-        <span class="brand__de">Gedichte</span>
-      </a>
-      <div class="site-header__right">
-        <nav class="site-nav" aria-label="主导航">
-          <a href="../index.html">诗歌总览</a>
-          <a href="../about.html">关于 · 校对</a>
-        </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
-          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-          </svg>
+      })();
+    </script>
+    <title>Der Tod, das ist die kühle Nacht · 死亡，那是清凉的夜 — Heinrich Heine | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Der Tod, das ist die kühle Nacht（死亡，那是清凉的夜）— Heinrich Heine。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../theme.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
         </a>
-        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
-          </svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
-            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
-          </svg>
-        </button>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
-
-    <div class="poem-shell">
-
-      <nav class="poem-nav" aria-label="诗歌导航">
-        <a class="poem-nav__link poem-nav__prev" href="mignon.html" rel="prev"><span class="poem-nav__arrow"
-            aria-hidden="true">←</span><span class="poem-nav__title">迷娘（你可知道那地方）</span></a>
-        <a class="poem-nav__link poem-nav__next" href="archaischer-torso-apollos.html" rel="next"><span
-            class="poem-nav__title">古风的阿波罗躯干残像</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-      </nav>
-      <header class="poem-titleblock reveal">
-        <h1 class="poem-titleblock__de poem-titleblock__de--long">Der Tod, das ist die kühle Nacht</h1>
-        <p class="poem-titleblock__author">Heinrich Heine</p>
-        <p class="poem-titleblock__zh">死亡，那是清凉的夜</p>
-        <p class="poem-titleblock__author-zh">海因里希·海涅</p>
-        <div class="poem-titleblock__biblio">
-          <p>《歌之书》（Buch der Lieder, 1827）·《还乡集》（Die Heimkehr）第87首</p>
-          <p>浪漫主义晚期 / 前三月革命时期（Vormärz）</p>
-          <p>1823/24年写成，1826/27年首次发表</p>
-        </div>
-        <div class="poem-titleblock__meta">
-          <span class="tag tag--a">A2–B1</span>
-          <span class="tag ">死亡</span>
-          <span class="tag ">夜</span>
-          <span class="tag ">夜莺</span>
-          <span class="tag ">梦</span>
-          <span class="tag ">民歌体</span>
-          <span class="tag ">勃拉姆斯谱曲</span>
-        </div>
-        <figure class="image-slot image-slot--filled">
-          <img src="../images/der-tod-das-ist-die-kuehle-nacht.png"
-            alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
-        </figure>
-        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
-            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-          <header class="modal__head">
-            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="mignon.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">迷娘（你可知道那地方）</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="archaischer-torso-apollos.html" rel="next"
+            ><span class="poem-nav__title">古风的阿波罗躯干残像</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de poem-titleblock__de--long">Der Tod, das ist die kühle Nacht</h1>
+          <p class="poem-titleblock__author">Heinrich Heine</p>
+          <p class="poem-titleblock__zh">死亡，那是清凉的夜</p>
+          <p class="poem-titleblock__author-zh">海因里希·海涅</p>
+          <div class="poem-titleblock__biblio">
+            <p>《歌之书》（Buch der Lieder, 1827）·《还乡集》（Die Heimkehr）第87首</p>
+            <p>浪漫主义晚期 / 前三月革命时期（Vormärz）</p>
+            <p>1823/24年写成，1826/27年首次发表</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2–B1</span>
+            <span class="tag">死亡</span>
+            <span class="tag">夜</span>
+            <span class="tag">夜莺</span>
+            <span class="tag">梦</span>
+            <span class="tag">民歌体</span>
+            <span class="tag">勃拉姆斯谱曲</span>
+          </div>
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/der-tod-das-ist-die-kuehle-nacht.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    暮色中的一处僻静角落：一张简朴的床榻或卧姿的轮廓隐入草地，其上方一棵枝叶繁茂的树，树冠深处有一只极小的夜莺
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>沉静、释然、微暖的哀伤；应传达"入睡"而非"临终"，避免任何恐怖或病态的暗示</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    低垂的暮色天空、由暖转冷的地平线、一棵枝叶浓密的落叶乔木、树冠中几乎看不清的一只小鸟、地面的草与露
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>无需明确时代标识，可采用去时代化的自然场景</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    19世纪浪漫主义风景油画风格，构图以垂直的树干为轴，色调由地面的暖褐渐次过渡到天空的深蓝，仅在树冠间留一点微光
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现文字、水印；不得出现墓碑、十字架、骷髅、尸体等直白的死亡符号；不得出现人物面部；避免阴森、恐怖或哥特化的处理
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
           </header>
-          <div class="modal__body">
-            <div class="image-slot">
-              <dl>
-                <dt>意象</dt>
-                <dd>暮色中的一处僻静角落：一张简朴的床榻或卧姿的轮廓隐入草地，其上方一棵枝叶繁茂的树，树冠深处有一只极小的夜莺</dd>
-                <dt>情绪</dt>
-                <dd>沉静、释然、微暖的哀伤；应传达"入睡"而非"临终"，避免任何恐怖或病态的暗示</dd>
-                <dt>画面元素</dt>
-                <dd>低垂的暮色天空、由暖转冷的地平线、一棵枝叶浓密的落叶乔木、树冠中几乎看不清的一只小鸟、地面的草与露</dd>
-                <dt>时代感</dt>
-                <dd>无需明确时代标识，可采用去时代化的自然场景</dd>
-                <dt>推荐风格</dt>
-                <dd>19世纪浪漫主义风景油画风格，构图以垂直的树干为轴，色调由地面的暖褐渐次过渡到天空的深蓝，仅在树冠间留一点微光</dd>
-                <dt>比例</dt>
-                <dd>4:3（横版）</dd>
-                <dt>禁忌</dt>
-                <dd>不得出现文字、水印；不得出现墓碑、十字架、骷髅、尸体等直白的死亡符号；不得出现人物面部；避免阴森、恐怖或哥特化的处理</dd>
-              </dl>
-              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Der Tod, das ist die kühle Nacht,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">死亡，那是清凉的夜，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Das Leben ist der schwüle Tag.<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">生命是闷热的白昼。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Es dunkelt schon, mich schläfert,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">天已经暗了，我困倦欲眠，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Der Tag hat mich müd gemacht.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">白昼使我疲惫。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Über mein Bett erhebt sich ein Baum,<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在我的床上方长起一棵树，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Drin singt die junge Nachtigall;<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">树中有年轻的夜莺在歌唱；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Sie singt von lauter Liebe,<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">她唱的全是爱情，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Ich hör es sogar im Traum.<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我甚至在梦中也听见。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留原诗"死—夜／生—昼"的对偶与第二节由死亡场景转入歌声的轻盈上扬
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Der Tod, das ist die kühle Nacht,</p>
+              <p class="lnote__zh">
+                "Der Tod, das ist …" 是德语口语中常见的"左置＋复指"结构：先把话题（der Tod）提到句首，再用中性指示代词
+                das
+                复指并接系动词。这种句法给全诗一个近乎口语、近乎民歌的起点，与主题的沉重形成反差。kühl（凉爽）在此是正面的词——夜是解脱，不是恐惧。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Das Leben ist der schwüle Tag.</p>
+              <p class="lnote__zh">
+                schwül（闷热、湿闷）与上一行的 kühl
+                构成音近而义反的对照（仅一个元音之差），这是全诗最精巧的一处用词。注意不要与
+                schwul（同性恋的，现代含义）混淆——两词发音不同，schwül 带变元音。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Es dunkelt schon, mich schläfert,</p>
+              <p class="lnote__zh">
+                两个无人称动词并置。es dunkelt = 天色变暗（es 为形式主语）；mich schläfert =
+                我困了（"我"是第四格宾语，句子没有真正的主语）——这类结构在现代德语中已很少见，只剩 mich friert / mich
+                hungert 等少数残留。语法上的"被动挨受"恰好呼应了说话者听凭疲惫将自己带走的姿态。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Der Tag hat mich müd gemacht.</p>
+              <p class="lnote__zh">
+                müd 是 müde 的省音形式（部分版本印作 müd’ 带省字符）。jemanden müde machen 意为"使某人疲倦"，是 machen +
+                形容词的常见结构。全节到此以最平常的日常语句收束，把"死"的宏大命题落回身体的困倦。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Über mein Bett erhebt sich ein Baum,</p>
+              <p class="lnote__zh">
+                介词 über + 第四格（mein Bett）在此并非表示静态位置，而是与反身动词 sich
+                erheben（升起、耸立）连用，描摹树"长起并越过"床的动态。这棵床头之树通常被理解为坟头之树——说话者已在想象自己的墓地，但诗中一个"墓"字也没有出现。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Drin singt die junge Nachtigall;</p>
+              <p class="lnote__zh">
+                drin 是 darin 的口语省略形式（= in dem
+                Baum）。夜莺是海涅爱情诗中反复出现的鸟；"年轻的"（jung）与说话者的疲惫衰竭形成对比：生命与爱情在坟树上继续，而"我"已退场。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Sie singt von lauter Liebe,</p>
+              <p class="lnote__zh">
+                lauter 在此不是形容词 laut（响亮）的比较级，而是一个不变格的限定词，意为"纯粹是、净是、全是"（如 lauter
+                Unsinn 净是胡说）。von 支配第三格，singen von etwas = 歌唱某事。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Ich hör es sogar im Traum.</p>
+              <p class="lnote__zh">
+                hör 是 höre
+                的省音形式。sogar（甚至）是全诗的落点：连在梦中（也就是死眠之中）仍能听见爱之歌——这一句既可读作慰藉，也可读作无法解脱的执念，海涅本人未作裁断。注意末行与第4行同以
+                -aum/-acht 之外的开放音收尾，第二节韵式（Baum–Nachtigall–Liebe–Traum）比第一节更松弛。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">kühl</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">凉爽的、清凉的</div>
+              <div class="vocab-card__note">
+                与 kalt（冷）程度不同，kühl 多带舒适、令人放松的意味；诗中用作死亡的正面隐喻。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">schwül</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">闷热的、湿热的</div>
+              <div class="vocab-card__note">
+                特指湿度高、令人窒闷的暑热。务必与 schwul（同性恋的）区分：schwül
+                有变元音，两词词源虽相关但今义完全不同。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">dunkeln</span></div>
+              <span class="vocab-card__pos">v.（弱变化，无人称）</span>
+              <div class="vocab-card__meaning">变暗、天色转黑</div>
+              <div class="vocab-card__note">
+                多用于无人称结构 es dunkelt；同类还有 es dämmert（黎明或黄昏将至）、es tagt（天亮）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">schläfern</span></div>
+              <span class="vocab-card__pos">v.（弱变化，无人称，支配第四格）</span>
+              <div class="vocab-card__meaning">使……困倦</div>
+              <div class="vocab-card__note">
+                只用于 "mich/dich/ihn schläfert" 这类结构，主语位置空缺；今日已属罕用的文学语，日常说 "ich bin müde" 或
+                "ich werde schläfrig"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">sich erheben</span></div>
+              <span class="vocab-card__pos">v.（强变化，反身）</span>
+              <div class="vocab-card__meaning">升起、耸立、起身</div>
+              <div class="vocab-card__note">
+                变位 erhebt sich – erhob sich – hat sich erhoben；亦可指"起义"（sich gegen etwas erheben）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Nachtigall, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">夜莺</div>
+              <div class="vocab-card__note">
+                字面为"夜之歌者"（Nacht + 古词根 gal-"唱"）；德语抒情诗中爱情与歌唱的经典象征，海涅诗中屡见。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">lauter</span></div>
+              <span class="vocab-card__pos">限定词（不变格）</span>
+              <div class="vocab-card__meaning">纯粹是、净是、全是</div>
+              <div class="vocab-card__note">
+                不可与形容词 laut（响亮的）的比较级混淆；用法如 lauter Lügen（净是谎言）、aus lauter
+                Angst（纯粹出于害怕）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">sogar</span></div>
+              <span class="vocab-card__pos">adv.</span>
+              <div class="vocab-card__meaning">甚至、连……也</div>
+              <div class="vocab-card__note">
+                语气词，用于超出预期的补充；此处置于句末动词短语之前，强调"连梦中"这一极限情形。
+              </div>
             </div>
           </div>
-        </dialog>
-      </header>
-      <section class="section reveal section--parallel">
-        <header class="section__head">
-          <span class="section__zh">原诗 · 译文</span>
-          <span class="section__de">Gedicht · Übertragung</span>
-        </header>
-        <div class="parallel">
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="1"><span class="linetext">Der Tod, das ist die kühle Nacht,<sup
-                    class="refmark"><a href="#note-1">1</a></sup></span></div>
-              <div class="pline__zh">死亡，那是清凉的夜，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="2"><span class="linetext">Das Leben ist der schwüle Tag.<sup
-                    class="refmark"><a href="#note-2">2</a></sup></span></div>
-              <div class="pline__zh">生命是闷热的白昼。</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="3"><span class="linetext">Es dunkelt schon, mich schläfert,<sup
-                    class="refmark"><a href="#note-3">3</a></sup></span></div>
-              <div class="pline__zh">天已经暗了，我困倦欲眠，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="4"><span class="linetext">Der Tag hat mich müd gemacht.<sup
-                    class="refmark"><a href="#note-4">4</a></sup></span></div>
-              <div class="pline__zh">白昼使我疲惫。</div>
-            </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">dunkeln</td>
+                  <td class="de">dunkelt</td>
+                  <td class="de">dunkelte</td>
+                  <td class="de">hat gedunkelt</td>
+                  <td class="de">gedunkelt</td>
+                  <td class="de">dunkelte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中用无人称现在时 "Es dunkelt schon"。</td>
+                </tr>
+                <tr>
+                  <td class="de">schläfern</td>
+                  <td class="de">schläfert</td>
+                  <td class="de">schläferte</td>
+                  <td class="de">hat geschläfert</td>
+                  <td class="de">geschläfert</td>
+                  <td class="de">schläferte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 无人称动词，支配第四格人称宾语："mich schläfert"。今日基本仅存于文学文本中。</td>
+                </tr>
+                <tr>
+                  <td class="de">machen</td>
+                  <td class="de">macht</td>
+                  <td class="de">machte</td>
+                  <td class="de">hat gemacht</td>
+                  <td class="de">gemacht</td>
+                  <td class="de">machte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中用现在完成时 "hat mich müd gemacht"，构成 jemanden + 形容词 + machen 的使役结构。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">sich erheben</td>
+                  <td class="de">erhebt sich</td>
+                  <td class="de">erhob sich</td>
+                  <td class="de">hat sich erhoben</td>
+                  <td class="de">erhoben</td>
+                  <td class="de">erhöbe sich</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化，元音变化 e–o–o；诗中作 "erhebt sich ein Baum"（主语后置）。</td>
+                </tr>
+                <tr>
+                  <td class="de">singen</td>
+                  <td class="de">singt</td>
+                  <td class="de">sang</td>
+                  <td class="de">hat gesungen</td>
+                  <td class="de">gesungen</td>
+                  <td class="de">sänge</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化第三类（i–a–u）；诗中两次出现，第二次带介词宾语 "singt von lauter Liebe"。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">hören</td>
+                  <td class="de">hört</td>
+                  <td class="de">hörte</td>
+                  <td class="de">hat gehört</td>
+                  <td class="de">gehört</td>
+                  <td class="de">hörte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 诗中第一人称省音形式 hör（今 höre）。</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="pstanza">
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="5"><span class="linetext">Über mein Bett erhebt sich ein
-                  Baum,<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-              <div class="pline__zh">在我的床上方长起一棵树，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="6"><span class="linetext">Drin singt die junge Nachtigall;<sup
-                    class="refmark"><a href="#note-6">6</a></sup></span></div>
-              <div class="pline__zh">树中有年轻的夜莺在歌唱；</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="7"><span class="linetext">Sie singt von lauter Liebe,<sup
-                    class="refmark"><a href="#note-7">7</a></sup></span></div>
-              <div class="pline__zh">她唱的全是爱情，</div>
-            </div>
-            <div class="pline">
-              <div class="pline__de vline" data-noteref="8"><span class="linetext">Ich hör es sogar im Traum.<sup
-                    class="refmark"><a href="#note-8">8</a></sup></span></div>
-              <div class="pline__zh">我甚至在梦中也听见。</div>
-            </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">左置结构与复指代词 das</h3>
+              <p class="grammar-item__quote">Der Tod, das ist die kühle Nacht,</p>
+              <div class="grammar-item__body">
+                德语口语常把要谈论的对象提到句首、用逗号隔开，再以 das / der / die 复指后接谓语："Mein Bruder, der ist
+                Arzt." 海涅把这一日常句式用作全诗开篇，使抽象命题（死亡是什么）获得了民歌般的口吻。注意复指词用中性的
+                das，因为它指代的是"这件事"整体，而不是与 der Tod 保持性数一致。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">无人称动词与第四格主体</h3>
+              <p class="grammar-item__quote">Es dunkelt schon, mich schläfert,</p>
+              <div class="grammar-item__body">
+                德语有一类描写自然现象或身体感受的动词不带真正主语：es regnet / es dunkelt（形式主语 es），以及更古老的
+                mich schläfert / mich friert / mich hungert（连 es
+                也没有，感受者以第四格出现）。现代德语已把后者大多改造成常规主谓结构（ich
+                friere）。此处两种无人称结构并置，语法层面就传达出"事情自行发生、我无从做主"的意味。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">限定词 lauter 与形容词 laut 的区分</h3>
+              <p class="grammar-item__quote">Sie singt von lauter Liebe,</p>
+              <div class="grammar-item__body">
+                lauter 在此是表示"纯粹、清一色"的不变格限定词，源自形容词 lauter（纯净的，如 lauteres Gold 纯金），与
+                laut（响亮）无关，也不作比较级理解。它不带词尾变化，后面直接跟名词：lauter Liebe、lauter Unsinn、lauter
+                nette Leute。初学者极易误读为"更响亮地歌唱"，务必留意。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">über + 第四格表示越过、覆盖的动态</h3>
+              <p class="grammar-item__quote">Über mein Bett erhebt sich ein Baum,</p>
+              <div class="grammar-item__body">
+                über 是双向介词。此处用第四格（mein Bett），因为动词 sich erheben
+                描述的是树"长起来并伸展到床的上方"这一过程；若用第三格 "über meinem Bett"
+                则纯粹描写静止的位置关系。一个格的差别，把静物描写变成了生长的动作。
+              </div>
+            </article>
           </div>
-          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗"死—夜／生—昼"的对偶与第二节由死亡场景转入歌声的轻盈上扬</p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">逐行注释</span>
-          <span class="section__de">Zeilenkommentar</span>
-        </header>
-        <div class="lnotes">
-          <article class="lnote" id="note-1" data-noteref="1">
-            <span class="lnote__mark">1</span>
-            <p class="lnote__de">Der Tod, das ist die kühle Nacht,</p>
-            <p class="lnote__zh">"Der Tod, das ist …" 是德语口语中常见的"左置＋复指"结构：先把话题（der Tod）提到句首，再用中性指示代词 das
-              复指并接系动词。这种句法给全诗一个近乎口语、近乎民歌的起点，与主题的沉重形成反差。kühl（凉爽）在此是正面的词——夜是解脱，不是恐惧。</p>
-          </article>
-          <article class="lnote" id="note-2" data-noteref="2">
-            <span class="lnote__mark">2</span>
-            <p class="lnote__de">Das Leben ist der schwüle Tag.</p>
-            <p class="lnote__zh">schwül（闷热、湿闷）与上一行的 kühl 构成音近而义反的对照（仅一个元音之差），这是全诗最精巧的一处用词。注意不要与
-              schwul（同性恋的，现代含义）混淆——两词发音不同，schwül 带变元音。</p>
-          </article>
-          <article class="lnote" id="note-3" data-noteref="3">
-            <span class="lnote__mark">3</span>
-            <p class="lnote__de">Es dunkelt schon, mich schläfert,</p>
-            <p class="lnote__zh">两个无人称动词并置。es dunkelt = 天色变暗（es 为形式主语）；mich schläfert =
-              我困了（"我"是第四格宾语，句子没有真正的主语）——这类结构在现代德语中已很少见，只剩 mich friert / mich hungert
-              等少数残留。语法上的"被动挨受"恰好呼应了说话者听凭疲惫将自己带走的姿态。</p>
-          </article>
-          <article class="lnote" id="note-4" data-noteref="4">
-            <span class="lnote__mark">4</span>
-            <p class="lnote__de">Der Tag hat mich müd gemacht.</p>
-            <p class="lnote__zh">müd 是 müde 的省音形式（部分版本印作 müd’ 带省字符）。jemanden müde machen 意为"使某人疲倦"，是 machen +
-              形容词的常见结构。全节到此以最平常的日常语句收束，把"死"的宏大命题落回身体的困倦。</p>
-          </article>
-          <article class="lnote" id="note-5" data-noteref="5">
-            <span class="lnote__mark">5</span>
-            <p class="lnote__de">Über mein Bett erhebt sich ein Baum,</p>
-            <p class="lnote__zh">介词 über + 第四格（mein Bett）在此并非表示静态位置，而是与反身动词 sich
-              erheben（升起、耸立）连用，描摹树"长起并越过"床的动态。这棵床头之树通常被理解为坟头之树——说话者已在想象自己的墓地，但诗中一个"墓"字也没有出现。</p>
-          </article>
-          <article class="lnote" id="note-6" data-noteref="6">
-            <span class="lnote__mark">6</span>
-            <p class="lnote__de">Drin singt die junge Nachtigall;</p>
-            <p class="lnote__zh">drin 是 darin 的口语省略形式（= in dem
-              Baum）。夜莺是海涅爱情诗中反复出现的鸟；"年轻的"（jung）与说话者的疲惫衰竭形成对比：生命与爱情在坟树上继续，而"我"已退场。</p>
-          </article>
-          <article class="lnote" id="note-7" data-noteref="7">
-            <span class="lnote__mark">7</span>
-            <p class="lnote__de">Sie singt von lauter Liebe,</p>
-            <p class="lnote__zh">lauter 在此不是形容词 laut（响亮）的比较级，而是一个不变格的限定词，意为"纯粹是、净是、全是"（如 lauter Unsinn 净是胡说）。von
-              支配第三格，singen von etwas = 歌唱某事。</p>
-          </article>
-          <article class="lnote" id="note-8" data-noteref="8">
-            <span class="lnote__mark">8</span>
-            <p class="lnote__de">Ich hör es sogar im Traum.</p>
-            <p class="lnote__zh">hör 是 höre
-              的省音形式。sogar（甚至）是全诗的落点：连在梦中（也就是死眠之中）仍能听见爱之歌——这一句既可读作慰藉，也可读作无法解脱的执念，海涅本人未作裁断。注意末行与第4行同以 -aum/-acht
-              之外的开放音收尾，第二节韵式（Baum–Nachtigall–Liebe–Traum）比第一节更松弛。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">重点词汇</span>
-          <span class="section__de">Wortschatz</span>
-        </header>
-        <div class="vocab-list">
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">kühl</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">凉爽的、清凉的</div>
-            <div class="vocab-card__note">与 kalt（冷）程度不同，kühl 多带舒适、令人放松的意味；诗中用作死亡的正面隐喻。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              这首八行短诗收在《歌之书》（1827）的《还乡集》中，编号第87首，作于1823/24年。《歌之书》是19世纪欧洲最畅销的爱情诗集，海涅本人日后却多次反讽自己的这本成名作，把其中的诗称作"蘸了蜜的痛苦"。德语文学评论家米夏埃尔·布劳恩指出，让海涅后来感到不适的，大概正是这种语调上的伤感——那种未被任何反讽所打断的、对爱与痛、生之欲与生之倦的直接抒发。
+            </p>
+            <p>
+              全诗建立在几组最简单的对立之上：轮廓分明的夜对着模糊消融的昼，生的倦怠对着纯粹爱情的梦。夜莺在这里第一次进入海涅的爱情诗，此后成为他笔下反复出现的鸟。诗中始终没有出现"坟墓"一词，但"在我的床上方长起一棵树"这一句已足以让读者明白说话者身在何处——这种以日常场景暗示死亡的克制，是这首诗历久不衰的原因之一。
+            </p>
+            <p>
+              包括勃拉姆斯在内的数十位作曲家为它谱过曲。勃拉姆斯的版本收在《四首歌》作品96之1（1884），是德语艺术歌曲中最常被演唱的曲目之一；此外费利克斯·门德尔松、汉斯·普菲茨纳等人也有谱曲。诗中"清凉的夜"这一意象在德语中已近乎成为一个关于死亡的通用隐喻。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">schwül</span></div>
-            <span class="vocab-card__pos">adj.</span>
-            <div class="vocab-card__meaning">闷热的、湿热的</div>
-            <div class="vocab-card__note">特指湿度高、令人窒闷的暑热。务必与 schwul（同性恋的）区分：schwül 有变元音，两词词源虽相关但今义完全不同。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+          </header>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。翻译中最难保留的是第1—2行 kühl / schwül
+              这组"音近义反"的对照（两词在德语中仅差一个元音），中文"清凉／闷热"只能传达语义而丢失语音上的呼应，请学习者结合朗读体会。第3行的两个无人称结构（es
+              dunkelt / mich
+              schläfert）在中文中没有对应形式，译文以"天已经暗了，我困倦欲眠"近似处理，其"无主体、被动承受"的语法意味需参见"语法要点"。已知此诗存在多个中文译本（如钱春绮、冯至等译者的翻译），因版权原因本站不转载具体译本全文。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">dunkeln</span></div>
-            <span class="vocab-card__pos">v.（弱变化，无人称）</span>
-            <div class="vocab-card__meaning">变暗、天色转黑</div>
-            <div class="vocab-card__note">多用于无人称结构 es dunkelt；同类还有 es dämmert（黎明或黄昏将至）、es tagt（天亮）。</div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Kalliope（kalliope.org）— Heinrich Heine, „Der Tod das ist die kühle Nacht“, aus Buch der Lieder
+                (1827), Die Heimkehr 1823–1824</span
+              ><a class="source-url" href="https://kalliope.org/en/text/heine2002020382" target="_blank" rel="noopener"
+                >https://kalliope.org/en/text/heine2002020382</a
+              >
+              <span class="source-note"
+                >主来源。丹麦 Kalliope 文库的《歌之书》全文数字化版本，明确标注诗集、组诗与年代；八行完整，首行 "Der
+                Tod" 后不加逗号，第4行作 "müd gemacht"。</span
+              >
+            </li>
+            <li>
+              <span class="source-name"
+                >planetlyrik.de — „Heinrich Heines Gedicht ‚Der Tod, das ist die kühle Nacht‘“（附 Michael Braun
+                在《德国广播电台抒情诗历 2007》中的评注）</span
+              ><a
+                class="source-url"
+                href="https://www.planetlyrik.de/lyrikkalender/heinrich-heines-gedicht-der-tod-das-ist-die-kuehle-nacht/"
+                target="_blank"
+                rel="noopener"
+                >https://www.planetlyrik.de/lyrikkalender/heinrich-heines-gedicht-der-tod-das-ist-die-kuehle-nacht/</a
+              >
+              <span class="source-note"
+                >辅助来源。八行与主来源逐词一致，首行 "Der Tod"
+                后加逗号；同时提供创作年代（1823/24）与接受史评注，用于核实断代与背景信息。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+          </header>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+              <span class="source-note"
+                >AI 辅助生成，标注为学习用途；已知存在钱春绮、冯至等译者的中译本，因版权原因未转载全文。</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+          </header>
+          <div class="prose">
+            <p>
+              德文正文通过两个独立来源（Kalliope 的《歌之书》数字化本与 planetlyrik.de
+              所刊《德国广播电台抒情诗历》文本）逐词核对，两节各四行、内容完全一致。核实到两处排印层面的差异：(1) 首行
+              "Der Tod" 之后，Kalliope 不加逗号（贴近1827年初版排印），planetlyrik.de
+              及现代通行本加逗号；本站从加逗号的现代通行排印，因诗题在文献中亦通常带逗号引用。(2) 第4行 "müd"
+              在部分版本中印作带省字符的
+              "müd’"；本站从不带省字符的写法。此外，本诗在《歌之书·还乡集》中的编号（第87首）取自 Kalliope 与
+              planetlyrik 的分类信息，本站未直接查阅1827年初版影印件，属待进一步核实项。
+            </p>
           </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">schläfern</span></div>
-            <span class="vocab-card__pos">v.（弱变化，无人称，支配第四格）</span>
-            <div class="vocab-card__meaning">使……困倦</div>
-            <div class="vocab-card__note">只用于 "mich/dich/ihn schläfert" 这类结构，主语位置空缺；今日已属罕用的文学语，日常说 "ich bin müde" 或 "ich
-              werde schläfrig"。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">sich erheben</span></div>
-            <span class="vocab-card__pos">v.（强变化，反身）</span>
-            <div class="vocab-card__meaning">升起、耸立、起身</div>
-            <div class="vocab-card__note">变位 erhebt sich – erhob sich – hat sich erhoben；亦可指"起义"（sich gegen etwas
-              erheben）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">die Nachtigall, -en</span></div>
-            <span class="vocab-card__pos">n.（阴性）</span>
-            <div class="vocab-card__meaning">夜莺</div>
-            <div class="vocab-card__note">字面为"夜之歌者"（Nacht + 古词根 gal-"唱"）；德语抒情诗中爱情与歌唱的经典象征，海涅诗中屡见。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">lauter</span></div>
-            <span class="vocab-card__pos">限定词（不变格）</span>
-            <div class="vocab-card__meaning">纯粹是、净是、全是</div>
-            <div class="vocab-card__note">不可与形容词 laut（响亮的）的比较级混淆；用法如 lauter Lügen（净是谎言）、aus lauter Angst（纯粹出于害怕）。</div>
-          </div>
-          <div class="vocab-card">
-            <div class="vocab-card__head"><span class="vocab-card__term">sogar</span></div>
-            <span class="vocab-card__pos">adv.</span>
-            <div class="vocab-card__meaning">甚至、连……也</div>
-            <div class="vocab-card__note">语气词，用于超出预期的补充；此处置于句末动词短语之前，强调"连梦中"这一极限情形。</div>
-          </div>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">动词变位</span>
-          <span class="section__de">Konjugation</span>
-        </header>
-        <div class="verb-table-wrap">
-          <table class="verb-table">
-            <thead>
-              <tr>
-                <th>Infinitiv</th>
-                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
-                <th>Präteritum</th>
-                <th>Perfekt</th>
-                <th>Partizip II</th>
-                <th>Konjunktiv II</th>
-                <th>Hilfsverb</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="de">dunkeln</td>
-                <td class="de">dunkelt</td>
-                <td class="de">dunkelte</td>
-                <td class="de">hat gedunkelt</td>
-                <td class="de">gedunkelt</td>
-                <td class="de">dunkelte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用无人称现在时 "Es dunkelt schon"。</td>
-              </tr>
-              <tr>
-                <td class="de">schläfern</td>
-                <td class="de">schläfert</td>
-                <td class="de">schläferte</td>
-                <td class="de">hat geschläfert</td>
-                <td class="de">geschläfert</td>
-                <td class="de">schläferte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 无人称动词，支配第四格人称宾语："mich schläfert"。今日基本仅存于文学文本中。</td>
-              </tr>
-              <tr>
-                <td class="de">machen</td>
-                <td class="de">macht</td>
-                <td class="de">machte</td>
-                <td class="de">hat gemacht</td>
-                <td class="de">gemacht</td>
-                <td class="de">machte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中用现在完成时 "hat mich müd gemacht"，构成 jemanden + 形容词 + machen 的使役结构。</td>
-              </tr>
-              <tr>
-                <td class="de">sich erheben</td>
-                <td class="de">erhebt sich</td>
-                <td class="de">erhob sich</td>
-                <td class="de">hat sich erhoben</td>
-                <td class="de">erhoben</td>
-                <td class="de">erhöbe sich</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化，元音变化 e–o–o；诗中作 "erhebt sich ein Baum"（主语后置）。</td>
-              </tr>
-              <tr>
-                <td class="de">singen</td>
-                <td class="de">singt</td>
-                <td class="de">sang</td>
-                <td class="de">hat gesungen</td>
-                <td class="de">gesungen</td>
-                <td class="de">sänge</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 强变化第三类（i–a–u）；诗中两次出现，第二次带介词宾语 "singt von lauter Liebe"。</td>
-              </tr>
-              <tr>
-                <td class="de">hören</td>
-                <td class="de">hört</td>
-                <td class="de">hörte</td>
-                <td class="de">hat gehört</td>
-                <td class="de">gehört</td>
-                <td class="de">hörte</td>
-                <td>haben</td>
-              </tr>
-              <tr class="verb-note">
-                <td colspan="7">↳ 诗中第一人称省音形式 hör（今 höre）。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">语法要点</span>
-          <span class="section__de">Grammatik</span>
-        </header>
-        <div class="grammar-list">
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">左置结构与复指代词 das</h3>
-            <p class="grammar-item__quote">Der Tod, das ist die kühle Nacht,</p>
-            <div class="grammar-item__body">德语口语常把要谈论的对象提到句首、用逗号隔开，再以 das / der / die 复指后接谓语："Mein Bruder, der ist
-              Arzt." 海涅把这一日常句式用作全诗开篇，使抽象命题（死亡是什么）获得了民歌般的口吻。注意复指词用中性的 das，因为它指代的是"这件事"整体，而不是与 der Tod 保持性数一致。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">无人称动词与第四格主体</h3>
-            <p class="grammar-item__quote">Es dunkelt schon, mich schläfert,</p>
-            <div class="grammar-item__body">德语有一类描写自然现象或身体感受的动词不带真正主语：es regnet / es dunkelt（形式主语 es），以及更古老的 mich
-              schläfert / mich friert / mich hungert（连 es 也没有，感受者以第四格出现）。现代德语已把后者大多改造成常规主谓结构（ich
-              friere）。此处两种无人称结构并置，语法层面就传达出"事情自行发生、我无从做主"的意味。</div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">限定词 lauter 与形容词 laut 的区分</h3>
-            <p class="grammar-item__quote">Sie singt von lauter Liebe,</p>
-            <div class="grammar-item__body">lauter 在此是表示"纯粹、清一色"的不变格限定词，源自形容词 lauter（纯净的，如 lauteres Gold 纯金），与
-              laut（响亮）无关，也不作比较级理解。它不带词尾变化，后面直接跟名词：lauter Liebe、lauter Unsinn、lauter nette Leute。初学者极易误读为"更响亮地歌唱"，务必留意。
-            </div>
-          </article>
-          <article class="grammar-item">
-            <h3 class="grammar-item__title">über + 第四格表示越过、覆盖的动态</h3>
-            <p class="grammar-item__quote">Über mein Bett erhebt sich ein Baum,</p>
-            <div class="grammar-item__body">über 是双向介词。此处用第四格（mein Bett），因为动词 sich erheben 描述的是树"长起来并伸展到床的上方"这一过程；若用第三格
-              "über meinem Bett" 则纯粹描写静止的位置关系。一个格的差别，把静物描写变成了生长的动作。</div>
-          </article>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">文学意象与文化背景</span>
-          <span class="section__de">Hintergrund</span>
-        </header>
-        <div class="prose">
-          <p>
-            这首八行短诗收在《歌之书》（1827）的《还乡集》中，编号第87首，作于1823/24年。《歌之书》是19世纪欧洲最畅销的爱情诗集，海涅本人日后却多次反讽自己的这本成名作，把其中的诗称作"蘸了蜜的痛苦"。德语文学评论家米夏埃尔·布劳恩指出，让海涅后来感到不适的，大概正是这种语调上的伤感——那种未被任何反讽所打断的、对爱与痛、生之欲与生之倦的直接抒发。
-          </p>
-          <p>
-            全诗建立在几组最简单的对立之上：轮廓分明的夜对着模糊消融的昼，生的倦怠对着纯粹爱情的梦。夜莺在这里第一次进入海涅的爱情诗，此后成为他笔下反复出现的鸟。诗中始终没有出现"坟墓"一词，但"在我的床上方长起一棵树"这一句已足以让读者明白说话者身在何处——这种以日常场景暗示死亡的克制，是这首诗历久不衰的原因之一。
-          </p>
-          <p>
-            包括勃拉姆斯在内的数十位作曲家为它谱过曲。勃拉姆斯的版本收在《四首歌》作品96之1（1884），是德语艺术歌曲中最常被演唱的曲目之一；此外费利克斯·门德尔松、汉斯·普菲茨纳等人也有谱曲。诗中"清凉的夜"这一意象在德语中已近乎成为一个关于死亡的通用隐喻。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文说明</span>
-          <span class="section__de">Anmerkung</span>
-        </header>
-        <div class="prose">
-          <p>中文译文为本站学习译文（AI 辅助），采用直译。翻译中最难保留的是第1—2行 kühl / schwül
-            这组"音近义反"的对照（两词在德语中仅差一个元音），中文"清凉／闷热"只能传达语义而丢失语音上的呼应，请学习者结合朗读体会。第3行的两个无人称结构（es dunkelt / mich
-            schläfert）在中文中没有对应形式，译文以"天已经暗了，我困倦欲眠"近似处理，其"无主体、被动承受"的语法意味需参见"语法要点"。已知此诗存在多个中文译本（如钱春绮、冯至等译者的翻译），因版权原因本站不转载具体译本全文。
-          </p>
-        </div>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">德文原文出处</span>
-          <span class="section__de">Quellen</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">Kalliope（kalliope.org）— Heinrich Heine, „Der Tod das ist die kühle Nacht“, aus
-              Buch der Lieder (1827), Die Heimkehr 1823–1824</span><a class="source-url"
-              href="https://kalliope.org/en/text/heine2002020382" target="_blank"
-              rel="noopener">https://kalliope.org/en/text/heine2002020382</a>
-            <span class="source-note">主来源。丹麦 Kalliope 文库的《歌之书》全文数字化版本，明确标注诗集、组诗与年代；八行完整，首行 "Der Tod" 后不加逗号，第4行作 "müd
-              gemacht"。</span>
-          </li>
-          <li>
-            <span class="source-name">planetlyrik.de — „Heinrich Heines Gedicht ‚Der Tod, das ist die kühle Nacht‘“（附
-              Michael Braun 在《德国广播电台抒情诗历 2007》中的评注）</span><a class="source-url"
-              href="https://www.planetlyrik.de/lyrikkalender/heinrich-heines-gedicht-der-tod-das-ist-die-kuehle-nacht/"
-              target="_blank"
-              rel="noopener">https://www.planetlyrik.de/lyrikkalender/heinrich-heines-gedicht-der-tod-das-ist-die-kuehle-nacht/</a>
-            <span class="source-note">辅助来源。八行与主来源逐词一致，首行 "Der Tod" 后加逗号；同时提供创作年代（1823/24）与接受史评注，用于核实断代与背景信息。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">译文出处 · 版权</span>
-          <span class="section__de">Übersetzungsnachweis</span>
-        </header>
-        <ul class="source-list">
-          <li>
-            <span class="source-name">本站学习译文（中文）</span>
-            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮、冯至等译者的中译本，因版权原因未转载全文。</span>
-          </li>
-        </ul>
-      </section>
-      <section class="section reveal">
-        <header class="section__head">
-          <span class="section__zh">校对记录</span>
-          <span class="section__de">Korrektorat</span>
-        </header>
-        <div class="prose">
-          <p>德文正文通过两个独立来源（Kalliope 的《歌之书》数字化本与 planetlyrik.de 所刊《德国广播电台抒情诗历》文本）逐词核对，两节各四行、内容完全一致。核实到两处排印层面的差异：(1) 首行
-            "Der Tod" 之后，Kalliope 不加逗号（贴近1827年初版排印），planetlyrik.de 及现代通行本加逗号；本站从加逗号的现代通行排印，因诗题在文献中亦通常带逗号引用。(2) 第4行 "müd"
-            在部分版本中印作带省字符的 "müd’"；本站从不带省字符的写法。此外，本诗在《歌之书·还乡集》中的编号（第87首）取自 Kalliope 与 planetlyrik
-            的分类信息，本站未直接查阅1827年初版影印件，属待进一步核实项。</p>
-        </div>
-      </section>
-      <section class="section reveal section--wide">
-        <header class="section__head">
-          <span class="section__zh">上线前质量 Checklist</span>
-          <span class="section__de">Prüfliste</span>
-        </header>
-        <ul class="checklist">
-          <li>确认作者：Heinrich Heine</li>
-          <li>确认标题与出处：Buch der Lieder · Die Heimkehr</li>
-          <li>德文原文主来源：Kalliope（Buch der Lieder 1827 数字化本）</li>
-          <li>德文原文辅助来源：planetlyrik.de（附 Michael Braun 评注）</li>
-          <li>核对诗节、行数、标点</li>
-          <li>记录版本差异（首行逗号；müd / müd’）</li>
-          <li>查找已有中文译本（已知存在，未转载全文）</li>
-          <li>判断译文版权可用性（现代中译不可用）</li>
-          <li>制作本站学习译文（中文）</li>
-          <li>提取重点词汇</li>
-          <li>校对 lemma 与词性</li>
-          <li>补充动词变位</li>
-          <li>撰写语法要点</li>
-          <li>撰写背景说明</li>
-          <li>撰写 image brief</li>
-          <li>生成 AI 配图（已接入）</li>
-          <li>页面视觉检查</li>
-          <li class="pending">核实《还乡集》中的编号（现依二手分类信息）</li>
-          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
-        </ul>
-      </section>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
-  </footer>
-  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
-      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 19V6M6 12l6-6 6 6" />
-    </svg>
-  </button>
-  <script>
-    (function () {
-      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+          </header>
+          <ul class="checklist">
+            <li>确认作者：Heinrich Heine</li>
+            <li>确认标题与出处：Buch der Lieder · Die Heimkehr</li>
+            <li>德文原文主来源：Kalliope（Buch der Lieder 1827 数字化本）</li>
+            <li>德文原文辅助来源：planetlyrik.de（附 Michael Braun 评注）</li>
+            <li>核对诗节、行数、标点</li>
+            <li>记录版本差异（首行逗号；müd / müd’）</li>
+            <li>查找已有中文译本（已知存在，未转载全文）</li>
+            <li>判断译文版权可用性（现代中译不可用）</li>
+            <li>制作本站学习译文（中文）</li>
+            <li>提取重点词汇</li>
+            <li>校对 lemma 与词性</li>
+            <li>补充动词变位</li>
+            <li>撰写语法要点</li>
+            <li>撰写背景说明</li>
+            <li>撰写 image brief</li>
+            <li>生成 AI 配图（已接入）</li>
+            <li>页面视觉检查</li>
+            <li class="pending">核实《还乡集》中的编号（现依二手分类信息）</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
           });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-      } else {
-        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-      }
-      // 朱批旁注联动：诗行 ↔ 注释互相高亮
-      function highlight(id, on, source) {
-        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-        var sel = '[data-noteref="' + escId + '"]';
-        document.querySelectorAll(sel).forEach(function (p) {
-          if (p !== source) p.classList.toggle('is-linked', on);
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
         });
-        if (source) source.classList.toggle('is-self', on);
-      }
-      // 鼠标：悬停诗行或注释
-      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-        var id = el.getAttribute('data-noteref');
-        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-      });
-      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-      document.querySelectorAll('.refmark a').forEach(function (a) {
-        var vline = a.closest('.vline[data-noteref]');
-        if (!vline) return;
-        var id = vline.getAttribute('data-noteref');
-        a.addEventListener('focus', function () { highlight(id, true, vline); });
-        a.addEventListener('blur', function () { highlight(id, false, vline); });
-      });
-      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-      var toggle = document.querySelector('.theme-toggle');
-      if (toggle) {
-        var syncToggle = function () {
-          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-        };
-        syncToggle();
-        toggle.addEventListener('click', function () {
-          var cur = document.documentElement.getAttribute('data-theme') || 'light';
-          var next = cur === 'dark' ? 'light' : 'dark';
-          document.documentElement.setAttribute('data-theme', next);
-          try { localStorage.setItem('theme', next); } catch (e) { }
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
           syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
         });
-      }
-      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-      var modals = document.querySelectorAll('dialog.modal');
-      modals.forEach(function (modal) {
-        var closeBtn = modal.querySelector('.modal__close');
-        // ✕ 关闭
-        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-        // 点遮罩（dialog 自身区域）关闭
-        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-        modal.addEventListener('close', function () {
-          document.body.classList.remove('modal-open');
-          var t = modal._trigger;
-          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
         });
-      });
-      var triggers = document.querySelectorAll('.brief-trigger');
-      triggers.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          var id = btn.getAttribute('data-modal');
-          var modal = id && document.getElementById(id);
-          if (!modal || typeof modal.showModal !== 'function') return;
-          if (modal.open) { modal.close(); return; }
-          modal._trigger = btn;
-          btn.setAttribute('aria-expanded', 'true');
-          modal.showModal();
-          document.body.classList.add('modal-open');
-          var c = modal.querySelector('.modal__close');
-          if (c) c.focus();
-        });
-      });
-      // 回到顶部按钮：滚动一段距离后才显示
-      var toTop = document.querySelector('.to-top');
-      if (toTop) {
-        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-        var syncToTop = function () {
-          if (window.scrollY > 420) toTop.classList.add('is-visible');
-          else toTop.classList.remove('is-visible');
-        };
-        window.addEventListener('scroll', syncToTop, { passive: true });
-        syncToTop();
-        toTop.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-        });
-      }
-    })();
-  </script>
-</body>
-
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+      })();
+    </script>
+  </body>
 </html>

@@ -1,0 +1,25 @@
+#!/bin/sh
+# 构建产物 dist/ 的 HTML 由 src/build.js 生成，输出未经排版。
+# 本 hook 在提交前对已暂存的 dist/*.html 统一格式化并重新暂存，
+# 避免每次构建后提交都出现整棵树的空白重排 diff。
+#
+# 只处理 dist/ 下的 HTML：data/poems/*.json 与源码不在此列，格式保持原样。
+
+set -e
+
+if [ ! -x node_modules/.bin/prettier ]; then
+  echo "pre-commit: 未安装 prettier（请运行 npm install），跳过 dist/ 格式化" >&2
+  exit 0
+fi
+
+staged=$(git diff --cached --name-only --diff-filter=ACM -- dist | grep '\.html$' || true)
+
+if [ -z "$staged" ]; then
+  exit 0
+fi
+
+printf '%s\n' "$staged" | while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  node_modules/.bin/prettier --write "$f" >/dev/null
+  git add "$f"
+done

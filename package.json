@@ -8,9 +8,13 @@
     "build": "node src/build.js",
     "serve": "node src/serve.js",
     "dev": "node src/build.js && node src/serve.js",
-    "check": "node src/validate-sources.js"
+    "check": "node src/validate-sources.js",
+    "format": "prettier --write \"dist/**/*.html\""
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
   }
 }
