@@ -1,0 +1,380 @@
+{
+  "id": "29",
+  "slug": "der-werwolf",
+  "author": "Christian Morgenstern",
+  "author_zh": "克里斯蒂安·摩根施特恩",
+  "title_de": "Der Werwolf",
+  "title_zh": "狼人（求变格的狼）",
+  "year": "1905年随《绞刑架之歌》出版",
+  "collection": "《绞刑架之歌》（Galgenlieder）·第五辑",
+  "period": "世纪之交 / 语言游戏诗（荒诞诗先声）",
+  "difficulty": "B1–B2",
+  "tags": [
+    "语言游戏",
+    "变格",
+    "幽默",
+    "疑问代词",
+    "语法笑话",
+    "德语学习者必读"
+  ],
+  "german_text": [
+    [
+      "Ein Werwolf eines Nachts entwich",
+      "von Weib und Kind und sich begab",
+      "an eines Dorfschullehrers Grab",
+      "und bat ihn: Bitte, beuge mich!"
+    ],
+    [
+      "Der Dorfschulmeister stieg hinauf",
+      "auf seines Blechschilds Messingknauf",
+      "und sprach zum Wolf, der seine Pfoten",
+      "geduldig kreuzte vor dem Toten:"
+    ],
+    [
+      "„Der Werwolf“ — sprach der gute Mann,",
+      "„des Weswolfs, Genitiv sodann,",
+      "„dem Wemwolf, Dativ, wie man's nennt,",
+      "„den Wenwolf, — damit hat's ein End'.“"
+    ],
+    [
+      "Dem Werwolf schmeichelten die Fälle,",
+      "er rollte seine Augenbälle.",
+      "Indessen, bat er, füge doch",
+      "zur Einzahl auch die Mehrzahl noch!"
+    ],
+    [
+      "Der Dorfschulmeister aber mußte",
+      "gestehn, daß er von ihr nichts wußte.",
+      "Zwar Wölfe gäb's in großer Schar,",
+      "doch „Wer“ gäb's nur im Singular."
+    ],
+    [
+      "Der Wolf erhob sich tränenblind —",
+      "er hatte ja doch Weib und Kind!!",
+      "Doch da er kein Gelehrter eben,",
+      "so schied er dankend und ergeben."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助）。全诗的笑点建立在德语疑问代词 wer 的四格变化上，无法直译，译文在保留叙事的同时以括注方式点明构词机制",
+    "text": [
+      [
+        "一头狼人某夜溜了出来，",
+        "离开妻儿，动身前往",
+        "一位乡村教师的坟前，",
+        "求他说：请给我变格吧！"
+      ],
+      [
+        "那位乡村教师爬上了",
+        "自己那块铁牌的铜制圆钮，",
+        "对着那匹狼说话——狼正把爪子",
+        "耐心地交叠在这位亡者面前："
+      ],
+      [
+        "\"第一格：Der Werwolf（狼人）\"——这位好先生说，",
+        "\"第二格：des Weswolfs（Wes- 来自 wessen「谁的」），",
+        "\"第三格：dem Wemwolf（Wem- 来自 wem「给谁」），人们就是这么叫的，",
+        "\"第四格：den Wenwolf（Wen- 来自 wen「把谁」）——到此就完了。\""
+      ],
+      [
+        "这些格让狼人心花怒放，",
+        "它转动着自己的眼珠。",
+        "\"不过，\"它请求道，\"请再补上",
+        "单数之外的复数吧！\""
+      ],
+      [
+        "可是乡村教师不得不",
+        "承认：关于复数他一无所知。",
+        "狼固然成群结队地有，",
+        "可\"Wer\"（谁）只有单数。"
+      ],
+      [
+        "狼含泪站起身来——",
+        "它毕竟是有妻有儿的啊！！",
+        "但既然它并不是个学者，",
+        "便道着谢、顺从地告辞了。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Ein Werwolf eines Nachts entwich",
+      "zh": "全诗的笑话从第一个词就埋下了：Werwolf（狼人）的前半部分 Wer- 其实源自古高地德语 wer\"人\"（同英语 were-wolf、拉丁语 vir），与疑问代词 wer（谁）毫无关系——但它们碰巧同形。eines Nachts（某夜）是一个著名的\"错误\"属格：Nacht 是阴性名词，本应作 einer Nacht，但这一表达类推自 eines Tages（某日）而固化下来，今日已是标准用法。entweichen（逃脱、溜走）为可分与不可分兼有的强变化动词。"
+    },
+    {
+      "de": "von Weib und Kind und sich begab",
+      "zh": "das Weib（女人、妻子）今日已带贬义或古雅色彩，现代德语用 die Frau。sich begeben（前往）为反身强变化动词，其前缀已并入词干（不可分）。此处 \"Weib und Kind\" 这一细节看似顺带，却是全诗结局的伏笔。"
+    },
+    {
+      "de": "an eines Dorfschullehrers Grab",
+      "zh": "前置第二格：eines Dorfschullehrers Grab = das Grab eines Dorfschullehrers（一位乡村教师的坟）。狼人不去找活着的语法学家，而去找一位已故的乡村小学教师——德语中 Dorfschulmeister 一词自带迂腐、认真、地位卑微的联想。"
+    },
+    {
+      "de": "und bat ihn: Bitte, beuge mich!",
+      "zh": "beugen 在语法术语中意为\"变格/变位\"（die Beugung = 屈折变化，包括名词变格 Deklination 与动词变位 Konjugation），日常义则是\"弯曲\"。因此这句请求同时是\"请给我变格\"和\"请把我弯下去\"——狼人趴伏在坟前的姿态与语法术语重合了。这是全诗第一个双关。"
+    },
+    {
+      "de": "auf seines Blechschilds Messingknauf",
+      "zh": "又一个前置第二格。das Blechschild 指坟上的铁皮铭牌，der Messingknauf 是它的铜制圆头。教师爬上自己墓牌的小圆钮——一个死者站上讲台的滑稽画面。全诗的荒诞正建立在这种一本正经的细节上。"
+    },
+    {
+      "de": "geduldig kreuzte vor dem Toten:",
+      "zh": "kreuzen（交叉）+ 第四格；狼把前爪交叠，既是狗类的自然姿势，也像人在祈祷或听课时的规矩坐姿。der Tote（死者）是名词化的形容词，弱变化（dem Toten）。"
+    },
+    {
+      "de": "„Der Werwolf“ — sprach der gute Mann,",
+      "zh": "教师开始逐格背诵。请注意本诗的引号排印：每一行的开头都重复一个下引号 „——这是19世纪德语印刷中标记\"引语延续到下一行\"的惯例，不是排印错误。现代排版已不再这样做，本站保留原刊形式，也是给学习者看一眼旧书的样子。"
+    },
+    {
+      "de": "„des Weswolfs, Genitiv sodann,",
+      "zh": "笑话的核心开始。教师把 Werwolf 的 Wer- 当成疑问代词 wer 来变格：第二格 wessen → Wes-wolf。历史上 wes 确实是 wessen 的旧第二格形式（今仍见于 \"Wes Brot ich ess', des Lied ich sing'\"）。sodann（然后）是雅语。"
+    },
+    {
+      "de": "„dem Wemwolf, Dativ, wie man's nennt,",
+      "zh": "第三格 wem → Wem-wolf。请注意这里的 man's = man es，其中的 man 是不定代词\"人们\"——而全诗正在拆解的 wer 恰恰是 man 的疑问对应词，这一巧合大概不是偶然。"
+    },
+    {
+      "de": "„den Wenwolf, — damit hat's ein End'.“",
+      "zh": "第四格 wen → Wen-wolf。\"damit hat's ein End'\"（到此就完了）——教师以为讲完了，但真正的问题还没来。End' 是 Ende 的省音形式。至此德语的四个格已全部用完：Werwolf – Weswolfs – Wemwolf – Wenwolf。"
+    },
+    {
+      "de": "Dem Werwolf schmeichelten die Fälle,",
+      "zh": "der Fall 在此是语法术语\"格\"（复数 die Fälle），日常义为\"情况、案件、跌落\"——又一个双关。schmeicheln（奉承、使高兴）支配第三格（Dem Werwolf）。狼人为什么高兴？因为被变格意味着被当作一个正经的德语名词对待——它想要的是语法上的承认。"
+    },
+    {
+      "de": "Indessen, bat er, füge doch / zur Einzahl auch die Mehrzahl noch!",
+      "zh": "die Einzahl / die Mehrzahl 是 Singular / Plural 的德语本土说法。füge…hinzu 的可分前缀在此省略（口语化）。doch 是语气词，加强请求。狼人的第二个请求推翻了整个体系。"
+    },
+    {
+      "de": "Der Dorfschulmeister aber mußte / gestehn, daß er von ihr nichts wußte.",
+      "zh": "ihr 指上一行的 die Mehrzahl（阴性，第三格）。教师\"不得不承认\"——这是全诗中知识权威第一次失效。mußte / wußte 为旧拼法（今 musste / wusste）；gestehn 为 gestehen 的省音形式。"
+    },
+    {
+      "de": "Zwar Wölfe gäb's in großer Schar,",
+      "zh": "gäb's = gäbe es，第二虚拟式，用于转述教师的话（间接引语）。Zwar … doch …（固然……但是……）是德语的固定对举结构。die Schar（群、队）。狼当然有复数（Wölfe），但问题不在\"狼\"上。"
+    },
+    {
+      "de": "doch „Wer“ gäb's nur im Singular.",
+      "zh": "全诗的语法笑点落地：疑问代词 wer（谁）在德语中确实没有复数形式——问\"谁们\"是不可能的。因此 Werwolf 这个词，只要按教师的方式理解，就注定只能有一个。这是一个完全正确的语法事实，被用在一个完全荒谬的地方。"
+    },
+    {
+      "de": "er hatte ja doch Weib und Kind!!",
+      "zh": "笑话在此转为别的东西。两个语气词 ja doch 加两个感叹号，是全诗唯一的情绪爆发。狼人要的从来不是语法知识——它有妻子和孩子，它想知道\"我们\"这个说法在语法上是否成立。而回答是：不成立。tränenblind（被泪水弄瞎的）是摩根施特恩自造的复合词。"
+    },
+    {
+      "de": "Doch da er kein Gelehrter eben, / so schied er dankend und ergeben.",
+      "zh": "从句省略了动词（da er kein Gelehrter [war] eben）。eben 是语气词\"就是、毕竟\"，带一点听天由命的味道。ergeben 作形容词意为\"顺从的、恭顺的\"，同时也是动词 sich ergeben（投降）的分词——狼人道谢、认输、离开。全诗以最有礼貌的方式结束，而问题一个也没解决。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Werwolf, -wölfe",
+      "pos": "n.（阳性）",
+      "meaning": "狼人",
+      "note": "词源上 Wer- 来自古高地德语 wer\"人\"（同拉丁语 vir、英语 were-wolf），意为\"人—狼\"，与疑问代词 wer（谁）无关。全诗的笑话正建立在这一同形巧合上。"
+    },
+    {
+      "term": "beugen",
+      "pos": "v.（弱变化）",
+      "meaning": "①弯曲、使弯下；②（语法）使屈折变化、变格/变位",
+      "note": "语法术语 die Beugung 涵盖 die Deklination（名词/形容词变格）与 die Konjugation（动词变位）；诗中一词双关。"
+    },
+    {
+      "term": "der Fall, Fälle",
+      "pos": "n.（阳性）",
+      "meaning": "①（语法）格；②情况、案件；③跌落",
+      "note": "德语四个格的本土说法为 der Werfall（第一格）、der Wesfall（第二格）、der Wemfall（第三格）、der Wenfall（第四格）——正是本诗的构词依据。"
+    },
+    {
+      "term": "die Einzahl / die Mehrzahl",
+      "pos": "n.（阴性）",
+      "meaning": "单数／复数",
+      "note": "Singular / Plural 的德语本土术语；同类还有 die Zeitform（时态）、die Mitvergangenheit（奥地利用语：过去时）。"
+    },
+    {
+      "term": "entweichen",
+      "pos": "v.（不可分，强变化）",
+      "meaning": "逃脱、溜走；（气体）逸出",
+      "note": "变位 entweicht – entwich – ist entwichen；较 fliehen 更强调悄然离开。"
+    },
+    {
+      "term": "sich begeben",
+      "pos": "v.（不可分，强变化，反身）",
+      "meaning": "前往、动身到",
+      "note": "书面雅语；本站诺瓦利斯《当数字与图形不再》中亦出现此词，可对照。"
+    },
+    {
+      "term": "schmeicheln",
+      "pos": "v.（弱变化，支配第三格）",
+      "meaning": "奉承；讨好、使人高兴",
+      "note": "支配第三格（jemandem schmeicheln）；\"das schmeichelt mir\" 意为\"这让我很受用\"。"
+    },
+    {
+      "term": "gestehen",
+      "pos": "v.（不可分，强变化）",
+      "meaning": "承认、坦白",
+      "note": "变位 gesteht – gestand – hat gestanden；das Geständnis（供认、坦白）。诗中省音作 gestehn。"
+    },
+    {
+      "term": "die Schar, -en",
+      "pos": "n.（阴性）",
+      "meaning": "群、队、一伙",
+      "note": "多用于人或动物的集合（eine Schar Kinder）；\"in großer Schar\" 意为\"成群结队地\"。"
+    },
+    {
+      "term": "ergeben",
+      "pos": "adj.（第二分词）/ v.",
+      "meaning": "顺从的、恭顺的；（sich ergeben）投降、屈从；（v.）得出、产生",
+      "note": "旧式书信结尾 \"Ihr ergebener …\"（您顺从的……）；诗中末词兼有\"恭顺\"与\"认输\"两层。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "entweichen",
+      "present_3sg": "entweicht",
+      "preterite": "entwich",
+      "perfect": "ist entwichen",
+      "participle_ii": "entwichen",
+      "subjunctive_ii": "entwiche",
+      "auxiliary": "sein",
+      "note": "强变化（ei–i–i）；诗中过去时 entwich 位于第一行末尾（主语与状语在前）。"
+    },
+    {
+      "infinitive": "bitten",
+      "present_3sg": "bittet",
+      "preterite": "bat",
+      "perfect": "hat gebeten",
+      "participle_ii": "gebeten",
+      "subjunctive_ii": "bäte",
+      "auxiliary": "haben",
+      "note": "强变化；注意与 beten（祈祷，弱变化 betete/gebetet）、bieten（提供，bot/geboten）三者极易混淆，须成组记忆。诗中两次用过去时 bat。"
+    },
+    {
+      "infinitive": "beugen",
+      "present_3sg": "beugt",
+      "preterite": "beugte",
+      "perfect": "hat gebeugt",
+      "participle_ii": "gebeugt",
+      "subjunctive_ii": "beugte",
+      "auxiliary": "haben",
+      "note": "弱变化；诗中命令式 beuge（保留词尾 -e）。语法术语用法：ein Wort beugen（把一个词变格）。"
+    },
+    {
+      "infinitive": "sprechen",
+      "present_3sg": "spricht",
+      "preterite": "sprach",
+      "perfect": "hat gesprochen",
+      "participle_ii": "gesprochen",
+      "subjunctive_ii": "spräche",
+      "auxiliary": "haben",
+      "note": "强变化第四类，现在时单数变元音 e→i；诗中过去时 sprach 两次出现于引语插入句。"
+    },
+    {
+      "infinitive": "gestehen",
+      "present_3sg": "gesteht",
+      "preterite": "gestand",
+      "perfect": "hat gestanden",
+      "participle_ii": "gestanden",
+      "subjunctive_ii": "gestände / gestünde",
+      "auxiliary": "haben",
+      "note": "强变化；第二分词 gestanden 与 stehen 的第二分词同形，靠语境区分。诗中省音作 gestehn。"
+    },
+    {
+      "infinitive": "geben",
+      "present_3sg": "gibt",
+      "preterite": "gab",
+      "perfect": "hat gegeben",
+      "participle_ii": "gegeben",
+      "subjunctive_ii": "gäbe",
+      "auxiliary": "haben",
+      "note": "诗中两次用第二虚拟式 gäb's（= gäbe es），构成间接引语；\"es gibt + 第四格\" 是德语最常用的存在句式。"
+    },
+    {
+      "infinitive": "scheiden",
+      "present_3sg": "scheidet",
+      "preterite": "schied",
+      "perfect": "ist geschieden（离去）／hat geschieden（分开）",
+      "participle_ii": "geschieden",
+      "subjunctive_ii": "schiede",
+      "auxiliary": "sein／haben",
+      "note": "强变化（ei–ie–ie）；诗中取\"告辞、离去\"义。派生词 die Scheidung（离婚）、der Abschied（告别）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "德语四格与本土术语：Werfall / Wesfall / Wemfall / Wenfall",
+      "quote": "„Der Werwolf“ … „des Weswolfs“ … „dem Wemwolf“ … „den Wenwolf“",
+      "body": "德语的四个格除了拉丁语术语（Nominativ, Genitiv, Dativ, Akkusativ）之外，还有一套用疑问词命名的本土术语：Werfall（谁？）、Wesfall（谁的？）、Wemfall（给谁？）、Wenfall（把谁？）。这套命名法在德国小学沿用至今，因为它直接告诉学生每个格回答什么问题。摩根施特恩的整首诗就是把这套术语当真、用它去拆解 Werwolf 这个词。学完这首诗，德语四格基本不会再忘——这大概是它成为德语课堂常客的原因。"
+    },
+    {
+      "title": "疑问代词 wer 的变格与\"没有复数\"",
+      "quote": "doch „Wer“ gäb's nur im Singular.",
+      "body": "疑问代词 wer 的四格为：wer – wessen（旧作 wes）– wem – wen。它确实没有复数形式：德语无法问\"谁们\"，只能用 wer 同时涵盖单数与复数（\"Wer kommt?\" 既可问一人也可问多人）。因此教师的回答在语法上完全正确。请注意与之相对的 was（什么）：was 只有 was – wessen – was 三个可用形式，第三格几乎不用。这两个疑问代词的变格表值得单独背下来。"
+    },
+    {
+      "title": "前置第二格（三例）",
+      "quote": "an eines Dorfschullehrers Grab … auf seines Blechschilds Messingknauf",
+      "body": "= das Grab eines Dorfschullehrers、der Messingknauf seines Blechschilds。这首诗一边在讲第二格，一边在用最古雅的第二格语序——形式与内容再次重合。请注意第二格的形态标记：阳性/中性单数名词在第二格要加 -s 或 -es（des Wolfs, des Kindes），这也正是诗中 \"des Weswolfs\" 那个 -s 的来历。"
+    },
+    {
+      "title": "旧式引号排印：每行行首重复下引号",
+      "quote": "„Der Werwolf“ — … / „des Weswolfs, … / „dem Wemwolf, … / „den Wenwolf, …",
+      "body": "第三节中每一行的开头都出现一个下引号 „，而只有最后一行有上引号 “ 收尾。这不是错误，而是19世纪德语印刷的惯例：当一段引语跨越多行时，每一行的开头都要重复标出\"这仍在引语之内\"。现代排版已废弃这一做法。本站保留原刊形式，学习者遇到旧书时不必困惑。"
+    }
+  ],
+  "cultural_notes": "《狼人》收在摩根施特恩1905年出版的《绞刑架之歌》中——这部诗集是德语荒诞文学的奠基之作，其中还包括《鱼的夜歌》（全诗只有格律符号，没有一个字）、《鼻兽》《篱笆桩之间的空隙》等名篇。摩根施特恩1871年生，1914年因肺结核去世，年仅四十三岁。\n\n这首诗被公认为德语中最好的语法笑话。它的机关是：Werwolf（狼人）的前半部分 Wer- 在词源上来自古高地德语的 wer\"人\"（与拉丁语 vir、英语 were-wolf 同源），与疑问代词 wer（谁）毫无关系，只是碰巧同形。乡村教师把它当成 wer 来变格，于是得出 Werwolf – Weswolfs – Wemwolf – Wenwolf——一套形式上无懈可击、意义上全无所指的变格表。\n\n但这首诗真正的分量在最后两节。狼人问：能不能也给我一个复数？教师答不出——因为 wer 在德语中确实没有复数。而狼人之所以要复数，第22行说得很清楚：\"它毕竟是有妻有儿的啊！！\"两个感叹号是全诗唯一的情绪。它想问的从来不是语法问题，而是：我们这一家人，在语言里算不算一个\"我们\"？答案是不算。于是它道谢、认输、离开。\n\n摩根施特恩自己在《绞刑架之歌》的序言性文字里写道，这些诗是\"给成年人身上那个孩子看的\"。这首诗的好处正在于：它可以纯粹当作一个语法笑话来读并且笑出声，也可以在笑完之后忽然安静下来。对德语学习者来说，它还有一个额外的用处——读完这首诗，四个格的名称与提问方式几乎不可能再忘。",
+  "translation_notes": "本诗是本站收录作品中唯一一首在字面意义上无法翻译的诗：它的全部笑点依赖于德语疑问代词 wer 的四格形式（wer / wes / wem / wen）与 Werwolf 一词的同形巧合。中文没有格变化，也没有对应的同形词。因此本站的处理方式是：保留叙事与语气的直译，在第三节的四行中以\"第X格\"标注格位、并以括注给出每个生造词的构词来源（Wes- 来自 wessen 等），让读者能够看懂机关，而不假装能在中文里复现它。这一处理牺牲了笑点的即时性，换取了可理解性——请学习者务必对照德文原文与\"语法要点\"阅读。第4行的 \"beuge mich\"（给我变格／把我弯下）与第13行的 die Fälle（格／情况）两处双关同样无法译出，已在逐行注释中说明。已知此诗存在多个中文译本（多采用不同的变通策略），因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "月夜的乡村小墓地，一头体型很大但姿态恭顺的狼趴伏在一座朴素的坟前，前爪交叠；坟上立着一块小小的铁皮墓牌，牌顶有一个铜制圆钮",
+    "mood": "荒诞而温柔的滑稽；狼必须显得认真、拘谨、几乎有些可怜，绝不可凶恶——全诗的幽默正来自这种一本正经",
+    "elements": "月光下的低矮墓地与几块歪斜的墓牌、一头交叠前爪趴伏的大狼、带铜圆钮的铁皮墓牌、稀疏的草与篱笆、远处村庄的屋顶轮廓",
+    "era": "19世纪末德国乡村；墓牌与篱笆应为该时代样式",
+    "taboos": "不得出现文字、可读的墓碑铭文或任何变格表（诗的机关必须留在文字里，不可画出来）；不得出现半人半狼的恐怖形象——狼应是一头普通的、写实的狼；不得出现血、獠牙、发光的眼睛等恐怖片元素；不得出现人物或幽灵形象",
+    "style": "19世纪书籍插画式的黑白或极低饱和度风格（可参考《绞刑架之歌》早期插图的线描传统），月光冷白，构图简洁，狼与墓牌的体型对比是画面的笑点所在"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "textlog.de — Christian Morgenstern, „Der Werwolf“（Galgenlieder · V.）",
+      "url": "https://www.textlog.de/morgenstern/gedichte/der-werwolf",
+      "note": "主来源。六节二十四行完整，保留1905年原刊的排印特征：第三节每行行首重复下引号 „，以及旧正字法 mußte / wußte / daß。"
+    },
+    {
+      "name": "The LiederNet Archive — Christian Morgenstern, „Der Werwolf“（appears in Galgenlieder）",
+      "url": "https://www.lieder.net/lieder/get_text.html?TextId=44148",
+      "note": "辅助来源。二十四行与主来源逐词一致；排印上采用现代引号规则（仅在引语首尾各一次），并把第18行的 daß 现代化为 dass，用于交叉核对用词。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；因本诗的语言游戏无法直译，译文采取\"直译叙事 + 括注构词机制\"的策略，已在译文说明中交代。已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（textlog.de 的《绞刑架之歌》数字化本与 LiederNet）逐词核对，六节各四行、用词完全一致，未发现字面异文。核实到的差异全部属于排印与正字法层面：(1) 引号：主来源在第三节的每一行行首重复下引号 „（19世纪德语印刷中标记引语跨行延续的惯例），LiederNet 采用现代规则仅在引语首尾各标一次。本站保留主来源的原刊形式，并在语法要点中说明这一排印惯例，以免学习者误认为是错误。(2) 正字法：主来源保留 mußte / wußte / daß / End'，LiederNet 将第18行的 daß 现代化为 dass。本站从主来源的旧拼法。(3) 强调排版：主来源在第20行的 „Wer“ 上使用斜体，本站因纯文本呈现而以引号代替。(4) 标点细节：主来源第12行末作 „damit hat's ein End'.“，LiederNet 作 \"damit hat's ein End.\"（无省字符）。本站从主来源。需说明的是，本站未直接查阅1905年《绞刑架之歌》初版影印件或摩根施特恩全集（Urachhaus / Piper 版），上述采择依据数字化转录；本诗在《绞刑架之歌》第五辑中的位置依主来源的目录结构，属待进一步核实项。作者1914年逝世，德文原文已进入公有领域。",
+  "checklist": [
+    { "label": "确认作者：Christian Morgenstern", "done": true },
+    { "label": "确认标题与出处：Galgenlieder（1905）第五辑", "done": true },
+    { "label": "确认公版状态（Morgenstern 1914年逝世，德文原文已进入公有领域）", "done": true },
+    { "label": "德文原文主来源：textlog.de（保留原刊排印特征）", "done": true },
+    { "label": "德文原文辅助来源：LiederNet", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（跨行引号惯例；旧新正字法；第12行 End'/End）", "done": true },
+    { "label": "查证 Werwolf 的词源（Wer- < 古高地德语 wer「人」，与疑问代词 wer 无关）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文，采用直译 + 括注构词机制的策略并已交代）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点（含德语四格本土术语与 wer 的变格表）", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "对照1905年初版影印件核实排印与辑目位置", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其中译策略的取舍）", "done": false }
+  ]
+}

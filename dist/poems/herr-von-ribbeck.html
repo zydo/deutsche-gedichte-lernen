@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Herr von Ribbeck auf Ribbeck im Havelland · 哈弗尔兰的里贝克庄园的里贝克老爷 — Theodor Fontane | 德语诗歌学习画册</title>
+  <meta name="description" content="Herr von Ribbeck auf Ribbeck im Havelland（哈弗尔兰的里贝克庄园的里贝克老爷）— Theodor Fontane。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="der-roemische-brunnen.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">罗马的喷泉</span></a>
+<a class="poem-nav__link poem-nav__next" href="die-beiden.html" rel="next"><span class="poem-nav__title">他们两个</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de poem-titleblock__de--long">Herr von Ribbeck auf Ribbeck im Havelland</h1>
+      <p class="poem-titleblock__author">Theodor Fontane</p>
+      <p class="poem-titleblock__zh">哈弗尔兰的里贝克庄园的里贝克老爷</p>
+      <p class="poem-titleblock__author-zh">特奥多尔·冯塔纳</p>
+      <div class="poem-titleblock__biblio">
+        <p>《诗集》（1898年版）·「画与叙事诗」·「德意志·马克—普鲁士题材」</p>
+        <p>现实主义</p>
+        <p>1889年作，1889年首次发表</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B2（含低地德语方言对白）</span>
+        <span class="tag ">叙事诗</span>
+        <span class="tag ">梨树</span>
+        <span class="tag ">馈赠</span>
+        <span class="tag ">低地德语</span>
+        <span class="tag ">勃兰登堡</span>
+        <span class="tag ">儿童必读</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>秋日的乡村墓地一角，一棵枝叶繁茂、结满梨子的老梨树覆盖着一座低矮的旧墓；树下的草地上落着几枚梨；远处是勃兰登堡式的低矮红砖村教堂</dd>
+        <dt>情绪</dt><dd>温厚、明亮、略带幽默的安然；应传达"生命以另一种方式继续"的暖意，而非哀悼</dd>
+        <dt>画面元素</dt><dd>结满果实的老梨树、覆盖树影的旧石墓（不得有可辨识的碑文）、草地上落下的梨、红砖村教堂与低矮的围墙、金色的秋日斜光、可有一顶木鞋或一只空篮暗示孩子来过</dd>
+        <dt>时代感</dt><dd>19世纪末勃兰登堡乡村；建筑为北德红砖哥特式村教堂样式</dd>
+        <dt>推荐风格</dt><dd>19世纪现实主义风景油画风格，暖金与赭红为主调，光线来自低角度的午后阳光，构图以梨树为中心、墓在树下且不显眼</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印、可读的墓碑铭文；不得出现人物（孩子应仅以脚印、木鞋或摇动的树枝暗示）；不得出现十字架特写或任何阴森的墓地气氛；不得出现现代车辆、路灯、栅栏</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Herr von Ribbeck auf Ribbeck im Havelland,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">哈弗尔兰的里贝克庄园的里贝克老爷，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Ein Birnbaum in seinem Garten stand,</span></div>
+          <div class="pline__zh">他的园子里立着一棵梨树，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Und kam die goldene Herbsteszeit<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">每当金色的秋天来临，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und die Birnen leuchteten weit und breit,</span></div>
+          <div class="pline__zh">梨子远远近近地发亮，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Da stopfte, wenn's Mittag vom Turme scholl,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">当塔楼敲响正午的钟声，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Der von Ribbeck sich beide Taschen voll,</span></div>
+          <div class="pline__zh">里贝克老爷便把两个口袋塞得满满，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">Und kam in Pantinen ein Junge daher,<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">若有个穿木鞋的男孩走过来，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">So rief er: „Junge, wiste 'ne Beer?“<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">他就喊："小子，想要个梨吗？"</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und kam ein Mädel, so rief er: „Lütt Dirn,</span></div>
+          <div class="pline__zh">若来了个女孩，他就喊："小姑娘，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Kumm man röwer, ick hebb 'ne Birn.“<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">过来吧，我这儿有个梨。"</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">So ging es viel Jahre, bis lobesam<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">这样过了许多年，直到那位可敬的</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Der von Ribbeck auf Ribbeck zu sterben kam.</span></div>
+          <div class="pline__zh">里贝克庄园的里贝克老爷临近死亡。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Er fühlte sein Ende. 's war Herbsteszeit,</span></div>
+          <div class="pline__zh">他感到自己的终点。那是秋天，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Wieder lachten die Birnen weit und breit,</span></div>
+          <div class="pline__zh">梨子又一次远远近近地笑着，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Da sagte von Ribbeck: „Ich scheide nun ab.<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">里贝克便说："我这就要走了。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Legt mir eine Birne mit ins Grab.“</span></div>
+          <div class="pline__zh">把一个梨放进我的坟里。"</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und drei Tage drauf, aus dem Doppeldachhaus,</span></div>
+          <div class="pline__zh">三天之后，从那座双坡顶的房子里，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Trugen von Ribbeck sie hinaus,</span></div>
+          <div class="pline__zh">人们把里贝克抬了出来，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="9"><span class="linetext">Alle Bauern und Büdner mit Feiergesicht<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
+          <div class="pline__zh">所有的农人与佃户神情肃穆，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="10"><span class="linetext">Sangen „Jesus meine Zuversicht“,<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
+          <div class="pline__zh">唱起《耶稣是我的依靠》，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und die Kinder klagten, das Herze schwer:</span></div>
+          <div class="pline__zh">孩子们心情沉重地哀叹：</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="11"><span class="linetext">„He is dod nu. Wer giwt uns nu 'ne Beer?“<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
+          <div class="pline__zh">"他现在死了。现在谁还给我们梨呢？"</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">So klagten die Kinder. Das war nicht recht —</span></div>
+          <div class="pline__zh">孩子们就这样哀叹。这可不对——</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Ach, sie kannten den alten Ribbeck schlecht;</span></div>
+          <div class="pline__zh">唉，他们太不了解老里贝克了；</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="12"><span class="linetext">Der neue freilich, der knausert und spart,<sup class="refmark"><a href="#note-12">12</a></sup></span></div>
+          <div class="pline__zh">新的那位确实吝啬又抠门，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Hält Park und Birnbaum strenge verwahrt.</span></div>
+          <div class="pline__zh">把园子和梨树看得死死的。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Aber der alte, vorahnend schon</span></div>
+          <div class="pline__zh">但老的那位，早已预感到，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und voll Mißtrauen gegen den eigenen Sohn,</span></div>
+          <div class="pline__zh">并且满心不信任自己的儿子，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="13"><span class="linetext">Der wußte genau, was damals er tat,<sup class="refmark"><a href="#note-13">13</a></sup></span></div>
+          <div class="pline__zh">他当年清楚地知道自己在做什么，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Als um eine Birn' ins Grab er bat,</span></div>
+          <div class="pline__zh">当他请求把一个梨放进坟里，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und im dritten Jahr, aus dem stillen Haus</span></div>
+          <div class="pline__zh">而到了第三年，从那寂静的屋子里</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="14"><span class="linetext">Ein Birnbaumsprößling sproßt heraus.<sup class="refmark"><a href="#note-14">14</a></sup></span></div>
+          <div class="pline__zh">冒出了一株梨树的幼苗。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und die Jahre gehen wohl auf und ab,</span></div>
+          <div class="pline__zh">岁月就这样一年年起落，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Längst wölbt sich ein Birnbaum über dem Grab,</span></div>
+          <div class="pline__zh">早已有一棵梨树在坟上撑开了树冠，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und in der goldenen Herbsteszeit</span></div>
+          <div class="pline__zh">而每当金色的秋天来临，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Leuchtet's wieder weit und breit.</span></div>
+          <div class="pline__zh">又是远远近近的一片光亮。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und kommt ein Jung' übern Kirchhof her,</span></div>
+          <div class="pline__zh">若有个男孩走过墓地，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="15"><span class="linetext">So flüstert's im Baume: „Wist 'ne Beer?“<sup class="refmark"><a href="#note-15">15</a></sup></span></div>
+          <div class="pline__zh">树里便低语："想要个梨吗？"</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Und kommt ein Mädel, so flüstert's: „Lütt Dirn,</span></div>
+          <div class="pline__zh">若来了个女孩，树便低语："小姑娘，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="16"><span class="linetext">Kumm man röwer, ich gew di 'ne Birn.“<sup class="refmark"><a href="#note-16">16</a></sup></span></div>
+          <div class="pline__zh">过来吧，我给你一个梨。"</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="17"><span class="linetext">So spendet Segen noch immer die Hand<sup class="refmark"><a href="#note-17">17</a></sup></span></div>
+          <div class="pline__zh">于是那只手至今仍在施予恩惠——</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Des von Ribbeck auf Ribbeck im Havelland.</span></div>
+          <div class="pline__zh">哈弗尔兰的里贝克庄园的里贝克老爷的手。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译；低地德语对白按其含义译出，并在逐行注释中给出标准德语对照</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Herr von Ribbeck auf Ribbeck im Havelland,</p>
+        <p class="lnote__zh">德语贵族称谓的完整格式：头衔 + von + 家族名 + auf + 领地名 + 地区名。auf Ribbeck 指他所领有的庄园。das Havelland 是勃兰登堡州哈弗尔河沿岸的地区。这一长串称谓在全诗首尾各出现一次，构成框架；朗读时的庄重与内容的家常形成反差，正是这首诗幽默感的来源。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Und kam die goldene Herbsteszeit</p>
+        <p class="lnote__zh">此处的倒装（动词在前、主语在后）不是疑问句，而是德语中省略了 wenn 的条件/时间从句："Und kam …" = "Und wenn … kam"（每当……来临时）。全诗四次使用这一结构（第3、7、9、37、39行），是叙事诗特有的推进节奏。Herbsteszeit 中的 -es- 为旧式连接成分。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Da stopfte, wenn's Mittag vom Turme scholl,</p>
+        <p class="lnote__zh">scholl 是 schallen（响起）的强变化过去时（今日多用弱变化 schallte）。wenn's = wenn es。stopfen（塞、填）+ 第四格；"sich die Taschen voll stopfen" 意为"把口袋塞满"，其中 sich 是第三格（为自己）。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">Und kam in Pantinen ein Junge daher,</p>
+        <p class="lnote__zh">die Pantinen 是北德词，指木底鞋、木屐——一个把男孩的农家出身一笔点明的细节。daherkommen（走过来）为可分动词，前缀 daher 在此已并入。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">So rief er: „Junge, wiste 'ne Beer?“</p>
+        <p class="lnote__zh">全诗第一句低地德语（Plattdeutsch）。wiste = willst du（你想要吗），'ne Beer = eine Birne（一个梨；低地德语中 Beer 与高地德语 Birne 同源）。里贝克对孩子说话时切换到方言，对读者叙述时用标准德语——这一语言切换本身就是他与农家孩子亲近的证据。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Kumm man röwer, ick hebb 'ne Birn.“</p>
+        <p class="lnote__zh">低地德语，标准德语作 "Komm nur herüber, ich habe eine Birne"（过来吧，我有个梨）。man 在低地德语中是语气词"就、尽管"（≠ 标准德语的不定代词 man）；röwer = herüber；ick = ich；hebb = habe。注意此处用 Birn 而非上一行的 Beer，两个词在诗中交替出现。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">So ging es viel Jahre, bis lobesam</p>
+        <p class="lnote__zh">lobesam 是古雅词，意为"值得称道的、可敬的"（lob- 赞美 + -sam），今日已完全废弃，只在仿古文体中出现。它修饰下一行的主语，被跨行分隔——冯塔纳借这个老词赋予老爷一种民谣式的庄重。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Da sagte von Ribbeck: „Ich scheide nun ab.</p>
+        <p class="lnote__zh">abscheiden（离世）是雅语兼宗教用语，今多作 dahinscheiden 或 verscheiden；die Abgeschiedenen 指亡者。老爷用的是体面的书面语，而不是方言——他在自己的死亡面前恢复了身份。</p>
+      </article>
+      <article class="lnote" id="note-9" data-noteref="9">
+        <span class="lnote__mark">9</span>
+        <p class="lnote__de">Alle Bauern und Büdner mit Feiergesicht</p>
+        <p class="lnote__zh">der Büdner 是北德/东德的历史用语，指只有小屋和一小块地的贫农（较 Bauer 更低一层），今已随其所指的社会阶层一同消失。das Feiergesicht（庄重的神情）是冯塔纳自造的复合词。</p>
+      </article>
+      <article class="lnote" id="note-10" data-noteref="10">
+        <span class="lnote__mark">10</span>
+        <p class="lnote__de">Sangen „Jesus meine Zuversicht“,</p>
+        <p class="lnote__zh">这是一首真实存在的德国新教葬礼圣诗（作于17世纪，通常归于奥托·冯·施韦林或路易丝·亨莉埃特选帝侯夫人），至今仍收录于《福音赞美诗集》。冯塔纳直接引用歌名，读者一听便知场景。</p>
+      </article>
+      <article class="lnote" id="note-11" data-noteref="11">
+        <span class="lnote__mark">11</span>
+        <p class="lnote__de">„He is dod nu. Wer giwt uns nu 'ne Beer?“</p>
+        <p class="lnote__zh">孩子们的低地德语，标准德语作 "Er ist tot nun. Wer gibt uns nun eine Birne?"（他现在死了。现在谁给我们梨呢？）he = er；is dod = ist tot；giwt = gibt。孩子们对老爷之死的全部理解就是"没有梨了"——这句天真到近乎无情的话，是全诗最动人的一处。</p>
+      </article>
+      <article class="lnote" id="note-12" data-noteref="12">
+        <span class="lnote__mark">12</span>
+        <p class="lnote__de">Der neue freilich, der knausert und spart,</p>
+        <p class="lnote__zh">der neue 指继承庄园的儿子。knausern（吝啬、抠门）是口语动词，与 sparen（节省）并列时构成贬义递进：节省未必是缺点，抠门则是。freilich 在此为语气词"诚然、的确"。</p>
+      </article>
+      <article class="lnote" id="note-13" data-noteref="13">
+        <span class="lnote__mark">13</span>
+        <p class="lnote__de">Der wußte genau, was damals er tat,</p>
+        <p class="lnote__zh">wußte 为旧拼法（今 wusste）。请注意从句语序 "was damals er tat"：正常应作 "was er damals tat"，此处把状语 damals 提到主语之前，是为凑韵与节奏而作的诗歌语序（部分版本正作 "was er damals tat"，详见校对记录）。</p>
+      </article>
+      <article class="lnote" id="note-14" data-noteref="14">
+        <span class="lnote__mark">14</span>
+        <p class="lnote__de">Ein Birnbaumsprößling sproßt heraus.</p>
+        <p class="lnote__zh">der Sprößling（幼苗、后代，旧拼法，今 Sprössling）与动词 sprossen（发芽）构成同源反复。此词兼指"树苗"与"子嗣"——老爷真正的后代不是那个吝啬的儿子，而是这棵从他坟里长出来的树。这是全诗的转折点，也是它的核心讽喻。</p>
+      </article>
+      <article class="lnote" id="note-15" data-noteref="15">
+        <span class="lnote__mark">15</span>
+        <p class="lnote__de">So flüstert's im Baume: „Wist 'ne Beer?“</p>
+        <p class="lnote__zh">flüstert's = flüstert es（形式主语 es，"树里有什么在低语"）。与第8行相比，说话的主语从"他"（er rief）变成了无人称的"它"（es flüstert）——老爷的声音已经变成了树的声音。此处低地德语作 Wist（Zeno 版），另有版本作 Wiste，详见校对记录。</p>
+      </article>
+      <article class="lnote" id="note-16" data-noteref="16">
+        <span class="lnote__mark">16</span>
+        <p class="lnote__de">Kumm man röwer, ich gew di 'ne Birn.“</p>
+        <p class="lnote__zh">与第10行几乎完全相同，唯一的变化是 ick hebb（我有）变成了 ich gew di（我给你）——从"我有"到"我给"。另需注意：Zeno 版此处作标准德语的 ich，而第10行作低地德语的 ick；部分版本两处统一作 ick，详见校对记录。</p>
+      </article>
+      <article class="lnote" id="note-17" data-noteref="17">
+        <span class="lnote__mark">17</span>
+        <p class="lnote__de">So spendet Segen noch immer die Hand</p>
+        <p class="lnote__zh">Segen spenden（施予祝福/恩惠）是带宗教色彩的固定搭配，通常用于神职人员的祝祷。冯塔纳把它用在一棵梨树上——恩惠不来自教会，而来自一个老人生前的一点慷慨。主语 die Hand 后置于动词，其第二格修饰语要到最后一行才出现。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Birnbaum, -bäume</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">梨树</div>
+        <div class="vocab-card__note">Birne（梨）+ Baum（树）；同类构词 Apfelbaum、Kirschbaum。梨在德语中还有 "eine weiche Birne haben"（脑子不好使）等俗语。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Pantinen</span></div>
+        <span class="vocab-card__pos">n.（复数，北德方言）</span>
+        <div class="vocab-card__meaning">木底鞋、木屐</div>
+        <div class="vocab-card__note">北德与荷兰边境地区的传统农鞋；口语中 "aus den Pantinen kippen" 意为"大吃一惊"。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">lobesam</span></div>
+        <span class="vocab-card__pos">adj.（古语）</span>
+        <div class="vocab-card__meaning">可敬的、值得称道的</div>
+        <div class="vocab-card__note">lob-（赞美）+ -sam；今已完全废弃，仅在仿古与戏谑文体中出现，与 tugendsam、friedsam 同类构词。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">abscheiden</span></div>
+        <span class="vocab-card__pos">v.（可分，强变化，雅语）</span>
+        <div class="vocab-card__meaning">离世、去世</div>
+        <div class="vocab-card__note">宗教与书面语；die Abgeschiedenen（已故者）、das Hinscheiden（辞世）。日常说 sterben。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Büdner, -</span></div>
+        <span class="vocab-card__pos">n.（阳性，历史用语）</span>
+        <div class="vocab-card__meaning">（北德/东德的）小屋农、贫农</div>
+        <div class="vocab-card__note">来自 die Bude（小屋）；指只有住屋与很小一块地、须为大农或庄园做工的农村底层，19世纪东易北河地区的典型阶层。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Zuversicht</span></div>
+        <span class="vocab-card__pos">n.（阴性，无复数）</span>
+        <div class="vocab-card__meaning">信心、笃定的期待</div>
+        <div class="vocab-card__note">较 die Hoffnung（希望）更坚定；形容词 zuversichtlich（有信心的）。诗中作为圣诗名出现。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">knausern</span></div>
+        <span class="vocab-card__pos">v.（弱变化，口语）</span>
+        <div class="vocab-card__meaning">吝啬、抠门</div>
+        <div class="vocab-card__note">名词 der Knauser（吝啬鬼）、形容词 knauserig；与中性的 sparen（节省）有明显的褒贬之别。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Sprössling, -e（旧拼 Sprößling）</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">幼苗、嫩芽；（戏谑）子嗣</div>
+        <div class="vocab-card__note">来自 sprießen/sprossen（发芽）；诗中一词双关，同时指树苗与后代。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">Segen spenden</span></div>
+        <span class="vocab-card__pos">固定搭配</span>
+        <div class="vocab-card__meaning">施予祝福、赐福</div>
+        <div class="vocab-card__note">spenden 本义为"捐赠"（Blut spenden 献血）；与 Segen 搭配时带宗教仪式色彩，通常主语是神职人员。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">低地德语小词表</span></div>
+        <span class="vocab-card__pos">（Plattdeutsch）</span>
+        <div class="vocab-card__meaning">wiste/wist = willst du；'ne Beer = eine Birne；Lütt Dirn = kleines Mädchen；kumm = komm；man = nur（语气词）；röwer = herüber；ick = ich；hebb = habe；he = er；is dod = ist tot；giwt = gibt；gew di = gebe dir</div>
+        <div class="vocab-card__note">低地德语（Niederdeutsch/Plattdeutsch）是北德的独立语言变体，不是"不标准的德语"。注意 man 在低地德语中是语气词"就、尽管"，与标准德语的不定代词 man（人们）同形而不同义，切勿混淆。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">schallen</td>
+          <td class="de">schallt</td>
+          <td class="de">schallte / scholl</td>
+          <td class="de">hat geschallt</td>
+          <td class="de">geschallt</td>
+          <td class="de">schallte / schölle</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强弱两套形式并存，今日以弱变化 schallte 为常；诗中用较古的强变化 scholl。</td></tr>
+        <tr>
+          <td class="de">stopfen</td>
+          <td class="de">stopft</td>
+          <td class="de">stopfte</td>
+          <td class="de">hat gestopft</td>
+          <td class="de">gestopft</td>
+          <td class="de">stopfte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中构成 "sich die Taschen voll stopfen"，其中 sich 为第三格（为自己）、die Taschen 为第四格。</td></tr>
+        <tr>
+          <td class="de">abscheiden</td>
+          <td class="de">scheidet ab</td>
+          <td class="de">schied ab</td>
+          <td class="de">ist abgeschieden</td>
+          <td class="de">abgeschieden</td>
+          <td class="de">schiede ab</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可分动词，强变化（ei–ie–ie）；诗中现在时 "Ich scheide nun ab" 用作近未来（我这就要走了）。</td></tr>
+        <tr>
+          <td class="de">tragen</td>
+          <td class="de">trägt</td>
+          <td class="de">trug</td>
+          <td class="de">hat getragen</td>
+          <td class="de">getragen</td>
+          <td class="de">trüge</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音 a→ä；诗中过去时复数 Trugen 置于句首（因状语在前）。</td></tr>
+        <tr>
+          <td class="de">sich wölben</td>
+          <td class="de">wölbt sich</td>
+          <td class="de">wölbte sich</td>
+          <td class="de">hat sich gewölbt</td>
+          <td class="de">gewölbt</td>
+          <td class="de">wölbte sich</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 反身动词，意为"拱起、撑成穹形"；名词 die Wölbung（拱形）、das Gewölbe（穹顶）。</td></tr>
+        <tr>
+          <td class="de">spenden</td>
+          <td class="de">spendet</td>
+          <td class="de">spendete</td>
+          <td class="de">hat gespendet</td>
+          <td class="de">gespendet</td>
+          <td class="de">spendete</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 弱变化；除 Segen spenden 外还有 Blut/Geld spenden（献血/捐款）、Beifall spenden（鼓掌）。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">省略 wenn 的条件从句（倒装式）</h3>
+        <p class="grammar-item__quote">Und kam die goldene Herbsteszeit … Und kam in Pantinen ein Junge daher, / So rief er: …</p>
+        <div class="grammar-item__body">德语可以省去连词 wenn，把变位动词提到从句句首："Kam ein Junge, so rief er …" = "Wenn ein Junge kam, rief er …"。主句常以 so 或 da 引导。本诗大量使用这一结构（第3、4、7、9、37、39行），它比带 wenn 的写法更简短、更有民谣的推进感。请注意与疑问句区分：疑问句句末是问号，且不会跟着 so/da 引导的主句。本站德罗斯特《在塔上》第四节的 "Wär ich ein Jäger …" 是同一结构的虚拟式版本。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">低地德语与标准德语的切换</h3>
+        <p class="grammar-item__quote">„Junge, wiste 'ne Beer?“ ／ „Kumm man röwer, ick hebb 'ne Birn.“</p>
+        <div class="grammar-item__body">全诗的叙述用标准德语，而所有的直接引语——老爷对孩子说的话、孩子们的哀叹、后来树的低语——都用低地德语。这不是为了滑稽，而是社会关系的标记：庄园主对农家孩子说话时切换到他们的语言。请注意低地德语中的 man 是语气词"就、尽管"（= 标准德语 nur），与标准德语的不定代词 man（人们）同形异义。低地德语是北德的独立语言变体，联合国教科文组织将其列为受保护语言。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">叙事诗中的时态：过去时 vs. 现在时</h3>
+        <p class="grammar-item__quote">第1—32行用过去时（stand, rief, sagte, wußte）；第33行起转为现在时（gehen, wölbt, leuchtet's, flüstert's, spendet）</p>
+        <div class="grammar-item__body">前三节讲一个已经结束的故事，用过去时（Präteritum，德语书面叙事的标准时态）；第四节转入现在时，因为梨树至今还在那里，还在给孩子梨。时态的这一次切换，正是全诗从"讲古"变成"至今如此"的关键。第32行的 "sproßt heraus"（现在时）已经开始了这一转换，可视为过渡。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">第二格作后置修饰与跨行悬置</h3>
+        <p class="grammar-item__quote">So spendet Segen noch immer die Hand / Des von Ribbeck auf Ribbeck im Havelland.</p>
+        <div class="grammar-item__body">主语 die Hand 的第二格修饰语（Des von Ribbeck …）被推到全诗的最后一行，与开篇第一行的称谓完全对应。德语允许这种把第二格拖到句末的做法，效果是让读者在读完整首诗后，又一次听到那个庄重的长称谓——只是这一次，它属于一只已经不在的手。这是叙事诗结构上的"合龙"。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《哈弗尔兰的里贝克庄园的里贝克老爷》作于1889年，是德语中最著名的叙事诗之一，几乎每个德国孩子都在小学背过。冯塔纳当时正在写作他的《马克勃兰登堡漫游记》，对这一地区的传说与家族史非常熟悉。</p>
+<p>故事有真实的原型：汉斯·格奥尔格·冯·里贝克（1689—1759）。这个故事最早出现在卡尔·爱德华·哈泽1887年编的《鲁平伯爵领传说集》中。而更惊人的是后续：里贝克家族墓穴上确实长出过一棵梨树，一直长到1911年被一场风暴连根拔起；它的残株今天保存在勃兰登堡州瑙恩市里贝克村的村教堂里。1990年代村里又重新种下了一棵梨树。</p>
+<p>诗的构造是一个关于遗产的讽喻：真正被继承下来的不是庄园和爵位（它们落到了吝啬的儿子手里），而是一个习惯——给路过的孩子一个梨。老人早就不信任儿子，于是把"遗产"埋进了自己的坟里。这是冯塔纳式的智慧：对普鲁士容克阶层，他既不美化也不控诉，只是让一棵树替他做出判断。</p>
+<p>第四节的时态转换值得注意：前三节是过去时的故事，第四节转入现在时——树还在，还在给梨。而说话的主语也变了：从"他喊道"变成"树里低语着"。老爷本人早已消失，留下的只是那个动作本身。全诗最后一行回到开篇的完整称谓，构成一个闭合的环。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) 全诗的低地德语对白（约占六行）在中文中无法用某一种方言对应而不引入误导性的地域联想，译文一律译出其含义，并在逐行注释与词汇表中给出标准德语对照，请学习者结合朗读体会原文的语言切换；(2) 第10行 "ick hebb 'ne Birn"（我有个梨）与第40行 "ich gew di 'ne Birn"（我给你个梨）只差一个动词，是全诗的关键呼应，译文严格保持了"我有"与"我给"的对照；(3) 首尾两行的完整贵族称谓在中文中冗长而不自然，但译文照样保留，因为这一"合龙"结构是诗的骨架。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Zeno.org — Theodor Fontane: Sämtliche Werke. Bd. 1–25, Band 20, München 1959–1975, S. 249–251（Gedichte, Ausgabe 1898 · Bilder und Balladen · Deutsches. Märkisch-Preußisches）</span><a class="source-url" href="http://www.zeno.org/Literatur/M/Fontane,+Theodor/Gedichte/Gedichte+(Ausgabe+1898)/Bilder+und+Balladen/Deutsches.+M%C3%A4rkisch-Preu%C3%9Fisches/Herr+von+Ribbeck+auf+Ribbeck+im+Havelland" target="_blank" rel="noopener">http://www.zeno.org/Literatur/M/Fontane,+Theodor/Gedichte/Gedichte+(Ausgabe+1898)/Bilder+und+Balladen/Deutsches.+M%C3%A4rkisch-Preu%C3%9Fisches/Herr+von+Ribbeck+auf+Ribbeck+im+Havelland</a>
+        <span class="source-note">主来源。依 Nymphenburger 版《冯塔纳全集》第20卷数字化本，四十二行完整，保留旧正字法（Mißtrauen, wußte, Sprößling）；行首一律大写；第38行作 „Wist 'ne Beer?“，第40行作 „ich gew di“。</span>
+      </li>
+      <li>
+        <span class="source-name">gedichte7.de — „Herr von Ribbeck auf Ribbeck – Fontane“</span><a class="source-url" href="https://www.gedichte7.de/herr-von-ribbeck-auf-ribbeck.html" target="_blank" rel="noopener">https://www.gedichte7.de/herr-von-ribbeck-auf-ribbeck.html</a>
+        <span class="source-note">辅助来源。同为四十二行、分四节（10/12/10/10），据此确认了主来源连续排印文本的分节方式；同时存在多处用词与排印差异（Mädel/Mädchen、was damals er tat/was er damals tat、Wist/Wiste、ich gew di/ick gew di、goldene/goldne 等），详见校对记录。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文以 Zeno.org 转录的 Nymphenburger 版《冯塔纳全集》第20卷（第249—251页）为主来源，与 gedichte7.de 逐行核对，两来源行数一致（四十二行），分节为 10/12/10/10（主来源连续排印，分节依辅助来源并与通行版本一致）。核实到的差异较多，本站一律从主来源，现如实列出：(1) 第9行与第39行：主来源作 Mädel，辅助来源第9行作 Mädchen、第39行作 Mädel。(2) 第29行：主来源作 "was damals er tat"（状语前置的诗歌语序），辅助来源作 "was er damals tat"（常规语序）。(3) 第38行：主来源作 „Wist 'ne Beer?“，辅助来源作 „Wiste 'ne Beer?“（与第8行统一）。(4) 第40行：主来源作低地德语中夹标准德语的 "ich gew di"，辅助来源作全低地德语的 "ick gew di"——第10行两来源均作 ick，因此主来源在此处的 ich 是否为排印之误，本站未能判定，属待核实项。(5) 第3行与第35行：主来源作 goldene，辅助来源作 goldne（少一音节）。(6) 第17行：主来源作 "Und drei Tage drauf, aus dem Doppeldachhaus,"，辅助来源作 "Und drei Tage darauf aus dem Doppeldachhaus"。(7) 大小写：主来源每行行首一律大写（19世纪排印惯例），辅助来源仅句首大写。(8) 主来源在 der neue / der alte 处使用斜体强调，本站因纯文本呈现而未保留该排版特征。此外，本站未直接查阅1889年首刊或1898年《诗集》影印件，上述采择依据全集转录；第40行 ich/ick 的问题尤其建议对照原刊核实。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Theodor Fontane</li>
+        <li>确认标题与出处：《诗集》（1898年版）「德意志·马克—普鲁士题材」</li>
+        <li>德文原文主来源：Zeno.org（Nymphenburger 版全集第20卷）</li>
+        <li>德文原文辅助来源：gedichte7.de</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（共8类，含 Mädel/Mädchen、语序、Wist/Wiste、ich/ick gew di 等）</li>
+        <li>确认分节为 10/12/10/10</li>
+        <li>整理低地德语对白的标准德语对照</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇（含低地德语小词表）</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">核实第40行 ich/ick gew di（疑为排印之误，需对照原刊）</li>
+        <li class="pending">对照1889年首刊或1898年《诗集》影印件核实全部异文</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者与低地德语使用者各复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Frühlingsglaube · 春天的信念 — Ludwig Uhland | 德语诗歌学习画册</title>
+  <meta name="description" content="Frühlingsglaube（春天的信念）— Ludwig Uhland。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="der-spinnerin-nachtlied.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">纺纱女的夜歌</span></a>
+<a class="poem-nav__link poem-nav__next" href="bitte.html" rel="next"><span class="poem-nav__title">祈求</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Frühlingsglaube</h1>
+      <p class="poem-titleblock__author">Ludwig Uhland</p>
+      <p class="poem-titleblock__zh">春天的信念</p>
+      <p class="poem-titleblock__author-zh">路德维希·乌兰德</p>
+      <div class="poem-titleblock__biblio">
+        <p>《诗集（最后手定版）》·「歌」辑·《春之歌》组诗第二首</p>
+        <p>浪漫主义（施瓦本诗派）</p>
+        <p>1812年作，1815年首次发表</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--a">A2–B1</span>
+        <span class="tag ">春天</span>
+        <span class="tag ">希望</span>
+        <span class="tag ">安慰</span>
+        <span class="tag ">叠句</span>
+        <span class="tag ">舒伯特谱曲</span>
+        <span class="tag ">入门推荐</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>早春的丘陵谷地，风掠过尚未完全返青的草坡与新发的枝条；远处一道深而窄的山谷底部已开满白色花树</dd>
+        <dt>情绪</dt><dd>轻快、开阔、带一点未褪尽的寒意；应是"刚刚开始"而非盛春，避免明信片式的绚烂</dd>
+        <dt>画面元素</dt><dd>被风吹伏的草浪、初绽的果树花枝、飘动的云影、远处深谷中的一片花色、清澈的高光天空</dd>
+        <dt>时代感</dt><dd>无需明确时代标识；若出现人造物，应为19世纪初中欧乡村样式</dd>
+        <dt>推荐风格</dt><dd>19世纪浪漫主义风景油画风格，构图强调风的流向（云、草、枝条同向），色调以嫩绿、乳白与淡蓝为主，光线清亮但不炽烈</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；不得出现人物或面部；不得出现现代建筑、电线、农业机械；避免过饱和的粉色春景与花瓣特效</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Die linden Lüfte sind erwacht,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">和煦的风已经醒来，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Sie säuseln und weben Tag und Nacht,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">它们日夜低语、编织，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Sie schaffen an allen Enden.<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">在一切角落里劳作。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">O frischer Duft, o neuer Klang!<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">哦，新鲜的芬芳，哦，新的声响！</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">Nun, armes Herze, sei nicht bang!<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">此刻，可怜的心啊，不要害怕！</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Nun muß sich alles, alles wenden.<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">此刻，一切、一切都必将转变。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Die Welt wird schöner mit jedem Tag,</span></div>
+          <div class="pline__zh">世界一天比一天更美，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">Man weiß nicht, was noch werden mag,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">谁也不知道还会发生什么，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Das Blühen will nicht enden.</span></div>
+          <div class="pline__zh">这绽放不肯停止。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Es blüht das fernste, tiefste Tal:<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">最远、最深的山谷也在开花：</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="9"><span class="linetext">Nun, armes Herz, vergiß der Qual!<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
+          <div class="pline__zh">此刻，可怜的心啊，忘掉那苦痛吧！</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Nun muß sich alles, alles wenden.<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">此刻，一切、一切都必将转变。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留两节末尾完全相同的叠句与"alles, alles"的重复</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Die linden Lüfte sind erwacht,</p>
+        <p class="lnote__zh">lind（温和的、柔软的）是雅语，今日多用于 lindern（减轻）、Linderung（缓解）等派生词。die Lüfte 是 die Luft 的复数（诗歌中指"阵阵微风"，日常德语几乎只用单数）。erwachen（醒来）用 sein 作助动词，此处为现在完成时。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Sie säuseln und weben Tag und Nacht,</p>
+        <p class="lnote__zh">säuseln 是拟声词，指风穿过树叶的沙沙低语。weben 在此并非"编织布匹"的字面义，而是德语中一个古老的、用于自然力的用法"活动、涌动"（参见歌德 "Weben" 一词在《浮士德》中的用法）。Tag und Nacht 是不带冠词的固定表达。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Sie schaffen an allen Enden.</p>
+        <p class="lnote__zh">schaffen 在此取弱变化的"劳作、干活"义（schaffte, geschafft），而非强变化的"创造"（schuf, geschaffen）——这一区分是德语学习中的经典难点。an allen Enden 是固定短语，意为"在各个角落、到处"。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">O frischer Duft, o neuer Klang!</p>
+        <p class="lnote__zh">全诗唯一的纯感叹句，没有动词。两个感官（嗅觉 Duft、听觉 Klang）并置，把前三行的"活动"转成直接的感受。这也是全诗的节奏转折点：前三行是观察，后三行是对自己说话。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">Nun, armes Herze, sei nicht bang!</p>
+        <p class="lnote__zh">Herze 是 Herz 带旧式词尾 -e 的呼语形式（第二节第11行则作 Herz，无 -e——这是为音节数所作的调整，参见语法要点）。sei 是 sein 的第二人称单数命令式（不规则）。bang（今多作 bange）意为"害怕的、忐忑的"。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Nun muß sich alles, alles wenden.</p>
+        <p class="lnote__zh">全诗的叠句（Refrain），两节末尾一字不差地重复。sich wenden 意为"转向、发生转变"。muß 在此不是外在的强制，而是表示说话者的确信（"必定会"）——德语情态动词的这种"推断用法"（epistemischer Gebrauch）值得留意。alles 的重复把陈述推向近乎恳求的语气。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">Man weiß nicht, was noch werden mag,</p>
+        <p class="lnote__zh">was noch werden mag 中的 mag 是 mögen 的推测用法（"可能会"），不是"喜欢"。整句是全诗的核心：这份信念并不建立在已知之上，恰恰建立在"不知道"之上——不知道，所以还有可能。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Es blüht das fernste, tiefste Tal:</p>
+        <p class="lnote__zh">以形式主语 es 开头、真正主语 das Tal 后置。两个最高级 fernste / tiefste 并置而不加连词，是德语中加强语气的常见做法。"最远、最深的山谷"暗指连最偏僻、最阴暗之处也未被遗漏。</p>
+      </article>
+      <article class="lnote" id="note-9" data-noteref="9">
+        <span class="lnote__mark">9</span>
+        <p class="lnote__de">Nun, armes Herz, vergiß der Qual!</p>
+        <p class="lnote__zh">vergessen 在此支配第二格宾语（der Qual），是古典用法；现代德语用第四格（"vergiss die Qual"）。vergiß 为命令式旧拼法（今 vergiss）。与第一节相应位置的 "sei nicht bang"（不要害怕）相比，这里要求的更多：不是压住恐惧，而是放下痛苦。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">lind</span></div>
+        <span class="vocab-card__pos">adj.（雅语）</span>
+        <div class="vocab-card__meaning">温和的、柔和的</div>
+        <div class="vocab-card__note">今日多见于派生词 lindern（减轻痛苦）、die Linderung（缓解）；与树名 die Linde（椴树）同源。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Luft, Lüfte</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">空气；（复数，诗歌用法）阵阵微风</div>
+        <div class="vocab-card__note">日常德语几乎只用单数；复数 Lüfte 带明显的文学色彩，如 "in höheren Lüften"。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">säuseln</span></div>
+        <span class="vocab-card__pos">v.（弱变化，拟声）</span>
+        <div class="vocab-card__meaning">（风）沙沙作响、低语</div>
+        <div class="vocab-card__note">亦可讽刺地用于人"柔声细语地说"；与 sausen（呼啸）为同一词族但程度更轻。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">weben</span></div>
+        <span class="vocab-card__pos">v.</span>
+        <div class="vocab-card__meaning">①织布；②（古义/诗歌）活动、涌动、运作</div>
+        <div class="vocab-card__note">作"织布"义时今为弱变化（webte, gewebt），古强变化形式 wob/gewoben 仍见于诗歌。诗中取第②义。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">schaffen</span></div>
+        <span class="vocab-card__pos">v.</span>
+        <div class="vocab-card__meaning">①（强变化 schuf/geschaffen）创造；②（弱变化 schaffte/geschafft）干活、做到、办成</div>
+        <div class="vocab-card__note">德语中最著名的"一词两变位"现象之一。诗中取第②义（劳作）。日常习语 "Ich hab's geschafft!"（我做到了！）用的也是弱变化。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">bang / bange</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">害怕的、忐忑不安的</div>
+        <div class="vocab-card__note">常用结构 "mir ist bange vor etwas"（我害怕某事）；名词 die Bange 仅存于习语 "Nur keine Bange!"（别怕）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Qual, -en</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">痛苦、折磨</div>
+        <div class="vocab-card__note">动词 quälen（折磨）、名词 die Qualität（质量）与之无关（后者源自拉丁语）；习语 "die Qual der Wahl"（选择的痛苦）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">sich wenden</span></div>
+        <span class="vocab-card__pos">v.（弱变化，反身）</span>
+        <div class="vocab-card__meaning">转向、转变；（sich an jn. wenden）向某人求助</div>
+        <div class="vocab-card__note">亦有强变化形式 wandte/gewandt（用于"转身"与"求助"义）；名词 die Wende（转折）即1989/90年德国"转折"的专称。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">erwachen</td>
+          <td class="de">erwacht</td>
+          <td class="de">erwachte</td>
+          <td class="de">ist erwacht</td>
+          <td class="de">erwacht</td>
+          <td class="de">erwachte</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 表状态变化，用 sein；诗中现在完成时 "sind erwacht"。与及物的 wecken（唤醒）区分。</td></tr>
+        <tr>
+          <td class="de">schaffen（弱变化义：劳作）</td>
+          <td class="de">schafft</td>
+          <td class="de">schaffte</td>
+          <td class="de">hat geschafft</td>
+          <td class="de">geschafft</td>
+          <td class="de">schaffte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 另有强变化的同形动词 schaffen（创造）：schuf – hat geschaffen。两者变位不同、意义不同，须严格区分。</td></tr>
+        <tr>
+          <td class="de">werden</td>
+          <td class="de">wird</td>
+          <td class="de">wurde</td>
+          <td class="de">ist geworden</td>
+          <td class="de">geworden / worden</td>
+          <td class="de">würde</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中两处："Die Welt wird schöner"（变得更美，实义动词）与 "was noch werden mag"（会发生什么）。作被动或将来时的助动词时，第二分词用 worden。</td></tr>
+        <tr>
+          <td class="de">mögen</td>
+          <td class="de">mag</td>
+          <td class="de">mochte</td>
+          <td class="de">hat gemocht</td>
+          <td class="de">gemocht / mögen</td>
+          <td class="de">möchte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中 "was noch werden mag" 取推测义（可能会），而非"喜欢"。</td></tr>
+        <tr>
+          <td class="de">vergessen</td>
+          <td class="de">vergisst（旧 vergißt）</td>
+          <td class="de">vergaß</td>
+          <td class="de">hat vergessen</td>
+          <td class="de">vergessen</td>
+          <td class="de">vergäße</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音 e→i；诗中命令式旧拼法 vergiß（今 vergiss），并支配古典的第二格宾语。</td></tr>
+        <tr>
+          <td class="de">sich wenden</td>
+          <td class="de">wendet sich</td>
+          <td class="de">wendete / wandte sich</td>
+          <td class="de">hat sich gewendet / gewandt</td>
+          <td class="de">gewendet / gewandt</td>
+          <td class="de">wendete sich</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 弱、强两套形式并存：表"翻转、掉头"多用 wendete，表"转向某人求助"多用 wandte。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">情态动词的推断用法：muß ≠ 必须</h3>
+        <p class="grammar-item__quote">Nun muß sich alles, alles wenden.</p>
+        <div class="grammar-item__body">德语情态动词有两套用法：一是本义（müssen = 有义务/必须），二是"推断用法"，表示说话者对事实的把握程度。"Er muss zu Hause sein" 通常不是"他必须在家"，而是"他一定在家"。本诗叠句正是后者：不是命令世界改变，而是断言"一切必定会转变"。其他推断用法：kann（可能）、dürfte（大概）、mag（也许）、will（自称）。这是德语阅读中极易误判的一环。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">动词支配第二格：vergessen der Qual</h3>
+        <p class="grammar-item__quote">Nun, armes Herz, vergiß der Qual!</p>
+        <div class="grammar-item__body">vergessen 在古典德语中可支配第二格宾语，今日一律改用第四格（vergiss die Qual）。同类的"第二格残余"还有 gedenken（纪念）、bedürfen（需要）、sich enthalten（戒除）、harren（等待）。本站《纺纱女的夜歌》中的 "dein denken"、《流浪者的夜歌》中的 "des Treibens müde" 都是同一现象，可对照掌握。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">旧式第三格/呼语词尾 -e</h3>
+        <p class="grammar-item__quote">Nun, armes Herze, sei nicht bang! ／ Nun, armes Herz, vergiß der Qual!</p>
+        <div class="grammar-item__body">第一节作 Herze，第二节作 Herz——同一个词在同一首诗里出现了两种形式。原因是格律：第5行 "sei nicht bang" 比第11行 "vergiß der Qual" 少一个音节，于是用带 -e 的 Herze 补足。这种可加可不加的词尾 -e（dem Kinde、im Walde、nach Hause）在19世纪仍属常规，今日只保留在少数固定表达中。本诗恰好把两种形式并排放着，是观察这一现象的绝佳样本。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">同形异变位动词 schaffen</h3>
+        <p class="grammar-item__quote">Sie schaffen an allen Enden.</p>
+        <div class="grammar-item__body">schaffen 有两套完全不同的变位与意义：强变化 schuf – geschaffen 意为"创造"（Gott schuf die Welt），弱变化 schaffte – geschafft 意为"干活、办成、赶得上"（Ich habe es geschafft）。现在时形式相同，只有过去时与第二分词能区分。诗中风"在各个角落 schaffen"取的是劳作义。类似的同形异变位还有 bewegen、hängen、senden、wiegen 等，值得成组记忆。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《春天的信念》作于1812年，是乌兰德《春之歌》组诗中的第二首（前后分别为《春之预感》与《春之静息》）。乌兰德是施瓦本诗派的核心人物，也是1848年法兰克福国民议会的议员——在德语文学史上，他既是最被广泛传唱的抒情诗人之一，又是一位坚定的自由派政治家。</p>
+<p>这首诗只有十二行，语言简单到几乎没有生词，却是德语中最著名的春天诗。它之所以经得起反复阅读，在于它并不天真：第二节明确说"谁也不知道还会发生什么"（Man weiß nicht, was noch werden mag）——希望的根据不是对未来的把握，恰恰是对未来的无知。诗中被安慰的对象是"可怜的心"，说明说话者自己正处在需要安慰的位置；两节的要求也在递进，从"不要害怕"到"忘掉痛苦"。</p>
+<p>舒伯特1820年为它谱曲（D 686），并在1822年与1823年两度修订，最终版本是德语艺术歌曲中最著名的曲目之一。此外还有约瑟夫·兰讷、马克斯·雷格、康拉丁·克罗伊策等数十位作曲家的版本。诗的最后一行 "Nun muß sich alles, alles wenden" 在德语中已成为一句独立流传的成语式表达，常在困境中被引用。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。两处需要说明：(1) 叠句 "Nun muß sich alles, alles wenden" 中的 muß 是情态动词的推断用法（"必定会"）而非义务（"必须"），译文作"必将转变"以传达这一确信语气，详见"语法要点"；(2) 第5行 Herze 与第11行 Herz 在德语中是同一个词的两种形式（为格律而变），中文无法体现这一差别，译文统一作"心"，请学习者参见逐行注释。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Zeno.org — Ludwig Uhland: Werke. Band 1, München 1980, S. 31（Gedichte, Ausgabe letzter Hand · Lieder · Frühlingslieder, 2. Frühlingsglaube）</span><a class="source-url" href="http://www.zeno.org/Literatur/M/Uhland,+Ludwig/Gedichte/Gedichte+(Ausgabe+letzter+Hand)/Lieder/Fr%C3%BChlingslieder/2.+Fr%C3%BChlingsglaube" target="_blank" rel="noopener">http://www.zeno.org/Literatur/M/Uhland,+Ludwig/Gedichte/Gedichte+(Ausgabe+letzter+Hand)/Lieder/Fr%C3%BChlingslieder/2.+Fr%C3%BChlingsglaube</a>
+        <span class="source-note">主来源。依"最后手定版"数字化本，两节十二行完整，保留旧正字法 muß / vergiß；并确认此诗在组诗《春之歌》中的编号为第二首。</span>
+      </li>
+      <li>
+        <span class="source-name">gedichte7.de — „Frühlingsglaube – Uhland“</span><a class="source-url" href="https://www.gedichte7.de/fruehlingsglaube.html" target="_blank" rel="noopener">https://www.gedichte7.de/fruehlingsglaube.html</a>
+        <span class="source-note">辅助来源。两节十二行与主来源逐词、逐标点完全一致（含 Herze/Herz 的交替与 muß/vergiß 的旧拼法），用于独立交叉核对。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文通过两个独立来源（Zeno.org 转录的乌兰德"最后手定版"著作集第1卷，与 gedichte7.de）逐词逐标点核对，两节各六行，两来源完全一致，未发现任何异文。唯一需要说明的是正字法：muß 与 vergiß 为1996年正字法改革前的写法，今应作 muss / vergiss；本站保留主来源所依据的旧拼法，并在词汇与动词变位表中给出现代形式。另需注意，第5行的 Herze 与第11行的 Herz 并非讹误，而是作者为音节数所作的有意调整，两来源一致，本站照录并在语法要点中说明。关于创作年代（1812年）与首次发表（1815年），本站依据通行的乌兰德研究结论与主来源的组诗编排，未直接查阅初刊本，属待进一步核实项。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Ludwig Uhland</li>
+        <li>确认标题与出处：《春之歌》组诗第二首</li>
+        <li>德文原文主来源：Zeno.org（最后手定版著作集第1卷）</li>
+        <li>德文原文辅助来源：gedichte7.de</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（两来源无异文；仅旧/新正字法 muß/muss、vergiß/vergiss）</li>
+        <li>确认 Herze/Herz 交替非讹误（两来源一致）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">核实创作与首刊年代（现依二手研究结论）</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

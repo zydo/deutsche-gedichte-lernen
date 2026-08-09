@@ -72,8 +72,17 @@
         <span class="tag ">艺术与生存</span>
         <span class="tag ">经典必读</span>
       </div>
-          <div class="image-slot">
-      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+          <figure class="image-slot image-slot--filled">
+      <img src="../images/archaischer-torso-apollos.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+    </figure>
+    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+      <header class="modal__head">
+        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      </header>
+      <div class="modal__body">
+        <div class="image-slot">
       <dl>
         <dt>意象</dt><dd>博物馆展厅一隅，一尊无头无臂的古希腊大理石躯干像被侧向光源照亮，石体表面因光线而微微发亮，仿佛自内部透出光</dd>
         <dt>情绪</dt><dd>凝重、克制、带有被注视感；不应表现"残缺的悲情"，而应传达一种沉默的、逼视人的力量</dd>
@@ -83,8 +92,10 @@
         <dt>比例</dt><dd>4:3（横版）</dd>
         <dt>禁忌</dt><dd>不得出现文字、水印、展签、玻璃展柜反光；不得补全头部或四肢；不得出现观众、导览员等人物；避免情色化的处理，生殖部位应以古典雕塑的常规方式呈现或处于阴影中；不得出现现代照明灯具</dd>
       </dl>
-      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-    </div>
+          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+        </div>
+      </div>
+    </dialog>
     </header>
     <section class="section reveal section--parallel">
       <header class="section__head">
@@ -481,8 +492,8 @@
         <li>撰写语法要点</li>
         <li>撰写背景说明</li>
         <li>撰写 image brief</li>
-        <li class="pending">生成 AI 配图</li>
-        <li class="pending">页面视觉检查</li>
+        <li>生成 AI 配图（已接入）</li>
+        <li>页面视觉检查</li>
         <li class="pending">对照1908年 Insel 初版核实标点（现依全集转录）</li>
         <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 Bug / Sturz 二词的双关处理）</li>      </ul>
     </section>

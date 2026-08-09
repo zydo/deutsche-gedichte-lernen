@@ -392,7 +392,7 @@
     "taboos": "不得出现文字、水印；不得出现十字架、教堂内景、天使等直白的宗教符号；不得出现人物；不得出现现代路灯、电线、车辆；避免过度饱和的\"星空摄影\"式处理",
     "style": "19世纪浪漫主义夜景油画风格（可参考月夜风景画的传统），主色为深蓝、墨绿与雾白，月光是画面唯一的光源，笔触柔和，星点宜小而密"
   },
-  "image_path": null,
+  "image_path": "/images/abendlied.png",
   "german_sources": [
     {
       "name": "German Wikipedia — „Der Mond ist aufgegangen“（Abendlied von Matthias Claudius）",
@@ -413,26 +413,89 @@
   ],
   "verification_notes": "德文正文通过两个独立来源核对：German Wikipedia 同时转录了1779年《缪斯年鉴》版与1783年《万茨贝克信使全集》第四部版，gedichte7.de 提供了一个现代化排印的通行本。七节各六行的结构在所有版本中一致。已核实的版本差异如下：(1) 作者本人的修订：1779年版第六节末行作 \"Du lieber treuer frommer Gott!\"，1783年版改为 \"Du unser Herr und unser Gott!\"；Wikipedia 注释明确指出克劳迪乌斯1783年收入全集时修改了第六节第六行。本站从1783年作者手定版。(2) 标点与分行细节：1779年版第3行末为冒号、第13行末无破折号、第15行末为句号，1783年版分别作句号、破折号、感叹号；本站从1783年版。(3) 正字法：1783年版保留 seyn（今 sein）、Luftgespinnste（1779年版作 Luftgespinste）、laß（今 lass）等旧拼法，本站予以保留。(4) 一处语法疑点：1783年版第六节第五行作 \"Laß uns im Himmel kommen\"（第三格），而1779年版作 \"Laß uns in Himmel kommen\"；按现代语法表方向应为 \"in den Himmel\"。本站保留1783年版原样并在逐行注释中标明，但此处究竟是18世纪的用法波动还是排印之误，本站未能确定，属待核实项。(5) 另需说明：新教《福音赞美诗集》（1993）将第五节首行改作 \"Gott, laß dein Heil uns schauen\"，天主教《赞美上帝》（2013）作 \"Gott, lass uns dein Heil schauen\"，两者均标注为\"教会合一\"版本；本站采用克劳迪乌斯原诗的语序，不采教会歌本的改动。本站未直接查阅1778年《缪斯年鉴》与1783年全集的影印件，上述采择依据 Wikipedia 的转录（该词条已给出两版的 Google Books 数字化链接），建议有条件的读者对照原书核实。",
   "checklist": [
-    { "label": "确认作者：Matthias Claudius", "done": true },
-    { "label": "确认标题与出处：Abendlied，首刊《缪斯年鉴 1779》", "done": true },
-    { "label": "德文原文主来源：German Wikipedia（并列转录1779年版与1783年版）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（1779 vs 1783 作者修订；教会歌本改写；旧新正字法）", "done": true },
-    { "label": "确认蓝本关系（Paul Gerhardt《Nun ruhen alle Wälder》）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（德文原文已公版；现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇（含 eitel 一词的古今两义）", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "核实第六节 \"im Himmel\" 是用法波动还是排印之误", "done": false },
-    { "label": "对照1778/1783年原刊影印件核实标点", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Matthias Claudius",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Abendlied，首刊《缪斯年鉴 1779》",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：German Wikipedia（并列转录1779年版与1783年版）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（1779 vs 1783 作者修订；教会歌本改写；旧新正字法）",
+      "done": true
+    },
+    {
+      "label": "确认蓝本关系（Paul Gerhardt《Nun ruhen alle Wälder》）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（德文原文已公版；现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇（含 eitel 一词的古今两义）",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "核实第六节 \"im Himmel\" 是用法波动还是排印之误",
+      "done": false
+    },
+    {
+      "label": "对照1778/1783年原刊影印件核实标点",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

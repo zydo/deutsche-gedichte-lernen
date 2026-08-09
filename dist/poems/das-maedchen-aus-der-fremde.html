@@ -72,8 +72,17 @@
         <span class="tag ">格言诗</span>
         <span class="tag ">首次收录席勒</span>
       </div>
-          <div class="image-slot">
-      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+          <figure class="image-slot image-slot--filled">
+      <img src="../images/das-maedchen-aus-der-fremde.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+    </figure>
+    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+      <header class="modal__head">
+        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      </header>
+      <div class="modal__body">
+        <div class="image-slot">
       <dl>
         <dt>意象</dt><dd>早春的阿尔卑斯前山谷地，几间简陋牧屋与羊群散布在尚未完全返青的草坡上，一位身着素色长袍的年轻女子立于谷口，手中捧着与季节不相称的鲜花与成熟果实</dd>
         <dt>情绪</dt><dd>清朗、温和、略带不可接近的距离感；应传达"受欢迎但不被拥有"的分寸，而非童话式的甜美</dd>
@@ -83,8 +92,10 @@
         <dt>比例</dt><dd>4:3（横版）</dd>
         <dt>禁忌</dt><dd>不得出现文字、水印；不得出现光环、翅膀等神性符号（诗中刻意不点明来历，画面亦不应给出答案）；不得作面部特写或明显的表情刻画；不得出现现代农具、电线、公路</dd>
       </dl>
-      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-    </div>
+          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+        </div>
+      </div>
+    </dialog>
     </header>
     <section class="section reveal section--parallel">
       <header class="section__head">
@@ -498,8 +509,8 @@
         <li>撰写语法要点</li>
         <li>撰写背景说明</li>
         <li>撰写 image brief</li>
-        <li class="pending">生成 AI 配图</li>
-        <li class="pending">页面视觉检查</li>
+        <li>生成 AI 配图（已接入）</li>
+        <li>页面视觉检查</li>
         <li class="pending">核实首刊信息（《缪斯年鉴 1797》影印件）</li>
         <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
     </section>

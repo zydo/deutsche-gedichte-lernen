@@ -264,7 +264,7 @@
     "taboos": "不得出现文字、水印；不得出现龙的具象形象（诗中\"龙的族类\"应仅以幽暗洞口暗示）；避免明信片式的旅游风光感；不得出现人物面部特写",
     "style": "19世纪浪漫主义油画风格，可采用上暖下冷的垂直渐变构图，上部为金黄与地中海蓝，下部转为灰绿与雾白"
   },
-  "image_path": null,
+  "image_path": "/images/mignon.png",
   "german_sources": [
     {
       "name": "German Wikipedia — „Mignon (Gedicht)“",
@@ -285,24 +285,81 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（German Wikipedia 依汉堡版第7卷第145页，与 deutschelyrik.de）逐词核对，三节各七行、词序与内容完全一致。已记录的差异分两类：(1) 版本差异（作者本人修改）：《威廉·迈斯特的戏剧使命》早期稿第2行作 \"im grünen Laub\"、第4行作 \"…und froh der Lorbeer\"，且三节末行的呼语原本三次都是 Gebieter，歌德后改为 Geliebter / Beschützer / Vater。本站采用《学习时代》定稿。(2) 编辑排印差异（后世编者）：deutschelyrik.de 采用现代化正字法与略有不同的标点（第4行末作问号、第11行末多一破折号、第7行末作感叹号、第14行末作感叹号、第21行分号作感叹号、laß 作 lass），本站从汉堡版的拼写与标点。需说明的是，本站未直接查阅汉堡版纸质本或手稿，仅依据 Wikipedia 对该版的转录，故上述标点采择属\"依二手转录\"，建议有条件的读者对照汉堡版原书核实。",
   "checklist": [
-    { "label": "确认作者：Johann Wolfgang von Goethe", "done": true },
-    { "label": "确认标题：Mignon（首句 Kennst du das Land）", "done": true },
-    { "label": "德文原文主来源：German Wikipedia（引汉堡版 HA Bd. VII, S. 145）", "done": true },
-    { "label": "德文原文辅助来源：deutschelyrik.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（戏剧使命早期稿异文；两来源的正字法与标点差异）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照汉堡版纸质本核实标点（现依 Wikipedia 转录）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Johann Wolfgang von Goethe",
+      "done": true
+    },
+    {
+      "label": "确认标题：Mignon（首句 Kennst du das Land）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：German Wikipedia（引汉堡版 HA Bd. VII, S. 145）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（戏剧使命早期稿异文；两来源的正字法与标点差异）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "对照汉堡版纸质本核实标点（现依 Wikipedia 转录）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

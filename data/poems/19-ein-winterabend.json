@@ -274,7 +274,7 @@
     "taboos": "不得出现文字、水印；不得出现十字架、圣像等直白的宗教符号（诗中的圣餐意象是暗示性的）；不得出现人物（漂泊者应只以门外的脚印或阴影暗示）；不得出现现代电灯、家电、圣诞装饰",
     "style": "19世纪浪漫主义至20世纪初室内写实油画风格，单一暖光源与窗外冷蓝形成对比，门槛处的明暗交界应是画面的构图重心"
   },
-  "image_path": null,
+  "image_path": "/images/ein-winterabend.png",
   "german_sources": [
     {
       "name": "textlog.de — Georg Trakl, „Ein Winterabend“（2. Fassung，收于 Sebastian im Traum · Der Herbst des Einsamen）",
@@ -295,25 +295,85 @@
   ],
   "verification_notes": "德文正文以 textlog.de 明确标注的\"第2稿\"（即《梦中的塞巴斯蒂安》定稿）为主来源，以 aphorismen.de 为辅助来源逐词核对，三节十二行内容一致。核实到三项需要说明的差异：(1) 稿本差异（作者本人修改）：本诗存两稿，第一稿（textlog.de 题作 Im Winter）第二节后两行作 \"Seine Wunde voller Gnaden / Pflegt der Liebe sanfte Kraft.\"，第三节整体作 \"O! des Menschen bloße Pein. / Der mit Engeln stumm gerungen, / Langt von heiligem Schmerz bezwungen / Still nach Gottes Brot und Wein.\"，与定稿差异极大。本站采定稿，并在文化背景中完整引述第一稿以供对照。(2) 时态：第10行定稿作过去时 \"versteinerte\"（两来源一致），但网络上大量转载作现在时 \"versteinert\"；此差异直接影响海德格尔阐释所依据的语法，本站从两来源共同支持的过去时。(3) 标点：第9行 aphorismen.de 加逗号作 \"Wanderer, tritt still herein\"，textlog.de 不加逗号；逗号的有无决定了该行是否必须读作呼语＋命令式，本站从 textlog.de 的无逗号写法以保留原有歧义，并在注释中说明两种读法。需说明的是，本站未直接查阅1915年 Kurt Wolff 版《梦中的塞巴斯蒂安》影印件或萨尔茨堡历史批评版，上述采择依据数字化转录，属待进一步核实项。",
   "checklist": [
-    { "label": "确认作者：Georg Trakl", "done": true },
-    { "label": "确认标题与出处：Sebastian im Traum · Der Herbst des Einsamen", "done": true },
-    { "label": "德文原文主来源：textlog.de（明确标注第2稿）", "done": true },
-    { "label": "德文原文辅助来源：aphorismen.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（第1稿 vs 第2稿全文对照；versteinerte/versteinert；第9行逗号）", "done": true },
-    { "label": "确认公版状态（Trakl 1914年逝世，德文原文已进入公有领域）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照1915年初版或萨尔茨堡历史批评版核实标点", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第9行的读法与海德格尔阐释的转述）", "done": false }
+    {
+      "label": "确认作者：Georg Trakl",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Sebastian im Traum · Der Herbst des Einsamen",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：textlog.de（明确标注第2稿）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：aphorismen.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（第1稿 vs 第2稿全文对照；versteinerte/versteinert；第9行逗号）",
+      "done": true
+    },
+    {
+      "label": "确认公版状态（Trakl 1914年逝世，德文原文已进入公有领域）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "对照1915年初版或萨尔茨堡历史批评版核实标点",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第9行的读法与海德格尔阐释的转述）",
+      "done": false
+    }
   ]
 }

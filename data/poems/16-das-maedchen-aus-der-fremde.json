@@ -294,7 +294,7 @@
     "taboos": "不得出现文字、水印；不得出现光环、翅膀等神性符号（诗中刻意不点明来历，画面亦不应给出答案）；不得作面部特写或明显的表情刻画；不得出现现代农具、电线、公路",
     "style": "19世纪浪漫主义风景油画风格，清冷的早春光线，色调以灰绿、乳白与淡金为主，人物在画面中占比不宜过大，应与风景保持平衡"
   },
-  "image_path": null,
+  "image_path": "/images/das-maedchen-aus-der-fremde.png",
   "german_sources": [
     {
       "name": "Zeno.org — Friedrich Schiller: Sämtliche Werke, Band 1, München 1962, S. 255–256（„Das Mädchen aus der Fremde“）",
@@ -315,24 +315,81 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（Zeno.org 转录的 Hanser 版《席勒全集》第1卷，与 gedichte7.de）逐词逐标点核对，六节各四行，两来源完全一致，未发现任何异文——这在本站收录的诗作中较为少见，可信度较高。仅有一处需要说明：第6行 \"wußte\" 为1996年正字法改革前的写法，今应作 \"wusste\"；本站保留全集所依据的旧拼法，并在词汇与动词变位表中给出现代形式。关于创作与发表年代（1796年作、刊于《缪斯年鉴 1797》），本站依据通行的席勒研究结论，未直接查阅《缪斯年鉴》影印件，属待进一步核实项。",
   "checklist": [
-    { "label": "确认作者：Friedrich Schiller", "done": true },
-    { "label": "确认标题：Das Mädchen aus der Fremde", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Hanser 版全集第1卷）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（两来源无异文；仅旧/新正字法 wußte/wusste）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "核实首刊信息（《缪斯年鉴 1797》影印件）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Friedrich Schiller",
+      "done": true
+    },
+    {
+      "label": "确认标题：Das Mädchen aus der Fremde",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Hanser 版全集第1卷）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（两来源无异文；仅旧/新正字法 wußte/wusste）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "核实首刊信息（《缪斯年鉴 1797》影印件）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

@@ -1,0 +1,326 @@
+{
+  "id": "28",
+  "slug": "die-beiden",
+  "author": "Hugo von Hofmannsthal",
+  "author_zh": "胡戈·冯·霍夫曼斯塔尔",
+  "title_de": "Die beiden",
+  "title_zh": "他们两个",
+  "year": "1896年作",
+  "collection": "早期诗作（生前收入各种选本，如 Hans Bethge 编《利利恩克龙以来的德语抒情诗》1921）",
+  "period": "维也纳现代派 / 世纪末（Fin de Siècle）",
+  "difficulty": "B2",
+  "tags": [
+    "十四行诗",
+    "手",
+    "杯子",
+    "相遇",
+    "失手",
+    "维也纳现代派"
+  ],
+  "german_text": [
+    [
+      "Sie trug den Becher in der Hand",
+      "– Ihr Kinn und Mund glich seinem Rand –,",
+      "So leicht und sicher war ihr Gang,",
+      "Kein Tropfen aus dem Becher sprang."
+    ],
+    [
+      "So leicht und fest war seine Hand:",
+      "Er ritt auf einem jungen Pferde,",
+      "Und mit nachlässiger Gebärde",
+      "Erzwang er, daß es zitternd stand."
+    ],
+    [
+      "Jedoch, wenn er aus ihrer Hand",
+      "Den leichten Becher nehmen sollte,",
+      "So war es beiden allzu schwer:",
+      "Denn beide bebten sie so sehr,",
+      "Daß keine Hand die andre fand",
+      "Und dunkler Wein am Boden rollte."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留前两节各自的\"轻而稳／轻而定\"的对称，以及第三节六行一气而下的失控",
+    "text": [
+      [
+        "她手里端着那只杯子",
+        "——她的下颌与嘴唇与杯沿相似——，",
+        "她的步态如此轻盈而稳当，",
+        "没有一滴从杯中溅出。"
+      ],
+      [
+        "他的手也如此轻盈而坚定：",
+        "他骑在一匹年轻的马上，",
+        "只用一个漫不经心的姿势",
+        "便迫使它颤抖着站住。"
+      ],
+      [
+        "然而，当他要从她手中",
+        "接过那只轻轻的杯子时，",
+        "这对两人都太难了：",
+        "因为两人都抖得那样厉害，",
+        "以至于一只手找不到另一只手，",
+        "而深色的酒滚落在地上。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Sie trug den Becher in der Hand",
+      "zh": "全诗以最简单的陈述开篇，没有任何修饰。der Becher 指无柄的杯、盏（与 die Tasse 带柄的杯、das Glas 玻璃杯区分），带有仪式感。全诗至此还看不出任何张力。"
+    },
+    {
+      "de": "– Ihr Kinn und Mund glich seinem Rand –,",
+      "zh": "破折号中的插入句。请注意动词用单数 glich（而非复数 glichen），尽管主语是两个并列名词 Kinn und Mund——霍夫曼斯塔尔把\"下颌与嘴\"当作一个整体来处理。gleichen（相似）支配第三格宾语（seinem Rand）。seinem 指 der Becher（杯子）而非那位男子——这一点在第二节出现男主角后极易误读。此行另有作 glichen 的版本，详见校对记录。"
+    },
+    {
+      "de": "So leicht und sicher war ihr Gang,",
+      "zh": "leicht（轻盈）与 sicher（稳当）这对形容词将在下一节以 \"leicht und fest\" 的形式回响——只换了一个词。这种\"几乎相同\"是全诗结构的核心：两人各自都完美，且完美的方式如此相似。"
+    },
+    {
+      "de": "Kein Tropfen aus dem Becher sprang.",
+      "zh": "springen（跳、溅）的过去时 sprang。第一节的证明方式是一个否定：什么也没有发生——正是这种\"什么也没洒\"，衬托出第三节酒洒在地上的分量。"
+    },
+    {
+      "de": "So leicht und fest war seine Hand:",
+      "zh": "与第3行呼应，句式几乎完全相同（So leicht und …），只是把 sicher 换成 fest（坚定），把 ihr Gang 换成 seine Hand。冒号预告下面要给出证据。注意：全诗中 die Hand（手）出现五次，是绝对的关键词。"
+    },
+    {
+      "de": "Und mit nachlässiger Gebärde",
+      "zh": "die Gebärde（姿势、手势）是雅语，较 die Geste 更具身体性与戏剧性。nachlässig（漫不经心的、随意的）在此是褒义：真正的掌控无需用力。这是世纪末维也纳所推崇的\"优雅\"（Grazie）观念。"
+    },
+    {
+      "de": "Erzwang er, daß es zitternd stand.",
+      "zh": "erzwingen（强行使得、迫使）与前一行的 nachlässig 构成张力：漫不经心地\"强迫\"。es 指 das Pferd（中性）。zitternd（颤抖着）是全诗第一次出现颤抖——此时颤抖的还是马，到第三节将轮到这两个人。"
+    },
+    {
+      "de": "Jedoch, wenn er aus ihrer Hand",
+      "zh": "Jedoch（然而）标出全诗的转折。请注意 wenn 从句的谓语要到下一行行末才出现（nehmen sollte），而主句要到第11行才开始——第三节一开头就把语法悬置起来，读者与诗中人一样陷入等待。"
+    },
+    {
+      "de": "Den leichten Becher nehmen sollte,",
+      "zh": "der leichte Becher（那只轻轻的杯子）——leicht 一词在此第三次出现（前两次形容她的步态与他的手），如今落在了杯子上。刚才两人都能轻盈地掌控，如今连一件\"轻\"的东西也交接不了。这是全诗最精巧的一处词语调度。"
+    },
+    {
+      "de": "So war es beiden allzu schwer:",
+      "zh": "schwer（沉重、困难）直接对上 leicht（轻），构成全诗的语义轴心。beiden 是第三格复数（对两人而言）。allzu（过于）加强程度。冒号引出原因。部分谱曲版本（勋伯格、策姆林斯基）在此作 \"gar zu schwer\"，详见校对记录。"
+    },
+    {
+      "de": "Denn beide bebten sie so sehr,",
+      "zh": "beben（颤抖）较 zittern 更深、更内在，多用于大地或强烈情感。语序 \"beide bebten sie\" 中，beide 是前置的同位语、sie 是主语——德语允许这种拆分（\"Beide kamen sie zu spät\"）。第7行马的 zitternd 在此变成了人的 bebten。"
+    },
+    {
+      "de": "Daß keine Hand die andre fand",
+      "zh": "结果从句。这一行只用了六个最普通的单音节词，却是全诗的核心事件：手没有找到手。请注意\"手\"的独立性——不是\"两人没能完成交接\"，而是\"没有一只手找到另一只\"，仿佛手自己有意志。"
+    },
+    {
+      "de": "Und dunkler Wein am Boden rollte.",
+      "zh": "全诗收束。rollen（滚动）用于液体是不寻常的选择——酒不是\"洒\"（verschütten）或\"流\"（fließen），而是像固体一样在地上\"滚\"，这个动词让洒出的酒获得了近乎实体的重量。dunkler Wein（深色的酒）是全诗唯一的颜色词，也是唯一的血的暗示。全诗到此结束，没有任何评论。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Becher, -",
+      "pos": "n.（阳性）",
+      "meaning": "（无柄的）杯、盏、盅",
+      "note": "与 die Tasse（带柄的茶/咖啡杯）、das Glas（玻璃杯）区分；带古典与仪式色彩，如 der Kelch（圣餐杯）。"
+    },
+    {
+      "term": "gleichen",
+      "pos": "v.（强变化，支配第三格）",
+      "meaning": "相似、像",
+      "note": "变位 gleicht – glich – hat geglichen；宾语用第三格（Er gleicht seinem Vater 他像他父亲）。与 vergleichen（比较，支配第四格 + mit）区分。"
+    },
+    {
+      "term": "der Rand, Ränder",
+      "pos": "n.（阳性）",
+      "meaning": "边缘、边沿",
+      "note": "杯沿、书页边距、城市边缘（am Rande der Stadt）；习语 \"am Rande erwähnen\"（顺带提及）。"
+    },
+    {
+      "term": "die Gebärde, -n",
+      "pos": "n.（阴性，雅语）",
+      "meaning": "姿势、身姿、手势",
+      "note": "较 die Geste 更强调整个身体的姿态；动词 sich gebärden（举止、作态，常带贬义）；die Gebärdensprache 指手语。"
+    },
+    {
+      "term": "nachlässig",
+      "pos": "adj.",
+      "meaning": "漫不经心的、随意的；（贬）疏忽的",
+      "note": "在本诗中是褒义（毫不费力的从容），但日常用法多为贬义（nachlässige Arbeit 马虎的工作）——同一个词的褒贬取决于语境，值得留意。"
+    },
+    {
+      "term": "erzwingen",
+      "pos": "v.（不可分，强变化）",
+      "meaning": "强行使得、迫使达成",
+      "note": "变位 erzwingt – erzwang – hat erzwungen；与 zwingen（强迫某人）区分：erzwingen 的宾语是结果而非人（einen Sieg erzwingen 强行拿下胜利）。"
+    },
+    {
+      "term": "beben",
+      "pos": "v.（弱变化）",
+      "meaning": "（深深地）颤抖、震动",
+      "note": "较 zittern 更深沉、更内在；das Erdbeben（地震）同源。诗中与第7行马的 zittern 形成层次对照。"
+    },
+    {
+      "term": "allzu",
+      "pos": "adv.",
+      "meaning": "过于、太过",
+      "note": "比单用 zu 更强调；常见搭配 allzu viel、allzu gern、nicht allzu schwer。"
+    },
+    {
+      "term": "rollen",
+      "pos": "v.（弱变化）",
+      "meaning": "滚动、滚落",
+      "note": "通常用于球体、车轮等固体；诗中用于酒，是刻意的反常搭配，赋予液体以重量感。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "tragen",
+      "present_3sg": "trägt",
+      "preterite": "trug",
+      "perfect": "hat getragen",
+      "participle_ii": "getragen",
+      "subjunctive_ii": "trüge",
+      "auxiliary": "haben",
+      "note": "强变化，现在时单数变元音 a→ä；诗中过去时 trug 作全诗第二个词。"
+    },
+    {
+      "infinitive": "gleichen",
+      "present_3sg": "gleicht",
+      "preterite": "glich",
+      "perfect": "hat geglichen",
+      "participle_ii": "geglichen",
+      "subjunctive_ii": "gliche",
+      "auxiliary": "haben",
+      "note": "强变化（ei–i–i），支配第三格；诗中过去时单数 glich（尽管主语为两个并列名词）。"
+    },
+    {
+      "infinitive": "springen",
+      "present_3sg": "springt",
+      "preterite": "sprang",
+      "perfect": "ist gesprungen",
+      "participle_ii": "gesprungen",
+      "subjunctive_ii": "spränge",
+      "auxiliary": "sein",
+      "note": "强变化第三类（i–a–u）；诗中用于液体溅出（Kein Tropfen … sprang）。"
+    },
+    {
+      "infinitive": "reiten",
+      "present_3sg": "reitet",
+      "preterite": "ritt",
+      "perfect": "ist geritten",
+      "participle_ii": "geritten",
+      "subjunctive_ii": "ritte",
+      "auxiliary": "sein（表位移）／haben（表活动）",
+      "note": "强变化（ei–i–i）；诗中过去时 ritt。"
+    },
+    {
+      "infinitive": "erzwingen",
+      "present_3sg": "erzwingt",
+      "preterite": "erzwang",
+      "perfect": "hat erzwungen",
+      "participle_ii": "erzwungen",
+      "subjunctive_ii": "erzwänge",
+      "auxiliary": "haben",
+      "note": "强变化第三类；诗中过去时 Erzwang 置于句首（因状语在前）。"
+    },
+    {
+      "infinitive": "beben",
+      "present_3sg": "bebt",
+      "preterite": "bebte",
+      "perfect": "hat gebebt",
+      "participle_ii": "gebebt",
+      "subjunctive_ii": "bebte",
+      "auxiliary": "haben",
+      "note": "弱变化；诗中过去时复数 bebten。"
+    },
+    {
+      "infinitive": "finden",
+      "present_3sg": "findet",
+      "preterite": "fand",
+      "perfect": "hat gefunden",
+      "participle_ii": "gefunden",
+      "subjunctive_ii": "fände",
+      "auxiliary": "haben",
+      "note": "强变化第三类；诗中过去时 fand 位于 daß 从句末尾，是全诗的核心动词。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "并列主语与单数动词",
+      "quote": "– Ihr Kinn und Mund glich seinem Rand –,",
+      "body": "按规则，两个并列的单数主语（Kinn und Mund）应配复数动词 glichen。霍夫曼斯塔尔用单数 glich，把\"下颌与嘴\"当作一个不可分的整体（如同 \"Zeit und Geld ist knapp\" 这类把两者视为一体的用法）。这不是错误，而是有意的语法选择——脸的这两部分共同构成了一条弧线。请注意：不少通行版本把它\"改正\"为 glichen，本站从两个权威来源共同支持的 glich，详见校对记录。"
+    },
+    {
+      "title": "gleichen 支配第三格",
+      "quote": "Ihr Kinn und Mund glich seinem Rand",
+      "body": "德语中有一批动词支配第三格宾语：helfen、danken、folgen、gehören、begegnen、ähneln、gleichen 等。这类动词不能变被动语态的主语（不能说 \"er wird geholfen\"）。gleichen 的宾语在此是 seinem Rand（第三格），其中 seinem 指杯子（der Becher，阳性）——初读极易误以为指后文出现的男子，需靠第二节才能排除。"
+    },
+    {
+      "title": "前置同位语 beide",
+      "quote": "Denn beide bebten sie so sehr,",
+      "body": "德语允许把 beide、alle、jeder 等词从主语中拆出来前置，主语代词仍留在动词之后：\"Beide kamen sie zu spät\"（他们两个都来晚了）。这种拆分使被拆出的词获得强调。本行的效果是：\"两人\"这个事实先于\"他们\"被说出——正是\"两人同时\"造成了失败。"
+    },
+    {
+      "title": "十四行诗的变体结构：4+4+6",
+      "quote": "全诗 4 + 4 + 6 行，韵式 aabb / accа / abccab（近似）",
+      "body": "本诗是十四行，但不取意大利式的 4+4+3+3，而把最后六行合为一节。前两节各自封闭、彼此对称（她 / 他），第三节则一气到底不再分段——形式上的\"合不拢\"正对应内容上手与手的错失。另一个值得注意的形式细节：全诗几乎每一节都出现韵脚 -and（Hand, Rand, stand, Hand, fand），\"手\"这个词的读音贯穿始终。"
+    }
+  ],
+  "cultural_notes": "《他们两个》作于1896年，霍夫曼斯塔尔时年二十二岁。他十六七岁就以\"Loris\"为笔名在维也纳文坛暴得大名，被视为语言天赋的奇迹；这首十四行是他早期抒情诗中最著名的一首，几乎进入了所有德语诗选。\n\n全诗的构造近乎数学：第一节写她——端着满杯行走而不洒一滴；第二节写他——漫不经心地驯住一匹年轻的马；两节都在证明同一件事，即各自的从容与掌控。第三节让两人相遇，于是一切崩塌：接过一只\"轻轻的\"杯子这件小事，对两个能掌控一切的人\"太难了\"。\n\n诗中最耐读的是词的调度。leicht（轻）出现三次：她的步态轻、他的手轻、杯子轻——前两次是能力，第三次是嘲讽。zittern / beben（颤抖）出现两次：先是被驯服的马颤抖，后是两个人颤抖——掌控者与被掌控者的位置调换了。而全诗唯一的颜色词出现在最后一行：dunkler Wein（深色的酒）。\n\n这首诗被读作爱情诗，但霍夫曼斯塔尔从未点明两人是什么关系，也从未说出\"爱\"字。它同样可以读作关于\"自足与相遇\"的寓言：人在独处时的完美，恰恰在与另一个人接触的瞬间失效。这种对\"自我在他人面前解体\"的敏感，是维也纳世纪末文学的核心主题之一——同时期的马赫哲学正在论证\"自我是不可挽救的\"（Das Ich ist unrettbar）。\n\n此诗被多次谱曲，其中勋伯格与策姆林斯基的版本较为知名（两人都把第11行的 allzu 改作 gar zu）。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) 全诗的语义轴心是 leicht（轻）与 schwer（重／难）的对立，译文一律用\"轻\"与\"难/重\"对应，未作变化处理，尽管第10行\"那只轻轻的杯子\"在中文里略显生硬；(2) 第2行的 glich 是单数动词配并列主语，这一语法特征在中文里无法体现，请参见\"语法要点\"；(3) 末行的 rollte（滚落）是反常搭配（液体用了固体的动词），译文保留\"滚落\"而非改作\"洒\"或\"流\"。另需提醒：诗题在原刊与多数权威版本中作小写的 \"Die beiden\"，现代选本常改作 \"Die Beiden\"，本站从前者，详见校对记录。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "庭院石阶前的一瞬：一只女子的手托着一只浅口酒盏，另一只男子的手正伸向它却未触及；两手之间有极小的空隙；地面上已有一小摊深色的酒",
+    "mood": "屏息、悬停、微微的震颤；应捕捉\"就在失手的前一刻或后一刻\"，避免任何浪漫化或戏剧化的表演感",
+    "elements": "两只手的特写（一托一伸，指节可见轻微紧绷）、一只银或陶的浅口酒盏、盏中或盏沿残余的深红色酒液、石板地面上的一小摊酒渍、背景中极虚的马腿或缰绳暗示",
+    "era": "无需精确断代，可取中世纪晚期至文艺复兴的服饰与器物样式（诗的意象带有仿古的骑士气息）",
+    "taboos": "不得出现文字、水印；不得出现两人的面部或全身（诗的焦点始终在手上）；不得出现拥抱、亲吻等直白的情爱动作；不得出现现代器物；避免血液联想过强的鲜红色，酒应为深沉的暗红",
+    "style": "17世纪荷兰静物画式的写实油画风格，单一侧光，深色背景，手与盏是唯一的亮部；构图应留出两手之间的空隙作为画面的真正主角"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "textarchiv.com — Hugo von Hofmannsthal: „Die beiden“",
+      "url": "https://de.textarchiv.com/text/1647/die-beiden/",
+      "note": "主来源。三节十四行完整，标题作小写的 \"Die beiden\"，第2行作单数 glich，第9行作 \"Jedoch, wenn\"（带逗号），保留旧正字法 daß / Daß。"
+    },
+    {
+      "name": "The LiederNet Archive — Hugo von Hofmannsthal, „Die Beiden“",
+      "url": "https://www.lieder.net/lieder/get_text.html?TextId=8228",
+      "note": "辅助来源。标注核对自 Deutsche Lyrik seit Liliencron, hrsg. von Hans Bethge, Leipzig: Hesse & Becker, 1921, S. 119–120；十四行与主来源逐词一致（含单数 glich），并记录了勋伯格与策姆林斯基把第11行 allzu 改作 gar zu 的谱曲异文。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（textarchiv.com 与 LiederNet 依 Bethge 1921 年选本转录的文本）逐词核对，三节共十四行、用词完全一致。核实到的差异如下，本站均从两个主要来源共同支持的读法：(1) 第2行动词的数：两个来源均作单数 glich（\"Ihr Kinn und Mund glich seinem Rand\"），而 aphorismen.de 等部分流通版本作复数 glichen。因两个来源（其中之一可追溯到1921年的印本）一致支持 glich，且这一\"违规\"的单数正是霍夫曼斯塔尔把下颌与嘴视为一体的语法选择，本站从 glich，并在语法要点中说明。(2) 标题大小写：主来源与1921年印本作小写的 \"Die beiden\"，现代选本多改作 \"Die Beiden\"（LiederNet 的页面标题即用大写）。本站正文标题从原刊的小写形式，但 slug 使用 die-beiden。(3) 标点：主来源第9行作 \"Jedoch, wenn\"（带逗号）、第13行末不加逗号；LiederNet 转录作 \"Jedoch wenn\"（无逗号）、第13行末加逗号。本站从主来源。(4) 谱曲异文：勋伯格与策姆林斯基在第11行作 \"gar zu schwer\"，属作曲家改词而非文本异文，本站不采，仅记录。(5) 正字法：daß 为旧拼法，今作 dass；本站保留。需说明的是，本站未直接查阅霍夫曼斯塔尔诗作的历史批评版（Sämtliche Werke, Kritische Ausgabe, S. Fischer）或1896年的原始发表处，上述采择依据两个数字化来源，属待进一步核实项；此诗的首次发表出处本站亦未查明。",
+  "checklist": [
+    { "label": "确认作者：Hugo von Hofmannsthal", "done": true },
+    { "label": "确认标题：Die beiden（原刊小写）", "done": true },
+    { "label": "确认公版状态（Hofmannsthal 1929年逝世，德文原文自2000年起进入公有领域）", "done": true },
+    { "label": "德文原文主来源：textarchiv.com", "done": true },
+    { "label": "德文原文辅助来源：LiederNet（依 Bethge 1921 年选本）", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（glich/glichen；标题大小写；第9、13行标点；谱曲改词 gar zu）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "对照历史批评版（S. Fischer, Kritische Ausgabe）核实文本与标点", "done": false },
+    { "label": "查明1896年的首次发表出处", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 glich/glichen 的判定）", "done": false }
+  ]
+}

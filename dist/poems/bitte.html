@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Bitte · 祈求 — Nikolaus Lenau | 德语诗歌学习画册</title>
+  <meta name="description" content="Bitte（祈求）— Nikolaus Lenau。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="fruehlingsglaube.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">春天的信念</span></a>
+<a class="poem-nav__link poem-nav__next" href="herbstbild.html" rel="next"><span class="poem-nav__title">秋景</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Bitte</h1>
+      <p class="poem-titleblock__author">Nikolaus Lenau</p>
+      <p class="poem-titleblock__zh">祈求</p>
+      <p class="poem-titleblock__author-zh">尼古劳斯·莱瑙</p>
+      <div class="poem-titleblock__biblio">
+        <p>《诗集》·第一卷·「渴望」（Sehnsucht）辑</p>
+        <p>浪漫主义晚期 / 毕德麦耶</p>
+        <p>1832年前后作，1832年收入《诗集》</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B1–B2</span>
+        <span class="tag ">夜</span>
+        <span class="tag ">眼睛</span>
+        <span class="tag ">忧郁</span>
+        <span class="tag ">呼语</span>
+        <span class="tag ">极短诗</span>
+        <span class="tag ">被谱曲最多</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>极暗的画面：一片没有星光的深蓝夜空低低笼罩着一道模糊的地平线，画面中央偏上有一处稍浅的、近乎瞳孔状的幽暗区域，似夜似眼</dd>
+        <dt>情绪</dt><dd>沉静、被包裹、近乎催眠；不应恐怖或压抑到令人不适，而应传达一种被自愿接受的幽暗</dd>
+        <dt>画面元素</dt><dd>几乎无细节的夜空、极低的地平线、一处圆形的、边缘柔化的暗区（可读作瞳孔，也可读作夜的中心）、极微弱的边缘余光</dd>
+        <dt>时代感</dt><dd>无时代标识；应完全抽象化、无人造物</dd>
+        <dt>推荐风格</dt><dd>19世纪浪漫主义夜景油画风格，接近单色（深蓝—墨黑—极暗的紫），层次极少而过渡极柔，笔触几乎不可见</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；不得画出具体的人眼或面部（诗中的"眼睛"与"夜"是同一物，不可坐实为其一）；不得出现星星、月亮等明确光源；不得使用恐怖或超自然特效</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Weil auf mir, du dunkles Auge,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">停留在我身上吧，你幽暗的眼睛，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Übe deine ganze Macht,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">施展你全部的力量，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Ernste, milde, träumerische,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">肃穆的、温柔的、梦一般的、</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">Unergründlich süße Nacht!<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">深不可测而甜美的夜！</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">Nimm mit deinem Zauberdunkel<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">用你魔法般的幽暗</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Diese Welt von hinnen mir,<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">把这个世界从我这里带走，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">Daß du über meinem Leben<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">好让你在我的生命之上</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Einsam schwebest für und für.<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">孤独地永远悬浮。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留全诗四个命令式动词的祈求语气与第3—4行长呼语的悬置结构</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Weil auf mir, du dunkles Auge,</p>
+        <p class="lnote__zh">全诗最容易被误读的一行。Weil 在此不是连词"因为"，而是动词 weilen（停留、逗留）的第二人称单数命令式！整句意为"停留在我身上吧"。正因为易混，不少版本（如 Reclam 1883 年版）印作带省字符的 "Weil'"。若把它读成"因为"，全诗立刻不通——这是德语阅读中著名的陷阱之一。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Übe deine ganze Macht,</p>
+        <p class="lnote__zh">第二个命令式。üben 在此取"施行、行使"义（Macht üben = 行使力量），而非日常的"练习"；今日更常说 ausüben。注意呼语对象 "du dunkles Auge" 已在上一行出现，因此这里的命令式是对"眼睛/夜"说的。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Ernste, milde, träumerische,</p>
+        <p class="lnote__zh">三个形容词并列，全部是阴性单数第一格的弱变化形式（因为它们修饰下一行的 Nacht，并与其构成一个巨大的后置呼语）。整整一行只有形容词而没有中心词，读者必须读到下一行才知道它们在修饰什么——这种悬置正是全诗紧张感的来源。此行另有版本作 "Ernste, milde, zauberische" 等，属作曲家改动，详见校对记录。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">Unergründlich süße Nacht!</p>
+        <p class="lnote__zh">呼语的中心词终于出现：Nacht（夜）。此处发生了一次意象的合并——第1行称之为"幽暗的眼睛"，第4行揭示它同时也是"夜"。unergründlich（深不可测的）由 un- + ergründen（探究到底）+ -lich 构成，字面为"无法探到底的"。süß（甜美的）与前面的 ernst（肃穆）构成温柔的矛盾。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">Nimm mit deinem Zauberdunkel</p>
+        <p class="lnote__zh">第三个命令式（nehmen 的第二人称单数命令式 nimm，词干变元音 e→i）。das Zauberdunkel（魔法般的幽暗）是莱瑙自造的复合词，由 Zauber（魔法）+ Dunkel（幽暗，中性名词）构成。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Diese Welt von hinnen mir,</p>
+        <p class="lnote__zh">语序需要还原：Nimm mir diese Welt von hinnen = "把这个世界从我这里拿走"。mir 是"利益/损失第三格"（Dativus incommodi），表示动作涉及的人。von hinnen 是古语，意为"从此处离开"（今存于 "von hinnen gehen" = 去世）。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">Daß du über meinem Leben</p>
+        <p class="lnote__zh">daß（今 dass）引导目的从句（"以便、好让"），从句动词后置于下一行末尾。über + 第三格（meinem Leben）表示静态的位置"在……之上"——与表方向的第四格区分。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Einsam schwebest für und für.</p>
+        <p class="lnote__zh">schwebest 是 schweben（悬浮）的诗歌延长形式（今 schwebst）。für und für 是古老的固定表达，意为"永远、绵绵不绝"（今日已废，可对照英语 for ever and ever）。全诗以"孤独地悬浮"作结：说话者祈求的不是解脱，而是被这片幽暗永久地笼罩——这是莱瑙式忧郁最典型的姿态。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">weilen</span></div>
+        <span class="vocab-card__pos">v.（弱变化，雅语）</span>
+        <div class="vocab-card__meaning">停留、逗留</div>
+        <div class="vocab-card__note">今日基本仅存于书面雅语与派生词中：verweilen（驻足）、die Weile（一会儿）、langweilig（无聊的，字面"长时间的"）。诗中第二人称单数命令式 Weil 与连词 weil 同形，是全诗最大的阅读陷阱。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">üben</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">①练习；②（雅语）施行、行使</div>
+        <div class="vocab-card__note">诗中取第②义（Macht üben 行使权力），今多说 ausüben；亦见于 Kritik üben（提出批评）、Rache üben（复仇）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">unergründlich</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">深不可测的、无法探究的</div>
+        <div class="vocab-card__note">由 un- + ergründen（追根究底）+ -lich 构成；der Grund 兼有"底部"与"原因"两义，因此该词同时暗含"探不到底"与"找不出缘由"。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">das Dunkel</span></div>
+        <span class="vocab-card__pos">n.（中性）</span>
+        <div class="vocab-card__meaning">幽暗、黑暗</div>
+        <div class="vocab-card__note">名词化的形容词，中性；与 die Dunkelheit（黑暗状态）近义但更具文学色彩。诗中复合为 das Zauberdunkel。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">von hinnen</span></div>
+        <span class="vocab-card__pos">副词短语（古语）</span>
+        <div class="vocab-card__meaning">从此处离开</div>
+        <div class="vocab-card__note">今日仅存于 "von hinnen gehen/scheiden"（去世）这一委婉说法中；与 hier（此处）同源的方位副词系列还有 hierhin、dorthin。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">schweben</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">悬浮、飘浮、盘旋</div>
+        <div class="vocab-card__note">指不着地、不下落的状态；引申用法 "in Gefahr schweben"（处于危险中）、"etwas schwebt mir vor"（我心中有个设想）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">für und für</span></div>
+        <span class="vocab-card__pos">副词短语（古语）</span>
+        <div class="vocab-card__meaning">永远、绵绵不绝</div>
+        <div class="vocab-card__note">路德《圣经》译本中的常见表达，今已废弃；现代德语用 immerfort、für immer。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">weilen</td>
+          <td class="de">weilt</td>
+          <td class="de">weilte</td>
+          <td class="de">hat geweilt</td>
+          <td class="de">geweilt</td>
+          <td class="de">weilte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中第二人称单数命令式 Weil（部分版本印作 Weil'）；命令式省去词尾 -e 是弱变化动词的常规选项。</td></tr>
+        <tr>
+          <td class="de">üben</td>
+          <td class="de">übt</td>
+          <td class="de">übte</td>
+          <td class="de">hat geübt</td>
+          <td class="de">geübt</td>
+          <td class="de">übte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中命令式 Übe（保留词尾 -e）；同一首诗中 Weil（无 -e）与 Übe（有 -e）并存，取决于音节数。</td></tr>
+        <tr>
+          <td class="de">nehmen</td>
+          <td class="de">nimmt</td>
+          <td class="de">nahm</td>
+          <td class="de">hat genommen</td>
+          <td class="de">genommen</td>
+          <td class="de">nähme</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音 e→i 且辅音变化；命令式随之作 nimm!（不加 -e），这是变元音类强变化动词的固定规则（gib!, sieh!, iss!, hilf!）。</td></tr>
+        <tr>
+          <td class="de">schweben</td>
+          <td class="de">schwebt</td>
+          <td class="de">schwebte</td>
+          <td class="de">hat/ist geschwebt</td>
+          <td class="de">geschwebt</td>
+          <td class="de">schwebte</td>
+          <td>haben（表状态）／sein（表位移）</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中第二人称单数延长形式 schwebest（今 schwebst），位于 daß 从句末尾。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">命令式的形态：加 -e 还是不加？</h3>
+        <p class="grammar-item__quote">Weil auf mir … / Übe deine ganze Macht … / Nimm mit deinem Zauberdunkel …</p>
+        <div class="grammar-item__body">德语第二人称单数命令式有三种情况：(1) 弱变化动词可加可不加 -e（Übe! / Üb!、Weile! / Weil!），今日口语多不加；(2) 词干以 -t、-d、-ig 等结尾的必须加（Arbeite!、Entschuldige!）；(3) 现在时变元音 e→i/ie 的强变化动词一律不加，且必须变元音（nehmen → nimm!、geben → gib!、sehen → sieh!、helfen → hilf!）。本诗八行之内三种命令式全部出现，是一个浓缩的样本。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">同形陷阱：Weil（命令式）vs. weil（连词）</h3>
+        <p class="grammar-item__quote">Weil auf mir, du dunkles Auge,</p>
+        <div class="grammar-item__body">德语中动词 weilen 的命令式 weil 与从属连词 weil（因为）完全同形。判断方法有两条：一看语序——若是连词 weil，从句动词必须后置，而本行后面并没有一个后置动词；二看句末标点与语气——本行接的是呼语（du dunkles Auge）与后续的命令式，构成一串祈求。19世纪部分版本用省字符 "Weil'" 标出省略的词尾以消歧。类似的同形陷阱还有 der Band（卷）/ das Band（带子）、die Weise（方式/曲调）/ weise（智慧的）。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">后置的长呼语与悬置的中心词</h3>
+        <p class="grammar-item__quote">Ernste, milde, träumerische, / Unergründlich süße Nacht!</p>
+        <div class="grammar-item__body">第3行整行只有三个形容词，第4行才出现被修饰的名词 Nacht。德语的形容词必须与所修饰名词保持性、数、格一致，因此这三个词的弱变化词尾 -e 早已泄露了答案（阴性单数第一格），但意义要到下一行才落地。这种"先给属性、后给对象"的手法在德语诗歌中极常见（参见本站荷尔德林《生命的中途》的开篇），阅读时应学会先记住悬空的修饰语、等待中心词出现。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">利益/损失第三格（Dativus commodi/incommodi）</h3>
+        <p class="grammar-item__quote">Nimm mit deinem Zauberdunkel / Diese Welt von hinnen mir,</p>
+        <div class="grammar-item__body">mir 在此不是间接宾语（"给我"），而是表示动作涉及谁的"损失第三格"：把世界从"我这里"拿走。德语中这种第三格极常见："Er hat mir das Buch weggenommen"（他把书从我这儿拿走了）、"Mir ist die Tasse zerbrochen"（我的杯子碎了）。它不能按"给某人"来理解，而应译为"从某人处／对某人而言"。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《祈求》是莱瑙最著名的短诗，收在1832年《诗集》第一卷的「渴望」一辑中。莱瑙（本名 Nikolaus Franz Niembsch Edler von Strehlenau）出生于今匈牙利境内的德意志家庭，1832年曾赴美国购置土地、试图定居，很快失望而归；晚年患精神疾病，1844年后完全丧失创作能力，1850年去世。他的诗以浓重的忧郁著称，德语中甚至有 "Lenau-Ton"（莱瑙调）之说。</p>
+<p>这首诗只有八行，却完成了一次意象的合并：开篇呼唤的是"幽暗的眼睛"（du dunkles Auge），到第四行读者才发现，这只眼睛同时就是"夜"。这一双关使全诗可以有至少两种读法：一是把它当作情诗，对着一双深色的眼睛说话；二是把它当作对夜、对遗忘、乃至对死亡的祈求。莱瑙本人没有给出答案，两种读法在诗中始终并存。</p>
+<p>值得注意的是全诗的祈求内容：说话者要的不是安慰，也不是解脱，而是"把这个世界从我这里带走"，并且要那片幽暗"孤独地永远悬浮"在自己的生命之上。这不是从忧郁中求救，而是请求忧郁长久驻留——这种姿态是理解19世纪"世界痛苦"（Weltschmerz）的一把钥匙。</p>
+<p>此诗被谱曲的次数惊人，LiederNet 收录的作曲家超过二十位，其中包括罗伯特·弗朗茨、卡尔·勒韦、法妮·亨泽尔（门德尔松之姊）、马克斯·雷格、卡尔·奥尔夫，以及美国作曲家查尔斯·艾夫斯（1902年，同时另有英文版）。有几位作曲家还改动了第3行的形容词（如"zauberische""träumereiche"），可见这一行在演唱时的难度。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。最关键的一处是首行的 Weil：它是动词 weilen（停留）的命令式，而非连词"因为"，译文作"停留在我身上吧"，详见逐行注释与语法要点——这是本诗翻译中不容出错的一点。第二处需说明的是第6行的 mir（损失第三格），译文作"从我这里"，而非"给我"。第3—4行的长呼语在中文中难以保持悬置效果，译文以四个并列修饰语加句末的"夜"近似传达。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Zeno.org — Nikolaus Lenau: Sämtliche Werke und Briefe. Band 1, Leipzig und Frankfurt a. M. 1970, S. 17（Gedichte · Erstes Buch · Sehnsucht · Bitte）</span><a class="source-url" href="http://www.zeno.org/Literatur/M/Lenau,+Nikolaus/Gedichte/Gedichte/Erstes+Buch/Sehnsucht/Bitte" target="_blank" rel="noopener">http://www.zeno.org/Literatur/M/Lenau,+Nikolaus/Gedichte/Gedichte/Erstes+Buch/Sehnsucht/Bitte</a>
+        <span class="source-note">主来源。依 Insel 版《莱瑙全集与书信》第1卷数字化本，两节八行完整，首行作 "Weil"（不带省字符），保留旧正字法 Daß。</span>
+      </li>
+      <li>
+        <span class="source-name">The LiederNet Archive — Nikolaus Lenau, „Bitte“（„Weil' auf mir, du dunkles Auge“）</span><a class="source-url" href="https://www.lieder.net/lieder/get_text.html?TextId=9985" target="_blank" rel="noopener">https://www.lieder.net/lieder/get_text.html?TextId=9985</a>
+        <span class="source-note">辅助来源。标注核对自 Nicolaus Lenau's sämtliche Werke, hrsg. von G. Emil Barthel, Leipzig: Reclam [1883], S. 11；八行与主来源逐词一致，唯首行作带省字符的 "Weil'"，并记录了多位作曲家对第3行的改动。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文通过两个独立来源（Zeno.org 转录的 Insel 版《莱瑙全集与书信》第1卷第17页，与 LiederNet 依 Reclam 1883 年版转录的文本）逐词核对，两节各四行、内容完全一致。核实到的差异如下：(1) 首行写法：主来源作 "Weil"，LiederNet 依 Reclam 版作 "Weil'"（带省字符）。两者是同一个词——动词 weilen 的命令式——省字符只是编者为与连词 weil 消歧而加。本站从主来源的无省字符写法，并在逐行注释与语法要点中重点说明这一同形陷阱。(2) 第3行的异文：LiederNet 明确记录了三处作曲家改动——博尔科·冯·霍赫贝格作 "Ernste, milde, zauberische"，舍格伦作 "Ernste, milde, träumereiche"，施蒂希作 "Träumerische, ernste, milde"。这些均属谱曲时的改词而非文本异文，本站不采，仅在此记录。(3) 正字法：Daß 为旧拼法，今作 dass；本站保留主来源写法。需说明的是，本站未直接查阅1832年《诗集》初版影印件，创作年代与辑目归属依据主来源的编排，属待进一步核实项。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Nikolaus Lenau</li>
+        <li>确认标题与出处：《诗集》第一卷「渴望」辑</li>
+        <li>德文原文主来源：Zeno.org（Insel 版全集第1卷）</li>
+        <li>德文原文辅助来源：LiederNet（依 Reclam 1883 年版）</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（Weil/Weil'；作曲家对第3行的改动；旧新正字法）</li>
+        <li>确认首行 Weil 为 weilen 的命令式而非连词</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">核实1832年初版的辑目归属与创作年代</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

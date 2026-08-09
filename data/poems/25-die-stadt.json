@@ -1,0 +1,316 @@
+{
+  "id": "25",
+  "slug": "die-stadt",
+  "author": "Theodor Storm",
+  "author_zh": "特奥多尔·施托姆",
+  "title_de": "Die Stadt",
+  "title_zh": "那座城",
+  "year": "1851年作",
+  "collection": "《诗集》·第一卷",
+  "period": "现实主义（诗意现实主义 / Poetischer Realismus）",
+  "difficulty": "B1",
+  "tags": [
+    "故乡",
+    "大海",
+    "灰色",
+    "北德",
+    "青春记忆",
+    "叠句"
+  ],
+  "german_text": [
+    [
+      "Am grauen Strand, am grauen Meer",
+      "Und seitab liegt die Stadt;",
+      "Der Nebel drückt die Dächer schwer,",
+      "Und durch die Stille braust das Meer",
+      "Eintönig um die Stadt."
+    ],
+    [
+      "Es rauscht kein Wald, es schlägt im Mai",
+      "Kein Vogel ohn' Unterlaß;",
+      "Die Wandergans mit hartem Schrei",
+      "Nur fliegt in Herbstesnacht vorbei",
+      "Am Strande weht das Gras."
+    ],
+    [
+      "Doch hängt mein ganzes Herz an dir,",
+      "Du graue Stadt am Meer;",
+      "Der Jugend Zauber für und für",
+      "Ruht lächelnd doch auf dir, auf dir,",
+      "Du graue Stadt am Meer."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留三节相同的五行结构、\"灰色\"的反复，以及第三节由否定转向依恋的 doch",
+    "text": [
+      [
+        "在灰色的沙滩边，灰色的海边，",
+        "偏在一侧躺着那座城；",
+        "浓雾沉沉地压住屋顶，",
+        "而穿过这寂静，大海轰响着，",
+        "单调地绕着那座城。"
+      ],
+      [
+        "没有森林在沙沙作响，五月里也没有",
+        "一只鸟不停地鸣唱；",
+        "只有迁徙的雁带着尖厉的叫声",
+        "在秋夜里掠过，",
+        "沙滩上，草在风里摇动。"
+      ],
+      [
+        "然而我整颗心都系在你身上，",
+        "你海边灰色的城；",
+        "青春的魔力，绵绵不绝，",
+        "依然含笑停驻在你身上，在你身上，",
+        "你海边灰色的城。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Am grauen Strand, am grauen Meer",
+      "zh": "开篇即以 grau（灰色）两次修饰不同的对象，为全诗定下色调。am = an dem（第三格，表静态位置）。请注意：整首诗中\"灰色\"出现四次，而没有任何其他颜色词——这是德语诗歌中最著名的单色处理之一。"
+    },
+    {
+      "de": "Und seitab liegt die Stadt;",
+      "zh": "seitab（在一旁、偏离主道）是罕见的方位副词，暗示这座城不在任何交通要道上，被世界绕开了。动词 liegt 在前、主语 die Stadt 在后，这是德语中状语置于句首时的强制倒装。"
+    },
+    {
+      "de": "Der Nebel drückt die Dächer schwer,",
+      "zh": "drücken（压）+ 第四格宾语；schwer 在此是副词（沉重地），而非修饰 Dächer 的定语。雾不是笼罩屋顶，而是\"压住\"屋顶——一个赋予雾以重量的及物动词，是全诗最有力的一处用词。"
+    },
+    {
+      "de": "Und durch die Stille braust das Meer",
+      "zh": "brausen（轰鸣、奔腾作响）与上一行的 Stille（寂静）构成矛盾：在寂静中传来轰响。这不是逻辑错误——正因为别的声音都没有，海的声音才成为寂静本身的一部分。"
+    },
+    {
+      "de": "Eintönig um die Stadt.",
+      "zh": "eintönig（单调的，字面\"只有一个音调\"）是全诗的关键词之一。第一节以 \"die Stadt\" 开始、又以 \"die Stadt\" 结束，本身就是一次单调的回环。"
+    },
+    {
+      "de": "Es rauscht kein Wald, es schlägt im Mai / Kein Vogel ohn' Unterlaß;",
+      "zh": "两个以 es 开头的否定句并列，形式主语 es 后接真正的主语（kein Wald / kein Vogel）。schlagen 在此为鸟类专用词，指夜莺等鸣禽的婉转啼鸣（die Nachtigall schlägt）。ohn' Unterlaß 是 ohne Unterlass（不间断地）的省音形式。第二节整节都在说\"没有什么\"——德语中 kein 的两次前置使这种匮乏格外醒目。"
+    },
+    {
+      "de": "Die Wandergans mit hartem Schrei",
+      "zh": "die Wandergans（迁徙的雁）是复合词，第二节唯一的活物。hart（坚硬、刺耳）与前一行缺席的婉转鸟鸣形成对照：这里唯一的叫声是不悦耳的。"
+    },
+    {
+      "de": "Nur fliegt in Herbstesnacht vorbei",
+      "zh": "限定词 Nur 被提到行首，强调\"仅仅\"；可分动词 vorbeifliegen（飞过）的前缀 vorbei 落在行末。Herbstesnacht 中的 -es- 是连接成分（Fugenelement），带旧式书面色彩（今多作 Herbstnacht）。"
+    },
+    {
+      "de": "Am Strande weht das Gras.",
+      "zh": "Strande 带旧式第三格词尾 -e。这是第二节的收束，也是全诗最安静的一行：什么都没有发生，只有草在风中摇动。此行行末在不同版本中或有逗号或无标点，详见校对记录。"
+    },
+    {
+      "de": "Doch hängt mein ganzes Herz an dir,",
+      "zh": "全诗的转折。Doch（然而）置于句首引起倒装。an jemandem/etwas hängen 意为\"依恋、舍不得\"（an seiner Heimat hängen 眷恋故乡），是固定搭配，不能按字面\"挂在\"理解。经过两节的灰、雾、单调与匮乏，这一句才姗姗来迟。"
+    },
+    {
+      "de": "Der Jugend Zauber für und für",
+      "zh": "前置第二格：der Jugend Zauber = der Zauber der Jugend（青春的魔力）。für und für 是古老的固定表达，意为\"永远、绵绵不绝\"（本站莱瑙《祈求》末行亦用此语，可对照）。"
+    },
+    {
+      "de": "Ruht lächelnd doch auf dir, auf dir,",
+      "zh": "第二个 doch，在此不是转折而是加强语气（\"仍然、毕竟\"）。lächelnd 是现在分词作状语。\"auf dir, auf dir\" 的重复是全诗唯一一次情感失控——前十三行都极为克制，到这里才允许自己说两遍。"
+    },
+    {
+      "de": "Du graue Stadt am Meer.",
+      "zh": "与第12行完全相同的叠句，也是全诗的收束。值得注意的是：即使在最深情的第三节，这座城依然是\"灰色的\"——施托姆没有为了抒情而给它涂上任何别的颜色。这份诚实是全诗最动人之处。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "seitab",
+      "pos": "adv.（罕用）",
+      "meaning": "在一旁、偏离一侧",
+      "note": "较 abseits 更少见，几乎只出现在文学文本中；两者都指\"不在主道上、被绕开的\"。"
+    },
+    {
+      "term": "brausen",
+      "pos": "v.（弱变化）",
+      "meaning": "轰鸣、奔腾作响",
+      "note": "用于大海、风、人群的持续性巨响；南德口语中亦指\"淋浴\"（die Brause 花洒）。"
+    },
+    {
+      "term": "eintönig",
+      "pos": "adj.",
+      "meaning": "单调的、千篇一律的",
+      "note": "字面\"只有一个音调\"（ein + Ton + -ig）；同类构词还有 gleichförmig、monoton（外来语）。"
+    },
+    {
+      "term": "rauschen",
+      "pos": "v.（弱变化，拟声）",
+      "meaning": "（水、风、树叶）哗哗作响、沙沙作响",
+      "note": "与 rascheln（细碎的沙沙声，见本站黑贝尔《秋景》）程度不同：rauschen 更持续、更宏大。名词 der Rausch 另指\"陶醉、醉意\"。"
+    },
+    {
+      "term": "schlagen（鸟）",
+      "pos": "v.（强变化）",
+      "meaning": "（鸣禽）婉转啼鸣",
+      "note": "这是 schlagen 的一个专门用法，主语必须是夜莺、画眉等鸣禽（die Nachtigall schlägt）；与\"打、击\"的本义并存。"
+    },
+    {
+      "term": "ohne Unterlass",
+      "pos": "副词短语",
+      "meaning": "不间断地、持续不停地",
+      "note": "der Unterlass 只出现在这一个短语中，别处不用；诗中省音作 ohn' Unterlaß（旧拼法）。"
+    },
+    {
+      "term": "die Gans, Gänse",
+      "pos": "n.（阴性）",
+      "meaning": "鹅、雁",
+      "note": "诗中复合为 die Wandergans（迁徙的雁）；日常口语中 \"du dumme Gans\" 是对女性的贬称，使用需谨慎。"
+    },
+    {
+      "term": "an jemandem/etwas hängen",
+      "pos": "v.（强变化，固定搭配）",
+      "meaning": "依恋、舍不得",
+      "note": "不可按字面\"挂在……上\"理解；变位 hängt – hing – hat gehangen（不及物）。与及物的 hängen（挂上，hängte/gehängt）是同形异变位动词，须区分。"
+    },
+    {
+      "term": "für und für",
+      "pos": "副词短语（古语）",
+      "meaning": "永远、绵绵不绝",
+      "note": "今已废弃，现代德语用 immerfort、für immer；本站莱瑙《祈求》末行亦用此语。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "drücken",
+      "present_3sg": "drückt",
+      "preterite": "drückte",
+      "perfect": "hat gedrückt",
+      "participle_ii": "gedrückt",
+      "subjunctive_ii": "drückte",
+      "auxiliary": "haben",
+      "note": "及物动词；诗中主语为 der Nebel，宾语为 die Dächer——雾被赋予了物理的重量。"
+    },
+    {
+      "infinitive": "brausen",
+      "present_3sg": "braust",
+      "preterite": "brauste",
+      "perfect": "hat gebraust",
+      "participle_ii": "gebraust",
+      "subjunctive_ii": "brauste",
+      "auxiliary": "haben（表声响）／sein（表快速移动）",
+      "note": "诗中主语 das Meer 后置于动词之后（因状语 durch die Stille 置于句首）。"
+    },
+    {
+      "infinitive": "rauschen",
+      "present_3sg": "rauscht",
+      "preterite": "rauschte",
+      "perfect": "hat gerauscht",
+      "participle_ii": "gerauscht",
+      "subjunctive_ii": "rauschte",
+      "auxiliary": "haben",
+      "note": "诗中用于否定句 \"Es rauscht kein Wald\"。"
+    },
+    {
+      "infinitive": "schlagen",
+      "present_3sg": "schlägt",
+      "preterite": "schlug",
+      "perfect": "hat geschlagen",
+      "participle_ii": "geschlagen",
+      "subjunctive_ii": "schlüge",
+      "auxiliary": "haben",
+      "note": "强变化，现在时单数变元音 a→ä；诗中取\"鸣禽啼唱\"的专门用法。"
+    },
+    {
+      "infinitive": "vorbeifliegen",
+      "present_3sg": "fliegt vorbei",
+      "preterite": "flog vorbei",
+      "perfect": "ist vorbeigeflogen",
+      "participle_ii": "vorbeigeflogen",
+      "subjunctive_ii": "flöge vorbei",
+      "auxiliary": "sein",
+      "note": "可分动词；诗中 fliegt 与前缀 vorbei 分置于行首与行末，中间夹住整个状语。"
+    },
+    {
+      "infinitive": "hängen（不及物）",
+      "present_3sg": "hängt",
+      "preterite": "hing",
+      "perfect": "hat gehangen",
+      "participle_ii": "gehangen",
+      "subjunctive_ii": "hinge",
+      "auxiliary": "haben",
+      "note": "与及物的 hängen（hängte – gehängt，把某物挂上）为同形异变位动词。诗中为不及物用法的固定搭配 an jm. hängen（依恋）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "形式主语 es 与否定词 kein 的前置",
+      "quote": "Es rauscht kein Wald, es schlägt im Mai / Kein Vogel ohn' Unterlaß;",
+      "body": "德语用 es 占据句首位置、把真正的主语推到动词之后，以强调该主语是新信息（\"Es kommt ein Zug\"）。本节两次使用这一结构，且真正的主语都带否定词 kein——因此每一句的重点都落在\"没有\"上。请注意 kein 的用法：它否定的是带不定冠词或零冠词的名词（kein Wald = 一片森林也没有），而 nicht 否定动词或带定冠词的名词。整整一节都在列举缺席之物，为第三节的转折蓄势。"
+    },
+    {
+      "title": "同形异变位：hängen 及物 vs. 不及物",
+      "quote": "Doch hängt mein ganzes Herz an dir,",
+      "body": "德语中 hängen 有两套变位：不及物（某物挂着 / 依恋）为强变化 hing – hat gehangen；及物（把某物挂上）为弱变化 hängte – hat gehängt。本诗为不及物用法，构成固定搭配 an jemandem hängen（依恋某人某物）。类似的成对动词还有 liegen/legen、sitzen/setzen、stehen/stellen、erschrecken 的两套变位——这一组是德语中级阶段的核心难点，值得成组整理。"
+    },
+    {
+      "title": "前置第二格",
+      "quote": "Der Jugend Zauber für und für",
+      "body": "= der Zauber der Jugend（青春的魔力）。第二格前置在19世纪诗歌中很常见，今日只保留在专有名词（Goethes Werke）与少数固定表达中。识别窍门：若一行以 der/des/die + 名词开头、后面紧跟另一个名词而没有动词，多半就是前置第二格。本站在荷尔德林、里尔克、特拉克尔、克劳迪乌斯诸诗中都标注过这一结构，可对照复习。"
+    },
+    {
+      "title": "语气词 doch 的两种功能",
+      "quote": "Doch hängt mein ganzes Herz an dir … / Ruht lächelnd doch auf dir, auf dir,",
+      "body": "doch 在第11行位于句首，是转折连词（然而），引起倒装；在第14行位于句中，是语气词，表示\"仍然、毕竟\"，加强断言而不构成转折。德语语气词（doch, ja, mal, eben, halt, wohl）几乎没有对应的中文词，只能靠语气传达，是学习者最难掌握也最能体现语感的部分。同一首诗里 doch 出现两次而功能不同，是很好的对照样本。"
+    }
+  ],
+  "cultural_notes": "《那座城》作于1851年，写的是施托姆的故乡胡苏姆（Husum）——石勒苏益格的一座北海小城，今天当地仍以诗中的称呼自称\"海边灰色的城\"（die graue Stadt am Meer），这已成为胡苏姆的官方旅游标语。\n\n此诗写作的时间点很重要：1848年石勒苏益格-荷尔斯泰因起义失败后，作为丹麦统治下的德语律师，施托姆在1853年被迫离乡，此后流亡十余年才得以返回。诗中那种\"明知它一无所有却仍系于其上\"的语调，正来自这段即将到来的分离。\n\n全诗的构造极为克制：三节各五行，前两节几乎全是否定与匮乏——灰、雾、单调的海声、没有森林、没有五月的鸟鸣、只有一只叫声刺耳的过雁。直到第三节开头的 Doch（然而），情感才第一次出现，并且立刻在 \"auf dir, auf dir\" 的重复中溢出。最值得注意的是：即便在这最深情的一节，城依然是\"灰色的\"。施托姆没有为了抒情而修改事实，这份不加粉饰正是\"诗意现实主义\"（Poetischer Realismus）这一概念的教科书式例证——现实不被美化，但被赋予了情感的重量。\n\n此诗常与施托姆的《海滨》（Meeresstrand）并读，两首都写北海。它也被多次谱曲，阿尔班·贝尔格早年（1907年前后）的版本较为知名。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) grau（灰色）在诗中出现四次且是唯一的颜色词，译文一律作\"灰色\"，不作任何变化处理；(2) 第11行的 \"an dir hängen\" 是\"依恋\"的固定搭配，译作\"心系在你身上\"，不可按字面理解为\"挂在\"；(3) 第14行 \"auf dir, auf dir\" 的重复是全诗唯一的情感外露，译文照样重复，未作合并。第6行的 schlagen 特指鸣禽的婉转啼唱，译作\"鸣唱\"。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "低平的北海滩涂，浓雾中隐约可见一座小城的轮廓偏在画面一侧；前景是被风吹伏的滩涂草，中景是灰色的浅水与泥滩，天空与海几乎同色",
+    "mood": "萧索、单调、辽阔；应传达一种被世界绕开的寂静，而不是荒凉的悲情——雾与灰是这里的常态，不是灾难",
+    "elements": "灰色的浅滩与退潮后的水洼、被风吹伏的滩涂草、雾中低矮的屋顶轮廓与一座教堂塔尖、极低的地平线、天空中一小行南飞的雁",
+    "era": "19世纪中叶北德小城（胡苏姆）风貌；建筑应为低矮的砖砌房屋，不得出现现代元素",
+    "taboos": "不得出现文字、水印；不得使用灰色以外的显著色彩（可有极少量暖色，但不得成为视觉重点）；不得出现人物、船只、灯光；不得出现现代码头、风力发电机、公路",
+    "style": "19世纪现实主义风景油画风格，几乎单色（灰—灰绿—灰褐），天空占画面三分之二以上，笔触平缓，无强烈明暗对比"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "textlog.de — Theodor Storm, „Die Stadt“（Gedichte · I. Buch）",
+      "url": "https://www.textlog.de/storm/gedichte/die-stadt",
+      "note": "主来源。三节十五行完整，依施托姆《诗集》第一卷编排；第7行作省音形式 \"ohn' Unterlaß\"，第9行行末不加标点。"
+    },
+    {
+      "name": "gedichte7.de — „Am grauen Strand, am grauen Meer (Die Stadt) – Storm“",
+      "url": "https://www.gedichte7.de/die-stadt.html",
+      "note": "辅助来源。三节十五行与主来源逐词一致，唯第7行作完整形式 \"ohne Unterlaß\"、第9行行末加逗号，用于交叉核对用词与标点。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（textlog.de 的施托姆《诗集》第一卷数字化本与 gedichte7.de）逐词核对，三节各五行、内容一致。核实到两处排印层面的差异：(1) 第7行：主来源作省音形式 \"ohn' Unterlaß\"，gedichte7.de 作完整形式 \"ohne Unterlaß\"。省音形式少一个音节，更符合本行的四音步格律，本站从主来源。(2) 第9行行末：主来源不加标点（直接跨到下一行），gedichte7.de 加逗号。第9行与第10行在语法上是两个独立的句子（\"雁飞过\"与\"草在摇动\"），因此加不加标点会影响朗读的停顿，本站从主来源的无标点写法。此外，Unterlaß 为旧拼法（今 Unterlass），本站保留。需说明的是，本站未直接查阅施托姆《诗集》原刊或历史批评版，上述采择依据两个数字化来源；创作年代（1851年）依据通行的施托姆研究结论，未经原始文献核实，属待进一步核实项。",
+  "checklist": [
+    { "label": "确认作者：Theodor Storm", "done": true },
+    { "label": "确认标题与出处：《诗集》第一卷", "done": true },
+    { "label": "德文原文主来源：textlog.de", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（ohn'/ohne Unterlaß；第9行行末标点；旧新正字法）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "核实创作年代与原刊标点（现依数字化选本）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}

@@ -6,12 +6,13 @@
 
 视觉风格：纸张质感米白背景 + 优雅衬线字体（德文用 Cormorant/EB Garamond，中文用 Noto Serif SC）+ 暗金/灰蓝点缀，目标是"打开一本文学画册，旁边有位德语老师做精炼注释"的阅读体验。
 
-> **当前状态：共 20 首诗，分两批录入。**
+> **当前状态：共 29 首诗，分三批录入。**
 >
 > - **第一批（11 首）**：Goethe ×3、Heine ×3、Eichendorff、Mörike、Hölderlin、Rilke ×2 — 已配图。
-> - **第二批（9 首，新增）**：Goethe ×2（*Wandrers Nachtlied I*、*Mignon*）、Heine（*Der Tod, das ist die kühle Nacht*）、Rilke（*Archaïscher Torso Apollos*）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 文本与注释已完成、**配图待生成**（`image_path` 为 `null`，页面显示 image brief 占位）。
+> - **第二批（9 首）**：Goethe ×2（*Wandrers Nachtlied I*、*Mignon*）、Heine（*Der Tod, das ist die kühle Nacht*）、Rilke（*Archaïscher Torso Apollos*）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 已配图。
+> - **第三批（9 首，新增）**：Brentano、Uhland、Lenau、Hebbel、Storm、C. F. Meyer、Fontane、Hofmannsthal、Morgenstern — 全部为此前未收录的诗人，文本与注释已完成、**配图待生成**（`image_path` 为 `null`，页面显示 image brief 占位）。
 >
-> 收录诗人现共 11 位。技术架构支持持续扩充，见下方"如何添加一首新诗"。
+> 收录诗人现共 20 位，时间跨度自 18 世纪的 Claudius 至 20 世纪初的 Trakl、Hofmannsthal。技术架构支持持续扩充，见下方"如何添加一首新诗"。
 
 ---
 
@@ -41,7 +42,7 @@
 - 任何不确定的信息（版本差异、缺失的第二来源等）都在页面"校对记录"中如实注明"待核实"，不做主观取舍或美化。
 - 每首诗页面末尾附带一份可见的**上线前质量 Checklist**，尚未完成的项目会明确标红（如"生成 AI 配图"——见下文说明）。
 
-**关于配图**：第一批 11 首诗已配有 AI 生成插图（`public/images/`）。**第二批 9 首尚未配图**——当前部署环境未接入可用的图像生成模型，因此这 9 首的 `image_path` 均为 `null`，页面会渲染完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）作为占位，供你在有图像生成工具时按简报补充；详见[如何添加或替换配图](#如何添加或替换配图)。
+**关于配图**：第一、二批共 20 首诗已配有 AI 生成插图（`public/images/`）。**第三批 9 首尚未配图**——当前部署环境未接入可用的图像生成模型，因此这 9 首的 `image_path` 均为 `null`，页面会渲染完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）作为占位，供你在有图像生成工具时按简报补充；详见[如何添加或替换配图](#如何添加或替换配图)。
 
 ---
 
@@ -55,10 +56,10 @@
 │   └── poems/                  # 每首诗一个 JSON 文件，是全站唯一的数据源
 │       ├── 01-heidenroeslein.json
 │       ├── 02-wandrers-nachtlied.json
-│       └── ...                  # 目前共 20 个文件（01–20）
+│       └── ...                  # 目前共 29 个文件（01–29）
 ├── public/
 │   ├── style.css                # 主样式表（纸张质感 / 衬线字体 / 配色变量）
-│   └── images/                  # 配图（目前仅第一批 11 首）
+│   └── images/                  # 配图（目前为第一、二批共 20 首）
 ├── src/
 │   ├── build.js                 # 构建脚本：读取 data/poems/*.json → 生成 dist/
 │   ├── templates.js             # 纯字符串 HTML 模板（无第三方模板引擎）
@@ -201,7 +202,7 @@ node src/build.js
 
 ## 内容与译文版权注意事项
 
-- **德文原文**：目前收录的 20 首诗，作者均已去世超过 70 年（Rilke 1926年逝世，是最晚的一位；第二批中最晚的是 Trakl，1914年逝世），其原始德文文本在德国/欧盟法律下已进入公有领域，可以自由使用、展示、转载。
+- **德文原文**：目前收录的 29 首诗，作者均已去世超过 70 年。逝世最晚的是 Hugo von Hofmannsthal（1929年，其作品自2000年起进入公有领域），其次为 Rilke（1926）、Trakl 与 Morgenstern（均 1914）。所有原始德文文本在德国/欧盟法律下均已进入公有领域，可以自由使用、展示、转载。
 - **德文原文的具体录入版本**：即便原诗本身公版，某些出版社/编辑校勘的"具体版本"（如某大学出版社的现代校勘本）本身可能受编辑劳动的版权保护；本站引用的 deutschelyrik.de、textlog.de、Zeno.org、Kalliope、gedichte7.de、维基百科等均为面向公众免费开放阅读的资源，但如果你计划将本项目用于商业用途，建议进一步核实这些网站的转载政策。
 - **现代中文/英文译本**：绝大多数广为流传的名家译本（如钱春绮、冯至、杨武能、Stephen Mitchell 等译者的作品）译者去世未满 70 年，仍受版权保护。**本站不转载任何此类译本的原文**，仅在"译文说明"中提及其存在，供读者自行查阅正版出版物。
 - **本站学习译文**：由 AI 辅助生成，以贴近原文结构、便于学习为目标，不追求独立文学价值。这些译文可视为本项目的原创内容，采用与本项目其余部分相同的开源/非商业学习用途授权（具体授权条款请项目维护者自行补充选定的 License，例如 CC BY-NC 4.0）。
@@ -211,12 +212,20 @@ node src/build.js
 
 ## 已知局限 / 后续工作
 
-- 当前共 **20 首、11 位诗人**：Goethe ×5、Heine ×4、Rilke ×3、Eichendorff、Mörike、Hölderlin、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius。Brentano、Storm、Fontane、Hofmannsthal 等候选诗人仍未收录，欢迎按"如何添加一首新诗"的流程扩充。
+- 当前共 **29 首、20 位诗人**：Goethe ×5、Heine ×4、Rilke ×3，以及 Eichendorff、Mörike、Hölderlin、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius、Brentano、Uhland、Lenau、Hebbel、Storm、C. F. Meyer、Fontane、Hofmannsthal、Morgenstern 各 1 首。
+- **仍未覆盖的时代**：巴洛克及更早（Gryphius、Fleming、Angelus Silesius、Walther von der Vogelweide）与 20 世纪表现主义（Heym、Stadler、Lasker-Schüler 等，均已公版），是后续扩充最明显的两个方向。
 - 部分诗歌（Mondnacht、Er ist's、Hälfte des Lebens、Herbsttag、Du bist wie eine Blume 等）在校对阶段除主来源外，还通过维基百科等第二来源交叉核对；少数校对记录中标注"建议后续补充第三来源"的诗歌，属于本站认为可信度已经足够但仍鼓励进一步验证的情况，请查阅各诗页面底部"校对记录"了解具体细节。
-- **第二批 9 首的 AI 配图尚未生成**（见上文说明），是这一批最主要的未完成项；每首诗的 `image_prompt` 已按 4:3 横版写好，可直接用于生成。
-- 第二批中有几处**尚未解决的文本疑点**，均已写入对应诗页的"校对记录"，并在 checklist 中标为未完成，特此汇总提醒：
+- **第三批 9 首的 AI 配图尚未生成**（见上文说明），是这一批最主要的未完成项；每首诗的 `image_prompt` 已按 4:3 横版写好，可直接用于生成。
+- 各批次中**尚未解决的文本疑点**均已写入对应诗页的"校对记录"，并在 checklist 中标为未完成，特此汇总提醒：
   - Novalis《Wenn nicht mehr Zahlen und Figuren》第10、11 行存在两处实质异文（`ewgen`/`wahren`、`vor Einem`/`von einem`），本站从历史批评版，但流通版本异文的来源尚未查明。
   - Claudius《Abendlied》1783 年版第 35 行作 `Laß uns im Himmel kommen`（第三格），按现代语法应为 `in den Himmel`；究竟是 18 世纪用法波动还是排印之误，本站未能确定。
   - Trakl《Ein Winterabend》存两稿且差异极大，本站采第二稿（定稿）并在背景说明中完整引述第一稿；第 9 行 `Wanderer tritt still herein` 的命令式／陈述句歧义按原文保留，未作消歧。
+  - Brentano《Der Spinnerin Nachtlied》第 9、14 行存在两处异文（`Als`/`Da`、`Denk' ich wohl dein`/`Gedenk ich dein`），孰为作者定本尚未查明。
+  - Fontane《Herr von Ribbeck》共记录 8 类版本差异，其中第 40 行 `ich gew di`（全集本）与 `ick gew di`（通行本）疑为排印之误，需对照原刊核实。
+  - Hofmannsthal《Die beiden》第 2 行的 `glich`（单数）与 `glichen`（复数）之争：本站从两个来源共同支持的单数形式，但建议对照历史批评版复核。
+  - C. F. Meyer《Der römische Brunnen》现存六至七种稿本，本站仅采 1892 年定稿，早期稿本未逐一核对。
   - 多首诗的具体标点采自数字化转录而非原刊影印件（详见各诗校对记录）。
+- **第三批新增的两类特殊内容**，使用时请留意：
+  - Fontane《Herr von Ribbeck》含约六行**低地德语（Plattdeutsch）**对白，词汇表中附有标准德语对照小词表；建议由低地德语使用者复核一次。
+  - Morgenstern《Der Werwolf》的全部笑点建立在德语疑问代词 `wer` 的四格变化上，**在字面意义上不可译**。本站采取"直译叙事 + 括注构词机制"的策略，已在该诗"译文说明"中明确交代取舍。
 - 全部内容均由 AI 辅助完成一次系统性校对与撰写，但**尚未经过人工德语文学专家的最终复核**，这一点已在每首诗的 checklist 中如实标注（"最终人工复核说明"一项为未完成状态）。如果你是德语文学或语言学背景的读者，非常欢迎对照来源检查并指出错误。

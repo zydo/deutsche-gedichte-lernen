@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Herbstbild · 秋景 — Friedrich Hebbel | 德语诗歌学习画册</title>
+  <meta name="description" content="Herbstbild（秋景）— Friedrich Hebbel。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="bitte.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">祈求</span></a>
+<a class="poem-nav__link poem-nav__next" href="die-stadt.html" rel="next"><span class="poem-nav__title">那座城</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Herbstbild</h1>
+      <p class="poem-titleblock__author">Friedrich Hebbel</p>
+      <p class="poem-titleblock__zh">秋景</p>
+      <p class="poem-titleblock__author-zh">弗里德里希·黑贝尔</p>
+      <div class="poem-titleblock__biblio">
+        <p>《诗集》</p>
+        <p>现实主义 / 毕德麦耶晚期</p>
+        <p>1852年10月作于维也纳</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B1</span>
+        <span class="tag ">秋天</span>
+        <span class="tag ">成熟</span>
+        <span class="tag ">静止</span>
+        <span class="tag ">收获</span>
+        <span class="tag ">自然的庆典</span>
+        <span class="tag ">十四行式八行诗</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>无风的秋日果园，午后的斜光穿过枝叶；几枚熟透的果实正在半空中下落，树下草地上已散落数枚，空气中有极细的尘埃在光里悬浮</dd>
+        <dt>情绪</dt><dd>静止、庄重、近乎屏息；应传达"什么都没动，却仍有东西在落"的悖论感，不作丰收的喜庆化处理</dd>
+        <dt>画面元素</dt><dd>老果树（苹果或梨）的枝干、饱满的果实（枝上与坠落中各有几枚）、草地上已落的果、被光照亮的悬浮尘埃、长而柔和的斜影</dd>
+        <dt>时代感</dt><dd>无需明确时代标识；若出现人造物，应为19世纪中欧乡村样式</dd>
+        <dt>推荐风格</dt><dd>19世纪现实主义风景油画风格，光线是画面的主角，色调以暖金、赭黄与深绿为主，构图静态、重心偏低，坠落中的果实是唯一的动态元素</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；不得出现人物、梯子、篮筐等采收器具（诗中强调"自然亲自举行的采收"，不容人手介入）；不得出现现代农具或建筑；避免落叶满地的典型秋景（诗中落的是果实，不是叶子）</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Dies ist ein Herbsttag, wie ich keinen sah!<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">这是一个我从未见过的秋日！</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Die Luft ist still, als atmete man kaum,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">空气静止着，仿佛人几乎不在呼吸，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Und dennoch fallen raschelnd, fern und nah,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">然而依旧簌簌落下，远处近处，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">Die schönsten Früchte ab von jedem Baum.<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">最美的果实从每一棵树上坠落。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">O stört sie nicht, die Feier der Natur!<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">哦，不要打扰它，这自然的庆典！</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Dies ist die Lese, die sie selber hält,<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">这是它亲自举行的收获，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">Denn heute löst sich von den Zweigen nur,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">因为今天从枝头脱落的，唯有</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Was vor dem milden Strahl der Sonne fällt.<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">那在太阳温和的光线下坠落之物。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留第一节"静止—却仍在坠落"的转折与第二节由描写转入劝诫的语气变化</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Dies ist ein Herbsttag, wie ich keinen sah!</p>
+        <p class="lnote__zh">关系从句 "wie ich keinen sah" 中的 keinen 是第四格阳性，回指 einen Herbsttag："（这样的秋日）我从未见过一个"。德语用 wie 引导这类比较性关系从句（"ein Mensch, wie ich keinen kenne"）。sah 为过去时。开篇的感叹号定下全诗的惊异语气。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Die Luft ist still, als atmete man kaum,</p>
+        <p class="lnote__zh">als（仿佛）引导的非现实比较从句，动词用第二虚拟式 atmete 并紧跟在 als 之后（不带 ob 时必须倒装）。man kaum atmete 意为"人几乎不呼吸"——不是说没有人在呼吸，而是说空气静到连呼吸都显得多余。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Und dennoch fallen raschelnd, fern und nah,</p>
+        <p class="lnote__zh">dennoch（然而、尽管如此）标出全诗的第一个转折：空气完全静止，却仍有东西在落。raschelnd 是现在分词作状语（"簌簌作响地"），拟声。fern und nah 是不带冠词的固定对举。注意本行的主语要到下一行才出现。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">Die schönsten Früchte ab von jedem Baum.</p>
+        <p class="lnote__zh">可分动词 abfallen（脱落）的前缀 ab 在此被推到主语之后（fallen … ab），这是德语框型结构的典型效果。请注意：落下的不是枯叶，而是"最美的果实"——成熟到极致的东西自己脱落，这是全诗的核心命题。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">O stört sie nicht, die Feier der Natur!</p>
+        <p class="lnote__zh">第二节由描写转为直接劝诫。stört 是第二人称复数命令式（对读者说话）。sie 先出现，其所指 "die Feier der Natur" 作为同位语后置补充——这是德语中常见的"右移"（Rechtsversetzung）结构，口语中也很常见。die Feier（庆典、仪式）一词把落果提升为一场典礼。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Dies ist die Lese, die sie selber hält,</p>
+        <p class="lnote__zh">die Lese 特指采摘葡萄或果实的收获（动词 lesen 在此为古义"拾取、采集"，与"阅读"同形——参见 die Weinlese 葡萄采收、Ähren lesen 拾麦穗）。sie 指上一行的 die Natur。"自然亲自举行的收获"意味着无需人手介入。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">Denn heute löst sich von den Zweigen nur,</p>
+        <p class="lnote__zh">sich lösen（脱落、松开）为反身动词。nur（唯有）位于行末，它所限定的内容要到下一行才揭晓——这一悬置使最后一行获得了格言般的分量。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Was vor dem milden Strahl der Sonne fällt.</p>
+        <p class="lnote__zh">was 引导的自由关系从句作上一行 nur 的补足语。介词 vor 在此含义微妙：既可理解为空间上的"在……面前"，也可理解为因果上的"由于"（如 "vor Freude weinen" 因喜悦而哭）。两种读法都成立——果实是"在阳光面前"坠落，也是"因为阳光"而坠落。这一歧义是全诗最耐读之处，翻译无法两全。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">rascheln</span></div>
+        <span class="vocab-card__pos">v.（弱变化，拟声）</span>
+        <div class="vocab-card__meaning">沙沙作响、簌簌作响</div>
+        <div class="vocab-card__note">特指干燥的叶子、纸张摩擦发出的细碎声响；诗中作现在分词 raschelnd 用作状语。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">abfallen</span></div>
+        <span class="vocab-card__pos">v.（可分，强变化）</span>
+        <div class="vocab-card__meaning">脱落、掉落；（引申）背弃、下降</div>
+        <div class="vocab-card__note">变位 fällt ab – fiel ab – ist abgefallen；派生词 der Abfall（垃圾；背离）。诗中前缀被推至句中。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Feier, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">庆典、庆祝仪式</div>
+        <div class="vocab-card__note">动词 feiern（庆祝）、形容词 feierlich（庄严的）；诗中用来抬升落果这一自然现象的地位。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Lese, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">（果实、葡萄的）采收</div>
+        <div class="vocab-card__note">来自 lesen 的古义"拾取、采集"（与"阅读"同源：从散乱中挑拣出来）；die Weinlese 指葡萄采收季，是德语葡萄酒文化的核心词。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">sich lösen</span></div>
+        <span class="vocab-card__pos">v.（弱变化，反身）</span>
+        <div class="vocab-card__meaning">松开、脱落、化开</div>
+        <div class="vocab-card__note">非反身的 lösen 意为"解开、解决、溶解"（ein Problem lösen 解决问题、Zucker in Wasser lösen 把糖溶于水）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Zweig, -e</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">树枝、枝条；（引申）分支</div>
+        <div class="vocab-card__note">较 der Ast（粗枝）细；引申用于 Wissenschaftszweig（学科分支）、Zweigstelle（分支机构）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Strahl, -en</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">光线、射线；（水）柱</div>
+        <div class="vocab-card__note">复数 Strahlen；动词 strahlen（放射；容光焕发）。本站 C. F. Meyer《罗马喷泉》中的 Strahl 取"水柱"义，可对照。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">mild</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">温和的、柔和的；（气候）不严酷的</div>
+        <div class="vocab-card__note">常用于气候（ein milder Winter）、口味（milder Käse）与判决（ein mildes Urteil）；诗中形容秋日阳光。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">sehen</td>
+          <td class="de">sieht</td>
+          <td class="de">sah</td>
+          <td class="de">hat gesehen</td>
+          <td class="de">gesehen</td>
+          <td class="de">sähe</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音 e→ie；诗中过去时 sah 位于关系从句末尾。</td></tr>
+        <tr>
+          <td class="de">atmen</td>
+          <td class="de">atmet</td>
+          <td class="de">atmete</td>
+          <td class="de">hat geatmet</td>
+          <td class="de">geatmet</td>
+          <td class="de">atmete</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 词干以 -m 加辅音结尾，因此各人称一律插入 -e-（du atmest, er atmet）。诗中第二虚拟式 atmete 与过去时同形——弱变化动词的这两个时态形态相同，只能靠 als、wenn 等语境标记区分。</td></tr>
+        <tr>
+          <td class="de">abfallen</td>
+          <td class="de">fällt ab</td>
+          <td class="de">fiel ab</td>
+          <td class="de">ist abgefallen</td>
+          <td class="de">abgefallen</td>
+          <td class="de">fiele ab</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可分动词，强变化（a–ie–a）；诗中复数现在时 fallen … ab，前缀与词干之间隔了整整一行。</td></tr>
+        <tr>
+          <td class="de">stören</td>
+          <td class="de">stört</td>
+          <td class="de">störte</td>
+          <td class="de">hat gestört</td>
+          <td class="de">gestört</td>
+          <td class="de">störte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中第二人称复数命令式 stört（与陈述式同形，靠语序与不带主语识别）。</td></tr>
+        <tr>
+          <td class="de">halten</td>
+          <td class="de">hält</td>
+          <td class="de">hielt</td>
+          <td class="de">hat gehalten</td>
+          <td class="de">gehalten</td>
+          <td class="de">hielte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中 "die Lese halten" 意为"举行采收"，属 halten 表"举办、进行"的用法（eine Rede halten 发表演讲、Hochzeit halten 举行婚礼）。</td></tr>
+        <tr>
+          <td class="de">sich lösen</td>
+          <td class="de">löst sich</td>
+          <td class="de">löste sich</td>
+          <td class="de">hat sich gelöst</td>
+          <td class="de">gelöst</td>
+          <td class="de">löste sich</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 弱变化反身动词；诗中主语是下一行的自由关系从句 "Was … fällt"。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">als + 第二虚拟式表"仿佛"</h3>
+        <p class="grammar-item__quote">Die Luft ist still, als atmete man kaum,</p>
+        <div class="grammar-item__body">德语表达"仿佛……"有两种句式：als ob / als wenn + 动词后置（als ob man kaum atmete），或单用 als + 动词紧跟其后（als atmete man kaum）。后者更书面、更凝练，是诗歌与文学散文的偏好。从句动词通常用第二虚拟式，因为所述内容与事实不符。请注意弱变化动词的第二虚拟式与过去时同形（atmete），只有靠 als 这个标记才能判断语气。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">同位语后置（右移结构）</h3>
+        <p class="grammar-item__quote">O stört sie nicht, die Feier der Natur!</p>
+        <div class="grammar-item__body">德语允许先用代词占位、再把具体所指作为同位语放到句末，用逗号隔开。这既能保持句子的节奏，又能让重点信息落在最后。日常口语同样常见："Ich hab ihn getroffen, den Peter."（我碰见他了，彼得。）本诗用这一结构把 "die Feier der Natur"（自然的庆典）放到感叹句的落点上，效果远强于 "O stört die Feier der Natur nicht!"。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">自由关系从句 was …</h3>
+        <p class="grammar-item__quote">Denn heute löst sich von den Zweigen nur, / Was vor dem milden Strahl der Sonne fällt.</p>
+        <div class="grammar-item__body">当关系从句没有具体的先行名词时，德语用 was 引导，整个从句本身充当一个名词成分（此处作主语）。相关的还有 wer（凡是……的人）、wo（……的地方）。注意本诗的 was 从句是主句动词 löst sich 的主语，被 nur 限定并推到句末——先说"唯有"，再说"唯有什么"，格言的力量正来自这个延迟。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">介词 vor 的双重含义</h3>
+        <p class="grammar-item__quote">Was vor dem milden Strahl der Sonne fällt.</p>
+        <div class="grammar-item__body">vor + 第三格既可表空间（在……前面）与时间（在……之前），也可表原因，尤其用于不受控制的身心反应：vor Freude weinen（喜极而泣）、vor Angst zittern（吓得发抖）、vor Kälte steif werden（冻僵）。本行两种读法都通：果实"在阳光面前"落下，或"因为阳光"而落下。德语原文让两义共存，中文只能择一，这正是本诗最难译之处。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《秋景》1852年10月写于维也纳，当时黑贝尔39岁。黑贝尔主要以悲剧闻名（《玛丽亚·玛格达莱娜》《尼伯龙根》），抒情诗数量不多，但这首八行诗是德语秋天诗中最常被选入课本的作品之一。</p>
+<p>评论家米夏埃尔·布劳恩指出，这首诗抓住的是一个极短的时刻：夏天熄灭、自然在秋天的征兆显现之前短暂停顿的那一瞬——生长与成熟已经结束，无可挽回的消逝刚要开始。全诗的巧思在第一节的转折上：空气完全静止（连呼吸都仿佛停了），然而果实仍在落。不是风把它们打下来，而是它们熟透了，自己脱落。第二节把这一现象命名为"自然的庆典"与"自然亲自举行的采收"，并要求旁观者不要插手。</p>
+<p>有评论者认为第二节那种近乎说教的口吻（"哦，不要打扰它！"）稍稍破坏了第一节所营造的、对造化奇迹的静观。这一批评有其道理，但也可以反过来看：正是因为说话者忍不住要出声阻止，我们才知道他有多怕这一刻被打断。</p>
+<p>这首诗常被拿来与里尔克的《秋日》（本站编号10）对读：两首都写秋天的成熟，但里尔克的说话者在催促（"命令最后的果实饱满起来"），黑贝尔的说话者在制止（"不要打扰"）。一个要促成，一个要退开。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。需要说明的是最后一行的介词 vor：它在德语中同时可读作空间的"在……面前"与原因的"因为"，译文取前者作"在太阳温和的光线下"，但请学习者参见"语法要点"了解另一层含义——这一歧义在中文里无法两全。第5行的同位语后置（sie … die Feier der Natur）译文以"不要打扰它，这自然的庆典"保留了原句的语序与落点。此外，本诗与里尔克《秋日》（本站编号10）主题相邻而姿态相反，建议对读。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">gedichte7.de — „Herbstbild – Hebbel“</span><a class="source-url" href="https://www.gedichte7.de/herbstbild.html" target="_blank" rel="noopener">https://www.gedichte7.de/herbstbild.html</a>
+        <span class="source-note">主来源。两节八行完整，采用现代正字法。</span>
+      </li>
+      <li>
+        <span class="source-name">planetlyrik.de — „Friedrich Hebbels Gedicht ‚Herbstbild‘“（附 Michael Braun 在《德国广播电台抒情诗历 2008》中的评注）</span><a class="source-url" href="https://www.planetlyrik.de/lyrikkalender/friedrich-hebbels-gedicht-herbstbild/" target="_blank" rel="noopener">https://www.planetlyrik.de/lyrikkalender/friedrich-hebbels-gedicht-herbstbild/</a>
+        <span class="source-note">辅助来源。八行与主来源逐词逐标点完全一致；并提供创作时间地点（1852年10月于维也纳）与接受史评注，用于核实断代与背景信息。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文通过两个独立来源（gedichte7.de 与 planetlyrik.de 所刊《德国广播电台抒情诗历 2008》文本）逐词逐标点核对，两节各四行，两来源完全一致，未发现异文。一处值得记录的旁证：planetlyrik.de 的评论区在2025年11月有读者指出该页第4行曾误作 "die schönen Früchte"，编辑部随即更正为 "die schönsten Früchte"（最美的果实）——这一最高级是全诗的关键（落下的不是随便什么果子，而是最好的那些），本站采用的正是更正后的文本，与 gedichte7.de 一致。创作时间与地点（1852年10月，维也纳）取自 planetlyrik.de 转载的 Michael Braun 评注。需说明的是，本站未直接查阅黑贝尔《诗集》原刊或历史批评版，标点与分节依据上述两个数字化来源，属待进一步核实项；此诗在黑贝尔诗集中的具体辑目归属本站亦未查明。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Friedrich Hebbel</li>
+        <li>确认标题：Herbstbild</li>
+        <li>德文原文主来源：gedichte7.de</li>
+        <li>德文原文辅助来源：planetlyrik.de（附 Michael Braun 评注）</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（两来源无异文；已确认第4行为 schönsten 而非 schönen）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">补充权威版本来源（现依两个数字化选本，未查原刊/历史批评版）</li>
+        <li class="pending">查明此诗在黑贝尔诗集中的辑目归属</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -228,7 +228,7 @@
     "taboos": "不得出现文字、水印；不得出现墓碑、十字架、骷髅、尸体等直白的死亡符号；不得出现人物面部；避免阴森、恐怖或哥特化的处理",
     "style": "19世纪浪漫主义风景油画风格，构图以垂直的树干为轴，色调由地面的暖褐渐次过渡到天空的深蓝，仅在树冠间留一点微光"
   },
-  "image_path": null,
+  "image_path": "/images/der-tod-das-ist-die-kuehle-nacht.png",
   "german_sources": [
     {
       "name": "Kalliope（kalliope.org）— Heinrich Heine, „Der Tod das ist die kühle Nacht“, aus Buch der Lieder (1827), Die Heimkehr 1823–1824",
@@ -249,24 +249,81 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（Kalliope 的《歌之书》数字化本与 planetlyrik.de 所刊《德国广播电台抒情诗历》文本）逐词核对，两节各四行、内容完全一致。核实到两处排印层面的差异：(1) 首行 \"Der Tod\" 之后，Kalliope 不加逗号（贴近1827年初版排印），planetlyrik.de 及现代通行本加逗号；本站从加逗号的现代通行排印，因诗题在文献中亦通常带逗号引用。(2) 第4行 \"müd\" 在部分版本中印作带省字符的 \"müd’\"；本站从不带省字符的写法。此外，本诗在《歌之书·还乡集》中的编号（第87首）取自 Kalliope 与 planetlyrik 的分类信息，本站未直接查阅1827年初版影印件，属待进一步核实项。",
   "checklist": [
-    { "label": "确认作者：Heinrich Heine", "done": true },
-    { "label": "确认标题与出处：Buch der Lieder · Die Heimkehr", "done": true },
-    { "label": "德文原文主来源：Kalliope（Buch der Lieder 1827 数字化本）", "done": true },
-    { "label": "德文原文辅助来源：planetlyrik.de（附 Michael Braun 评注）", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（首行逗号；müd / müd’）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "核实《还乡集》中的编号（现依二手分类信息）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Heinrich Heine",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Buch der Lieder · Die Heimkehr",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Kalliope（Buch der Lieder 1827 数字化本）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：planetlyrik.de（附 Michael Braun 评注）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（首行逗号；müd / müd’）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "核实《还乡集》中的编号（现依二手分类信息）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

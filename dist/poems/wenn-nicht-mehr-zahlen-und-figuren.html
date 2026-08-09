@@ -72,8 +72,17 @@
         <span class="tag ">黄金时代</span>
         <span class="tag ">经典必读</span>
       </div>
-          <div class="image-slot">
-      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+          <figure class="image-slot image-slot--filled">
+      <img src="../images/wenn-nicht-mehr-zahlen-und-figuren.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+    </figure>
+    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+      <header class="modal__head">
+        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      </header>
+      <div class="modal__body">
+        <div class="image-slot">
       <dl>
         <dt>意象</dt><dd>一间18世纪的书房或矿物标本室，桌面上摊着几何图纸、圆规与矿石标本；窗外是深蓝色的夜空与初升的星辰，一束月光斜穿进来落在一本摊开的童话书上</dd>
         <dt>情绪</dt><dd>沉思、开阔、临界感；不作对立面的丑化（科学器具不应被表现为阴森或荒废），而应表现两个世界正在同一房间里相遇</dd>
@@ -83,8 +92,10 @@
         <dt>比例</dt><dd>4:3（横版）</dd>
         <dt>禁忌</dt><dd>不得出现文字、可辨识的公式或书页上的字迹（应作模糊处理）；不得出现现代实验器材；不得出现人物；避免任何魔法特效式的光晕或粒子效果</dd>
       </dl>
-      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-    </div>
+          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+        </div>
+      </div>
+    </dialog>
     </header>
     <section class="section reveal section--parallel">
       <header class="section__head">
@@ -441,8 +452,8 @@
         <li>撰写语法要点</li>
         <li>撰写背景说明</li>
         <li>撰写 image brief</li>
-        <li class="pending">生成 AI 配图</li>
-        <li class="pending">页面视觉检查</li>
+        <li>生成 AI 配图（已接入）</li>
+        <li>页面视觉检查</li>
         <li class="pending">对照历史批评版纸质本核实两处异文（现依 Wikipedia 转录）</li>
         <li class="pending">查明流通版本异文（wahren / von einem）的来源</li>
         <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第5—6行"世界回归世界"的释读）</li>      </ul>

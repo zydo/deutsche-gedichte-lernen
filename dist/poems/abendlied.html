@@ -51,7 +51,7 @@
 
     <nav class="poem-nav" aria-label="诗歌导航">
 <a class="poem-nav__link poem-nav__prev" href="ein-winterabend.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">一个冬夜</span></a>
-<span class="poem-nav__spacer" aria-hidden="true"></span>
+<a class="poem-nav__link poem-nav__next" href="der-spinnerin-nachtlied.html" rel="next"><span class="poem-nav__title">纺纱女的夜歌</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
     </nav>
     <header class="poem-titleblock reveal">
       <h1 class="poem-titleblock__de">Abendlied</h1>
@@ -72,8 +72,17 @@
         <span class="tag ">德语最著名的诗</span>
         <span class="tag ">民歌·教会诗歌</span>
       </div>
-          <div class="image-slot">
-      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+          <figure class="image-slot image-slot--filled">
+      <img src="../images/abendlied.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+    </figure>
+    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+      <header class="modal__head">
+        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      </header>
+      <div class="modal__body">
+        <div class="image-slot">
       <dl>
         <dt>意象</dt><dd>夏末或初秋的乡村夜景：一轮升起不久的月亮悬在天边，天空缀满细密星点，远处森林呈黑色剪影，近处草地上白雾正缓缓升起</dd>
         <dt>情绪</dt><dd>宁静、开阔、微凉的安慰；不应甜美化为童话夜景，也不应阴森——它应当同时容得下安睡与死亡两种含义</dd>
@@ -83,8 +92,10 @@
         <dt>比例</dt><dd>4:3（横版）</dd>
         <dt>禁忌</dt><dd>不得出现文字、水印；不得出现十字架、教堂内景、天使等直白的宗教符号；不得出现人物；不得出现现代路灯、电线、车辆；避免过度饱和的"星空摄影"式处理</dd>
       </dl>
-      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-    </div>
+          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+        </div>
+      </div>
+    </dialog>
     </header>
     <section class="section reveal section--parallel">
       <header class="section__head">
@@ -636,8 +647,8 @@
         <li>撰写语法要点</li>
         <li>撰写背景说明</li>
         <li>撰写 image brief</li>
-        <li class="pending">生成 AI 配图</li>
-        <li class="pending">页面视觉检查</li>
+        <li>生成 AI 配图（已接入）</li>
+        <li>页面视觉检查</li>
         <li class="pending">核实第六节 "im Himmel" 是用法波动还是排印之误</li>
         <li class="pending">对照1778/1783年原刊影印件核实标点</li>
         <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>

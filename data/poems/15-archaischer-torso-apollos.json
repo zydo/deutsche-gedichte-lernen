@@ -292,7 +292,7 @@
     "taboos": "不得出现文字、水印、展签、玻璃展柜反光；不得补全头部或四肢；不得出现观众、导览员等人物；避免情色化的处理，生殖部位应以古典雕塑的常规方式呈现或处于阴影中；不得出现现代照明灯具",
     "style": "冷调写实油画风格，接近19世纪学院派的静物／雕塑写生，背景深褐近黑，光线集中于石体，强调大理石的半透明质感"
   },
-  "image_path": null,
+  "image_path": "/images/archaischer-torso-apollos.png",
   "german_sources": [
     {
       "name": "Zeno.org — Rainer Maria Rilke: Sämtliche Werke, Band 1, Wiesbaden und Frankfurt a. M. 1955–1966, S. 555（„Der neuen Gedichte anderer Teil“）",
@@ -313,24 +313,81 @@
   ],
   "verification_notes": "德文正文以 Zeno.org 转录的 Insel 版《里尔克全集》第1卷（1955–1966，第555页）为主来源，以 textlog.de 的《新诗集》文本为辅助来源逐词核对，十四行内容、分行与诗节划分完全一致。需说明的差异：(1) 标点：第11行 \"…wie Raubtierfelle\" 行末，Zeno.org 依全集作分号（;），而部分流通版本（含若干在线选本）作中圆点（·）；本站从全集的分号。(2) 正字法：全集保留旧拼法 \"mußt\"，1996年正字法改革后应作 \"musst\"；本站保留原刊旧拼法并在逐行注释中说明。(3) 标题中的 Archaïscher 带分音符（ï），系里尔克原刊写法，现代转录中常被简化为 Archaischer，本站保留原写法，而 slug 与文件名因技术原因使用不带分音符的形式。此外，本站未直接查阅1908年 Insel 初版影印件，上述标点采择依据全集转录，属待进一步核实项。",
   "checklist": [
-    { "label": "确认作者：Rainer Maria Rilke", "done": true },
-    { "label": "确认标题与出处：Der neuen Gedichte anderer Teil（1908）开篇", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Insel 版全集第1卷）", "done": true },
-    { "label": "德文原文辅助来源：textlog.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（第11行分号／中圆点；mußt/musst；Archaïscher 分音符）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用；德文原文因作者1926年逝世已公版）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照1908年 Insel 初版核实标点（现依全集转录）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 Bug / Sturz 二词的双关处理）", "done": false }
+    {
+      "label": "确认作者：Rainer Maria Rilke",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Der neuen Gedichte anderer Teil（1908）开篇",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Insel 版全集第1卷）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：textlog.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（第11行分号／中圆点；mußt/musst；Archaïscher 分音符）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用；德文原文因作者1926年逝世已公版）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "对照1908年 Insel 初版核实标点（现依全集转录）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 Bug / Sturz 二词的双关处理）",
+      "done": false
+    }
   ]
 }

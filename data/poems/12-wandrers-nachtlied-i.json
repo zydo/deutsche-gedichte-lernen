@@ -208,7 +208,7 @@
     "taboos": "不得出现文字、水印、教堂十字架等直白的宗教符号；避免面部特写与表情化的悲伤，人物宜作远景背影；不得出现电线、现代建筑、现代服饰",
     "style": "19世纪浪漫主义风景油画风格（可参考弗里德里希早期的柔和光线处理），冷灰蓝为主调，天光处保留一抹暖金"
   },
-  "image_path": null,
+  "image_path": "/images/wandrers-nachtlied-i.png",
   "german_sources": [
     {
       "name": "Deutsche Lyrik（deutschelyrik.de）— „Wandrers Nachtlied (1776)“",
@@ -229,24 +229,81 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，八行内容一致。核实到两处需要说明的差异：(1) 版本差异：1776年2月12日致施泰因夫人信中的手稿版第2行作 \"Alle Freud und Schmerzen stillest\"、第6行作 \"Was soll all die Qual und Lust?\"；1789年 Göschen 版歌德本人改为 \"Alles Leid und Schmerzen\" 与 \"all der Schmerz und Lust\"。本站采用歌德亲自修订并沿用至\"最后手定全集\"的1789年版，并在逐行注释中说明手稿异文。(2) 标点差异：第4行行末，German Wikipedia（依1815年 Cotta 版）作分号，deutschelyrik.de 作逗号；本站从 Wikipedia 所依据的印本作分号。此外需提醒读者注意：本诗常被误与同名的《Über allen Gipfeln》（本站编号02，题为《流浪者的夜歌（其二）》）混淆，两者是不同的作品。歌德手稿本身的影印件（Goethe-Repertorium）本站未直接查阅，属待进一步核实项。",
   "checklist": [
-    { "label": "确认作者：Johann Wolfgang von Goethe", "done": true },
-    { "label": "确认标题：Wandrers Nachtlied（区别于同名的 Ein Gleiches / Über allen Gipfeln）", "done": true },
-    { "label": "德文原文主来源：deutschelyrik.de", "done": true },
-    { "label": "德文原文辅助来源：German Wikipedia（引1815年 Cotta 版）", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（1776手稿版 vs 1789 Göschen 版；第4行标点）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "查阅手稿影印件核实标点（Goethe-Repertorium）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Johann Wolfgang von Goethe",
+      "done": true
+    },
+    {
+      "label": "确认标题：Wandrers Nachtlied（区别于同名的 Ein Gleiches / Über allen Gipfeln）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：deutschelyrik.de",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：German Wikipedia（引1815年 Cotta 版）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（1776手稿版 vs 1789 Göschen 版；第4行标点）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "查阅手稿影印件核实标点（Goethe-Repertorium）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

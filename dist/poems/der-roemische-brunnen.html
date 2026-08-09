@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Der römische Brunnen · 罗马的喷泉 — Conrad Ferdinand Meyer | 德语诗歌学习画册</title>
+  <meta name="description" content="Der römische Brunnen（罗马的喷泉）— Conrad Ferdinand Meyer。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="die-stadt.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">那座城</span></a>
+<a class="poem-nav__link poem-nav__next" href="herr-von-ribbeck.html" rel="next"><span class="poem-nav__title">哈弗尔兰的里贝克庄园的里贝克老爷</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Der römische Brunnen</h1>
+      <p class="poem-titleblock__author">Conrad Ferdinand Meyer</p>
+      <p class="poem-titleblock__zh">罗马的喷泉</p>
+      <p class="poem-titleblock__author-zh">康拉德·费迪南德·迈耶</p>
+      <div class="poem-titleblock__biblio">
+        <p>《诗集》（1892年版）·「旅行」（Reise）辑</p>
+        <p>现实主义 / 象征主义前奏</p>
+        <p>1858年意大利之行获得灵感，1860年写下第一稿，1882年定稿发表</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B2</span>
+        <span class="tag ">物诗</span>
+        <span class="tag ">喷泉</span>
+        <span class="tag ">循环</span>
+        <span class="tag ">给予与接受</span>
+        <span class="tag ">反复修改</span>
+        <span class="tag ">极短诗</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>罗马一处园林中的三层石制喷泉，水柱自中心升起后落入最上层的大理石浅盘，再依次溢向下层；午后的光斜穿过水幕</dd>
+        <dt>情绪</dt><dd>静谧、恒常、略带凉意；应传达持续运转而非瞬间的水花飞溅，避免任何戏剧性</dd>
+        <dt>画面元素</dt><dd>三层由大而小或由小而大的大理石浅盘、中心升起的细水柱、盘沿薄如面纱的水膜、水面的细密涟漪、周围深色的常绿树与石栏</dd>
+        <dt>时代感</dt><dd>17世纪巴洛克式园林喷泉，环境为19世纪的罗马别墅园林，不得出现现代元素</dd>
+        <dt>推荐风格</dt><dd>19世纪现实主义至印象派早期的油画风格，光线柔和偏冷，主色为石灰白、青灰与深绿，构图对称、重心居中，水幕的半透明质感是描绘重点</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；不得出现人物、游客、投币；不得出现现代照明、水泵、护栏；避免高速摄影式的水滴凝固效果——水应是连续流动的</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Aufsteigt der Strahl und fallend gießt<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">水柱升起，又落下，注满</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Er voll der Marmorschale Rund,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">那大理石盘的圆环，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Die, sich verschleiernd, überfließt<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">圆盘轻纱般蒙上水雾，溢出，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">In einer zweiten Schale Grund;<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">落入第二只盘的底部；</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">Die zweite gibt, sie wird zu reich,<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">第二只给予——它变得太满了——</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Der dritten wallend ihre Flut,<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">把奔涌的水流交给第三只，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">Und jede nimmt und gibt zugleich<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">而每一只都同时接受又给予，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Und strömt und ruht.<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">既流动，又静止。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，尽量保留全诗为一个不断句的连绵长句、以及末行骤然缩短所造成的停顿</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Aufsteigt der Strahl und fallend gießt</p>
+        <p class="lnote__zh">全诗第一个词就是可分动词 aufsteigen 的前缀 auf 与词干合并后整体提到句首（Aufsteigt），这是极不寻常的语序——正常应作 "Der Strahl steigt auf"。这一倒装让"上升"这个动作成为全诗的第一个音，形式与内容完全同步。der Strahl 在此指喷泉的水柱（本站黑贝尔《秋景》中同一词取"光线"义，可对照）。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Er voll der Marmorschale Rund,</p>
+        <p class="lnote__zh">语序需还原：Er gießt der Marmorschale Rund voll = "它把大理石盘的圆环注满"。der Marmorschale 是前置第二格；das Rund（圆形、环状物）是名词化的形容词，中性；voll…gießen 是可分结构（vollgießen 注满）。这一行是全诗语序最扭曲之处，也最能训练德语的成分辨识。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Die, sich verschleiernd, überfließt</p>
+        <p class="lnote__zh">关系代词 Die 指上一行的 Marmorschale（阴性）。sich verschleiern（给自己蒙上面纱）是现在分词插入语，描写水膜漫过盘沿时形成的薄雾状水幕——一个把大理石与织物叠合起来的比喻。überfließen（溢出）在此为不可分动词（重音在词干），因此前缀 über 不后置。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">In einer zweiten Schale Grund;</p>
+        <p class="lnote__zh">又一个前置第二格：einer zweiten Schale Grund = der Grund einer zweiten Schale（第二只盘的底部）。der Grund 在此取"底部"义（参见 der Meeresgrund 海底），而非"原因"。分号是全诗唯一的强停顿，把三只盘的下落过程一分为二。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">Die zweite gibt, sie wird zu reich,</p>
+        <p class="lnote__zh">插入句 "sie wird zu reich"（它变得太富有了）是全诗的思想核心：给予不是因为匮乏或牺牲，而是因为盈满到无法再容纳。zu + 形容词表示"过于……"。省略了名词的 die zweite（第二只）是名词化的序数词。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Der dritten wallend ihre Flut,</p>
+        <p class="lnote__zh">承接上一行的 gibt：Die zweite gibt der dritten ihre Flut（第二只把它的水流给第三只）。der dritten 为第三格间接宾语，ihre Flut 为第四格直接宾语，两者被现在分词 wallend（翻涌着）隔开。wallen 是雅语，指液体缓慢翻滚、涌动。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">Und jede nimmt und gibt zugleich</p>
+        <p class="lnote__zh">全诗的格言式总结。jede（每一只）回指所有的盘。nimmt und gibt zugleich（同时接受又给予）——两个动词并列而无先后，zugleich（同时）取消了因果顺序：不是先接受再给予，而是同一个动作的两面。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Und strömt und ruht.</p>
+        <p class="lnote__zh">全诗最后一行只有四个音节（前七行都是八音节），骤然缩短一半——读到这里，语言本身也"停"了下来。strömen（奔流）与 ruhen（静止）在语义上互相排斥，却由 und 平列，构成一个悖论式的收束：喷泉是唯一一种"动着却始终不变"的东西。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Strahl, -en</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">（水、光的）柱、线、束</div>
+        <div class="vocab-card__note">诗中取"水柱"义（der Wasserstrahl）；本站黑贝尔《秋景》中同词取"光线"义。动词 strahlen（放射；容光焕发）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Schale, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">浅盘、碗；（果、蛋的）壳</div>
+        <div class="vocab-card__note">诗中指喷泉的层叠水盘；日常义如 die Obstschale（果盘）、die Eierschale（蛋壳）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">das Rund</span></div>
+        <span class="vocab-card__pos">n.（中性，名词化形容词）</span>
+        <div class="vocab-card__meaning">圆形、环、圆形空间</div>
+        <div class="vocab-card__note">书面雅语，今日多见于 das Rund der Arena（竞技场的圆形空间）；与 die Runde（一圈、一轮）区分。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">sich verschleiern</span></div>
+        <span class="vocab-card__pos">v.（弱变化，反身）</span>
+        <div class="vocab-card__meaning">蒙上面纱、变得朦胧</div>
+        <div class="vocab-card__note">来自 der Schleier（面纱）；亦用于比喻"掩饰"（etwas verschleiern 掩盖某事）、"（目光）模糊"。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">überfließen</span></div>
+        <span class="vocab-card__pos">v.（不可分，强变化）</span>
+        <div class="vocab-card__meaning">溢出、满溢</div>
+        <div class="vocab-card__note">重音在词干（über·FLIEßen），因此前缀不分离；与可分的 über·fließen 需靠重音区分。派生词 der Überfluss（过剩）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">wallen</span></div>
+        <span class="vocab-card__pos">v.（弱变化，雅语）</span>
+        <div class="vocab-card__meaning">（液体）翻涌、沸腾；（衣袍）飘拂</div>
+        <div class="vocab-card__note">今已罕用；另有同形动词 wallen（朝圣，见 die Wallfahrt 朝圣之旅）。诗中作现在分词 wallend。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Flut, -en</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">水流、洪水；涨潮</div>
+        <div class="vocab-card__note">与 die Ebbe（退潮）相对；引申用于 eine Flut von Briefen（潮水般的来信）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">strömen</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">奔流、涌流</div>
+        <div class="vocab-card__note">名词 der Strom（大河；电流）；"es strömt" 可指下大雨。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">aufsteigen</td>
+          <td class="de">steigt auf</td>
+          <td class="de">stieg auf</td>
+          <td class="de">ist aufgestiegen</td>
+          <td class="de">aufgestiegen</td>
+          <td class="de">stiege auf</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可分动词，强变化（ei–ie–ie）；诗中破例把整个动词（含前缀）提到句首作 Aufsteigt，是为强调而作的极端倒装。</td></tr>
+        <tr>
+          <td class="de">gießen</td>
+          <td class="de">gießt</td>
+          <td class="de">goss（旧 goß）</td>
+          <td class="de">hat gegossen</td>
+          <td class="de">gegossen</td>
+          <td class="de">gösse</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化（ie–o–o）；诗中与 voll 构成可分结构 vollgießen（注满），前缀 voll 被推到下一行行首。</td></tr>
+        <tr>
+          <td class="de">überfließen</td>
+          <td class="de">überfließt</td>
+          <td class="de">überfloss</td>
+          <td class="de">ist übergeflossen / hat übergeflossen</td>
+          <td class="de">übergeflossen</td>
+          <td class="de">überflösse</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 带 über- 的动词可分或不可分，取决于重音：本诗为不可分用法，前缀不后置。</td></tr>
+        <tr>
+          <td class="de">geben</td>
+          <td class="de">gibt</td>
+          <td class="de">gab</td>
+          <td class="de">hat gegeben</td>
+          <td class="de">gegeben</td>
+          <td class="de">gäbe</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音 e→i；诗中两次出现（第5行与第7行），第二次与 nimmt 并列。</td></tr>
+        <tr>
+          <td class="de">nehmen</td>
+          <td class="de">nimmt</td>
+          <td class="de">nahm</td>
+          <td class="de">hat genommen</td>
+          <td class="de">genommen</td>
+          <td class="de">nähme</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音且辅音变化（nehmen → nimmt）；与 geben 构成全诗的核心对偶。</td></tr>
+        <tr>
+          <td class="de">ruhen</td>
+          <td class="de">ruht</td>
+          <td class="de">ruhte</td>
+          <td class="de">hat geruht</td>
+          <td class="de">geruht</td>
+          <td class="de">ruhte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 弱变化；诗中作全诗最后一个词，与 strömt 并列构成悖论。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">前置第二格（两例）</h3>
+        <p class="grammar-item__quote">Er voll der Marmorschale Rund, … In einer zweiten Schale Grund;</p>
+        <div class="grammar-item__body">现代德语应作 "das Rund der Marmorschale" 与 "der Grund einer zweiten Schale"。迈耶两次把第二格提前，使得每一行都必须读到最后一个词才知道句子的中心在哪里——水要落到底才知道落在哪只盘里。识别方法：看到 der/einer + 名词后紧跟另一个名词而句中没有别的解释，就应考虑前置第二格。本站在荷尔德林、里尔克、特拉克尔、施托姆诸诗中都标注过这一结构。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">可分动词前缀的极端位移</h3>
+        <p class="grammar-item__quote">Aufsteigt der Strahl und fallend gießt / Er voll der Marmorschale Rund,</p>
+        <div class="grammar-item__body">本诗把德语可分动词的规则用到了两个极端：一是 aufsteigen 反其道而行，把前缀与词干合在一起提到全诗最前（正常应作 Der Strahl steigt auf）；二是 vollgießen 被拆得极开，动词 gießt 在第1行末、前缀 voll 在第2行首，中间还跨了行。这两处都不是随手为之——上升的动作抢在主语之前出现，注满的动作则被拉长到跨行，语法结构模拟了水的运动。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">现在分词作插入状语</h3>
+        <p class="grammar-item__quote">Die, sich verschleiernd, überfließt … Der dritten wallend ihre Flut,</p>
+        <div class="grammar-item__body">德语现在分词（词干 + -d）可作定语（das fließende Wasser）或状语（sie ging singend nach Hause 她唱着歌回家）。作状语时不变格，且常以逗号插入句中，表示与主要动作同时发生的伴随情形。本诗两处分词（sich verschleiernd、wallend）都描写水在给予的同时呈现的样子——同时性正是全诗的主题。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">音节数作为结构手段</h3>
+        <p class="grammar-item__quote">Und strömt und ruht.</p>
+        <div class="grammar-item__body">本诗前七行都是四音步抑扬格（八个音节），最后一行只有两音步（四个音节）。这不是格律的失误，而是全诗最重要的一个决定：句子在读者预期它继续时突然停住，读诗的动作与"ruht"（静止）这个词的含义在同一刻发生。学习德语诗歌时，除了看词义，也要数音节——形式本身经常在说话。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《罗马的喷泉》写的是罗马博尔盖塞别墅（Villa Borghese）里的"海马喷泉"（Fontana dei Cavalli Marini）。迈耶1858年游历意大利时获得灵感，1860年写下第一稿，此后二十余年反复修改，直到1882年才发表定稿——现存的稿本多达六到七种。</p>
+<p>这段修改史本身就是德语诗歌史上的名案。最初的版本有十六行、分两节；迈耶不断删削，最终压成八行、一节。删掉的主要是解释与感慨，留下的几乎全是水的动作。他曾说自己关心的是"用尽可能少的词传达尽可能多的东西"。今天德语课上常把这几个稿本并排比较，作为"修改如何造就一首诗"的范例。</p>
+<p>定稿的构造极其精密：全诗是一个不断句的长句，语法上一路往下流；三只水盘依次接水、溢满、传递；到第七行忽然从叙述转为断言——"每一只都同时接受又给予"；最后一行骤然缩短一半，在 "strömt und ruht"（既流动，又静止）这个矛盾上停住。</p>
+<p>这首诗常被视作里尔克"物诗"（Dinggedicht）的先声——本站收录的《豹》与《古风的阿波罗躯干残像》正是里尔克这一路数的代表作。两者的区别也很清楚：里尔克的物最终把目光投回读者身上（"你必须改变你的生活"），迈耶的喷泉则始终自足地运转，不要求任何人做任何事。它只是在那里，接受着，给予着。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) 全诗在德语中是一个不断句的长句，中文若照搬会难以卒读，译文以逗号维持连绵感，但结构上仍应作一句理解；(2) 第5行的插入句 "sie wird zu reich"（它变得太富有了）是全诗的思想核心，译文以破折号标出"——它变得太满了——"，用"满"而非"富有"是为贴合水的语境，但请注意德语原词 reich 确为"富有"，其经济意味是有意的；(3) 末行 "Und strömt und ruht" 的骤然缩短在中文中无法用音节数复制，译文以短句"既流动，又静止"近似传达。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Zeno.org — Conrad Ferdinand Meyer: Sämtliche Werke in zwei Bänden. Band 2, München 1968, S. 88（Gedichte, Ausgabe 1892 · 4. Reise）</span><a class="source-url" href="http://www.zeno.org/Literatur/M/Meyer,+Conrad+Ferdinand/Gedichte/Gedichte+(Ausgabe+1892)/4.+Reise/Der+r%C3%B6mische+Brunnen" target="_blank" rel="noopener">http://www.zeno.org/Literatur/M/Meyer,+Conrad+Ferdinand/Gedichte/Gedichte+(Ausgabe+1892)/4.+Reise/Der+r%C3%B6mische+Brunnen</a>
+        <span class="source-note">主来源。依 Hanser 版《迈耶全集》第2卷数字化本，八行作单一诗节（不分节），并确认此诗在1892年《诗集》中归入「旅行」辑。</span>
+      </li>
+      <li>
+        <span class="source-name">gedichte7.de — „Der römische Brunnen – Meyer“</span><a class="source-url" href="https://www.gedichte7.de/der-roemische-brunnen.html" target="_blank" rel="noopener">https://www.gedichte7.de/der-roemische-brunnen.html</a>
+        <span class="source-note">辅助来源。八行与主来源逐词逐标点一致，但排印上分为 4+4 两组，据此确认了分节方式的差异，详见校对记录。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文以 Zeno.org 转录的 Hanser 版《迈耶全集》第2卷（第88页）为主来源，与 gedichte7.de 逐词逐标点核对，八行的用词与标点完全一致，未发现字面异文。唯一的差异在排印分节：主来源作单一的八行诗节，gedichte7.de 将其排为 4+4 两组。这一差异并非无关紧要——全诗是一个不断句的长句，第4行末的分号是句中停顿而非诗节界限，分成两节会削弱"一路流下"的效果。本站从主来源的单节形式。此外需重点说明的是稿本问题：此诗现存六至七种稿本，从1860年的第一稿（十六行、两节）逐步删改至1882年的定稿（八行、一节），本站采用的是1892年《诗集》所收的定稿；早期稿本的具体文字本站未逐一核对，仅依据通行的迈耶研究结论在文化背景中概述其修改过程，属待进一步核实项。本站亦未直接查阅1882年初刊或1892年《诗集》影印件。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Conrad Ferdinand Meyer</li>
+        <li>确认标题与出处：《诗集》（1892年版）「旅行」辑</li>
+        <li>德文原文主来源：Zeno.org（Hanser 版全集第2卷）</li>
+        <li>德文原文辅助来源：gedichte7.de</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（分节方式：单节 vs. 4+4；1860—1882年间的多稿修改史）</li>
+        <li>确认采用1892年定稿而非早期稿本</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">逐一核对六至七种早期稿本（现仅依二手研究概述）</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

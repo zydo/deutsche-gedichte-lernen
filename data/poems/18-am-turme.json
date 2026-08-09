@@ -326,7 +326,7 @@
     "taboos": "不得出现文字、水印；不得出现海象、珊瑚等诗中想象之物（画面应只呈现她实际所处的场景）；不得作面部特写或戏剧化表情，人物宜取背影；不得出现现代船只、护栏、游客",
     "style": "19世纪浪漫主义风景油画风格，构图上人物小、天空与湖面占主导，色调为铅灰、墨绿与冷白，仅在云层裂口处透出一线冷光"
   },
-  "image_path": null,
+  "image_path": "/images/am-turme.png",
   "german_sources": [
     {
       "name": "German Wikipedia — „Am Turme“",
@@ -347,24 +347,81 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（German Wikipedia 依1844年《诗集》，与 gedichte7.de）逐词核对，四节各八行、词序与内容完全一致。核实到的差异均属正字法与排印层面：(1) 标题与拼写：原刊及1844年版作 \"Am Thurme\"，现代通行标题作 \"Am Turme\"，本站从后者并在注释中说明；(2) 旧新正字法：laß’/lass’、Walroß/Walross、muß/muss，本站从 Wikipedia 所依 1844 年版的旧拼法；(3) 第24行 \"Seemöwe\"（Wikipedia）与 \"Seemöve\"（gedichte7.de）——两种写法在19世纪均通行，今日标准形式为 Seemöwe，本站从之。需说明的是，本站未直接查阅1844年《诗集》或1842年《晨报》的影印件，上述文本采择依据 Wikipedia 的转录，建议有条件的读者对照原刊核实；另，梅尔斯堡塔房、《晨报》题词等背景信息亦取自该词条，未经第三来源独立验证，属待核实项。",
   "checklist": [
-    { "label": "确认作者：Annette von Droste-Hülshoff", "done": true },
-    { "label": "确认标题：Am Turme（原刊 Am Thurme）", "done": true },
-    { "label": "德文原文主来源：German Wikipedia（依1844年《诗集》）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（Thurme/Turme；旧新正字法；Seemöwe/Seemöve）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照1844年《诗集》与1842年《晨报》影印件核实文本与题词", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Annette von Droste-Hülshoff",
+      "done": true
+    },
+    {
+      "label": "确认标题：Am Turme（原刊 Am Thurme）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：German Wikipedia（依1844年《诗集》）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（Thurme/Turme；旧新正字法；Seemöwe/Seemöve）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "对照1844年《诗集》与1842年《晨报》影印件核实文本与题词",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

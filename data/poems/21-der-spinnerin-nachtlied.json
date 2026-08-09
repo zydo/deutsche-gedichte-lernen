@@ -1,0 +1,332 @@
+{
+  "id": "21",
+  "slug": "der-spinnerin-nachtlied",
+  "author": "Clemens Brentano",
+  "author_zh": "克莱门斯·布伦塔诺",
+  "title_de": "Der Spinnerin Nachtlied",
+  "title_zh": "纺纱女的夜歌",
+  "year": "约1802年夏作，1818年发表于小说《一个游学生的编年史》",
+  "collection": "《一个游学生的编年史》（Aus der Chronicka eines fahrenden Schülers）",
+  "period": "早期浪漫主义（海德堡浪漫派）",
+  "difficulty": "B1",
+  "tags": [
+    "夜莺",
+    "分离",
+    "纺织",
+    "循环结构",
+    "民歌体",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Es sang vor langen Jahren",
+      "Wohl auch die Nachtigall,",
+      "Das war wohl süßer Schall,",
+      "Da wir zusammen waren."
+    ],
+    [
+      "Ich sing' und kann nicht weinen,",
+      "Und spinne so allein",
+      "Den Faden klar und rein",
+      "So lang der Mond wird scheinen."
+    ],
+    [
+      "Als wir zusammen waren",
+      "Da sang die Nachtigall",
+      "Nun mahnet mich ihr Schall",
+      "Daß du von mir gefahren."
+    ],
+    [
+      "So oft der Mond mag scheinen,",
+      "Denk' ich wohl dein allein,",
+      "Mein Herz ist klar und rein,",
+      "Gott wolle uns vereinen."
+    ],
+    [
+      "Seit du von mir gefahren,",
+      "Singt stets die Nachtigall,",
+      "Ich denk' bei ihrem Schall,",
+      "Wie wir zusammen waren."
+    ],
+    [
+      "Gott wolle uns vereinen",
+      "Hier spinn' ich so allein,",
+      "Der Mond scheint klar und rein,",
+      "Ich sing' und möchte weinen."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，尽量保留全诗只用四个韵脚循环往复的结构，以及首尾\"不能哭—想哭\"的一字之转",
+    "text": [
+      [
+        "许多年前也曾有",
+        "夜莺这样歌唱，",
+        "那确是甜美的声响，",
+        "当我们还在一起的时候。"
+      ],
+      [
+        "我唱着，却不能哭，",
+        "就这样独自纺线，",
+        "把线纺得清亮洁净，",
+        "只要月亮还照着。"
+      ],
+      [
+        "当我们还在一起时",
+        "夜莺曾这样歌唱",
+        "如今它的声响提醒我",
+        "你已离我而去。"
+      ],
+      [
+        "每当月亮照耀，",
+        "我总只思念你，",
+        "我的心清亮而洁净，",
+        "但愿上帝让我们重聚。"
+      ],
+      [
+        "自从你离我而去，",
+        "夜莺就不停地歌唱，",
+        "听着它的声响我便想起",
+        "我们曾怎样在一起。"
+      ],
+      [
+        "但愿上帝让我们重聚",
+        "我在这里独自纺线，",
+        "月亮照着，清亮而洁净，",
+        "我唱着，而想哭。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Es sang vor langen Jahren",
+      "zh": "以形式主语 es 开篇，真正的主语 die Nachtigall 到第二行才出现——这是德语中把新信息后置的常见手法（\"es kommt ein Mann\" 型）。vor langen Jahren（许多年前）用第三格复数，是叙事套语，与童话的 \"vor langer Zeit\" 同类。"
+    },
+    {
+      "de": "Wohl auch die Nachtigall,",
+      "zh": "wohl 在此不是\"很好地\"，而是表示推测与追忆的语气词，可译为\"想必、确实\"。全诗四次出现 wohl（第2、3、14行等），使整首诗笼罩在一种半确定、半回忆的语调中。"
+    },
+    {
+      "de": "Da wir zusammen waren.",
+      "zh": "da 在此是时间连词\"当……时\"（等于 als），非因果的\"因为\"。这一用法在19世纪诗歌中很常见，今日已基本被 als 取代。此行是全诗四个核心句之一，将在第9、20行以变形重现。"
+    },
+    {
+      "de": "Ich sing' und kann nicht weinen,",
+      "zh": "全诗的第一个关键句。sing' 是 singe 的省音形式。\"唱着却哭不出来\"意味着悲痛尚未化开；与全诗最后一行 \"Ich sing' und möchte weinen\"（唱着而想哭）只差两个词，却标记了整首诗的全部进展——从麻木到能够悲伤。"
+    },
+    {
+      "de": "Den Faden klar und rein",
+      "zh": "klar und rein（清亮而洁净）这一组词在诗中三次出现，分别用于\"线\"（第7行）、\"心\"（第15行）和\"月\"（第23行）——纺线、内心与月光被同一个形容词组联结起来，是全诗最精巧的编织手法，也呼应了\"纺纱\"这一动作本身。"
+    },
+    {
+      "de": "So lang der Mond wird scheinen.",
+      "zh": "so lang（今作 solange）引导时间从句；wird scheinen 为第一将来时。纺纱女把自己的劳作与月亮的运行绑在一起，暗示一种没有终点的等待。"
+    },
+    {
+      "de": "Nun mahnet mich ihr Schall",
+      "zh": "mahnen（提醒、告诫）支配第四格人称宾语（mich）；mahnet 为诗歌延长形式（今 mahnt）。同一种夜莺的鸣声，在第一节里是甜美的回忆，到这里变成了提醒分离的声音——声音没变，变的是听者。"
+    },
+    {
+      "de": "Daß du von mir gefahren.",
+      "zh": "从句省略了助动词（完整应为 daß du von mir gefahren bist），这是德语从句中\"助动词省略\"的诗歌用法。fahren 在此取古义\"离去、动身\"（参见 wohlfahren、Fahrt），而非现代的\"驾车\"。"
+    },
+    {
+      "de": "Denk' ich wohl dein allein,",
+      "zh": "denken 在此支配第二格宾语 dein（= deiner，你的），这是古典德语用法（今作 an dich denken）。allein 是副词\"仅仅、唯独\"，不是形容词\"孤独的\"：整句意为\"我只思念你一人\"。另有版本作 \"Gedenk ich dein allein\"，详见校对记录。"
+    },
+    {
+      "de": "Gott wolle uns vereinen.",
+      "zh": "wolle 是 wollen 的第一虚拟式，用于表达愿望（与本站《晚歌》中的 Wollst 同类），今日仅存于祷词。此句在第16行与第21行各出现一次，是全诗唯一朝向未来的句子。也正因如此，多数读者把这首诗理解为对亡者的哀悼，而非对远行者的思念。"
+    },
+    {
+      "de": "Ich sing' und möchte weinen.",
+      "zh": "全诗末行，与第5行 \"Ich sing' und kann nicht weinen\" 构成呼应式的收束。möchte 是 mögen 的第二虚拟式，表委婉的愿望。从\"哭不出来\"到\"想哭\"，全诗的运动在这一步中完成——而纺车仍在转，月亮仍在照，什么外在的事都没有发生。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "die Nachtigall, -en",
+      "pos": "n.（阴性）",
+      "meaning": "夜莺",
+      "note": "字面为\"夜之歌者\"；本站海涅《死亡，那是清凉的夜》中亦为核心意象，可对照阅读两位诗人对同一鸟的不同用法。"
+    },
+    {
+      "term": "der Schall, -e",
+      "pos": "n.（阳性）",
+      "meaning": "声响、回声",
+      "note": "较 der Klang（乐音）更中性、更强调物理上的传播；派生词 Schallmauer（音障）、verschallen（消失无踪）。"
+    },
+    {
+      "term": "spinnen",
+      "pos": "v.（强变化）",
+      "meaning": "纺（线）；（口语）发疯、胡说",
+      "note": "变位 spinnt – spann – hat gesponnen。名词 die Spinnerin（女纺工）即诗题所本；口语中 \"du spinnst!\" 意为\"你疯了吧\"。"
+    },
+    {
+      "term": "der Faden, Fäden",
+      "pos": "n.（阳性）",
+      "meaning": "线、丝",
+      "note": "习语 \"den Faden verlieren\"（失去话头）、\"der rote Faden\"（贯穿始终的线索，典出歌德）。"
+    },
+    {
+      "term": "mahnen",
+      "pos": "v.（弱变化）",
+      "meaning": "提醒、告诫；催缴",
+      "note": "支配第四格人称宾语；今日常见于商务语境（eine Rechnung anmahnen 催付账单），亦见于 Mahnmal（警示纪念碑）。"
+    },
+    {
+      "term": "fahren（古义）",
+      "pos": "v.（强变化）",
+      "meaning": "离去、动身、远行",
+      "note": "现代德语中 fahren 主要指乘车/驾驶，但古义\"行走、离去\"仍保留在 die Fahrt（旅程）、wohlfahren、dahinfahren（逝去）等词中；诗中 \"von mir gefahren\" 即取此义。"
+    },
+    {
+      "term": "vereinen",
+      "pos": "v.（弱变化）",
+      "meaning": "使结合、使联合",
+      "note": "与 vereinigen 近义；die Vereinten Nationen（联合国）、der Verein（社团）同源。"
+    },
+    {
+      "term": "wohl",
+      "pos": "adv./语气词",
+      "meaning": "①想必、大概（推测）；②确实（加强）；③好、健康",
+      "note": "本诗中主要取推测与追忆的语气义。这是德语中最难掌握的语气词之一，须结合语境判断。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "singen",
+      "present_3sg": "singt",
+      "preterite": "sang",
+      "perfect": "hat gesungen",
+      "participle_ii": "gesungen",
+      "subjunctive_ii": "sänge",
+      "auxiliary": "haben",
+      "note": "强变化第三类（i–a–u）；诗中过去时 sang 与第一人称省音现在时 sing' 交替出现，正是全诗\"过去/现在\"来回摆荡的语法标志。"
+    },
+    {
+      "infinitive": "spinnen",
+      "present_3sg": "spinnt",
+      "preterite": "spann",
+      "perfect": "hat gesponnen",
+      "participle_ii": "gesponnen",
+      "subjunctive_ii": "spönne / spänne",
+      "auxiliary": "haben",
+      "note": "强变化第三类；诗中第一人称省音形式 spinne / spinn'。"
+    },
+    {
+      "infinitive": "scheinen",
+      "present_3sg": "scheint",
+      "preterite": "schien",
+      "perfect": "hat geschienen",
+      "participle_ii": "geschienen",
+      "subjunctive_ii": "schiene",
+      "auxiliary": "haben",
+      "note": "强变化（ei–ie–ie）；兼有\"照耀\"与\"看起来似乎\"两义，诗中取前者。"
+    },
+    {
+      "infinitive": "mahnen",
+      "present_3sg": "mahnt",
+      "preterite": "mahnte",
+      "perfect": "hat gemahnt",
+      "participle_ii": "gemahnt",
+      "subjunctive_ii": "mahnte",
+      "auxiliary": "haben",
+      "note": "诗中用延长形式 mahnet（今 mahnt）。"
+    },
+    {
+      "infinitive": "fahren",
+      "present_3sg": "fährt",
+      "preterite": "fuhr",
+      "perfect": "ist gefahren",
+      "participle_ii": "gefahren",
+      "subjunctive_ii": "führe",
+      "auxiliary": "sein（表移动）",
+      "note": "诗中第二分词 gefahren 出现在省略了助动词 bist 的从句中。"
+    },
+    {
+      "infinitive": "wollen",
+      "present_3sg": "will",
+      "preterite": "wollte",
+      "perfect": "hat gewollt",
+      "participle_ii": "gewollt / wollen",
+      "subjunctive_ii": "wollte",
+      "auxiliary": "haben",
+      "note": "诗中第一虚拟式 wolle 用于祈愿（\"Gott wolle uns vereinen\"）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "抱韵与\"只用四个韵脚\"的循环结构",
+      "quote": "waren – Nachtigall – Schall – waren / weinen – allein – rein – scheinen",
+      "body": "全诗六节二十四行，韵式为抱韵（abba / cddc 交替）。但真正惊人的是：整首诗只用了四个韵脚音节——奇数节用 -aren / -all，偶数节用 -einen / -ein。同一批词（waren, Nachtigall, Schall, scheinen, allein, rein, weinen, vereinen）在六节中不断重排，就像纺车一圈圈转动却始终在原地。形式本身即是内容。"
+    },
+    {
+      "title": "动词支配第二格：dein denken",
+      "quote": "Denk' ich wohl dein allein,",
+      "body": "德语中曾有一批动词支配第二格宾语：gedenken（纪念）、sich erinnern（回忆，今用 an + 第四格）、bedürfen（需要）、harren（等待）等。dein 在此是人称代词 du 的第二格（今作 deiner）。现代德语只保留了少数几个（gedenken、bedürfen、sich enthalten），日常表达用 \"an dich denken\"。"
+    },
+    {
+      "title": "从句中助动词的省略",
+      "quote": "Daß du von mir gefahren.",
+      "body": "完整形式应为 \"Daß du von mir gefahren bist\"。在从句中省略句末的助动词 sein/haben，是德语诗歌与旧式书面语的常见做法（今日仍见于关系从句：\"die Arbeit, die er geleistet\"）。学习者阅读时应能自动补出被省略的助动词，并据第二分词判断该用 sein 还是 haben。"
+    },
+    {
+      "title": "时间连词 da（= als）",
+      "quote": "Da wir zusammen waren. / Als wir zusammen waren",
+      "body": "本诗中 da 与 als 交替使用，意思相同，都是\"当……时\"。现代德语里 da 作时间连词的用法已经消失，只保留了因果义（\"da es regnet, bleiben wir zu Hause\" 因为下雨，我们待在家）。读19世纪文本时若把这里的 da 读成\"因为\"，整句就会不通——这是很常见的误读，值得留意。"
+    }
+  ],
+  "cultural_notes": "《纺纱女的夜歌》大约作于1802年夏天，1818年才随小说《一个游学生的编年史》发表。这部小说讲的是1358年出生的赤贫流浪儿约翰内斯被骑士费尔特林·冯·蒂尔林根雇为书记的故事——这位语言天赋极高的少年不仅写字，还为骑士和他的四个女儿讲述种种奇思妙想的故事。这首诗就镶嵌在这样一个伪中世纪的叙事框架里。\n\n纺车在浪漫派的意象体系中不只是劳动工具，也是时间的象征：线一寸寸从指间过去，正如生命。诗中对\"重聚\"的祈求（\"Gott wolle uns vereinen\"）指向的是天上而非人间的团圆，因此多数解释者把这首诗读作对亡故爱人的哀歌，而不是对远行者的思念。\n\n这首诗的形式常被拿来当作\"诗艺即织艺\"的范例。全诗只用四个韵脚，八个韵词在六节之间反复重排；klar und rein（清亮而洁净）一组词先后落在线、心、月三处，把外在劳作、内心状态与自然景象缝在一起。而全诗最重要的进展只发生在两个词之间：第五行的 \"kann nicht weinen\"（哭不出来）与末行的 \"möchte weinen\"（想哭）。二十四行诗里什么也没有发生，唯有一个人终于能够悲伤——这正是这首诗被反复选入德语诗选的原因。\n\n此诗被谱曲多次，其中理夏德·施特劳斯（作品71之1，1918）与马克斯·雷格的版本较为知名。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。两处需要说明的处理：(1) 全诗的核心是\"哭不出来\"与\"想哭\"这一字之差，译文严格保持了两处措辞的对称，未作文学化的润饰；(2) klar und rein 在诗中三次分别修饰线、心、月，译文统一译作\"清亮／洁净\"以保留这条贯穿全诗的词链，尽管中文里\"线清亮\"略显生硬。此外，全诗只用四个韵脚的循环结构在中文中无法复制，请学习者结合\"语法要点\"与朗读体会。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "夜晚的农舍室内，一位年轻女子独自坐在纺车前，月光从小窗斜射进来落在纺出的线上；窗外是黑暗的树影，看不见鸟",
+    "mood": "安静、克制、绵长的哀伤；不应表现哭泣或戏剧化的悲痛，人物姿态应是专注于劳作的",
+    "elements": "木制纺车与卷线杆、纺出的一缕细线、粗糙的木桌与土墙、小方窗与窗外的月、地面上的一道月光、无灯或仅有一盏将熄的油灯",
+    "era": "无需精确断代；可取中世纪晚期至18世纪的乡村室内样式（诗的叙事框架设定在14世纪）",
+    "taboos": "不得出现文字、水印；不得出现夜莺的具象形象（诗中夜莺只以声音存在）；不得作面部特写或泪水；不得出现现代照明、家具、纺织机械",
+    "style": "17世纪荷兰室内画式的写实油画风格（可参考单一光源的室内人物画传统），主光为冷月光，色调深褐与灰蓝，线与月光是画面中唯二的亮部"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "Zeno.org — Clemens Brentano: Werke. Band 1, München [1963–1968], S. 131（Ausgewählte Gedichte）",
+      "url": "http://www.zeno.org/Literatur/M/Brentano,+Clemens/Gedichte/Ausgew%C3%A4hlte+Gedichte/Der+Spinnerin+Nachtlied",
+      "note": "主来源。依 Hanser 版《布伦塔诺著作集》第1卷数字化本，六节二十四行完整，保留旧正字法 Daß。"
+    },
+    {
+      "name": "gedichte7.de — „Der Spinnerin Nachtlied – Brentano“",
+      "url": "https://www.gedichte7.de/der-spinnerin-lied.html",
+      "note": "辅助来源。六节二十四行，与主来源在结构与韵词上一致，但第9行与第14行存在实质异文（Da/Als、Gedenk ich dein/Denk' ich wohl dein），据此确认了本诗流通版本之间的差异，详见校对记录。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文以 Zeno.org 转录的 Hanser 版《布伦塔诺著作集》第1卷（第131页）为主来源，与 gedichte7.de 的通行版本逐词核对，六节各四行的结构与韵词完全一致，但发现两处实质异文，本站均采主来源并如实记录：(1) 第9行：主来源作 \"Als wir zusammen waren\"，gedichte7.de 作 \"Da wir zusammen waren\"（与第4行完全相同）。若依后者，全诗第1、3节的首尾句便完全重复，循环感更强；本站从主来源的 Als。(2) 第14行：主来源作 \"Denk' ich wohl dein allein\"，gedichte7.de 作 \"Gedenk ich dein allein\"。两者语法都成立（denken 与 gedenken 在古典用法中均可支配第二格），但音节数不同，影响格律；本站从主来源。此外，标点差异较多：主来源在第9—12行几乎不加标点，gedichte7.de 则补足了逗号；末行主来源作句号，gedichte7.de 作感叹号。本站保留主来源的标点原样。需说明的是，本站未直接查阅1818年《一个游学生的编年史》初刊本或布伦塔诺手稿，上述采择依据全集转录，两处异文孰为作者定本尚未查明，属待核实项。",
+  "checklist": [
+    { "label": "确认作者：Clemens Brentano", "done": true },
+    { "label": "确认标题与出处：《一个游学生的编年史》", "done": true },
+    { "label": "德文原文主来源：Zeno.org（Hanser 版著作集第1卷）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（第9行 Als/Da；第14行 Denk' ich wohl dein/Gedenk ich dein；标点）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "查明两处异文孰为作者定本（需对照1818年初刊本）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}
