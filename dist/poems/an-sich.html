@@ -118,40 +118,64 @@
             <span class="tag">命令式</span>
             <span class="tag">座右铭诗</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/an-sich.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一间简朴的17世纪书房或旅舍房间，桌上有摊开的书、墨水瓶与一只旅行箱；窗外是风雨交加的天色与远处模糊的战乱迹象；室内烛光稳定不摇
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>沉着、内向、克制的坚定；室外的动荡与室内的静定形成对照，但不应表现为对抗或英雄气概</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    粗木桌与硬椅、摊开的书页与羽毛笔、一只带皮带的旅行箱、一支笔直燃烧的蜡烛、窗外的斜雨与低云、窗玻璃上的水痕
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>17世纪中欧，家具、器物与窗棂应为该时代样式</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    17世纪荷兰室内画式的写实油画风格，单一暖光源（烛光）对窗外冷调，色调深褐与灰蓝，笔触克制，明暗对比强
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现文字或可辨识的书页内容；不得出现人物（人应仅由器物暗示其在场）；不得出现骷髅、沙漏等 vanitas
+                    静物符号；不得出现现代物品；烛焰不得表现为被风吹动
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一间简朴的17世纪书房或旅舍房间，桌上有摊开的书、墨水瓶与一只旅行箱；窗外是风雨交加的天色与远处模糊的战乱迹象；室内烛光稳定不摇
-              </dd>
-              <dt>情绪</dt>
-              <dd>沉着、内向、克制的坚定；室外的动荡与室内的静定形成对照，但不应表现为对抗或英雄气概</dd>
-              <dt>画面元素</dt>
-              <dd>
-                粗木桌与硬椅、摊开的书页与羽毛笔、一只带皮带的旅行箱、一支笔直燃烧的蜡烛、窗外的斜雨与低云、窗玻璃上的水痕
-              </dd>
-              <dt>时代感</dt>
-              <dd>17世纪中欧，家具、器物与窗棂应为该时代样式</dd>
-              <dt>推荐风格</dt>
-              <dd>
-                17世纪荷兰室内画式的写实油画风格，单一暖光源（烛光）对窗外冷调，色调深褐与灰蓝，笔触克制，明暗对比强
-              </dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现文字或可辨识的书页内容；不得出现人物（人应仅由器物暗示其在场）；不得出现骷髅、沙漏等 vanitas
-                静物符号；不得出现现代物品；烛焰不得表现为被风吹动
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">
