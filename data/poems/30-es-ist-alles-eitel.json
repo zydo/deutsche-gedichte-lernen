@@ -1,0 +1,299 @@
+{
+  "id": "30",
+  "slug": "es-ist-alles-eitel",
+  "author": "Andreas Gryphius",
+  "author_zh": "安德烈亚斯·格吕菲乌斯",
+  "title_de": "Es ist alles eitel",
+  "title_zh": "一切都是虚空",
+  "year": "1637年首刊于《利萨十四行诗集》，1643年起以修订形式收入《十四行诗·第一卷》",
+  "collection": "《十四行诗·第一卷》（Sonnette. Das erste Buch）第8首",
+  "period": "巴洛克（三十年战争时期）",
+  "difficulty": "B2",
+  "tags": [
+    "虚空",
+    "无常",
+    "十四行诗",
+    "亚历山大体",
+    "三十年战争",
+    "巴洛克入门"
+  ],
+  "german_text": [
+    [
+      "Du siehst, wohin du siehst, nur Eitelkeit auf Erden,",
+      "Was dieser heute baut, reißt jener morgen ein;",
+      "Wo jetzund Städte stehn, wird eine Wiese sein,",
+      "Auf der ein Schäferskind wird spielen mit den Herden."
+    ],
+    [
+      "Was jetzund prächtig blüht, soll bald zertreten werden;",
+      "Was jetzt so pocht und trotzt, ist morgen Asch und Bein;",
+      "Nichts ist, das ewig sei, kein Erz, kein Marmorstein.",
+      "Jetzt lacht das Glück uns an, bald donnern die Beschwerden."
+    ],
+    [
+      "Der hohen Taten Ruhm muß wie ein Traum vergehn.",
+      "Soll denn das Spiel der Zeit, der leichte Mensch bestehn?",
+      "Ach, was ist alles dies, was wir vor köstlich achten,"
+    ],
+    [
+      "Als schlechte Nichtigkeit, als Schatten, Staub und Wind,",
+      "Als eine Wiesenblum, die man nicht wieder findt!",
+      "Noch will, was ewig ist, kein einig Mensch betrachten."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留亚历山大体两个半句的对偶结构与末行的反讽收束",
+    "text": [
+      [
+        "你举目所见，尘世上无非虚空，",
+        "此人今日所建，彼人明日拆毁；",
+        "如今城池矗立之处，将成为一片草地，",
+        "有个牧童将在那里与畜群嬉戏。"
+      ],
+      [
+        "如今华美地绽放的，不久将被践踏；",
+        "如今这般张扬跋扈的，明日便是灰与骨；",
+        "没有什么是永恒的，青铜不是，大理石也不是。",
+        "此刻幸运朝我们微笑，转眼灾祸便如雷降临。"
+      ],
+      [
+        "丰功伟绩的荣名必将如梦消散。",
+        "那么，时间的玩物、这轻飘飘的人，还能存留吗？",
+        "唉，我们视为珍贵的这一切，究竟是什么呢——"
+      ],
+      [
+        "无非是拙劣的虚无，是影子、尘土与风，",
+        "是一朵草地上的花，人再也找不回它！",
+        "然而那永恒之物，竟没有一个人愿意去凝视。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Du siehst, wohin du siehst, nur Eitelkeit auf Erden,",
+      "zh": "全诗没有\"我\"，只有对读者的直接称呼 du。die Eitelkeit 在此取路德《圣经》中的古义\"虚空、虚无\"（拉丁语 vanitas），而非现代的\"虚荣心\"——诗题即引自《传道书》1:2 路德译本 \"Es ist alles ganz eitel\"。本站《晚歌》中的 eitel 亦取此古义，可对照。"
+    },
+    {
+      "de": "Was dieser heute baut, reißt jener morgen ein;",
+      "zh": "dieser … jener（这一个……那一个）是德语的对举代词。可分动词 einreißen（拆毁）的前缀落在行末。heute / morgen 的对立将在下一节以 jetzund / morgen 重现，构成全诗的时间骨架。"
+    },
+    {
+      "de": "Wo jetzund Städte stehn, wird eine Wiese sein,",
+      "zh": "jetzund 是 jetzt 的巴洛克形式，今已废弃。这一行是全诗最著名的意象：城市化为草地。写于三十年战争期间，它并非修辞夸张，而是当时西里西亚的实景。"
+    },
+    {
+      "de": "Was jetzt so pocht und trotzt, ist morgen Asch und Bein;",
+      "zh": "pochen（敲、逞强）与 trotzen（对抗、逞能）近义连用，是巴洛克诗歌惯用的同义堆叠（Häufung）。Asch und Bein（灰与骨）为不带冠词的固定对举，指焚毁后的残余。"
+    },
+    {
+      "de": "Der hohen Taten Ruhm muß wie ein Traum vergehn.",
+      "zh": "前置第二格：der hohen Taten Ruhm = der Ruhm der hohen Taten（丰功伟绩的荣名）。第三节（第一个三行诗节）开始由描写转入论断，这是十四行诗结构上的\"转折\"（Volta）。"
+    },
+    {
+      "de": "Soll denn das Spiel der Zeit, der leichte Mensch bestehn?",
+      "zh": "das Spiel der Zeit（时间的玩物）与 der leichte Mensch（轻飘飘的人）是同位语，指同一对象。leicht 在此非\"容易\"，而是\"轻若无物、经不起分量\"。全诗唯一的疑问句，也是全诗的重心。"
+    },
+    {
+      "de": "Ach, was ist alles dies, was wir vor köstlich achten,",
+      "zh": "vor 是 für 的巴洛克拼法（etwas für köstlich achten = 视某物为珍贵）。这一句的谓语要跨过诗节界限、到下一节的三个 als 才补全——十四行诗的两个三行诗节被一个句子缝在一起，这是格吕菲乌斯常用的手法。"
+    },
+    {
+      "de": "Als eine Wiesenblum, die man nicht wieder findt!",
+      "zh": "Wiesenblum（草地上的花）省略了词尾 -e；findt 为 findet 的省音形式。此喻出自《诗篇》103:15—16（\"至于世人，他的年日如草一样……风一吹便归无有\"）。它同时回指第4行的\"草地\"——城市变成草地，人变成草地上的一朵花。"
+    },
+    {
+      "de": "Noch will, was ewig ist, kein einig Mensch betrachten.",
+      "zh": "全诗的最后一击。noch 在此为\"然而、尽管如此\"；kein einig Mensch = kein einziger Mensch（没有一个人）。前十三行都在讲万物皆空，末行却把矛头转向读者：既然如此，为什么没有人去看那唯一不空的东西？巴洛克 vanitas 诗的目的从来不是绝望，而是把目光引向永恒。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "die Eitelkeit, -en",
+      "pos": "n.（阴性）",
+      "meaning": "①（古义／圣经）虚空、虚无；②（今义）虚荣心",
+      "note": "诗题引自路德译《传道书》1:2；今义\"虚荣\"由古义引申而来（把心思放在虚无之物上）。阅读17—18世纪文本时必须优先考虑古义。"
+    },
+    {
+      "term": "jetzund",
+      "pos": "adv.（巴洛克形式）",
+      "meaning": "如今、此刻",
+      "note": "= jetzt；17世纪常见，今已完全废弃。同类古形还有 itzt / itzund。"
+    },
+    {
+      "term": "einreißen",
+      "pos": "v.（可分，强变化）",
+      "meaning": "拆毁、推倒；（陋习）蔓延开来",
+      "note": "变位 reißt ein – riss ein – hat eingerissen；与 aufbauen（建造）构成本诗第2行的对立。"
+    },
+    {
+      "term": "trotzen",
+      "pos": "v.（弱变化，支配第三格）",
+      "meaning": "对抗、逞强、赌气",
+      "note": "der Trotz（倔强）、trotzdem（尽管如此）、trotz + 第二格（尽管）同源；诗中与 pochen 同义连用。"
+    },
+    {
+      "term": "das Erz, -e",
+      "pos": "n.（中性）",
+      "meaning": "矿石；青铜（诗歌用法）",
+      "note": "诗中与 Marmorstein 并列，指最坚固耐久的材料——纪念碑的材料。前缀 Erz-（如 Erzbischof 大主教）与之无关，源自希腊语。"
+    },
+    {
+      "term": "die Beschwerde, -n",
+      "pos": "n.（阴性）",
+      "meaning": "①（古义）苦难、重负；②（今义）投诉；③（复数）病痛",
+      "note": "诗中取古义；今义\"投诉\"（eine Beschwerde einreichen）与\"身体不适\"（Beschwerden haben）都由\"负担\"引申而来。"
+    },
+    {
+      "term": "die Nichtigkeit, -en",
+      "pos": "n.（阴性）",
+      "meaning": "虚无、微不足道之物；（法律）无效",
+      "note": "来自 nichtig（无效的、微不足道的）；诗中与 Eitelkeit 同义呼应。"
+    },
+    {
+      "term": "achten (für/als)",
+      "pos": "v.（弱变化）",
+      "meaning": "视为、认为",
+      "note": "诗中为 \"etwas vor (= für) köstlich achten\"；今日多用 halten für。另有\"尊敬\"（jemanden achten）与\"注意\"（auf etwas achten）两义。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "sehen",
+      "present_3sg": "sieht",
+      "preterite": "sah",
+      "perfect": "hat gesehen",
+      "participle_ii": "gesehen",
+      "subjunctive_ii": "sähe",
+      "auxiliary": "haben",
+      "note": "强变化，现在时单数变元音 e→ie；诗中首行两次出现第二人称 siehst。"
+    },
+    {
+      "infinitive": "einreißen",
+      "present_3sg": "reißt ein",
+      "preterite": "riss ein（旧 riß ein）",
+      "perfect": "hat eingerissen",
+      "participle_ii": "eingerissen",
+      "subjunctive_ii": "risse ein",
+      "auxiliary": "haben",
+      "note": "可分动词，强变化（ei–i–i）。"
+    },
+    {
+      "infinitive": "zertreten",
+      "present_3sg": "zertritt",
+      "preterite": "zertrat",
+      "perfect": "hat zertreten",
+      "participle_ii": "zertreten",
+      "subjunctive_ii": "zerträte",
+      "auxiliary": "haben",
+      "note": "不可分动词（前缀 zer- 永不分离），强变化；诗中作被动不定式 \"soll … zertreten werden\"。"
+    },
+    {
+      "infinitive": "vergehen",
+      "present_3sg": "vergeht",
+      "preterite": "verging",
+      "perfect": "ist vergangen",
+      "participle_ii": "vergangen",
+      "subjunctive_ii": "verginge",
+      "auxiliary": "sein",
+      "note": "不可分动词；派生词 die Vergänglichkeit（无常）正是巴洛克诗歌的核心概念。"
+    },
+    {
+      "infinitive": "bestehen",
+      "present_3sg": "besteht",
+      "preterite": "bestand",
+      "perfect": "hat bestanden",
+      "participle_ii": "bestanden",
+      "subjunctive_ii": "bestünde / bestände",
+      "auxiliary": "haben",
+      "note": "诗中取\"存续、经受住\"义；另有\"通过（考试）\"（eine Prüfung bestehen）、\"由……构成\"（aus etwas bestehen）、\"坚持\"（auf etwas bestehen）三义。"
+    },
+    {
+      "infinitive": "betrachten",
+      "present_3sg": "betrachtet",
+      "preterite": "betrachtete",
+      "perfect": "hat betrachtet",
+      "participle_ii": "betrachtet",
+      "subjunctive_ii": "betrachtete",
+      "auxiliary": "haben",
+      "note": "不可分动词，弱变化；意为\"凝视、审视、（作为……）看待\"，是全诗最后一个词，也是它真正的祈使。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "亚历山大体（Alexandriner）与中间停顿",
+      "quote": "Du siehst, wohin du siehst, ‖ nur Eitelkeit auf Erden,",
+      "body": "亚历山大体是巴洛克德语诗歌的标准诗行：六音步抑扬格，共12或13个音节，第三个重音之后有一个固定的中间停顿（Zäsur），把诗行切成对称的两半。这一形式天然适合表达对立与平衡——本诗几乎每一行都是\"前半句／后半句\"的对偶（今日建的／明日拆的、如今绽放的／不久被踏的）。朗读时务必在中间停一下，整首诗的节奏才立得住。这一诗体由马丁·奥皮茨1624年的《德国诗学》确立为规范。"
+    },
+    {
+      "title": "十四行诗的结构与转折（Volta）",
+      "quote": "全诗 4+4+3+3 行，韵式 abba abba ccd eed",
+      "body": "两个四行诗节（Quartette）用抱韵，两个三行诗节（Terzette）以对句韵开始、第三行相互勾连。前八行铺陈现象，第九行开始转入论断——这个转折点称为 Volta。本诗的特别之处在于：第11行的句子跨过诗节界限延伸到第12—14行（\"was ist alles dies … Als …, Als …, Als …\"），使最后六行成为一个不可分割的长句。"
+    },
+    {
+      "title": "前置第二格",
+      "quote": "Der hohen Taten Ruhm muß wie ein Traum vergehn.",
+      "body": "= der Ruhm der hohen Taten。第二格前置在巴洛克诗歌中是常态而非例外，本站在荷尔德林、里尔克、特拉克尔、施托姆诸诗中标注过的同一结构，其源头正在这里。阅读窍门不变：看到 der/des + 名词后紧跟另一个名词，先把前者读作后者的修饰语。"
+    },
+    {
+      "title": "巴洛克拼写与省音",
+      "quote": "jetzund / vor (= für) / Wiesenblum / findt / einig (= einzig)",
+      "body": "本站呈现的是现代化正字法的通行文本，但仍保留了几处17世纪的词形：jetzund（= jetzt）、vor（= für，在 \"für etwas achten\" 结构中）、einig（= einzig，唯一的）、以及为格律省去词尾的 Wiesenblum、findt、vergehn。学习者应能在阅读中还原为现代形式，同时明白这些不是错误。关于本站对巴洛克文本正字法的处理原则，详见\"校对记录\"。"
+    }
+  ],
+  "cultural_notes": "格吕菲乌斯（1616—1664）是德语巴洛克最重要的诗人。他的一生几乎与三十年战争（1618—1648）完全重合：五岁丧父，十一岁丧母，家乡格洛高在战争中数度易手、被焚被劫，他本人多次逃难。这首十四行首刊于1637年——距战争结束还有十一年。\n\n诗的主题是 vanitas（虚空）。拉丁语 vanitas 在当时的德语中意为\"空洞的表象、虚无、徒劳\"，也包括\"夸耀、失败\"，而不是今天\"自负、爱慕虚荣\"的性格义——今义正是从古义引申出来的：把心思放在虚无易逝之物（例如美貌）上的人，才被叫作\"虚荣\"。路德把《传道书》1:2 译作 \"Es ist alles ganz eitel\"，这首诗的标题即由此而来。\n\n值得注意的是全诗的结尾。前十三行列举万物之空，读到第13行会以为这是一首绝望的诗；但最后一行突然把方向反转：\"然而那永恒之物，竟没有一个人愿意去凝视。\"在 vanitas 的修辞里，万物的消逝并不是坏消息，而是神所安排的生灭；真正的问题在于人只盯着会消失的东西看。这首诗因此不是虚无主义的，而是一次劝诫。\n\n本诗几乎是所有德语文学课接触巴洛克的第一篇。它与本站已收录的《眼泪·祖国之泪》（编号31）常被并读：一首写世界本身的无常，一首写具体的一场战争。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) Eitelkeit 取古义\"虚空\"而非\"虚荣\"，译文一律作\"虚空／虚无\"，这是理解全诗的前提；(2) 亚历山大体的中间停顿在中文中无法用音步复制，译文以句读位置近似传达其对偶感；(3) 末行的 noch 是转折词\"然而\"，译文以\"然而……竟\"传达其反讽语气——若读成\"还有\"，全诗的方向就反了。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一片开阔的草地缓坡，草间隐约露出倒塌的石砌墙基与断柱；一个牧童与几只羊在废墟间走过；远处地平线上有焚毁城市的余烟",
+    "mood": "宁静中带着荒凉；不应恐怖或血腥，而应传达\"灾难已经过去很久、草已长回来\"的时间感",
+    "elements": "及膝的野草与一两朵小白花、埋在草中的石基与断裂的柱础、牧童与羊群的远景、天边的一缕烟、低垂的云",
+    "era": "17世纪中欧（三十年战争后期），服饰与建筑遗迹应为该时代样式",
+    "taboos": "不得出现文字、水印；不得出现尸体、血迹、武器等直接的战争暴力；不得出现骷髅、沙漏、蜡烛等巴洛克 vanitas 静物画的标准符号（诗中并未使用这些俗套）；不得出现现代元素",
+    "style": "17世纪荷兰风景画式的写实油画风格，天空占画面三分之二，光线为阴天的散射光，色调以灰绿、土黄与铅灰为主"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "Zeno.org — Andreas Gryphius: Gesamtausgabe der deutschsprachigen Werke. Band 1, Tübingen 1963, S. 33–34（Sonnette. Das erste Buch, Nr. 8 „Es ist alles eitell“）",
+      "url": "http://www.zeno.org/Literatur/M/Gryphius,+Andreas/Gedichte/Sonette/Sonnette.+Das+erste+Buch/8.+Es+ist+alles+eitell",
+      "note": "主来源（原始正字法）。依 Szyrocki/Powell 编《格吕菲乌斯德语作品全集》第1卷，保留17世纪拼写与斜线标点：\"Dv sihst/ wohin du sihst nur eitelkeit auff erden.\"，并确认此诗在《十四行诗·第一卷》中编号为第8首。"
+    },
+    {
+      "name": "gedichte7.de — „Es ist alles eitel – Gryphius“",
+      "url": "https://www.gedichte7.de/es-ist-alles-eitel.html",
+      "note": "辅助来源（现代化正字法）。十四行的分节、韵式与语序与主来源一致，用于确定本站所采用的现代化通行文本；并提供格律分析（亚历山大体、abba abba ccd eed）。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "【本站对巴洛克文本的正字法处理原则】本诗与本站收录的其他17世纪作品一样，正文采用**现代化正字法的通行文本**（即今日德语选本、教科书与课堂使用的形式），而非17世纪原刊的拼写。这是一个明确的编辑决定，理由是本站面向德语学习者：原刊的 \"Dv sihst/ wohin du sihst nur eitelkeit auff erden.\" 对初学者近乎不可读，且会妨碍词典查询。原始形态在本记录中完整说明，绝不隐瞒。\n\n德文正文通过两个独立来源核对：Zeno.org 转录的 Szyrocki/Powell 版《格吕菲乌斯德语作品全集》第1卷（1963年，第33—34页，原始正字法）与 gedichte7.de（现代化正字法）。十四行的行数、语序、韵式与内容完全一致。原刊形态与现代化文本之间的系统性差异包括：(1) 大小写——原刊名词一律小写（eitelkeit, städte, wiesen）；(2) 拼写——sihst/siehst、bawt/baut、itzund/jetzund、schäffers kind/Schäferskind、blüht sol/blüht soll、vndt·vnd/und、mus/muß、dis/dies、für(vor)/für、nichtikeitt/Nichtigkeit、schaten/Schatten、windt/Wind、wiederfindt/wieder findt；(3) 标点——原刊用斜线（Virgel）\"/\"代替逗号，且第9行前后多处用句号而非现代的问号／逗号。此外还有一处词形差异值得注意：原刊第10行末为句号（陈述），现代化文本作问号（疑问），这会改变该行的语气；本站从现代化文本的问号，因其与 \"Soll denn …\" 的句式相合，但此处属编辑判断而非文献事实，特此标明。\n\n待核实项：(1) 1637年《利萨十四行诗集》首刊本与1643年后各版之间的具体异文，本站未逐一比对（据 German Wikipedia 关于格吕菲乌斯十四行的说明，1637年版与后来各版差异可能较大）；(2) 本站未直接查阅任何原刊影印件，原始正字法依据 Zeno.org 对全集的转录，且该转录在本站抓取时存在字符编码损坏（变元音显示异常），故上文对原刊拼写的复述可能有个别不准确之处，建议对照全集纸本核实。",
+  "checklist": [
+    { "label": "确认作者：Andreas Gryphius", "done": true },
+    { "label": "确认标题与出处：Sonnette. Das erste Buch, Nr. 8", "done": true },
+    { "label": "德文原文主来源：Zeno.org（Szyrocki/Powell 版全集第1卷，原始正字法）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de（现代化正字法）", "done": true },
+    { "label": "核对诗节、行数、韵式", "done": true },
+    { "label": "明确记录本站对巴洛克正字法的编辑处理原则", "done": true },
+    { "label": "记录原刊与现代化文本的系统性差异", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇（含 eitel 的古今两义）", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点（含亚历山大体说明）", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "核实第10行末标点（陈述 vs. 疑问，现为编辑判断）", "done": false },
+    { "label": "比对1637年首刊本与1643年后各版的异文", "done": false },
+    { "label": "对照全集纸本核实原刊拼写（现依存在编码损坏的转录）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）", "done": false }
+  ]
+}

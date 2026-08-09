@@ -1,0 +1,273 @@
+{
+  "id": "33",
+  "slug": "weltende",
+  "author": "Jakob van Hoddis",
+  "author_zh": "雅各布·范·霍迪斯（本名 Hans Davidsohn）",
+  "title_de": "Weltende",
+  "title_zh": "世界末日",
+  "year": "1911年1月11日发表于杂志《Der Demokrat》",
+  "collection": "《诗作与书信》（Dichtungen und Briefe, Arche Verlag, Zürich 1987）",
+  "period": "表现主义（开端之作）",
+  "difficulty": "B1",
+  "tags": [
+    "表现主义",
+    "末日",
+    "反讽",
+    "罗列式句法",
+    "都市",
+    "文学史转折点"
+  ],
+  "german_text": [
+    [
+      "Dem Bürger fliegt vom spitzen Kopf der Hut,",
+      "In allen Lüften hallt es wie Geschrei.",
+      "Dachdecker stürzen ab und gehn entzwei,",
+      "Und an den Küsten – liest man – steigt die Flut."
+    ],
+    [
+      "Der Sturm ist da, die wilden Meere hupfen",
+      "An Land, um dicke Dämme zu zerdrücken.",
+      "Die meisten Menschen haben einen Schnupfen.",
+      "Die Eisenbahnen fallen von den Brücken."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留八行之间毫无过渡的并置与第7行突兀的日常语调",
+    "text": [
+      [
+        "市民的帽子从尖脑袋上飞走了，",
+        "所有的空气里都回荡着仿佛喊叫的声音。",
+        "盖屋顶的工人坠落下来，摔成两半，",
+        "而在海岸边——据报载——潮水正在上涨。"
+      ],
+      [
+        "风暴来了，狂野的海蹦跳着",
+        "上了岸，要把厚厚的堤坝压碎。",
+        "大多数人都得了感冒。",
+        "火车从桥上掉了下去。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Dem Bürger fliegt vom spitzen Kopf der Hut,",
+      "zh": "开篇即是全诗的调子：世界末日的第一个征兆，是一位市民的帽子被吹掉了。dem Bürger 是\"利益/损失第三格\"（帽子从\"他的\"头上飞走）。spitz（尖的）用于人头是对市民阶层的漫画式贬低——不是恐怖，而是滑稽。der Bürger 在1911年的语境中特指自满的中产市民（Spießbürger）。"
+    },
+    {
+      "de": "In allen Lüften hallt es wie Geschrei.",
+      "zh": "die Lüfte 是 Luft 的诗歌复数。无人称的 es hallt（回荡着）加上 wie（仿佛）——连声音是什么都不确定。这是全诗唯一带有传统\"末日感\"的一行，紧接着就被下一行的荒诞打断。"
+    },
+    {
+      "de": "Dachdecker stürzen ab und gehn entzwei,",
+      "zh": "entzweigehen（碎成两半）通常用于杯子、盘子等器物；用在人身上，人就被降格为物。这是表现主义的核心手法之一：不作评论，只用一个错位的动词。gehn 为省音形式。"
+    },
+    {
+      "de": "Und an den Küsten – liest man – steigt die Flut.",
+      "zh": "全诗最关键的三个字：\"liest man\"（据报载）。灾难不是被经历的，而是被读到的——它是报纸上的一条消息。破折号中的插入语把整个末日推到了媒介的距离之外。这一细节使这首诗在一百多年后读起来仍然极为现代。"
+    },
+    {
+      "de": "Der Sturm ist da, die wilden Meere hupfen",
+      "zh": "hupfen 是 hüpfen（蹦跳）的口语／方言变体，用于\"狂野的海\"是刻意的语域错位：宏大的意象配上幼儿般的动词。这种把崇高与滑稽强行焊在一起的做法，正是本诗的语言纲领。"
+    },
+    {
+      "de": "An Land, um dicke Dämme zu zerdrücken.",
+      "zh": "dick（厚的、胖的）也是一个日常口语词，与\"堤坝\"这一工程术语并置。um … zu 引导目的从句——海\"为了\"压碎堤坝而上岸，仿佛它有计划。"
+    },
+    {
+      "de": "Die meisten Menschen haben einen Schnupfen.",
+      "zh": "全诗的落点，也是德语现代诗里最著名的一次反高潮（Antiklimax）。在洪水、风暴、坠亡之间，突然插进一句关于感冒的陈述，语法完全正规、语调完全平静。评论家米夏埃尔·布劳恩指出：\"大多数人\"得的是\"感冒\"，这实在算不上世界末日的确凿证据。"
+    },
+    {
+      "de": "Die Eisenbahnen fallen von den Brücken.",
+      "zh": "末行回到灾难，但依然用最平的陈述句写成——没有惊叹号，没有形容词。八行诗里的八个句子彼此没有任何连接词表明因果或轻重，这种句法称为\"罗列式\"（Reihungsstil），本诗是它最早也最纯粹的范例。本站格吕菲乌斯《祖国之泪》第二节可视为其三百年前的先声。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Bürger, -",
+      "pos": "n.（阳性）",
+      "meaning": "市民、公民；（贬义）庸常的中产者",
+      "note": "1911年前后的先锋文艺语境中，Bürger 常带强烈贬义，等同于 Spießbürger（庸人）；今日中性义为\"公民\"（Staatsbürger）。"
+    },
+    {
+      "term": "hallen",
+      "pos": "v.（弱变化）",
+      "meaning": "回响、回荡",
+      "note": "与 die Halle（大厅）同源，指声音在空间中反射；复合词 widerhallen（回响）、der Nachhall（余音）。"
+    },
+    {
+      "term": "entzweigehen",
+      "pos": "v.（可分，强变化）",
+      "meaning": "碎成两半、破裂",
+      "note": "entzwei（成两半）+ gehen；通常用于器物。诗中用于人，是刻意的降格。"
+    },
+    {
+      "term": "die Flut, -en",
+      "pos": "n.（阴性）",
+      "meaning": "涨潮；洪水",
+      "note": "与 die Ebbe（退潮）相对；本站施托姆《那座城》与迈耶《罗马的喷泉》中亦出现此词，含义各异，可对照。"
+    },
+    {
+      "term": "hüpfen（诗中 hupfen）",
+      "pos": "v.（弱变化）",
+      "meaning": "蹦跳、跳跃",
+      "note": "多用于小动物或儿童的轻快跳动；hupfen 为南德／口语变体。用于\"狂野的海\"是全诗最明显的语域错位。"
+    },
+    {
+      "term": "der Damm, Dämme",
+      "pos": "n.（阳性）",
+      "meaning": "堤坝、路堤",
+      "note": "习语 \"wieder auf dem Damm sein\"（恢复健康）；北德低地的防洪堤是当地生活的基本设施，因此这一意象对德语读者极具现实感。"
+    },
+    {
+      "term": "der Schnupfen, -",
+      "pos": "n.（阳性）",
+      "meaning": "伤风、鼻塞感冒",
+      "note": "特指鼻部症状，比 die Erkältung（感冒）更轻微、更日常；正是这种\"微不足道\"制造了全诗的反讽。"
+    },
+    {
+      "term": "die Eisenbahn, -en",
+      "pos": "n.（阴性）",
+      "meaning": "铁路；火车",
+      "note": "字面\"铁之路\"；20世纪初仍是现代技术文明的标志物，因此它\"从桥上掉下去\"具有象征意味。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "fliegen",
+      "present_3sg": "fliegt",
+      "preterite": "flog",
+      "perfect": "ist geflogen",
+      "participle_ii": "geflogen",
+      "subjunctive_ii": "flöge",
+      "auxiliary": "sein",
+      "note": "强变化（ie–o–o）；诗中主语 der Hut 后置于句末，是德语中把新信息放在句尾的常规做法。"
+    },
+    {
+      "infinitive": "abstürzen",
+      "present_3sg": "stürzt ab",
+      "preterite": "stürzte ab",
+      "perfect": "ist abgestürzt",
+      "participle_ii": "abgestürzt",
+      "subjunctive_ii": "stürzte ab",
+      "auxiliary": "sein",
+      "note": "可分动词，弱变化；今日亦用于飞机失事与电脑死机（der Rechner ist abgestürzt）。"
+    },
+    {
+      "infinitive": "entzweigehen",
+      "present_3sg": "geht entzwei",
+      "preterite": "ging entzwei",
+      "perfect": "ist entzweigegangen",
+      "participle_ii": "entzweigegangen",
+      "subjunctive_ii": "ginge entzwei",
+      "auxiliary": "sein",
+      "note": "可分动词；诗中复数现在时省音作 gehn entzwei。"
+    },
+    {
+      "infinitive": "steigen",
+      "present_3sg": "steigt",
+      "preterite": "stieg",
+      "perfect": "ist gestiegen",
+      "participle_ii": "gestiegen",
+      "subjunctive_ii": "stiege",
+      "auxiliary": "sein",
+      "note": "强变化（ei–ie–ie）；本站施托姆与克劳迪乌斯诗中亦有此词，可对照复习。"
+    },
+    {
+      "infinitive": "zerdrücken",
+      "present_3sg": "zerdrückt",
+      "preterite": "zerdrückte",
+      "perfect": "hat zerdrückt",
+      "participle_ii": "zerdrückt",
+      "subjunctive_ii": "zerdrückte",
+      "auxiliary": "haben",
+      "note": "不可分动词（zer- 表示\"弄碎、弄坏\"）；同类构词 zerbrechen、zerreißen、zerstören，是德语中一个高产的前缀，值得成组掌握。"
+    },
+    {
+      "infinitive": "fallen",
+      "present_3sg": "fällt",
+      "preterite": "fiel",
+      "perfect": "ist gefallen",
+      "participle_ii": "gefallen",
+      "subjunctive_ii": "fiele",
+      "auxiliary": "sein",
+      "note": "强变化；诗中复数现在时 fallen，作全诗最后一个动作，语调却毫无起伏。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "罗列式句法（Reihungsstil）",
+      "quote": "全诗八行 = 八个独立主句，无一个从属连词",
+      "body": "本诗是德语\"罗列式句法\"最著名的范例：每行（或每两行）一个语法完整、彼此平行的主句，之间没有 weil、als、während 等连接词说明因果、时间或轻重。结果是所有事件同时、等价地发生——帽子飞掉与火车坠桥一样重要，或者说一样不重要。这种句法后来成为表现主义早期诗歌的标志。对学习者而言，本诗是练习\"简单主句 + 正常语序/倒装\"的极佳材料：句子结构简单，但每一句的成分排列都值得逐一分析。"
+    },
+    {
+      "title": "利益/损失第三格",
+      "quote": "Dem Bürger fliegt vom spitzen Kopf der Hut,",
+      "body": "dem Bürger 不是间接宾语（\"给市民\"），而是表示动作涉及谁的第三格：帽子从\"他的\"头上飞走。德语常用这一手法代替物主代词：\"Mir tut der Kopf weh\"（我头疼，而非 mein Kopf）、\"Ihm ist das Glas zerbrochen\"（他的杯子碎了）。本站莱瑙《祈求》中的 \"Nimm … diese Welt von hinnen mir\" 是同一结构的另一种用法，可对照。"
+    },
+    {
+      "title": "插入语与信息来源标记",
+      "quote": "Und an den Küsten – liest man – steigt die Flut.",
+      "body": "\"liest man\" 是一个不带连词的插入句（Parenthese），用破折号隔开，不影响主句 \"an den Küsten steigt die Flut\" 的语序（状语在前 → 动词 → 主语）。德语中同类的信息来源标记还有 \"heißt es\"（据说）、\"wie es scheint\"（看来）、\"sagt man\"。诗中这一插入语承担的分量远超其长度：它把整场灾难标记为二手信息。"
+    },
+    {
+      "title": "语域错位（Stilbruch）作为构成原则",
+      "quote": "die wilden Meere hupfen … Die meisten Menschen haben einen Schnupfen.",
+      "body": "德语像其他语言一样有语体层级：hupfen、Schnupfen、dick 属日常口语，Weltende、Geschrei、Flut 属庄严语体。本诗系统性地把两者并置，而且让口语词落在押韵的位置上（hupfen–Schnupfen 是全诗最响亮的一组韵）。这不是不讲究，而是纲领：既然连世界末日都只是报纸上的一条消息，那么描写它的语言也不必庄严。学习德语时留意词汇的语体层级，是从\"看懂\"走向\"听得出味道\"的关键一步。"
+    }
+  ],
+  "cultural_notes": "1911年1月11日，二十三岁的雅各布·范·霍迪斯在柏林的杂志《Der Demokrat》上发表了这首八行诗。它通常被视为德语表现主义的\"开篇文献\"——不是因为它最好，而是因为此后的整整一代诗人都记得它。作家约翰内斯·R·贝歇尔后来回忆说，这八行诗当时像\"闪电\"一样击中了他们，人们在咖啡馆里互相背诵。\n\n它的直接背景是1910年5月哈雷彗星的回归。天文学家在彗尾中检测到氰的谱线，媒体随即掀起一轮世界末日恐慌。范·霍迪斯的诗正是对这场恐慌的反应——但不是加入，而是拆解。评论家米夏埃尔·布劳恩指出：这里的\"世界末日\"不是用许多表现主义诗歌那种高声的悲怆写出来的，而是用一种随口的、近乎油滑的语调；罗列式的诗行让末日场景显出可笑之处；事件被当作媒体奇观来把握，从反讽的距离外加以描述——人们只是\"读到\"这威胁。而\"大多数人\"得了\"感冒\"，实在算不上世界末日的确凿证据。\n\n作者的生平与诗的轻快语调形成残酷的反差。雅各布·范·霍迪斯是汉斯·达维德松（Hans Davidsohn, 1887—1942）的易位构词笔名。他自1912年起精神状况恶化，此后长期在疗养机构中度过。1942年，他从图宾根附近的犹太人疗养院被纳粹当局遣送，在索比堡灭绝营遇害。他的作品自2013年1月1日起进入公有领域。\n\n对德语学习者来说，这首诗还有一个特别的用处：它几乎不用生僻词，句子结构简单到极点，却是理解20世纪德语诗歌\"发生了什么\"的最短路径。把它和本站的克劳迪乌斯《晚歌》放在一起读——同样是八行以内的短诗，同样写世界的整体状况，相隔一百三十年——就能看清德语诗歌在这段时间里丢掉了什么、又获得了什么。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) 全诗的效果依赖于\"崇高词\"与\"日常词\"的并置，中译尽量在词语选择上保持这一落差（如\"狂野的海\"配\"蹦跳\"、\"世界末日\"级的场面配\"得了感冒\"），未作统一的文学化提升；(2) 第4行的插入语 \"– liest man –\" 是全诗的枢纽，译作\"——据报载——\"并保留破折号；(3) 第3行 entzweigehen 本用于器物，译作\"摔成两半\"以保留其物化效果，未改用更\"得体\"的表达。另需说明：hupfen–Schnupfen 是全诗最响的一组韵，中文无法复现，请对照原文朗读。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "1910年前后德国城市的一条街道，构图刻意杂乱：一顶礼帽在半空中飞、远处屋顶上有工人失去平衡的剪影、路边报刊亭上摊着报纸、一个裹着围巾擤鼻涕的路人站在最前景",
+    "mood": "荒诞而非恐怖；灾难与琐事在同一画面里等价并置，观者应先觉得可笑、再觉得不安",
+    "elements": "飞在空中的礼帽、倾斜的屋顶与远处的坠落剪影（不作血腥描绘）、报刊亭与摊开的报纸（版面不得有可读文字）、擤鼻涕的路人、远景中一座桥与桥上的火车、低压的乌云",
+    "era": "1910年前后的德国城市，服饰、街具与车辆应为该时代样式",
+    "taboos": "不得出现文字、水印、可辨识的报纸标题；不得出现血迹、尸体或对坠亡的正面描绘；不得使用恐怖片式的光效与构图；不得出现现代车辆、路牌、广告",
+    "style": "德国表现主义早期的城市画风格（可参考1910年代的木刻与油画传统），线条硬朗、透视略微扭曲、色彩偏冷，各个事件在画面中不分主次地并置"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "planetlyrik.de — „Jakob van Hoddis' Gedicht ‚Weltende‘“（附 Michael Braun 在《德国广播电台抒情诗历 2007》中的评注）",
+      "url": "https://www.planetlyrik.de/lyrikkalender/jakob-van-hoddis-gedicht-weltende/",
+      "note": "主来源。两节八行完整，明确标注出处：Jakob van Hoddis, Dichtungen und Briefe, Arche Verlag, Zürich 1987；并标注写作/发表年份（1911）与创作背景（1910年哈雷彗星恐慌、1911年1月刊于《Der Demokrat》）。"
+    },
+    {
+      "name": "gedichte7.de — „Weltende – Hoddis“",
+      "url": "https://www.gedichte7.de/weltende-hoddis.html",
+      "note": "辅助来源。两节八行与主来源逐词一致（含口语形式 hupfen 与插入语 – liest man –），用于独立交叉核对用词与标点。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（planetlyrik.de 依 Arche 版《诗作与书信》1987年本，与 gedichte7.de）逐词核对，两节各四行、内容一致，未发现字面异文。三处值得记录：(1) 第5行的 hupfen 是口语／方言形式（今日标准形式为 hüpfen），两个来源均作 hupfen，且它与第7行的 Schnupfen 构成全诗最重要的一组韵，因此确为作者原词而非讹误，本站保留。(2) 第4行的插入语在两来源中均以破折号标出（– liest man –），本站保留该排印。(3) 本诗常见的转载中偶有把第3行 gehn 补全为 gehen 的情况，会破坏该行的音节数；本站从两来源的省音形式。\n\n【版权状态】作者 Hans Davidsohn（笔名 Jakob van Hoddis）1942年于索比堡灭绝营遇害，其作品依德国／欧盟法律于逝世后70年、即2013年1月1日起进入公有领域，本站收录无版权障碍。\n\n待核实项：(1) 本站未直接查阅1911年1月11日《Der Demokrat》原刊影印件，文本依据 Arche 版全集的转录；该杂志初刊与后来结集之间是否存在异文，本站未查明。(2) 本诗在《Dichtungen und Briefe》中的具体页码本站未记录。",
+  "checklist": [
+    { "label": "确认作者：Jakob van Hoddis (Hans Davidsohn)", "done": true },
+    { "label": "确认发表信息：1911年1月11日《Der Demokrat》", "done": true },
+    { "label": "确认公版状态（1942年逝世，作品自2013年1月1日起进入公有领域）", "done": true },
+    { "label": "德文原文主来源：planetlyrik.de（依 Arche 版《诗作与书信》1987）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录 hupfen（口语形式，与 Schnupfen 押韵）非讹误", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点（含 Reihungsstil 与语域错位）", "done": true },
+    { "label": "撰写背景说明（含哈雷彗星恐慌与作者生平）", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "对照1911年《Der Demokrat》原刊核实初刊文本", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}

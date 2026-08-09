@@ -1,0 +1,305 @@
+{
+  "id": "32",
+  "slug": "an-sich",
+  "author": "Paul Fleming",
+  "author_zh": "保罗·弗莱明",
+  "title_de": "An Sich",
+  "title_zh": "致自己",
+  "year": "作于1633—1639年间，1646年由 Adam Olearius 编入《德语诗集》遗著版",
+  "collection": "《德语诗集》（Teutsche Poemata, Lübeck 1646）·「十四行诗第二卷·各类祝愿」第24首",
+  "period": "巴洛克（三十年战争时期）· 新斯多亚主义",
+  "difficulty": "B2",
+  "tags": [
+    "斯多亚主义",
+    "自持",
+    "十四行诗",
+    "亚历山大体",
+    "命令式",
+    "座右铭诗"
+  ],
+  "german_text": [
+    [
+      "Sei dennoch unverzagt! Gib dennoch unverloren!",
+      "Weich keinem Glücke nicht, steh höher als der Neid,",
+      "vergnüge dich an dir und acht es für kein Leid,",
+      "hat sich gleich wider dich Glück, Ort und Zeit verschworen."
+    ],
+    [
+      "Was dich betrübt und labt, halt alles für erkoren;",
+      "nimm dein Verhängnis an. Laß alles unbereut.",
+      "Tu, was getan muß sein, und eh man dir's gebeut.",
+      "Was du noch hoffen kannst, das wird noch stets geboren."
+    ],
+    [
+      "Was klagt, was lobt man doch? Sein Unglück und sein Glücke",
+      "ist ihm ein jeder selbst. Schau alle Sachen an:",
+      "dies alles ist in dir. Laß deinen eitlen Wahn,"
+    ],
+    [
+      "und eh du fürder gehst, so geh in dich zurücke.",
+      "Wer sein selbst Meister ist und sich beherrschen kann,",
+      "dem ist die weite Welt und alles untertan."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留全诗密集的命令式与末两行的格言式收束",
+    "text": [
+      [
+        "尽管如此，不要气馁！尽管如此，不要认输！",
+        "不要向任何命运退让，站得比嫉妒更高，",
+        "以你自己为满足，别把它当作什么苦难，",
+        "纵然命运、地点与时间都联合起来与你为敌。"
+      ],
+      [
+        "使你忧愁的与使你舒畅的，都当作被拣选的；",
+        "接受你的定数。让一切都不必后悔。",
+        "去做那必须做的事，赶在别人吩咐你之前。",
+        "你还能盼望的一切，仍在不断地被生出来。"
+      ],
+      [
+        "人究竟在抱怨什么、称赞什么呢？各人的不幸与幸运，",
+        "各人自己就是。把一切事物都看一遍：",
+        "这一切都在你之内。放下你那空洞的妄想吧，"
+      ],
+      [
+        "而在你继续往前走之前，先走回你自己里面去。",
+        "谁若是自己的主人、能够管住自己，",
+        "广大的世界与万物便都归他统辖。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Sei dennoch unverzagt! Gib dennoch unverloren!",
+      "zh": "全诗以两个命令式开篇，且都带 dennoch（尽管如此）——\"尽管如此\"在还没有说明\"什么情况\"之前就先出现了，读者被直接抛进一个已经很糟的处境里。\"Gib unverloren\" 是巴洛克的固定说法，意为\"不要认输、不要放弃\"（字面：把自己当作未失败的交出去），今日已废弃。"
+    },
+    {
+      "de": "Weich keinem Glücke nicht, steh höher als der Neid,",
+      "zh": "双重否定 keinem … nicht 在17世纪不是错误，而是加强否定的常规用法（同类见于路德《圣经》）；今日德语已禁止双重否定。das Glück 在此非\"幸福\"，而是\"命运、机遇\"（拉丁语 Fortuna），因此才能\"向它退让\"。"
+    },
+    {
+      "de": "vergnüge dich an dir und acht es für kein Leid,",
+      "zh": "sich an etwas vergnügen（以某物为满足）今作 sich mit etwas begnügen。acht 是 achte 的省音命令式；\"etwas für … achten\"（视某物为……）今作 halten für。这一行是全诗斯多亚立场的核心：满足的来源必须在自身之内。"
+    },
+    {
+      "de": "hat sich gleich wider dich Glück, Ort und Zeit verschworen.",
+      "zh": "gleich 在此不是\"立刻\"或\"相同\"，而是让步连词，等于 obgleich／auch wenn（纵然）；这种\"动词置首 + gleich\"的让步句式是巴洛克德语的标志之一。wider（对抗）今作 gegen，仅存于 widersprechen、Widerstand 等复合词中。"
+    },
+    {
+      "de": "Was dich betrübt und labt, halt alles für erkoren;",
+      "zh": "betrüben（使忧愁）与 laben（使舒畅、滋润）是一对反义词，涵盖全部境遇。erkoren 是 erkiesen（拣选）的第二分词，古语，今仅存于 auserkoren（被选中的）。整句意为：无论好坏，都当作是为你选定的——这是斯多亚\"接受命运\"的德语表述。"
+    },
+    {
+      "de": "Tu, was getan muß sein, und eh man dir's gebeut.",
+      "zh": "gebeut 是 gebieten（吩咐、命令）的巴洛克第三人称现在时（今作 gebietet）。\"eh man dir's gebeut\" = 在别人命令你之前。这一行把斯多亚的顺从翻转成了主动：不是被迫接受，而是抢在被迫之前自己去做。"
+    },
+    {
+      "de": "Was klagt, was lobt man doch? Sein Unglück und sein Glücke / ist ihm ein jeder selbst.",
+      "zh": "全诗唯一的疑问句，也是转折点（Volta）。下一句是全诗最凝练的一处：\"各人的不幸与幸运，各人自己就是\"——不是\"造成\"，而是\"就是\"。系动词的选择把因果关系直接压成了同一性。"
+    },
+    {
+      "de": "und eh du fürder gehst, so geh in dich zurücke.",
+      "zh": "fürder（更往前）是古语，今作 weiter；in sich gehen 今日仍在使用，意为\"反躬自省\"。这一行同时用了两个方向相反的动词（往前走／走回自己里面），是全诗结构上的枢纽：向外的路必须先经过向内的路。zurücke 带旧式词尾 -e。"
+    },
+    {
+      "de": "Wer sein selbst Meister ist und sich beherrschen kann, / dem ist die weite Welt und alles untertan.",
+      "zh": "末两行是全诗最著名的部分，常被单独引用为格言。\"sein selbst Meister\" 中的 sein selbst 是第二格（= seiner selbst，自己的），这是17世纪的形式。untertan sein 支配第三格（dem）。请注意逻辑：这不是承诺你会统治世界，而是说——能管住自己的人，世界对他已无可奈何。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "unverzagt",
+      "pos": "adj.",
+      "meaning": "无所畏惧的、不气馁的",
+      "note": "由 un- + verzagt（气馁的，来自 verzagen 丧气）构成；今日仍在使用，属书面语。"
+    },
+    {
+      "term": "das Glück",
+      "pos": "n.（中性）",
+      "meaning": "①（古义）命运、机遇（= Fortuna）；②（今义）幸福、运气",
+      "note": "本诗第2行取古义（可以\"向它退让\"的力量），第9行的 Glücke 则更接近今义。巴洛克诗歌中的 Glück 常指盲目转动的命运之轮。"
+    },
+    {
+      "term": "laben",
+      "pos": "v.（弱变化，雅语）",
+      "meaning": "使舒畅、滋润、提神",
+      "note": "多用于饮食与休息带来的恢复（sich an etwas laben）；名词 die Labung、die Labsal 今属古雅词。"
+    },
+    {
+      "term": "erkoren",
+      "pos": "adj.（第二分词，古语）",
+      "meaning": "被拣选的",
+      "note": "来自强变化动词 erkiesen（kiest – kor – erkoren）；今仅存于 auserkoren（被选中的、命定的）。"
+    },
+    {
+      "term": "das Verhängnis, -se",
+      "pos": "n.（中性）",
+      "meaning": "命运、注定之事（多含灾厄意味）",
+      "note": "来自 verhängen（降下、颁布）；形容词 verhängnisvoll（灾难性的）。较 das Schicksal 更强调不可抗与阴暗。"
+    },
+    {
+      "term": "gebieten",
+      "pos": "v.（不可分，强变化）",
+      "meaning": "吩咐、命令；掌控",
+      "note": "变位 gebietet – gebot – hat geboten；诗中用巴洛克形式 gebeut。派生词 der Gebieter（主人）、das Gebiet（领域）。"
+    },
+    {
+      "term": "wider",
+      "pos": "介词（支配第四格，古语）",
+      "meaning": "对抗、违反",
+      "note": "今作 gegen；仅存于复合词 widersprechen（反驳）、der Widerstand（抵抗）、widerlich（令人反感的）等。注意与 wieder（再次）区分——两词发音相同、拼写不同、意义无关，是德语拼写的经典难点。"
+    },
+    {
+      "term": "in sich gehen",
+      "pos": "固定搭配",
+      "meaning": "反躬自省、扪心自问",
+      "note": "今日仍在使用，多用于劝人反省（\"Geh mal in dich!\"）。"
+    },
+    {
+      "term": "untertan sein",
+      "pos": "固定搭配（支配第三格）",
+      "meaning": "臣服于、归……统辖",
+      "note": "der Untertan（臣民）；亨利希·曼1918年的著名小说即以 Der Untertan 为题。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "weichen",
+      "present_3sg": "weicht",
+      "preterite": "wich",
+      "perfect": "ist gewichen",
+      "participle_ii": "gewichen",
+      "subjunctive_ii": "wiche",
+      "auxiliary": "sein",
+      "note": "强变化（ei–i–i），支配第三格，意为\"退让、让开\"；与弱变化的同形动词 weichen（泡软，weichte/geweicht）区分。诗中命令式 Weich。"
+    },
+    {
+      "infinitive": "achten",
+      "present_3sg": "achtet",
+      "preterite": "achtete",
+      "perfect": "hat geachtet",
+      "participle_ii": "geachtet",
+      "subjunctive_ii": "achtete",
+      "auxiliary": "haben",
+      "note": "诗中命令式省音作 acht，构成 \"etwas für … achten\"（视为）；今作 halten für。"
+    },
+    {
+      "infinitive": "sich verschwören",
+      "present_3sg": "verschwört sich",
+      "preterite": "verschwor sich",
+      "perfect": "hat sich verschworen",
+      "participle_ii": "verschworen",
+      "subjunctive_ii": "verschwöre sich",
+      "auxiliary": "haben",
+      "note": "不可分反身动词；die Verschwörung（阴谋）同源。诗中用现在完成时于让步从句。"
+    },
+    {
+      "infinitive": "annehmen",
+      "present_3sg": "nimmt an",
+      "preterite": "nahm an",
+      "perfect": "hat angenommen",
+      "participle_ii": "angenommen",
+      "subjunctive_ii": "nähme an",
+      "auxiliary": "haben",
+      "note": "可分动词；诗中命令式 \"nimm dein Verhängnis an\"，前缀 an 落在句末。另有\"假设\"（annehmen, dass …）之义。"
+    },
+    {
+      "infinitive": "gebieten",
+      "present_3sg": "gebietet（诗中 gebeut）",
+      "preterite": "gebot",
+      "perfect": "hat geboten",
+      "participle_ii": "geboten",
+      "subjunctive_ii": "geböte",
+      "auxiliary": "haben",
+      "note": "强变化；诗中的 gebeut 是17世纪常见的现在时形式，与 beut（= bietet）、kreucht（= kriecht）同类。"
+    },
+    {
+      "infinitive": "beherrschen",
+      "present_3sg": "beherrscht",
+      "preterite": "beherrschte",
+      "perfect": "hat beherrscht",
+      "participle_ii": "beherrscht",
+      "subjunctive_ii": "beherrschte",
+      "auxiliary": "haben",
+      "note": "不可分动词；及物时意为\"统治、掌握（一门语言）\"，反身时意为\"克制自己\"——诗中正是后者，与\"统治世界\"形成呼应。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "命令式的密度：十四行中的十一个祈使",
+      "quote": "Sei … Gib … Weich … vergnüge … acht … halt … nimm … Laß … Tu … Laß … geh …",
+      "body": "本诗几乎每半行一个命令式，是德语诗歌中命令式密度最高的作品之一。请注意形态的多样：sei（sein 的不规则命令式）、gib / nimm（现在时变元音 e→i 的强变化动词，不加 -e）、weich / acht / halt / tu（弱变化或强变化，省去 -e）、vergnüge（保留 -e）。同一首诗里几乎把德语命令式的所有形态都用到了，是极好的操练材料。另请留意：这些命令全部指向说话者自己（诗题即《致自己》）。"
+    },
+    {
+      "title": "动词置首的让步从句",
+      "quote": "hat sich gleich wider dich Glück, Ort und Zeit verschworen.",
+      "body": "= \"auch wenn sich Glück, Ort und Zeit gegen dich verschworen haben\"。德语可省去 obgleich/auch wenn，把变位动词提到句首，并用 gleich（或 schon、auch）作为让步标记。这与省略 wenn 的条件句（本站德罗斯特《在塔上》\"Wär ich ein Jäger…\"、冯塔纳《里贝克》\"Und kam die goldene Herbsteszeit…\"）属同一族的句法手段，区别只在语义（让步 vs. 条件）。"
+    },
+    {
+      "title": "17世纪的双重否定",
+      "quote": "Weich keinem Glücke nicht,",
+      "body": "现代德语中 kein 与 nicht 不能同时出现（\"Ich habe kein Geld\"，不能说 \"kein Geld nicht\"）。但在早期新高地德语中，叠加否定词是加强而非抵消，路德《圣经》与巴洛克诗歌里都很常见。学习者读到这类结构时应理解为强调的否定，同时切记在自己的德语中避免。"
+    },
+    {
+      "title": "反身代词的第二格：sein selbst",
+      "quote": "Wer sein selbst Meister ist",
+      "body": "= wer seiner selbst Meister ist（谁是自己的主人）。德语反身代词的第二格 meiner/deiner/seiner selbst 今日只保留在少数固定表达中（seiner selbst nicht mächtig sein 无法自控、um seiner selbst willen 为其自身之故）。诗中用的是缩短的巴洛克形式 sein selbst。"
+    }
+  ],
+  "cultural_notes": "保罗·弗莱明（1609—1640）只活了三十一岁。他学医出身，1633年起随荷尔施泰因公爵派出的使团远赴俄国与波斯，往返六年，途中写下大量诗作；回到欧洲后不久便病逝于汉堡。这首十四行写于旅途年代，生前未发表，1646年由使团同伴、后来的东方学者亚当·奥莱阿留斯（Adam Olearius）在吕贝克编入《德语诗集》全本，收在\"十四行诗第二卷·各类祝愿\"中，编号第24。\n\n它是德语新斯多亚主义（Neustoizismus）最著名的诗。17世纪的欧洲知识人在战乱中重新发现了塞涅卡与爱比克泰德：既然外部世界完全不可控，唯一可守的阵地就是自己的内心。这一思想在本诗中被压缩成两句：\"各人的不幸与幸运，各人自己就是\"，以及\"谁若是自己的主人……广大的世界与万物便都归他统辖\"。请注意这不是励志口号——它的前提是外部世界已经彻底失控（三十年战争正打到第十几年），因此\"统辖世界\"实际上意味着不再被世界所动。\n\n作家格哈德·沃尔夫曾说，有些诗不会变老，即使来自很远的时代；人们把它们记在脑子里，在当下的困境中念出来以确认自己：\"Sei dennoch unverzagt……\"这首诗确实进入了几乎所有德语巴洛克选本，直到2008年康拉迪编的大型德语诗选。\n\n它与本站已收录的格吕菲乌斯两首（编号30、31）构成有意思的对照：格吕菲乌斯写世界如何崩塌，弗莱明写人在崩塌中如何站住。同一场战争，两种回答。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) 全诗十一个命令式，译文一律保持祈使语气，未改写为陈述；(2) 第2行的 das Glück 取古义\"命运、机遇\"而非\"幸福\"，否则\"向幸福退让\"不通；(3) 第9—10行 \"Sein Unglück und sein Glücke / ist ihm ein jeder selbst\" 的系动词结构（是，而非造成）在中文中难以自然表达，译文作\"各人自己就是\"，保留了这一同一性判断。末两行常被当作格言单独引用，译文亦力求可独立成句。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一间简朴的17世纪书房或旅舍房间，桌上有摊开的书、墨水瓶与一只旅行箱；窗外是风雨交加的天色与远处模糊的战乱迹象；室内烛光稳定不摇",
+    "mood": "沉着、内向、克制的坚定；室外的动荡与室内的静定形成对照，但不应表现为对抗或英雄气概",
+    "elements": "粗木桌与硬椅、摊开的书页与羽毛笔、一只带皮带的旅行箱、一支笔直燃烧的蜡烛、窗外的斜雨与低云、窗玻璃上的水痕",
+    "era": "17世纪中欧，家具、器物与窗棂应为该时代样式",
+    "taboos": "不得出现文字或可辨识的书页内容；不得出现人物（人应仅由器物暗示其在场）；不得出现骷髅、沙漏等 vanitas 静物符号；不得出现现代物品；烛焰不得表现为被风吹动",
+    "style": "17世纪荷兰室内画式的写实油画风格，单一暖光源（烛光）对窗外冷调，色调深褐与灰蓝，笔触克制，明暗对比强"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "planetlyrik.de — Gerhard Wolf: „Zu Paul Flemings Gedicht ‚An Sich.‘“（附17世纪原始正字法全文）",
+      "url": "https://www.planetlyrik.de/gerhard-wolf-zu-paul-flemings-gedicht-an-sich/2018/04/",
+      "note": "主来源。逐字给出原刊正字法文本（Sey dennoch unverzagt. Gieb dennoch unverlohren. …），并明确标注出处：Adam Olearius 编《Teutsche Poemata》，Lübeck 1646，\"Der Sonnetten Anders Buch / von allerley Glückwünschen\"，Nr. 24；文中另附作家 Gerhard Wolf 的解读。"
+    },
+    {
+      "name": "gedichte7.de — „An sich – Fleming“",
+      "url": "https://www.gedichte7.de/an-sich.html",
+      "note": "辅助来源（现代化正字法）。十四行的分节、语序与主来源逐行对应，用于确定本站所采用的现代化通行文本。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "【正字法处理原则】与本站收录的其他巴洛克作品一致，正文采用**现代化正字法的通行文本**，17世纪原刊形态在本记录中完整给出。\n\n德文正文通过两个独立来源核对：planetlyrik.de 转录的1646年 Olearius 版原刊文本（原始正字法）与 gedichte7.de（现代化正字法）。十四行的行数、语序与内容完全一致。\n\n【1646年原刊形态（据主来源）】Sey dennoch unverzagt. Gieb dennoch unverlohren. ｜ Weich keinem Glücke nicht. Steh höher als der Neid. ｜ Vergnüge dich an dir / und acht es für kein Leid / ｜ hat sich gleich wieder dich Glück / Ort / und Zeit verschworen. ｜ Was dich betrübt und labt / halt alles für erkohren. ｜ Nim dein Verhängnüß an. Laß alles unbereut. ｜ Thu / was gethan muß seyn / und eh man dirs gebeut. ｜ Was du noch hoffen kanst / das wird noch stets gebohren. ｜ Was klagt / was lobt man doch? Sein Unglück und sein Glücke ｜ ist ihm ein ieder selbst. Schau alle Sachen an. ｜ Diß alles ist in dir / laß deinen eiteln Wahn / ｜ und eh du förder gehst / so geh in dich zu rücke. ｜ Wer sein selbst Meister ist / und sich beherrschen kan / ｜ dem ist die weite Welt und alles unterthan. —— 系统性差异为：斜线（Virgel）代逗号、Sey/Sei、Gieb/Gib、unverlohren/unverloren、erkohren/erkoren、Verhängnüß/Verhängnis、Thu·gethan·seyn/Tu·getan·sein、kanst·kan/kannst·kann、Diß/dies、ieder/jeder、zu rücke/zurücke、unterthan/untertan。\n\n两处需要单独说明的实质差异（非单纯拼写）：(1) 第4行原刊作 \"hat sich gleich **wieder** dich … verschworen\"，现代化文本作 **wider**。17世纪 wieder 与 wider 尚未分化，此处语义明确为\"对抗\"（= gegen），故现代化文本的 wider 是正确的规范化，本站从之。(2) 第12行原刊作 \"eh du **förder** gehst\"，现代化文本作 **fürder**。两者为同一古语词（意为\"更往前\"）的方言／拼写变体，语义无别；本站从现代化文本的 fürder。此外，原刊第2、6、10行的句号在现代化文本中部分改为逗号，属排印惯例调整。\n\n待核实项：(1) 本站未直接查阅1646年《Teutsche Poemata》影印件，原刊形态依据 planetlyrik.de 对该版的转录（该文作者称手中持有保留原始正字法与活字排印的旧版）；(2) 弗莱明手稿或其他早期传本的异文，本站未查证；(3) 创作年代（1633—1639年间的旅途期）依据通行的弗莱明研究结论，未经原始文献核实。",
+  "checklist": [
+    { "label": "确认作者：Paul Fleming", "done": true },
+    { "label": "确认标题与出处：Teutsche Poemata (1646), Sonnetten Anders Buch, Nr. 24", "done": true },
+    { "label": "德文原文主来源：planetlyrik.de（转录1646年 Olearius 版原始正字法）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de（现代化正字法）", "done": true },
+    { "label": "确认两来源相互独立（已排除同一运营方的 gedichte7/zgedichte 组合）", "done": true },
+    { "label": "核对诗节、行数、韵式", "done": true },
+    { "label": "完整记录1646年原刊形态", "done": true },
+    { "label": "记录两处实质差异（wieder/wider；förder/fürder）并说明取舍", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇（含 Glück 的古今义、wider/wieder 的区分）", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点（含命令式形态总表与双重否定）", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "对照1646年《Teutsche Poemata》影印件核实原刊形态", "done": false },
+    { "label": "核实创作年代（现依二手研究结论）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）", "done": false }
+  ]
+}

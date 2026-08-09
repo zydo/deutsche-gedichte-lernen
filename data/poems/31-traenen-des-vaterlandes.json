@@ -1,0 +1,304 @@
+{
+  "id": "31",
+  "slug": "traenen-des-vaterlandes",
+  "author": "Andreas Gryphius",
+  "author_zh": "安德烈亚斯·格吕菲乌斯",
+  "title_de": "Tränen des Vaterlandes / Anno 1636",
+  "title_zh": "祖国之泪 · 1636年",
+  "year": "1637年首刊（题为《被蹂躏的德意志的哀歌》），1643年起以修订形式定题，1663年\"最后手定版\"为通行文本",
+  "collection": "《十四行诗·第一卷》（ANDREAE GRYPHII SONNETE. Das erste Buch）第27首",
+  "period": "巴洛克（三十年战争时期）",
+  "difficulty": "B2–C1",
+  "tags": [
+    "战争",
+    "三十年战争",
+    "十四行诗",
+    "亚历山大体",
+    "17世纪最著名的诗",
+    "灵魂之宝"
+  ],
+  "german_text": [
+    [
+      "Wir sind doch nunmehr ganz, ja mehr denn ganz verheeret.",
+      "Der frechen Völker Schar, die rasende Posaun,",
+      "Das vom Blut fette Schwert, die donnernde Kartaun",
+      "Hat aller Schweiß und Fleiß und Vorrat aufgezehret."
+    ],
+    [
+      "Die Türme stehn in Glut, die Kirch ist umgekehret.",
+      "Das Rathaus liegt im Graus, die Starken sind zerhaun,",
+      "Die Jungfern sind geschändt, und wo wir hin nur schaun,",
+      "Ist Feuer, Pest und Tod, der Herz und Geist durchfähret."
+    ],
+    [
+      "Hier durch die Schanz und Stadt rinnt allzeit frisches Blut.",
+      "Dreimal sind schon sechs Jahr, als unser Ströme Flut",
+      "Von Leichen fast verstopft, sich langsam fortgedrungen."
+    ],
+    [
+      "Doch schweig ich noch von dem, was ärger als der Tod,",
+      "Was grimmer denn die Pest und Glut und Hungersnot:",
+      "Daß auch der Seelenschatz so vielen abgezwungen."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留亚历山大体的对偶节奏与末节\"比死更坏之物\"的悬置与揭晓",
+    "text": [
+      [
+        "我们如今已彻底、不，已不止彻底地被蹂躏。",
+        "放肆的异族大军、狂啸的号角、",
+        "被血浸得肥厚的刀剑、轰鸣的重炮，",
+        "已把所有的汗水、辛劳与积蓄吞噬殆尽。"
+      ],
+      [
+        "塔楼立在火光中，教堂被翻了个底朝天。",
+        "市政厅陷于恐怖之中，强壮者被砍倒，",
+        "少女们遭到凌辱，而我们目光所及之处，",
+        "尽是烈火、瘟疫与死亡，穿透心与灵。"
+      ],
+      [
+        "在这里，血水始终新鲜地流过壕垒与城池。",
+        "已经三个六年了，我们河流的水",
+        "几乎被尸体堵塞，缓慢地向前挤行。"
+      ],
+      [
+        "但我对那比死亡更坏的事还沉默着——",
+        "那比瘟疫、烈火与饥荒更凶残的事：",
+        "连灵魂的珍宝，也被从这么多人身上夺去了。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Wir sind doch nunmehr ganz, ja mehr denn ganz verheeret.",
+      "zh": "全诗以第一人称复数 wir 开篇——不是旁观，而是\"我们\"。\"ganz, ja mehr denn ganz\"（彻底，不，还不止彻底）是一个逻辑上不可能的加强：全毁之后不可能有更全的毁。这种把语言推到破裂点的做法，正是这首诗被认为无法被后世战争诗超越的原因。denn 在此为比较词\"比\"（今作 als），是17世纪用法。"
+    },
+    {
+      "de": "Der frechen Völker Schar, die rasende Posaun,",
+      "zh": "前置第二格：der frechen Völker Schar = die Schar der frechen Völker（放肆的异族的大军）。frech 在17世纪意为\"胆大妄为的、无所顾忌的\"，比今义\"没礼貌\"强烈得多。die Posaune（长号）在此指战场号角，也隐含《启示录》中吹响末日的号。"
+    },
+    {
+      "de": "Das vom Blut fette Schwert, die donnernde Kartaun",
+      "zh": "fett（肥的）用于刀剑是巴洛克式的强烈物化——刀被血喂得发胖。die Kartaune 是16—17世纪的一种重型攻城炮，今日已是纯粹的历史词。第2—3行连用四个并列主语（大军、号角、刀剑、重炮），却在第4行只配了一个单数动词 Hat——语法上的\"不合规\"，效果是把四者压成一股不可分的暴力。"
+    },
+    {
+      "de": "Hat aller Schweiß und Fleiß und Vorrat aufgezehret.",
+      "zh": "Schweiß und Fleiß（汗水与勤劳）是押头韵的固定对举。aufzehren（耗尽、吞噬）今已罕用。请注意 aller 为第二格复数（属于所有人的）——被吞掉的不是抽象的财富，而是每个人的劳作。"
+    },
+    {
+      "de": "Die Türme stehn in Glut, die Kirch ist umgekehret.",
+      "zh": "第二节每半行一个画面，六个画面连成一片废墟：塔楼、教堂、市政厅、强壮者、少女、所见之处。这种把句法切成等长碎块的手法在德语中称为 Reihung（罗列），三百年后表现主义诗人会重新使用它（参见本站范·霍迪斯《世界末日》）。umkehren 在此为\"翻倒、颠覆\"，而非\"折返\"。"
+    },
+    {
+      "de": "Die Jungfern sind geschändt, und wo wir hin nur schaun,",
+      "zh": "schänden（凌辱、玷污）在此明确指战时的性暴力。格吕菲乌斯没有回避，也没有渲染——他用的是与\"塔楼着火\"完全相同的句法长度和语调。geschändt 为 geschändet 的省音形式。"
+    },
+    {
+      "de": "Dreimal sind schon sechs Jahr, als unser Ströme Flut",
+      "zh": "\"三个六年\"即十八年——从1618年战争爆发算到1636年，正是副标题所标的年份。诗人不直接说\"十八年\"而说\"三次六年\"，既是为格律，也让时间显得更长。unser Ströme Flut 又是一个前置第二格（= die Flut unserer Ströme）。als 在此为时间连词（今作 seit/dass 的用法在此为\"自从\"）。"
+    },
+    {
+      "de": "Doch schweig ich noch von dem, was ärger als der Tod,",
+      "zh": "末节的转折。全诗前十一行已经写尽了毁灭，这里却说\"我还没说那件更坏的\"——修辞学上称为 praeteritio（假装不说而说）。第一人称从复数 wir 转为单数 ich：到了最后，说话者独自面对这件事。"
+    },
+    {
+      "de": "Daß auch der Seelenschatz so vielen abgezwungen.",
+      "zh": "全诗的最后一击，也是历来争议最大的一行。der Seelenschatz（灵魂的珍宝）通常被理解为信仰、良知或永生的希望；abzwingen（强行夺取）支配第三格人称（so vielen = 从这么多人那里）。省略了助动词 wurde/ist（\"被夺去了\"）。对一位西里西亚新教徒而言，这指的很可能是战争中被迫改宗与信仰的瓦解——比肉体的死亡更彻底的毁灭。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "verheeren",
+      "pos": "v.（弱变化）",
+      "meaning": "蹂躏、毁灭、使荒芜",
+      "note": "与 das Heer（军队）同源，字面为\"以军队摧毁\"；形容词 verheerend 今日常用作\"灾难性的\"（verheerende Folgen）。"
+    },
+    {
+      "term": "frech",
+      "pos": "adj.",
+      "meaning": "①（古义）胆大妄为的、肆无忌惮的；②（今义）无礼的、放肆的",
+      "note": "17世纪的语义强度远高于今日；诗中形容入侵军队，绝非\"没礼貌\"可比。"
+    },
+    {
+      "term": "die Posaune, -n",
+      "pos": "n.（阴性）",
+      "meaning": "长号；（圣经）末日号角",
+      "note": "《启示录》中的七枝号即 die Posaunen；诗中兼指战场号角与末日预兆。"
+    },
+    {
+      "term": "die Kartaune, -n",
+      "pos": "n.（阴性，历史词）",
+      "meaning": "（16—17世纪的）重型攻城炮",
+      "note": "源自意大利语 quartana；今日已完全退出使用，仅见于历史文献与巴洛克文学。"
+    },
+    {
+      "term": "aufzehren",
+      "pos": "v.（可分，弱变化）",
+      "meaning": "耗尽、吞噬、消耗殆尽",
+      "note": "今多用 aufbrauchen、verzehren；zehren an etwas（消耗、折磨）仍在使用。"
+    },
+    {
+      "term": "der Graus",
+      "pos": "n.（阳性，无复数）",
+      "meaning": "恐怖、可怖之状；瓦砾",
+      "note": "与 grausam（残酷的）、das Grauen（毛骨悚然）同源；本行 \"liegt im Graus\" 兼可读作\"陷于恐怖\"与\"躺在瓦砾中\"，两义在诗中并存。"
+    },
+    {
+      "term": "schänden",
+      "pos": "v.（弱变化）",
+      "meaning": "凌辱、玷污、亵渎",
+      "note": "die Schande（耻辱）同源；今日多用于 ein Grab schänden（亵渎坟墓）等语境，指人时属极重的用词。"
+    },
+    {
+      "term": "die Schanze, -n",
+      "pos": "n.（阴性）",
+      "meaning": "土垒、防御工事",
+      "note": "军事史用语；习语 \"sein Leben in die Schanze schlagen\"（豁出性命）由此而来。"
+    },
+    {
+      "term": "abzwingen",
+      "pos": "v.（可分，强变化，支配第三格 + 第四格）",
+      "meaning": "强行从某人处夺取／逼取",
+      "note": "jemandem etwas abzwingen；变位 zwingt ab – zwang ab – hat abgezwungen。诗中省略了被动助动词。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "verheeren",
+      "present_3sg": "verheert",
+      "preterite": "verheerte",
+      "perfect": "hat verheert",
+      "participle_ii": "verheert（诗中 verheeret）",
+      "subjunctive_ii": "verheerte",
+      "auxiliary": "haben",
+      "note": "诗中作状态被动 \"sind … verheeret\"，第二分词保留巴洛克的完整词尾 -et。"
+    },
+    {
+      "infinitive": "aufzehren",
+      "present_3sg": "zehrt auf",
+      "preterite": "zehrte auf",
+      "perfect": "hat aufgezehrt",
+      "participle_ii": "aufgezehrt（诗中 aufgezehret）",
+      "subjunctive_ii": "zehrte auf",
+      "auxiliary": "haben",
+      "note": "可分动词；诗中用现在完成时 \"Hat … aufgezehret\"，助动词在第4行行首、分词在行末，框住整行。"
+    },
+    {
+      "infinitive": "umkehren",
+      "present_3sg": "kehrt um",
+      "preterite": "kehrte um",
+      "perfect": "ist/hat umgekehrt",
+      "participle_ii": "umgekehrt",
+      "subjunctive_ii": "kehrte um",
+      "auxiliary": "sein（折返）／haben（翻转某物）",
+      "note": "诗中取\"翻倒、颠覆\"义的状态被动；今日最常见的意思是\"掉头返回\"，须靠语境区分。"
+    },
+    {
+      "infinitive": "zerhauen",
+      "present_3sg": "zerhaut",
+      "preterite": "zerhieb",
+      "perfect": "hat zerhauen",
+      "participle_ii": "zerhauen（诗中 zerhaun）",
+      "subjunctive_ii": "zerhiebe",
+      "auxiliary": "haben",
+      "note": "不可分动词（zer- 永不分离）；诗中省音作 zerhaun 以与 schaun 押韵。"
+    },
+    {
+      "infinitive": "rinnen",
+      "present_3sg": "rinnt",
+      "preterite": "rann",
+      "perfect": "ist geronnen",
+      "participle_ii": "geronnen",
+      "subjunctive_ii": "ränne",
+      "auxiliary": "sein",
+      "note": "强变化第三类（i–a–o）；指液体细而持续地流；派生词 die Rinne（水沟）、gerinnen（凝固）。"
+    },
+    {
+      "infinitive": "schweigen",
+      "present_3sg": "schweigt",
+      "preterite": "schwieg",
+      "perfect": "hat geschwiegen",
+      "participle_ii": "geschwiegen",
+      "subjunctive_ii": "schwiege",
+      "auxiliary": "haben",
+      "note": "强变化（ei–ie–ie）；诗中 \"schweig ich noch von dem\" 为倒装（因 Doch 置于句首）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "多个并列主语配单数动词",
+      "quote": "Der frechen Völker Schar, die rasende Posaun, / Das vom Blut fette Schwert, die donnernde Kartaun / Hat aller Schweiß und Fleiß und Vorrat aufgezehret.",
+      "body": "四个并列的单数主语按规则应配复数动词 haben，格吕菲乌斯却用了单数 Hat。这在17世纪并非罕见（并列成分被视为一个整体时可用单数），但在此处显然是有意为之：军队、号角、刀剑、大炮不是四件事，而是同一件事的四张脸。本站在霍夫曼斯塔尔《他们两个》中标注过同类现象（Kinn und Mund glich），两处可对照——巴洛克与世纪末，相隔两百五十年而手法相同。"
+    },
+    {
+      "title": "罗列式句法（Reihung）",
+      "quote": "Die Türme stehn in Glut, die Kirch ist umgekehret. / Das Rathaus liegt im Graus, die Starken sind zerhaun,",
+      "body": "亚历山大体的中间停顿把每一行切成两半，格吕菲乌斯在第二节里让每半行都装一个完整的小句。六个短句等长、等重、互不从属地并排，没有任何连接词说明它们的关系——这就是罗列式句法。它取消了叙述的层次，使一切灾难同时发生。三百年后，表现主义诗人（本站范·霍迪斯《世界末日》即为范例）会把同一手法用于现代都市，德语文学史因此常把这一节视为 Reihungsstil 的源头之一。"
+    },
+    {
+      "title": "17世纪的比较词 denn（= als）",
+      "quote": "ja mehr denn ganz verheeret … Was grimmer denn die Pest",
+      "body": "在早期新高地德语中，denn 与 als 都可用于比较（\"größer denn ich\"）。18世纪以后分工固定：als 用于比较，denn 用于因果连词（\"因为\"）与语气词。今日 denn 表比较只残存于 \"mehr denn je\"（甚于以往）这一固定表达中。本诗两次使用比较义的 denn，若误读成\"因为\"，句子会完全不通。"
+    },
+    {
+      "title": "省略助动词的被动从句",
+      "quote": "Daß auch der Seelenschatz so vielen abgezwungen.",
+      "body": "完整形式应为 \"Daß auch der Seelenschatz so vielen abgezwungen wurde/worden ist\"。全诗最后一个词是第二分词，被动助动词被完全省去——句子在应当收尾的地方停住了。这既是巴洛克诗歌的常规省略，也在此处产生了特殊效果：施动者从未出现，被夺走这件事仿佛没有主语。"
+    }
+  ],
+  "cultural_notes": "这首十四行被广泛称为\"17世纪最著名的德语诗\"，也是\"学校与大学经典的固定篇目\"。它的版本史相当复杂：1637年首刊于今属波兰的利萨（Lissa），是所谓\"利萨十四行诗\"31首中的第26首，当时题为《被蹂躏的德意志的哀歌》（Trawrklage des verwüsteten Deutschlandes）；1643年在莱顿出版的50首十四行集中，以大幅改写后的形式作为第27首出现，定题为《祖国之泪·1636年》。此后1650、1657年及1663年\"最后手定版\"又有小幅修订。副标题中的\"1636年\"很可能标示的是创作年份——正在三十年战争之中。\n\n1637年版与1663年版差异很大。举两处最能说明问题的：首行1637年作 \"ja mehr alß gantz vertorben\"（毁坏），1663年改为 \"ja mehr denn gantz verheeret\"（蹂躏）；末三行1637年作 \"Ich schweige noch von dehm / was stärcker als der Todt / (Du Straßburg weist es wol) der grimmen Hungersnoth\"——注意其中直接点名了斯特拉斯堡，而1663年版删去了这一具体指涉，把\"比死更强的\"改成了\"比死更坏的\"，并把落点从饥荒移到了\"灵魂之宝\"。删掉地名、抽掉具体事件，这首诗才从一份控诉变成了一首关于战争本身的诗。\n\n它的接受史同样值得注意。1916年格吕菲乌斯诞辰三百年时，作家克拉本德（Klabund）称他为和平主义者，说他遭受迫害是\"因为他的作品足以煽动民众反对战争\"。1937年，流亡莫斯科的表现主义诗人约翰内斯·R·贝歇尔写下双联十四行《祖国之泪·1937年》，直接套用这个标题控诉纳粹德国；1954年他又主编了名为《祖国之泪》的选集，塑造了民主德国对早期近代文学的整体印象。一首17世纪的诗，就这样被反复借用为不同时代的政治语言。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) 首行 \"ganz, ja mehr denn ganz\" 在逻辑上是不可能的加强，译文作\"彻底、不，已不止彻底\"以保留这种语言的破裂感，未作平顺化处理；(2) 第二节六个等长短句的罗列，译文尽量维持句长相近、互不从属，以传达 Reihung 的效果；(3) 末行 der Seelenschatz 直译为\"灵魂的珍宝\"，不作\"信仰\"之类的解释性替换——这个词的所指历来有争议，译文不应替读者裁定。另需提醒：本诗第7行涉及战时性暴力，格吕菲乌斯以与其他灾难完全相同的语调陈述，译文亦不加渲染。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一座被战火摧毁的中欧小城的远景：塔楼冒烟、屋顶塌陷、城墙外有土垒工事；前景是一条浑浊的河，河水缓慢流动",
+    "mood": "沉重、凝滞、无人；应传达灾难的规模与时间的漫长，而非某一瞬间的爆炸",
+    "elements": "冒烟的教堂塔楼与钟楼、坍塌的屋顶与山墙、城墙与土垒、一条流速缓慢的浑浊河流、低压的烟云、空无一人的街道",
+    "era": "17世纪中欧（三十年战争时期），建筑为德意志晚期哥特／文艺复兴样式",
+    "taboos": "不得出现文字、水印；不得出现尸体、血水、伤者、暴力场面或任何可辨识的人物（诗中的暴力应由环境承载，不作图解）；不得出现火焰特写或戏剧性的爆炸；不得出现现代元素；不得出现宗教符号的特写",
+    "style": "17世纪战争风景版画／油画风格（可参考 Jacques Callot 一路的克制视角），色调为烟灰、赭褐与铅白，视点高而远，画面中人的缺席本身是重点"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "German Wikipedia — „Tränen des Vaterlandes“（并列转录1637年版与1663年版全文）",
+      "url": "https://de.wikipedia.org/wiki/Tr%C3%A4nen_des_Vaterlandes",
+      "note": "主来源。逐字给出两个权威版本的原始正字法文本，并标注出处：1637年版据 Szyrocki/Powell 编《全集》第1卷（1963），1663年版据 Thomas Borgstedt 编本（2012）；同时说明版本史（利萨1637 → 莱顿1643 → 1650/1657 → 最后手定版1663）与接受史。"
+    },
+    {
+      "name": "gedichte7.de — „Tränen des Vaterlandes – Gryphius“",
+      "url": "https://www.gedichte7.de/traenen-des-vaterlandes.html",
+      "note": "辅助来源（现代化正字法）。十四行的分节、语序与1663年版逐行对应，用于确定本站所采用的现代化通行文本；并提供格律分析与贝歇尔1937年仿作的全文。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "【正字法处理原则】与本站收录的其他巴洛克作品一致，正文采用**现代化正字法的通行文本**（对应1663年\"最后手定版\"），17世纪原刊形态在本记录中完整给出。\n\n德文正文通过两个独立来源核对：German Wikipedia（并列转录1637与1663两版原始正字法文本，各注明所据的现代校勘版）与 gedichte7.de（现代化正字法）。十四行的行数、语序与内容与1663年版完全对应。\n\n【1663年版原刊形态（据主来源）】WIr sind doch nunmehr gantz / ja mehr denn gantz verheeret! ｜ Der frechen Völcker Schaar / die rasende Posaun ｜ Das vom Blutt fette Schwerdt / die donnernde Carthaun / ｜ Hat aller Schweiß / und Fleiß / und Vorrath auffgezehret. ｜ Die Türme stehn in Glutt / die Kirch ist umgekehret. ｜ Das Rathauß ligt im Grauß / die Starcken sind zerhaun / ｜ Die Jungfern sind geschänd’t / und wo wir hin nur schaun ｜ Ist Feuer / Pest / und Tod / der Hertz und Geist durchfähret. ｜ Hir durch die Schantz und Stadt / rinnt allzeit frisches Blutt. ｜ Dreymal sind schon sechs Jahr / als vnser Ströme Flutt / ｜ Von Leichen fast verstopfft / sich langsam fort gedrungen. ｜ Doch schweig ich noch von dem / was ärger als der Tod / ｜ Was grimmer denn die Pest / und Glutt und Hungersnoth ｜ Das auch der Seelen Schatz / so vielen abgezwungen. —— 可见系统性差异为：斜线（Virgel）代逗号、双写辅音（Blutt, Glutt, verstopfft）、C 代 K（Carthaun）、v/u 互换（vnser）、以及首行末的感叹号。\n\n【1637年首刊版的重大异文】主来源亦逐字给出，与1663年版差异极大，兹录关键处：首行作 \"WIr sind doch nunmehr gantz / ja mehr alß gantz vertorben\"（vertorben 而非 verheeret）；第二节前半作 \"Die alte Redligkeit vnnd Tugend ist gestorben; / Die Kirchen sind verheert / die Starcken vmbgehawn\"；末三行作 \"Ich schweige noch von dehm / was stärcker als der Todt / (Du Straßburg weist es wol) der grimmen Hungersnoth / Vnd daß der Seelen=Schatz gar vielen abgezwungen.\"——注意1637年版直接点名斯特拉斯堡、并把落点放在饥荒上，1663年版删去了地名、把\"更强的\"改为\"更坏的\"、并将落点移至\"灵魂之宝\"。本站采1663年版，理由是它是作者最后手定的形式，也是学界与教科书的通行文本（据主来源，研究界的解释几乎无例外地以1663年版为基础）。\n\n待核实项：(1) 1643、1650、1657三个中间版本的异文，本站未查证（主来源称其与1663年版\"差异不大\"，但未逐条列出）；(2) 本站未直接查阅任何原刊影印件，两版原始正字法均依据 Wikipedia 对现代校勘版的转录；(3) 末行 der Seelenschatz 的确切所指（信仰／良知／永生盼望）学界有争议，本站在逐行注释中给出最通行的解读并标明其为解读而非定论。",
+  "checklist": [
+    { "label": "确认作者：Andreas Gryphius", "done": true },
+    { "label": "确认标题与版本史（1637 Trawrklage → 1643 定题 → 1663 最后手定版）", "done": true },
+    { "label": "德文原文主来源：German Wikipedia（并列两版原始正字法，各注校勘出处）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de（现代化正字法）", "done": true },
+    { "label": "核对诗节、行数、韵式", "done": true },
+    { "label": "完整记录1663年版原刊形态", "done": true },
+    { "label": "完整记录1637年首刊版的重大异文并说明采版理由", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇（含 frech、denn 的古今义差异）", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点（含 Reihung 与巴洛克比较词 denn）", "done": true },
+    { "label": "撰写背景说明（含接受史：Klabund、Becher）", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "核对1643/1650/1657三个中间版本的异文", "done": false },
+    { "label": "对照原刊影印件核实两版正字法", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次，尤其末行 Seelenschatz 的释读）", "done": false }
+  ]
+}
