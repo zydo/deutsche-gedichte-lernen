@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Ein Winterabend · 一个冬夜 — Georg Trakl | 德语诗歌学习画册</title>
+  <meta name="description" content="Ein Winterabend（一个冬夜）— Georg Trakl。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="am-turme.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">在塔上</span></a>
+<a class="poem-nav__link poem-nav__next" href="abendlied.html" rel="next"><span class="poem-nav__title">晚歌（月亮已经升起）</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de">Ein Winterabend</h1>
+      <p class="poem-titleblock__author">Georg Trakl</p>
+      <p class="poem-titleblock__zh">一个冬夜</p>
+      <p class="poem-titleblock__author-zh">格奥尔格·特拉克尔</p>
+      <div class="poem-titleblock__biblio">
+        <p>《梦中的塞巴斯蒂安》（Sebastian im Traum）·「孤独者的秋天」（Der Herbst des Einsamen）</p>
+        <p>表现主义早期</p>
+        <p>1913年作（存两稿），第二稿收入1915年出版的《梦中的塞巴斯蒂安》</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B2</span>
+        <span class="tag ">冬</span>
+        <span class="tag ">漂泊者</span>
+        <span class="tag ">门槛</span>
+        <span class="tag ">面包与酒</span>
+        <span class="tag ">表现主义</span>
+        <span class="tag ">海德格尔阐释</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>冬夜里的一间乡村屋舍，从室内视角望向结霜的窗与半开的木门；门外是落雪的暗蓝色小径，门内桌上放着一块面包与一只酒杯，一盏灯照亮桌面</dd>
+        <dt>情绪</dt><dd>静谧、庄重、微暖；温暖不应甜腻，室外的寒冷与室内的光要同时在场，构成一种"停在门槛上"的悬置感</dd>
+        <dt>画面元素</dt><dd>结霜的窗玻璃、飘落的雪、半开的厚木门与磨损的石门槛、素色桌布上的一块粗面包与一只玻璃或陶制酒杯、一盏油灯或蜡烛、远处教堂钟楼的剪影</dd>
+        <dt>时代感</dt><dd>20世纪初奥地利／中欧乡村，器物与建筑应为该时代样式</dd>
+        <dt>推荐风格</dt><dd>19世纪浪漫主义至20世纪初室内写实油画风格，单一暖光源与窗外冷蓝形成对比，门槛处的明暗交界应是画面的构图重心</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印；不得出现十字架、圣像等直白的宗教符号（诗中的圣餐意象是暗示性的）；不得出现人物（漂泊者应只以门外的脚印或阴影暗示）；不得出现现代电灯、家电、圣诞装饰</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Wenn der Schnee ans Fenster fällt,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">当雪落到窗上，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Lang die Abendglocke läutet,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">晚祷的钟长久鸣响，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Vielen ist der Tisch bereitet<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">为许多人餐桌已经备好，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">Und das Haus ist wohlbestellt.<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">屋子已收拾妥当。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">Mancher auf der Wanderschaft<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">有些漂泊在途中的人</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Kommt ans Tor auf dunklen Pfaden.<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">沿着幽暗的小路来到门前。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">Golden blüht der Baum der Gnaden<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">恩典之树金光绽放，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Aus der Erde kühlem Saft.<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">自大地清凉的汁液中。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="9"><span class="linetext">Wanderer tritt still herein;<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
+          <div class="pline__zh">漂泊者啊，静静地进来吧；</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="10"><span class="linetext">Schmerz versteinerte die Schwelle.<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
+          <div class="pline__zh">痛苦已把门槛化为石头。</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="11"><span class="linetext">Da erglänzt in reiner Helle<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
+          <div class="pline__zh">于是在纯净的光亮中，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="11"><span class="linetext">Auf dem Tische Brot und Wein.<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
+          <div class="pline__zh">桌上的面包与酒闪耀起来。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留原诗三节各四行的封闭结构与末节由痛苦转入光亮的骤然翻转</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Wenn der Schnee ans Fenster fällt,</p>
+        <p class="lnote__zh">全诗以 wenn 引导的时间从句开篇，动词 fällt 后置。ans = an das（第四格，表示雪"落到"窗上的方向）。首行是德语现代诗中最著名的开篇之一，语言极其朴素，几乎全为单音节词。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Lang die Abendglocke läutet,</p>
+        <p class="lnote__zh">第二个并列的从句，省略了 wenn（德语中并列从句可省去重复的连词），动词 läutet 同样后置。die Abendglocke 指黄昏的晚祷钟（Angelus）。lang 在此为副词，意为"长久地"。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Vielen ist der Tisch bereitet</p>
+        <p class="lnote__zh">主句。Vielen 是 viele 的第三格复数，置于句首作"为许多人"；der Tisch ist bereitet 用状态被动（sein + 第二分词），强调结果状态而非动作。这句在德语中会自然唤起《诗篇》23 篇"你在我敌人面前为我摆设筵席"的回响。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">Und das Haus ist wohlbestellt.</p>
+        <p class="lnote__zh">wohlbestellt 由 wohl（好好地）+ bestellt（第二分词，来自 bestellen 打理、耕作）构成，意为"井然有序、料理妥当"，常用于田地与家宅。首节四行描绘的是一个封闭、温暖、已然完成的内部世界。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">Mancher auf der Wanderschaft</p>
+        <p class="lnote__zh">mancher（有些人、不止一个人）为不定代词，单数形式但含复指意味。die Wanderschaft 特指手工业帮工出师后按行会传统进行的漫游（"auf der Walz"），因此这个"漂泊者"并非现代意义的流浪汉，而带有一种被制度化的、有归途的行走。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Kommt ans Tor auf dunklen Pfaden.</p>
+        <p class="lnote__zh">das Tor（大门）与首节的 Fenster、Haus 构成"内／外"的空间对立。auf dunklen Pfaden（沿着幽暗的小径）为复数第三格。特拉克尔笔下的颜色词几乎都带象征性，dunkel 在其诗中反复标记着无归属与受难。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">Golden blüht der Baum der Gnaden</p>
+        <p class="lnote__zh">全诗的转折意象。der Baum der Gnaden（恩典之树）综合了伊甸园的生命树与基督教的十字架传统（十字架在中世纪常被称为"生命之树"）。golden 在特拉克尔诗中是最高级的正面颜色。此句在第一稿中并不存在，是修改时新加入的核心意象——详见校对记录。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Aus der Erde kühlem Saft.</p>
+        <p class="lnote__zh">语序需还原：aus [der Erde] [kühlem Saft] = "自大地清凉的汁液中"，der Erde 为前置第二格。恩典之树并非从天而降，而是从大地的汁液中生长出来——这一细节使全诗的宗教意象牢牢扎根在自然之中，也是海德格尔阐释的着力点之一。</p>
+      </article>
+      <article class="lnote" id="note-9" data-noteref="9">
+        <span class="lnote__mark">9</span>
+        <p class="lnote__de">Wanderer tritt still herein;</p>
+        <p class="lnote__zh">此行有两种读法：(1) Wanderer 为不带冠词的呼语，tritt 为命令式——"漂泊者啊，静静地进来吧"；(2) Wanderer 为主语，tritt 为第三人称现在时——"漂泊者静静地走了进来"。德语在此形态上无法区分，特拉克尔也未加逗号消歧。本站译文取命令式一读，但两种理解都有学术支持。herein 指"从外面进到（说话者所在的）里面"。</p>
+      </article>
+      <article class="lnote" id="note-10" data-noteref="10">
+        <span class="lnote__mark">10</span>
+        <p class="lnote__de">Schmerz versteinerte die Schwelle.</p>
+        <p class="lnote__zh">全诗最费解也最著名的一行。versteinern 在此为及物用法（使……石化），过去时。die Schwelle（门槛）是内与外的分界。海德格尔在《语言》（1950）一文中对此行有长篇阐释：门槛承载着"之间"，它必须是坚硬的，才能让内与外各自成立，而使它坚硬的正是痛苦。注意：部分流通版本作现在时 versteinert，本站从原刊的过去时，详见校对记录。</p>
+      </article>
+      <article class="lnote" id="note-11" data-noteref="11">
+        <span class="lnote__mark">11</span>
+        <p class="lnote__de">Da erglänzt in reiner Helle / Auf dem Tische Brot und Wein.</p>
+        <p class="lnote__zh">da 在此为副词"于是、这时"。erglänzen（开始发光）的前缀 er- 表示动作的起始。Tische 带旧式第三格词尾 -e。面包与酒直接指向圣餐（Abendmahl），但特拉克尔全诗未出现任何教会词汇——这是他一贯的手法：让宗教意象在纯粹的日常场景中自行浮现，不加解释，也不作断言。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Abendglocke, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">晚钟、晚祷钟</div>
+        <div class="vocab-card__note">指黄昏时敲响的教堂钟（Angelusläuten）；同类还有 Morgenglocke、Totenglocke（丧钟）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">bereiten</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">准备、预备、备办</div>
+        <div class="vocab-card__note">较 vorbereiten 更书面、更庄重，常见于宗教语境（"einen Weg bereiten" 预备道路）；诗中作状态被动 ist bereitet。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">wohlbestellt</span></div>
+        <span class="vocab-card__pos">adj.（复合第二分词）</span>
+        <div class="vocab-card__meaning">井然有序的、料理妥当的</div>
+        <div class="vocab-card__note">由 wohl + bestellt（来自 bestellen 打理、耕种、订购）构成；常用于 ein wohlbestelltes Haus / Feld。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Wanderschaft</span></div>
+        <span class="vocab-card__pos">n.（阴性，通常不用复数）</span>
+        <div class="vocab-card__meaning">（手工业帮工的）漫游、游历</div>
+        <div class="vocab-card__note">德国行会传统中出师帮工需外出漫游数年（auf die Walz gehen）；此词因此带有制度性与仪式性，不同于单纯的"流浪"。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Pfad, -e</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">小径、小路</div>
+        <div class="vocab-card__note">较 der Weg 更狭窄、更原始，多用于诗歌与山林语境；今亦用于计算机术语（Dateipfad 文件路径）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Gnade, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">恩典、恩宠；宽恕</div>
+        <div class="vocab-card__note">基督教神学核心词（göttliche Gnade 神的恩典）；诗中作第二格复数 der Gnaden，构成 der Baum der Gnaden。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Saft, Säfte</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">汁液、树液；果汁</div>
+        <div class="vocab-card__note">诗中指大地／植物的汁液，属其本义；日常义为果汁（Orangensaft）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">versteinern</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">使石化、变成石头；（表情）僵住</div>
+        <div class="vocab-card__note">既可及物（本诗用法：Schmerz versteinerte die Schwelle）亦可不及物（sein Gesicht versteinerte 他的表情僵住了）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Schwelle, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">门槛；（引申）临界点</div>
+        <div class="vocab-card__note">亦用于 Schmerzschwelle（痛阈）、Schwellenland（新兴国家）；海德格尔的阐释正建立在"门槛作为‘之间’的承载者"这一含义上。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">erglänzen</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">开始发光、闪耀起来</div>
+        <div class="vocab-card__note">前缀 er- 在此表示动作的起始（起始体）；同类构词还有 erblühen（开始绽放）、erklingen（响起）、erwachen（醒来）。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">fallen</td>
+          <td class="de">fällt</td>
+          <td class="de">fiel</td>
+          <td class="de">ist gefallen</td>
+          <td class="de">gefallen</td>
+          <td class="de">fiele</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 强变化（a–ie–a），现在时单数变元音；诗中作 wenn 从句谓语，后置于行末。</td></tr>
+        <tr>
+          <td class="de">läuten</td>
+          <td class="de">läutet</td>
+          <td class="de">läutete</td>
+          <td class="de">hat geläutet</td>
+          <td class="de">geläutet</td>
+          <td class="de">läutete</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可作不及物（钟自己响）与及物（敲钟）；诗中主语为 die Abendglocke。</td></tr>
+        <tr>
+          <td class="de">bereiten</td>
+          <td class="de">bereitet</td>
+          <td class="de">bereitete</td>
+          <td class="de">hat bereitet</td>
+          <td class="de">bereitet</td>
+          <td class="de">bereitete</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用状态被动 "ist … bereitet"（sein + 第二分词），表示已完成的状态；与过程被动 "wird bereitet"（正在被准备）区分。</td></tr>
+        <tr>
+          <td class="de">blühen</td>
+          <td class="de">blüht</td>
+          <td class="de">blühte</td>
+          <td class="de">hat geblüht</td>
+          <td class="de">geblüht</td>
+          <td class="de">blühte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中主语后置："Golden blüht der Baum der Gnaden"（状语在前，主语在动词后）。</td></tr>
+        <tr>
+          <td class="de">hereintreten</td>
+          <td class="de">tritt herein</td>
+          <td class="de">trat herein</td>
+          <td class="de">ist hereingetreten</td>
+          <td class="de">hereingetreten</td>
+          <td class="de">träte herein</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可分动词，强变化（e–a–e，现在时单数变 i）；诗中命令式 "tritt … herein"（第二人称单数命令式不加 -e）。</td></tr>
+        <tr>
+          <td class="de">versteinern</td>
+          <td class="de">versteinert</td>
+          <td class="de">versteinerte</td>
+          <td class="de">hat versteinert</td>
+          <td class="de">versteinert</td>
+          <td class="de">versteinerte</td>
+          <td>haben（及物）／sein（不及物）</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中为及物用法的过去时 versteinerte；部分流通版本误作现在时 versteinert，详见校对记录。</td></tr>
+        <tr>
+          <td class="de">erglänzen</td>
+          <td class="de">erglänzt</td>
+          <td class="de">erglänzte</td>
+          <td class="de">ist erglänzt</td>
+          <td class="de">erglänzt</td>
+          <td class="de">erglänzte</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中现在时，主语 "Brot und Wein" 后置于句末，动词却用单数 erglänzt——两个并列主语被视为一个整体（圣餐），这一处单复数选择值得留意。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">wenn 从句的并列与连词省略</h3>
+        <p class="grammar-item__quote">Wenn der Schnee ans Fenster fällt, / Lang die Abendglocke läutet,</p>
+        <div class="grammar-item__body">第二行其实是与第一行并列的第二个 wenn 从句，只是省略了重复的连词 wenn（德语中并列从句可以只写一次连词）。判断依据是动词 läutet 依然位于句末——这是从句语序。学习者若忽略这一点，会误以为第二行是主句而读不通全节。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">状态被动 sein + 第二分词</h3>
+        <p class="grammar-item__quote">Vielen ist der Tisch bereitet / Und das Haus ist wohlbestellt.</p>
+        <div class="grammar-item__body">德语有两种被动：过程被动 werden + 第二分词（Der Tisch wird bereitet 桌子正在被摆设），状态被动 sein + 第二分词（Der Tisch ist bereitet 桌子已经摆好了）。本节两行都用状态被动，强调的不是谁在做，而是"一切已然就绪"这一静止的完成状态——正是这种静止感，让第二节漂泊者的到来显得格外突兀。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">前置第二格</h3>
+        <p class="grammar-item__quote">Aus der Erde kühlem Saft.</p>
+        <div class="grammar-item__body">现代德语通常说 "aus dem kühlen Saft der Erde"（第二格后置）。特拉克尔采用古典的前置第二格：der Erde（第二格）+ kühlem Saft（第三格，受 aus 支配）。阅读窍门与里尔克《古风的阿波罗躯干残像》中 "unter der Schultern durchsichtigem Sturz" 相同：先锁定介词与它真正支配的名词，再把前置的第二格挂回去。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">命令式与第三人称现在时的形态歧义</h3>
+        <p class="grammar-item__quote">Wanderer tritt still herein;</p>
+        <div class="grammar-item__body">德语强变化动词 treten 的第二人称单数命令式（tritt!）与第三人称单数现在时（er tritt）形态完全相同。因此本行既可读作对漂泊者的呼唤（Wanderer, tritt herein! 漂泊者啊，进来吧），也可读作对其动作的陈述（Der Wanderer tritt herein 漂泊者走了进来）。特拉克尔不加逗号，使歧义得以保留。这类形态同形现象在阅读德语诗歌时值得特别留心。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《一个冬夜》作于1913年，收在特拉克尔生前编定、1915年（其去世后）出版的诗集《梦中的塞巴斯蒂安》的「孤独者的秋天」一辑中。全诗三节十二行，四音步扬抑格，语言朴素到近乎童谣，却是德语现代诗中被阐释得最多的作品之一。</p>
+<p>这首诗现存两稿，差异集中在第二、三节。第一稿（题为《冬夜》，遗稿中的"双重稿本"之一）后半部分作："Seine Wunde voller Gnaden / Pflegt der Liebe sanfte Kraft. // O! des Menschen bloße Pein. / Der mit Engeln stumm gerungen, / Langt von heiligem Schmerz bezwungen / Still nach Gottes Brot und Wein."（他那充满恩典的伤口／由爱的温柔之力照料。／／哦，人赤裸的痛苦。／那与天使默默角力的人，／被神圣的痛苦所制伏，／静静地伸手去取神的面包与酒。）可以看到，第一稿把宗教含义几乎全部说明白了：伤口、爱、与天使角力（雅各的典故）、"神的"面包与酒。定稿则删去了所有这些解释性成分，代之以"恩典之树"这一意象与门槛石化的一行——宗教内容没有消失，而是被压回到物与动作之中。对照两稿阅读，是理解特拉克尔诗艺的一条捷径。</p>
+<p>此诗因海德格尔而进入哲学史。他在1950年的演讲《语言》（Die Sprache，后收入《在通向语言的途中》）中以整篇篇幅解读这十二行，尤其是"Schmerz versteinerte die Schwelle"一句：门槛承载着内与外之"间"，它必须坚硬持久，而使之坚硬的正是痛苦；语言不是人对世界的命名，而是"语言自己说话"，诗把物与世界召唤到场。这一解读影响极大，也引来不少批评——有学者认为海德格尔把特拉克尔的诗当成了自己哲学的例证。无论如何，这首诗与它的哲学接受史，已经成为20世纪德语文学中一个无法绕过的组合。</p>
+<p>特拉克尔本人的生平与这首诗的温暖形成尖锐反差：他1914年随奥匈军队参加加利西亚战役，在格罗代克战役后被派去照看约90名重伤员而精神崩溃，同年11月在克拉科夫军医院死于可卡因过量，年仅27岁。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明的处理：(1) 第9行 "Wanderer tritt still herein" 在德语中兼具命令式与陈述句两种可能，译文取命令式一读（"漂泊者啊，静静地进来吧"），但请学习者参见"语法要点"了解另一种读法；(2) 第10行 "Schmerz versteinerte die Schwelle" 直译为"痛苦已把门槛化为石头"，保留其及物结构与过去时，不作"门槛因痛苦而僵硬"之类的意译，以免削弱海德格尔阐释所依赖的语法关系；(3) 全诗刻意不出现"圣餐""教堂"等词，中译亦严格保持这一克制。已知此诗存在多个中文译本（如林克、先刚等译者的翻译），因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">textlog.de — Georg Trakl, „Ein Winterabend“（2. Fassung，收于 Sebastian im Traum · Der Herbst des Einsamen）</span><a class="source-url" href="https://www.textlog.de/trakl/gedichte/ein-winterabend" target="_blank" rel="noopener">https://www.textlog.de/trakl/gedichte/ein-winterabend</a>
+        <span class="source-note">主来源。明确标注为第二稿（定稿），三节十二行完整，第10行作过去时 "versteinerte"。同站另有第一稿（题 Im Winter，https://www.textlog.de/trakl/gedichte/im-winter-1 ），用于版本对照。</span>
+      </li>
+      <li>
+        <span class="source-name">aphorismen.de — Georg Trakl: „Ein Winterabend“</span><a class="source-url" href="https://www.aphorismen.de/gedicht/24239" target="_blank" rel="noopener">https://www.aphorismen.de/gedicht/24239</a>
+        <span class="source-note">辅助来源。用词与主来源一致（含 "Golden blüht der Baum der Gnaden" 与过去时 versteinerte），但第9行作 "Wanderer, tritt still herein"（加逗号）且行首字母小写，用于交叉核对用词与标点异同。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在林克、先刚等译者的中译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文以 textlog.de 明确标注的"第2稿"（即《梦中的塞巴斯蒂安》定稿）为主来源，以 aphorismen.de 为辅助来源逐词核对，三节十二行内容一致。核实到三项需要说明的差异：(1) 稿本差异（作者本人修改）：本诗存两稿，第一稿（textlog.de 题作 Im Winter）第二节后两行作 "Seine Wunde voller Gnaden / Pflegt der Liebe sanfte Kraft."，第三节整体作 "O! des Menschen bloße Pein. / Der mit Engeln stumm gerungen, / Langt von heiligem Schmerz bezwungen / Still nach Gottes Brot und Wein."，与定稿差异极大。本站采定稿，并在文化背景中完整引述第一稿以供对照。(2) 时态：第10行定稿作过去时 "versteinerte"（两来源一致），但网络上大量转载作现在时 "versteinert"；此差异直接影响海德格尔阐释所依据的语法，本站从两来源共同支持的过去时。(3) 标点：第9行 aphorismen.de 加逗号作 "Wanderer, tritt still herein"，textlog.de 不加逗号；逗号的有无决定了该行是否必须读作呼语＋命令式，本站从 textlog.de 的无逗号写法以保留原有歧义，并在注释中说明两种读法。需说明的是，本站未直接查阅1915年 Kurt Wolff 版《梦中的塞巴斯蒂安》影印件或萨尔茨堡历史批评版，上述采择依据数字化转录，属待进一步核实项。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Georg Trakl</li>
+        <li>确认标题与出处：Sebastian im Traum · Der Herbst des Einsamen</li>
+        <li>德文原文主来源：textlog.de（明确标注第2稿）</li>
+        <li>德文原文辅助来源：aphorismen.de</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（第1稿 vs 第2稿全文对照；versteinerte/versteinert；第9行逗号）</li>
+        <li>确认公版状态（Trakl 1914年逝世，德文原文已进入公有领域）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">对照1915年初版或萨尔茨堡历史批评版核实标点</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第9行的读法与海德格尔阐释的转述）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

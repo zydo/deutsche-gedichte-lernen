@@ -1,0 +1,252 @@
+{
+  "id": "12",
+  "slug": "wandrers-nachtlied-i",
+  "author": "Johann Wolfgang von Goethe",
+  "author_zh": "约翰·沃尔夫冈·冯·歌德",
+  "title_de": "Wandrers Nachtlied",
+  "title_zh": "流浪者的夜歌（其一）",
+  "year": "1776年2月12日写于埃特斯山坡（Ettersberg），1789年由 Göschen 出版《歌德文集》时修订发表",
+  "collection": "《歌德文集》第一卷（1815年版中与《Ein Gleiches》并列同页）",
+  "period": "魏玛早期（前古典时期，介于狂飙突进与古典之间）",
+  "difficulty": "B1",
+  "tags": [
+    "夜",
+    "安宁",
+    "祈祷",
+    "疲惫",
+    "经典必读",
+    "舒伯特谱曲"
+  ],
+  "german_text": [
+    [
+      "Der du von dem Himmel bist,",
+      "Alles Leid und Schmerzen stillest,",
+      "Den, der doppelt elend ist,",
+      "Doppelt mit Erquickung füllest;",
+      "Ach, ich bin des Treibens müde!",
+      "Was soll all der Schmerz und Lust?",
+      "Süßer Friede,",
+      "Komm, ach komm in meine Brust!"
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留原诗前四行呼语式祈祷句与后四行叹息、祈求的语气转折",
+    "text": [
+      [
+        "你啊，来自天上的，",
+        "抚平一切苦难与伤痛，",
+        "对那双倍不幸的人，",
+        "以双倍的慰藉将他充满；",
+        "唉，我已厌倦了这奔忙！",
+        "这一切痛苦与欢愉又为何来？",
+        "甜美的安宁啊，",
+        "来吧，啊来到我的胸中！"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Der du von dem Himmel bist,",
+      "zh": "以关系从句形式构成的呼语（Anrede），主句要到第7—8行的 \"Süßer Friede, / Komm\" 才出现。学界普遍认为此句呼应了钦岑多夫（Zinzendorf）主祷文诗歌 \"Der Du in dem himmel bist\"（收于埃伯斯多夫赞美诗集，歌德父亲藏有该书），因而全诗带有祷词色彩。"
+    },
+    {
+      "de": "Alles Leid und Schmerzen stillest,",
+      "zh": "1776年手稿原作 \"Alle Freud und Schmerzen stillest\"（抚平一切欢乐与伤痛）；1789年 Göschen 版改为 \"Alles Leid und Schmerzen\"。改后的搭配在语法上并不完全规范（Alles Leid 单数中性、Schmerzen 复数并列），学界认为歌德有意造成一种古朴、民歌式的粗粝感。"
+    },
+    {
+      "de": "Den, der doppelt elend ist,",
+      "zh": "Den 是第四格先行词，被后置的关系从句 \"der doppelt elend ist\" 修饰，整体作第4行动词 füllest 的宾语。doppelt（双倍地）在第3、4行重复出现，构成\"双倍不幸—双倍慰藉\"的对称。"
+    },
+    {
+      "de": "Doppelt mit Erquickung füllest;",
+      "zh": "stillest / füllest 均为第二人称单数现在时的诗歌延长形式（今作 stillst / füllst），与前后的 -est 韵脚配合。Erquickung 意为\"提神、慰藉、恢复元气\"，带有宗教语汇色彩。此行行末标点各版本有别：Wikipedia 依 1789 年版作分号，deutschelyrik.de 作逗号。"
+    },
+    {
+      "de": "Ach, ich bin des Treibens müde!",
+      "zh": "müde 支配第二格宾语（des Treibens），这是德语中形容词支配属格的典型用法（现代德语多改用 müde von 或 es satt haben）。das Treiben 指忙碌、奔波、纷扰的活动。此句被认为直接映射歌德本人1776年初到魏玛任职后的心境。"
+    },
+    {
+      "de": "Was soll all der Schmerz und Lust?",
+      "zh": "1776年手稿作 \"Was soll all die Qual und Lust?\"。此处 soll 意为\"有何意义、为的是什么\"，而非\"应该\"。all der Schmerz und Lust 的单数动词与混合词性同样是1789年修订后留下的不规范搭配。"
+    },
+    {
+      "de": "Süßer Friede,",
+      "zh": "全诗最短的一行（仅两个词、四个音节），在格律上形成明显的\"塌陷\"，正是全诗从叹息转向祈求的枢纽。Friede 是 der Friede（阳性弱变化名词）的第一格呼语形式。"
+    },
+    {
+      "de": "Komm, ach komm in meine Brust!",
+      "zh": "两次命令式 Komm 加叹词 ach，把祈祷推向高潮；in meine Brust 用第四格表示\"进入\"的方向性（若用第三格 in meiner Brust 则表示静态位置）。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "stillen",
+      "pos": "v.（弱变化）",
+      "meaning": "平息、抚慰、止住",
+      "note": "可用于止血（Blut stillen）、止渴（Durst stillen）、平息痛苦（Schmerzen stillen）；诗中用延长形式 stillest。"
+    },
+    {
+      "term": "die Erquickung, -en",
+      "pos": "n.（阴性）",
+      "meaning": "慰藉、提神、恢复元气",
+      "note": "源自动词 erquicken（使振作，词根 quick = 有生气的，同英语 quick 的古义\"活的\"）；带有明显的宗教与雅语色彩，今日已属书面古雅用词。"
+    },
+    {
+      "term": "elend",
+      "pos": "adj.",
+      "meaning": "悲惨的、可怜的",
+      "note": "古高地德语 elilenti 原意为\"在异乡的、被放逐的\"，与\"流浪者\"（Wandrer）的主题暗合；名词形式 das Elend（苦难）。"
+    },
+    {
+      "term": "das Treiben",
+      "pos": "n.（中性，动词名词化）",
+      "meaning": "忙碌、奔波、（纷扰的）活动",
+      "note": "由动词 treiben（驱赶、推动）名词化而来；诗中作 müde 的第二格宾语 des Treibens。"
+    },
+    {
+      "term": "müde (+ Gen.)",
+      "pos": "adj.",
+      "meaning": "厌倦……的",
+      "note": "形容词支配第二格的用法，今多改说 \"etwas müde sein\"（第四格）或 \"von etwas müde sein\"；诗中保留古典用法 des Treibens müde。"
+    },
+    {
+      "term": "der Friede(n)",
+      "pos": "n.（阳性）",
+      "meaning": "和平、安宁、内心的平静",
+      "note": "属\"弱变化名词\"的特例（第一格 der Friede 或 der Frieden，其余格作 des Friedens 等）；诗中取内心安宁之义，与政治意义上的\"和平\"区分开。"
+    },
+    {
+      "term": "die Brust, Brüste",
+      "pos": "n.（阴性）",
+      "meaning": "胸膛（此处引申为\"内心\"）",
+      "note": "德语诗歌中 Brust 常代指心灵、内在情感所在，与 Herz 近义。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "sein",
+      "present_3sg": "ist",
+      "preterite": "war",
+      "perfect": "ist gewesen",
+      "participle_ii": "gewesen",
+      "subjunctive_ii": "wäre",
+      "auxiliary": "sein",
+      "note": "诗中出现第二人称单数 bist（\"Der du … bist\"）与第三人称 ist（\"der doppelt elend ist\"）。"
+    },
+    {
+      "infinitive": "stillen",
+      "present_3sg": "stillt",
+      "preterite": "stillte",
+      "perfect": "hat gestillt",
+      "participle_ii": "gestillt",
+      "subjunctive_ii": "stillte",
+      "auxiliary": "haben",
+      "note": "诗中第二人称单数延长形式 stillest（今 stillst）。"
+    },
+    {
+      "infinitive": "füllen",
+      "present_3sg": "füllt",
+      "preterite": "füllte",
+      "perfect": "hat gefüllt",
+      "participle_ii": "gefüllt",
+      "subjunctive_ii": "füllte",
+      "auxiliary": "haben",
+      "note": "诗中第二人称单数延长形式 füllest（今 füllst）；与 stillest 押韵。"
+    },
+    {
+      "infinitive": "sollen",
+      "present_3sg": "soll",
+      "preterite": "sollte",
+      "perfect": "hat gesollt",
+      "participle_ii": "gesollt / sollen",
+      "subjunctive_ii": "sollte",
+      "auxiliary": "haben",
+      "note": "情态动词；诗中 \"Was soll …?\" 意为\"……有什么意义\"，是固定用法而非\"应该\"。"
+    },
+    {
+      "infinitive": "kommen",
+      "present_3sg": "kommt",
+      "preterite": "kam",
+      "perfect": "ist gekommen",
+      "participle_ii": "gekommen",
+      "subjunctive_ii": "käme",
+      "auxiliary": "sein",
+      "note": "诗中用第二人称单数命令式 Komm!（不加 -e，是现代标准形式）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "以关系从句构成的呼语（Anrede）",
+      "quote": "Der du von dem Himmel bist, / Alles Leid und Schmerzen stillest, / Den, der doppelt elend ist, / Doppelt mit Erquickung füllest;",
+      "body": "\"Der du …\" 是德语祷词与颂歌中的固定句式：先行词 der（阳性第一格）后接第二人称的关系从句，动词因此保持第二人称单数形式（bist / stillest / füllest），而不是第三人称。整整四行都是对这位被呼唤者的修饰，主句（祈使句 Komm）直到最后两行才出现，制造出长时间的语法悬置。学习者读到第4行仍找不到主句时不必怀疑自己——这正是诗的设计。"
+    },
+    {
+      "title": "形容词支配第二格：des Treibens müde",
+      "quote": "Ach, ich bin des Treibens müde!",
+      "body": "德语中有一小批形容词可以支配第二格宾语：müde（厌倦）、bewusst（意识到）、würdig（配得上）、mächtig（掌握）、sicher（确信）等。现代德语里 müde 的第二格用法已基本退出口语（改说 \"Ich bin das Treiben müde\" 或 \"Ich habe das Treiben satt\"），但在文学文本中仍常见，值得作为阅读能力的一部分掌握。"
+    },
+    {
+      "title": "in + 第四格表示方向",
+      "quote": "Komm, ach komm in meine Brust!",
+      "body": "介词 in 属\"双向介词\"（Wechselpräposition）：回答 wohin?（往哪里）时用第四格，回答 wo?（在哪里）时用第三格。诗中 \"in meine Brust\"（第四格）表示\"进入我的胸中\"这一动作方向；若写作 \"in meiner Brust\" 则变成\"在我胸中（已经存在）\"，祈求的意味便消失了。"
+    },
+    {
+      "title": "诗歌中的动词延长形式 -est",
+      "quote": "stillest / füllest",
+      "body": "18世纪德语诗歌常在第二人称单数词尾添加 -e-（stillst → stillest），一方面为凑足音节，另一方面制造庄重古雅的听感。这与《生命的中途》中 hänget（今 hängt）属于同一类现象。学习时应把它们还原为现代形式理解，但朗读时要按诗中的音节数处理。"
+    }
+  ],
+  "cultural_notes": "《流浪者的夜歌》有两首同名之作，这是较早的一首。歌德的手稿保存在他写给夏绿蒂·冯·施泰因（Charlotte von Stein）的信件之中，落款为\"Am Hang des Ettersberg, d. 12. Feb. 76\"（1776年2月12日于埃特斯山坡）。1815年歌德首次将两首夜歌印在同一页上，较早的一首题为《Wandrers Nachtlied》，较晚的《Über allen Gipfeln》题为《Ein Gleiches》（意为\"又一首同样的\"），1827年的\"最后手定全集\"沿用了这一编排——本站已收录的《流浪者的夜歌（其二）》正是后者。\n\n这首诗写于歌德初到魏玛任职的时期。1776年2月23日他在给施泰因夫人的信中写道：\"我睡得多么安稳轻松，起床时多么幸福，十四天来第一次以自由的心迎接了美丽的太阳，我对你这位上天的天使充满感激。\"研究者克诺布洛赫（Hans-Jörg Knobloch）甚至把这首\"书信诗\"读作对倾慕对象的\"一次求爱尝试\"，认为只有在为付印而修改之后——歌德曾写信告诉赫尔德，修改的目的是\"让那些过于私人化、过于当下的片段变得可读\"——它才被重新诠释为一首祈求安宁的祷词。开篇 \"Der du von dem Himmel bist\" 对钦岑多夫主祷文诗歌的呼应，为这种祷词读法提供了最直接的语言证据。\n\n歌德晚年在《诗与真》中回忆，1771年与弗里德里克·布里翁分手后，他因\"第一次感到自己有罪\"而陷入阴郁的悔恨，只有在露天才能获得平静，人们因他四处游荡而称他为\"那个流浪者\"（den Wanderer）——\"流浪者\"这一自我形象由此贯穿了他早期的多首诗作。舒伯特于1815年7月5日为此诗谱曲（作品4之3，D 224）；据统计，此诗的谱曲版本超过150种，仅次于《Über allen Gipfeln》的200余种。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，尽量保留原诗\"四行呼语从句 + 四行叹息与祈求\"的结构断裂，以及 doppelt（双倍）一词的重复。原诗第2行 \"Alles Leid und Schmerzen\" 与第6行 \"all der Schmerz und Lust\" 在德语中本身即为不合常规的搭配（单复数、词性混杂），中文难以对应这种\"故意的粗粝\"，译文只能以平顺的表达处理，特此说明。已知此诗存在钱春绮、冯至等译者的中译本，因版权原因本站不转载译文全文。",
+  "image_prompt": {
+    "imagery": "冬日黄昏的缓坡山林，一个疲惫的行旅者独自伫立，目光投向渐暗的天际，天光自云隙间垂落",
+    "mood": "疲惫、渴求安宁、克制的虔敬；不应表现绝望或戏剧化的痛苦，而是一种沉静的、近乎祷告的松弛",
+    "elements": "光秃的落叶林缓坡、远处魏玛式的丘陵地平线、行旅者的斗篷与手杖背影、云隙间的柔和天光",
+    "era": "18世纪末德国中部乡野，服饰与器物应为该时代样式，不得出现19世纪之后的元素",
+    "taboos": "不得出现文字、水印、教堂十字架等直白的宗教符号；避免面部特写与表情化的悲伤，人物宜作远景背影；不得出现电线、现代建筑、现代服饰",
+    "style": "19世纪浪漫主义风景油画风格（可参考弗里德里希早期的柔和光线处理），冷灰蓝为主调，天光处保留一抹暖金"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Wandrers Nachtlied (1776)“",
+      "url": "https://www.deutschelyrik.de/wandrers-nachtlied.html",
+      "note": "主来源。全文八行完整，采用1789年 Göschen 版异文（Alles Leid und Schmerzen / all der Schmerz und Lust）；第4行行末作逗号。"
+    },
+    {
+      "name": "German Wikipedia — „Wandrers Nachtlied“",
+      "url": "https://de.wikipedia.org/wiki/Wandrers_Nachtlied",
+      "note": "辅助来源，并用于核实版本史。该词条同时给出1776年手稿版与1789年 Göschen 版两种文本（标注出处为 Goethe's Werke, Erster Band, Cotta 1815, S. 99；异文讨论引 Erich Trunz 汉堡版注释与 Hans-Jörg Knobloch 的研究），逐字与主来源一致，仅第4行行末标点作分号。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮、冯至等译者的中译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 German Wikipedia）逐字核对，八行内容一致。核实到两处需要说明的差异：(1) 版本差异：1776年2月12日致施泰因夫人信中的手稿版第2行作 \"Alle Freud und Schmerzen stillest\"、第6行作 \"Was soll all die Qual und Lust?\"；1789年 Göschen 版歌德本人改为 \"Alles Leid und Schmerzen\" 与 \"all der Schmerz und Lust\"。本站采用歌德亲自修订并沿用至\"最后手定全集\"的1789年版，并在逐行注释中说明手稿异文。(2) 标点差异：第4行行末，German Wikipedia（依1815年 Cotta 版）作分号，deutschelyrik.de 作逗号；本站从 Wikipedia 所依据的印本作分号。此外需提醒读者注意：本诗常被误与同名的《Über allen Gipfeln》（本站编号02，题为《流浪者的夜歌（其二）》）混淆，两者是不同的作品。歌德手稿本身的影印件（Goethe-Repertorium）本站未直接查阅，属待进一步核实项。",
+  "checklist": [
+    { "label": "确认作者：Johann Wolfgang von Goethe", "done": true },
+    { "label": "确认标题：Wandrers Nachtlied（区别于同名的 Ein Gleiches / Über allen Gipfeln）", "done": true },
+    { "label": "德文原文主来源：deutschelyrik.de", "done": true },
+    { "label": "德文原文辅助来源：German Wikipedia（引1815年 Cotta 版）", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（1776手稿版 vs 1789 Göschen 版；第4行标点）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "查阅手稿影印件核实标点（Goethe-Repertorium）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}

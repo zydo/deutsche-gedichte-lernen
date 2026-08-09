@@ -1,0 +1,438 @@
+{
+  "id": "20",
+  "slug": "abendlied",
+  "author": "Matthias Claudius",
+  "author_zh": "马蒂亚斯·克劳迪乌斯",
+  "title_de": "Abendlied",
+  "title_zh": "晚歌（月亮已经升起）",
+  "year": "约1778年作于汉堡万茨贝克（一说更早作于达姆施塔特），1778年刊于《缪斯年鉴 1779》",
+  "collection": "《万茨贝克信使全集》第四部（Asmus omnia sua secum portans, 1783）",
+  "period": "感伤主义（Empfindsamkeit）／启蒙晚期",
+  "difficulty": "A2–B1",
+  "tags": [
+    "夜",
+    "月亮",
+    "祈祷",
+    "死亡",
+    "德语最著名的诗",
+    "民歌·教会诗歌"
+  ],
+  "german_text": [
+    [
+      "Der Mond ist aufgegangen,",
+      "Die goldnen Sternlein prangen",
+      "Am Himmel hell und klar.",
+      "Der Wald steht schwarz und schweiget,",
+      "Und aus den Wiesen steiget",
+      "Der weiße Nebel wunderbar."
+    ],
+    [
+      "Wie ist die Welt so stille,",
+      "Und in der Dämmrung Hülle",
+      "So traulich und so hold!",
+      "Als eine stille Kammer,",
+      "Wo ihr des Tages Jammer",
+      "Verschlafen und vergessen sollt."
+    ],
+    [
+      "Seht ihr den Mond dort stehen? –",
+      "Er ist nur halb zu sehen,",
+      "Und ist doch rund und schön!",
+      "So sind wohl manche Sachen,",
+      "Die wir getrost belachen,",
+      "Weil unsre Augen sie nicht sehn."
+    ],
+    [
+      "Wir stolze Menschenkinder",
+      "Sind eitel arme Sünder,",
+      "Und wissen gar nicht viel.",
+      "Wir spinnen Luftgespinnste",
+      "Und suchen viele Künste,",
+      "Und kommen weiter von dem Ziel."
+    ],
+    [
+      "Gott, laß uns dein Heil schauen,",
+      "Auf nichts Vergänglichs trauen,",
+      "Nicht Eitelkeit uns freun!",
+      "Laß uns einfältig werden,",
+      "Und vor dir hier auf Erden",
+      "Wie Kinder fromm und fröhlich seyn!"
+    ],
+    [
+      "Wollst endlich sonder Grämen",
+      "Aus dieser Welt uns nehmen",
+      "Durch einen sanften Tod!",
+      "Und, wenn du uns genommen,",
+      "Laß uns im Himmel kommen,",
+      "Du unser Herr und unser Gott!"
+    ],
+    [
+      "So legt euch denn, ihr Brüder,",
+      "In Gottes Namen nieder;",
+      "Kalt ist der Abendhauch.",
+      "Verschon’ uns, Gott! mit Strafen,",
+      "Und laß uns ruhig schlafen!",
+      "Und unsern kranken Nachbar auch!"
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留七节各六行的\"自然—沉思—祈祷—安睡\"推进，以及末行由宏大祈祷落回一位邻人的收束",
+    "text": [
+      [
+        "月亮已经升起，",
+        "金色的小星闪耀",
+        "在明净清朗的天上。",
+        "森林黑黢黢地立着，默不作声，",
+        "而从草地上升起",
+        "白色的雾，奇异非常。"
+      ],
+      [
+        "世界是何等寂静，",
+        "在暮色的笼罩之中",
+        "何等亲切、何等可爱！",
+        "如同一间安静的卧房，",
+        "你们可以在其中",
+        "把白日的愁苦睡去、忘掉。"
+      ],
+      [
+        "你们看见那边的月亮吗？——",
+        "它只有一半可见，",
+        "却依然是圆的、美的！",
+        "许多事情大约也是这样，",
+        "我们心安理得地一笑置之，",
+        "只因我们的眼睛看不见它们。"
+      ],
+      [
+        "我们这些骄傲的人子",
+        "无非是可怜的罪人，",
+        "所知实在有限。",
+        "我们编织空中的丝网，",
+        "追寻种种技艺，",
+        "却离目标越来越远。"
+      ],
+      [
+        "上帝啊，让我们看见你的拯救，",
+        "不去信靠任何易逝之物，",
+        "不以虚荣自娱！",
+        "让我们变得单纯，",
+        "在你面前、在这地上",
+        "像孩子一样虔敬而快乐！"
+      ],
+      [
+        "愿你最终不使我们悲苦，",
+        "以一场温柔的死",
+        "把我们从这世界带走！",
+        "而当你把我们带走之后，",
+        "让我们进入天国，",
+        "你，我们的主，我们的上帝！"
+      ],
+      [
+        "那么躺下吧，弟兄们，",
+        "以上帝的名义躺下；",
+        "晚风是凉的。",
+        "上帝啊，饶恕我们，不要降罚，",
+        "让我们安睡！",
+        "也让我们生病的邻人安睡！"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Der Mond ist aufgegangen,",
+      "zh": "全诗以现在完成时开篇（aufgehen 的完成时用 sein 作助动词），描述一个刚刚完成、结果仍在眼前的状态。此句化自保罗·格哈特1647年圣诗《Nun ruhen alle Wälder》第三节首行 \"Der Tag ist nun vergangen / die güldnen Sternlein prangen\"，克劳迪乌斯只改了第一行——这是德语文学中最著名的一次\"改写致敬\"。"
+    },
+    {
+      "de": "Die goldnen Sternlein prangen",
+      "zh": "Sternlein 是 Stern 的指小形式（-lein），带亲切、稚拙的语感，也是虔敬主义（Pietismus）常用词。prangen 意为\"炫耀般地闪现、盛装呈现\"，今已近乎古语。goldnen 为 goldenen 的省音形式。"
+    },
+    {
+      "de": "Der Wald steht schwarz und schweiget,",
+      "zh": "schweigen（沉默）用于森林是拟人。schweiget 为诗歌延长形式（今 schweigt）。此行与下一行的 steiget 押韵，是全诗最常被引用的句子之一（2012年德国《犯罪现场》有一集即以此为剧名）。"
+    },
+    {
+      "de": "Und aus den Wiesen steiget / Der weiße Nebel wunderbar.",
+      "zh": "语序为状语—动词—主语（Der weiße Nebel 在动词之后）。wunderbar 在此为副词，修饰 steiget（\"奇异地升起\"），而非定语。德国作家阿克塞尔·哈克曾以某个孩子把这两行听成 \"der weiße Neger Wumbaba\"（白人黑人翁巴巴）为题写成一本关于听错歌词的书，可见此句在德语文化中的普及程度。"
+    },
+    {
+      "de": "Und in der Dämmrung Hülle",
+      "zh": "前置第二格：\"in [der Dämmrung] Hülle\" = \"in der Hülle der Dämmerung\"（在暮色的包裹之中）。Dämmrung 为 Dämmerung 的省音形式，指黎明或黄昏的微光时分。"
+    },
+    {
+      "de": "Wo ihr des Tages Jammer / Verschlafen und vergessen sollt.",
+      "zh": "关系从句，动词 sollt 后置于末尾。des Tages Jammer 又是一个前置第二格（= der Jammer des Tages 白日的愁苦）。注意人称：全诗至此突然出现第二人称复数 ihr——说话者是一位对家人／会众讲话的\"家父\"，这一角色是理解全诗语气的关键。"
+    },
+    {
+      "de": "Seht ihr den Mond dort stehen? –",
+      "zh": "第三节是全诗的思想核心，也是它区别于一般晚祷诗的地方。这里以最日常的观察（半月其实是圆的）引出一个认识论论点：看不见并不等于不存在。这一转折使全诗从自然描写进入沉思。"
+    },
+    {
+      "de": "Die wir getrost belachen,",
+      "zh": "getrost 意为\"心安理得地、放心大胆地\"（而非\"被安慰\"）；belachen 为及物动词\"嘲笑某事\"。这两行是对启蒙理性自信的温和批评：我们嘲笑的许多事情，只是因为我们看不见它们的全貌。"
+    },
+    {
+      "de": "Sind eitel arme Sünder,",
+      "zh": "eitel 在此不是常见的\"虚荣的\"，而是路德《圣经》中的古义\"纯然、不过是\"（如 \"es ist alles ganz eitel\" 传道书\"凡事都是虚空\"）。整句意为\"无非是可怜的罪人\"。这是全诗最容易误读的一个词。"
+    },
+    {
+      "de": "Wir spinnen Luftgespinnste",
+      "zh": "Luftgespinst（空中的织物／幻想）是罕见的复合词，由 Luft + Gespinst（蛛网般的织物，来自 spinnen 纺织）构成，与动词 spinnen 构成同源反复（\"纺织空纺之物\"）。spinnen 在口语中另有\"发疯、胡说\"之义。1779年《缪斯年鉴》版此处作 Luftgespinste，1783年版作 Luftgespinnste，拼写略异。"
+    },
+    {
+      "de": "Auf nichts Vergänglichs trauen,",
+      "zh": "auf etwas trauen（今多作 auf etwas vertrauen）意为\"信靠某物\"。nichts Vergänglichs 是\"nichts + 形容词名词化\"结构，词尾 -s 为省音形式（今作 nichts Vergängliches）：\"任何易逝之物\"。"
+    },
+    {
+      "de": "Wie Kinder fromm und fröhlich seyn!",
+      "zh": "seyn 为18世纪 sein 的旧拼法。fromm（虔敬）与 fröhlich（快乐）的并置是本诗的核心价值取向——虔敬不是苦修，而是孩童式的、轻快的信赖。头韵（fromm–fröhlich）加强了这一效果。"
+    },
+    {
+      "de": "Wollst endlich sonder Grämen",
+      "zh": "Wollst 是 wollen 的第一虚拟式（Konjunktiv I）第二人称单数，用于表达祈愿（\"愿你……\"），今已仅存于祷词与固定表达中。sonder 是古老的介词，意为\"没有、免于\"（同英语 without、法语 sans），支配第四格；今仅存于 sonderbar、sondern 等派生词中。das Grämen 为动词 sich grämen（忧伤）的名词化。"
+    },
+    {
+      "de": "Laß uns im Himmel kommen,",
+      "zh": "1783年版此处作 \"im Himmel\"（第三格），从现代语法看应为 \"in den Himmel\"（第四格，表方向）——1779年《缪斯年鉴》版正作 \"in Himmel\"。这属于18世纪的用法波动，也可能是排印之误，本站保留1783年版原样并在此说明。"
+    },
+    {
+      "de": "So legt euch denn, ihr Brüder,",
+      "zh": "sich legen（躺下）的第二人称复数命令式，可分前缀 nieder 落在下一行（niederlegen）。denn 在此为语气词，表示\"那么、既然如此\"。全诗至此从祈祷回到具体的睡前动作。"
+    },
+    {
+      "de": "Und unsern kranken Nachbar auch!",
+      "zh": "全诗最著名的一行。经过六节关于宇宙、罪、死亡与天国的宏大言说之后，最后一句突然缩小到隔壁那位生病的邻人身上。这一\"缩小\"被公认为全诗最动人的笔法。2017年德国语言协会曾因新教教会将此行改为\"也让所有生病的人\"（性别中立版）而颁发\"年度语言糟蹋者\"负面奖，可见这一行在德语文化中的分量。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "aufgehen",
+      "pos": "v.（可分，强变化）",
+      "meaning": "（日月）升起；（种子）发芽；（谜）解开",
+      "note": "完成时用 sein：ist aufgegangen。习语 \"mir geht ein Licht auf\" 意为\"我恍然大悟\"。"
+    },
+    {
+      "term": "prangen",
+      "pos": "v.（弱变化，古雅）",
+      "meaning": "炫耀般地呈现、辉映、赫然在目",
+      "note": "今日多用于书面语（\"auf dem Plakat prangte sein Name\" 海报上赫然是他的名字）；与 der Prunk（华丽）同源。"
+    },
+    {
+      "term": "die Dämmerung, -en",
+      "pos": "n.（阴性）",
+      "meaning": "曙光或暮色、微明时分",
+      "note": "兼指晨昏（Morgendämmerung / Abenddämmerung）；诗中省音作 Dämmrung。"
+    },
+    {
+      "term": "traulich",
+      "pos": "adj.（古雅）",
+      "meaning": "亲切的、令人安心的",
+      "note": "与 trauen（信赖）、vertraut（熟悉的）、traut 同源；今日基本被 gemütlich、vertraut 取代。"
+    },
+    {
+      "term": "hold",
+      "pos": "adj.（古雅）",
+      "meaning": "可爱的、温婉的、有好感的",
+      "note": "本站《你像一朵花》《生命的中途》中亦出现此词；今存于 holdselig、Unhold（恶魔）等派生词。"
+    },
+    {
+      "term": "der Jammer",
+      "pos": "n.（阳性，通常无复数）",
+      "meaning": "悲苦、哀愁、可怜的状况",
+      "note": "口语中 \"es ist ein Jammer\" 意为\"真可惜\"；形容词 jämmerlich（可怜的、糟糕的）。"
+    },
+    {
+      "term": "getrost",
+      "pos": "adv./adj.",
+      "meaning": "心安理得地、放心地",
+      "note": "形式上是 trösten（安慰）的第二分词，但用作\"无所顾虑地\"（\"du kannst getrost gehen\" 你尽管去好了）；不可按被动理解为\"被安慰的\"。"
+    },
+    {
+      "term": "eitel",
+      "pos": "adj.",
+      "meaning": "①（古义，不变格）纯然、不过是；②（今义）虚荣的、空虚的",
+      "note": "本诗第4节取古义（\"eitel arme Sünder\" 无非是可怜的罪人），第5节的名词 Eitelkeit 则取今义（虚荣）。同一首诗中两义并存，是阅读18世纪文本时的典型陷阱。"
+    },
+    {
+      "term": "das Gespinst, -e",
+      "pos": "n.（中性）",
+      "meaning": "纺出的丝、蛛网状之物；（引申）幻想的编织物",
+      "note": "来自 spinnen（纺；口语\"发疯\"）；诗中复合为 Luftgespinst（空中的织物＝空想）。"
+    },
+    {
+      "term": "einfältig",
+      "pos": "adj.",
+      "meaning": "①单纯的、质朴的；②（今多为贬义）头脑简单的",
+      "note": "字面为\"只有一折的\"（ein + Falte），与 vielfältig（多样的）相对。诗中取正面的\"单纯\"义——这在今日德语中已很难直接使用，须靠语境理解。"
+    },
+    {
+      "term": "sonder",
+      "pos": "介词（古语，支配第四格）",
+      "meaning": "没有、免于",
+      "note": "同英语 without；今已废弃，仅存于 sonderbar（奇特的）、besonders（特别地）、sondern（而是）等词中。"
+    },
+    {
+      "term": "der Abendhauch",
+      "pos": "n.（阳性，复合词）",
+      "meaning": "晚风、夜晚的气息",
+      "note": "der Hauch 指极轻微的气息或一丝（ein Hauch von …）；英格丽·诺尔1996年的犯罪小说即以 \"Kalt ist der Abendhauch\" 为题。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "aufgehen",
+      "present_3sg": "geht auf",
+      "preterite": "ging auf",
+      "perfect": "ist aufgegangen",
+      "participle_ii": "aufgegangen",
+      "subjunctive_ii": "ginge auf",
+      "auxiliary": "sein",
+      "note": "诗中首行用现在完成时 \"ist aufgegangen\"，强调升起后的当下状态。"
+    },
+    {
+      "infinitive": "schweigen",
+      "present_3sg": "schweigt",
+      "preterite": "schwieg",
+      "perfect": "hat geschwiegen",
+      "participle_ii": "geschwiegen",
+      "subjunctive_ii": "schwiege",
+      "auxiliary": "haben",
+      "note": "强变化（ei–ie–ie）；诗中用延长形式 schweiget（今 schweigt）。"
+    },
+    {
+      "infinitive": "steigen",
+      "present_3sg": "steigt",
+      "preterite": "stieg",
+      "perfect": "ist gestiegen",
+      "participle_ii": "gestiegen",
+      "subjunctive_ii": "stiege",
+      "auxiliary": "sein",
+      "note": "诗中延长形式 steiget，与 schweiget 押韵。"
+    },
+    {
+      "infinitive": "verschlafen",
+      "present_3sg": "verschläft",
+      "preterite": "verschlief",
+      "perfect": "hat verschlafen",
+      "participle_ii": "verschlafen",
+      "subjunctive_ii": "verschliefe",
+      "auxiliary": "haben",
+      "note": "前缀 ver- 在此表\"通过睡眠而消除\"；日常义为\"睡过头\"（Ich habe verschlafen）。"
+    },
+    {
+      "infinitive": "lassen",
+      "present_3sg": "lässt",
+      "preterite": "ließ",
+      "perfect": "hat gelassen / hat … lassen",
+      "participle_ii": "gelassen / lassen",
+      "subjunctive_ii": "ließe",
+      "auxiliary": "haben",
+      "note": "诗中多次用命令式 Laß（今 Lass），构成祈祷句\"让我们……\"（Laß uns + 不定式）。"
+    },
+    {
+      "infinitive": "wollen",
+      "present_3sg": "will",
+      "preterite": "wollte",
+      "perfect": "hat gewollt",
+      "participle_ii": "gewollt / wollen",
+      "subjunctive_ii": "wollte",
+      "auxiliary": "haben",
+      "note": "诗中第六节首词 Wollst 为第一虚拟式第二人称单数（愿望式），今仅存于祷词与固定表达。"
+    },
+    {
+      "infinitive": "sich niederlegen",
+      "present_3sg": "legt sich nieder",
+      "preterite": "legte sich nieder",
+      "perfect": "hat sich niedergelegt",
+      "participle_ii": "niedergelegt",
+      "subjunctive_ii": "legte sich nieder",
+      "auxiliary": "haben",
+      "note": "可分动词；诗中命令式 \"legt euch … nieder\"，前缀跨行落在下一行。"
+    },
+    {
+      "infinitive": "verschonen",
+      "present_3sg": "verschont",
+      "preterite": "verschonte",
+      "perfect": "hat verschont",
+      "participle_ii": "verschont",
+      "subjunctive_ii": "verschonte",
+      "auxiliary": "haben",
+      "note": "\"jemanden mit etwas verschonen\" 意为\"免除某人某事\"；诗中命令式作 Verschon’（省去 -e）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "前置第二格（三例）",
+      "quote": "in der Dämmrung Hülle / des Tages Jammer",
+      "body": "现代德语把第二格放在被修饰名词之后（die Hülle der Dämmerung、der Jammer des Tages），18世纪诗歌则常用前置语序。识别方法：看到两个连续的名词而前一个带第二格冠词（der/des）时，先把它读作后一个名词的修饰语。这一结构在本站收录的荷尔德林、里尔克、特拉克尔诸诗中反复出现，值得作为固定的阅读技能训练。"
+    },
+    {
+      "title": "第一虚拟式表祈愿",
+      "quote": "Wollst endlich sonder Grämen / Aus dieser Welt uns nehmen",
+      "body": "德语第一虚拟式（Konjunktiv I）除用于间接引语外，还可表达愿望与劝告。今日只剩少数固定表达（Es lebe die Freiheit! 自由万岁；Gott sei Dank 感谢上帝；Man nehme … 取……〔食谱用语〕）。本诗的 Wollst（愿你欲……）是第二人称单数形式，在现代德语中已完全消失，只能在祷词与古典文本中遇到。"
+    },
+    {
+      "title": "指小后缀 -lein / -chen",
+      "quote": "Die goldnen Sternlein prangen",
+      "body": "德语用后缀 -lein（偏南德、书面雅语）或 -chen（更通用）构成指小词，一律变为中性，词干元音多变音：Stern → Sternlein、Haus → Häuschen、Blume → Blümchen。指小词不只表示\"小\"，更常表示亲切、怜爱或稚拙的语气。本诗用 Sternlein 而非 Sterne，一举定下了全诗孩童式的信赖基调（第五节\"像孩子一样虔敬而快乐\"正与之呼应）。"
+    },
+    {
+      "title": "命令式的诸种形式",
+      "quote": "Seht ihr den Mond …? / Laß uns einfältig werden / So legt euch denn, ihr Brüder, / Verschon’ uns, Gott!",
+      "body": "本诗几乎用齐了德语命令式的全部形式：第二人称复数 seht / legt（与陈述式同形，但不加主语 ihr）、第二人称单数 Laß / Verschon’（省去词尾 -e，是诗歌与口语的常见做法）、以及 \"Laß uns + 不定式\" 这一相当于英语 let us 的劝诱结构。请注意区分第二节 \"Seht ihr den Mond dort stehen?\"——它带主语 ihr 且句末为问号，是疑问句而非命令句。"
+    }
+  ],
+  "cultural_notes": "《晚歌》1778年首刊于约翰·海因里希·福斯主编的《缪斯年鉴 1779》，此后几乎没有一部德语诗选会漏掉它。1783年克劳迪乌斯本人把它收入《万茨贝克信使全集》第四部，并修改了第六节的最后一行。它的蓝本是保罗·格哈特1647年的圣诗《Nun ruhen alle Wälder》——克劳迪乌斯本打算让自己的诗按同一旋律演唱，因此两首在格律与韵式上完全一致（六行诗节，尾韵 aabccb，第三、六行构成\"尾韵包\" Schweifreim）。1790年约翰·亚伯拉罕·彼得·舒尔茨在《以民歌风格演唱的歌曲》中为它谱写的旋律，使它进入德语歌唱曲目的核心，今天新教《福音赞美诗集》（EG 482）与2013年起的天主教《赞美上帝》（Gotteslob 93）都以此曲收录。全部谱曲版本超过70种，舒伯特1816年11月也写过一首（D 499）。\n\n这首诗长期在评价上存有争议：一些读者只看到\"孩童式的虔敬\"，因其所谓的天真与浅白而拒斥它；恩斯特·维歇特则赞赏它质朴而在手艺上极为高明，认为简单本身正是一种风格手段。文学学者温弗里德·弗罗因德指出，它与其说是一首田园诗，不如说是一首死亡之诗——只不过是在一个信者的救恩期待背景之下写成的。最广为传唱的通常只有第一、二、三与最后一节，中间几节谈罪、谈死、谈天国的部分反而常被略去；赫尔德早在收录此诗进《民歌集》时就已删去最后两节。\n\n它在德语文化中的地位可由几个细节看出：赫尔穆特·施密特生前指定在自己2015年的追思礼拜上唱这首歌；安塞尔姆·基弗1971年画过一幅题为《月亮已经升起》的作品；2020年新冠疫情初期，德国福音教会曾邀请所有人每晚19点在阳台合唱此曲。也正因如此，它被戏拟的次数同样惊人，其中最著名的是彼得·吕姆科夫1962年的《对马蒂亚斯·克劳迪乌斯〈晚歌〉的变奏》。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。需要特别说明的是第四节 \"Sind eitel arme Sünder\" 中的 eitel：此处并非今义的\"虚荣\"，而是路德《圣经》语言中的\"纯然、不过是\"，译文作\"无非是可怜的罪人\"；而第五节的名词 Eitelkeit 则取今义\"虚荣\"，译文作\"虚荣\"——同一词根在同一首诗中两义并用，是本诗翻译中最需要留心之处。此外，译文保留了第七节末行由宏大祈祷突然收缩到\"生病的邻人\"这一落差，未作任何铺垫或修饰。本诗因作者1815年逝世，德文原文早已进入公有领域；已知存在多个中文译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "夏末或初秋的乡村夜景：一轮升起不久的月亮悬在天边，天空缀满细密星点，远处森林呈黑色剪影，近处草地上白雾正缓缓升起",
+    "mood": "宁静、开阔、微凉的安慰；不应甜美化为童话夜景，也不应阴森——它应当同时容得下安睡与死亡两种含义",
+    "elements": "半圆或近圆的月亮、密布的星、黑色的森林轮廓线、草地上贴地升起的白雾、远处一两间亮着微光的农舍窗口",
+    "era": "18世纪末德国北部乡村，建筑为该时代样式；亦可完全不出现人造物",
+    "taboos": "不得出现文字、水印；不得出现十字架、教堂内景、天使等直白的宗教符号；不得出现人物；不得出现现代路灯、电线、车辆；避免过度饱和的\"星空摄影\"式处理",
+    "style": "19世纪浪漫主义夜景油画风格（可参考月夜风景画的传统），主色为深蓝、墨绿与雾白，月光是画面唯一的光源，笔触柔和，星点宜小而密"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "German Wikipedia — „Der Mond ist aufgegangen“（Abendlied von Matthias Claudius）",
+      "url": "https://de.wikipedia.org/wiki/Der_Mond_ist_aufgegangen",
+      "note": "主来源。同时给出两个权威版本的全文并标注出处：Musen Almanach für 1779（Hamburg 1778, S. 184–186）与 Asmus omnia sua secum portans, Vierter Theil（Wandsbeck 1783, S. 57 f.），两版可逐行对照。本站从1783年作者本人修订的版本。"
+    },
+    {
+      "name": "gedichte7.de — „Der Mond ist aufgegangen (Abendlied) – Claudius“",
+      "url": "https://www.gedichte7.de/abendlied-claudius.html",
+      "note": "辅助来源。七节四十二行，用词与1783年版一致（含 \"Du unser Herr und unser Gott!\"），采用现代化正字法（laß→laß/lass、seyn→sein、Luftgespinnste→Luftgespinste、im Himmel→in Himmel 处作 in Himmel 的现代化改写），用于独立交叉核对。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源核对：German Wikipedia 同时转录了1779年《缪斯年鉴》版与1783年《万茨贝克信使全集》第四部版，gedichte7.de 提供了一个现代化排印的通行本。七节各六行的结构在所有版本中一致。已核实的版本差异如下：(1) 作者本人的修订：1779年版第六节末行作 \"Du lieber treuer frommer Gott!\"，1783年版改为 \"Du unser Herr und unser Gott!\"；Wikipedia 注释明确指出克劳迪乌斯1783年收入全集时修改了第六节第六行。本站从1783年作者手定版。(2) 标点与分行细节：1779年版第3行末为冒号、第13行末无破折号、第15行末为句号，1783年版分别作句号、破折号、感叹号；本站从1783年版。(3) 正字法：1783年版保留 seyn（今 sein）、Luftgespinnste（1779年版作 Luftgespinste）、laß（今 lass）等旧拼法，本站予以保留。(4) 一处语法疑点：1783年版第六节第五行作 \"Laß uns im Himmel kommen\"（第三格），而1779年版作 \"Laß uns in Himmel kommen\"；按现代语法表方向应为 \"in den Himmel\"。本站保留1783年版原样并在逐行注释中标明，但此处究竟是18世纪的用法波动还是排印之误，本站未能确定，属待核实项。(5) 另需说明：新教《福音赞美诗集》（1993）将第五节首行改作 \"Gott, laß dein Heil uns schauen\"，天主教《赞美上帝》（2013）作 \"Gott, lass uns dein Heil schauen\"，两者均标注为\"教会合一\"版本；本站采用克劳迪乌斯原诗的语序，不采教会歌本的改动。本站未直接查阅1778年《缪斯年鉴》与1783年全集的影印件，上述采择依据 Wikipedia 的转录（该词条已给出两版的 Google Books 数字化链接），建议有条件的读者对照原书核实。",
+  "checklist": [
+    { "label": "确认作者：Matthias Claudius", "done": true },
+    { "label": "确认标题与出处：Abendlied，首刊《缪斯年鉴 1779》", "done": true },
+    { "label": "德文原文主来源：German Wikipedia（并列转录1779年版与1783年版）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（1779 vs 1783 作者修订；教会歌本改写；旧新正字法）", "done": true },
+    { "label": "确认蓝本关系（Paul Gerhardt《Nun ruhen alle Wälder》）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（德文原文已公版；现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇（含 eitel 一词的古今两义）", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "核实第六节 \"im Himmel\" 是用法波动还是排印之误", "done": false },
+    { "label": "对照1778/1783年原刊影印件核实标点", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}

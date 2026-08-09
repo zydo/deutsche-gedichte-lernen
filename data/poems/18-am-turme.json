@@ -1,0 +1,370 @@
+{
+  "id": "18",
+  "slug": "am-turme",
+  "author": "Annette von Droste-Hülshoff",
+  "author_zh": "安内特·冯·德罗斯特-徽尔斯霍夫",
+  "title_de": "Am Turme",
+  "title_zh": "在塔上",
+  "year": "1841/42年冬春间作于梅尔斯堡，1842年8月25日首刊于《为受教育阶层的晨报》",
+  "collection": "《诗集》（1844年版）·「岩、林与湖」（Fels, Wald und See）组诗",
+  "period": "毕德麦耶／复辟时期（今学界多不作断代归类）",
+  "difficulty": "B2–C1",
+  "tags": [
+    "风暴",
+    "女性处境",
+    "自由渴望",
+    "湖景",
+    "女诗人",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Ich steh’ auf hohem Balkone am Turm,",
+      "Umstrichen vom schreienden Stare,",
+      "Und laß’ gleich einer Mänade den Sturm",
+      "Mir wühlen im flatternden Haare;",
+      "O wilder Geselle, o toller Fant,",
+      "Ich möchte dich kräftig umschlingen,",
+      "Und, Sehne an Sehne, zwei Schritte vom Rand",
+      "Auf Tod und Leben dann ringen!"
+    ],
+    [
+      "Und drunten seh’ ich am Strand, so frisch",
+      "Wie spielende Doggen, die Wellen",
+      "Sich tummeln rings mit Geklaff und Gezisch,",
+      "Und glänzende Flocken schnellen.",
+      "O, springen möcht’ ich hinein alsbald,",
+      "Recht in die tobende Meute,",
+      "Und jagen durch den korallenen Wald",
+      "Das Walroß, die lustige Beute!"
+    ],
+    [
+      "Und drüben seh’ ich ein Wimpel wehn",
+      "So keck wie eine Standarte,",
+      "Seh auf und nieder den Kiel sich drehn",
+      "Von meiner luftigen Warte;",
+      "O, sitzen möcht’ ich im kämpfenden Schiff,",
+      "Das Steuerruder ergreifen,",
+      "Und zischend über das brandende Riff",
+      "Wie eine Seemöwe streifen."
+    ],
+    [
+      "Wär ich ein Jäger auf freier Flur,",
+      "Ein Stück nur von einem Soldaten,",
+      "Wär ich ein Mann doch mindestens nur,",
+      "So würde der Himmel mir raten;",
+      "Nun muß ich sitzen so fein und klar,",
+      "Gleich einem artigen Kinde,",
+      "Und darf nur heimlich lösen mein Haar,",
+      "Und lassen es flattern im Winde!"
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留前三节\"眺望—渴望\"的三度递进与末节由虚拟语气跌回现实的落差",
+    "text": [
+      [
+        "我站在塔上高高的阳台，",
+        "被尖叫的椋鸟绕飞，",
+        "任那风暴如一个狂女",
+        "在我飞扬的头发里翻搅；",
+        "哦，狂野的伙伴，哦，疯癫的小子，",
+        "我真想使劲把你缠住，",
+        "筋对着筋，在离边缘两步之处",
+        "拼上生死地角力一场！"
+      ],
+      [
+        "而在下方，我看见岸边，那些浪",
+        "鲜活得像嬉戏的大犬，",
+        "四处翻腾，带着吠叫与嘶响，",
+        "并抛起闪亮的白沫。",
+        "哦，我真想立刻跳进去，",
+        "径直跳进那狂吠的群兽里，",
+        "去珊瑚的森林中追猎",
+        "海象，那快活的猎物！"
+      ],
+      [
+        "而在对面，我看见一面小旗飘扬，",
+        "神气得像一面军旗，",
+        "从我这高踞风中的瞭望处，",
+        "看那船身一上一下地转动；",
+        "哦，我真想坐在那搏斗的船上，",
+        "握住舵柄，",
+        "呼啸着越过拍岸的暗礁，",
+        "像一只海鸥般掠过。"
+      ],
+      [
+        "假如我是自由原野上的猎人，",
+        "哪怕只是个当兵的一小块，",
+        "假如我至少、哪怕只是个男人，",
+        "上天便会给我指路；",
+        "如今我只能坐着，端庄而洁净，",
+        "像一个乖巧的孩子，",
+        "只许偷偷地解开我的头发，",
+        "任它在风里飘散！"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Ich steh’ auf hohem Balkone am Turm,",
+      "zh": "全诗以第一人称直陈开篇。Balkone 是带旧式第三格词尾 -e 的形式（今作 Balkon）。此塔即博登湖畔梅尔斯堡城堡东北角的礼拜堂塔楼，德罗斯特1841—42年住在其中的圆形塔房。原刊标题写作 \"Am Thurme\"（旧拼法）。"
+    },
+    {
+      "de": "Umstrichen vom schreienden Stare,",
+      "zh": "Umstrichen 是 umstreichen（绕飞、盘旋掠过）的第二分词，作前置的分词短语修饰\"我\"。der Star（椋鸟，复数 Stare）在此为集合性单数。注意 Star 另有\"白内障\"与\"明星\"两义，须靠语境判断。"
+    },
+    {
+      "de": "Und laß’ gleich einer Mänade den Sturm",
+      "zh": "die Mänade（迈那得斯）是希腊神话中狄俄尼索斯的狂女信徒，以披发狂舞、忘我癫狂著称——这个比喻在19世纪一位天主教贵族女性笔下极为大胆。gleich + 第三格意为\"像……一样\"（今多说 wie）。lassen 在此为使役动词，其不定式宾语 wühlen 在下一行。"
+    },
+    {
+      "de": "O wilder Geselle, o toller Fant,",
+      "zh": "两个呼语都是对风暴的拟人化，且都用了男性称谓。der Geselle 本义为\"帮工、伙计\"，引申为\"家伙\"；der Fant 是古语，指轻浮傲慢的年轻男子（\"毛头小子\"），今已罕用。诗人把风暴设想为一个可以搏斗的男性对手。"
+    },
+    {
+      "de": "Und, Sehne an Sehne, zwei Schritte vom Rand / Auf Tod und Leben dann ringen!",
+      "zh": "Sehne an Sehne（筋腱贴着筋腱）是身体贴身角力的描写；auf Tod und Leben 为固定搭配，意为\"生死相搏\"。\"离边缘两步\"点明这场想象中的搏斗就在坠落的危险边上进行。"
+    },
+    {
+      "de": "Wie spielende Doggen, die Wellen",
+      "zh": "die Dogge 指獒犬类大型犬（如大丹犬）。把波浪比作嬉闹的大狗，是全诗最生动的一处比喻；下一行的 Geklaff（吠叫声）与 Meute（猎犬群）延续了这一犬类意象群，直到第14行\"跳进那狂吠的群兽里\"。"
+    },
+    {
+      "de": "Sich tummeln rings mit Geklaff und Gezisch,",
+      "zh": "sich tummeln（欢腾、来回奔跑）为反身动词。das Geklaff 与 das Gezisch 都是以 Ge- 前缀构成的集合名词，表示持续、杂乱的声响（吠声一片／嘶嘶声一片）——这是德语中一个能产的构词模式（Gerede 闲话、Geschrei 叫喊声）。"
+    },
+    {
+      "de": "Und jagen durch den korallenen Wald / Das Walroß, die lustige Beute!",
+      "zh": "珊瑚森林与海象都是博登湖里绝不可能有的东西——这两行明确暴露了全诗的\"体验虚构\"性质：所写并非真实所见，而是想象中的越界。korallenen 是形容词 korallen（珊瑚的）的变格形式。Walroß 为旧拼法（今作 Walross）。"
+    },
+    {
+      "de": "Seh auf und nieder den Kiel sich drehn / Von meiner luftigen Warte;",
+      "zh": "der Kiel 本义为船的龙骨，此处提喻整条船。die Warte 指瞭望台（同源词 warten 原义\"守望\"）；\"我这高踞风中的瞭望处\"再次强调说话者只能\"看\"而不能\"去\"的位置。drehn 为 drehen 的省音形式。"
+    },
+    {
+      "de": "Wär ich ein Jäger auf freier Flur,",
+      "zh": "第四节连用两个不带 wenn 的虚拟条件句（Wär ich …），动词置于句首——这是德语条件从句的一种省略形式。全诗前三节的\"möchte（我想要）\"到这里变成了\"wäre（假如我是）\"，愿望的对象从行动转为身份，语气随之从亢奋转为苦涩。"
+    },
+    {
+      "de": "Ein Stück nur von einem Soldaten,",
+      "zh": "\"哪怕只是一个士兵的一小块\"——这一夸张的自贬是全诗最尖锐的一句：说话者甚至不敢奢望成为完整的男性角色。nur 的位置（后置于 Stück）加强了让步语气。"
+    },
+    {
+      "de": "So würde der Himmel mir raten;",
+      "zh": "主句用 würde + 不定式的第二虚拟式（Konjunktiv II），与前两行的条件句配套。jemandem raten 意为\"给某人出主意、指点\"；这句话的潜台词是：只要我是个男人，连老天都会站在我这边。"
+    },
+    {
+      "de": "Nun muß ich sitzen so fein und klar,",
+      "zh": "nun（如今）把语气从虚拟拉回现实。fein und klar 在此指\"举止得体、仪容洁净\"，是当时对贵族女性的规范用语；muß 为旧拼法（今 muss）。"
+    },
+    {
+      "de": "Und darf nur heimlich lösen mein Haar, / Und lassen es flattern im Winde!",
+      "zh": "全诗收束于一个极小的动作：偷偷解开头发。这与第一节里\"任风暴在飞扬的头发中翻搅\"形成呼应——首尾都是头发，但一处是狂放的想象，一处是仅存的、必须\"偷偷\"进行的自由。近年的研究据此认为，全诗真正的言说时刻其实始于这个解发动作，前面的一切都发生在想象之中。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Star, -e",
+      "pos": "n.（阳性）",
+      "meaning": "椋鸟",
+      "note": "同形异义词：der Star 亦可指\"白内障\"（grauer Star）与\"明星\"（复数 Stars，英语借词）。诗中为鸟名。"
+    },
+    {
+      "term": "die Mänade, -n",
+      "pos": "n.（阴性）",
+      "meaning": "迈那得斯（酒神狄俄尼索斯的狂女信徒）",
+      "note": "希腊神话形象，欧里庇得斯悲剧《酒神的伴侣》塑造了其经典形象；德语中引申指\"癫狂的女人\"。"
+    },
+    {
+      "term": "der Fant, -e",
+      "pos": "n.（阳性，古语）",
+      "meaning": "轻浮傲慢的年轻男子、毛头小子",
+      "note": "今已基本废弃，仅存于文学文本与个别方言中；诗中用作对风暴的拟人称呼。"
+    },
+    {
+      "term": "die Sehne, -n",
+      "pos": "n.（阴性）",
+      "meaning": "筋、腱；（弓）弦；（几何）弦",
+      "note": "\"Sehne an Sehne\" 描写贴身角力时肌腱相抵的状态。"
+    },
+    {
+      "term": "die Dogge, -n",
+      "pos": "n.（阴性）",
+      "meaning": "獒犬、大型猛犬",
+      "note": "如 Deutsche Dogge（大丹犬）；诗中以之比喻翻腾的波浪。"
+    },
+    {
+      "term": "das Geklaff",
+      "pos": "n.（中性，集合名词）",
+      "meaning": "（此起彼伏的）犬吠声",
+      "note": "由 klaffen/kläffen（尖声吠叫）加集合前缀 Ge- 构成；同类构词还有 Gezisch（嘶嘶声）、Geschrei（喊叫声）、Gerede（闲话）。"
+    },
+    {
+      "term": "die Meute, -n",
+      "pos": "n.（阴性）",
+      "meaning": "猎犬群；（贬义）一伙人",
+      "note": "延续本节的犬类意象；今日多用其贬义（eine Meute von Reportern 一群记者）。"
+    },
+    {
+      "term": "der Wimpel, -",
+      "pos": "n.（阳性）",
+      "meaning": "（细长的）三角旗、船旗",
+      "note": "与 die Standarte（军旗、骑兵旗）在下一行形成大小对照：小小的船旗\"神气得像一面军旗\"。"
+    },
+    {
+      "term": "die Warte, -n",
+      "pos": "n.（阴性）",
+      "meaning": "瞭望台、观察点",
+      "note": "与 warten（等待，原义\"守望\"）同源；引申义\"立场、视角\"（von hoher Warte aus 从高处着眼）。"
+    },
+    {
+      "term": "das Steuerruder, -",
+      "pos": "n.（中性）",
+      "meaning": "舵、舵柄",
+      "note": "由 steuern（操纵、掌舵）+ Ruder（桨、舵）构成；\"掌舵\"在诗中即掌握自身方向的隐喻。"
+    },
+    {
+      "term": "artig",
+      "pos": "adj.",
+      "meaning": "乖巧的、听话的（多用于儿童）",
+      "note": "词根为 Art（方式、种类），本义\"合乎体统的\"；诗中\"像一个乖巧的孩子\"带有强烈的自嘲。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "stehen",
+      "present_3sg": "steht",
+      "preterite": "stand",
+      "perfect": "hat gestanden",
+      "participle_ii": "gestanden",
+      "subjunctive_ii": "stünde / stände",
+      "auxiliary": "haben",
+      "note": "诗中第一人称省音形式 steh’（今 stehe）。"
+    },
+    {
+      "infinitive": "lassen",
+      "present_3sg": "lässt",
+      "preterite": "ließ",
+      "perfect": "hat gelassen / hat … lassen",
+      "participle_ii": "gelassen / lassen",
+      "subjunctive_ii": "ließe",
+      "auxiliary": "haben",
+      "note": "诗中两次作使役动词（laß’ … wühlen；lassen es flattern），此时不定式不带 zu，完成时用\"替代不定式\"（hat … wühlen lassen）。"
+    },
+    {
+      "infinitive": "sich tummeln",
+      "present_3sg": "tummelt sich",
+      "preterite": "tummelte sich",
+      "perfect": "hat sich getummelt",
+      "participle_ii": "getummelt",
+      "subjunctive_ii": "tummelte sich",
+      "auxiliary": "haben",
+      "note": "反身动词，意为\"欢腾、来回奔跑\"；诗中主语为 die Wellen。"
+    },
+    {
+      "infinitive": "ergreifen",
+      "present_3sg": "ergreift",
+      "preterite": "ergriff",
+      "perfect": "hat ergriffen",
+      "participle_ii": "ergriffen",
+      "subjunctive_ii": "ergriffe",
+      "auxiliary": "haben",
+      "note": "强变化（ei–i–i）；除\"抓住\"外亦有\"（情感上）打动\"之义（ergriffen sein 被深深触动）。"
+    },
+    {
+      "infinitive": "sein",
+      "present_3sg": "ist",
+      "preterite": "war",
+      "perfect": "ist gewesen",
+      "participle_ii": "gewesen",
+      "subjunctive_ii": "wäre",
+      "auxiliary": "sein",
+      "note": "诗中第四节两次用第二虚拟式 Wär（= wäre）置于句首，构成不带 wenn 的条件从句。"
+    },
+    {
+      "infinitive": "dürfen",
+      "present_3sg": "darf",
+      "preterite": "durfte",
+      "perfect": "hat gedurft",
+      "participle_ii": "gedurft / dürfen",
+      "subjunctive_ii": "dürfte",
+      "auxiliary": "haben",
+      "note": "情态动词，表\"被允许\"；末节的 \"darf nur heimlich\" 与前一行的 \"muß ich sitzen\" 一起，把外部规范内化为语法上的必然。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "不带 wenn 的虚拟条件句",
+      "quote": "Wär ich ein Jäger auf freier Flur, … Wär ich ein Mann doch mindestens nur, / So würde der Himmel mir raten;",
+      "body": "德语条件从句可以省去连词 wenn，把变位动词提到句首：\"Wäre ich ein Mann, so würde …\" = \"Wenn ich ein Mann wäre, würde …\"。这种倒装条件句语体较正式、也更有力度，主句常以 so 或 dann 引导。本诗第四节连用两次，构成全诗情感的转折点。"
+    },
+    {
+      "title": "使役动词 lassen + 不带 zu 的不定式",
+      "quote": "Und laß’ gleich einer Mänade den Sturm / Mir wühlen im flatternden Haare; … Und lassen es flattern im Winde!",
+      "body": "lassen 作使役动词时，后接的不定式不带 zu，宾语用第四格（den Sturm、es）。这一结构可表\"让/任由某人某物做某事\"（本诗用法），也可表\"叫人去做某事\"（Ich lasse mir die Haare schneiden 我去理发）。完成时中 lassen 不用第二分词而用不定式形式（\"替代不定式\"）：Ich habe ihn kommen lassen。"
+    },
+    {
+      "title": "Ge- 前缀构成的集合名词",
+      "quote": "mit Geklaff und Gezisch",
+      "body": "德语可用前缀 Ge-（有时加词尾 -e）把动词转成中性名词，表示反复、持续或杂乱的整体声响与行为：klaffen → das Geklaff、zischen → das Gezisch、reden → das Gerede、schreien → das Geschrei、laufen → das Gelaufe。这类词常带轻微的贬义或不耐烦的语气，是德语中一个非常能产、值得主动掌握的构词法。"
+    },
+    {
+      "title": "旧式第三格词尾 -e 与诗歌省音",
+      "quote": "auf hohem Balkone / im flatternden Haare / steh’ / laß’ / seh’ / möcht’ / drehn / wehn",
+      "body": "本诗同时使用两种相反的手段来凑足音节：一是给阳性/中性名词的第三格加上今日已废的词尾 -e（Balkone、Haare），二是省去动词词尾并以省字符标出（steh’、laß’、möcht’）或直接省音（drehn、wehn）。同一首诗里既加又减，正说明这些变化服务于格律而非语法规则本身。"
+    }
+  ],
+  "cultural_notes": "《在塔上》写于德罗斯特-徽尔斯霍夫第一次在博登湖畔梅尔斯堡城堡逗留期间（1841年9月30日至1842年7月29日）。她去探望姐姐燕妮，后者与约瑟夫·冯·拉斯贝格结婚后自1838年起住在城堡里。诗人住在东北侧礼拜堂塔楼的圆形房间。此前几年，作家莱温·许金已成为她的密友，但两人在吕斯豪斯的会面通常在她母亲的注视下进行；姐妹俩为这次博登湖之行做了安排，让许金同期住到梅尔斯堡，并对母亲保密。摆脱了日常义务、又有许金的激励，这段时间成为她创作力极旺盛的阶段，她在此写下约60首诗，为1844年的第二部诗集打下基础，除《在塔上》外还有《紫杉墙》《荒原上的男孩》《泥灰坑》等。\n\n1842年初，许金把这首诗连同另外九首寄给《为受教育阶层的晨报》；同年8月25日刊出，此前三个月该刊刚发表了她的小说《犹太人的山毛榉》。《晨报》在这一期前面加了一段取自莎士比亚《亨利六世》的题词——贞德对王太子说的 \"My courage try, / And thou shalt find, that I exceed my sex\"（试试我的勇气，你会发现我超出了我的性别）——与《在塔上》的主题正相呼应。1844年结集时，德罗斯特把此诗编入「岩、林与湖」组诗，位列第三。\n\n这首诗最初被当作\"体验诗\"（Erlebnisgedicht）来读，即按时间顺序记述的一次真实经历。近年的研究则强调其中的\"体验虚构\"：诗中所述的观察其实只发生在说话者的想象里（珊瑚森林与海象在博登湖并不存在），真正的言说情境要到诗末解开发辫的那一刻才开始。除了传记式解读之外，此诗也被作女性主义解读——文学学者露丝·克吕格尔（Ruth Klüger）1994年称它是\"德语中第一首、也许是最好的一首女性主义诗歌\"。《在塔上》是德罗斯特最著名的抒情作品之一，也已进入德语诗歌的经典序列。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明的处理：(1) 前三节每节都以\"O, … möcht’ ich …\"的渴望句为核心，译文统一用\"哦，我真想……\"保持排比；(2) 第四节两个倒装虚拟条件句（Wär ich …）译作\"假如我是……\"，主句\"So würde der Himmel mir raten\"直译为\"上天便会给我指路\"，保留其略带反讽的口吻；(3) 全诗末尾的\"heimlich\"（偷偷地）是理解全诗的关键词，译文将其保留在动词之前的强调位置。第二节 Doggen / Geklaff / Meute 构成的犬类意象链，中文以\"大犬／吠叫／群兽\"对应，无法完全传达德语中同一词族的连贯性。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一座中世纪城堡的圆塔高处阳台，风暴中的湖面在下方翻涌，一位女子背对观者立于栏杆内侧，长发被风吹散；远处湖面上有一条挂着小旗的帆船在浪中起伏",
+    "mood": "亢奋与受困并存；风与浪应显出真正的力量，而人物的姿态要克制、受限——她在栏杆之内，不越出边缘",
+    "elements": "石砌塔楼与铁栏阳台、翻涌的湖浪与白沫、低压的铅灰云层、成群盘旋的椋鸟、远处一条小帆船与飘扬的三角旗、被风吹散的长发",
+    "era": "19世纪中叶德国南部（博登湖／梅尔斯堡）风貌，人物服饰为该时代样式",
+    "taboos": "不得出现文字、水印；不得出现海象、珊瑚等诗中想象之物（画面应只呈现她实际所处的场景）；不得作面部特写或戏剧化表情，人物宜取背影；不得出现现代船只、护栏、游客",
+    "style": "19世纪浪漫主义风景油画风格，构图上人物小、天空与湖面占主导，色调为铅灰、墨绿与冷白，仅在云层裂口处透出一线冷光"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "German Wikipedia — „Am Turme“",
+      "url": "https://de.wikipedia.org/wiki/Am_Turme",
+      "note": "主来源。四节三十二行全文，依1844年《诗集》文本（原刊标题 Am Thurme），保留旧拼法 laß’ / Walroß / muß 与 Seemöwe 的写法；并提供创作背景、首刊信息与研究史。"
+    },
+    {
+      "name": "gedichte7.de — „Am Turme – Droste-Hülshoff“",
+      "url": "https://www.gedichte7.de/am-turme.html",
+      "note": "辅助来源。四节三十二行与主来源逐词一致，采用现代化正字法（lass’ / Walross / muss）并将 Seemöwe 印作 Seemöve，用于独立交叉核对词序与分行。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（German Wikipedia 依1844年《诗集》，与 gedichte7.de）逐词核对，四节各八行、词序与内容完全一致。核实到的差异均属正字法与排印层面：(1) 标题与拼写：原刊及1844年版作 \"Am Thurme\"，现代通行标题作 \"Am Turme\"，本站从后者并在注释中说明；(2) 旧新正字法：laß’/lass’、Walroß/Walross、muß/muss，本站从 Wikipedia 所依 1844 年版的旧拼法；(3) 第24行 \"Seemöwe\"（Wikipedia）与 \"Seemöve\"（gedichte7.de）——两种写法在19世纪均通行，今日标准形式为 Seemöwe，本站从之。需说明的是，本站未直接查阅1844年《诗集》或1842年《晨报》的影印件，上述文本采择依据 Wikipedia 的转录，建议有条件的读者对照原刊核实；另，梅尔斯堡塔房、《晨报》题词等背景信息亦取自该词条，未经第三来源独立验证，属待核实项。",
+  "checklist": [
+    { "label": "确认作者：Annette von Droste-Hülshoff", "done": true },
+    { "label": "确认标题：Am Turme（原刊 Am Thurme）", "done": true },
+    { "label": "德文原文主来源：German Wikipedia（依1844年《诗集》）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（Thurme/Turme；旧新正字法；Seemöwe/Seemöve）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "对照1844年《诗集》与1842年《晨报》影印件核实文本与题词", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}

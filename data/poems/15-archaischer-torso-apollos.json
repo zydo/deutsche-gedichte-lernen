@@ -1,0 +1,336 @@
+{
+  "id": "15",
+  "slug": "archaischer-torso-apollos",
+  "author": "Rainer Maria Rilke",
+  "author_zh": "赖内·马利亚·里尔克",
+  "title_de": "Archaïscher Torso Apollos",
+  "title_zh": "古风的阿波罗躯干残像",
+  "year": "1908年夏于巴黎写成，1908年11月出版",
+  "collection": "《新诗集·别集》（Der neuen Gedichte anderer Teil, 1908）开篇之作",
+  "period": "现代主义早期 / 里尔克\"物诗\"（Dinggedicht）时期",
+  "difficulty": "C1",
+  "tags": [
+    "物诗",
+    "雕塑",
+    "十四行诗",
+    "凝视",
+    "艺术与生存",
+    "经典必读"
+  ],
+  "german_text": [
+    [
+      "Wir kannten nicht sein unerhörtes Haupt,",
+      "darin die Augenäpfel reiften. Aber",
+      "sein Torso glüht noch wie ein Kandelaber,",
+      "in dem sein Schauen, nur zurückgeschraubt,"
+    ],
+    [
+      "sich hält und glänzt. Sonst könnte nicht der Bug",
+      "der Brust dich blenden, und im leisen Drehen",
+      "der Lenden könnte nicht ein Lächeln gehen",
+      "zu jener Mitte, die die Zeugung trug."
+    ],
+    [
+      "Sonst stünde dieser Stein entstellt und kurz",
+      "unter der Schultern durchsichtigem Sturz",
+      "und flimmerte nicht so wie Raubtierfelle;"
+    ],
+    [
+      "und bräche nicht aus allen seinen Rändern",
+      "aus wie ein Stern: denn da ist keine Stelle,",
+      "die dich nicht sieht. Du mußt dein Leben ändern."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，尽量保留原诗\"若非如此……便不会……\"的双重虚拟推论链，以及末行的骤然转折",
+    "text": [
+      [
+        "我们不曾见过他那闻所未闻的头颅，",
+        "眼珠曾在其中成熟。然而",
+        "他的躯干仍在灼灼发光，如一盏烛台，",
+        "其中他的凝视，只是被拧向内里，"
+      ],
+      [
+        "自持并且闪耀。否则胸膛的隆起",
+        "不会使你目眩，而在腰胯轻微的",
+        "扭转中，也不会有一丝微笑走向",
+        "那孕育了生殖的中心。"
+      ],
+      [
+        "否则这石头会残缺而短促地",
+        "立在双肩那透明的垂落之下，",
+        "不会如猛兽的皮毛这般微微闪烁；"
+      ],
+      [
+        "也不会从它所有的边缘迸射",
+        "如一颗星：因为这里没有一处",
+        "不在看着你。你必须改变你的生活。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Wir kannten nicht sein unerhörtes Haupt,",
+      "zh": "unerhört 字面为\"未被听见的\"，引申义有二：\"闻所未闻的、惊人的\"与\"骇人听闻的\"。里尔克在此利用了字面义与引申义的双关——那颗头颅既\"从未被我们见闻\"，又\"惊人非凡\"。Haupt 是 Kopf 的雅语形式，专用于庄严语境。全诗以第一人称复数 wir 开场，最后一行却突转为 du，是理解全诗结构的关键。"
+    },
+    {
+      "de": "darin die Augenäpfel reiften. Aber",
+      "zh": "Augenapfel（眼球，字面\"眼之苹果\"）是罕见的雅语词，与动词 reifen（成熟，本用于果实）构成一个统一的果园隐喻：眼珠像果实一样在头颅中\"成熟\"。此行句号落在行中（Zeilenstil 被打破），随后一个孤零零的 Aber 悬在行末——跨行连写（Enjambement）在本诗中几乎每行都出现，是全诗紧张感的主要来源。"
+    },
+    {
+      "de": "sein Torso glüht noch wie ein Kandelaber,",
+      "zh": "der Torso（意大利语借词，指无头无肢的躯干雕像）是全诗的主角。Kandelaber（多枝烛台）这一比喻把失去头部的石像转喻为一件仍在发光的器物——光源本应在头（眼睛），如今被\"拧回\"躯干内部。"
+    },
+    {
+      "de": "in dem sein Schauen, nur zurückgeschraubt,",
+      "zh": "das Schauen 是动词 schauen（观看）的名词化，指\"凝视这一行为\"本身，而非 der Blick（目光）。zurückschrauben 字面为\"把（灯芯）拧回去、调小\"，延续 Kandelaber 的煤气灯／油灯意象：凝视没有消失，只是被调暗、收回内部。"
+    },
+    {
+      "de": "sich hält und glänzt. Sonst könnte nicht der Bug",
+      "zh": "sich halten 意为\"维持自身、存续\"。此后 Sonst（否则）引出全诗第一个虚拟推论：\"若不是这样，……便不可能……\"。der Bug 本义为船首（也指关节、弯曲处），此处指胸膛向前的隆起弧线，一个海船与身体重叠的隐喻。"
+    },
+    {
+      "de": "der Lenden könnte nicht ein Lächeln gehen",
+      "zh": "die Lenden（腰、腰胯部）是解剖学与《圣经》语汇（\"腰间之力\"）共用的词。\"微笑走向\"（ein Lächeln gehen zu）是全诗最大胆的转喻：微笑本属面部，而这尊像没有脸，于是微笑被移到躯体的扭转之中。"
+    },
+    {
+      "de": "zu jener Mitte, die die Zeugung trug.",
+      "zh": "die Zeugung（生殖、生育）与 tragen（承载）连用，指雕像的生殖部位。里尔克在此并不作情色描写，而是把生殖力理解为造型艺术的生命力本身；这也是罗丹\"一切都在动\"的雕塑观在诗中的转写。"
+    },
+    {
+      "de": "Sonst stünde dieser Stein entstellt und kurz",
+      "zh": "第二个 Sonst 引出的虚拟句，动词用第二虚拟式 stünde（stehen 的第二虚拟式，亦作 stände）。entstellt（被毁容的、扭曲的）与 kurz（短的）合起来描写残缺石块若没有内在辉光时会呈现的样子——不过是块断石。"
+    },
+    {
+      "de": "unter der Schultern durchsichtigem Sturz",
+      "zh": "语序需要还原：unter [der Schultern] [durchsichtigem Sturz] = \"在双肩那透明的垂落之下\"，der Schultern 为前置的第二格。der Sturz 兼有\"坠落\"与建筑术语\"门楣、过梁\"两义，里尔克很可能同时激活了这两层：肩部既如垂落的形体，又如支撑起整座建筑的横梁。"
+    },
+    {
+      "de": "und flimmerte nicht so wie Raubtierfelle;",
+      "zh": "flimmern（闪烁、微微颤动的光）用于形容大理石表面在光下的质感；Raubtierfelle（猛兽的毛皮）把静止的石头与野兽的活体感官联系起来。行末标点在不同版本中作分号或中圆点（·），详见校对记录。"
+    },
+    {
+      "de": "und bräche nicht aus allen seinen Rändern",
+      "zh": "bräche 是 brechen 的第二虚拟式；可分动词 ausbrechen 的前缀 aus 被推到下一行行首（\"aus wie ein Stern\"），这是全诗最极端的一次跨行——语法上的\"迸裂\"与语义上的\"迸射如星\"完全同步。"
+    },
+    {
+      "de": "die dich nicht sieht. Du mußt dein Leben ändern.",
+      "zh": "全诗的翻转：被观看的雕像成了观看者，读者从旁观的 wir 变成被凝视的 du。末句是德语诗歌中最著名的句子之一，其力量正来自它的突兀——没有任何过渡、没有任何解释。mußt 为旧正字法（今作 musst）。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "unerhört",
+      "pos": "adj.",
+      "meaning": "闻所未闻的、惊人的；（贬义）骇人听闻的",
+      "note": "由 un- + erhört（被听见的、被应允的）构成，字面\"未被听见/未被应允的\"。里尔克在此同时利用字面义与引申义。"
+    },
+    {
+      "term": "das Haupt, Häupter",
+      "pos": "n.（中性）",
+      "meaning": "头、首（雅语）",
+      "note": "较 der Kopf 更庄重，多用于诗歌、宗教与固定搭配（Oberhaupt 首脑、Hauptstadt 首都）。"
+    },
+    {
+      "term": "der Torso, -s / Torsi",
+      "pos": "n.（阳性）",
+      "meaning": "（无头无肢的）躯干雕像；引申指未完成的作品",
+      "note": "意大利语借词；在艺术史与文学批评中亦用于形容\"残篇\"（ein Torso bleiben 意为\"未能完成\"）。"
+    },
+    {
+      "term": "der Kandelaber, -",
+      "pos": "n.（阳性）",
+      "meaning": "多枝烛台、（旧式）路灯柱",
+      "note": "源自拉丁语 candelabrum；19世纪末亦指城市中的煤气灯柱，与下文 zurückgeschraubt（把灯芯拧小）呼应。"
+    },
+    {
+      "term": "zurückschrauben",
+      "pos": "v.（可分，弱变化）",
+      "meaning": "拧回、调小、降低（要求等）",
+      "note": "本用于灯具（把灯芯拧小）与技术语境，引申为\"降低期望\"；诗中作第二分词 zurückgeschraubt。"
+    },
+    {
+      "term": "der Bug, Büge",
+      "pos": "n.（阳性）",
+      "meaning": "船首；（动物的）肩部关节、弯曲处",
+      "note": "与 biegen（弯曲）同源；诗中指胸膛向前隆起的弧线，兼有船首破浪的动感。"
+    },
+    {
+      "term": "die Lende, -n",
+      "pos": "n.（阴性）",
+      "meaning": "腰、腰胯部；（肉类）里脊",
+      "note": "解剖学与圣经语汇通用词（如路德译本 \"eure Lenden umgürtet\"）。"
+    },
+    {
+      "term": "die Zeugung",
+      "pos": "n.（阴性）",
+      "meaning": "生殖、生育",
+      "note": "来自动词 zeugen（生育、产生）；注意与同形动词 zeugen（作证，如 von etwas zeugen）区分。"
+    },
+    {
+      "term": "der Sturz, Stürze",
+      "pos": "n.（阳性）",
+      "meaning": "坠落、跌倒；（建筑）门楣、过梁",
+      "note": "诗中两义并存：肩部既像垂落的形体，又像承重的横梁。"
+    },
+    {
+      "term": "flimmern",
+      "pos": "v.（弱变化）",
+      "meaning": "闪烁、微微颤动地发光",
+      "note": "较 glänzen（有光泽）更不稳定、更细碎；也用于形容屏幕闪动或眼前发花（es flimmert mir vor den Augen）。"
+    },
+    {
+      "term": "entstellt",
+      "pos": "adj.（第二分词）",
+      "meaning": "被损毁的、扭曲变形的",
+      "note": "来自 entstellen（使变形、歪曲），既可指容貌毁损，也可指内容被歪曲（einen Text entstellen）。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "kennen",
+      "present_3sg": "kennt",
+      "preterite": "kannte",
+      "perfect": "hat gekannt",
+      "participle_ii": "gekannt",
+      "subjunctive_ii": "kennte",
+      "auxiliary": "haben",
+      "note": "混合变化动词；诗中用过去时复数 kannten（\"Wir kannten nicht …\"）。"
+    },
+    {
+      "infinitive": "reifen",
+      "present_3sg": "reift",
+      "preterite": "reifte",
+      "perfect": "ist gereift",
+      "participle_ii": "gereift",
+      "subjunctive_ii": "reifte",
+      "auxiliary": "sein（表状态变化）",
+      "note": "指果实成熟或人的成熟；诗中用过去时复数 reiften。"
+    },
+    {
+      "infinitive": "können",
+      "present_3sg": "kann",
+      "preterite": "konnte",
+      "perfect": "hat gekonnt",
+      "participle_ii": "gekonnt / können",
+      "subjunctive_ii": "könnte",
+      "auxiliary": "haben",
+      "note": "诗中两次使用第二虚拟式 könnte，构成\"若非如此便不可能\"的反事实推论。"
+    },
+    {
+      "infinitive": "stehen",
+      "present_3sg": "steht",
+      "preterite": "stand",
+      "perfect": "hat gestanden",
+      "participle_ii": "gestanden",
+      "subjunctive_ii": "stünde / stände",
+      "auxiliary": "haben",
+      "note": "诗中用第二虚拟式 stünde（南德与文学语体偏好 stünde，北德口语多用 stände）。"
+    },
+    {
+      "infinitive": "ausbrechen",
+      "present_3sg": "bricht aus",
+      "preterite": "brach aus",
+      "perfect": "ist ausgebrochen",
+      "participle_ii": "ausgebrochen",
+      "subjunctive_ii": "bräche aus",
+      "auxiliary": "sein",
+      "note": "可分动词；诗中第二虚拟式 bräche…aus 被跨行拆开（bräche 在第12行末、aus 在第13行首）。"
+    },
+    {
+      "infinitive": "müssen",
+      "present_3sg": "muss（旧 muß）",
+      "preterite": "musste",
+      "perfect": "hat gemusst",
+      "participle_ii": "gemusst / müssen",
+      "subjunctive_ii": "müsste",
+      "auxiliary": "haben",
+      "note": "诗中第二人称单数 mußt（旧正字法，今 musst），构成全诗最后一句的绝对命令。"
+    },
+    {
+      "infinitive": "ändern",
+      "present_3sg": "ändert",
+      "preterite": "änderte",
+      "perfect": "hat geändert",
+      "participle_ii": "geändert",
+      "subjunctive_ii": "änderte",
+      "auxiliary": "haben",
+      "note": "及物动词；与反身 sich ändern（自身发生改变）区分。末句用及物形式，强调这是\"你要主动去做的事\"。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "反事实推论：Sonst + 第二虚拟式",
+      "quote": "Sonst könnte nicht der Bug / der Brust dich blenden … Sonst stünde dieser Stein entstellt und kurz …",
+      "body": "全诗的论证骨架是两组由 sonst（否则）引出的反事实虚拟句：\"若不是那被收回的凝视仍在其中闪耀，胸膛就不会令你目眩，石头就只会是块残石。\" 德语用第二虚拟式（könnte / stünde / flimmerte / bräche）表示与事实相反的假设。请注意推论方向：诗人不是在描述雕像，而是从\"它确实令我目眩\"这一事实反推出\"它内部一定还有凝视\"。整首诗是一个逻辑证明。"
+    },
+    {
+      "title": "跨行连写（Enjambement）与可分动词的拆解",
+      "quote": "und bräche nicht aus allen seinen Rändern / aus wie ein Stern:",
+      "body": "德语可分动词的前缀通常落在句末。里尔克在此把 ausbrechen 的前缀 aus 推过行界，落到下一行的行首，使句法上的\"断裂\"与语义上的\"迸裂\"完全重合。全诗14行中有多处跨行（Haupt/darin、Aber/sein、der Bug/der Brust、Drehen/der Lenden、Rändern/aus），几乎没有一行是语法完整的——这正是里尔克\"物诗\"打破十四行诗匀称感的手段。"
+    },
+    {
+      "title": "前置第二格与复杂名词短语",
+      "quote": "unter der Schultern durchsichtigem Sturz",
+      "body": "现代德语通常把第二格放在被修饰名词之后（der Sturz der Schultern）。此处里尔克采用古典的前置第二格语序：der Schultern（第二格复数）+ durchsichtigem Sturz（第三格单数，受 unter 支配）。阅读这类结构的诀窍是先找介词及其支配的核心名词（unter … Sturz），再把前置的第二格挂回去。"
+    },
+    {
+      "title": "十四行诗形式与语气的对位",
+      "quote": "全诗结构：4+4+3+3 行",
+      "body": "本诗是标准的意大利式十四行（两个四行诗节 + 两个三行诗节），格律为五音步抑扬格，前八行韵式为抱韵 abba，后六行为 ccd/ede 变体。里尔克在最规整的古典诗体中放入最不规整的句法（几乎每行跨行、句号落在行中），形式的秩序与语言的紧张之间的张力，本身就是全诗关于\"残缺之物为何仍完整\"这一主题的形式回应。"
+    }
+  ],
+  "cultural_notes": "《古风的阿波罗躯干残像》1908年夏天写于巴黎，是《新诗集·别集》的开篇之作。1905至1906年间里尔克曾任罗丹的秘书，罗丹关于\"观看\"的训练对他影响极深：他要求自己像雕塑家一样面对对象，让\"物\"自己说话，而不是抒发面对物时的感受。由此产生的作品被称为\"物诗\"（Dinggedicht），《豹》（本站编号11）与本诗是其中最著名的两首。\n\n诗中的雕像并无确切原型。学界一般认为里尔克综合了他在卢浮宫见到的希腊古风时期躯干像（如所谓\"米利都的阿波罗\"）的印象，但诗的重点并不在考古学的准确：他描写的是一件残缺到只剩躯干的作品为何反而比完整的作品更有力量。头部（也就是眼睛所在）的缺失被转化为一个悖论——正因为看不见眼睛，整个石体才成了眼睛：\"因为这里没有一处／不在看着你。\"\n\n末句 \"Du mußt dein Leben ändern\"（你必须改变你的生活）是德语现代诗中被引用最多的句子之一。哲学家彼得·斯洛特戴克（Peter Sloterdijk）2009年直接以它作为专著《你必须改变你的生活》的书名，用来讨论人类的\"操练\"（Askese）与自我塑造。这一句之所以有力，恰恰在于它在语法与逻辑上都是\"多余\"的：前面十三行完成了一次关于艺术品内在光辉的严密推论，末句却突然跳出论证，把结论掷向读者。艺术在此不再是被观赏的对象，而成为一种要求。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，重点保留三处：(1) 两组 \"Sonst … könnte/stünde nicht …\" 的反事实推论链，中文以\"否则……不会……\"对应；(2) 大量跨行造成的句法断裂，中文尽量以相应位置断句近似传达，但汉语无可分动词，第12—13行 \"bräche … / aus\" 的断裂无法还原；(3) 末行的突兀感，译文不添加任何连接词或缓冲。另需说明：德语 Schauen（凝视这一行为）与 Blick（目光）有别，译文以\"凝视\"对应前者。已知此诗存在多个中文译本（如冯至、绿原、林克、陈宁等译者的翻译），因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "博物馆展厅一隅，一尊无头无臂的古希腊大理石躯干像被侧向光源照亮，石体表面因光线而微微发亮，仿佛自内部透出光",
+    "mood": "凝重、克制、带有被注视感；不应表现\"残缺的悲情\"，而应传达一种沉默的、逼视人的力量",
+    "elements": "古风时期风格的男性躯干大理石像（胸腹起伏、腰胯轻微扭转的姿态）、断裂的肩部与颈部截面、深色的展厅背景、一束斜射的自然光、大理石表面的细微纹理与结晶感",
+    "era": "雕像本体为公元前6世纪希腊古风时期样式；环境可为19世纪末至20世纪初的博物馆空间，不得出现现代展陈设备",
+    "taboos": "不得出现文字、水印、展签、玻璃展柜反光；不得补全头部或四肢；不得出现观众、导览员等人物；避免情色化的处理，生殖部位应以古典雕塑的常规方式呈现或处于阴影中；不得出现现代照明灯具",
+    "style": "冷调写实油画风格，接近19世纪学院派的静物／雕塑写生，背景深褐近黑，光线集中于石体，强调大理石的半透明质感"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "Zeno.org — Rainer Maria Rilke: Sämtliche Werke, Band 1, Wiesbaden und Frankfurt a. M. 1955–1966, S. 555（„Der neuen Gedichte anderer Teil“）",
+      "url": "http://www.zeno.org/Literatur/M/Rilke,+Rainer+Maria/Gedichte/Der+neuen+Gedichte+anderer+Teil/Archa%C3%AFscher+Torso+Apollos",
+      "note": "主来源。依据 Insel 版《里尔克全集》第1卷的数字化本，十四行完整，保留旧正字法 mußt；第11行行末作分号。"
+    },
+    {
+      "name": "textlog.de — Rainer Maria Rilke, „Archaïscher Torso Apollos“（Neue Gedichte）",
+      "url": "https://www.textlog.de/rilke/gedichte/archaischer-torso-apollos",
+      "note": "辅助来源，用于交叉核对分行、诗节划分与用词；与主来源逐词一致。另在其他流通版本中第11行行末可见中圆点（·）而非分号，详见校对记录。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在冯至、绿原、林克、陈宁等译者的中译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文以 Zeno.org 转录的 Insel 版《里尔克全集》第1卷（1955–1966，第555页）为主来源，以 textlog.de 的《新诗集》文本为辅助来源逐词核对，十四行内容、分行与诗节划分完全一致。需说明的差异：(1) 标点：第11行 \"…wie Raubtierfelle\" 行末，Zeno.org 依全集作分号（;），而部分流通版本（含若干在线选本）作中圆点（·）；本站从全集的分号。(2) 正字法：全集保留旧拼法 \"mußt\"，1996年正字法改革后应作 \"musst\"；本站保留原刊旧拼法并在逐行注释中说明。(3) 标题中的 Archaïscher 带分音符（ï），系里尔克原刊写法，现代转录中常被简化为 Archaischer，本站保留原写法，而 slug 与文件名因技术原因使用不带分音符的形式。此外，本站未直接查阅1908年 Insel 初版影印件，上述标点采择依据全集转录，属待进一步核实项。",
+  "checklist": [
+    { "label": "确认作者：Rainer Maria Rilke", "done": true },
+    { "label": "确认标题与出处：Der neuen Gedichte anderer Teil（1908）开篇", "done": true },
+    { "label": "德文原文主来源：Zeno.org（Insel 版全集第1卷）", "done": true },
+    { "label": "德文原文辅助来源：textlog.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（第11行分号／中圆点；mußt/musst；Archaïscher 分音符）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用；德文原文因作者1926年逝世已公版）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "对照1908年 Insel 初版核实标点（现依全集转录）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 Bug / Sturz 二词的双关处理）", "done": false }
+  ]
+}

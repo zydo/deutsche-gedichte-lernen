@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Wenn nicht mehr Zahlen und Figuren · 当数字与图形不再 — Novalis | 德语诗歌学习画册</title>
+  <meta name="description" content="Wenn nicht mehr Zahlen und Figuren（当数字与图形不再）— Novalis。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="das-maedchen-aus-der-fremde.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">来自远方的少女</span></a>
+<a class="poem-nav__link poem-nav__next" href="am-turme.html" rel="next"><span class="poem-nav__title">在塔上</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de poem-titleblock__de--long">Wenn nicht mehr Zahlen und Figuren</h1>
+      <p class="poem-titleblock__author">Novalis</p>
+      <p class="poem-titleblock__zh">当数字与图形不再</p>
+      <p class="poem-titleblock__author-zh">诺瓦利斯（本名 Georg Philipp Friedrich von Hardenberg）</p>
+      <div class="poem-titleblock__biblio">
+        <p>小说残篇《海因里希·冯·奥夫特丁根》</p>
+        <p>早期浪漫主义（耶拿浪漫派）</p>
+        <p>1800年作，1802年随《海因里希·冯·奥夫特丁根》第二部遗稿出版</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--b">B2</span>
+        <span class="tag ">浪漫主义纲领</span>
+        <span class="tag ">反启蒙</span>
+        <span class="tag ">童话</span>
+        <span class="tag ">条件句</span>
+        <span class="tag ">黄金时代</span>
+        <span class="tag ">经典必读</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>一间18世纪的书房或矿物标本室，桌面上摊着几何图纸、圆规与矿石标本；窗外是深蓝色的夜空与初升的星辰，一束月光斜穿进来落在一本摊开的童话书上</dd>
+        <dt>情绪</dt><dd>沉思、开阔、临界感；不作对立面的丑化（科学器具不应被表现为阴森或荒废），而应表现两个世界正在同一房间里相遇</dd>
+        <dt>画面元素</dt><dd>圆规、直尺、几何图形手稿、矿物标本与结晶体、烛台、摊开的书页、窗外的夜空与星、月光与烛光两种光源的交汇</dd>
+        <dt>时代感</dt><dd>18世纪末德国，家具、器物与书籍装帧应符合该时代</dd>
+        <dt>推荐风格</dt><dd>19世纪浪漫主义室内静物油画风格，双光源（暖烛光与冷月光）对照，色调以深褐、墨蓝与烛黄为主，笔触克制</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、可辨识的公式或书页上的字迹（应作模糊处理）；不得出现现代实验器材；不得出现人物；避免任何魔法特效式的光晕或粒子效果</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Wenn nicht mehr Zahlen und Figuren<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">当数字与图形不再</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">Sind Schlüssel aller Kreaturen<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">是一切造物的钥匙，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">Wenn die, so singen oder küssen,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">当那些歌唱或亲吻的人，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">Mehr als die Tiefgelehrten wissen,<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">比那些饱学之士知道得更多，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">Wenn sich die Welt ins freye Leben<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">当世界重新投入自由的生命，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">Und in die Welt wird zurück begeben,<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">并且回归到世界之中，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">Wenn dann sich wieder Licht und Schatten</span></div>
+          <div class="pline__zh">当光与影再度</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">Zu ächter Klarheit werden gatten,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">结合为真正的澄明，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Und man in Mährchen und Gedichten<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">而人们在童话与诗歌里</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="9"><span class="linetext">Erkennt die ewgen Weltgeschichten,<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
+          <div class="pline__zh">认出那永恒的世界史，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="10"><span class="linetext">Dann fliegt vor Einem geheimen Wort<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
+          <div class="pline__zh">那时，在唯一一个神秘的词语面前</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="11"><span class="linetext">Das ganze verkehrte Wesen fort.<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
+          <div class="pline__zh">整个颠倒的存在都将飞散而去。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留全诗为"一个条件复句"的整体结构与四次 Wenn 的排比推进</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Wenn nicht mehr Zahlen und Figuren</p>
+        <p class="lnote__zh">Zahlen（数字）与 Figuren（几何图形）合起来代表数学化的自然科学方法。全诗共四个 wenn 从句，构成排比（Anapher）。注意这是条件从句，因此变位动词必须后置——但它落在下一行的行首（Sind），这是理解全诗句法的第一个关键。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">Sind Schlüssel aller Kreaturen</p>
+        <p class="lnote__zh">承接上一行的从句谓语。die Kreatur（受造物）是宗教语汇，用它代替中性的 "Dinge"，已经把批评的立场表明了：世界是被造之物，不是可拆解的机械。aller Kreaturen 为第二格复数。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">Wenn die, so singen oder küssen,</p>
+        <p class="lnote__zh">so 在此是古老的关系代词（相当于 die/welche），今日已废弃；"die, so singen" = "diejenigen, die singen"（那些歌唱的人）。歌唱者（诗人）与亲吻者（恋人）代表感性、整体性的认识方式。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">Mehr als die Tiefgelehrten wissen,</p>
+        <p class="lnote__zh">die Tiefgelehrten（"深奥的博学者"）是诺瓦利斯自造的名词化形容词，带明显的讽刺意味，指启蒙时代的学院学者。注意句法："wissen" 是第3行从句的谓语，被比较结构 "mehr als …" 推到了行末。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">Wenn sich die Welt ins freye Leben</p>
+        <p class="lnote__zh">freye 是 freie 的旧拼法（18世纪常以 y 代 i）。sich begeben（前往、投身）为反身动词，其不定式 begeben 与助动词 wird 一起落在下一行行末。ins = in das（第四格，表方向）。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">Und in die Welt wird zurück begeben,</p>
+        <p class="lnote__zh">"世界回归到世界之中" 是全诗最费解的一句。维基百科词条指出，这一"世界回归世界"的思想指向神秘主义者雅各布·波墨。较通行的解读是：Welt 在18世纪兼有两义——"（贵族市民的）社交界、习俗世界"与"（神所创的）宇宙秩序"；此句意为让被习俗规训的世界回到原初的、完整的创世秩序中去。zurück begeben 今作 zurückbegeben（合写）。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">Zu ächter Klarheit werden gatten,</p>
+        <p class="lnote__zh">ächt 是 echt（真正的）的旧拼法。sich gatten（结合、配对）为古雅动词，与 der Gatte（配偶）同源，带有婚配的意味：光与影不是彼此消灭，而是"成婚"。这直接反驳了启蒙运动以光驱暗的隐喻——对浪漫派而言，黑夜同样是认识的条件。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Und man in Mährchen und Gedichten</p>
+        <p class="lnote__zh">Mährchen 是 Märchen（童话）的旧拼法。此行的连词由 wenn 改为 und，但从句性质延续（动词 Erkennt 仍后置于下一行）。童话在诺瓦利斯的诗学中地位极高，他称童话为"诗的正典"。</p>
+      </article>
+      <article class="lnote" id="note-9" data-noteref="9">
+        <span class="lnote__mark">9</span>
+        <p class="lnote__de">Erkennt die ewgen Weltgeschichten,</p>
+        <p class="lnote__zh">ewgen = ewigen（永恒的）的省音形式。此处存在重要异文：依 Kluckhohn/Samuel 历史批评版作 "die ewgen Weltgeschichten"（永恒的世界史），而大量流通版本作 "die wahren Weltgeschichten"（真正的世界史）。详见校对记录。复数 Weltgeschichten（世界史·复数）本身即耐人寻味：不是唯一的一部历史，而是多重的世界故事。</p>
+      </article>
+      <article class="lnote" id="note-10" data-noteref="10">
+        <span class="lnote__mark">10</span>
+        <p class="lnote__de">Dann fliegt vor Einem geheimen Wort</p>
+        <p class="lnote__zh">全诗唯一的主句，由 dann 引出。Einem 首字母大写，是数词"唯一的一个"而非不定冠词——这一大写在历史批评版中被保留，流通版本多改为 "von einem"（由于一个词），语义因此从"在一个词面前"变成"因一个词而"。此"神秘的词语"可与艾兴多夫《魔杖》（Wünschelrute）中的 Zauberwort 参看。</p>
+      </article>
+      <article class="lnote" id="note-11" data-noteref="11">
+        <span class="lnote__mark">11</span>
+        <p class="lnote__de">Das ganze verkehrte Wesen fort.</p>
+        <p class="lnote__zh">可分动词 fortfliegen（飞走、飞散）的前缀 fort 落在全诗最后一个词。das Wesen 在此不是"本质"，而是较古的用法"（整套的）作为、体制、局面"（参见 Unwesen 恶行、Schulwesen 教育制度）。verkehrt 意为"颠倒的、错乱的"。整句意为：那套本末倒置的体制会一举消散。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Figur, -en</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">图形、形状；人物、身材</div>
+        <div class="vocab-card__note">诗中与 Zahlen 并列，取几何图形之义，合指数学化的方法。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Kreatur, -en</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">受造物、生灵</div>
+        <div class="vocab-card__note">拉丁语借词，宗教色彩浓厚（"一切受造之物"）；单用时亦可作贬义"可怜虫、走狗"，须看语境。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">tiefgelehrt</span></div>
+        <span class="vocab-card__pos">adj.（诺瓦利斯自造复合词）</span>
+        <div class="vocab-card__meaning">学问艰深的、饱学的</div>
+        <div class="vocab-card__note">由 tief（深）+ gelehrt（有学问的）构成，诗中名词化为 die Tiefgelehrten，带讽刺意味，指启蒙学者。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">sich begeben</span></div>
+        <span class="vocab-card__pos">v.（强变化，反身）</span>
+        <div class="vocab-card__meaning">前往、动身到；（无人称）发生</div>
+        <div class="vocab-card__note">变位 begibt sich – begab sich – hat sich begeben；书面语体，日常多说 gehen / fahren。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">echt（旧拼 ächt）</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">真正的、纯正的、货真价实的</div>
+        <div class="vocab-card__note">与 wahr（真实的，指陈述属实）不同：echt 强调非仿冒、非掺假。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">sich gatten</span></div>
+        <span class="vocab-card__pos">v.（弱变化，反身，古雅）</span>
+        <div class="vocab-card__meaning">结合、成婚、配对</div>
+        <div class="vocab-card__note">与 der Gatte / die Gattin（配偶）、die Gattung（种属）同源；现代德语已基本不用，改说 sich verbinden / sich vereinen。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">das Märchen, -（旧拼 Mährchen）</span></div>
+        <span class="vocab-card__pos">n.（中性）</span>
+        <div class="vocab-card__meaning">童话</div>
+        <div class="vocab-card__note">为 die Mär（消息、传说）的指小形式；诺瓦利斯有名言称童话为"诗的正典"（der Kanon der Poesie）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">verkehrt</span></div>
+        <span class="vocab-card__pos">adj.（第二分词）</span>
+        <div class="vocab-card__meaning">颠倒的、反了的、错误的</div>
+        <div class="vocab-card__note">来自 verkehren（使颠倒；亦有"往来、通行"之义，如 der Verkehr 交通）；诗中指"本末倒置的"。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">das Wesen, -</span></div>
+        <span class="vocab-card__pos">n.（中性）</span>
+        <div class="vocab-card__meaning">本质；生灵；（古义）作为、体制、局面</div>
+        <div class="vocab-card__note">本诗取古义。同类用法见于 das Unwesen（恶行、乱象）、das Schulwesen（教育制度）、viel Wesens machen（大张旗鼓）。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">sein</td>
+          <td class="de">ist</td>
+          <td class="de">war</td>
+          <td class="de">ist gewesen</td>
+          <td class="de">gewesen</td>
+          <td class="de">wäre</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中第2行复数现在时 Sind，是第一个 wenn 从句的谓语（跨行后置）。</td></tr>
+        <tr>
+          <td class="de">wissen</td>
+          <td class="de">weiß</td>
+          <td class="de">wusste</td>
+          <td class="de">hat gewusst</td>
+          <td class="de">gewusst</td>
+          <td class="de">wüsste</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 不规则动词；诗中复数现在时 wissen 位于从句末尾。注意与 kennen（认识、熟识）的分工。</td></tr>
+        <tr>
+          <td class="de">sich begeben</td>
+          <td class="de">begibt sich</td>
+          <td class="de">begab sich</td>
+          <td class="de">hat sich begeben</td>
+          <td class="de">begeben</td>
+          <td class="de">begäbe sich</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用第一将来时 "wird … zurück begeben"（将回归），助动词 wird 与不定式分置。</td></tr>
+        <tr>
+          <td class="de">sich gatten</td>
+          <td class="de">gattet sich</td>
+          <td class="de">gattete sich</td>
+          <td class="de">hat sich gegattet</td>
+          <td class="de">gegattet</td>
+          <td class="de">gattete sich</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 古雅动词；诗中同样用将来时 "werden … gatten"。</td></tr>
+        <tr>
+          <td class="de">erkennen</td>
+          <td class="de">erkennt</td>
+          <td class="de">erkannte</td>
+          <td class="de">hat erkannt</td>
+          <td class="de">erkannt</td>
+          <td class="de">erkännte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 混合变化；诗中第10行 Erkennt 为从句谓语（主语 man 在上一行）。</td></tr>
+        <tr>
+          <td class="de">fortfliegen</td>
+          <td class="de">fliegt fort</td>
+          <td class="de">flog fort</td>
+          <td class="de">ist fortgeflogen</td>
+          <td class="de">fortgeflogen</td>
+          <td class="de">flöge fort</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可分动词；诗中 fliegt 在第11行、前缀 fort 落在全诗最后一个词，形成跨两行的框型结构。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">全诗是一个条件复句：四个 Wenn + 一个 Dann</h3>
+        <p class="grammar-item__quote">Wenn … Wenn … Wenn … Wenn … / Dann fliegt … fort.</p>
+        <div class="grammar-item__body">十二行只有一个句子。四个（严格说是四个 wenn 加一个 und 延续的）条件从句层层累积，直到第11行 dann 才引出唯一的主句。这种"条件堆积—一举兑现"的结构，本身就是诺瓦利斯历史哲学的形式表达：黄金时代不是某一件事的结果，而是全部条件同时成立时的整体转变。阅读时应先跳到第11—12行找到主句骨架（Das ganze verkehrte Wesen fliegt fort），再回头逐条读条件。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">从句中的动词后置与跨行</h3>
+        <p class="grammar-item__quote">Wenn nicht mehr Zahlen und Figuren / Sind Schlüssel aller Kreaturen</p>
+        <div class="grammar-item__body">德语从属从句的变位动词必须放在句末。本诗把从句拆在两行之间，动词落在下一行的行首位置（Sind / Erkennt）或行末（wissen / begeben / gatten），初读极易断错句。判断方法是：看到 wenn 就默认动词会在从句结束处出现，先把整个从句读完再断句，不要按行末停顿理解。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">古老的关系代词 so</h3>
+        <p class="grammar-item__quote">Wenn die, so singen oder küssen,</p>
+        <div class="grammar-item__body">在早期新高地德语中，so 可用作不变格的关系代词，相当于今日的 der/die/das 或 welcher。"die, so singen" = "diejenigen, die singen"。这一用法在路德《圣经》译本与巴洛克诗歌中很常见，18世纪末已属仿古。现代读者遇到 so 紧跟在逗号与指示代词之后时，应考虑这一可能性。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">旧正字法：y 代 i，ä 代 e，以及省音</h3>
+        <p class="grammar-item__quote">freye / ächter / Mährchen / ewgen</p>
+        <div class="grammar-item__body">本诗依历史批评版保留了诺瓦利斯手稿的正字法特征：freye（= freie）、ächter（= echter）、Mährchen（= Märchen）体现18世纪的拼写习惯；ewgen（= ewigen）则是为格律省去词干中的 -i-。这些形式对理解词义没有实质障碍，但会影响词典查询——学习者应先还原为现代拼法再查。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>这首十二行诗出自诺瓦利斯的小说残篇《海因里希·冯·奥夫特丁根》，1800年写成，1802年由弗里德里希·施莱格尔在作者去世后整理出版。它常被称作德国早期浪漫主义的"纲领诗"：几乎所有关于浪漫派的德语教科书都会引用它。</p>
+<p>值得注意的是，写下这些反对"数字与图形"诗句的人，本人恰恰是一位受过严格自然科学训练的技术官员——诺瓦利斯在弗莱堡矿业学院注册学习了两年，此后在魏森费尔斯盐场管理局任职。而且早在1798年的《独白》中，他还盛赞过数学公式的魔力："如果能让人们明白，语言就像数学公式那样——它们自成一个世界，只与自身游戏，除了表达自己奇妙的本性之外什么也不表达，而正因如此它们才如此富于表现力"。因此这首诗不是外行对科学的排斥，而是一位内行对"科学垄断真理"这一主张的反驳。</p>
+<p>诗中"光与影结合为真正的澄明"一句，直接针对启蒙运动以"光"（Aufklärung 字面即"照亮"）驱散黑暗的核心隐喻：对浪漫派来说，黑夜、梦与无意识不是有待清除的残余，而是认识的另一半条件。诺瓦利斯所盼望的"黄金时代"也不是回到某个静止的古代理想国，而是一种不断趋近完善的动态过程。</p>
+<p>此诗在20世纪仍不断被重新激活：德国前卫摇滚乐队 Novalis 在1977年的专辑《Brandung》中为它谱曲（作曲 Fred Mühlböck），歌手康斯坦丁·韦克尔亦在2015年的专辑《Ohne Warum》中收录了同名作品。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。翻译中作了两处需要说明的处理：(1) 全诗在德语中是一个句子，中文若强行连成一句会难以卒读，译文以逗号维持推进感、仅在末两行收束，但结构上仍应作一个条件复句理解；(2) 第11行 "vor Einem geheimen Wort" 中大写的 Einem 是数词"唯一的一个"，译文作"唯一一个神秘的词语"以保留这一强调——若依流通版本的 "von einem" 则应译作"因一个神秘的词语"，语义方向不同，详见校对记录。第12行的 Wesen 取古义"体制、局面"而非"本质"，译作"存在"，是一个折中处理。已知此诗存在多个中文译本（如林克、先刚等译者的翻译），因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">German Wikipedia — „Wenn nicht mehr Zahlen und Figuren“</span><a class="source-url" href="https://de.wikipedia.org/wiki/Wenn_nicht_mehr_Zahlen_und_Figuren" target="_blank" rel="noopener">https://de.wikipedia.org/wiki/Wenn_nicht_mehr_Zahlen_und_Figuren</a>
+        <span class="source-note">主来源。全文十二行，明确标注引自历史批评版：Novalis: Schriften (Historisch-kritische Ausgabe), Bd. 1: Das dichterische Werk, hrsg. von Paul Kluckhohn und Richard H. Samuel, Kohlhammer, Stuttgart, 2. Aufl. 1960, S. 344；保留手稿正字法（freye / ächter / Mährchen / ewgen / vor Einem）。</span>
+      </li>
+      <li>
+        <span class="source-name">gedichte7.de — „Wenn nicht mehr Zahlen und Figuren – Novalis“</span><a class="source-url" href="https://www.gedichte7.de/wenn-nicht-mehr-zahlen-und-figuren.html" target="_blank" rel="noopener">https://www.gedichte7.de/wenn-nicht-mehr-zahlen-und-figuren.html</a>
+        <span class="source-note">辅助来源。行数、语序与主来源一致，但采用现代化正字法并存在两处实质异文（wahren / von einem），正是据此才确认了本诗流通版本与历史批评版之间的差异，详见校对记录。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在林克、先刚等译者的中译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文以 German Wikipedia 转录的历史批评版（Kluckhohn / Samuel 编，Kohlhammer 1960，第1卷第344页）为准，与 gedichte7.de 的通行版本逐词核对，十二行的行数与语序完全一致，但发现两处重要异文，本站均采历史批评版并在此如实记录：(1) 第10行：历史批评版作 "Erkennt die ewgen Weltgeschichten"（永恒的世界史），大量流通版本作 "die wahren Weltgeschichten"（真正的世界史）。(2) 第11行：历史批评版作 "Dann fliegt vor Einem geheimen Wort"（在唯一一个神秘的词语面前），流通版本作 "von einem geheimen Wort"（因一个神秘的词语）——这一差异改变了介词关系与语义方向，且历史批评版中 Einem 首字母大写，明确指向数词"唯一"而非不定冠词。此外，正字法差异（freye/freie、ächter/echter、Mährchen/Märchen、zurück begeben/zurückbegeben）属排印现代化，不影响词义。需说明的是，本站未直接查阅历史批评版纸质本或诺瓦利斯手稿，异文判断依据 Wikipedia 对该版的转录及其页码标注，建议有条件的读者对照原书核实；两处异文中究竟哪一种更早进入流通、以及流通版本的来源，本站尚未查明，属待核实项。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Novalis (Friedrich von Hardenberg)</li>
+        <li>确认标题与出处：《海因里希·冯·奥夫特丁根》</li>
+        <li>德文原文主来源：German Wikipedia（引 Kluckhohn/Samuel 历史批评版）</li>
+        <li>德文原文辅助来源：gedichte7.de（通行版本）</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（ewgen/wahren；vor Einem/von einem；旧新正字法）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">对照历史批评版纸质本核实两处异文（现依 Wikipedia 转录）</li>
+        <li class="pending">查明流通版本异文（wahren / von einem）的来源</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第5—6行"世界回归世界"的释读）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

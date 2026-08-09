@@ -1,0 +1,338 @@
+{
+  "id": "16",
+  "slug": "das-maedchen-aus-der-fremde",
+  "author": "Friedrich Schiller",
+  "author_zh": "弗里德里希·席勒",
+  "title_de": "Das Mädchen aus der Fremde",
+  "title_zh": "来自远方的少女",
+  "year": "1796年作，1797年发表于席勒主编的《缪斯年鉴 1797》",
+  "collection": "《诗集（1789—1805）》",
+  "period": "魏玛古典主义",
+  "difficulty": "B1",
+  "tags": [
+    "寓言",
+    "春天",
+    "诗歌本身",
+    "馈赠",
+    "格言诗",
+    "首次收录席勒"
+  ],
+  "german_text": [
+    [
+      "In einem Tal bei armen Hirten",
+      "Erschien mit jedem jungen Jahr,",
+      "Sobald die ersten Lerchen schwirrten,",
+      "Ein Mädchen, schön und wunderbar."
+    ],
+    [
+      "Sie war nicht in dem Tal geboren,",
+      "Man wußte nicht, woher sie kam,",
+      "Und schnell war ihre Spur verloren,",
+      "Sobald das Mädchen Abschied nahm."
+    ],
+    [
+      "Beseligend war ihre Nähe,",
+      "Und alle Herzen wurden weit,",
+      "Doch eine Würde, eine Höhe",
+      "Entfernte die Vertraulichkeit."
+    ],
+    [
+      "Sie brachte Blumen mit und Früchte,",
+      "Gereift auf einer andern Flur,",
+      "In einem andern Sonnenlichte,",
+      "In einer glücklichern Natur."
+    ],
+    [
+      "Und teilte jedem eine Gabe,",
+      "Dem Früchte, jenem Blumen aus,",
+      "Der Jüngling und der Greis am Stabe,",
+      "Ein jeder ging beschenkt nach Haus."
+    ],
+    [
+      "Willkommen waren alle Gäste,",
+      "Doch nahte sich ein liebend Paar,",
+      "Dem reichte sie der Gaben beste,",
+      "Der Blumen allerschönste dar."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留六个四行诗节的均衡节奏与全诗\"不点明谜底\"的寓言笔法",
+    "text": [
+      [
+        "在一道山谷里，贫苦的牧人中间，",
+        "每当年岁转新，",
+        "第一批云雀振翅飞起时，",
+        "便出现一位少女，美丽而奇异。"
+      ],
+      [
+        "她并非生在这山谷，",
+        "没有人知道她从何而来，",
+        "而她的踪迹很快便消失，",
+        "只要那少女一告别。"
+      ],
+      [
+        "她在近旁令人心生福乐，",
+        "所有的心都变得开阔，",
+        "然而某种尊严、某种高远",
+        "隔开了亲昵。"
+      ],
+      [
+        "她带来花朵，也带来果实，",
+        "它们成熟于另一片田野，",
+        "在另一种阳光之下，",
+        "在一种更幸福的自然之中。"
+      ],
+      [
+        "她分给每个人一份馈赠，",
+        "给这人果实，给那人花朵，",
+        "青年也好，拄杖的老者也好，",
+        "人人都带着礼物回家。"
+      ],
+      [
+        "所有的客人都受到欢迎，",
+        "但若有一对相爱的人走近，",
+        "她便把馈赠中最好的，",
+        "把花朵中最美的，递给他们。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "In einem Tal bei armen Hirten",
+      "zh": "全诗以地点状语开篇，主语 \"Ein Mädchen\" 直到第4行才出现，是德语诗歌常见的悬置句式。bei + 第三格在此表示\"在……人中间、在……处\"。牧人（Hirten）与山谷构成一个田园牧歌（Idylle）式的封闭世界。"
+    },
+    {
+      "de": "Erschien mit jedem jungen Jahr,",
+      "zh": "das junge Jahr 是\"新的一年、初春\"的诗性说法；mit + 第三格表示\"随着……一同\"。erscheinen（显现）一词带有宗教／神显的色彩，为少女的非人间来历埋下伏笔。"
+    },
+    {
+      "de": "Sobald die ersten Lerchen schwirrten,",
+      "zh": "sobald 是引导时间从句的连词（\"一旦、只要……就\"），从句中动词后置（schwirrten）。schwirren 拟声，指小鸟或昆虫振翅发出的嗡嗡／飕飕声。云雀是德语文学中春天最典型的报信者。"
+    },
+    {
+      "de": "Man wußte nicht, woher sie kam,",
+      "zh": "woher（从何处）引导间接疑问从句。wußte 为旧正字法（今作 wusste）。全诗刻意不解释少女的来历——这一\"不解释\"本身就是寓言的核心手法。"
+    },
+    {
+      "de": "Doch eine Würde, eine Höhe",
+      "zh": "两个抽象名词并置且都带不定冠词（eine Würde, eine Höhe），使\"尊严\"与\"高远\"从属性变成了两种具体存在的力量。Höhe 在此是转喻，指她所处的精神高度。"
+    },
+    {
+      "de": "Entfernte die Vertraulichkeit.",
+      "zh": "entfernen 在此为及物动词\"使远离、去除\"，主语是上一行的两个名词。die Vertraulichkeit（亲昵、随便）是德语中一个略带贬义的词，指过分不设防的亲近。这两行是全诗的转折：她令人幸福，却不容亲昵。"
+    },
+    {
+      "de": "Gereift auf einer andern Flur,",
+      "zh": "gereift 是 reifen 的第二分词，作后置定语修饰前一行的 Blumen und Früchte（相当于一个省略了 die … waren 的关系从句）。die Flur 意为田野、原野（与\"走廊 der Flur\"同形不同性，须靠冠词区分）。andern 为 anderen 的省音形式。"
+    },
+    {
+      "de": "Und teilte jedem eine Gabe, / Dem Früchte, jenem Blumen aus,",
+      "zh": "可分动词 austeilen（分发）被拆开：teilte…aus，前缀跨行落在下一行末。dem … jenem … 是\"这一个……那一个……\"的对举用法（第三格），今日多说 dem einen … dem anderen …。"
+    },
+    {
+      "de": "Der Jüngling und der Greis am Stabe,",
+      "zh": "青年与拄杖的老者构成\"人生两极\"的提喻（Merismus），意即\"所有人\"。der Stab 指手杖；am Stabe 是带旧式第三格词尾 -e 的形式（今作 am Stab）。"
+    },
+    {
+      "de": "Doch nahte sich ein liebend Paar,",
+      "zh": "sich nahen 是 sich nähern（走近）的古雅形式。liebend 是现在分词作定语，且未加词尾变化（今应作 ein liebendes Paar）——这种\"不变格形容词\"是18世纪诗歌为凑音节而保留的古法。"
+    },
+    {
+      "de": "Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.",
+      "zh": "可分动词 darreichen（呈递、奉上）被拆开，前缀 dar 落在全诗最后一个词。der Gaben beste / der Blumen allerschönste 是\"前置第二格 + 形容词最高级名词化\"的古典结构，相当于 die beste der Gaben、die allerschönste der Blumen。全诗以\"相爱的人\"获得最好的馈赠作结，这是理解整首寓言的钥匙。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Hirt, -en / der Hirte, -n",
+      "pos": "n.（阳性，弱变化）",
+      "meaning": "牧人、牧羊人",
+      "note": "弱变化名词，除第一格单数外均加 -en；在田园诗与《圣经》语汇中都属核心词。"
+    },
+    {
+      "term": "schwirren",
+      "pos": "v.（弱变化，拟声）",
+      "meaning": "（振翅）飕飕作响、嗡嗡飞动",
+      "note": "多用于鸟、昆虫或箭矢快速掠过空气的声音；\"es schwirrt mir im Kopf\" 意为\"我头晕脑胀\"。"
+    },
+    {
+      "term": "beseligend",
+      "pos": "adj.（现在分词）",
+      "meaning": "令人幸福的、赐福的",
+      "note": "来自 beseligen（使极乐），词根 selig（幸福的、蒙福的、已故的）带宗教色彩；比 beglückend 更庄重。"
+    },
+    {
+      "term": "die Würde",
+      "pos": "n.（阴性）",
+      "meaning": "尊严、庄重",
+      "note": "德国《基本法》第一条即以 \"Die Würde des Menschen ist unantastbar\" 开篇；席勒本人另有美学论文《论优美与尊严》（Über Anmut und Würde），此词在其思想中有专门分量。"
+    },
+    {
+      "term": "die Vertraulichkeit, -en",
+      "pos": "n.（阴性）",
+      "meaning": "亲昵、随便；机密性",
+      "note": "来自 vertraulich（亲密的；机密的）；在本诗语境中指\"过分随便的亲近\"，略含贬义。"
+    },
+    {
+      "term": "die Flur, -en",
+      "pos": "n.（阴性）",
+      "meaning": "田野、原野",
+      "note": "务必与 der Flur（阳性，走廊、门厅）区分——两词同形而性别、词义完全不同，靠冠词辨别。"
+    },
+    {
+      "term": "die Gabe, -n",
+      "pos": "n.（阴性）",
+      "meaning": "馈赠、礼物；天赋",
+      "note": "来自 geben；复合词 die Begabung（天赋）、die Mitgift（嫁妆）同源。诗中兼有\"礼物\"与\"天赋恩赐\"的双重回响。"
+    },
+    {
+      "term": "der Greis, -e",
+      "pos": "n.（阳性）",
+      "meaning": "老翁、白发老人",
+      "note": "书面雅语，比 der alte Mann 更具文学色彩；阴性为 die Greisin。"
+    },
+    {
+      "term": "darreichen",
+      "pos": "v.（可分，弱变化）",
+      "meaning": "呈递、奉上",
+      "note": "古雅用词，多用于庄重场合（如献上礼物、圣餐）；诗中前缀 dar 被推到全诗最后一个位置。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "erscheinen",
+      "present_3sg": "erscheint",
+      "preterite": "erschien",
+      "perfect": "ist erschienen",
+      "participle_ii": "erschienen",
+      "subjunctive_ii": "erschiene",
+      "auxiliary": "sein",
+      "note": "强变化（ei–ie–ie）；诗中用过去时 Erschien 置于句首（因前面是状语，主语后置）。"
+    },
+    {
+      "infinitive": "wissen",
+      "present_3sg": "weiß",
+      "preterite": "wusste（旧 wußte）",
+      "perfect": "hat gewusst",
+      "participle_ii": "gewusst",
+      "subjunctive_ii": "wüsste",
+      "auxiliary": "haben",
+      "note": "不规则动词（属\"变现在时\"类，现在时单数与复数词干不同）；诗中用旧正字法 wußte。"
+    },
+    {
+      "infinitive": "mitbringen",
+      "present_3sg": "bringt mit",
+      "preterite": "brachte mit",
+      "perfect": "hat mitgebracht",
+      "participle_ii": "mitgebracht",
+      "subjunctive_ii": "brächte mit",
+      "auxiliary": "haben",
+      "note": "混合变化的可分动词；诗中作 \"Sie brachte Blumen mit und Früchte\"，注意宾语被前缀 mit 从中间切开，这是德语框型结构的典型效果。"
+    },
+    {
+      "infinitive": "austeilen",
+      "present_3sg": "teilt aus",
+      "preterite": "teilte aus",
+      "perfect": "hat ausgeteilt",
+      "participle_ii": "ausgeteilt",
+      "subjunctive_ii": "teilte aus",
+      "auxiliary": "haben",
+      "note": "可分动词；诗中 teilte 在第17行、前缀 aus 跨行落在第18行末。"
+    },
+    {
+      "infinitive": "sich nahen",
+      "present_3sg": "naht sich",
+      "preterite": "nahte sich",
+      "perfect": "hat sich genaht",
+      "participle_ii": "genaht",
+      "subjunctive_ii": "nahte sich",
+      "auxiliary": "haben",
+      "note": "古雅形式，现代德语用 sich nähern（+ 第三格）；诗中作 \"nahte sich ein liebend Paar\"。"
+    },
+    {
+      "infinitive": "darreichen",
+      "present_3sg": "reicht dar",
+      "preterite": "reichte dar",
+      "perfect": "hat dargereicht",
+      "participle_ii": "dargereicht",
+      "subjunctive_ii": "reichte dar",
+      "auxiliary": "haben",
+      "note": "可分动词；诗中 reichte 在第23行、前缀 dar 落在全诗末词，形成极大的框型跨度。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "可分动词的框型结构与跨行拆解",
+      "quote": "Und teilte jedem eine Gabe, / Dem Früchte, jenem Blumen aus … Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.",
+      "body": "德语可分动词把词干与前缀分置于句子两端，中间夹住所有其他成分，形成\"框型结构\"（Satzklammer）。席勒在最后两节把这个框拉到极限：teilte … aus 跨两行，reichte … dar 也跨两行，且 dar 落在全诗的最后一个词上。读这类句子时，务必先扫到句末找出前缀，再回头确定动词的真实含义——teilen（分）与 austeilen（分发）、reichen（够得着／递）与 darreichen（奉上）意思并不相同。"
+    },
+    {
+      "title": "前置第二格 + 形容词最高级名词化",
+      "quote": "Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.",
+      "body": "\"der Gaben beste\" 即现代德语的 \"die beste der Gaben\"（诸馈赠中最好的那一份）：第二格 der Gaben 前置，形容词最高级 beste 名词化后作宾语。allerschönste 中的 aller- 是加强前缀（\"最最……\"），常见于 allerbeste、allerliebste。这种前置第二格语序在18世纪诗歌中很常见，现代德语已改为后置。"
+    },
+    {
+      "title": "sobald 引导的时间从句",
+      "quote": "Sobald die ersten Lerchen schwirrten … Sobald das Mädchen Abschied nahm.",
+      "body": "sobald 是从属连词，意为\"一旦、只要……就\"，从句中变位动词必须放在句末（schwirrten / nahm）。全诗两次使用 sobald，一次标记来临，一次标记离去，使少女的出现被牢牢框定在一个循环的时间结构里。注意与 so bald（分写，意为\"这么快\"）区分。"
+    },
+    {
+      "title": "不带词尾的定语形容词（古法）",
+      "quote": "Doch nahte sich ein liebend Paar,",
+      "body": "按现代规则应作 \"ein liebendes Paar\"（中性第一格弱变化后应有 -es）。18世纪诗歌为迁就音节数，常保留中古德语遗留的\"无词尾定语形容词\"。歌德《野玫瑰》中的 \"ein Röslein stehn\" 属同类现象。学习者应能识别这是格律需要，而不是错误，同时在自己写作时使用规范形式。"
+    }
+  ],
+  "cultural_notes": "《来自远方的少女》作于1796年，次年刊于席勒自己主编的《缪斯年鉴 1797》，属于他与歌德结盟后创作力最旺盛的时期（同一年他还写下了《潜水者》《手套》等著名叙事诗）。全诗六节二十四行，四音步抑扬格、交叉韵，语言极其平易——没有一个生僻词，没有一句复杂的哲学表述。\n\n它的难点全在\"这少女是谁\"这个问题上，而席勒始终不作回答。最通行的读法是把她理解为诗艺（Poesie）本身：她每年春天从别处来到贫苦的日常世界，带来在\"另一种阳光下\"成熟的果实，让人人有所得，却拒绝被亲昵地占有；而她把最好的馈赠留给\"相爱的人\"。这一读法与席勒在《审美教育书简》（1795）中的核心思想吻合：艺术不是从属于现实的装饰，而是来自另一秩序的赠礼，它使人在\"游戏\"中恢复完整。也有研究者把她读作春天本身、爱情、青春，或干脆读作理想（das Ideal）。席勒在1803年的一封信中曾拒绝为此诗给出唯一解释，认为其魅力恰在于寓意的开放。\n\n这首诗在德语教育史上有特殊位置：它常被选作学生接触\"象征\"与\"寓言\"区别的第一课——因为它是一首完整的寓言，却没有配上钥匙。舒伯特（D 117 与 D 252，1815年两度谱曲）、卡尔·勒韦等作曲家都为它写过艺术歌曲。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，力求语言与原诗一样平易，不添加任何指向\"她是谁\"的解释性词语——这是本诗翻译中最重要的一条自我约束。第五、六节的可分动词框型（teilte…aus、reichte…dar）在中文中无法保留，译文以\"分给……\"\"把……递给\"处理。第六节 \"der Gaben beste / der Blumen allerschönste\" 的前置第二格结构译为\"馈赠中最好的／花朵中最美的\"，保留了原句两个并列宾语的递进。已知此诗存在钱春绮、张玉书等译者的中译本，因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "早春的阿尔卑斯前山谷地，几间简陋牧屋与羊群散布在尚未完全返青的草坡上，一位身着素色长袍的年轻女子立于谷口，手中捧着与季节不相称的鲜花与成熟果实",
+    "mood": "清朗、温和、略带不可接近的距离感；应传达\"受欢迎但不被拥有\"的分寸，而非童话式的甜美",
+    "elements": "残雪未尽的山坡、初绽的草地、几只羊与牧人远景、盘旋上升的云雀、女子手中或篮中的花与果、清晨的斜射光",
+    "era": "18世纪末中欧乡村，服饰与建筑应为该时代样式",
+    "taboos": "不得出现文字、水印；不得出现光环、翅膀等神性符号（诗中刻意不点明来历，画面亦不应给出答案）；不得作面部特写或明显的表情刻画；不得出现现代农具、电线、公路",
+    "style": "19世纪浪漫主义风景油画风格，清冷的早春光线，色调以灰绿、乳白与淡金为主，人物在画面中占比不宜过大，应与风景保持平衡"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "Zeno.org — Friedrich Schiller: Sämtliche Werke, Band 1, München 1962, S. 255–256（„Das Mädchen aus der Fremde“）",
+      "url": "http://www.zeno.org/Literatur/M/Schiller,+Friedrich/Gedichte/Gedichte+(1789-1805)/Das+M%C3%A4dchen+aus+der+Fremde",
+      "note": "主来源。依 Hanser 版《席勒全集》第1卷数字化本，六节二十四行完整，保留旧正字法 wußte。"
+    },
+    {
+      "name": "gedichte7.de — „Das Mädchen aus der Fremde – Schiller“",
+      "url": "https://www.gedichte7.de/das-maedchen-aus-der-fremde.html",
+      "note": "辅助来源。六节二十四行与主来源逐词、逐标点完全一致（含 wußte 的旧拼法），用于独立交叉核对。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮、张玉书等译者的中译本，因版权原因未转载全文。"
+    }
+  ],
+  "verification_notes": "德文正文通过两个独立来源（Zeno.org 转录的 Hanser 版《席勒全集》第1卷，与 gedichte7.de）逐词逐标点核对，六节各四行，两来源完全一致，未发现任何异文——这在本站收录的诗作中较为少见，可信度较高。仅有一处需要说明：第6行 \"wußte\" 为1996年正字法改革前的写法，今应作 \"wusste\"；本站保留全集所依据的旧拼法，并在词汇与动词变位表中给出现代形式。关于创作与发表年代（1796年作、刊于《缪斯年鉴 1797》），本站依据通行的席勒研究结论，未直接查阅《缪斯年鉴》影印件，属待进一步核实项。",
+  "checklist": [
+    { "label": "确认作者：Friedrich Schiller", "done": true },
+    { "label": "确认标题：Das Mädchen aus der Fremde", "done": true },
+    { "label": "德文原文主来源：Zeno.org（Hanser 版全集第1卷）", "done": true },
+    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
+    { "label": "核对诗节、行数、标点", "done": true },
+    { "label": "记录版本差异（两来源无异文；仅旧/新正字法 wußte/wusste）", "done": true },
+    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
+    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
+    { "label": "制作本站学习译文（中文）", "done": true },
+    { "label": "提取重点词汇", "done": true },
+    { "label": "校对 lemma 与词性", "done": true },
+    { "label": "补充动词变位", "done": true },
+    { "label": "撰写语法要点", "done": true },
+    { "label": "撰写背景说明", "done": true },
+    { "label": "撰写 image brief", "done": true },
+    { "label": "生成 AI 配图", "done": false },
+    { "label": "页面视觉检查", "done": false },
+    { "label": "核实首刊信息（《缪斯年鉴 1797》影印件）", "done": false },
+    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+  ]
+}

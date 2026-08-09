@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t !== 'dark' && t !== 'light') {
+          t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+  <title>Archaïscher Torso Apollos · 古风的阿波罗躯干残像 — Rainer Maria Rilke | 德语诗歌学习画册</title>
+  <meta name="description" content="Archaïscher Torso Apollos（古风的阿波罗躯干残像）— Rainer Maria Rilke。德文原诗、学习译文、词汇语法注释与出处校对。">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html">
+        <span class="brand__de">Gedichte</span>
+      </a>
+      <div class="site-header__right">
+        <nav class="site-nav" aria-label="主导航">
+          <a href="../index.html">诗歌总览</a>
+          <a href="../about.html">关于 · 校对</a>
+        </nav>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    
+    <div class="poem-shell">
+
+    <nav class="poem-nav" aria-label="诗歌导航">
+<a class="poem-nav__link poem-nav__prev" href="der-tod-das-ist-die-kuehle-nacht.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">死亡，那是清凉的夜</span></a>
+<a class="poem-nav__link poem-nav__next" href="das-maedchen-aus-der-fremde.html" rel="next"><span class="poem-nav__title">来自远方的少女</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+    </nav>
+    <header class="poem-titleblock reveal">
+      <h1 class="poem-titleblock__de poem-titleblock__de--long">Archaïscher Torso Apollos</h1>
+      <p class="poem-titleblock__author">Rainer Maria Rilke</p>
+      <p class="poem-titleblock__zh">古风的阿波罗躯干残像</p>
+      <p class="poem-titleblock__author-zh">赖内·马利亚·里尔克</p>
+      <div class="poem-titleblock__biblio">
+        <p>《新诗集·别集》（Der neuen Gedichte anderer Teil, 1908）开篇之作</p>
+        <p>现代主义早期 / 里尔克"物诗"（Dinggedicht）时期</p>
+        <p>1908年夏于巴黎写成，1908年11月出版</p>
+      </div>
+      <div class="poem-titleblock__meta">
+        <span class="tag tag--c">C1</span>
+        <span class="tag ">物诗</span>
+        <span class="tag ">雕塑</span>
+        <span class="tag ">十四行诗</span>
+        <span class="tag ">凝视</span>
+        <span class="tag ">艺术与生存</span>
+        <span class="tag ">经典必读</span>
+      </div>
+          <div class="image-slot">
+      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
+      <dl>
+        <dt>意象</dt><dd>博物馆展厅一隅，一尊无头无臂的古希腊大理石躯干像被侧向光源照亮，石体表面因光线而微微发亮，仿佛自内部透出光</dd>
+        <dt>情绪</dt><dd>凝重、克制、带有被注视感；不应表现"残缺的悲情"，而应传达一种沉默的、逼视人的力量</dd>
+        <dt>画面元素</dt><dd>古风时期风格的男性躯干大理石像（胸腹起伏、腰胯轻微扭转的姿态）、断裂的肩部与颈部截面、深色的展厅背景、一束斜射的自然光、大理石表面的细微纹理与结晶感</dd>
+        <dt>时代感</dt><dd>雕像本体为公元前6世纪希腊古风时期样式；环境可为19世纪末至20世纪初的博物馆空间，不得出现现代展陈设备</dd>
+        <dt>推荐风格</dt><dd>冷调写实油画风格，接近19世纪学院派的静物／雕塑写生，背景深褐近黑，光线集中于石体，强调大理石的半透明质感</dd>
+        <dt>比例</dt><dd>4:3（横版）</dd>
+        <dt>禁忌</dt><dd>不得出现文字、水印、展签、玻璃展柜反光；不得补全头部或四肢；不得出现观众、导览员等人物；避免情色化的处理，生殖部位应以古典雕塑的常规方式呈现或处于阴影中；不得出现现代照明灯具</dd>
+      </dl>
+      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
+    </div>
+    </header>
+    <section class="section reveal section--parallel">
+      <header class="section__head">
+        <span class="section__zh">原诗 · 译文</span>
+        <span class="section__de">Gedicht · Übertragung</span>
+      </header>
+            <div class="parallel">
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="1"><span class="linetext">Wir kannten nicht sein unerhörtes Haupt,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+          <div class="pline__zh">我们不曾见过他那闻所未闻的头颅，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="2"><span class="linetext">darin die Augenäpfel reiften. Aber<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+          <div class="pline__zh">眼珠曾在其中成熟。然而</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="3"><span class="linetext">sein Torso glüht noch wie ein Kandelaber,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+          <div class="pline__zh">他的躯干仍在灼灼发光，如一盏烛台，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="4"><span class="linetext">in dem sein Schauen, nur zurückgeschraubt,<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+          <div class="pline__zh">其中他的凝视，只是被拧向内里，</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="5"><span class="linetext">sich hält und glänzt. Sonst könnte nicht der Bug<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+          <div class="pline__zh">自持并且闪耀。否则胸膛的隆起</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">der Brust dich blenden, und im leisen Drehen</span></div>
+          <div class="pline__zh">不会使你目眩，而在腰胯轻微的</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="6"><span class="linetext">der Lenden könnte nicht ein Lächeln gehen<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+          <div class="pline__zh">扭转中，也不会有一丝微笑走向</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="7"><span class="linetext">zu jener Mitte, die die Zeugung trug.<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+          <div class="pline__zh">那孕育了生殖的中心。</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="8"><span class="linetext">Sonst stünde dieser Stein entstellt und kurz<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+          <div class="pline__zh">否则这石头会残缺而短促地</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="9"><span class="linetext">unter der Schultern durchsichtigem Sturz<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
+          <div class="pline__zh">立在双肩那透明的垂落之下，</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="10"><span class="linetext">und flimmerte nicht so wie Raubtierfelle;<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
+          <div class="pline__zh">不会如猛兽的皮毛这般微微闪烁；</div>
+        </div>
+      </div>
+      <div class="pstanza">
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="11"><span class="linetext">und bräche nicht aus allen seinen Rändern<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
+          <div class="pline__zh">也不会从它所有的边缘迸射</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline"><span class="linetext">aus wie ein Stern: denn da ist keine Stelle,</span></div>
+          <div class="pline__zh">如一颗星：因为这里没有一处</div>
+        </div>
+        <div class="pline">
+          <div class="pline__de vline" data-noteref="12"><span class="linetext">die dich nicht sieht. Du mußt dein Leben ändern.<sup class="refmark"><a href="#note-12">12</a></sup></span></div>
+          <div class="pline__zh">不在看着你。你必须改变你的生活。</div>
+        </div>
+      </div>
+        <p class="translation-meta">本站学习译文（AI 辅助），直译，尽量保留原诗"若非如此……便不会……"的双重虚拟推论链，以及末行的骤然转折</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">逐行注释</span>
+        <span class="section__de">Zeilenkommentar</span>
+      </header>
+            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
+        <span class="lnote__mark">1</span>
+        <p class="lnote__de">Wir kannten nicht sein unerhörtes Haupt,</p>
+        <p class="lnote__zh">unerhört 字面为"未被听见的"，引申义有二："闻所未闻的、惊人的"与"骇人听闻的"。里尔克在此利用了字面义与引申义的双关——那颗头颅既"从未被我们见闻"，又"惊人非凡"。Haupt 是 Kopf 的雅语形式，专用于庄严语境。全诗以第一人称复数 wir 开场，最后一行却突转为 du，是理解全诗结构的关键。</p>
+      </article>
+      <article class="lnote" id="note-2" data-noteref="2">
+        <span class="lnote__mark">2</span>
+        <p class="lnote__de">darin die Augenäpfel reiften. Aber</p>
+        <p class="lnote__zh">Augenapfel（眼球，字面"眼之苹果"）是罕见的雅语词，与动词 reifen（成熟，本用于果实）构成一个统一的果园隐喻：眼珠像果实一样在头颅中"成熟"。此行句号落在行中（Zeilenstil 被打破），随后一个孤零零的 Aber 悬在行末——跨行连写（Enjambement）在本诗中几乎每行都出现，是全诗紧张感的主要来源。</p>
+      </article>
+      <article class="lnote" id="note-3" data-noteref="3">
+        <span class="lnote__mark">3</span>
+        <p class="lnote__de">sein Torso glüht noch wie ein Kandelaber,</p>
+        <p class="lnote__zh">der Torso（意大利语借词，指无头无肢的躯干雕像）是全诗的主角。Kandelaber（多枝烛台）这一比喻把失去头部的石像转喻为一件仍在发光的器物——光源本应在头（眼睛），如今被"拧回"躯干内部。</p>
+      </article>
+      <article class="lnote" id="note-4" data-noteref="4">
+        <span class="lnote__mark">4</span>
+        <p class="lnote__de">in dem sein Schauen, nur zurückgeschraubt,</p>
+        <p class="lnote__zh">das Schauen 是动词 schauen（观看）的名词化，指"凝视这一行为"本身，而非 der Blick（目光）。zurückschrauben 字面为"把（灯芯）拧回去、调小"，延续 Kandelaber 的煤气灯／油灯意象：凝视没有消失，只是被调暗、收回内部。</p>
+      </article>
+      <article class="lnote" id="note-5" data-noteref="5">
+        <span class="lnote__mark">5</span>
+        <p class="lnote__de">sich hält und glänzt. Sonst könnte nicht der Bug</p>
+        <p class="lnote__zh">sich halten 意为"维持自身、存续"。此后 Sonst（否则）引出全诗第一个虚拟推论："若不是这样，……便不可能……"。der Bug 本义为船首（也指关节、弯曲处），此处指胸膛向前的隆起弧线，一个海船与身体重叠的隐喻。</p>
+      </article>
+      <article class="lnote" id="note-6" data-noteref="6">
+        <span class="lnote__mark">6</span>
+        <p class="lnote__de">der Lenden könnte nicht ein Lächeln gehen</p>
+        <p class="lnote__zh">die Lenden（腰、腰胯部）是解剖学与《圣经》语汇（"腰间之力"）共用的词。"微笑走向"（ein Lächeln gehen zu）是全诗最大胆的转喻：微笑本属面部，而这尊像没有脸，于是微笑被移到躯体的扭转之中。</p>
+      </article>
+      <article class="lnote" id="note-7" data-noteref="7">
+        <span class="lnote__mark">7</span>
+        <p class="lnote__de">zu jener Mitte, die die Zeugung trug.</p>
+        <p class="lnote__zh">die Zeugung（生殖、生育）与 tragen（承载）连用，指雕像的生殖部位。里尔克在此并不作情色描写，而是把生殖力理解为造型艺术的生命力本身；这也是罗丹"一切都在动"的雕塑观在诗中的转写。</p>
+      </article>
+      <article class="lnote" id="note-8" data-noteref="8">
+        <span class="lnote__mark">8</span>
+        <p class="lnote__de">Sonst stünde dieser Stein entstellt und kurz</p>
+        <p class="lnote__zh">第二个 Sonst 引出的虚拟句，动词用第二虚拟式 stünde（stehen 的第二虚拟式，亦作 stände）。entstellt（被毁容的、扭曲的）与 kurz（短的）合起来描写残缺石块若没有内在辉光时会呈现的样子——不过是块断石。</p>
+      </article>
+      <article class="lnote" id="note-9" data-noteref="9">
+        <span class="lnote__mark">9</span>
+        <p class="lnote__de">unter der Schultern durchsichtigem Sturz</p>
+        <p class="lnote__zh">语序需要还原：unter [der Schultern] [durchsichtigem Sturz] = "在双肩那透明的垂落之下"，der Schultern 为前置的第二格。der Sturz 兼有"坠落"与建筑术语"门楣、过梁"两义，里尔克很可能同时激活了这两层：肩部既如垂落的形体，又如支撑起整座建筑的横梁。</p>
+      </article>
+      <article class="lnote" id="note-10" data-noteref="10">
+        <span class="lnote__mark">10</span>
+        <p class="lnote__de">und flimmerte nicht so wie Raubtierfelle;</p>
+        <p class="lnote__zh">flimmern（闪烁、微微颤动的光）用于形容大理石表面在光下的质感；Raubtierfelle（猛兽的毛皮）把静止的石头与野兽的活体感官联系起来。行末标点在不同版本中作分号或中圆点（·），详见校对记录。</p>
+      </article>
+      <article class="lnote" id="note-11" data-noteref="11">
+        <span class="lnote__mark">11</span>
+        <p class="lnote__de">und bräche nicht aus allen seinen Rändern</p>
+        <p class="lnote__zh">bräche 是 brechen 的第二虚拟式；可分动词 ausbrechen 的前缀 aus 被推到下一行行首（"aus wie ein Stern"），这是全诗最极端的一次跨行——语法上的"迸裂"与语义上的"迸射如星"完全同步。</p>
+      </article>
+      <article class="lnote" id="note-12" data-noteref="12">
+        <span class="lnote__mark">12</span>
+        <p class="lnote__de">die dich nicht sieht. Du mußt dein Leben ändern.</p>
+        <p class="lnote__zh">全诗的翻转：被观看的雕像成了观看者，读者从旁观的 wir 变成被凝视的 du。末句是德语诗歌中最著名的句子之一，其力量正来自它的突兀——没有任何过渡、没有任何解释。mußt 为旧正字法（今作 musst）。</p>
+      </article>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">重点词汇</span>
+        <span class="section__de">Wortschatz</span>
+      </header>
+            <div class="vocab-list">      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">unerhört</span></div>
+        <span class="vocab-card__pos">adj.</span>
+        <div class="vocab-card__meaning">闻所未闻的、惊人的；（贬义）骇人听闻的</div>
+        <div class="vocab-card__note">由 un- + erhört（被听见的、被应允的）构成，字面"未被听见/未被应允的"。里尔克在此同时利用字面义与引申义。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">das Haupt, Häupter</span></div>
+        <span class="vocab-card__pos">n.（中性）</span>
+        <div class="vocab-card__meaning">头、首（雅语）</div>
+        <div class="vocab-card__note">较 der Kopf 更庄重，多用于诗歌、宗教与固定搭配（Oberhaupt 首脑、Hauptstadt 首都）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Torso, -s / Torsi</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">（无头无肢的）躯干雕像；引申指未完成的作品</div>
+        <div class="vocab-card__note">意大利语借词；在艺术史与文学批评中亦用于形容"残篇"（ein Torso bleiben 意为"未能完成"）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Kandelaber, -</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">多枝烛台、（旧式）路灯柱</div>
+        <div class="vocab-card__note">源自拉丁语 candelabrum；19世纪末亦指城市中的煤气灯柱，与下文 zurückgeschraubt（把灯芯拧小）呼应。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">zurückschrauben</span></div>
+        <span class="vocab-card__pos">v.（可分，弱变化）</span>
+        <div class="vocab-card__meaning">拧回、调小、降低（要求等）</div>
+        <div class="vocab-card__note">本用于灯具（把灯芯拧小）与技术语境，引申为"降低期望"；诗中作第二分词 zurückgeschraubt。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Bug, Büge</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">船首；（动物的）肩部关节、弯曲处</div>
+        <div class="vocab-card__note">与 biegen（弯曲）同源；诗中指胸膛向前隆起的弧线，兼有船首破浪的动感。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Lende, -n</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">腰、腰胯部；（肉类）里脊</div>
+        <div class="vocab-card__note">解剖学与圣经语汇通用词（如路德译本 "eure Lenden umgürtet"）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">die Zeugung</span></div>
+        <span class="vocab-card__pos">n.（阴性）</span>
+        <div class="vocab-card__meaning">生殖、生育</div>
+        <div class="vocab-card__note">来自动词 zeugen（生育、产生）；注意与同形动词 zeugen（作证，如 von etwas zeugen）区分。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">der Sturz, Stürze</span></div>
+        <span class="vocab-card__pos">n.（阳性）</span>
+        <div class="vocab-card__meaning">坠落、跌倒；（建筑）门楣、过梁</div>
+        <div class="vocab-card__note">诗中两义并存：肩部既像垂落的形体，又像承重的横梁。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">flimmern</span></div>
+        <span class="vocab-card__pos">v.（弱变化）</span>
+        <div class="vocab-card__meaning">闪烁、微微颤动地发光</div>
+        <div class="vocab-card__note">较 glänzen（有光泽）更不稳定、更细碎；也用于形容屏幕闪动或眼前发花（es flimmert mir vor den Augen）。</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-card__head"><span class="vocab-card__term">entstellt</span></div>
+        <span class="vocab-card__pos">adj.（第二分词）</span>
+        <div class="vocab-card__meaning">被损毁的、扭曲变形的</div>
+        <div class="vocab-card__note">来自 entstellen（使变形、歪曲），既可指容貌毁损，也可指内容被歪曲（einen Text entstellen）。</div>
+      </div>      </div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">动词变位</span>
+        <span class="section__de">Konjugation</span>
+      </header>
+      <div class="verb-table-wrap">
+      <table class="verb-table">
+        <thead>
+          <tr>
+            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td class="de">kennen</td>
+          <td class="de">kennt</td>
+          <td class="de">kannte</td>
+          <td class="de">hat gekannt</td>
+          <td class="de">gekannt</td>
+          <td class="de">kennte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 混合变化动词；诗中用过去时复数 kannten（"Wir kannten nicht …"）。</td></tr>
+        <tr>
+          <td class="de">reifen</td>
+          <td class="de">reift</td>
+          <td class="de">reifte</td>
+          <td class="de">ist gereift</td>
+          <td class="de">gereift</td>
+          <td class="de">reifte</td>
+          <td>sein（表状态变化）</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 指果实成熟或人的成熟；诗中用过去时复数 reiften。</td></tr>
+        <tr>
+          <td class="de">können</td>
+          <td class="de">kann</td>
+          <td class="de">konnte</td>
+          <td class="de">hat gekonnt</td>
+          <td class="de">gekonnt / können</td>
+          <td class="de">könnte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中两次使用第二虚拟式 könnte，构成"若非如此便不可能"的反事实推论。</td></tr>
+        <tr>
+          <td class="de">stehen</td>
+          <td class="de">steht</td>
+          <td class="de">stand</td>
+          <td class="de">hat gestanden</td>
+          <td class="de">gestanden</td>
+          <td class="de">stünde / stände</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中用第二虚拟式 stünde（南德与文学语体偏好 stünde，北德口语多用 stände）。</td></tr>
+        <tr>
+          <td class="de">ausbrechen</td>
+          <td class="de">bricht aus</td>
+          <td class="de">brach aus</td>
+          <td class="de">ist ausgebrochen</td>
+          <td class="de">ausgebrochen</td>
+          <td class="de">bräche aus</td>
+          <td>sein</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 可分动词；诗中第二虚拟式 bräche…aus 被跨行拆开（bräche 在第12行末、aus 在第13行首）。</td></tr>
+        <tr>
+          <td class="de">müssen</td>
+          <td class="de">muss（旧 muß）</td>
+          <td class="de">musste</td>
+          <td class="de">hat gemusst</td>
+          <td class="de">gemusst / müssen</td>
+          <td class="de">müsste</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 诗中第二人称单数 mußt（旧正字法，今 musst），构成全诗最后一句的绝对命令。</td></tr>
+        <tr>
+          <td class="de">ändern</td>
+          <td class="de">ändert</td>
+          <td class="de">änderte</td>
+          <td class="de">hat geändert</td>
+          <td class="de">geändert</td>
+          <td class="de">änderte</td>
+          <td>haben</td>
+        </tr>
+        <tr class="verb-note"><td colspan="7">↳ 及物动词；与反身 sich ändern（自身发生改变）区分。末句用及物形式，强调这是"你要主动去做的事"。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">语法要点</span>
+        <span class="section__de">Grammatik</span>
+      </header>
+            <div class="grammar-list">      <article class="grammar-item">
+        <h3 class="grammar-item__title">反事实推论：Sonst + 第二虚拟式</h3>
+        <p class="grammar-item__quote">Sonst könnte nicht der Bug / der Brust dich blenden … Sonst stünde dieser Stein entstellt und kurz …</p>
+        <div class="grammar-item__body">全诗的论证骨架是两组由 sonst（否则）引出的反事实虚拟句："若不是那被收回的凝视仍在其中闪耀，胸膛就不会令你目眩，石头就只会是块残石。" 德语用第二虚拟式（könnte / stünde / flimmerte / bräche）表示与事实相反的假设。请注意推论方向：诗人不是在描述雕像，而是从"它确实令我目眩"这一事实反推出"它内部一定还有凝视"。整首诗是一个逻辑证明。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">跨行连写（Enjambement）与可分动词的拆解</h3>
+        <p class="grammar-item__quote">und bräche nicht aus allen seinen Rändern / aus wie ein Stern:</p>
+        <div class="grammar-item__body">德语可分动词的前缀通常落在句末。里尔克在此把 ausbrechen 的前缀 aus 推过行界，落到下一行的行首，使句法上的"断裂"与语义上的"迸裂"完全重合。全诗14行中有多处跨行（Haupt/darin、Aber/sein、der Bug/der Brust、Drehen/der Lenden、Rändern/aus），几乎没有一行是语法完整的——这正是里尔克"物诗"打破十四行诗匀称感的手段。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">前置第二格与复杂名词短语</h3>
+        <p class="grammar-item__quote">unter der Schultern durchsichtigem Sturz</p>
+        <div class="grammar-item__body">现代德语通常把第二格放在被修饰名词之后（der Sturz der Schultern）。此处里尔克采用古典的前置第二格语序：der Schultern（第二格复数）+ durchsichtigem Sturz（第三格单数，受 unter 支配）。阅读这类结构的诀窍是先找介词及其支配的核心名词（unter … Sturz），再把前置的第二格挂回去。</div>
+      </article>
+      <article class="grammar-item">
+        <h3 class="grammar-item__title">十四行诗形式与语气的对位</h3>
+        <p class="grammar-item__quote">全诗结构：4+4+3+3 行</p>
+        <div class="grammar-item__body">本诗是标准的意大利式十四行（两个四行诗节 + 两个三行诗节），格律为五音步抑扬格，前八行韵式为抱韵 abba，后六行为 ccd/ede 变体。里尔克在最规整的古典诗体中放入最不规整的句法（几乎每行跨行、句号落在行中），形式的秩序与语言的紧张之间的张力，本身就是全诗关于"残缺之物为何仍完整"这一主题的形式回应。</div>
+      </article>      </div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">文学意象与文化背景</span>
+        <span class="section__de">Hintergrund</span>
+      </header>
+      <div class="prose"><p>《古风的阿波罗躯干残像》1908年夏天写于巴黎，是《新诗集·别集》的开篇之作。1905至1906年间里尔克曾任罗丹的秘书，罗丹关于"观看"的训练对他影响极深：他要求自己像雕塑家一样面对对象，让"物"自己说话，而不是抒发面对物时的感受。由此产生的作品被称为"物诗"（Dinggedicht），《豹》（本站编号11）与本诗是其中最著名的两首。</p>
+<p>诗中的雕像并无确切原型。学界一般认为里尔克综合了他在卢浮宫见到的希腊古风时期躯干像（如所谓"米利都的阿波罗"）的印象，但诗的重点并不在考古学的准确：他描写的是一件残缺到只剩躯干的作品为何反而比完整的作品更有力量。头部（也就是眼睛所在）的缺失被转化为一个悖论——正因为看不见眼睛，整个石体才成了眼睛："因为这里没有一处／不在看着你。"</p>
+<p>末句 "Du mußt dein Leben ändern"（你必须改变你的生活）是德语现代诗中被引用最多的句子之一。哲学家彼得·斯洛特戴克（Peter Sloterdijk）2009年直接以它作为专著《你必须改变你的生活》的书名，用来讨论人类的"操练"（Askese）与自我塑造。这一句之所以有力，恰恰在于它在语法与逻辑上都是"多余"的：前面十三行完成了一次关于艺术品内在光辉的严密推论，末句却突然跳出论证，把结论掷向读者。艺术在此不再是被观赏的对象，而成为一种要求。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文说明</span>
+        <span class="section__de">Anmerkung</span>
+      </header>
+      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译，重点保留三处：(1) 两组 "Sonst … könnte/stünde nicht …" 的反事实推论链，中文以"否则……不会……"对应；(2) 大量跨行造成的句法断裂，中文尽量以相应位置断句近似传达，但汉语无可分动词，第12—13行 "bräche … / aus" 的断裂无法还原；(3) 末行的突兀感，译文不添加任何连接词或缓冲。另需说明：德语 Schauen（凝视这一行为）与 Blick（目光）有别，译文以"凝视"对应前者。已知此诗存在多个中文译本（如冯至、绿原、林克、陈宁等译者的翻译），因版权原因本站不转载具体译本全文。</p></div>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">德文原文出处</span>
+        <span class="section__de">Quellen</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">Zeno.org — Rainer Maria Rilke: Sämtliche Werke, Band 1, Wiesbaden und Frankfurt a. M. 1955–1966, S. 555（„Der neuen Gedichte anderer Teil“）</span><a class="source-url" href="http://www.zeno.org/Literatur/M/Rilke,+Rainer+Maria/Gedichte/Der+neuen+Gedichte+anderer+Teil/Archa%C3%AFscher+Torso+Apollos" target="_blank" rel="noopener">http://www.zeno.org/Literatur/M/Rilke,+Rainer+Maria/Gedichte/Der+neuen+Gedichte+anderer+Teil/Archa%C3%AFscher+Torso+Apollos</a>
+        <span class="source-note">主来源。依据 Insel 版《里尔克全集》第1卷的数字化本，十四行完整，保留旧正字法 mußt；第11行行末作分号。</span>
+      </li>
+      <li>
+        <span class="source-name">textlog.de — Rainer Maria Rilke, „Archaïscher Torso Apollos“（Neue Gedichte）</span><a class="source-url" href="https://www.textlog.de/rilke/gedichte/archaischer-torso-apollos" target="_blank" rel="noopener">https://www.textlog.de/rilke/gedichte/archaischer-torso-apollos</a>
+        <span class="source-note">辅助来源，用于交叉核对分行、诗节划分与用词；与主来源逐词一致。另在其他流通版本中第11行行末可见中圆点（·）而非分号，详见校对记录。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">译文出处 · 版权</span>
+        <span class="section__de">Übersetzungsnachweis</span>
+      </header>
+      <ul class="source-list">
+      <li>
+        <span class="source-name">本站学习译文（中文）</span>
+        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在冯至、绿原、林克、陈宁等译者的中译本，因版权原因未转载全文。</span>
+      </li>
+    </ul>
+    </section>
+    <section class="section reveal">
+      <header class="section__head">
+        <span class="section__zh">校对记录</span>
+        <span class="section__de">Korrektorat</span>
+      </header>
+      <div class="prose"><p>德文正文以 Zeno.org 转录的 Insel 版《里尔克全集》第1卷（1955–1966，第555页）为主来源，以 textlog.de 的《新诗集》文本为辅助来源逐词核对，十四行内容、分行与诗节划分完全一致。需说明的差异：(1) 标点：第11行 "…wie Raubtierfelle" 行末，Zeno.org 依全集作分号（;），而部分流通版本（含若干在线选本）作中圆点（·）；本站从全集的分号。(2) 正字法：全集保留旧拼法 "mußt"，1996年正字法改革后应作 "musst"；本站保留原刊旧拼法并在逐行注释中说明。(3) 标题中的 Archaïscher 带分音符（ï），系里尔克原刊写法，现代转录中常被简化为 Archaischer，本站保留原写法，而 slug 与文件名因技术原因使用不带分音符的形式。此外，本站未直接查阅1908年 Insel 初版影印件，上述标点采择依据全集转录，属待进一步核实项。</p></div>
+    </section>
+    <section class="section reveal section--wide">
+      <header class="section__head">
+        <span class="section__zh">上线前质量 Checklist</span>
+        <span class="section__de">Prüfliste</span>
+      </header>
+            <ul class="checklist">        <li>确认作者：Rainer Maria Rilke</li>
+        <li>确认标题与出处：Der neuen Gedichte anderer Teil（1908）开篇</li>
+        <li>德文原文主来源：Zeno.org（Insel 版全集第1卷）</li>
+        <li>德文原文辅助来源：textlog.de</li>
+        <li>核对诗节、行数、标点</li>
+        <li>记录版本差异（第11行分号／中圆点；mußt/musst；Archaïscher 分音符）</li>
+        <li>查找已有中文译本（已知存在，未转载全文）</li>
+        <li>判断译文版权可用性（现代中译不可用；德文原文因作者1926年逝世已公版）</li>
+        <li>制作本站学习译文（中文）</li>
+        <li>提取重点词汇</li>
+        <li>校对 lemma 与词性</li>
+        <li>补充动词变位</li>
+        <li>撰写语法要点</li>
+        <li>撰写背景说明</li>
+        <li>撰写 image brief</li>
+        <li class="pending">生成 AI 配图</li>
+        <li class="pending">页面视觉检查</li>
+        <li class="pending">对照1908年 Insel 初版核实标点（现依全集转录）</li>
+        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其 Bug / Sturz 二词的双关处理）</li>      </ul>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+    <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+  </footer>
+  <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+  </button>
+<script>
+  (function () {
+    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+    }
+    // 朱批旁注联动：诗行 ↔ 注释互相高亮
+    function highlight(id, on, source) {
+      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+      var sel = '[data-noteref="' + escId + '"]';
+      document.querySelectorAll(sel).forEach(function (p) {
+        if (p !== source) p.classList.toggle('is-linked', on);
+      });
+      if (source) source.classList.toggle('is-self', on);
+    }
+    // 鼠标：悬停诗行或注释
+    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+      var id = el.getAttribute('data-noteref');
+      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
+    });
+    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+    document.querySelectorAll('.refmark a').forEach(function (a) {
+      var vline = a.closest('.vline[data-noteref]');
+      if (!vline) return;
+      var id = vline.getAttribute('data-noteref');
+      a.addEventListener('focus', function () { highlight(id, true, vline); });
+      a.addEventListener('blur', function () { highlight(id, false, vline); });
+    });
+    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      var syncToggle = function () {
+        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+      };
+      syncToggle();
+      toggle.addEventListener('click', function () {
+        var cur = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        syncToggle();
+      });
+    }
+    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+    var modals = document.querySelectorAll('dialog.modal');
+    modals.forEach(function (modal) {
+      var closeBtn = modal.querySelector('.modal__close');
+      // ✕ 关闭
+      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+      // 点遮罩（dialog 自身区域）关闭
+      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+      modal.addEventListener('close', function () {
+        document.body.classList.remove('modal-open');
+        var t = modal._trigger;
+        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      });
+    });
+    var triggers = document.querySelectorAll('.brief-trigger');
+    triggers.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var id = btn.getAttribute('data-modal');
+        var modal = id && document.getElementById(id);
+        if (!modal || typeof modal.showModal !== 'function') return;
+        if (modal.open) { modal.close(); return; }
+        modal._trigger = btn;
+        btn.setAttribute('aria-expanded', 'true');
+        modal.showModal();
+        document.body.classList.add('modal-open');
+        var c = modal.querySelector('.modal__close');
+        if (c) c.focus();
+      });
+    });
+    // 回到顶部按钮：滚动一段距离后才显示
+    var toTop = document.querySelector('.to-top');
+    if (toTop) {
+      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var syncToTop = function () {
+        if (window.scrollY > 420) toTop.classList.add('is-visible');
+        else toTop.classList.remove('is-visible');
+      };
+      window.addEventListener('scroll', syncToTop, { passive: true });
+      syncToTop();
+      toTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
