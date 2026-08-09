@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,12 @@
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../theme.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="site-header__inner">
@@ -35,485 +39,595 @@
           <a href="../index.html">诗歌总览</a>
           <a href="../about.html">关于 · 校对</a>
         </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
+          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
         </a>
         <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
+          </svg>
         </button>
       </div>
     </div>
   </header>
   <main>
-    
+
     <div class="poem-shell">
 
-    <nav class="poem-nav" aria-label="诗歌导航">
-<a class="poem-nav__link poem-nav__prev" href="archaischer-torso-apollos.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">古风的阿波罗躯干残像</span></a>
-<a class="poem-nav__link poem-nav__next" href="wenn-nicht-mehr-zahlen-und-figuren.html" rel="next"><span class="poem-nav__title">当数字与图形不再</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-    </nav>
-    <header class="poem-titleblock reveal">
-      <h1 class="poem-titleblock__de poem-titleblock__de--long">Das Mädchen aus der Fremde</h1>
-      <p class="poem-titleblock__author">Friedrich Schiller</p>
-      <p class="poem-titleblock__zh">来自远方的少女</p>
-      <p class="poem-titleblock__author-zh">弗里德里希·席勒</p>
-      <div class="poem-titleblock__biblio">
-        <p>《诗集（1789—1805）》</p>
-        <p>魏玛古典主义</p>
-        <p>1796年作，1797年发表于席勒主编的《缪斯年鉴 1797》</p>
-      </div>
-      <div class="poem-titleblock__meta">
-        <span class="tag tag--b">B1</span>
-        <span class="tag ">寓言</span>
-        <span class="tag ">春天</span>
-        <span class="tag ">诗歌本身</span>
-        <span class="tag ">馈赠</span>
-        <span class="tag ">格言诗</span>
-        <span class="tag ">首次收录席勒</span>
-      </div>
-          <figure class="image-slot image-slot--filled">
-      <img src="../images/das-maedchen-aus-der-fremde.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
-    </figure>
-    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-      <header class="modal__head">
-        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      <nav class="poem-nav" aria-label="诗歌导航">
+        <a class="poem-nav__link poem-nav__prev" href="archaischer-torso-apollos.html" rel="prev"><span
+            class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">古风的阿波罗躯干残像</span></a>
+        <a class="poem-nav__link poem-nav__next" href="wenn-nicht-mehr-zahlen-und-figuren.html" rel="next"><span
+            class="poem-nav__title">当数字与图形不再</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <header class="poem-titleblock reveal">
+        <h1 class="poem-titleblock__de poem-titleblock__de--long">Das Mädchen aus der Fremde</h1>
+        <p class="poem-titleblock__author">Friedrich Schiller</p>
+        <p class="poem-titleblock__zh">来自远方的少女</p>
+        <p class="poem-titleblock__author-zh">弗里德里希·席勒</p>
+        <div class="poem-titleblock__biblio">
+          <p>《诗集（1789—1805）》</p>
+          <p>魏玛古典主义</p>
+          <p>1796年作，1797年发表于席勒主编的《缪斯年鉴 1797》</p>
+        </div>
+        <div class="poem-titleblock__meta">
+          <span class="tag tag--b">B1</span>
+          <span class="tag ">寓言</span>
+          <span class="tag ">春天</span>
+          <span class="tag ">诗歌本身</span>
+          <span class="tag ">馈赠</span>
+          <span class="tag ">格言诗</span>
+          <span class="tag ">首次收录席勒</span>
+        </div>
+        <figure class="image-slot image-slot--filled">
+          <img src="../images/das-maedchen-aus-der-fremde.png"
+            alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+        </figure>
+        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
+            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+          <header class="modal__head">
+            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+          </header>
+          <div class="modal__body">
+            <div class="image-slot">
+              <dl>
+                <dt>意象</dt>
+                <dd>早春的阿尔卑斯前山谷地，几间简陋牧屋与羊群散布在尚未完全返青的草坡上，一位身着素色长袍的年轻女子立于谷口，手中捧着与季节不相称的鲜花与成熟果实</dd>
+                <dt>情绪</dt>
+                <dd>清朗、温和、略带不可接近的距离感；应传达"受欢迎但不被拥有"的分寸，而非童话式的甜美</dd>
+                <dt>画面元素</dt>
+                <dd>残雪未尽的山坡、初绽的草地、几只羊与牧人远景、盘旋上升的云雀、女子手中或篮中的花与果、清晨的斜射光</dd>
+                <dt>时代感</dt>
+                <dd>18世纪末中欧乡村，服饰与建筑应为该时代样式</dd>
+                <dt>推荐风格</dt>
+                <dd>19世纪浪漫主义风景油画风格，清冷的早春光线，色调以灰绿、乳白与淡金为主，人物在画面中占比不宜过大，应与风景保持平衡</dd>
+                <dt>比例</dt>
+                <dd>4:3（横版）</dd>
+                <dt>禁忌</dt>
+                <dd>不得出现文字、水印；不得出现光环、翅膀等神性符号（诗中刻意不点明来历，画面亦不应给出答案）；不得作面部特写或明显的表情刻画；不得出现现代农具、电线、公路</dd>
+              </dl>
+              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+            </div>
+          </div>
+        </dialog>
       </header>
-      <div class="modal__body">
-        <div class="image-slot">
-      <dl>
-        <dt>意象</dt><dd>早春的阿尔卑斯前山谷地，几间简陋牧屋与羊群散布在尚未完全返青的草坡上，一位身着素色长袍的年轻女子立于谷口，手中捧着与季节不相称的鲜花与成熟果实</dd>
-        <dt>情绪</dt><dd>清朗、温和、略带不可接近的距离感；应传达"受欢迎但不被拥有"的分寸，而非童话式的甜美</dd>
-        <dt>画面元素</dt><dd>残雪未尽的山坡、初绽的草地、几只羊与牧人远景、盘旋上升的云雀、女子手中或篮中的花与果、清晨的斜射光</dd>
-        <dt>时代感</dt><dd>18世纪末中欧乡村，服饰与建筑应为该时代样式</dd>
-        <dt>推荐风格</dt><dd>19世纪浪漫主义风景油画风格，清冷的早春光线，色调以灰绿、乳白与淡金为主，人物在画面中占比不宜过大，应与风景保持平衡</dd>
-        <dt>比例</dt><dd>4:3（横版）</dd>
-        <dt>禁忌</dt><dd>不得出现文字、水印；不得出现光环、翅膀等神性符号（诗中刻意不点明来历，画面亦不应给出答案）；不得作面部特写或明显的表情刻画；不得出现现代农具、电线、公路</dd>
-      </dl>
-          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+      <section class="section reveal section--parallel">
+        <header class="section__head">
+          <span class="section__zh">原诗 · 译文</span>
+          <span class="section__de">Gedicht · Übertragung</span>
+        </header>
+        <div class="parallel">
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="1"><span class="linetext">In einem Tal bei armen Hirten<sup
+                    class="refmark"><a href="#note-1">1</a></sup></span></div>
+              <div class="pline__zh">在一道山谷里，贫苦的牧人中间，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="2"><span class="linetext">Erschien mit jedem jungen Jahr,<sup
+                    class="refmark"><a href="#note-2">2</a></sup></span></div>
+              <div class="pline__zh">每当年岁转新，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="3"><span class="linetext">Sobald die ersten Lerchen
+                  schwirrten,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+              <div class="pline__zh">第一批云雀振翅飞起时，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Ein Mädchen, schön und wunderbar.</span></div>
+              <div class="pline__zh">便出现一位少女，美丽而奇异。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Sie war nicht in dem Tal geboren,</span></div>
+              <div class="pline__zh">她并非生在这山谷，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="4"><span class="linetext">Man wußte nicht, woher sie kam,<sup
+                    class="refmark"><a href="#note-4">4</a></sup></span></div>
+              <div class="pline__zh">没有人知道她从何而来，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Und schnell war ihre Spur verloren,</span></div>
+              <div class="pline__zh">而她的踪迹很快便消失，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Sobald das Mädchen Abschied nahm.</span></div>
+              <div class="pline__zh">只要那少女一告别。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Beseligend war ihre Nähe,</span></div>
+              <div class="pline__zh">她在近旁令人心生福乐，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Und alle Herzen wurden weit,</span></div>
+              <div class="pline__zh">所有的心都变得开阔，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="5"><span class="linetext">Doch eine Würde, eine Höhe<sup
+                    class="refmark"><a href="#note-5">5</a></sup></span></div>
+              <div class="pline__zh">然而某种尊严、某种高远</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="6"><span class="linetext">Entfernte die Vertraulichkeit.<sup
+                    class="refmark"><a href="#note-6">6</a></sup></span></div>
+              <div class="pline__zh">隔开了亲昵。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Sie brachte Blumen mit und Früchte,</span></div>
+              <div class="pline__zh">她带来花朵，也带来果实，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="7"><span class="linetext">Gereift auf einer andern Flur,<sup
+                    class="refmark"><a href="#note-7">7</a></sup></span></div>
+              <div class="pline__zh">它们成熟于另一片田野，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">In einem andern Sonnenlichte,</span></div>
+              <div class="pline__zh">在另一种阳光之下，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">In einer glücklichern Natur.</span></div>
+              <div class="pline__zh">在一种更幸福的自然之中。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="8"><span class="linetext">Und teilte jedem eine Gabe,<sup
+                    class="refmark"><a href="#note-8">8</a></sup></span></div>
+              <div class="pline__zh">她分给每个人一份馈赠，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="8"><span class="linetext">Dem Früchte, jenem Blumen aus,<sup
+                    class="refmark"><a href="#note-8">8</a></sup></span></div>
+              <div class="pline__zh">给这人果实，给那人花朵，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="9"><span class="linetext">Der Jüngling und der Greis am
+                  Stabe,<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
+              <div class="pline__zh">青年也好，拄杖的老者也好，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Ein jeder ging beschenkt nach Haus.</span></div>
+              <div class="pline__zh">人人都带着礼物回家。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Willkommen waren alle Gäste,</span></div>
+              <div class="pline__zh">所有的客人都受到欢迎，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="10"><span class="linetext">Doch nahte sich ein liebend
+                  Paar,<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
+              <div class="pline__zh">但若有一对相爱的人走近，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="11"><span class="linetext">Dem reichte sie der Gaben beste,<sup
+                    class="refmark"><a href="#note-11">11</a></sup></span></div>
+              <div class="pline__zh">她便把馈赠中最好的，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="11"><span class="linetext">Der Blumen allerschönste dar.<sup
+                    class="refmark"><a href="#note-11">11</a></sup></span></div>
+              <div class="pline__zh">把花朵中最美的，递给他们。</div>
+            </div>
+          </div>
+          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留六个四行诗节的均衡节奏与全诗"不点明谜底"的寓言笔法</p>
         </div>
-      </div>
-    </dialog>
-    </header>
-    <section class="section reveal section--parallel">
-      <header class="section__head">
-        <span class="section__zh">原诗 · 译文</span>
-        <span class="section__de">Gedicht · Übertragung</span>
-      </header>
-            <div class="parallel">
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="1"><span class="linetext">In einem Tal bei armen Hirten<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
-          <div class="pline__zh">在一道山谷里，贫苦的牧人中间，</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">逐行注释</span>
+          <span class="section__de">Zeilenkommentar</span>
+        </header>
+        <div class="lnotes">
+          <article class="lnote" id="note-1" data-noteref="1">
+            <span class="lnote__mark">1</span>
+            <p class="lnote__de">In einem Tal bei armen Hirten</p>
+            <p class="lnote__zh">全诗以地点状语开篇，主语 "Ein Mädchen" 直到第4行才出现，是德语诗歌常见的悬置句式。bei +
+              第三格在此表示"在……人中间、在……处"。牧人（Hirten）与山谷构成一个田园牧歌（Idylle）式的封闭世界。</p>
+          </article>
+          <article class="lnote" id="note-2" data-noteref="2">
+            <span class="lnote__mark">2</span>
+            <p class="lnote__de">Erschien mit jedem jungen Jahr,</p>
+            <p class="lnote__zh">das junge Jahr 是"新的一年、初春"的诗性说法；mit +
+              第三格表示"随着……一同"。erscheinen（显现）一词带有宗教／神显的色彩，为少女的非人间来历埋下伏笔。</p>
+          </article>
+          <article class="lnote" id="note-3" data-noteref="3">
+            <span class="lnote__mark">3</span>
+            <p class="lnote__de">Sobald die ersten Lerchen schwirrten,</p>
+            <p class="lnote__zh">sobald 是引导时间从句的连词（"一旦、只要……就"），从句中动词后置（schwirrten）。schwirren
+              拟声，指小鸟或昆虫振翅发出的嗡嗡／飕飕声。云雀是德语文学中春天最典型的报信者。</p>
+          </article>
+          <article class="lnote" id="note-4" data-noteref="4">
+            <span class="lnote__mark">4</span>
+            <p class="lnote__de">Man wußte nicht, woher sie kam,</p>
+            <p class="lnote__zh">woher（从何处）引导间接疑问从句。wußte 为旧正字法（今作 wusste）。全诗刻意不解释少女的来历——这一"不解释"本身就是寓言的核心手法。</p>
+          </article>
+          <article class="lnote" id="note-5" data-noteref="5">
+            <span class="lnote__mark">5</span>
+            <p class="lnote__de">Doch eine Würde, eine Höhe</p>
+            <p class="lnote__zh">两个抽象名词并置且都带不定冠词（eine Würde, eine Höhe），使"尊严"与"高远"从属性变成了两种具体存在的力量。Höhe 在此是转喻，指她所处的精神高度。
+            </p>
+          </article>
+          <article class="lnote" id="note-6" data-noteref="6">
+            <span class="lnote__mark">6</span>
+            <p class="lnote__de">Entfernte die Vertraulichkeit.</p>
+            <p class="lnote__zh">entfernen 在此为及物动词"使远离、去除"，主语是上一行的两个名词。die
+              Vertraulichkeit（亲昵、随便）是德语中一个略带贬义的词，指过分不设防的亲近。这两行是全诗的转折：她令人幸福，却不容亲昵。</p>
+          </article>
+          <article class="lnote" id="note-7" data-noteref="7">
+            <span class="lnote__mark">7</span>
+            <p class="lnote__de">Gereift auf einer andern Flur,</p>
+            <p class="lnote__zh">gereift 是 reifen 的第二分词，作后置定语修饰前一行的 Blumen und Früchte（相当于一个省略了 die … waren 的关系从句）。die
+              Flur 意为田野、原野（与"走廊 der Flur"同形不同性，须靠冠词区分）。andern 为 anderen 的省音形式。</p>
+          </article>
+          <article class="lnote" id="note-8" data-noteref="8">
+            <span class="lnote__mark">8</span>
+            <p class="lnote__de">Und teilte jedem eine Gabe, / Dem Früchte, jenem Blumen aus,</p>
+            <p class="lnote__zh">可分动词 austeilen（分发）被拆开：teilte…aus，前缀跨行落在下一行末。dem … jenem … 是"这一个……那一个……"的对举用法（第三格），今日多说
+              dem einen … dem anderen …。</p>
+          </article>
+          <article class="lnote" id="note-9" data-noteref="9">
+            <span class="lnote__mark">9</span>
+            <p class="lnote__de">Der Jüngling und der Greis am Stabe,</p>
+            <p class="lnote__zh">青年与拄杖的老者构成"人生两极"的提喻（Merismus），意即"所有人"。der Stab 指手杖；am Stabe 是带旧式第三格词尾 -e 的形式（今作 am
+              Stab）。</p>
+          </article>
+          <article class="lnote" id="note-10" data-noteref="10">
+            <span class="lnote__mark">10</span>
+            <p class="lnote__de">Doch nahte sich ein liebend Paar,</p>
+            <p class="lnote__zh">sich nahen 是 sich nähern（走近）的古雅形式。liebend 是现在分词作定语，且未加词尾变化（今应作 ein liebendes
+              Paar）——这种"不变格形容词"是18世纪诗歌为凑音节而保留的古法。</p>
+          </article>
+          <article class="lnote" id="note-11" data-noteref="11">
+            <span class="lnote__mark">11</span>
+            <p class="lnote__de">Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.</p>
+            <p class="lnote__zh">可分动词 darreichen（呈递、奉上）被拆开，前缀 dar 落在全诗最后一个词。der Gaben beste / der Blumen allerschönste
+              是"前置第二格 + 形容词最高级名词化"的古典结构，相当于 die beste der Gaben、die allerschönste der
+              Blumen。全诗以"相爱的人"获得最好的馈赠作结，这是理解整首寓言的钥匙。</p>
+          </article>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="2"><span class="linetext">Erschien mit jedem jungen Jahr,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
-          <div class="pline__zh">每当年岁转新，</div>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">重点词汇</span>
+          <span class="section__de">Wortschatz</span>
+        </header>
+        <div class="vocab-list">
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">der Hirt, -en / der Hirte, -n</span></div>
+            <span class="vocab-card__pos">n.（阳性，弱变化）</span>
+            <div class="vocab-card__meaning">牧人、牧羊人</div>
+            <div class="vocab-card__note">弱变化名词，除第一格单数外均加 -en；在田园诗与《圣经》语汇中都属核心词。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">schwirren</span></div>
+            <span class="vocab-card__pos">v.（弱变化，拟声）</span>
+            <div class="vocab-card__meaning">（振翅）飕飕作响、嗡嗡飞动</div>
+            <div class="vocab-card__note">多用于鸟、昆虫或箭矢快速掠过空气的声音；"es schwirrt mir im Kopf" 意为"我头晕脑胀"。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">beseligend</span></div>
+            <span class="vocab-card__pos">adj.（现在分词）</span>
+            <div class="vocab-card__meaning">令人幸福的、赐福的</div>
+            <div class="vocab-card__note">来自 beseligen（使极乐），词根 selig（幸福的、蒙福的、已故的）带宗教色彩；比 beglückend 更庄重。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Würde</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">尊严、庄重</div>
+            <div class="vocab-card__note">德国《基本法》第一条即以 "Die Würde des Menschen ist unantastbar"
+              开篇；席勒本人另有美学论文《论优美与尊严》（Über Anmut und Würde），此词在其思想中有专门分量。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Vertraulichkeit, -en</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">亲昵、随便；机密性</div>
+            <div class="vocab-card__note">来自 vertraulich（亲密的；机密的）；在本诗语境中指"过分随便的亲近"，略含贬义。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Flur, -en</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">田野、原野</div>
+            <div class="vocab-card__note">务必与 der Flur（阳性，走廊、门厅）区分——两词同形而性别、词义完全不同，靠冠词辨别。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Gabe, -n</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">馈赠、礼物；天赋</div>
+            <div class="vocab-card__note">来自 geben；复合词 die Begabung（天赋）、die Mitgift（嫁妆）同源。诗中兼有"礼物"与"天赋恩赐"的双重回响。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">der Greis, -e</span></div>
+            <span class="vocab-card__pos">n.（阳性）</span>
+            <div class="vocab-card__meaning">老翁、白发老人</div>
+            <div class="vocab-card__note">书面雅语，比 der alte Mann 更具文学色彩；阴性为 die Greisin。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">darreichen</span></div>
+            <span class="vocab-card__pos">v.（可分，弱变化）</span>
+            <div class="vocab-card__meaning">呈递、奉上</div>
+            <div class="vocab-card__note">古雅用词，多用于庄重场合（如献上礼物、圣餐）；诗中前缀 dar 被推到全诗最后一个位置。</div>
+          </div>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="3"><span class="linetext">Sobald die ersten Lerchen schwirrten,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-          <div class="pline__zh">第一批云雀振翅飞起时，</div>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">动词变位</span>
+          <span class="section__de">Konjugation</span>
+        </header>
+        <div class="verb-table-wrap">
+          <table class="verb-table">
+            <thead>
+              <tr>
+                <th>Infinitiv</th>
+                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
+                <th>Präteritum</th>
+                <th>Perfekt</th>
+                <th>Partizip II</th>
+                <th>Konjunktiv II</th>
+                <th>Hilfsverb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="de">erscheinen</td>
+                <td class="de">erscheint</td>
+                <td class="de">erschien</td>
+                <td class="de">ist erschienen</td>
+                <td class="de">erschienen</td>
+                <td class="de">erschiene</td>
+                <td>sein</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 强变化（ei–ie–ie）；诗中用过去时 Erschien 置于句首（因前面是状语，主语后置）。</td>
+              </tr>
+              <tr>
+                <td class="de">wissen</td>
+                <td class="de">weiß</td>
+                <td class="de">wusste（旧 wußte）</td>
+                <td class="de">hat gewusst</td>
+                <td class="de">gewusst</td>
+                <td class="de">wüsste</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 不规则动词（属"变现在时"类，现在时单数与复数词干不同）；诗中用旧正字法 wußte。</td>
+              </tr>
+              <tr>
+                <td class="de">mitbringen</td>
+                <td class="de">bringt mit</td>
+                <td class="de">brachte mit</td>
+                <td class="de">hat mitgebracht</td>
+                <td class="de">mitgebracht</td>
+                <td class="de">brächte mit</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 混合变化的可分动词；诗中作 "Sie brachte Blumen mit und Früchte"，注意宾语被前缀 mit 从中间切开，这是德语框型结构的典型效果。
+                </td>
+              </tr>
+              <tr>
+                <td class="de">austeilen</td>
+                <td class="de">teilt aus</td>
+                <td class="de">teilte aus</td>
+                <td class="de">hat ausgeteilt</td>
+                <td class="de">ausgeteilt</td>
+                <td class="de">teilte aus</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 可分动词；诗中 teilte 在第17行、前缀 aus 跨行落在第18行末。</td>
+              </tr>
+              <tr>
+                <td class="de">sich nahen</td>
+                <td class="de">naht sich</td>
+                <td class="de">nahte sich</td>
+                <td class="de">hat sich genaht</td>
+                <td class="de">genaht</td>
+                <td class="de">nahte sich</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 古雅形式，现代德语用 sich nähern（+ 第三格）；诗中作 "nahte sich ein liebend Paar"。</td>
+              </tr>
+              <tr>
+                <td class="de">darreichen</td>
+                <td class="de">reicht dar</td>
+                <td class="de">reichte dar</td>
+                <td class="de">hat dargereicht</td>
+                <td class="de">dargereicht</td>
+                <td class="de">reichte dar</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 可分动词；诗中 reichte 在第23行、前缀 dar 落在全诗末词，形成极大的框型跨度。</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Ein Mädchen, schön und wunderbar.</span></div>
-          <div class="pline__zh">便出现一位少女，美丽而奇异。</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">语法要点</span>
+          <span class="section__de">Grammatik</span>
+        </header>
+        <div class="grammar-list">
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">可分动词的框型结构与跨行拆解</h3>
+            <p class="grammar-item__quote">Und teilte jedem eine Gabe, / Dem Früchte, jenem Blumen aus … Dem reichte sie
+              der Gaben beste, / Der Blumen allerschönste dar.</p>
+            <div class="grammar-item__body">德语可分动词把词干与前缀分置于句子两端，中间夹住所有其他成分，形成"框型结构"（Satzklammer）。席勒在最后两节把这个框拉到极限：teilte
+              … aus 跨两行，reichte … dar 也跨两行，且 dar 落在全诗的最后一个词上。读这类句子时，务必先扫到句末找出前缀，再回头确定动词的真实含义——teilen（分）与
+              austeilen（分发）、reichen（够得着／递）与 darreichen（奉上）意思并不相同。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">前置第二格 + 形容词最高级名词化</h3>
+            <p class="grammar-item__quote">Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.</p>
+            <div class="grammar-item__body">"der Gaben beste" 即现代德语的 "die beste der Gaben"（诸馈赠中最好的那一份）：第二格 der Gaben
+              前置，形容词最高级 beste 名词化后作宾语。allerschönste 中的 aller- 是加强前缀（"最最……"），常见于
+              allerbeste、allerliebste。这种前置第二格语序在18世纪诗歌中很常见，现代德语已改为后置。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">sobald 引导的时间从句</h3>
+            <p class="grammar-item__quote">Sobald die ersten Lerchen schwirrten … Sobald das Mädchen Abschied nahm.</p>
+            <div class="grammar-item__body">sobald 是从属连词，意为"一旦、只要……就"，从句中变位动词必须放在句末（schwirrten / nahm）。全诗两次使用
+              sobald，一次标记来临，一次标记离去，使少女的出现被牢牢框定在一个循环的时间结构里。注意与 so bald（分写，意为"这么快"）区分。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">不带词尾的定语形容词（古法）</h3>
+            <p class="grammar-item__quote">Doch nahte sich ein liebend Paar,</p>
+            <div class="grammar-item__body">按现代规则应作 "ein liebendes Paar"（中性第一格弱变化后应有
+              -es）。18世纪诗歌为迁就音节数，常保留中古德语遗留的"无词尾定语形容词"。歌德《野玫瑰》中的 "ein Röslein stehn"
+              属同类现象。学习者应能识别这是格律需要，而不是错误，同时在自己写作时使用规范形式。</div>
+          </article>
         </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Sie war nicht in dem Tal geboren,</span></div>
-          <div class="pline__zh">她并非生在这山谷，</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">文学意象与文化背景</span>
+          <span class="section__de">Hintergrund</span>
+        </header>
+        <div class="prose">
+          <p>《来自远方的少女》作于1796年，次年刊于席勒自己主编的《缪斯年鉴
+            1797》，属于他与歌德结盟后创作力最旺盛的时期（同一年他还写下了《潜水者》《手套》等著名叙事诗）。全诗六节二十四行，四音步抑扬格、交叉韵，语言极其平易——没有一个生僻词，没有一句复杂的哲学表述。</p>
+          <p>
+            它的难点全在"这少女是谁"这个问题上，而席勒始终不作回答。最通行的读法是把她理解为诗艺（Poesie）本身：她每年春天从别处来到贫苦的日常世界，带来在"另一种阳光下"成熟的果实，让人人有所得，却拒绝被亲昵地占有；而她把最好的馈赠留给"相爱的人"。这一读法与席勒在《审美教育书简》（1795）中的核心思想吻合：艺术不是从属于现实的装饰，而是来自另一秩序的赠礼，它使人在"游戏"中恢复完整。也有研究者把她读作春天本身、爱情、青春，或干脆读作理想（das
+            Ideal）。席勒在1803年的一封信中曾拒绝为此诗给出唯一解释，认为其魅力恰在于寓意的开放。</p>
+          <p>这首诗在德语教育史上有特殊位置：它常被选作学生接触"象征"与"寓言"区别的第一课——因为它是一首完整的寓言，却没有配上钥匙。舒伯特（D 117 与 D
+            252，1815年两度谱曲）、卡尔·勒韦等作曲家都为它写过艺术歌曲。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="4"><span class="linetext">Man wußte nicht, woher sie kam,<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
-          <div class="pline__zh">没有人知道她从何而来，</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">译文说明</span>
+          <span class="section__de">Anmerkung</span>
+        </header>
+        <div class="prose">
+          <p>中文译文为本站学习译文（AI
+            辅助），采用直译，力求语言与原诗一样平易，不添加任何指向"她是谁"的解释性词语——这是本诗翻译中最重要的一条自我约束。第五、六节的可分动词框型（teilte…aus、reichte…dar）在中文中无法保留，译文以"分给……""把……递给"处理。第六节
+            "der Gaben beste / der Blumen allerschönste"
+            的前置第二格结构译为"馈赠中最好的／花朵中最美的"，保留了原句两个并列宾语的递进。已知此诗存在钱春绮、张玉书等译者的中译本，因版权原因本站不转载具体译本全文。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Und schnell war ihre Spur verloren,</span></div>
-          <div class="pline__zh">而她的踪迹很快便消失，</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">德文原文出处</span>
+          <span class="section__de">Quellen</span>
+        </header>
+        <ul class="source-list">
+          <li>
+            <span class="source-name">Zeno.org — Friedrich Schiller: Sämtliche Werke, Band 1, München 1962, S.
+              255–256（„Das Mädchen aus der Fremde“）</span><a class="source-url"
+              href="http://www.zeno.org/Literatur/M/Schiller,+Friedrich/Gedichte/Gedichte+(1789-1805)/Das+M%C3%A4dchen+aus+der+Fremde"
+              target="_blank"
+              rel="noopener">http://www.zeno.org/Literatur/M/Schiller,+Friedrich/Gedichte/Gedichte+(1789-1805)/Das+M%C3%A4dchen+aus+der+Fremde</a>
+            <span class="source-note">主来源。依 Hanser 版《席勒全集》第1卷数字化本，六节二十四行完整，保留旧正字法 wußte。</span>
+          </li>
+          <li>
+            <span class="source-name">gedichte7.de — „Das Mädchen aus der Fremde – Schiller“</span><a class="source-url"
+              href="https://www.gedichte7.de/das-maedchen-aus-der-fremde.html" target="_blank"
+              rel="noopener">https://www.gedichte7.de/das-maedchen-aus-der-fremde.html</a>
+            <span class="source-note">辅助来源。六节二十四行与主来源逐词、逐标点完全一致（含 wußte 的旧拼法），用于独立交叉核对。</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">译文出处 · 版权</span>
+          <span class="section__de">Übersetzungsnachweis</span>
+        </header>
+        <ul class="source-list">
+          <li>
+            <span class="source-name">本站学习译文（中文）</span>
+            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮、张玉书等译者的中译本，因版权原因未转载全文。</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">校对记录</span>
+          <span class="section__de">Korrektorat</span>
+        </header>
+        <div class="prose">
+          <p>德文正文通过两个独立来源（Zeno.org 转录的 Hanser 版《席勒全集》第1卷，与
+            gedichte7.de）逐词逐标点核对，六节各四行，两来源完全一致，未发现任何异文——这在本站收录的诗作中较为少见，可信度较高。仅有一处需要说明：第6行 "wußte" 为1996年正字法改革前的写法，今应作
+            "wusste"；本站保留全集所依据的旧拼法，并在词汇与动词变位表中给出现代形式。关于创作与发表年代（1796年作、刊于《缪斯年鉴
+            1797》），本站依据通行的席勒研究结论，未直接查阅《缪斯年鉴》影印件，属待进一步核实项。</p>
+          <p>【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B
+            不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1
+            个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
+            SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Sobald das Mädchen Abschied nahm.</span></div>
-          <div class="pline__zh">只要那少女一告别。</div>
-        </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Beseligend war ihre Nähe,</span></div>
-          <div class="pline__zh">她在近旁令人心生福乐，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Und alle Herzen wurden weit,</span></div>
-          <div class="pline__zh">所有的心都变得开阔，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="5"><span class="linetext">Doch eine Würde, eine Höhe<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-          <div class="pline__zh">然而某种尊严、某种高远</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="6"><span class="linetext">Entfernte die Vertraulichkeit.<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
-          <div class="pline__zh">隔开了亲昵。</div>
-        </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Sie brachte Blumen mit und Früchte,</span></div>
-          <div class="pline__zh">她带来花朵，也带来果实，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="7"><span class="linetext">Gereift auf einer andern Flur,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
-          <div class="pline__zh">它们成熟于另一片田野，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">In einem andern Sonnenlichte,</span></div>
-          <div class="pline__zh">在另一种阳光之下，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">In einer glücklichern Natur.</span></div>
-          <div class="pline__zh">在一种更幸福的自然之中。</div>
-        </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="8"><span class="linetext">Und teilte jedem eine Gabe,<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-          <div class="pline__zh">她分给每个人一份馈赠，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="8"><span class="linetext">Dem Früchte, jenem Blumen aus,<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-          <div class="pline__zh">给这人果实，给那人花朵，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="9"><span class="linetext">Der Jüngling und der Greis am Stabe,<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
-          <div class="pline__zh">青年也好，拄杖的老者也好，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Ein jeder ging beschenkt nach Haus.</span></div>
-          <div class="pline__zh">人人都带着礼物回家。</div>
-        </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Willkommen waren alle Gäste,</span></div>
-          <div class="pline__zh">所有的客人都受到欢迎，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="10"><span class="linetext">Doch nahte sich ein liebend Paar,<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
-          <div class="pline__zh">但若有一对相爱的人走近，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="11"><span class="linetext">Dem reichte sie der Gaben beste,<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
-          <div class="pline__zh">她便把馈赠中最好的，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="11"><span class="linetext">Der Blumen allerschönste dar.<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
-          <div class="pline__zh">把花朵中最美的，递给他们。</div>
-        </div>
-      </div>
-        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留六个四行诗节的均衡节奏与全诗"不点明谜底"的寓言笔法</p>
-      </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">逐行注释</span>
-        <span class="section__de">Zeilenkommentar</span>
-      </header>
-            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
-        <span class="lnote__mark">1</span>
-        <p class="lnote__de">In einem Tal bei armen Hirten</p>
-        <p class="lnote__zh">全诗以地点状语开篇，主语 "Ein Mädchen" 直到第4行才出现，是德语诗歌常见的悬置句式。bei + 第三格在此表示"在……人中间、在……处"。牧人（Hirten）与山谷构成一个田园牧歌（Idylle）式的封闭世界。</p>
-      </article>
-      <article class="lnote" id="note-2" data-noteref="2">
-        <span class="lnote__mark">2</span>
-        <p class="lnote__de">Erschien mit jedem jungen Jahr,</p>
-        <p class="lnote__zh">das junge Jahr 是"新的一年、初春"的诗性说法；mit + 第三格表示"随着……一同"。erscheinen（显现）一词带有宗教／神显的色彩，为少女的非人间来历埋下伏笔。</p>
-      </article>
-      <article class="lnote" id="note-3" data-noteref="3">
-        <span class="lnote__mark">3</span>
-        <p class="lnote__de">Sobald die ersten Lerchen schwirrten,</p>
-        <p class="lnote__zh">sobald 是引导时间从句的连词（"一旦、只要……就"），从句中动词后置（schwirrten）。schwirren 拟声，指小鸟或昆虫振翅发出的嗡嗡／飕飕声。云雀是德语文学中春天最典型的报信者。</p>
-      </article>
-      <article class="lnote" id="note-4" data-noteref="4">
-        <span class="lnote__mark">4</span>
-        <p class="lnote__de">Man wußte nicht, woher sie kam,</p>
-        <p class="lnote__zh">woher（从何处）引导间接疑问从句。wußte 为旧正字法（今作 wusste）。全诗刻意不解释少女的来历——这一"不解释"本身就是寓言的核心手法。</p>
-      </article>
-      <article class="lnote" id="note-5" data-noteref="5">
-        <span class="lnote__mark">5</span>
-        <p class="lnote__de">Doch eine Würde, eine Höhe</p>
-        <p class="lnote__zh">两个抽象名词并置且都带不定冠词（eine Würde, eine Höhe），使"尊严"与"高远"从属性变成了两种具体存在的力量。Höhe 在此是转喻，指她所处的精神高度。</p>
-      </article>
-      <article class="lnote" id="note-6" data-noteref="6">
-        <span class="lnote__mark">6</span>
-        <p class="lnote__de">Entfernte die Vertraulichkeit.</p>
-        <p class="lnote__zh">entfernen 在此为及物动词"使远离、去除"，主语是上一行的两个名词。die Vertraulichkeit（亲昵、随便）是德语中一个略带贬义的词，指过分不设防的亲近。这两行是全诗的转折：她令人幸福，却不容亲昵。</p>
-      </article>
-      <article class="lnote" id="note-7" data-noteref="7">
-        <span class="lnote__mark">7</span>
-        <p class="lnote__de">Gereift auf einer andern Flur,</p>
-        <p class="lnote__zh">gereift 是 reifen 的第二分词，作后置定语修饰前一行的 Blumen und Früchte（相当于一个省略了 die … waren 的关系从句）。die Flur 意为田野、原野（与"走廊 der Flur"同形不同性，须靠冠词区分）。andern 为 anderen 的省音形式。</p>
-      </article>
-      <article class="lnote" id="note-8" data-noteref="8">
-        <span class="lnote__mark">8</span>
-        <p class="lnote__de">Und teilte jedem eine Gabe, / Dem Früchte, jenem Blumen aus,</p>
-        <p class="lnote__zh">可分动词 austeilen（分发）被拆开：teilte…aus，前缀跨行落在下一行末。dem … jenem … 是"这一个……那一个……"的对举用法（第三格），今日多说 dem einen … dem anderen …。</p>
-      </article>
-      <article class="lnote" id="note-9" data-noteref="9">
-        <span class="lnote__mark">9</span>
-        <p class="lnote__de">Der Jüngling und der Greis am Stabe,</p>
-        <p class="lnote__zh">青年与拄杖的老者构成"人生两极"的提喻（Merismus），意即"所有人"。der Stab 指手杖；am Stabe 是带旧式第三格词尾 -e 的形式（今作 am Stab）。</p>
-      </article>
-      <article class="lnote" id="note-10" data-noteref="10">
-        <span class="lnote__mark">10</span>
-        <p class="lnote__de">Doch nahte sich ein liebend Paar,</p>
-        <p class="lnote__zh">sich nahen 是 sich nähern（走近）的古雅形式。liebend 是现在分词作定语，且未加词尾变化（今应作 ein liebendes Paar）——这种"不变格形容词"是18世纪诗歌为凑音节而保留的古法。</p>
-      </article>
-      <article class="lnote" id="note-11" data-noteref="11">
-        <span class="lnote__mark">11</span>
-        <p class="lnote__de">Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.</p>
-        <p class="lnote__zh">可分动词 darreichen（呈递、奉上）被拆开，前缀 dar 落在全诗最后一个词。der Gaben beste / der Blumen allerschönste 是"前置第二格 + 形容词最高级名词化"的古典结构，相当于 die beste der Gaben、die allerschönste der Blumen。全诗以"相爱的人"获得最好的馈赠作结，这是理解整首寓言的钥匙。</p>
-      </article>      </div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">重点词汇</span>
-        <span class="section__de">Wortschatz</span>
-      </header>
-            <div class="vocab-list">      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">der Hirt, -en / der Hirte, -n</span></div>
-        <span class="vocab-card__pos">n.（阳性，弱变化）</span>
-        <div class="vocab-card__meaning">牧人、牧羊人</div>
-        <div class="vocab-card__note">弱变化名词，除第一格单数外均加 -en；在田园诗与《圣经》语汇中都属核心词。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">schwirren</span></div>
-        <span class="vocab-card__pos">v.（弱变化，拟声）</span>
-        <div class="vocab-card__meaning">（振翅）飕飕作响、嗡嗡飞动</div>
-        <div class="vocab-card__note">多用于鸟、昆虫或箭矢快速掠过空气的声音；"es schwirrt mir im Kopf" 意为"我头晕脑胀"。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">beseligend</span></div>
-        <span class="vocab-card__pos">adj.（现在分词）</span>
-        <div class="vocab-card__meaning">令人幸福的、赐福的</div>
-        <div class="vocab-card__note">来自 beseligen（使极乐），词根 selig（幸福的、蒙福的、已故的）带宗教色彩；比 beglückend 更庄重。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Würde</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">尊严、庄重</div>
-        <div class="vocab-card__note">德国《基本法》第一条即以 "Die Würde des Menschen ist unantastbar" 开篇；席勒本人另有美学论文《论优美与尊严》（Über Anmut und Würde），此词在其思想中有专门分量。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Vertraulichkeit, -en</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">亲昵、随便；机密性</div>
-        <div class="vocab-card__note">来自 vertraulich（亲密的；机密的）；在本诗语境中指"过分随便的亲近"，略含贬义。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Flur, -en</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">田野、原野</div>
-        <div class="vocab-card__note">务必与 der Flur（阳性，走廊、门厅）区分——两词同形而性别、词义完全不同，靠冠词辨别。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Gabe, -n</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">馈赠、礼物；天赋</div>
-        <div class="vocab-card__note">来自 geben；复合词 die Begabung（天赋）、die Mitgift（嫁妆）同源。诗中兼有"礼物"与"天赋恩赐"的双重回响。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">der Greis, -e</span></div>
-        <span class="vocab-card__pos">n.（阳性）</span>
-        <div class="vocab-card__meaning">老翁、白发老人</div>
-        <div class="vocab-card__note">书面雅语，比 der alte Mann 更具文学色彩；阴性为 die Greisin。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">darreichen</span></div>
-        <span class="vocab-card__pos">v.（可分，弱变化）</span>
-        <div class="vocab-card__meaning">呈递、奉上</div>
-        <div class="vocab-card__note">古雅用词，多用于庄重场合（如献上礼物、圣餐）；诗中前缀 dar 被推到全诗最后一个位置。</div>
-      </div>      </div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">动词变位</span>
-        <span class="section__de">Konjugation</span>
-      </header>
-      <div class="verb-table-wrap">
-      <table class="verb-table">
-        <thead>
-          <tr>
-            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="de">erscheinen</td>
-          <td class="de">erscheint</td>
-          <td class="de">erschien</td>
-          <td class="de">ist erschienen</td>
-          <td class="de">erschienen</td>
-          <td class="de">erschiene</td>
-          <td>sein</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 强变化（ei–ie–ie）；诗中用过去时 Erschien 置于句首（因前面是状语，主语后置）。</td></tr>
-        <tr>
-          <td class="de">wissen</td>
-          <td class="de">weiß</td>
-          <td class="de">wusste（旧 wußte）</td>
-          <td class="de">hat gewusst</td>
-          <td class="de">gewusst</td>
-          <td class="de">wüsste</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 不规则动词（属"变现在时"类，现在时单数与复数词干不同）；诗中用旧正字法 wußte。</td></tr>
-        <tr>
-          <td class="de">mitbringen</td>
-          <td class="de">bringt mit</td>
-          <td class="de">brachte mit</td>
-          <td class="de">hat mitgebracht</td>
-          <td class="de">mitgebracht</td>
-          <td class="de">brächte mit</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 混合变化的可分动词；诗中作 "Sie brachte Blumen mit und Früchte"，注意宾语被前缀 mit 从中间切开，这是德语框型结构的典型效果。</td></tr>
-        <tr>
-          <td class="de">austeilen</td>
-          <td class="de">teilt aus</td>
-          <td class="de">teilte aus</td>
-          <td class="de">hat ausgeteilt</td>
-          <td class="de">ausgeteilt</td>
-          <td class="de">teilte aus</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 可分动词；诗中 teilte 在第17行、前缀 aus 跨行落在第18行末。</td></tr>
-        <tr>
-          <td class="de">sich nahen</td>
-          <td class="de">naht sich</td>
-          <td class="de">nahte sich</td>
-          <td class="de">hat sich genaht</td>
-          <td class="de">genaht</td>
-          <td class="de">nahte sich</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 古雅形式，现代德语用 sich nähern（+ 第三格）；诗中作 "nahte sich ein liebend Paar"。</td></tr>
-        <tr>
-          <td class="de">darreichen</td>
-          <td class="de">reicht dar</td>
-          <td class="de">reichte dar</td>
-          <td class="de">hat dargereicht</td>
-          <td class="de">dargereicht</td>
-          <td class="de">reichte dar</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 可分动词；诗中 reichte 在第23行、前缀 dar 落在全诗末词，形成极大的框型跨度。</td></tr>
-        </tbody>
-      </table>
-    </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">语法要点</span>
-        <span class="section__de">Grammatik</span>
-      </header>
-            <div class="grammar-list">      <article class="grammar-item">
-        <h3 class="grammar-item__title">可分动词的框型结构与跨行拆解</h3>
-        <p class="grammar-item__quote">Und teilte jedem eine Gabe, / Dem Früchte, jenem Blumen aus … Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.</p>
-        <div class="grammar-item__body">德语可分动词把词干与前缀分置于句子两端，中间夹住所有其他成分，形成"框型结构"（Satzklammer）。席勒在最后两节把这个框拉到极限：teilte … aus 跨两行，reichte … dar 也跨两行，且 dar 落在全诗的最后一个词上。读这类句子时，务必先扫到句末找出前缀，再回头确定动词的真实含义——teilen（分）与 austeilen（分发）、reichen（够得着／递）与 darreichen（奉上）意思并不相同。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">前置第二格 + 形容词最高级名词化</h3>
-        <p class="grammar-item__quote">Dem reichte sie der Gaben beste, / Der Blumen allerschönste dar.</p>
-        <div class="grammar-item__body">"der Gaben beste" 即现代德语的 "die beste der Gaben"（诸馈赠中最好的那一份）：第二格 der Gaben 前置，形容词最高级 beste 名词化后作宾语。allerschönste 中的 aller- 是加强前缀（"最最……"），常见于 allerbeste、allerliebste。这种前置第二格语序在18世纪诗歌中很常见，现代德语已改为后置。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">sobald 引导的时间从句</h3>
-        <p class="grammar-item__quote">Sobald die ersten Lerchen schwirrten … Sobald das Mädchen Abschied nahm.</p>
-        <div class="grammar-item__body">sobald 是从属连词，意为"一旦、只要……就"，从句中变位动词必须放在句末（schwirrten / nahm）。全诗两次使用 sobald，一次标记来临，一次标记离去，使少女的出现被牢牢框定在一个循环的时间结构里。注意与 so bald（分写，意为"这么快"）区分。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">不带词尾的定语形容词（古法）</h3>
-        <p class="grammar-item__quote">Doch nahte sich ein liebend Paar,</p>
-        <div class="grammar-item__body">按现代规则应作 "ein liebendes Paar"（中性第一格弱变化后应有 -es）。18世纪诗歌为迁就音节数，常保留中古德语遗留的"无词尾定语形容词"。歌德《野玫瑰》中的 "ein Röslein stehn" 属同类现象。学习者应能识别这是格律需要，而不是错误，同时在自己写作时使用规范形式。</div>
-      </article>      </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">文学意象与文化背景</span>
-        <span class="section__de">Hintergrund</span>
-      </header>
-      <div class="prose"><p>《来自远方的少女》作于1796年，次年刊于席勒自己主编的《缪斯年鉴 1797》，属于他与歌德结盟后创作力最旺盛的时期（同一年他还写下了《潜水者》《手套》等著名叙事诗）。全诗六节二十四行，四音步抑扬格、交叉韵，语言极其平易——没有一个生僻词，没有一句复杂的哲学表述。</p>
-<p>它的难点全在"这少女是谁"这个问题上，而席勒始终不作回答。最通行的读法是把她理解为诗艺（Poesie）本身：她每年春天从别处来到贫苦的日常世界，带来在"另一种阳光下"成熟的果实，让人人有所得，却拒绝被亲昵地占有；而她把最好的馈赠留给"相爱的人"。这一读法与席勒在《审美教育书简》（1795）中的核心思想吻合：艺术不是从属于现实的装饰，而是来自另一秩序的赠礼，它使人在"游戏"中恢复完整。也有研究者把她读作春天本身、爱情、青春，或干脆读作理想（das Ideal）。席勒在1803年的一封信中曾拒绝为此诗给出唯一解释，认为其魅力恰在于寓意的开放。</p>
-<p>这首诗在德语教育史上有特殊位置：它常被选作学生接触"象征"与"寓言"区别的第一课——因为它是一首完整的寓言，却没有配上钥匙。舒伯特（D 117 与 D 252，1815年两度谱曲）、卡尔·勒韦等作曲家都为它写过艺术歌曲。</p></div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">译文说明</span>
-        <span class="section__de">Anmerkung</span>
-      </header>
-      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译，力求语言与原诗一样平易，不添加任何指向"她是谁"的解释性词语——这是本诗翻译中最重要的一条自我约束。第五、六节的可分动词框型（teilte…aus、reichte…dar）在中文中无法保留，译文以"分给……""把……递给"处理。第六节 "der Gaben beste / der Blumen allerschönste" 的前置第二格结构译为"馈赠中最好的／花朵中最美的"，保留了原句两个并列宾语的递进。已知此诗存在钱春绮、张玉书等译者的中译本，因版权原因本站不转载具体译本全文。</p></div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">德文原文出处</span>
-        <span class="section__de">Quellen</span>
-      </header>
-      <ul class="source-list">
-      <li>
-        <span class="source-name">Zeno.org — Friedrich Schiller: Sämtliche Werke, Band 1, München 1962, S. 255–256（„Das Mädchen aus der Fremde“）</span><a class="source-url" href="http://www.zeno.org/Literatur/M/Schiller,+Friedrich/Gedichte/Gedichte+(1789-1805)/Das+M%C3%A4dchen+aus+der+Fremde" target="_blank" rel="noopener">http://www.zeno.org/Literatur/M/Schiller,+Friedrich/Gedichte/Gedichte+(1789-1805)/Das+M%C3%A4dchen+aus+der+Fremde</a>
-        <span class="source-note">主来源。依 Hanser 版《席勒全集》第1卷数字化本，六节二十四行完整，保留旧正字法 wußte。</span>
-      </li>
-      <li>
-        <span class="source-name">gedichte7.de — „Das Mädchen aus der Fremde – Schiller“</span><a class="source-url" href="https://www.gedichte7.de/das-maedchen-aus-der-fremde.html" target="_blank" rel="noopener">https://www.gedichte7.de/das-maedchen-aus-der-fremde.html</a>
-        <span class="source-note">辅助来源。六节二十四行与主来源逐词、逐标点完全一致（含 wußte 的旧拼法），用于独立交叉核对。</span>
-      </li>
-    </ul>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">译文出处 · 版权</span>
-        <span class="section__de">Übersetzungsnachweis</span>
-      </header>
-      <ul class="source-list">
-      <li>
-        <span class="source-name">本站学习译文（中文）</span>
-        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮、张玉书等译者的中译本，因版权原因未转载全文。</span>
-      </li>
-    </ul>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">校对记录</span>
-        <span class="section__de">Korrektorat</span>
-      </header>
-      <div class="prose"><p>德文正文通过两个独立来源（Zeno.org 转录的 Hanser 版《席勒全集》第1卷，与 gedichte7.de）逐词逐标点核对，六节各四行，两来源完全一致，未发现任何异文——这在本站收录的诗作中较为少见，可信度较高。仅有一处需要说明：第6行 "wußte" 为1996年正字法改革前的写法，今应作 "wusste"；本站保留全集所依据的旧拼法，并在词汇与动词变位表中给出现代形式。关于创作与发表年代（1796年作、刊于《缪斯年鉴 1797》），本站依据通行的席勒研究结论，未直接查阅《缪斯年鉴》影印件，属待进一步核实项。</p></div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">上线前质量 Checklist</span>
-        <span class="section__de">Prüfliste</span>
-      </header>
-            <ul class="checklist">        <li>确认作者：Friedrich Schiller</li>
-        <li>确认标题：Das Mädchen aus der Fremde</li>
-        <li>德文原文主来源：Zeno.org（Hanser 版全集第1卷）</li>
-        <li>德文原文辅助来源：gedichte7.de</li>
-        <li>核对诗节、行数、标点</li>
-        <li>记录版本差异（两来源无异文；仅旧/新正字法 wußte/wusste）</li>
-        <li>查找已有中文译本（已知存在，未转载全文）</li>
-        <li>判断译文版权可用性（现代中译不可用）</li>
-        <li>制作本站学习译文（中文）</li>
-        <li>提取重点词汇</li>
-        <li>校对 lemma 与词性</li>
-        <li>补充动词变位</li>
-        <li>撰写语法要点</li>
-        <li>撰写背景说明</li>
-        <li>撰写 image brief</li>
-        <li>生成 AI 配图（已接入）</li>
-        <li>页面视觉检查</li>
-        <li class="pending">核实首刊信息（《缪斯年鉴 1797》影印件）</li>
-        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
-    </section>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">上线前质量 Checklist</span>
+          <span class="section__de">Prüfliste</span>
+        </header>
+        <ul class="checklist">
+          <li>确认作者：Friedrich Schiller</li>
+          <li>确认标题：Das Mädchen aus der Fremde</li>
+          <li>德文原文主来源：Zeno.org（Hanser 版全集第1卷）</li>
+          <li>德文原文辅助来源：gedichte7.de</li>
+          <li>核对诗节、行数、标点</li>
+          <li>记录版本差异（两来源无异文；仅旧/新正字法 wußte/wusste）</li>
+          <li>查找已有中文译本（已知存在，未转载全文）</li>
+          <li>判断译文版权可用性（现代中译不可用）</li>
+          <li>制作本站学习译文（中文）</li>
+          <li>提取重点词汇</li>
+          <li>校对 lemma 与词性</li>
+          <li>补充动词变位</li>
+          <li>撰写语法要点</li>
+          <li>撰写背景说明</li>
+          <li>撰写 image brief</li>
+          <li>生成 AI 配图（已接入）</li>
+          <li>页面视觉检查</li>
+          <li class="pending">核实首刊信息（《缪斯年鉴 1797》影印件）</li>
+          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
+        </ul>
+      </section>
     </div>
   </main>
   <footer class="site-footer">
@@ -521,106 +635,110 @@
     <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
   </footer>
   <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
+      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V6M6 12l6-6 6 6" />
+    </svg>
   </button>
-<script>
-  (function () {
-    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (es) {
-        es.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+  <script>
+    (function () {
+      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+      }
+      // 朱批旁注联动：诗行 ↔ 注释互相高亮
+      function highlight(id, on, source) {
+        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+        var sel = '[data-noteref="' + escId + '"]';
+        document.querySelectorAll(sel).forEach(function (p) {
+          if (p !== source) p.classList.toggle('is-linked', on);
         });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-    } else {
-      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-    }
-    // 朱批旁注联动：诗行 ↔ 注释互相高亮
-    function highlight(id, on, source) {
-      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-      var sel = '[data-noteref="' + escId + '"]';
-      document.querySelectorAll(sel).forEach(function (p) {
-        if (p !== source) p.classList.toggle('is-linked', on);
+        if (source) source.classList.toggle('is-self', on);
+      }
+      // 鼠标：悬停诗行或注释
+      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+        var id = el.getAttribute('data-noteref');
+        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
       });
-      if (source) source.classList.toggle('is-self', on);
-    }
-    // 鼠标：悬停诗行或注释
-    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-      var id = el.getAttribute('data-noteref');
-      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-    });
-    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-    document.querySelectorAll('.refmark a').forEach(function (a) {
-      var vline = a.closest('.vline[data-noteref]');
-      if (!vline) return;
-      var id = vline.getAttribute('data-noteref');
-      a.addEventListener('focus', function () { highlight(id, true, vline); });
-      a.addEventListener('blur', function () { highlight(id, false, vline); });
-    });
-    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-    var toggle = document.querySelector('.theme-toggle');
-    if (toggle) {
-      var syncToggle = function () {
-        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-      };
-      syncToggle();
-      toggle.addEventListener('click', function () {
-        var cur = document.documentElement.getAttribute('data-theme') || 'light';
-        var next = cur === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
+      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+      document.querySelectorAll('.refmark a').forEach(function (a) {
+        var vline = a.closest('.vline[data-noteref]');
+        if (!vline) return;
+        var id = vline.getAttribute('data-noteref');
+        a.addEventListener('focus', function () { highlight(id, true, vline); });
+        a.addEventListener('blur', function () { highlight(id, false, vline); });
+      });
+      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+      var toggle = document.querySelector('.theme-toggle');
+      if (toggle) {
+        var syncToggle = function () {
+          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+        };
         syncToggle();
+        toggle.addEventListener('click', function () {
+          var cur = document.documentElement.getAttribute('data-theme') || 'light';
+          var next = cur === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) { }
+          syncToggle();
+        });
+      }
+      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+      var modals = document.querySelectorAll('dialog.modal');
+      modals.forEach(function (modal) {
+        var closeBtn = modal.querySelector('.modal__close');
+        // ✕ 关闭
+        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+        // 点遮罩（dialog 自身区域）关闭
+        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+        modal.addEventListener('close', function () {
+          document.body.classList.remove('modal-open');
+          var t = modal._trigger;
+          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        });
       });
-    }
-    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-    var modals = document.querySelectorAll('dialog.modal');
-    modals.forEach(function (modal) {
-      var closeBtn = modal.querySelector('.modal__close');
-      // ✕ 关闭
-      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-      // 点遮罩（dialog 自身区域）关闭
-      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-      modal.addEventListener('close', function () {
-        document.body.classList.remove('modal-open');
-        var t = modal._trigger;
-        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      var triggers = document.querySelectorAll('.brief-trigger');
+      triggers.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var id = btn.getAttribute('data-modal');
+          var modal = id && document.getElementById(id);
+          if (!modal || typeof modal.showModal !== 'function') return;
+          if (modal.open) { modal.close(); return; }
+          modal._trigger = btn;
+          btn.setAttribute('aria-expanded', 'true');
+          modal.showModal();
+          document.body.classList.add('modal-open');
+          var c = modal.querySelector('.modal__close');
+          if (c) c.focus();
+        });
       });
-    });
-    var triggers = document.querySelectorAll('.brief-trigger');
-    triggers.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var id = btn.getAttribute('data-modal');
-        var modal = id && document.getElementById(id);
-        if (!modal || typeof modal.showModal !== 'function') return;
-        if (modal.open) { modal.close(); return; }
-        modal._trigger = btn;
-        btn.setAttribute('aria-expanded', 'true');
-        modal.showModal();
-        document.body.classList.add('modal-open');
-        var c = modal.querySelector('.modal__close');
-        if (c) c.focus();
-      });
-    });
-    // 回到顶部按钮：滚动一段距离后才显示
-    var toTop = document.querySelector('.to-top');
-    if (toTop) {
-      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var syncToTop = function () {
-        if (window.scrollY > 420) toTop.classList.add('is-visible');
-        else toTop.classList.remove('is-visible');
-      };
-      window.addEventListener('scroll', syncToTop, { passive: true });
-      syncToTop();
-      toTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-      });
-    }
-  })();
+      // 回到顶部按钮：滚动一段距离后才显示
+      var toTop = document.querySelector('.to-top');
+      if (toTop) {
+        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var syncToTop = function () {
+          if (window.scrollY > 420) toTop.classList.add('is-visible');
+          else toTop.classList.remove('is-visible');
+        };
+        window.addEventListener('scroll', syncToTop, { passive: true });
+        syncToTop();
+        toTop.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+        });
+      }
+    })();
   </script>
 </body>
+
 </html>

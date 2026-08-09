@@ -334,7 +334,7 @@
     "taboos": "不得出现文字、可读的墓碑铭文或任何变格表（诗的机关必须留在文字里，不可画出来）；不得出现半人半狼的恐怖形象——狼应是一头普通的、写实的狼；不得出现血、獠牙、发光的眼睛等恐怖片元素；不得出现人物或幽灵形象",
     "style": "19世纪书籍插画式的黑白或极低饱和度风格（可参考《绞刑架之歌》早期插图的线描传统），月光冷白，构图简洁，狼与墓牌的体型对比是画面的笑点所在"
   },
-  "image_path": null,
+  "image_path": "/images/der-werwolf.png",
   "german_sources": [
     {
       "name": "textlog.de — Christian Morgenstern, „Der Werwolf“（Galgenlieder · V.）",
@@ -355,26 +355,89 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（textlog.de 的《绞刑架之歌》数字化本与 LiederNet）逐词核对，六节各四行、用词完全一致，未发现字面异文。核实到的差异全部属于排印与正字法层面：(1) 引号：主来源在第三节的每一行行首重复下引号 „（19世纪德语印刷中标记引语跨行延续的惯例），LiederNet 采用现代规则仅在引语首尾各标一次。本站保留主来源的原刊形式，并在语法要点中说明这一排印惯例，以免学习者误认为是错误。(2) 正字法：主来源保留 mußte / wußte / daß / End'，LiederNet 将第18行的 daß 现代化为 dass。本站从主来源的旧拼法。(3) 强调排版：主来源在第20行的 „Wer“ 上使用斜体，本站因纯文本呈现而以引号代替。(4) 标点细节：主来源第12行末作 „damit hat's ein End'.“，LiederNet 作 \"damit hat's ein End.\"（无省字符）。本站从主来源。需说明的是，本站未直接查阅1905年《绞刑架之歌》初版影印件或摩根施特恩全集（Urachhaus / Piper 版），上述采择依据数字化转录；本诗在《绞刑架之歌》第五辑中的位置依主来源的目录结构，属待进一步核实项。作者1914年逝世，德文原文已进入公有领域。",
   "checklist": [
-    { "label": "确认作者：Christian Morgenstern", "done": true },
-    { "label": "确认标题与出处：Galgenlieder（1905）第五辑", "done": true },
-    { "label": "确认公版状态（Morgenstern 1914年逝世，德文原文已进入公有领域）", "done": true },
-    { "label": "德文原文主来源：textlog.de（保留原刊排印特征）", "done": true },
-    { "label": "德文原文辅助来源：LiederNet", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（跨行引号惯例；旧新正字法；第12行 End'/End）", "done": true },
-    { "label": "查证 Werwolf 的词源（Wer- < 古高地德语 wer「人」，与疑问代词 wer 无关）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文，采用直译 + 括注构词机制的策略并已交代）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点（含德语四格本土术语与 wer 的变格表）", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照1905年初版影印件核实排印与辑目位置", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其中译策略的取舍）", "done": false }
+    {
+      "label": "确认作者：Christian Morgenstern",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Galgenlieder（1905）第五辑",
+      "done": true
+    },
+    {
+      "label": "确认公版状态（Morgenstern 1914年逝世，德文原文已进入公有领域）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：textlog.de（保留原刊排印特征）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：LiederNet",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（跨行引号惯例；旧新正字法；第12行 End'/End）",
+      "done": true
+    },
+    {
+      "label": "查证 Werwolf 的词源（Wer- < 古高地德语 wer「人」，与疑问代词 wer 无关）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文，采用直译 + 括注构词机制的策略并已交代）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点（含德语四格本土术语与 wer 的变格表）",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "对照1905年初版影印件核实排印与辑目位置",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其中译策略的取舍）",
+      "done": false
+    }
   ]
 }

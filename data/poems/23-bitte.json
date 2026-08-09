@@ -202,7 +202,7 @@
     "taboos": "不得出现文字、水印；不得画出具体的人眼或面部（诗中的\"眼睛\"与\"夜\"是同一物，不可坐实为其一）；不得出现星星、月亮等明确光源；不得使用恐怖或超自然特效",
     "style": "19世纪浪漫主义夜景油画风格，接近单色（深蓝—墨黑—极暗的紫），层次极少而过渡极柔，笔触几乎不可见"
   },
-  "image_path": null,
+  "image_path": "/images/bitte.png",
   "german_sources": [
     {
       "name": "Zeno.org — Nikolaus Lenau: Sämtliche Werke und Briefe. Band 1, Leipzig und Frankfurt a. M. 1970, S. 17（Gedichte · Erstes Buch · Sehnsucht · Bitte）",
@@ -223,25 +223,85 @@
   ],
   "verification_notes": "德文正文通过两个独立来源（Zeno.org 转录的 Insel 版《莱瑙全集与书信》第1卷第17页，与 LiederNet 依 Reclam 1883 年版转录的文本）逐词核对，两节各四行、内容完全一致。核实到的差异如下：(1) 首行写法：主来源作 \"Weil\"，LiederNet 依 Reclam 版作 \"Weil'\"（带省字符）。两者是同一个词——动词 weilen 的命令式——省字符只是编者为与连词 weil 消歧而加。本站从主来源的无省字符写法，并在逐行注释与语法要点中重点说明这一同形陷阱。(2) 第3行的异文：LiederNet 明确记录了三处作曲家改动——博尔科·冯·霍赫贝格作 \"Ernste, milde, zauberische\"，舍格伦作 \"Ernste, milde, träumereiche\"，施蒂希作 \"Träumerische, ernste, milde\"。这些均属谱曲时的改词而非文本异文，本站不采，仅在此记录。(3) 正字法：Daß 为旧拼法，今作 dass；本站保留主来源写法。需说明的是，本站未直接查阅1832年《诗集》初版影印件，创作年代与辑目归属依据主来源的编排，属待进一步核实项。",
   "checklist": [
-    { "label": "确认作者：Nikolaus Lenau", "done": true },
-    { "label": "确认标题与出处：《诗集》第一卷「渴望」辑", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Insel 版全集第1卷）", "done": true },
-    { "label": "德文原文辅助来源：LiederNet（依 Reclam 1883 年版）", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（Weil/Weil'；作曲家对第3行的改动；旧新正字法）", "done": true },
-    { "label": "确认首行 Weil 为 weilen 的命令式而非连词", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "核实1832年初版的辑目归属与创作年代", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Nikolaus Lenau",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：《诗集》第一卷「渴望」辑",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Insel 版全集第1卷）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：LiederNet（依 Reclam 1883 年版）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（Weil/Weil'；作曲家对第3行的改动；旧新正字法）",
+      "done": true
+    },
+    {
+      "label": "确认首行 Weil 为 weilen 的命令式而非连词",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "核实1832年初版的辑目归属与创作年代",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

@@ -352,7 +352,7 @@
     "taboos": "不得出现文字、水印、可读的墓碑铭文；不得出现人物（孩子应仅以脚印、木鞋或摇动的树枝暗示）；不得出现十字架特写或任何阴森的墓地气氛；不得出现现代车辆、路灯、栅栏",
     "style": "19世纪现实主义风景油画风格，暖金与赭红为主调，光线来自低角度的午后阳光，构图以梨树为中心、墓在树下且不显眼"
   },
-  "image_path": null,
+  "image_path": "/images/herr-von-ribbeck.png",
   "german_sources": [
     {
       "name": "Zeno.org — Theodor Fontane: Sämtliche Werke. Bd. 1–25, Band 20, München 1959–1975, S. 249–251（Gedichte, Ausgabe 1898 · Bilder und Balladen · Deutsches. Märkisch-Preußisches）",
@@ -371,29 +371,99 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文以 Zeno.org 转录的 Nymphenburger 版《冯塔纳全集》第20卷（第249—251页）为主来源，与 gedichte7.de 逐行核对，两来源行数一致（四十二行），分节为 10/12/10/10（主来源连续排印，分节依辅助来源并与通行版本一致）。核实到的差异较多，本站一律从主来源，现如实列出：(1) 第9行与第39行：主来源作 Mädel，辅助来源第9行作 Mädchen、第39行作 Mädel。(2) 第29行：主来源作 \"was damals er tat\"（状语前置的诗歌语序），辅助来源作 \"was er damals tat\"（常规语序）。(3) 第38行：主来源作 „Wist 'ne Beer?“，辅助来源作 „Wiste 'ne Beer?“（与第8行统一）。(4) 第40行：主来源作低地德语中夹标准德语的 \"ich gew di\"，辅助来源作全低地德语的 \"ick gew di\"——第10行两来源均作 ick，因此主来源在此处的 ich 是否为排印之误，本站未能判定，属待核实项。(5) 第3行与第35行：主来源作 goldene，辅助来源作 goldne（少一音节）。(6) 第17行：主来源作 \"Und drei Tage drauf, aus dem Doppeldachhaus,\"，辅助来源作 \"Und drei Tage darauf aus dem Doppeldachhaus\"。(7) 大小写：主来源每行行首一律大写（19世纪排印惯例），辅助来源仅句首大写。(8) 主来源在 der neue / der alte 处使用斜体强调，本站因纯文本呈现而未保留该排版特征。此外，本站未直接查阅1889年首刊或1898年《诗集》影印件，上述采择依据全集转录；第40行 ich/ick 的问题尤其建议对照原刊核实。",
+  "verification_notes": "德文正文以 Zeno.org 转录的 Nymphenburger 版《冯塔纳全集》第20卷（第249—251页）为主来源，与 gedichte7.de 逐行核对，两来源行数一致（四十二行），分节为 10/12/10/10（主来源连续排印，分节依辅助来源并与通行版本一致）。核实到的差异较多，本站一律从主来源，现如实列出：(1) 第9行与第39行：主来源作 Mädel，辅助来源第9行作 Mädchen、第39行作 Mädel。(2) 第29行：主来源作 \"was damals er tat\"（状语前置的诗歌语序），辅助来源作 \"was er damals tat\"（常规语序）。(3) 第38行：主来源作 „Wist 'ne Beer?“，辅助来源作 „Wiste 'ne Beer?“（与第8行统一）。(4) 第40行：主来源作低地德语中夹标准德语的 \"ich gew di\"，辅助来源作全低地德语的 \"ick gew di\"——第10行两来源均作 ick，因此主来源在此处的 ich 是否为排印之误，本站未能判定，属待核实项。(5) 第3行与第35行：主来源作 goldene，辅助来源作 goldne（少一音节）。(6) 第17行：主来源作 \"Und drei Tage drauf, aus dem Doppeldachhaus,\"，辅助来源作 \"Und drei Tage darauf aus dem Doppeldachhaus\"。(7) 大小写：主来源每行行首一律大写（19世纪排印惯例），辅助来源仅句首大写。(8) 主来源在 der neue / der alte 处使用斜体强调，本站因纯文本呈现而未保留该排版特征。此外，本站未直接查阅1889年首刊或1898年《诗集》影印件，上述采择依据全集转录；第40行 ich/ick 的问题尤其建议对照原刊核实。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。",
   "checklist": [
-    { "label": "确认作者：Theodor Fontane", "done": true },
-    { "label": "确认标题与出处：《诗集》（1898年版）「德意志·马克—普鲁士题材」", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Nymphenburger 版全集第20卷）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（共8类，含 Mädel/Mädchen、语序、Wist/Wiste、ich/ick gew di 等）", "done": true },
-    { "label": "确认分节为 10/12/10/10", "done": true },
-    { "label": "整理低地德语对白的标准德语对照", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇（含低地德语小词表）", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "核实第40行 ich/ick gew di（疑为排印之误，需对照原刊）", "done": false },
-    { "label": "对照1889年首刊或1898年《诗集》影印件核实全部异文", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者与低地德语使用者各复核一次）", "done": false }
+    {
+      "label": "确认作者：Theodor Fontane",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：《诗集》（1898年版）「德意志·马克—普鲁士题材」",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Nymphenburger 版全集第20卷）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（共8类，含 Mädel/Mädchen、语序、Wist/Wiste、ich/ick gew di 等）",
+      "done": true
+    },
+    {
+      "label": "确认分节为 10/12/10/10",
+      "done": true
+    },
+    {
+      "label": "整理低地德语对白的标准德语对照",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇（含低地德语小词表）",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "核实第40行 ich/ick gew di（疑为排印之误，需对照原刊）",
+      "done": false
+    },
+    {
+      "label": "对照1889年首刊或1898年《诗集》影印件核实全部异文",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者与低地德语使用者各复核一次）",
+      "done": false
+    },
+    {
+      "label": "补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）",
+      "done": false
+    }
   ]
 }

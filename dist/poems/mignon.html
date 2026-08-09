@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,12 @@
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../theme.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="site-header__inner">
@@ -35,452 +39,554 @@
           <a href="../index.html">诗歌总览</a>
           <a href="../about.html">关于 · 校对</a>
         </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
+          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
         </a>
         <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
+          </svg>
         </button>
       </div>
     </div>
   </header>
   <main>
-    
+
     <div class="poem-shell">
 
-    <nav class="poem-nav" aria-label="诗歌导航">
-<a class="poem-nav__link poem-nav__prev" href="wandrers-nachtlied-i.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">流浪者的夜歌（其一）</span></a>
-<a class="poem-nav__link poem-nav__next" href="der-tod-das-ist-die-kuehle-nacht.html" rel="next"><span class="poem-nav__title">死亡，那是清凉的夜</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-    </nav>
-    <header class="poem-titleblock reveal">
-      <h1 class="poem-titleblock__de">Mignon</h1>
-      <p class="poem-titleblock__author">Johann Wolfgang von Goethe</p>
-      <p class="poem-titleblock__zh">迷娘（你可知道那地方）</p>
-      <p class="poem-titleblock__author-zh">约翰·沃尔夫冈·冯·歌德</p>
-      <div class="poem-titleblock__biblio">
-        <p>《威廉·迈斯特的学习时代》第三卷卷首；1815年文集中列入《叙事诗》（Balladen）栏并定题为 Mignon</p>
-        <p>魏玛古典主义前期</p>
-        <p>约1782/83年写于《威廉·迈斯特的戏剧使命》创作期，1795/96年随《威廉·迈斯特的学习时代》出版</p>
-      </div>
-      <div class="poem-titleblock__meta">
-        <span class="tag tag--b">B1</span>
-        <span class="tag ">乡愁</span>
-        <span class="tag ">意大利</span>
-        <span class="tag ">渴望</span>
-        <span class="tag ">小说插曲诗</span>
-        <span class="tag ">经典必读</span>
-        <span class="tag ">舒伯特谱曲</span>
-      </div>
-          <figure class="image-slot image-slot--filled">
-      <img src="../images/mignon.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
-    </figure>
-    <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
-    <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
-      <header class="modal__head">
-        <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
-        <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+      <nav class="poem-nav" aria-label="诗歌导航">
+        <a class="poem-nav__link poem-nav__prev" href="wandrers-nachtlied-i.html" rel="prev"><span
+            class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">流浪者的夜歌（其一）</span></a>
+        <a class="poem-nav__link poem-nav__next" href="der-tod-das-ist-die-kuehle-nacht.html" rel="next"><span
+            class="poem-nav__title">死亡，那是清凉的夜</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <header class="poem-titleblock reveal">
+        <h1 class="poem-titleblock__de">Mignon</h1>
+        <p class="poem-titleblock__author">Johann Wolfgang von Goethe</p>
+        <p class="poem-titleblock__zh">迷娘（你可知道那地方）</p>
+        <p class="poem-titleblock__author-zh">约翰·沃尔夫冈·冯·歌德</p>
+        <div class="poem-titleblock__biblio">
+          <p>《威廉·迈斯特的学习时代》第三卷卷首；1815年文集中列入《叙事诗》（Balladen）栏并定题为 Mignon</p>
+          <p>魏玛古典主义前期</p>
+          <p>约1782/83年写于《威廉·迈斯特的戏剧使命》创作期，1795/96年随《威廉·迈斯特的学习时代》出版</p>
+        </div>
+        <div class="poem-titleblock__meta">
+          <span class="tag tag--b">B1</span>
+          <span class="tag ">乡愁</span>
+          <span class="tag ">意大利</span>
+          <span class="tag ">渴望</span>
+          <span class="tag ">小说插曲诗</span>
+          <span class="tag ">经典必读</span>
+          <span class="tag ">舒伯特谱曲</span>
+        </div>
+        <figure class="image-slot image-slot--filled">
+          <img src="../images/mignon.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+            loading="lazy">
+        </figure>
+        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
+            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+          <header class="modal__head">
+            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+          </header>
+          <div class="modal__body">
+            <div class="image-slot">
+              <dl>
+                <dt>意象</dt>
+                <dd>上半部是想象中的南方庭园：柠檬与金橙、圆柱回廊、大理石雕像；下半部是雾中的阿尔卑斯山口小径与驮行的骡子，两个世界在画面中垂直叠合</dd>
+                <dt>情绪</dt>
+                <dd>热切的向往与隐隐的不安并存；明亮部分应有近乎幻觉的饱和度，山口部分则阴冷、危险，不作恐怖化处理</dd>
+                <dt>画面元素</dt>
+                <dd>结果的柠檬树与橙树、圆柱与门廊、若干白色大理石人像（面部朝向观者但不写实刻画表情）、云雾中的窄径、一头驮行的骡子、崩落的岩块与飞瀑</dd>
+                <dt>时代感</dt>
+                <dd>18世纪末的意大利想象图景，建筑取古典样式；不得出现现代旅游元素</dd>
+                <dt>推荐风格</dt>
+                <dd>19世纪浪漫主义油画风格，可采用上暖下冷的垂直渐变构图，上部为金黄与地中海蓝，下部转为灰绿与雾白</dd>
+                <dt>比例</dt>
+                <dd>4:3（横版）</dd>
+                <dt>禁忌</dt>
+                <dd>不得出现文字、水印；不得出现龙的具象形象（诗中"龙的族类"应仅以幽暗洞口暗示）；避免明信片式的旅游风光感；不得出现人物面部特写</dd>
+              </dl>
+              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+            </div>
+          </div>
+        </dialog>
       </header>
-      <div class="modal__body">
-        <div class="image-slot">
-      <dl>
-        <dt>意象</dt><dd>上半部是想象中的南方庭园：柠檬与金橙、圆柱回廊、大理石雕像；下半部是雾中的阿尔卑斯山口小径与驮行的骡子，两个世界在画面中垂直叠合</dd>
-        <dt>情绪</dt><dd>热切的向往与隐隐的不安并存；明亮部分应有近乎幻觉的饱和度，山口部分则阴冷、危险，不作恐怖化处理</dd>
-        <dt>画面元素</dt><dd>结果的柠檬树与橙树、圆柱与门廊、若干白色大理石人像（面部朝向观者但不写实刻画表情）、云雾中的窄径、一头驮行的骡子、崩落的岩块与飞瀑</dd>
-        <dt>时代感</dt><dd>18世纪末的意大利想象图景，建筑取古典样式；不得出现现代旅游元素</dd>
-        <dt>推荐风格</dt><dd>19世纪浪漫主义油画风格，可采用上暖下冷的垂直渐变构图，上部为金黄与地中海蓝，下部转为灰绿与雾白</dd>
-        <dt>比例</dt><dd>4:3（横版）</dd>
-        <dt>禁忌</dt><dd>不得出现文字、水印；不得出现龙的具象形象（诗中"龙的族类"应仅以幽暗洞口暗示）；避免明信片式的旅游风光感；不得出现人物面部特写</dd>
-      </dl>
-          <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+      <section class="section reveal section--parallel">
+        <header class="section__head">
+          <span class="section__zh">原诗 · 译文</span>
+          <span class="section__de">Gedicht · Übertragung</span>
+        </header>
+        <div class="parallel">
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="1"><span class="linetext">Kennst du das Land, wo die Zitronen
+                  blühn,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
+              <div class="pline__zh">你可知道那地方，那里柠檬花开，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="2"><span class="linetext">Im dunkeln Laub die Goldorangen
+                  glühn,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
+              <div class="pline__zh">幽暗的绿叶间金橙闪烁，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Ein sanfter Wind vom blauen Himmel weht,</span></div>
+              <div class="pline__zh">轻柔的风自蔚蓝的天空吹来，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="3"><span class="linetext">Die Myrte still und hoch der Lorbeer
+                  steht,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+              <div class="pline__zh">桃金娘静立、月桂高耸，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Kennst du es wohl?</span></div>
+              <div class="pline__zh">你可知道它吗？</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Dahin! Dahin</span></div>
+              <div class="pline__zh">去那里！去那里</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="4"><span class="linetext">Möcht’ ich mit dir, o mein Geliebter,
+                  ziehn!<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+              <div class="pline__zh">我愿与你同往，我的爱人啊！</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Kennst du das Haus? auf Säulen ruht sein Dach,</span>
+              </div>
+              <div class="pline__zh">你可知道那房子？屋顶架在圆柱之上，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Es glänzt der Saal, es schimmert das Gemach,</span>
+              </div>
+              <div class="pline__zh">大厅闪耀，内室微光流动，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="5"><span class="linetext">Und Marmorbilder stehn und sehn mich
+                  an:<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
+              <div class="pline__zh">大理石雕像伫立着，望着我：</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="6"><span class="linetext">Was hat man dir, du armes Kind,
+                  getan?<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+              <div class="pline__zh">他们把你怎么了，你可怜的孩子？</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Kennst du es wohl?</span></div>
+              <div class="pline__zh">你可知道它吗？</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Dahin! Dahin</span></div>
+              <div class="pline__zh">去那里！去那里</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Möcht’ ich mit dir, o mein Beschützer, ziehn.</span>
+              </div>
+              <div class="pline__zh">我愿与你同往，我的保护者啊。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Kennst du den Berg und seinen Wolkensteg?</span></div>
+              <div class="pline__zh">你可知道那座山和它的云中小径？</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Das Maultier sucht im Nebel seinen Weg,</span></div>
+              <div class="pline__zh">骡子在雾中寻找它的路，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="7"><span class="linetext">In Höhlen wohnt der Drachen alte
+                  Brut,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
+              <div class="pline__zh">洞穴里住着龙的古老族群，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Es stürzt der Fels und über ihn die Flut:</span></div>
+              <div class="pline__zh">岩石崩落，洪流又漫过它：</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Kennst du ihn wohl?</span></div>
+              <div class="pline__zh">你可知道它吗？</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Dahin! Dahin</span></div>
+              <div class="pline__zh">去那里！去那里</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="8"><span class="linetext">Geht unser Weg; o Vater, laß uns
+                  ziehn!<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+              <div class="pline__zh">我们的路就通向那里；父亲啊，让我们走吧！</div>
+            </div>
+          </div>
+          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留三节相同的提问—呼唤结构与结尾称谓由"爱人—保护者—父亲"的三度转换</p>
         </div>
-      </div>
-    </dialog>
-    </header>
-    <section class="section reveal section--parallel">
-      <header class="section__head">
-        <span class="section__zh">原诗 · 译文</span>
-        <span class="section__de">Gedicht · Übertragung</span>
-      </header>
-            <div class="parallel">
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="1"><span class="linetext">Kennst du das Land, wo die Zitronen blühn,<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
-          <div class="pline__zh">你可知道那地方，那里柠檬花开，</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">逐行注释</span>
+          <span class="section__de">Zeilenkommentar</span>
+        </header>
+        <div class="lnotes">
+          <article class="lnote" id="note-1" data-noteref="1">
+            <span class="lnote__mark">1</span>
+            <p class="lnote__de">Kennst du das Land, wo die Zitronen blühn,</p>
+            <p class="lnote__zh">全诗三节均以 "Kennst du …?" 开头，构成首语重复（Anapher）。blühn 是 blühen
+              的诗歌省音形式。这一行是德语中最著名的诗句之一，也是"意大利乡愁"（Italiensehnsucht）在德语文学中的经典表述。</p>
+          </article>
+          <article class="lnote" id="note-2" data-noteref="2">
+            <span class="lnote__mark">2</span>
+            <p class="lnote__de">Im dunkeln Laub die Goldorangen glühn,</p>
+            <p class="lnote__zh">dunkeln 是 dunkel 在弱变化第三格单数中因音节省略产生的形式（dunkelen → dunkeln）。《戏剧使命》早期稿此处作 "im grünen
+              Laub"（绿叶间），改为 dunkeln 后与金色的橙子形成更强的明暗对比。</p>
+          </article>
+          <article class="lnote" id="note-3" data-noteref="3">
+            <span class="lnote__mark">3</span>
+            <p class="lnote__de">Die Myrte still und hoch der Lorbeer steht,</p>
+            <p class="lnote__zh">两个主语（Myrte、Lorbeer）共用一个单数动词 steht，且状语 still / hoch 交叉排列，形成对称的交错语序（Chiasmus）。早期稿作 "…und
+              froh der Lorbeer"。彼得·冯·马特指出：桃金娘是阿佛洛狄忒之树、月桂是阿波罗之树，二者的并置在古典象征体系中暗示男女两性与"少女时代的结束"。</p>
+          </article>
+          <article class="lnote" id="note-4" data-noteref="4">
+            <span class="lnote__mark">4</span>
+            <p class="lnote__de">Möcht’ ich mit dir, o mein Geliebter, ziehn!</p>
+            <p class="lnote__zh">möcht’ 是 möchte 的省音形式，为 mögen 的第二虚拟式，表达委婉的愿望。三节末行的呼语依次为
+              Geliebter（爱人）—Beschützer（保护者）—Vater（父亲）；《戏剧使命》早期稿三次都作
+              Gebieter（主人），歌德的这一修改精准地暗示了迷娘与威廉之间那种混合了爱情、依赖与父女感情的复杂关系。</p>
+          </article>
+          <article class="lnote" id="note-5" data-noteref="5">
+            <span class="lnote__mark">5</span>
+            <p class="lnote__de">Und Marmorbilder stehn und sehn mich an:</p>
+            <p class="lnote__zh">stehn / sehn 均为省音形式（stehen / sehen）；an…sehen 是可分动词，前缀 an
+              移至句末。此行是全诗气氛的转折点：前面还是明亮的建筑描写，这里雕像忽然"看着我"，把外景拉入迷娘自身的创伤记忆。</p>
+          </article>
+          <article class="lnote" id="note-6" data-noteref="6">
+            <span class="lnote__mark">6</span>
+            <p class="lnote__de">Was hat man dir, du armes Kind, getan?</p>
+            <p class="lnote__zh">
+              全诗唯一一句直接引语，说话者是那些大理石雕像。man（泛指的"人们"）保持了施害者的匿名——在小说中读者最终得知，迷娘是竖琴师与其妹妹乱伦所生的孩子。这句怜悯之问在《学习时代》后文中被多次回响（"迷娘之歌里那些同情的大理石雕像"）。
+            </p>
+          </article>
+          <article class="lnote" id="note-7" data-noteref="7">
+            <span class="lnote__mark">7</span>
+            <p class="lnote__de">In Höhlen wohnt der Drachen alte Brut,</p>
+            <p class="lnote__zh">der Drachen 是复数第二格（今作 der Drachen 或 der Drachens 均有争议，此处为古形），修饰 alte
+              Brut（古老的族类/一窝幼崽）。第三节从明亮的南方风景转入危险的高山意象，暗指翻越圣哥达山口的艰险——歌德本人曾两度从那里遥望意大利而折返。</p>
+          </article>
+          <article class="lnote" id="note-8" data-noteref="8">
+            <span class="lnote__mark">8</span>
+            <p class="lnote__de">Geht unser Weg; o Vater, laß uns ziehn!</p>
+            <p class="lnote__zh">前两节末行是虚拟愿望（Möcht’ ich…），第三节改为陈述句 "Geht unser Weg"（我们的路就在那里），语气从祈愿转为断言；laß（今作 lass）是
+              lassen 的命令式，构成使役结构 "laß uns ziehn"（让我们走吧）。</p>
+          </article>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="2"><span class="linetext">Im dunkeln Laub die Goldorangen glühn,<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
-          <div class="pline__zh">幽暗的绿叶间金橙闪烁，</div>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">重点词汇</span>
+          <span class="section__de">Wortschatz</span>
+        </header>
+        <div class="vocab-list">
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Zitrone, -n</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">柠檬</div>
+            <div class="vocab-card__note">"Wo die Zitronen blühn" 已成为德语中指代意大利/南方的固定套语，约翰·施特劳斯的圆舞曲《Wo die Zitronen
+              blühen》即取自此句。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">das Laub</span></div>
+            <span class="vocab-card__pos">n.（中性，集合名词）</span>
+            <div class="vocab-card__meaning">（树木的）叶子、枝叶</div>
+            <div class="vocab-card__note">集合名词，无复数；与可数的 das Blatt（单片叶子）区分。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Myrte, -n</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">桃金娘</div>
+            <div class="vocab-card__note">地中海常绿灌木，在古希腊神话中是爱与美之神阿佛洛狄忒的圣树，德语传统中亦为新娘花冠用花，象征婚姻。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">der Lorbeer, -en</span></div>
+            <span class="vocab-card__pos">n.（阳性）</span>
+            <div class="vocab-card__meaning">月桂</div>
+            <div class="vocab-card__note">阿波罗的圣树，象征诗人与胜利者的荣冠（Lorbeerkranz 桂冠）；与桃金娘并置构成阴／阳、爱情／艺术的对照。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">das Gemach, Gemächer</span></div>
+            <span class="vocab-card__pos">n.（中性）</span>
+            <div class="vocab-card__meaning">（华美的）内室、寝室</div>
+            <div class="vocab-card__note">古雅用词，今多见于文学与历史语境；与前一行的 der Saal（大厅）构成由公共空间到私密空间的推进。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">der Wolkensteg, -e</span></div>
+            <span class="vocab-card__pos">n.（阳性，复合词）</span>
+            <div class="vocab-card__meaning">云中的小径</div>
+            <div class="vocab-card__note">由 Wolke（云）+ Steg（小桥、窄径）构成的诗性复合词，非日常用语，指高耸入云的山间栈道。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">das Maultier, -e</span></div>
+            <span class="vocab-card__pos">n.（中性）</span>
+            <div class="vocab-card__meaning">骡子</div>
+            <div class="vocab-card__note">字面为"骡兽"（Maul + Tier）；阿尔卑斯山口传统的驮运牲畜，是全诗中最写实的一个细节。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Brut, -en</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">（同一窝的）幼崽、族类</div>
+            <div class="vocab-card__note">本义为孵化出的一窝幼雏（brüten 孵蛋），引申后常带贬义（"一伙"）；诗中 "der Drachen alte Brut" 指龙的古老族类。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">der Beschützer, -</span></div>
+            <span class="vocab-card__pos">n.（阳性）</span>
+            <div class="vocab-card__meaning">保护者</div>
+            <div class="vocab-card__note">由 beschützen（保护）+ -er 构成的施动者名词；阴性形式为 die Beschützerin。</div>
+          </div>
         </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Ein sanfter Wind vom blauen Himmel weht,</span></div>
-          <div class="pline__zh">轻柔的风自蔚蓝的天空吹来，</div>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">动词变位</span>
+          <span class="section__de">Konjugation</span>
+        </header>
+        <div class="verb-table-wrap">
+          <table class="verb-table">
+            <thead>
+              <tr>
+                <th>Infinitiv</th>
+                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
+                <th>Präteritum</th>
+                <th>Perfekt</th>
+                <th>Partizip II</th>
+                <th>Konjunktiv II</th>
+                <th>Hilfsverb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="de">kennen</td>
+                <td class="de">kennt</td>
+                <td class="de">kannte</td>
+                <td class="de">hat gekannt</td>
+                <td class="de">gekannt</td>
+                <td class="de">kennte</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 混合变化动词（词干变元音但用弱变化词尾）；诗中三次以 "Kennst du …?" 开篇。注意与 wissen（知道事实）、können（会）的区别：kennen
+                  指"熟识、认得"。</td>
+              </tr>
+              <tr>
+                <td class="de">blühen</td>
+                <td class="de">blüht</td>
+                <td class="de">blühte</td>
+                <td class="de">hat geblüht</td>
+                <td class="de">geblüht</td>
+                <td class="de">blühte</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 诗中复数现在时省音形式 blühn（今 blühen）。</td>
+              </tr>
+              <tr>
+                <td class="de">glühen</td>
+                <td class="de">glüht</td>
+                <td class="de">glühte</td>
+                <td class="de">hat geglüht</td>
+                <td class="de">geglüht</td>
+                <td class="de">glühte</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 意为"灼热地发光、炽燃"；诗中省音作 glühn，与 blühn 押韵。</td>
+              </tr>
+              <tr>
+                <td class="de">mögen</td>
+                <td class="de">mag</td>
+                <td class="de">mochte</td>
+                <td class="de">hat gemocht</td>
+                <td class="de">gemocht / mögen</td>
+                <td class="de">möchte</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 情态动词；诗中用第二虚拟式省音形式 Möcht’（= möchte），表达委婉的愿望，是本诗情感的核心语法手段。</td>
+              </tr>
+              <tr>
+                <td class="de">ziehen</td>
+                <td class="de">zieht</td>
+                <td class="de">zog</td>
+                <td class="de">ist/hat gezogen</td>
+                <td class="de">gezogen</td>
+                <td class="de">zöge</td>
+                <td>sein（表移动）／haben（表拉拽）</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 诗中取"迁移、动身前往"之义（用 sein 作助动词），省音作 ziehn。</td>
+              </tr>
+              <tr>
+                <td class="de">lassen</td>
+                <td class="de">lässt</td>
+                <td class="de">ließ</td>
+                <td class="de">hat gelassen</td>
+                <td class="de">gelassen / lassen</td>
+                <td class="de">ließe</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 诗中用命令式旧拼法 laß（今 lass），构成使役结构 "laß uns ziehn"。</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="3"><span class="linetext">Die Myrte still und hoch der Lorbeer steht,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-          <div class="pline__zh">桃金娘静立、月桂高耸，</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">语法要点</span>
+          <span class="section__de">Grammatik</span>
+        </header>
+        <div class="grammar-list">
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">首语重复（Anapher）与三段式结构</h3>
+            <p class="grammar-item__quote">Kennst du das Land …? / Kennst du das Haus? / Kennst du den Berg …?</p>
+            <div class="grammar-item__body">三节均以同一疑问句式开头，宾语依次为 das Land（中性）、das Haus（中性）、den
+              Berg（阳性第四格）。第五行的回指代词也随之变化：前两节因先行词为中性而作 "Kennst du es wohl?"，第三节因 der Berg 为阳性而改作 "Kennst du ihn
+              wohl?"。这是观察德语代词性数一致的绝佳范例——若忽略这一点，第三节的 ihn 会读不通。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">第二虚拟式 möchte 表达委婉愿望</h3>
+            <p class="grammar-item__quote">Möcht’ ich mit dir, o mein Geliebter, ziehn!</p>
+            <div class="grammar-item__body">möchte 形式上是 mögen 的第二虚拟式，功能上已固化为独立的情态表达，意为"想要、但愿"，比 will 委婉得多。此处采用倒装（动词在前、主语
+              ich 在后），这是德语中表达强烈愿望的句型（相当于 "Wie gern möchte ich …"）。诗中省略了词尾 -e 并用省字符标出：Möcht’。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">交错语序（Chiasmus）</h3>
+            <p class="grammar-item__quote">Die Myrte still und hoch der Lorbeer steht,</p>
+            <div class="grammar-item__body">本行的成分顺序是「主语—状语—状语—主语—动词」（Myrte still / hoch
+              Lorbeer），两个并列成分呈镜像排列，构成修辞学上的交错配列。德语因语序相对灵活而特别适合这一手法；翻译时中文难以完全还原，只能靠句读节奏近似传达。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">省音形式与省字符 ’</h3>
+            <p class="grammar-item__quote">blühn / glühn / stehn / sehn / ziehn / Möcht’</p>
+            <div class="grammar-item__body">本诗大量使用省音（Elision）以配合五音步抑扬格（jambischer Fünfheber）。有两种写法：一是直接省去 -e-
+              而不加符号（blühen → blühn），二是省去词尾并以省字符标记（möchte → möcht’）。学习者应能在阅读中自动还原完整形式，同时理解这些省略并非拼写错误，而是格律要求。</div>
+          </article>
         </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Kennst du es wohl?</span></div>
-          <div class="pline__zh">你可知道它吗？</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">文学意象与文化背景</span>
+          <span class="section__de">Hintergrund</span>
+        </header>
+        <div class="prose">
+          <p>
+            《迷娘》最早出现在《威廉·迈斯特的戏剧使命》中，后来成为《威廉·迈斯特的学习时代》第三卷的卷首诗。歌德自1782年11月起用了约一年时间写作《戏剧使命》第四卷，此诗大约作于这一时期——也就是说，写在他1786年的意大利之行之前：这首德语中最著名的"意大利之歌"，其实是一位尚未到过意大利的诗人的想象。1815年编纂文集时，歌德把另外三首迷娘之歌收入《选自威廉·迈斯特》一栏，却单单把《你可知道那地方》题为
+            Mignon 放在《叙事诗》栏的开篇，显示出这首诗在体裁归属上的模糊性。</p>
+          <p>
+            在小说里，迷娘是威廉从一个杂耍班子手中赎出的少女，唱这首歌时用的是意大利语，威廉起初听不懂全部词句，请她反复吟唱并解释，才得以记录并译成德语——歌德借叙述者之口说，翻译过程中"措辞的原创性"和"表达的稚拙纯真"都流失了。这一虚构的"翻译损耗"设定，使这首诗从一开始就带有自我指涉的意味：它本身就是一首关于"译文永远不是原文"的诗。
+          </p>
+          <p>
+            此诗是歌德被谱曲次数最多的作品之一，现存约100种作曲，作曲家包括贝多芬、舒伯特、策尔特、舒曼、李斯特、施波尔、柴可夫斯基、胡戈·沃尔夫与鲁宾斯坦等。它引发的仿作与戏拟同样众多，从艾兴多夫《一个无用人的生涯》中的"意大利，那橘子生长的地方"，到埃里希·凯斯特纳1927年的《你可知道那地方，那里大炮开花？》（Kennst
+            Du das Land, wo die Kanonen blühn?），构成了一条延续两个世纪的互文链条。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Dahin! Dahin</span></div>
-          <div class="pline__zh">去那里！去那里</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">译文说明</span>
+          <span class="section__de">Anmerkung</span>
+        </header>
+        <div class="prose">
+          <p>中文译文为本站学习译文（AI 辅助），采用直译，重点保留三节结构的严格平行、五、六行的短促呼唤，以及末行称谓 Geliebter—Beschützer—Vater
+            的三度转换（这一转换是全诗的关键，若统一译为"亲爱的"便会失去歌德修改稿本的用意）。第三节末行由虚拟愿望改为陈述句，中译以"我们的路就通向那里"传达其语气变化。已知此诗存在多个中文译本（如钱春绮、杨武能、绿原等译者的翻译），因版权原因本站不转载具体译本全文。
+          </p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="4"><span class="linetext">Möcht’ ich mit dir, o mein Geliebter, ziehn!<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
-          <div class="pline__zh">我愿与你同往，我的爱人啊！</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">德文原文出处</span>
+          <span class="section__de">Quellen</span>
+        </header>
+        <ul class="source-list">
+          <li>
+            <span class="source-name">German Wikipedia — „Mignon (Gedicht)“</span><a class="source-url"
+              href="https://de.wikipedia.org/wiki/Mignon_(Gedicht)" target="_blank"
+              rel="noopener">https://de.wikipedia.org/wiki/Mignon_(Gedicht)</a>
+            <span class="source-note">主来源。全文三节完整，明确标注引自 Goethes Werke, Hamburger Ausgabe, Band VII（Romane und Novellen
+              II）, Beck, München 1998, S. 145；并记录了《戏剧使命》早期稿的异文（im grünen Laub / und froh der Lorbeer / 三次
+              Gebieter）。</span>
+          </li>
+          <li>
+            <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Mignon (1782)“</span><a class="source-url"
+              href="https://www.deutschelyrik.de/mignon-1782.html" target="_blank"
+              rel="noopener">https://www.deutschelyrik.de/mignon-1782.html</a>
+            <span class="source-note">辅助来源。三节全文与主来源逐词一致，仅在拼写与标点上采用现代化处理（dunklen / steht? / getan?- / ziehn! / Weg! /
+              lass），用于交叉核对词序与分行。</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">译文出处 · 版权</span>
+          <span class="section__de">Übersetzungsnachweis</span>
+        </header>
+        <ul class="source-list">
+          <li>
+            <span class="source-name">本站学习译文（中文）</span>
+            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮、杨武能、绿原等译者的中译本，因版权原因未转载全文。</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">校对记录</span>
+          <span class="section__de">Korrektorat</span>
+        </header>
+        <div class="prose">
+          <p>德文正文通过两个独立来源（German Wikipedia 依汉堡版第7卷第145页，与 deutschelyrik.de）逐词核对，三节各七行、词序与内容完全一致。已记录的差异分两类：(1)
+            版本差异（作者本人修改）：《威廉·迈斯特的戏剧使命》早期稿第2行作 "im grünen Laub"、第4行作 "…und froh der Lorbeer"，且三节末行的呼语原本三次都是
+            Gebieter，歌德后改为 Geliebter / Beschützer / Vater。本站采用《学习时代》定稿。(2) 编辑排印差异（后世编者）：deutschelyrik.de
+            采用现代化正字法与略有不同的标点（第4行末作问号、第11行末多一破折号、第7行末作感叹号、第14行末作感叹号、第21行分号作感叹号、laß 作
+            lass），本站从汉堡版的拼写与标点。需说明的是，本站未直接查阅汉堡版纸质本或手稿，仅依据 Wikipedia 对该版的转录，故上述标点采择属"依二手转录"，建议有条件的读者对照汉堡版原书核实。</p>
         </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Kennst du das Haus? auf Säulen ruht sein Dach,</span></div>
-          <div class="pline__zh">你可知道那房子？屋顶架在圆柱之上，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Es glänzt der Saal, es schimmert das Gemach,</span></div>
-          <div class="pline__zh">大厅闪耀，内室微光流动，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="5"><span class="linetext">Und Marmorbilder stehn und sehn mich an:<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-          <div class="pline__zh">大理石雕像伫立着，望着我：</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="6"><span class="linetext">Was hat man dir, du armes Kind, getan?<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
-          <div class="pline__zh">他们把你怎么了，你可怜的孩子？</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Kennst du es wohl?</span></div>
-          <div class="pline__zh">你可知道它吗？</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Dahin! Dahin</span></div>
-          <div class="pline__zh">去那里！去那里</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Möcht’ ich mit dir, o mein Beschützer, ziehn.</span></div>
-          <div class="pline__zh">我愿与你同往，我的保护者啊。</div>
-        </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Kennst du den Berg und seinen Wolkensteg?</span></div>
-          <div class="pline__zh">你可知道那座山和它的云中小径？</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Das Maultier sucht im Nebel seinen Weg,</span></div>
-          <div class="pline__zh">骡子在雾中寻找它的路，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="7"><span class="linetext">In Höhlen wohnt der Drachen alte Brut,<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
-          <div class="pline__zh">洞穴里住着龙的古老族群，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Es stürzt der Fels und über ihn die Flut:</span></div>
-          <div class="pline__zh">岩石崩落，洪流又漫过它：</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Kennst du ihn wohl?</span></div>
-          <div class="pline__zh">你可知道它吗？</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Dahin! Dahin</span></div>
-          <div class="pline__zh">去那里！去那里</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="8"><span class="linetext">Geht unser Weg; o Vater, laß uns ziehn!<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-          <div class="pline__zh">我们的路就通向那里；父亲啊，让我们走吧！</div>
-        </div>
-      </div>
-        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留三节相同的提问—呼唤结构与结尾称谓由"爱人—保护者—父亲"的三度转换</p>
-      </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">逐行注释</span>
-        <span class="section__de">Zeilenkommentar</span>
-      </header>
-            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
-        <span class="lnote__mark">1</span>
-        <p class="lnote__de">Kennst du das Land, wo die Zitronen blühn,</p>
-        <p class="lnote__zh">全诗三节均以 "Kennst du …?" 开头，构成首语重复（Anapher）。blühn 是 blühen 的诗歌省音形式。这一行是德语中最著名的诗句之一，也是"意大利乡愁"（Italiensehnsucht）在德语文学中的经典表述。</p>
-      </article>
-      <article class="lnote" id="note-2" data-noteref="2">
-        <span class="lnote__mark">2</span>
-        <p class="lnote__de">Im dunkeln Laub die Goldorangen glühn,</p>
-        <p class="lnote__zh">dunkeln 是 dunkel 在弱变化第三格单数中因音节省略产生的形式（dunkelen → dunkeln）。《戏剧使命》早期稿此处作 "im grünen Laub"（绿叶间），改为 dunkeln 后与金色的橙子形成更强的明暗对比。</p>
-      </article>
-      <article class="lnote" id="note-3" data-noteref="3">
-        <span class="lnote__mark">3</span>
-        <p class="lnote__de">Die Myrte still und hoch der Lorbeer steht,</p>
-        <p class="lnote__zh">两个主语（Myrte、Lorbeer）共用一个单数动词 steht，且状语 still / hoch 交叉排列，形成对称的交错语序（Chiasmus）。早期稿作 "…und froh der Lorbeer"。彼得·冯·马特指出：桃金娘是阿佛洛狄忒之树、月桂是阿波罗之树，二者的并置在古典象征体系中暗示男女两性与"少女时代的结束"。</p>
-      </article>
-      <article class="lnote" id="note-4" data-noteref="4">
-        <span class="lnote__mark">4</span>
-        <p class="lnote__de">Möcht’ ich mit dir, o mein Geliebter, ziehn!</p>
-        <p class="lnote__zh">möcht’ 是 möchte 的省音形式，为 mögen 的第二虚拟式，表达委婉的愿望。三节末行的呼语依次为 Geliebter（爱人）—Beschützer（保护者）—Vater（父亲）；《戏剧使命》早期稿三次都作 Gebieter（主人），歌德的这一修改精准地暗示了迷娘与威廉之间那种混合了爱情、依赖与父女感情的复杂关系。</p>
-      </article>
-      <article class="lnote" id="note-5" data-noteref="5">
-        <span class="lnote__mark">5</span>
-        <p class="lnote__de">Und Marmorbilder stehn und sehn mich an:</p>
-        <p class="lnote__zh">stehn / sehn 均为省音形式（stehen / sehen）；an…sehen 是可分动词，前缀 an 移至句末。此行是全诗气氛的转折点：前面还是明亮的建筑描写，这里雕像忽然"看着我"，把外景拉入迷娘自身的创伤记忆。</p>
-      </article>
-      <article class="lnote" id="note-6" data-noteref="6">
-        <span class="lnote__mark">6</span>
-        <p class="lnote__de">Was hat man dir, du armes Kind, getan?</p>
-        <p class="lnote__zh">全诗唯一一句直接引语，说话者是那些大理石雕像。man（泛指的"人们"）保持了施害者的匿名——在小说中读者最终得知，迷娘是竖琴师与其妹妹乱伦所生的孩子。这句怜悯之问在《学习时代》后文中被多次回响（"迷娘之歌里那些同情的大理石雕像"）。</p>
-      </article>
-      <article class="lnote" id="note-7" data-noteref="7">
-        <span class="lnote__mark">7</span>
-        <p class="lnote__de">In Höhlen wohnt der Drachen alte Brut,</p>
-        <p class="lnote__zh">der Drachen 是复数第二格（今作 der Drachen 或 der Drachens 均有争议，此处为古形），修饰 alte Brut（古老的族类/一窝幼崽）。第三节从明亮的南方风景转入危险的高山意象，暗指翻越圣哥达山口的艰险——歌德本人曾两度从那里遥望意大利而折返。</p>
-      </article>
-      <article class="lnote" id="note-8" data-noteref="8">
-        <span class="lnote__mark">8</span>
-        <p class="lnote__de">Geht unser Weg; o Vater, laß uns ziehn!</p>
-        <p class="lnote__zh">前两节末行是虚拟愿望（Möcht’ ich…），第三节改为陈述句 "Geht unser Weg"（我们的路就在那里），语气从祈愿转为断言；laß（今作 lass）是 lassen 的命令式，构成使役结构 "laß uns ziehn"（让我们走吧）。</p>
-      </article>      </div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">重点词汇</span>
-        <span class="section__de">Wortschatz</span>
-      </header>
-            <div class="vocab-list">      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Zitrone, -n</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">柠檬</div>
-        <div class="vocab-card__note">"Wo die Zitronen blühn" 已成为德语中指代意大利/南方的固定套语，约翰·施特劳斯的圆舞曲《Wo die Zitronen blühen》即取自此句。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">das Laub</span></div>
-        <span class="vocab-card__pos">n.（中性，集合名词）</span>
-        <div class="vocab-card__meaning">（树木的）叶子、枝叶</div>
-        <div class="vocab-card__note">集合名词，无复数；与可数的 das Blatt（单片叶子）区分。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Myrte, -n</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">桃金娘</div>
-        <div class="vocab-card__note">地中海常绿灌木，在古希腊神话中是爱与美之神阿佛洛狄忒的圣树，德语传统中亦为新娘花冠用花，象征婚姻。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">der Lorbeer, -en</span></div>
-        <span class="vocab-card__pos">n.（阳性）</span>
-        <div class="vocab-card__meaning">月桂</div>
-        <div class="vocab-card__note">阿波罗的圣树，象征诗人与胜利者的荣冠（Lorbeerkranz 桂冠）；与桃金娘并置构成阴／阳、爱情／艺术的对照。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">das Gemach, Gemächer</span></div>
-        <span class="vocab-card__pos">n.（中性）</span>
-        <div class="vocab-card__meaning">（华美的）内室、寝室</div>
-        <div class="vocab-card__note">古雅用词，今多见于文学与历史语境；与前一行的 der Saal（大厅）构成由公共空间到私密空间的推进。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">der Wolkensteg, -e</span></div>
-        <span class="vocab-card__pos">n.（阳性，复合词）</span>
-        <div class="vocab-card__meaning">云中的小径</div>
-        <div class="vocab-card__note">由 Wolke（云）+ Steg（小桥、窄径）构成的诗性复合词，非日常用语，指高耸入云的山间栈道。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">das Maultier, -e</span></div>
-        <span class="vocab-card__pos">n.（中性）</span>
-        <div class="vocab-card__meaning">骡子</div>
-        <div class="vocab-card__note">字面为"骡兽"（Maul + Tier）；阿尔卑斯山口传统的驮运牲畜，是全诗中最写实的一个细节。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Brut, -en</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">（同一窝的）幼崽、族类</div>
-        <div class="vocab-card__note">本义为孵化出的一窝幼雏（brüten 孵蛋），引申后常带贬义（"一伙"）；诗中 "der Drachen alte Brut" 指龙的古老族类。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">der Beschützer, -</span></div>
-        <span class="vocab-card__pos">n.（阳性）</span>
-        <div class="vocab-card__meaning">保护者</div>
-        <div class="vocab-card__note">由 beschützen（保护）+ -er 构成的施动者名词；阴性形式为 die Beschützerin。</div>
-      </div>      </div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">动词变位</span>
-        <span class="section__de">Konjugation</span>
-      </header>
-      <div class="verb-table-wrap">
-      <table class="verb-table">
-        <thead>
-          <tr>
-            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="de">kennen</td>
-          <td class="de">kennt</td>
-          <td class="de">kannte</td>
-          <td class="de">hat gekannt</td>
-          <td class="de">gekannt</td>
-          <td class="de">kennte</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 混合变化动词（词干变元音但用弱变化词尾）；诗中三次以 "Kennst du …?" 开篇。注意与 wissen（知道事实）、können（会）的区别：kennen 指"熟识、认得"。</td></tr>
-        <tr>
-          <td class="de">blühen</td>
-          <td class="de">blüht</td>
-          <td class="de">blühte</td>
-          <td class="de">hat geblüht</td>
-          <td class="de">geblüht</td>
-          <td class="de">blühte</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 诗中复数现在时省音形式 blühn（今 blühen）。</td></tr>
-        <tr>
-          <td class="de">glühen</td>
-          <td class="de">glüht</td>
-          <td class="de">glühte</td>
-          <td class="de">hat geglüht</td>
-          <td class="de">geglüht</td>
-          <td class="de">glühte</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 意为"灼热地发光、炽燃"；诗中省音作 glühn，与 blühn 押韵。</td></tr>
-        <tr>
-          <td class="de">mögen</td>
-          <td class="de">mag</td>
-          <td class="de">mochte</td>
-          <td class="de">hat gemocht</td>
-          <td class="de">gemocht / mögen</td>
-          <td class="de">möchte</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 情态动词；诗中用第二虚拟式省音形式 Möcht’（= möchte），表达委婉的愿望，是本诗情感的核心语法手段。</td></tr>
-        <tr>
-          <td class="de">ziehen</td>
-          <td class="de">zieht</td>
-          <td class="de">zog</td>
-          <td class="de">ist/hat gezogen</td>
-          <td class="de">gezogen</td>
-          <td class="de">zöge</td>
-          <td>sein（表移动）／haben（表拉拽）</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 诗中取"迁移、动身前往"之义（用 sein 作助动词），省音作 ziehn。</td></tr>
-        <tr>
-          <td class="de">lassen</td>
-          <td class="de">lässt</td>
-          <td class="de">ließ</td>
-          <td class="de">hat gelassen</td>
-          <td class="de">gelassen / lassen</td>
-          <td class="de">ließe</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 诗中用命令式旧拼法 laß（今 lass），构成使役结构 "laß uns ziehn"。</td></tr>
-        </tbody>
-      </table>
-    </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">语法要点</span>
-        <span class="section__de">Grammatik</span>
-      </header>
-            <div class="grammar-list">      <article class="grammar-item">
-        <h3 class="grammar-item__title">首语重复（Anapher）与三段式结构</h3>
-        <p class="grammar-item__quote">Kennst du das Land …? / Kennst du das Haus? / Kennst du den Berg …?</p>
-        <div class="grammar-item__body">三节均以同一疑问句式开头，宾语依次为 das Land（中性）、das Haus（中性）、den Berg（阳性第四格）。第五行的回指代词也随之变化：前两节因先行词为中性而作 "Kennst du es wohl?"，第三节因 der Berg 为阳性而改作 "Kennst du ihn wohl?"。这是观察德语代词性数一致的绝佳范例——若忽略这一点，第三节的 ihn 会读不通。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">第二虚拟式 möchte 表达委婉愿望</h3>
-        <p class="grammar-item__quote">Möcht’ ich mit dir, o mein Geliebter, ziehn!</p>
-        <div class="grammar-item__body">möchte 形式上是 mögen 的第二虚拟式，功能上已固化为独立的情态表达，意为"想要、但愿"，比 will 委婉得多。此处采用倒装（动词在前、主语 ich 在后），这是德语中表达强烈愿望的句型（相当于 "Wie gern möchte ich …"）。诗中省略了词尾 -e 并用省字符标出：Möcht’。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">交错语序（Chiasmus）</h3>
-        <p class="grammar-item__quote">Die Myrte still und hoch der Lorbeer steht,</p>
-        <div class="grammar-item__body">本行的成分顺序是「主语—状语—状语—主语—动词」（Myrte still / hoch Lorbeer），两个并列成分呈镜像排列，构成修辞学上的交错配列。德语因语序相对灵活而特别适合这一手法；翻译时中文难以完全还原，只能靠句读节奏近似传达。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">省音形式与省字符 ’</h3>
-        <p class="grammar-item__quote">blühn / glühn / stehn / sehn / ziehn / Möcht’</p>
-        <div class="grammar-item__body">本诗大量使用省音（Elision）以配合五音步抑扬格（jambischer Fünfheber）。有两种写法：一是直接省去 -e- 而不加符号（blühen → blühn），二是省去词尾并以省字符标记（möchte → möcht’）。学习者应能在阅读中自动还原完整形式，同时理解这些省略并非拼写错误，而是格律要求。</div>
-      </article>      </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">文学意象与文化背景</span>
-        <span class="section__de">Hintergrund</span>
-      </header>
-      <div class="prose"><p>《迷娘》最早出现在《威廉·迈斯特的戏剧使命》中，后来成为《威廉·迈斯特的学习时代》第三卷的卷首诗。歌德自1782年11月起用了约一年时间写作《戏剧使命》第四卷，此诗大约作于这一时期——也就是说，写在他1786年的意大利之行之前：这首德语中最著名的"意大利之歌"，其实是一位尚未到过意大利的诗人的想象。1815年编纂文集时，歌德把另外三首迷娘之歌收入《选自威廉·迈斯特》一栏，却单单把《你可知道那地方》题为 Mignon 放在《叙事诗》栏的开篇，显示出这首诗在体裁归属上的模糊性。</p>
-<p>在小说里，迷娘是威廉从一个杂耍班子手中赎出的少女，唱这首歌时用的是意大利语，威廉起初听不懂全部词句，请她反复吟唱并解释，才得以记录并译成德语——歌德借叙述者之口说，翻译过程中"措辞的原创性"和"表达的稚拙纯真"都流失了。这一虚构的"翻译损耗"设定，使这首诗从一开始就带有自我指涉的意味：它本身就是一首关于"译文永远不是原文"的诗。</p>
-<p>此诗是歌德被谱曲次数最多的作品之一，现存约100种作曲，作曲家包括贝多芬、舒伯特、策尔特、舒曼、李斯特、施波尔、柴可夫斯基、胡戈·沃尔夫与鲁宾斯坦等。它引发的仿作与戏拟同样众多，从艾兴多夫《一个无用人的生涯》中的"意大利，那橘子生长的地方"，到埃里希·凯斯特纳1927年的《你可知道那地方，那里大炮开花？》（Kennst Du das Land, wo die Kanonen blühn?），构成了一条延续两个世纪的互文链条。</p></div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">译文说明</span>
-        <span class="section__de">Anmerkung</span>
-      </header>
-      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译，重点保留三节结构的严格平行、五、六行的短促呼唤，以及末行称谓 Geliebter—Beschützer—Vater 的三度转换（这一转换是全诗的关键，若统一译为"亲爱的"便会失去歌德修改稿本的用意）。第三节末行由虚拟愿望改为陈述句，中译以"我们的路就通向那里"传达其语气变化。已知此诗存在多个中文译本（如钱春绮、杨武能、绿原等译者的翻译），因版权原因本站不转载具体译本全文。</p></div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">德文原文出处</span>
-        <span class="section__de">Quellen</span>
-      </header>
-      <ul class="source-list">
-      <li>
-        <span class="source-name">German Wikipedia — „Mignon (Gedicht)“</span><a class="source-url" href="https://de.wikipedia.org/wiki/Mignon_(Gedicht)" target="_blank" rel="noopener">https://de.wikipedia.org/wiki/Mignon_(Gedicht)</a>
-        <span class="source-note">主来源。全文三节完整，明确标注引自 Goethes Werke, Hamburger Ausgabe, Band VII（Romane und Novellen II）, Beck, München 1998, S. 145；并记录了《戏剧使命》早期稿的异文（im grünen Laub / und froh der Lorbeer / 三次 Gebieter）。</span>
-      </li>
-      <li>
-        <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Mignon (1782)“</span><a class="source-url" href="https://www.deutschelyrik.de/mignon-1782.html" target="_blank" rel="noopener">https://www.deutschelyrik.de/mignon-1782.html</a>
-        <span class="source-note">辅助来源。三节全文与主来源逐词一致，仅在拼写与标点上采用现代化处理（dunklen / steht? / getan?- / ziehn! / Weg! / lass），用于交叉核对词序与分行。</span>
-      </li>
-    </ul>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">译文出处 · 版权</span>
-        <span class="section__de">Übersetzungsnachweis</span>
-      </header>
-      <ul class="source-list">
-      <li>
-        <span class="source-name">本站学习译文（中文）</span>
-        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在钱春绮、杨武能、绿原等译者的中译本，因版权原因未转载全文。</span>
-      </li>
-    </ul>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">校对记录</span>
-        <span class="section__de">Korrektorat</span>
-      </header>
-      <div class="prose"><p>德文正文通过两个独立来源（German Wikipedia 依汉堡版第7卷第145页，与 deutschelyrik.de）逐词核对，三节各七行、词序与内容完全一致。已记录的差异分两类：(1) 版本差异（作者本人修改）：《威廉·迈斯特的戏剧使命》早期稿第2行作 "im grünen Laub"、第4行作 "…und froh der Lorbeer"，且三节末行的呼语原本三次都是 Gebieter，歌德后改为 Geliebter / Beschützer / Vater。本站采用《学习时代》定稿。(2) 编辑排印差异（后世编者）：deutschelyrik.de 采用现代化正字法与略有不同的标点（第4行末作问号、第11行末多一破折号、第7行末作感叹号、第14行末作感叹号、第21行分号作感叹号、laß 作 lass），本站从汉堡版的拼写与标点。需说明的是，本站未直接查阅汉堡版纸质本或手稿，仅依据 Wikipedia 对该版的转录，故上述标点采择属"依二手转录"，建议有条件的读者对照汉堡版原书核实。</p></div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">上线前质量 Checklist</span>
-        <span class="section__de">Prüfliste</span>
-      </header>
-            <ul class="checklist">        <li>确认作者：Johann Wolfgang von Goethe</li>
-        <li>确认标题：Mignon（首句 Kennst du das Land）</li>
-        <li>德文原文主来源：German Wikipedia（引汉堡版 HA Bd. VII, S. 145）</li>
-        <li>德文原文辅助来源：deutschelyrik.de</li>
-        <li>核对诗节、行数、标点</li>
-        <li>记录版本差异（戏剧使命早期稿异文；两来源的正字法与标点差异）</li>
-        <li>查找已有中文译本（已知存在，未转载全文）</li>
-        <li>判断译文版权可用性（现代中译不可用）</li>
-        <li>制作本站学习译文（中文）</li>
-        <li>提取重点词汇</li>
-        <li>校对 lemma 与词性</li>
-        <li>补充动词变位</li>
-        <li>撰写语法要点</li>
-        <li>撰写背景说明</li>
-        <li>撰写 image brief</li>
-        <li>生成 AI 配图（已接入）</li>
-        <li>页面视觉检查</li>
-        <li class="pending">对照汉堡版纸质本核实标点（现依 Wikipedia 转录）</li>
-        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
-    </section>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">上线前质量 Checklist</span>
+          <span class="section__de">Prüfliste</span>
+        </header>
+        <ul class="checklist">
+          <li>确认作者：Johann Wolfgang von Goethe</li>
+          <li>确认标题：Mignon（首句 Kennst du das Land）</li>
+          <li>德文原文主来源：German Wikipedia（引汉堡版 HA Bd. VII, S. 145）</li>
+          <li>德文原文辅助来源：deutschelyrik.de</li>
+          <li>核对诗节、行数、标点</li>
+          <li>记录版本差异（戏剧使命早期稿异文；两来源的正字法与标点差异）</li>
+          <li>查找已有中文译本（已知存在，未转载全文）</li>
+          <li>判断译文版权可用性（现代中译不可用）</li>
+          <li>制作本站学习译文（中文）</li>
+          <li>提取重点词汇</li>
+          <li>校对 lemma 与词性</li>
+          <li>补充动词变位</li>
+          <li>撰写语法要点</li>
+          <li>撰写背景说明</li>
+          <li>撰写 image brief</li>
+          <li>生成 AI 配图（已接入）</li>
+          <li>页面视觉检查</li>
+          <li class="pending">对照汉堡版纸质本核实标点（现依 Wikipedia 转录）</li>
+          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+        </ul>
+      </section>
     </div>
   </main>
   <footer class="site-footer">
@@ -488,106 +594,110 @@
     <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
   </footer>
   <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
+      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V6M6 12l6-6 6 6" />
+    </svg>
   </button>
-<script>
-  (function () {
-    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (es) {
-        es.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+  <script>
+    (function () {
+      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+      }
+      // 朱批旁注联动：诗行 ↔ 注释互相高亮
+      function highlight(id, on, source) {
+        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+        var sel = '[data-noteref="' + escId + '"]';
+        document.querySelectorAll(sel).forEach(function (p) {
+          if (p !== source) p.classList.toggle('is-linked', on);
         });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-    } else {
-      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-    }
-    // 朱批旁注联动：诗行 ↔ 注释互相高亮
-    function highlight(id, on, source) {
-      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-      var sel = '[data-noteref="' + escId + '"]';
-      document.querySelectorAll(sel).forEach(function (p) {
-        if (p !== source) p.classList.toggle('is-linked', on);
+        if (source) source.classList.toggle('is-self', on);
+      }
+      // 鼠标：悬停诗行或注释
+      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+        var id = el.getAttribute('data-noteref');
+        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
       });
-      if (source) source.classList.toggle('is-self', on);
-    }
-    // 鼠标：悬停诗行或注释
-    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-      var id = el.getAttribute('data-noteref');
-      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-    });
-    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-    document.querySelectorAll('.refmark a').forEach(function (a) {
-      var vline = a.closest('.vline[data-noteref]');
-      if (!vline) return;
-      var id = vline.getAttribute('data-noteref');
-      a.addEventListener('focus', function () { highlight(id, true, vline); });
-      a.addEventListener('blur', function () { highlight(id, false, vline); });
-    });
-    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-    var toggle = document.querySelector('.theme-toggle');
-    if (toggle) {
-      var syncToggle = function () {
-        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-      };
-      syncToggle();
-      toggle.addEventListener('click', function () {
-        var cur = document.documentElement.getAttribute('data-theme') || 'light';
-        var next = cur === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
+      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+      document.querySelectorAll('.refmark a').forEach(function (a) {
+        var vline = a.closest('.vline[data-noteref]');
+        if (!vline) return;
+        var id = vline.getAttribute('data-noteref');
+        a.addEventListener('focus', function () { highlight(id, true, vline); });
+        a.addEventListener('blur', function () { highlight(id, false, vline); });
+      });
+      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+      var toggle = document.querySelector('.theme-toggle');
+      if (toggle) {
+        var syncToggle = function () {
+          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+        };
         syncToggle();
+        toggle.addEventListener('click', function () {
+          var cur = document.documentElement.getAttribute('data-theme') || 'light';
+          var next = cur === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) { }
+          syncToggle();
+        });
+      }
+      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+      var modals = document.querySelectorAll('dialog.modal');
+      modals.forEach(function (modal) {
+        var closeBtn = modal.querySelector('.modal__close');
+        // ✕ 关闭
+        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+        // 点遮罩（dialog 自身区域）关闭
+        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+        modal.addEventListener('close', function () {
+          document.body.classList.remove('modal-open');
+          var t = modal._trigger;
+          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        });
       });
-    }
-    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-    var modals = document.querySelectorAll('dialog.modal');
-    modals.forEach(function (modal) {
-      var closeBtn = modal.querySelector('.modal__close');
-      // ✕ 关闭
-      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-      // 点遮罩（dialog 自身区域）关闭
-      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-      modal.addEventListener('close', function () {
-        document.body.classList.remove('modal-open');
-        var t = modal._trigger;
-        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      var triggers = document.querySelectorAll('.brief-trigger');
+      triggers.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var id = btn.getAttribute('data-modal');
+          var modal = id && document.getElementById(id);
+          if (!modal || typeof modal.showModal !== 'function') return;
+          if (modal.open) { modal.close(); return; }
+          modal._trigger = btn;
+          btn.setAttribute('aria-expanded', 'true');
+          modal.showModal();
+          document.body.classList.add('modal-open');
+          var c = modal.querySelector('.modal__close');
+          if (c) c.focus();
+        });
       });
-    });
-    var triggers = document.querySelectorAll('.brief-trigger');
-    triggers.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var id = btn.getAttribute('data-modal');
-        var modal = id && document.getElementById(id);
-        if (!modal || typeof modal.showModal !== 'function') return;
-        if (modal.open) { modal.close(); return; }
-        modal._trigger = btn;
-        btn.setAttribute('aria-expanded', 'true');
-        modal.showModal();
-        document.body.classList.add('modal-open');
-        var c = modal.querySelector('.modal__close');
-        if (c) c.focus();
-      });
-    });
-    // 回到顶部按钮：滚动一段距离后才显示
-    var toTop = document.querySelector('.to-top');
-    if (toTop) {
-      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var syncToTop = function () {
-        if (window.scrollY > 420) toTop.classList.add('is-visible');
-        else toTop.classList.remove('is-visible');
-      };
-      window.addEventListener('scroll', syncToTop, { passive: true });
-      syncToTop();
-      toTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-      });
-    }
-  })();
+      // 回到顶部按钮：滚动一段距离后才显示
+      var toTop = document.querySelector('.to-top');
+      if (toTop) {
+        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var syncToTop = function () {
+          if (window.scrollY > 420) toTop.classList.add('is-visible');
+          else toTop.classList.remove('is-visible');
+        };
+        window.addEventListener('scroll', syncToTop, { passive: true });
+        syncToTop();
+        toTop.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+        });
+      }
+    })();
   </script>
 </body>
+
 </html>

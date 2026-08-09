@@ -288,7 +288,7 @@
     "taboos": "不得出现文字、水印；不得出现夜莺的具象形象（诗中夜莺只以声音存在）；不得作面部特写或泪水；不得出现现代照明、家具、纺织机械",
     "style": "17世纪荷兰室内画式的写实油画风格（可参考单一光源的室内人物画传统），主光为冷月光，色调深褐与灰蓝，线与月光是画面中唯二的亮部"
   },
-  "image_path": null,
+  "image_path": "/images/der-spinnerin-nachtlied.png",
   "german_sources": [
     {
       "name": "Zeno.org — Clemens Brentano: Werke. Band 1, München [1963–1968], S. 131（Ausgewählte Gedichte）",
@@ -307,26 +307,87 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文以 Zeno.org 转录的 Hanser 版《布伦塔诺著作集》第1卷（第131页）为主来源，与 gedichte7.de 的通行版本逐词核对，六节各四行的结构与韵词完全一致，但发现两处实质异文，本站均采主来源并如实记录：(1) 第9行：主来源作 \"Als wir zusammen waren\"，gedichte7.de 作 \"Da wir zusammen waren\"（与第4行完全相同）。若依后者，全诗第1、3节的首尾句便完全重复，循环感更强；本站从主来源的 Als。(2) 第14行：主来源作 \"Denk' ich wohl dein allein\"，gedichte7.de 作 \"Gedenk ich dein allein\"。两者语法都成立（denken 与 gedenken 在古典用法中均可支配第二格），但音节数不同，影响格律；本站从主来源。此外，标点差异较多：主来源在第9—12行几乎不加标点，gedichte7.de 则补足了逗号；末行主来源作句号，gedichte7.de 作感叹号。本站保留主来源的标点原样。需说明的是，本站未直接查阅1818年《一个游学生的编年史》初刊本或布伦塔诺手稿，上述采择依据全集转录，两处异文孰为作者定本尚未查明，属待核实项。",
+  "verification_notes": "德文正文以 Zeno.org 转录的 Hanser 版《布伦塔诺著作集》第1卷（第131页）为主来源，与 gedichte7.de 的通行版本逐词核对，六节各四行的结构与韵词完全一致，但发现两处实质异文，本站均采主来源并如实记录：(1) 第9行：主来源作 \"Als wir zusammen waren\"，gedichte7.de 作 \"Da wir zusammen waren\"（与第4行完全相同）。若依后者，全诗第1、3节的首尾句便完全重复，循环感更强；本站从主来源的 Als。(2) 第14行：主来源作 \"Denk' ich wohl dein allein\"，gedichte7.de 作 \"Gedenk ich dein allein\"。两者语法都成立（denken 与 gedenken 在古典用法中均可支配第二格），但音节数不同，影响格律；本站从主来源。此外，标点差异较多：主来源在第9—12行几乎不加标点，gedichte7.de 则补足了逗号；末行主来源作句号，gedichte7.de 作感叹号。本站保留主来源的标点原样。需说明的是，本站未直接查阅1818年《一个游学生的编年史》初刊本或布伦塔诺手稿，上述采择依据全集转录，两处异文孰为作者定本尚未查明，属待核实项。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。",
   "checklist": [
-    { "label": "确认作者：Clemens Brentano", "done": true },
-    { "label": "确认标题与出处：《一个游学生的编年史》", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Hanser 版著作集第1卷）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（第9行 Als/Da；第14行 Denk' ich wohl dein/Gedenk ich dein；标点）", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "查明两处异文孰为作者定本（需对照1818年初刊本）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Clemens Brentano",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：《一个游学生的编年史》",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Hanser 版著作集第1卷）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（第9行 Als/Da；第14行 Denk' ich wohl dein/Gedenk ich dein；标点）",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "查明两处异文孰为作者定本（需对照1818年初刊本）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    },
+    {
+      "label": "补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）",
+      "done": false
+    }
   ]
 }

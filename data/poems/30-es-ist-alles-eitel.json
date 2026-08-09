@@ -273,27 +273,93 @@
   ],
   "verification_notes": "【本站对巴洛克文本的正字法处理原则】本诗与本站收录的其他17世纪作品一样，正文采用**现代化正字法的通行文本**（即今日德语选本、教科书与课堂使用的形式），而非17世纪原刊的拼写。这是一个明确的编辑决定，理由是本站面向德语学习者：原刊的 \"Dv sihst/ wohin du sihst nur eitelkeit auff erden.\" 对初学者近乎不可读，且会妨碍词典查询。原始形态在本记录中完整说明，绝不隐瞒。\n\n德文正文通过两个独立来源核对：Zeno.org 转录的 Szyrocki/Powell 版《格吕菲乌斯德语作品全集》第1卷（1963年，第33—34页，原始正字法）与 gedichte7.de（现代化正字法）。十四行的行数、语序、韵式与内容完全一致。原刊形态与现代化文本之间的系统性差异包括：(1) 大小写——原刊名词一律小写（eitelkeit, städte, wiesen）；(2) 拼写——sihst/siehst、bawt/baut、itzund/jetzund、schäffers kind/Schäferskind、blüht sol/blüht soll、vndt·vnd/und、mus/muß、dis/dies、für(vor)/für、nichtikeitt/Nichtigkeit、schaten/Schatten、windt/Wind、wiederfindt/wieder findt；(3) 标点——原刊用斜线（Virgel）\"/\"代替逗号，且第9行前后多处用句号而非现代的问号／逗号。此外还有一处词形差异值得注意：原刊第10行末为句号（陈述），现代化文本作问号（疑问），这会改变该行的语气；本站从现代化文本的问号，因其与 \"Soll denn …\" 的句式相合，但此处属编辑判断而非文献事实，特此标明。\n\n待核实项：(1) 1637年《利萨十四行诗集》首刊本与1643年后各版之间的具体异文，本站未逐一比对（据 German Wikipedia 关于格吕菲乌斯十四行的说明，1637年版与后来各版差异可能较大）；(2) 本站未直接查阅任何原刊影印件，原始正字法依据 Zeno.org 对全集的转录，且该转录在本站抓取时存在字符编码损坏（变元音显示异常），故上文对原刊拼写的复述可能有个别不准确之处，建议对照全集纸本核实。",
   "checklist": [
-    { "label": "确认作者：Andreas Gryphius", "done": true },
-    { "label": "确认标题与出处：Sonnette. Das erste Buch, Nr. 8", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Szyrocki/Powell 版全集第1卷，原始正字法）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de（现代化正字法）", "done": true },
-    { "label": "核对诗节、行数、韵式", "done": true },
-    { "label": "明确记录本站对巴洛克正字法的编辑处理原则", "done": true },
-    { "label": "记录原刊与现代化文本的系统性差异", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇（含 eitel 的古今两义）", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点（含亚历山大体说明）", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "核实第10行末标点（陈述 vs. 疑问，现为编辑判断）", "done": false },
-    { "label": "比对1637年首刊本与1643年后各版的异文", "done": false },
-    { "label": "对照全集纸本核实原刊拼写（现依存在编码损坏的转录）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）", "done": false }
+    {
+      "label": "确认作者：Andreas Gryphius",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Sonnette. Das erste Buch, Nr. 8",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Szyrocki/Powell 版全集第1卷，原始正字法）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de（现代化正字法）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、韵式",
+      "done": true
+    },
+    {
+      "label": "明确记录本站对巴洛克正字法的编辑处理原则",
+      "done": true
+    },
+    {
+      "label": "记录原刊与现代化文本的系统性差异",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇（含 eitel 的古今两义）",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点（含亚历山大体说明）",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图",
+      "done": false
+    },
+    {
+      "label": "页面视觉检查",
+      "done": false
+    },
+    {
+      "label": "核实第10行末标点（陈述 vs. 疑问，现为编辑判断）",
+      "done": false
+    },
+    {
+      "label": "比对1637年首刊本与1643年后各版的异文",
+      "done": false
+    },
+    {
+      "label": "对照全集纸本核实原刊拼写（现依存在编码损坏的转录）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）",
+      "done": false
+    }
   ]
 }

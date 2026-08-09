@@ -269,7 +269,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在林克、先刚等译者的中译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文以 German Wikipedia 转录的历史批评版（Kluckhohn / Samuel 编，Kohlhammer 1960，第1卷第344页）为准，与 gedichte7.de 的通行版本逐词核对，十二行的行数与语序完全一致，但发现两处重要异文，本站均采历史批评版并在此如实记录：(1) 第10行：历史批评版作 \"Erkennt die ewgen Weltgeschichten\"（永恒的世界史），大量流通版本作 \"die wahren Weltgeschichten\"（真正的世界史）。(2) 第11行：历史批评版作 \"Dann fliegt vor Einem geheimen Wort\"（在唯一一个神秘的词语面前），流通版本作 \"von einem geheimen Wort\"（因一个神秘的词语）——这一差异改变了介词关系与语义方向，且历史批评版中 Einem 首字母大写，明确指向数词\"唯一\"而非不定冠词。此外，正字法差异（freye/freie、ächter/echter、Mährchen/Märchen、zurück begeben/zurückbegeben）属排印现代化，不影响词义。需说明的是，本站未直接查阅历史批评版纸质本或诺瓦利斯手稿，异文判断依据 Wikipedia 对该版的转录及其页码标注，建议有条件的读者对照原书核实；两处异文中究竟哪一种更早进入流通、以及流通版本的来源，本站尚未查明，属待核实项。",
+  "verification_notes": "德文正文以 German Wikipedia 转录的历史批评版（Kluckhohn / Samuel 编，Kohlhammer 1960，第1卷第344页）为准，与 gedichte7.de 的通行版本逐词核对，十二行的行数与语序完全一致，但发现两处重要异文，本站均采历史批评版并在此如实记录：(1) 第10行：历史批评版作 \"Erkennt die ewgen Weltgeschichten\"（永恒的世界史），大量流通版本作 \"die wahren Weltgeschichten\"（真正的世界史）。(2) 第11行：历史批评版作 \"Dann fliegt vor Einem geheimen Wort\"（在唯一一个神秘的词语面前），流通版本作 \"von einem geheimen Wort\"（因一个神秘的词语）——这一差异改变了介词关系与语义方向，且历史批评版中 Einem 首字母大写，明确指向数词\"唯一\"而非不定冠词。此外，正字法差异（freye/freie、ächter/echter、Mährchen/Märchen、zurück begeben/zurückbegeben）属排印现代化，不影响词义。需说明的是，本站未直接查阅历史批评版纸质本或诺瓦利斯手稿，异文判断依据 Wikipedia 对该版的转录及其页码标注，建议有条件的读者对照原书核实；两处异文中究竟哪一种更早进入流通、以及流通版本的来源，本站尚未查明，属待核实项。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。",
   "checklist": [
     {
       "label": "确认作者：Novalis (Friedrich von Hardenberg)",
@@ -349,6 +349,10 @@
     },
     {
       "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第5—6行\"世界回归世界\"的释读）",
+      "done": false
+    },
+    {
+      "label": "补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）",
       "done": false
     }
   ]

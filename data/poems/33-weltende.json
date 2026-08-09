@@ -239,6 +239,11 @@
       "name": "gedichte7.de — „Weltende – Hoddis“",
       "url": "https://www.gedichte7.de/weltende-hoddis.html",
       "note": "辅助来源。两节八行与主来源逐词一致（含口语形式 hupfen 与插入语 – liest man –），用于独立交叉核对用词与标点。"
+    },
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Weltende (1911)“",
+      "url": "https://www.deutschelyrik.de/weltende-1911.html",
+      "note": "第三来源（二级，与 planetlyrik.de 相互独立）。八行用词与主来源一致（含口语形式 hupfen），唯第3行行末不加逗号，详见校对记录。"
     }
   ],
   "translation_sources": [
@@ -247,27 +252,87 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文通过两个独立来源（planetlyrik.de 依 Arche 版《诗作与书信》1987年本，与 gedichte7.de）逐词核对，两节各四行、内容一致，未发现字面异文。三处值得记录：(1) 第5行的 hupfen 是口语／方言形式（今日标准形式为 hüpfen），两个来源均作 hupfen，且它与第7行的 Schnupfen 构成全诗最重要的一组韵，因此确为作者原词而非讹误，本站保留。(2) 第4行的插入语在两来源中均以破折号标出（– liest man –），本站保留该排印。(3) 本诗常见的转载中偶有把第3行 gehn 补全为 gehen 的情况，会破坏该行的音节数；本站从两来源的省音形式。\n\n【版权状态】作者 Hans Davidsohn（笔名 Jakob van Hoddis）1942年于索比堡灭绝营遇害，其作品依德国／欧盟法律于逝世后70年、即2013年1月1日起进入公有领域，本站收录无版权障碍。\n\n待核实项：(1) 本站未直接查阅1911年1月11日《Der Demokrat》原刊影印件，文本依据 Arche 版全集的转录；该杂志初刊与后来结集之间是否存在异文，本站未查明。(2) 本诗在《Dichtungen und Briefe》中的具体页码本站未记录。",
+  "verification_notes": "德文正文通过两个独立来源（planetlyrik.de 依 Arche 版《诗作与书信》1987年本，与 gedichte7.de）逐词核对，两节各四行、内容一致，未发现字面异文。三处值得记录：(1) 第5行的 hupfen 是口语／方言形式（今日标准形式为 hüpfen），两个来源均作 hupfen，且它与第7行的 Schnupfen 构成全诗最重要的一组韵，因此确为作者原词而非讹误，本站保留。(2) 第4行的插入语在两来源中均以破折号标出（– liest man –），本站保留该排印。(3) 本诗常见的转载中偶有把第3行 gehn 补全为 gehen 的情况，会破坏该行的音节数；本站从两来源的省音形式。\n\n【版权状态】作者 Hans Davidsohn（笔名 Jakob van Hoddis）1942年于索比堡灭绝营遇害，其作品依德国／欧盟法律于逝世后70年、即2013年1月1日起进入公有领域，本站收录无版权障碍。\n\n待核实项：(1) 本站未直接查阅1911年1月11日《Der Demokrat》原刊影印件，文本依据 Arche 版全集的转录；该杂志初刊与后来结集之间是否存在异文，本站未查明。(2) 本诗在《Dichtungen und Briefe》中的具体页码本站未记录。\n\n【复核完成（2026年8月）】已补入 deutschelyrik.de 作为第三个独立来源（运营方组 deutschelyrik，与 planetlyrik.de 互不隶属）。三方逐词比对结果：八行的用词完全一致，**新发现一处标点异文**——第3行 \"Dachdecker stürzen ab und gehn entzwei\" 行末，planetlyrik.de（依 Arche 版全集）与 gedichte7.de 均作逗号，deutschelyrik.de 不加标点。本站从主来源的逗号写法，因其所依据的 Arche 版《诗作与书信》为标注了出处的全集本。本诗现已满足规则 A、B；但三个来源均非一级来源（无标注纸质校勘版页码的数字化全集），规则 D 仍未完全满足，1911年《Der Demokrat》初刊本的核实仍属待办。",
   "checklist": [
-    { "label": "确认作者：Jakob van Hoddis (Hans Davidsohn)", "done": true },
-    { "label": "确认发表信息：1911年1月11日《Der Demokrat》", "done": true },
-    { "label": "确认公版状态（1942年逝世，作品自2013年1月1日起进入公有领域）", "done": true },
-    { "label": "德文原文主来源：planetlyrik.de（依 Arche 版《诗作与书信》1987）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录 hupfen（口语形式，与 Schnupfen 押韵）非讹误", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点（含 Reihungsstil 与语域错位）", "done": true },
-    { "label": "撰写背景说明（含哈雷彗星恐慌与作者生平）", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照1911年《Der Demokrat》原刊核实初刊文本", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Jakob van Hoddis (Hans Davidsohn)",
+      "done": true
+    },
+    {
+      "label": "确认发表信息：1911年1月11日《Der Demokrat》",
+      "done": true
+    },
+    {
+      "label": "确认公版状态（1942年逝世，作品自2013年1月1日起进入公有领域）",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：planetlyrik.de（依 Arche 版《诗作与书信》1987）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录 hupfen（口语形式，与 Schnupfen 押韵）非讹误",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点（含 Reihungsstil 与语域错位）",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明（含哈雷彗星恐慌与作者生平）",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图",
+      "done": false
+    },
+    {
+      "label": "页面视觉检查",
+      "done": false
+    },
+    {
+      "label": "对照1911年《Der Demokrat》原刊核实初刊文本",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    }
   ]
 }

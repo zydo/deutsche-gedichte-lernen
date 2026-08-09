@@ -279,27 +279,93 @@
   ],
   "verification_notes": "【正字法处理原则】与本站收录的其他巴洛克作品一致，正文采用**现代化正字法的通行文本**，17世纪原刊形态在本记录中完整给出。\n\n德文正文通过两个独立来源核对：planetlyrik.de 转录的1646年 Olearius 版原刊文本（原始正字法）与 gedichte7.de（现代化正字法）。十四行的行数、语序与内容完全一致。\n\n【1646年原刊形态（据主来源）】Sey dennoch unverzagt. Gieb dennoch unverlohren. ｜ Weich keinem Glücke nicht. Steh höher als der Neid. ｜ Vergnüge dich an dir / und acht es für kein Leid / ｜ hat sich gleich wieder dich Glück / Ort / und Zeit verschworen. ｜ Was dich betrübt und labt / halt alles für erkohren. ｜ Nim dein Verhängnüß an. Laß alles unbereut. ｜ Thu / was gethan muß seyn / und eh man dirs gebeut. ｜ Was du noch hoffen kanst / das wird noch stets gebohren. ｜ Was klagt / was lobt man doch? Sein Unglück und sein Glücke ｜ ist ihm ein ieder selbst. Schau alle Sachen an. ｜ Diß alles ist in dir / laß deinen eiteln Wahn / ｜ und eh du förder gehst / so geh in dich zu rücke. ｜ Wer sein selbst Meister ist / und sich beherrschen kan / ｜ dem ist die weite Welt und alles unterthan. —— 系统性差异为：斜线（Virgel）代逗号、Sey/Sei、Gieb/Gib、unverlohren/unverloren、erkohren/erkoren、Verhängnüß/Verhängnis、Thu·gethan·seyn/Tu·getan·sein、kanst·kan/kannst·kann、Diß/dies、ieder/jeder、zu rücke/zurücke、unterthan/untertan。\n\n两处需要单独说明的实质差异（非单纯拼写）：(1) 第4行原刊作 \"hat sich gleich **wieder** dich … verschworen\"，现代化文本作 **wider**。17世纪 wieder 与 wider 尚未分化，此处语义明确为\"对抗\"（= gegen），故现代化文本的 wider 是正确的规范化，本站从之。(2) 第12行原刊作 \"eh du **förder** gehst\"，现代化文本作 **fürder**。两者为同一古语词（意为\"更往前\"）的方言／拼写变体，语义无别；本站从现代化文本的 fürder。此外，原刊第2、6、10行的句号在现代化文本中部分改为逗号，属排印惯例调整。\n\n待核实项：(1) 本站未直接查阅1646年《Teutsche Poemata》影印件，原刊形态依据 planetlyrik.de 对该版的转录（该文作者称手中持有保留原始正字法与活字排印的旧版）；(2) 弗莱明手稿或其他早期传本的异文，本站未查证；(3) 创作年代（1633—1639年间的旅途期）依据通行的弗莱明研究结论，未经原始文献核实。",
   "checklist": [
-    { "label": "确认作者：Paul Fleming", "done": true },
-    { "label": "确认标题与出处：Teutsche Poemata (1646), Sonnetten Anders Buch, Nr. 24", "done": true },
-    { "label": "德文原文主来源：planetlyrik.de（转录1646年 Olearius 版原始正字法）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de（现代化正字法）", "done": true },
-    { "label": "确认两来源相互独立（已排除同一运营方的 gedichte7/zgedichte 组合）", "done": true },
-    { "label": "核对诗节、行数、韵式", "done": true },
-    { "label": "完整记录1646年原刊形态", "done": true },
-    { "label": "记录两处实质差异（wieder/wider；förder/fürder）并说明取舍", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇（含 Glück 的古今义、wider/wieder 的区分）", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点（含命令式形态总表与双重否定）", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "对照1646年《Teutsche Poemata》影印件核实原刊形态", "done": false },
-    { "label": "核实创作年代（现依二手研究结论）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）", "done": false }
+    {
+      "label": "确认作者：Paul Fleming",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：Teutsche Poemata (1646), Sonnetten Anders Buch, Nr. 24",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：planetlyrik.de（转录1646年 Olearius 版原始正字法）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de（现代化正字法）",
+      "done": true
+    },
+    {
+      "label": "确认两来源相互独立（已排除同一运营方的 gedichte7/zgedichte 组合）",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、韵式",
+      "done": true
+    },
+    {
+      "label": "完整记录1646年原刊形态",
+      "done": true
+    },
+    {
+      "label": "记录两处实质差异（wieder/wider；förder/fürder）并说明取舍",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇（含 Glück 的古今义、wider/wieder 的区分）",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点（含命令式形态总表与双重否定）",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图",
+      "done": false
+    },
+    {
+      "label": "页面视觉检查",
+      "done": false
+    },
+    {
+      "label": "对照1646年《Teutsche Poemata》影印件核实原刊形态",
+      "done": false
+    },
+    {
+      "label": "核实创作年代（现依二手研究结论）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）",
+      "done": false
+    }
   ]
 }

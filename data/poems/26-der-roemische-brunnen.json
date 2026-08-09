@@ -224,7 +224,7 @@
     "taboos": "不得出现文字、水印；不得出现人物、游客、投币；不得出现现代照明、水泵、护栏；避免高速摄影式的水滴凝固效果——水应是连续流动的",
     "style": "19世纪现实主义至印象派早期的油画风格，光线柔和偏冷，主色为石灰白、青灰与深绿，构图对称、重心居中，水幕的半透明质感是描绘重点"
   },
-  "image_path": null,
+  "image_path": "/images/der-roemische-brunnen.png",
   "german_sources": [
     {
       "name": "Zeno.org — Conrad Ferdinand Meyer: Sämtliche Werke in zwei Bänden. Band 2, München 1968, S. 88（Gedichte, Ausgabe 1892 · 4. Reise）",
@@ -235,6 +235,11 @@
       "name": "gedichte7.de — „Der römische Brunnen – Meyer“",
       "url": "https://www.gedichte7.de/der-roemische-brunnen.html",
       "note": "辅助来源。八行与主来源逐词逐标点一致，但排印上分为 4+4 两组，据此确认了分节方式的差异，详见校对记录。"
+    },
+    {
+      "name": "Deutsche Lyrik（deutschelyrik.de）— „Der römische Brunnen“",
+      "url": "https://www.deutschelyrik.de/der-roemische-brunnen.423.html",
+      "note": "第三来源（二级，与 Zeno.org 相互独立）。八行逐词逐标点与主来源完全一致，且同样排为**单一诗节**，据此确认本站采用的不分节排版正确、gedichte7.de 的 4+4 分组属该站自行排印。"
     }
   ],
   "translation_sources": [
@@ -243,27 +248,91 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文以 Zeno.org 转录的 Hanser 版《迈耶全集》第2卷（第88页）为主来源，与 gedichte7.de 逐词逐标点核对，八行的用词与标点完全一致，未发现字面异文。唯一的差异在排印分节：主来源作单一的八行诗节，gedichte7.de 将其排为 4+4 两组。这一差异并非无关紧要——全诗是一个不断句的长句，第4行末的分号是句中停顿而非诗节界限，分成两节会削弱\"一路流下\"的效果。本站从主来源的单节形式。此外需重点说明的是稿本问题：此诗现存六至七种稿本，从1860年的第一稿（十六行、两节）逐步删改至1882年的定稿（八行、一节），本站采用的是1892年《诗集》所收的定稿；早期稿本的具体文字本站未逐一核对，仅依据通行的迈耶研究结论在文化背景中概述其修改过程，属待进一步核实项。本站亦未直接查阅1882年初刊或1892年《诗集》影印件。",
+  "verification_notes": "德文正文以 Zeno.org 转录的 Hanser 版《迈耶全集》第2卷（第88页）为主来源，与 gedichte7.de 逐词逐标点核对，八行的用词与标点完全一致，未发现字面异文。唯一的差异在排印分节：主来源作单一的八行诗节，gedichte7.de 将其排为 4+4 两组。这一差异并非无关紧要——全诗是一个不断句的长句，第4行末的分号是句中停顿而非诗节界限，分成两节会削弱\"一路流下\"的效果。本站从主来源的单节形式。此外需重点说明的是稿本问题：此诗现存六至七种稿本，从1860年的第一稿（十六行、两节）逐步删改至1882年的定稿（八行、一节），本站采用的是1892年《诗集》所收的定稿；早期稿本的具体文字本站未逐一核对，仅依据通行的迈耶研究结论在文化背景中概述其修改过程，属待进一步核实项。本站亦未直接查阅1882年初刊或1892年《诗集》影印件。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。\n\n【复核完成（2026年8月）】已补入 deutschelyrik.de 作为第三个独立来源（运营方组 deutschelyrik，与 Zeno.org 互不隶属）。三方逐词比对结果：**八行的用词、标点完全一致，未发现任何异文**；deutschelyrik.de 与 Zeno.org 同样把全诗排为单一诗节，进一步确证了本站不分节的排版决定。本诗现已满足《来源独立性规范》规则 A、B、D。",
   "checklist": [
-    { "label": "确认作者：Conrad Ferdinand Meyer", "done": true },
-    { "label": "确认标题与出处：《诗集》（1892年版）「旅行」辑", "done": true },
-    { "label": "德文原文主来源：Zeno.org（Hanser 版全集第2卷）", "done": true },
-    { "label": "德文原文辅助来源：gedichte7.de", "done": true },
-    { "label": "核对诗节、行数、标点", "done": true },
-    { "label": "记录版本差异（分节方式：单节 vs. 4+4；1860—1882年间的多稿修改史）", "done": true },
-    { "label": "确认采用1892年定稿而非早期稿本", "done": true },
-    { "label": "查找已有中文译本（已知存在，未转载全文）", "done": true },
-    { "label": "判断译文版权可用性（现代中译不可用）", "done": true },
-    { "label": "制作本站学习译文（中文）", "done": true },
-    { "label": "提取重点词汇", "done": true },
-    { "label": "校对 lemma 与词性", "done": true },
-    { "label": "补充动词变位", "done": true },
-    { "label": "撰写语法要点", "done": true },
-    { "label": "撰写背景说明", "done": true },
-    { "label": "撰写 image brief", "done": true },
-    { "label": "生成 AI 配图", "done": false },
-    { "label": "页面视觉检查", "done": false },
-    { "label": "逐一核对六至七种早期稿本（现仅依二手研究概述）", "done": false },
-    { "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）", "done": false }
+    {
+      "label": "确认作者：Conrad Ferdinand Meyer",
+      "done": true
+    },
+    {
+      "label": "确认标题与出处：《诗集》（1892年版）「旅行」辑",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Zeno.org（Hanser 版全集第2卷）",
+      "done": true
+    },
+    {
+      "label": "德文原文辅助来源：gedichte7.de",
+      "done": true
+    },
+    {
+      "label": "核对诗节、行数、标点",
+      "done": true
+    },
+    {
+      "label": "记录版本差异（分节方式：单节 vs. 4+4；1860—1882年间的多稿修改史）",
+      "done": true
+    },
+    {
+      "label": "确认采用1892年定稿而非早期稿本",
+      "done": true
+    },
+    {
+      "label": "查找已有中文译本（已知存在，未转载全文）",
+      "done": true
+    },
+    {
+      "label": "判断译文版权可用性（现代中译不可用）",
+      "done": true
+    },
+    {
+      "label": "制作本站学习译文（中文）",
+      "done": true
+    },
+    {
+      "label": "提取重点词汇",
+      "done": true
+    },
+    {
+      "label": "校对 lemma 与词性",
+      "done": true
+    },
+    {
+      "label": "补充动词变位",
+      "done": true
+    },
+    {
+      "label": "撰写语法要点",
+      "done": true
+    },
+    {
+      "label": "撰写背景说明",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "生成 AI 配图（已接入）",
+      "done": true
+    },
+    {
+      "label": "页面视觉检查",
+      "done": true
+    },
+    {
+      "label": "逐一核对六至七种早期稿本（现仅依二手研究概述）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
+      "done": false
+    },
+    {
+      "label": "补入独立来源并完成三方逐词比对（已完成）",
+      "done": true
+    }
   ]
 }

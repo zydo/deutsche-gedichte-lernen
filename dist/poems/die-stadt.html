@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,12 @@
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../theme.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="site-header__inner">
@@ -35,443 +39,565 @@
           <a href="../index.html">诗歌总览</a>
           <a href="../about.html">关于 · 校对</a>
         </nav>
-        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
-          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank"
+          rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
+          <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
         </a>
         <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
-          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6" />
+          </svg>
         </button>
       </div>
     </div>
   </header>
   <main>
-    
+
     <div class="poem-shell">
 
-    <nav class="poem-nav" aria-label="诗歌导航">
-<a class="poem-nav__link poem-nav__prev" href="herbstbild.html" rel="prev"><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">秋景</span></a>
-<a class="poem-nav__link poem-nav__next" href="der-roemische-brunnen.html" rel="next"><span class="poem-nav__title">罗马的喷泉</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
-    </nav>
-    <header class="poem-titleblock reveal">
-      <h1 class="poem-titleblock__de">Die Stadt</h1>
-      <p class="poem-titleblock__author">Theodor Storm</p>
-      <p class="poem-titleblock__zh">那座城</p>
-      <p class="poem-titleblock__author-zh">特奥多尔·施托姆</p>
-      <div class="poem-titleblock__biblio">
-        <p>《诗集》·第一卷</p>
-        <p>现实主义（诗意现实主义 / Poetischer Realismus）</p>
-        <p>1851年作</p>
-      </div>
-      <div class="poem-titleblock__meta">
-        <span class="tag tag--b">B1</span>
-        <span class="tag ">故乡</span>
-        <span class="tag ">大海</span>
-        <span class="tag ">灰色</span>
-        <span class="tag ">北德</span>
-        <span class="tag ">青春记忆</span>
-        <span class="tag ">叠句</span>
-      </div>
-          <div class="image-slot">
-      <div class="image-slot__label"><span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）</div>
-      <dl>
-        <dt>意象</dt><dd>低平的北海滩涂，浓雾中隐约可见一座小城的轮廓偏在画面一侧；前景是被风吹伏的滩涂草，中景是灰色的浅水与泥滩，天空与海几乎同色</dd>
-        <dt>情绪</dt><dd>萧索、单调、辽阔；应传达一种被世界绕开的寂静，而不是荒凉的悲情——雾与灰是这里的常态，不是灾难</dd>
-        <dt>画面元素</dt><dd>灰色的浅滩与退潮后的水洼、被风吹伏的滩涂草、雾中低矮的屋顶轮廓与一座教堂塔尖、极低的地平线、天空中一小行南飞的雁</dd>
-        <dt>时代感</dt><dd>19世纪中叶北德小城（胡苏姆）风貌；建筑应为低矮的砖砌房屋，不得出现现代元素</dd>
-        <dt>推荐风格</dt><dd>19世纪现实主义风景油画风格，几乎单色（灰—灰绿—灰褐），天空占画面三分之二以上，笔触平缓，无强烈明暗对比</dd>
-        <dt>比例</dt><dd>4:3（横版）</dd>
-        <dt>禁忌</dt><dd>不得出现文字、水印；不得使用灰色以外的显著色彩（可有极少量暖色，但不得成为视觉重点）；不得出现人物、船只、灯光；不得出现现代码头、风力发电机、公路</dd>
-      </dl>
-      <p class="image-slot__caption">当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例 4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。</p>
-    </div>
-    </header>
-    <section class="section reveal section--parallel">
-      <header class="section__head">
-        <span class="section__zh">原诗 · 译文</span>
-        <span class="section__de">Gedicht · Übertragung</span>
+      <nav class="poem-nav" aria-label="诗歌导航">
+        <a class="poem-nav__link poem-nav__prev" href="herbstbild.html" rel="prev"><span class="poem-nav__arrow"
+            aria-hidden="true">←</span><span class="poem-nav__title">秋景</span></a>
+        <a class="poem-nav__link poem-nav__next" href="der-roemische-brunnen.html" rel="next"><span
+            class="poem-nav__title">罗马的喷泉</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a>
+      </nav>
+      <header class="poem-titleblock reveal">
+        <h1 class="poem-titleblock__de">Die Stadt</h1>
+        <p class="poem-titleblock__author">Theodor Storm</p>
+        <p class="poem-titleblock__zh">那座城</p>
+        <p class="poem-titleblock__author-zh">特奥多尔·施托姆</p>
+        <div class="poem-titleblock__biblio">
+          <p>《诗集》·第一卷</p>
+          <p>现实主义（诗意现实主义 / Poetischer Realismus）</p>
+          <p>1851年作</p>
+        </div>
+        <div class="poem-titleblock__meta">
+          <span class="tag tag--b">B1</span>
+          <span class="tag ">故乡</span>
+          <span class="tag ">大海</span>
+          <span class="tag ">灰色</span>
+          <span class="tag ">北德</span>
+          <span class="tag ">青春记忆</span>
+          <span class="tag ">叠句</span>
+        </div>
+        <figure class="image-slot image-slot--filled">
+          <img src="../images/die-stadt.png" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+            loading="lazy">
+        </figure>
+        <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal"
+            aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
+        <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+          <header class="modal__head">
+            <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+            <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+          </header>
+          <div class="modal__body">
+            <div class="image-slot">
+              <dl>
+                <dt>意象</dt>
+                <dd>低平的北海滩涂，浓雾中隐约可见一座小城的轮廓偏在画面一侧；前景是被风吹伏的滩涂草，中景是灰色的浅水与泥滩，天空与海几乎同色</dd>
+                <dt>情绪</dt>
+                <dd>萧索、单调、辽阔；应传达一种被世界绕开的寂静，而不是荒凉的悲情——雾与灰是这里的常态，不是灾难</dd>
+                <dt>画面元素</dt>
+                <dd>灰色的浅滩与退潮后的水洼、被风吹伏的滩涂草、雾中低矮的屋顶轮廓与一座教堂塔尖、极低的地平线、天空中一小行南飞的雁</dd>
+                <dt>时代感</dt>
+                <dd>19世纪中叶北德小城（胡苏姆）风貌；建筑应为低矮的砖砌房屋，不得出现现代元素</dd>
+                <dt>推荐风格</dt>
+                <dd>19世纪现实主义风景油画风格，几乎单色（灰—灰绿—灰褐），天空占画面三分之二以上，笔触平缓，无强烈明暗对比</dd>
+                <dt>比例</dt>
+                <dd>4:3（横版）</dd>
+                <dt>禁忌</dt>
+                <dd>不得出现文字、水印；不得使用灰色以外的显著色彩（可有极少量暖色，但不得成为视觉重点）；不得出现人物、船只、灯光；不得出现现代码头、风力发电机、公路</dd>
+              </dl>
+              <p class="image-slot__caption">此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由 AI 生成”。</p>
+            </div>
+          </div>
+        </dialog>
       </header>
-            <div class="parallel">
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="1"><span class="linetext">Am grauen Strand, am grauen Meer<sup class="refmark"><a href="#note-1">1</a></sup></span></div>
-          <div class="pline__zh">在灰色的沙滩边，灰色的海边，</div>
+      <section class="section reveal section--parallel">
+        <header class="section__head">
+          <span class="section__zh">原诗 · 译文</span>
+          <span class="section__de">Gedicht · Übertragung</span>
+        </header>
+        <div class="parallel">
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="1"><span class="linetext">Am grauen Strand, am grauen Meer<sup
+                    class="refmark"><a href="#note-1">1</a></sup></span></div>
+              <div class="pline__zh">在灰色的沙滩边，灰色的海边，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="2"><span class="linetext">Und seitab liegt die Stadt;<sup
+                    class="refmark"><a href="#note-2">2</a></sup></span></div>
+              <div class="pline__zh">偏在一侧躺着那座城；</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="3"><span class="linetext">Der Nebel drückt die Dächer
+                  schwer,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
+              <div class="pline__zh">浓雾沉沉地压住屋顶，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="4"><span class="linetext">Und durch die Stille braust das
+                  Meer<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
+              <div class="pline__zh">而穿过这寂静，大海轰响着，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="5"><span class="linetext">Eintönig um die Stadt.<sup
+                    class="refmark"><a href="#note-5">5</a></sup></span></div>
+              <div class="pline__zh">单调地绕着那座城。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="6"><span class="linetext">Es rauscht kein Wald, es schlägt im
+                  Mai<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
+              <div class="pline__zh">没有森林在沙沙作响，五月里也没有</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="6"><span class="linetext">Kein Vogel ohn' Unterlaß;<sup
+                    class="refmark"><a href="#note-6">6</a></sup></span></div>
+              <div class="pline__zh">一只鸟不停地鸣唱；</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="7"><span class="linetext">Die Wandergans mit hartem Schrei<sup
+                    class="refmark"><a href="#note-7">7</a></sup></span></div>
+              <div class="pline__zh">只有迁徙的雁带着尖厉的叫声</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="8"><span class="linetext">Nur fliegt in Herbstesnacht
+                  vorbei<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
+              <div class="pline__zh">在秋夜里掠过，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="9"><span class="linetext">Am Strande weht das Gras.<sup
+                    class="refmark"><a href="#note-9">9</a></sup></span></div>
+              <div class="pline__zh">沙滩上，草在风里摇动。</div>
+            </div>
+          </div>
+          <div class="pstanza">
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="10"><span class="linetext">Doch hängt mein ganzes Herz an
+                  dir,<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
+              <div class="pline__zh">然而我整颗心都系在你身上，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline"><span class="linetext">Du graue Stadt am Meer;</span></div>
+              <div class="pline__zh">你海边灰色的城；</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="11"><span class="linetext">Der Jugend Zauber für und für<sup
+                    class="refmark"><a href="#note-11">11</a></sup></span></div>
+              <div class="pline__zh">青春的魔力，绵绵不绝，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="12"><span class="linetext">Ruht lächelnd doch auf dir, auf
+                  dir,<sup class="refmark"><a href="#note-12">12</a></sup></span></div>
+              <div class="pline__zh">依然含笑停驻在你身上，在你身上，</div>
+            </div>
+            <div class="pline">
+              <div class="pline__de vline" data-noteref="13"><span class="linetext">Du graue Stadt am Meer.<sup
+                    class="refmark"><a href="#note-13">13</a></sup></span></div>
+              <div class="pline__zh">你海边灰色的城。</div>
+            </div>
+          </div>
+          <p class="translation-meta">本站学习译文（AI 辅助），直译，保留三节相同的五行结构、"灰色"的反复，以及第三节由否定转向依恋的 doch</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="2"><span class="linetext">Und seitab liegt die Stadt;<sup class="refmark"><a href="#note-2">2</a></sup></span></div>
-          <div class="pline__zh">偏在一侧躺着那座城；</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">逐行注释</span>
+          <span class="section__de">Zeilenkommentar</span>
+        </header>
+        <div class="lnotes">
+          <article class="lnote" id="note-1" data-noteref="1">
+            <span class="lnote__mark">1</span>
+            <p class="lnote__de">Am grauen Strand, am grauen Meer</p>
+            <p class="lnote__zh">开篇即以 grau（灰色）两次修饰不同的对象，为全诗定下色调。am = an
+              dem（第三格，表静态位置）。请注意：整首诗中"灰色"出现四次，而没有任何其他颜色词——这是德语诗歌中最著名的单色处理之一。</p>
+          </article>
+          <article class="lnote" id="note-2" data-noteref="2">
+            <span class="lnote__mark">2</span>
+            <p class="lnote__de">Und seitab liegt die Stadt;</p>
+            <p class="lnote__zh">seitab（在一旁、偏离主道）是罕见的方位副词，暗示这座城不在任何交通要道上，被世界绕开了。动词 liegt 在前、主语 die Stadt
+              在后，这是德语中状语置于句首时的强制倒装。</p>
+          </article>
+          <article class="lnote" id="note-3" data-noteref="3">
+            <span class="lnote__mark">3</span>
+            <p class="lnote__de">Der Nebel drückt die Dächer schwer,</p>
+            <p class="lnote__zh">drücken（压）+ 第四格宾语；schwer 在此是副词（沉重地），而非修饰 Dächer
+              的定语。雾不是笼罩屋顶，而是"压住"屋顶——一个赋予雾以重量的及物动词，是全诗最有力的一处用词。</p>
+          </article>
+          <article class="lnote" id="note-4" data-noteref="4">
+            <span class="lnote__mark">4</span>
+            <p class="lnote__de">Und durch die Stille braust das Meer</p>
+            <p class="lnote__zh">brausen（轰鸣、奔腾作响）与上一行的 Stille（寂静）构成矛盾：在寂静中传来轰响。这不是逻辑错误——正因为别的声音都没有，海的声音才成为寂静本身的一部分。</p>
+          </article>
+          <article class="lnote" id="note-5" data-noteref="5">
+            <span class="lnote__mark">5</span>
+            <p class="lnote__de">Eintönig um die Stadt.</p>
+            <p class="lnote__zh">eintönig（单调的，字面"只有一个音调"）是全诗的关键词之一。第一节以 "die Stadt" 开始、又以 "die Stadt" 结束，本身就是一次单调的回环。
+            </p>
+          </article>
+          <article class="lnote" id="note-6" data-noteref="6">
+            <span class="lnote__mark">6</span>
+            <p class="lnote__de">Es rauscht kein Wald, es schlägt im Mai / Kein Vogel ohn' Unterlaß;</p>
+            <p class="lnote__zh">两个以 es 开头的否定句并列，形式主语 es 后接真正的主语（kein Wald / kein Vogel）。schlagen
+              在此为鸟类专用词，指夜莺等鸣禽的婉转啼鸣（die Nachtigall schlägt）。ohn' Unterlaß 是 ohne Unterlass（不间断地）的省音形式。第二节整节都在说"没有什么"——德语中
+              kein 的两次前置使这种匮乏格外醒目。</p>
+          </article>
+          <article class="lnote" id="note-7" data-noteref="7">
+            <span class="lnote__mark">7</span>
+            <p class="lnote__de">Die Wandergans mit hartem Schrei</p>
+            <p class="lnote__zh">die Wandergans（迁徙的雁）是复合词，第二节唯一的活物。hart（坚硬、刺耳）与前一行缺席的婉转鸟鸣形成对照：这里唯一的叫声是不悦耳的。</p>
+          </article>
+          <article class="lnote" id="note-8" data-noteref="8">
+            <span class="lnote__mark">8</span>
+            <p class="lnote__de">Nur fliegt in Herbstesnacht vorbei</p>
+            <p class="lnote__zh">限定词 Nur 被提到行首，强调"仅仅"；可分动词 vorbeifliegen（飞过）的前缀 vorbei 落在行末。Herbstesnacht 中的 -es-
+              是连接成分（Fugenelement），带旧式书面色彩（今多作 Herbstnacht）。</p>
+          </article>
+          <article class="lnote" id="note-9" data-noteref="9">
+            <span class="lnote__mark">9</span>
+            <p class="lnote__de">Am Strande weht das Gras.</p>
+            <p class="lnote__zh">Strande 带旧式第三格词尾 -e。这是第二节的收束，也是全诗最安静的一行：什么都没有发生，只有草在风中摇动。此行行末在不同版本中或有逗号或无标点，详见校对记录。</p>
+          </article>
+          <article class="lnote" id="note-10" data-noteref="10">
+            <span class="lnote__mark">10</span>
+            <p class="lnote__de">Doch hängt mein ganzes Herz an dir,</p>
+            <p class="lnote__zh">全诗的转折。Doch（然而）置于句首引起倒装。an jemandem/etwas hängen 意为"依恋、舍不得"（an seiner Heimat hängen
+              眷恋故乡），是固定搭配，不能按字面"挂在"理解。经过两节的灰、雾、单调与匮乏，这一句才姗姗来迟。</p>
+          </article>
+          <article class="lnote" id="note-11" data-noteref="11">
+            <span class="lnote__mark">11</span>
+            <p class="lnote__de">Der Jugend Zauber für und für</p>
+            <p class="lnote__zh">前置第二格：der Jugend Zauber = der Zauber der Jugend（青春的魔力）。für und für
+              是古老的固定表达，意为"永远、绵绵不绝"（本站莱瑙《祈求》末行亦用此语，可对照）。</p>
+          </article>
+          <article class="lnote" id="note-12" data-noteref="12">
+            <span class="lnote__mark">12</span>
+            <p class="lnote__de">Ruht lächelnd doch auf dir, auf dir,</p>
+            <p class="lnote__zh">第二个 doch，在此不是转折而是加强语气（"仍然、毕竟"）。lächelnd 是现在分词作状语。"auf dir, auf dir"
+              的重复是全诗唯一一次情感失控——前十三行都极为克制，到这里才允许自己说两遍。</p>
+          </article>
+          <article class="lnote" id="note-13" data-noteref="13">
+            <span class="lnote__mark">13</span>
+            <p class="lnote__de">Du graue Stadt am Meer.</p>
+            <p class="lnote__zh">与第12行完全相同的叠句，也是全诗的收束。值得注意的是：即使在最深情的第三节，这座城依然是"灰色的"——施托姆没有为了抒情而给它涂上任何别的颜色。这份诚实是全诗最动人之处。
+            </p>
+          </article>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="3"><span class="linetext">Der Nebel drückt die Dächer schwer,<sup class="refmark"><a href="#note-3">3</a></sup></span></div>
-          <div class="pline__zh">浓雾沉沉地压住屋顶，</div>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">重点词汇</span>
+          <span class="section__de">Wortschatz</span>
+        </header>
+        <div class="vocab-list">
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">seitab</span></div>
+            <span class="vocab-card__pos">adv.（罕用）</span>
+            <div class="vocab-card__meaning">在一旁、偏离一侧</div>
+            <div class="vocab-card__note">较 abseits 更少见，几乎只出现在文学文本中；两者都指"不在主道上、被绕开的"。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">brausen</span></div>
+            <span class="vocab-card__pos">v.（弱变化）</span>
+            <div class="vocab-card__meaning">轰鸣、奔腾作响</div>
+            <div class="vocab-card__note">用于大海、风、人群的持续性巨响；南德口语中亦指"淋浴"（die Brause 花洒）。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">eintönig</span></div>
+            <span class="vocab-card__pos">adj.</span>
+            <div class="vocab-card__meaning">单调的、千篇一律的</div>
+            <div class="vocab-card__note">字面"只有一个音调"（ein + Ton + -ig）；同类构词还有 gleichförmig、monoton（外来语）。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">rauschen</span></div>
+            <span class="vocab-card__pos">v.（弱变化，拟声）</span>
+            <div class="vocab-card__meaning">（水、风、树叶）哗哗作响、沙沙作响</div>
+            <div class="vocab-card__note">与 rascheln（细碎的沙沙声，见本站黑贝尔《秋景》）程度不同：rauschen 更持续、更宏大。名词 der Rausch 另指"陶醉、醉意"。
+            </div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">schlagen（鸟）</span></div>
+            <span class="vocab-card__pos">v.（强变化）</span>
+            <div class="vocab-card__meaning">（鸣禽）婉转啼鸣</div>
+            <div class="vocab-card__note">这是 schlagen 的一个专门用法，主语必须是夜莺、画眉等鸣禽（die Nachtigall schlägt）；与"打、击"的本义并存。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">ohne Unterlass</span></div>
+            <span class="vocab-card__pos">副词短语</span>
+            <div class="vocab-card__meaning">不间断地、持续不停地</div>
+            <div class="vocab-card__note">der Unterlass 只出现在这一个短语中，别处不用；诗中省音作 ohn' Unterlaß（旧拼法）。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">die Gans, Gänse</span></div>
+            <span class="vocab-card__pos">n.（阴性）</span>
+            <div class="vocab-card__meaning">鹅、雁</div>
+            <div class="vocab-card__note">诗中复合为 die Wandergans（迁徙的雁）；日常口语中 "du dumme Gans" 是对女性的贬称，使用需谨慎。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">an jemandem/etwas hängen</span></div>
+            <span class="vocab-card__pos">v.（强变化，固定搭配）</span>
+            <div class="vocab-card__meaning">依恋、舍不得</div>
+            <div class="vocab-card__note">不可按字面"挂在……上"理解；变位 hängt – hing – hat gehangen（不及物）。与及物的
+              hängen（挂上，hängte/gehängt）是同形异变位动词，须区分。</div>
+          </div>
+          <div class="vocab-card">
+            <div class="vocab-card__head"><span class="vocab-card__term">für und für</span></div>
+            <span class="vocab-card__pos">副词短语（古语）</span>
+            <div class="vocab-card__meaning">永远、绵绵不绝</div>
+            <div class="vocab-card__note">今已废弃，现代德语用 immerfort、für immer；本站莱瑙《祈求》末行亦用此语。</div>
+          </div>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="4"><span class="linetext">Und durch die Stille braust das Meer<sup class="refmark"><a href="#note-4">4</a></sup></span></div>
-          <div class="pline__zh">而穿过这寂静，大海轰响着，</div>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">动词变位</span>
+          <span class="section__de">Konjugation</span>
+        </header>
+        <div class="verb-table-wrap">
+          <table class="verb-table">
+            <thead>
+              <tr>
+                <th>Infinitiv</th>
+                <th>Präsens<br><span class="th-sub">3. Sg.</span></th>
+                <th>Präteritum</th>
+                <th>Perfekt</th>
+                <th>Partizip II</th>
+                <th>Konjunktiv II</th>
+                <th>Hilfsverb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="de">drücken</td>
+                <td class="de">drückt</td>
+                <td class="de">drückte</td>
+                <td class="de">hat gedrückt</td>
+                <td class="de">gedrückt</td>
+                <td class="de">drückte</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 及物动词；诗中主语为 der Nebel，宾语为 die Dächer——雾被赋予了物理的重量。</td>
+              </tr>
+              <tr>
+                <td class="de">brausen</td>
+                <td class="de">braust</td>
+                <td class="de">brauste</td>
+                <td class="de">hat gebraust</td>
+                <td class="de">gebraust</td>
+                <td class="de">brauste</td>
+                <td>haben（表声响）／sein（表快速移动）</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 诗中主语 das Meer 后置于动词之后（因状语 durch die Stille 置于句首）。</td>
+              </tr>
+              <tr>
+                <td class="de">rauschen</td>
+                <td class="de">rauscht</td>
+                <td class="de">rauschte</td>
+                <td class="de">hat gerauscht</td>
+                <td class="de">gerauscht</td>
+                <td class="de">rauschte</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 诗中用于否定句 "Es rauscht kein Wald"。</td>
+              </tr>
+              <tr>
+                <td class="de">schlagen</td>
+                <td class="de">schlägt</td>
+                <td class="de">schlug</td>
+                <td class="de">hat geschlagen</td>
+                <td class="de">geschlagen</td>
+                <td class="de">schlüge</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 强变化，现在时单数变元音 a→ä；诗中取"鸣禽啼唱"的专门用法。</td>
+              </tr>
+              <tr>
+                <td class="de">vorbeifliegen</td>
+                <td class="de">fliegt vorbei</td>
+                <td class="de">flog vorbei</td>
+                <td class="de">ist vorbeigeflogen</td>
+                <td class="de">vorbeigeflogen</td>
+                <td class="de">flöge vorbei</td>
+                <td>sein</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 可分动词；诗中 fliegt 与前缀 vorbei 分置于行首与行末，中间夹住整个状语。</td>
+              </tr>
+              <tr>
+                <td class="de">hängen（不及物）</td>
+                <td class="de">hängt</td>
+                <td class="de">hing</td>
+                <td class="de">hat gehangen</td>
+                <td class="de">gehangen</td>
+                <td class="de">hinge</td>
+                <td>haben</td>
+              </tr>
+              <tr class="verb-note">
+                <td colspan="7">↳ 与及物的 hängen（hängte – gehängt，把某物挂上）为同形异变位动词。诗中为不及物用法的固定搭配 an jm. hängen（依恋）。</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="5"><span class="linetext">Eintönig um die Stadt.<sup class="refmark"><a href="#note-5">5</a></sup></span></div>
-          <div class="pline__zh">单调地绕着那座城。</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">语法要点</span>
+          <span class="section__de">Grammatik</span>
+        </header>
+        <div class="grammar-list">
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">形式主语 es 与否定词 kein 的前置</h3>
+            <p class="grammar-item__quote">Es rauscht kein Wald, es schlägt im Mai / Kein Vogel ohn' Unterlaß;</p>
+            <div class="grammar-item__body">德语用 es 占据句首位置、把真正的主语推到动词之后，以强调该主语是新信息（"Es kommt ein
+              Zug"）。本节两次使用这一结构，且真正的主语都带否定词 kein——因此每一句的重点都落在"没有"上。请注意 kein 的用法：它否定的是带不定冠词或零冠词的名词（kein Wald = 一片森林也没有），而
+              nicht 否定动词或带定冠词的名词。整整一节都在列举缺席之物，为第三节的转折蓄势。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">同形异变位：hängen 及物 vs. 不及物</h3>
+            <p class="grammar-item__quote">Doch hängt mein ganzes Herz an dir,</p>
+            <div class="grammar-item__body">德语中 hängen 有两套变位：不及物（某物挂着 / 依恋）为强变化 hing – hat gehangen；及物（把某物挂上）为弱变化 hängte
+              – hat gehängt。本诗为不及物用法，构成固定搭配 an jemandem hängen（依恋某人某物）。类似的成对动词还有
+              liegen/legen、sitzen/setzen、stehen/stellen、erschrecken 的两套变位——这一组是德语中级阶段的核心难点，值得成组整理。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">前置第二格</h3>
+            <p class="grammar-item__quote">Der Jugend Zauber für und für</p>
+            <div class="grammar-item__body">= der Zauber der Jugend（青春的魔力）。第二格前置在19世纪诗歌中很常见，今日只保留在专有名词（Goethes
+              Werke）与少数固定表达中。识别窍门：若一行以 der/des/die +
+              名词开头、后面紧跟另一个名词而没有动词，多半就是前置第二格。本站在荷尔德林、里尔克、特拉克尔、克劳迪乌斯诸诗中都标注过这一结构，可对照复习。</div>
+          </article>
+          <article class="grammar-item">
+            <h3 class="grammar-item__title">语气词 doch 的两种功能</h3>
+            <p class="grammar-item__quote">Doch hängt mein ganzes Herz an dir … / Ruht lächelnd doch auf dir, auf dir,
+            </p>
+            <div class="grammar-item__body">doch
+              在第11行位于句首，是转折连词（然而），引起倒装；在第14行位于句中，是语气词，表示"仍然、毕竟"，加强断言而不构成转折。德语语气词（doch, ja, mal, eben, halt,
+              wohl）几乎没有对应的中文词，只能靠语气传达，是学习者最难掌握也最能体现语感的部分。同一首诗里 doch 出现两次而功能不同，是很好的对照样本。</div>
+          </article>
         </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="6"><span class="linetext">Es rauscht kein Wald, es schlägt im Mai<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
-          <div class="pline__zh">没有森林在沙沙作响，五月里也没有</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">文学意象与文化背景</span>
+          <span class="section__de">Hintergrund</span>
+        </header>
+        <div class="prose">
+          <p>《那座城》作于1851年，写的是施托姆的故乡胡苏姆（Husum）——石勒苏益格的一座北海小城，今天当地仍以诗中的称呼自称"海边灰色的城"（die graue Stadt am
+            Meer），这已成为胡苏姆的官方旅游标语。</p>
+          <p>
+            此诗写作的时间点很重要：1848年石勒苏益格-荷尔斯泰因起义失败后，作为丹麦统治下的德语律师，施托姆在1853年被迫离乡，此后流亡十余年才得以返回。诗中那种"明知它一无所有却仍系于其上"的语调，正来自这段即将到来的分离。
+          </p>
+          <p>全诗的构造极为克制：三节各五行，前两节几乎全是否定与匮乏——灰、雾、单调的海声、没有森林、没有五月的鸟鸣、只有一只叫声刺耳的过雁。直到第三节开头的 Doch（然而），情感才第一次出现，并且立刻在 "auf dir,
+            auf dir" 的重复中溢出。最值得注意的是：即便在这最深情的一节，城依然是"灰色的"。施托姆没有为了抒情而修改事实，这份不加粉饰正是"诗意现实主义"（Poetischer
+            Realismus）这一概念的教科书式例证——现实不被美化，但被赋予了情感的重量。</p>
+          <p>此诗常与施托姆的《海滨》（Meeresstrand）并读，两首都写北海。它也被多次谱曲，阿尔班·贝尔格早年（1907年前后）的版本较为知名。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="6"><span class="linetext">Kein Vogel ohn' Unterlaß;<sup class="refmark"><a href="#note-6">6</a></sup></span></div>
-          <div class="pline__zh">一只鸟不停地鸣唱；</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">译文说明</span>
+          <span class="section__de">Anmerkung</span>
+        </header>
+        <div class="prose">
+          <p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) grau（灰色）在诗中出现四次且是唯一的颜色词，译文一律作"灰色"，不作任何变化处理；(2) 第11行的 "an dir hängen"
+            是"依恋"的固定搭配，译作"心系在你身上"，不可按字面理解为"挂在"；(3) 第14行 "auf dir, auf dir" 的重复是全诗唯一的情感外露，译文照样重复，未作合并。第6行的 schlagen
+            特指鸣禽的婉转啼唱，译作"鸣唱"。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="7"><span class="linetext">Die Wandergans mit hartem Schrei<sup class="refmark"><a href="#note-7">7</a></sup></span></div>
-          <div class="pline__zh">只有迁徙的雁带着尖厉的叫声</div>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">德文原文出处</span>
+          <span class="section__de">Quellen</span>
+        </header>
+        <ul class="source-list">
+          <li>
+            <span class="source-name">textlog.de — Theodor Storm, „Die Stadt“（Gedichte · I. Buch）</span><a
+              class="source-url" href="https://www.textlog.de/storm/gedichte/die-stadt" target="_blank"
+              rel="noopener">https://www.textlog.de/storm/gedichte/die-stadt</a>
+            <span class="source-note">主来源。三节十五行完整，依施托姆《诗集》第一卷编排；第7行作省音形式 "ohn' Unterlaß"，第9行行末不加标点。</span>
+          </li>
+          <li>
+            <span class="source-name">gedichte7.de — „Am grauen Strand, am grauen Meer (Die Stadt) – Storm“</span><a
+              class="source-url" href="https://www.gedichte7.de/die-stadt.html" target="_blank"
+              rel="noopener">https://www.gedichte7.de/die-stadt.html</a>
+            <span class="source-note">辅助来源。三节十五行与主来源逐词一致，唯第7行作完整形式 "ohne Unterlaß"、第9行行末加逗号，用于交叉核对用词与标点。</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">译文出处 · 版权</span>
+          <span class="section__de">Übersetzungsnachweis</span>
+        </header>
+        <ul class="source-list">
+          <li>
+            <span class="source-name">本站学习译文（中文）</span>
+            <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
+          </li>
+        </ul>
+      </section>
+      <section class="section reveal">
+        <header class="section__head">
+          <span class="section__zh">校对记录</span>
+          <span class="section__de">Korrektorat</span>
+        </header>
+        <div class="prose">
+          <p>德文正文通过两个独立来源（textlog.de 的施托姆《诗集》第一卷数字化本与 gedichte7.de）逐词核对，三节各五行、内容一致。核实到两处排印层面的差异：(1) 第7行：主来源作省音形式 "ohn'
+            Unterlaß"，gedichte7.de 作完整形式 "ohne Unterlaß"。省音形式少一个音节，更符合本行的四音步格律，本站从主来源。(2)
+            第9行行末：主来源不加标点（直接跨到下一行），gedichte7.de
+            加逗号。第9行与第10行在语法上是两个独立的句子（"雁飞过"与"草在摇动"），因此加不加标点会影响朗读的停顿，本站从主来源的无标点写法。此外，Unterlaß 为旧拼法（今
+            Unterlass），本站保留。需说明的是，本站未直接查阅施托姆《诗集》原刊或历史批评版，上述采择依据两个数字化来源；创作年代（1851年）依据通行的施托姆研究结论，未经原始文献核实，属待进一步核实项。</p>
+          <p>【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B
+            不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1
+            个独立来源组（textlog）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录
+            SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。</p>
         </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="8"><span class="linetext">Nur fliegt in Herbstesnacht vorbei<sup class="refmark"><a href="#note-8">8</a></sup></span></div>
-          <div class="pline__zh">在秋夜里掠过，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="9"><span class="linetext">Am Strande weht das Gras.<sup class="refmark"><a href="#note-9">9</a></sup></span></div>
-          <div class="pline__zh">沙滩上，草在风里摇动。</div>
-        </div>
-      </div>
-      <div class="pstanza">
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="10"><span class="linetext">Doch hängt mein ganzes Herz an dir,<sup class="refmark"><a href="#note-10">10</a></sup></span></div>
-          <div class="pline__zh">然而我整颗心都系在你身上，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline"><span class="linetext">Du graue Stadt am Meer;</span></div>
-          <div class="pline__zh">你海边灰色的城；</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="11"><span class="linetext">Der Jugend Zauber für und für<sup class="refmark"><a href="#note-11">11</a></sup></span></div>
-          <div class="pline__zh">青春的魔力，绵绵不绝，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="12"><span class="linetext">Ruht lächelnd doch auf dir, auf dir,<sup class="refmark"><a href="#note-12">12</a></sup></span></div>
-          <div class="pline__zh">依然含笑停驻在你身上，在你身上，</div>
-        </div>
-        <div class="pline">
-          <div class="pline__de vline" data-noteref="13"><span class="linetext">Du graue Stadt am Meer.<sup class="refmark"><a href="#note-13">13</a></sup></span></div>
-          <div class="pline__zh">你海边灰色的城。</div>
-        </div>
-      </div>
-        <p class="translation-meta">本站学习译文（AI 辅助），直译，保留三节相同的五行结构、"灰色"的反复，以及第三节由否定转向依恋的 doch</p>
-      </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">逐行注释</span>
-        <span class="section__de">Zeilenkommentar</span>
-      </header>
-            <div class="lnotes">      <article class="lnote" id="note-1" data-noteref="1">
-        <span class="lnote__mark">1</span>
-        <p class="lnote__de">Am grauen Strand, am grauen Meer</p>
-        <p class="lnote__zh">开篇即以 grau（灰色）两次修饰不同的对象，为全诗定下色调。am = an dem（第三格，表静态位置）。请注意：整首诗中"灰色"出现四次，而没有任何其他颜色词——这是德语诗歌中最著名的单色处理之一。</p>
-      </article>
-      <article class="lnote" id="note-2" data-noteref="2">
-        <span class="lnote__mark">2</span>
-        <p class="lnote__de">Und seitab liegt die Stadt;</p>
-        <p class="lnote__zh">seitab（在一旁、偏离主道）是罕见的方位副词，暗示这座城不在任何交通要道上，被世界绕开了。动词 liegt 在前、主语 die Stadt 在后，这是德语中状语置于句首时的强制倒装。</p>
-      </article>
-      <article class="lnote" id="note-3" data-noteref="3">
-        <span class="lnote__mark">3</span>
-        <p class="lnote__de">Der Nebel drückt die Dächer schwer,</p>
-        <p class="lnote__zh">drücken（压）+ 第四格宾语；schwer 在此是副词（沉重地），而非修饰 Dächer 的定语。雾不是笼罩屋顶，而是"压住"屋顶——一个赋予雾以重量的及物动词，是全诗最有力的一处用词。</p>
-      </article>
-      <article class="lnote" id="note-4" data-noteref="4">
-        <span class="lnote__mark">4</span>
-        <p class="lnote__de">Und durch die Stille braust das Meer</p>
-        <p class="lnote__zh">brausen（轰鸣、奔腾作响）与上一行的 Stille（寂静）构成矛盾：在寂静中传来轰响。这不是逻辑错误——正因为别的声音都没有，海的声音才成为寂静本身的一部分。</p>
-      </article>
-      <article class="lnote" id="note-5" data-noteref="5">
-        <span class="lnote__mark">5</span>
-        <p class="lnote__de">Eintönig um die Stadt.</p>
-        <p class="lnote__zh">eintönig（单调的，字面"只有一个音调"）是全诗的关键词之一。第一节以 "die Stadt" 开始、又以 "die Stadt" 结束，本身就是一次单调的回环。</p>
-      </article>
-      <article class="lnote" id="note-6" data-noteref="6">
-        <span class="lnote__mark">6</span>
-        <p class="lnote__de">Es rauscht kein Wald, es schlägt im Mai / Kein Vogel ohn' Unterlaß;</p>
-        <p class="lnote__zh">两个以 es 开头的否定句并列，形式主语 es 后接真正的主语（kein Wald / kein Vogel）。schlagen 在此为鸟类专用词，指夜莺等鸣禽的婉转啼鸣（die Nachtigall schlägt）。ohn' Unterlaß 是 ohne Unterlass（不间断地）的省音形式。第二节整节都在说"没有什么"——德语中 kein 的两次前置使这种匮乏格外醒目。</p>
-      </article>
-      <article class="lnote" id="note-7" data-noteref="7">
-        <span class="lnote__mark">7</span>
-        <p class="lnote__de">Die Wandergans mit hartem Schrei</p>
-        <p class="lnote__zh">die Wandergans（迁徙的雁）是复合词，第二节唯一的活物。hart（坚硬、刺耳）与前一行缺席的婉转鸟鸣形成对照：这里唯一的叫声是不悦耳的。</p>
-      </article>
-      <article class="lnote" id="note-8" data-noteref="8">
-        <span class="lnote__mark">8</span>
-        <p class="lnote__de">Nur fliegt in Herbstesnacht vorbei</p>
-        <p class="lnote__zh">限定词 Nur 被提到行首，强调"仅仅"；可分动词 vorbeifliegen（飞过）的前缀 vorbei 落在行末。Herbstesnacht 中的 -es- 是连接成分（Fugenelement），带旧式书面色彩（今多作 Herbstnacht）。</p>
-      </article>
-      <article class="lnote" id="note-9" data-noteref="9">
-        <span class="lnote__mark">9</span>
-        <p class="lnote__de">Am Strande weht das Gras.</p>
-        <p class="lnote__zh">Strande 带旧式第三格词尾 -e。这是第二节的收束，也是全诗最安静的一行：什么都没有发生，只有草在风中摇动。此行行末在不同版本中或有逗号或无标点，详见校对记录。</p>
-      </article>
-      <article class="lnote" id="note-10" data-noteref="10">
-        <span class="lnote__mark">10</span>
-        <p class="lnote__de">Doch hängt mein ganzes Herz an dir,</p>
-        <p class="lnote__zh">全诗的转折。Doch（然而）置于句首引起倒装。an jemandem/etwas hängen 意为"依恋、舍不得"（an seiner Heimat hängen 眷恋故乡），是固定搭配，不能按字面"挂在"理解。经过两节的灰、雾、单调与匮乏，这一句才姗姗来迟。</p>
-      </article>
-      <article class="lnote" id="note-11" data-noteref="11">
-        <span class="lnote__mark">11</span>
-        <p class="lnote__de">Der Jugend Zauber für und für</p>
-        <p class="lnote__zh">前置第二格：der Jugend Zauber = der Zauber der Jugend（青春的魔力）。für und für 是古老的固定表达，意为"永远、绵绵不绝"（本站莱瑙《祈求》末行亦用此语，可对照）。</p>
-      </article>
-      <article class="lnote" id="note-12" data-noteref="12">
-        <span class="lnote__mark">12</span>
-        <p class="lnote__de">Ruht lächelnd doch auf dir, auf dir,</p>
-        <p class="lnote__zh">第二个 doch，在此不是转折而是加强语气（"仍然、毕竟"）。lächelnd 是现在分词作状语。"auf dir, auf dir" 的重复是全诗唯一一次情感失控——前十三行都极为克制，到这里才允许自己说两遍。</p>
-      </article>
-      <article class="lnote" id="note-13" data-noteref="13">
-        <span class="lnote__mark">13</span>
-        <p class="lnote__de">Du graue Stadt am Meer.</p>
-        <p class="lnote__zh">与第12行完全相同的叠句，也是全诗的收束。值得注意的是：即使在最深情的第三节，这座城依然是"灰色的"——施托姆没有为了抒情而给它涂上任何别的颜色。这份诚实是全诗最动人之处。</p>
-      </article>      </div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">重点词汇</span>
-        <span class="section__de">Wortschatz</span>
-      </header>
-            <div class="vocab-list">      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">seitab</span></div>
-        <span class="vocab-card__pos">adv.（罕用）</span>
-        <div class="vocab-card__meaning">在一旁、偏离一侧</div>
-        <div class="vocab-card__note">较 abseits 更少见，几乎只出现在文学文本中；两者都指"不在主道上、被绕开的"。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">brausen</span></div>
-        <span class="vocab-card__pos">v.（弱变化）</span>
-        <div class="vocab-card__meaning">轰鸣、奔腾作响</div>
-        <div class="vocab-card__note">用于大海、风、人群的持续性巨响；南德口语中亦指"淋浴"（die Brause 花洒）。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">eintönig</span></div>
-        <span class="vocab-card__pos">adj.</span>
-        <div class="vocab-card__meaning">单调的、千篇一律的</div>
-        <div class="vocab-card__note">字面"只有一个音调"（ein + Ton + -ig）；同类构词还有 gleichförmig、monoton（外来语）。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">rauschen</span></div>
-        <span class="vocab-card__pos">v.（弱变化，拟声）</span>
-        <div class="vocab-card__meaning">（水、风、树叶）哗哗作响、沙沙作响</div>
-        <div class="vocab-card__note">与 rascheln（细碎的沙沙声，见本站黑贝尔《秋景》）程度不同：rauschen 更持续、更宏大。名词 der Rausch 另指"陶醉、醉意"。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">schlagen（鸟）</span></div>
-        <span class="vocab-card__pos">v.（强变化）</span>
-        <div class="vocab-card__meaning">（鸣禽）婉转啼鸣</div>
-        <div class="vocab-card__note">这是 schlagen 的一个专门用法，主语必须是夜莺、画眉等鸣禽（die Nachtigall schlägt）；与"打、击"的本义并存。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">ohne Unterlass</span></div>
-        <span class="vocab-card__pos">副词短语</span>
-        <div class="vocab-card__meaning">不间断地、持续不停地</div>
-        <div class="vocab-card__note">der Unterlass 只出现在这一个短语中，别处不用；诗中省音作 ohn' Unterlaß（旧拼法）。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">die Gans, Gänse</span></div>
-        <span class="vocab-card__pos">n.（阴性）</span>
-        <div class="vocab-card__meaning">鹅、雁</div>
-        <div class="vocab-card__note">诗中复合为 die Wandergans（迁徙的雁）；日常口语中 "du dumme Gans" 是对女性的贬称，使用需谨慎。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">an jemandem/etwas hängen</span></div>
-        <span class="vocab-card__pos">v.（强变化，固定搭配）</span>
-        <div class="vocab-card__meaning">依恋、舍不得</div>
-        <div class="vocab-card__note">不可按字面"挂在……上"理解；变位 hängt – hing – hat gehangen（不及物）。与及物的 hängen（挂上，hängte/gehängt）是同形异变位动词，须区分。</div>
-      </div>
-      <div class="vocab-card">
-        <div class="vocab-card__head"><span class="vocab-card__term">für und für</span></div>
-        <span class="vocab-card__pos">副词短语（古语）</span>
-        <div class="vocab-card__meaning">永远、绵绵不绝</div>
-        <div class="vocab-card__note">今已废弃，现代德语用 immerfort、für immer；本站莱瑙《祈求》末行亦用此语。</div>
-      </div>      </div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">动词变位</span>
-        <span class="section__de">Konjugation</span>
-      </header>
-      <div class="verb-table-wrap">
-      <table class="verb-table">
-        <thead>
-          <tr>
-            <th>Infinitiv</th><th>Präsens<br><span class="th-sub">3. Sg.</span></th><th>Präteritum</th><th>Perfekt</th><th>Partizip II</th><th>Konjunktiv II</th><th>Hilfsverb</th>
-          </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td class="de">drücken</td>
-          <td class="de">drückt</td>
-          <td class="de">drückte</td>
-          <td class="de">hat gedrückt</td>
-          <td class="de">gedrückt</td>
-          <td class="de">drückte</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 及物动词；诗中主语为 der Nebel，宾语为 die Dächer——雾被赋予了物理的重量。</td></tr>
-        <tr>
-          <td class="de">brausen</td>
-          <td class="de">braust</td>
-          <td class="de">brauste</td>
-          <td class="de">hat gebraust</td>
-          <td class="de">gebraust</td>
-          <td class="de">brauste</td>
-          <td>haben（表声响）／sein（表快速移动）</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 诗中主语 das Meer 后置于动词之后（因状语 durch die Stille 置于句首）。</td></tr>
-        <tr>
-          <td class="de">rauschen</td>
-          <td class="de">rauscht</td>
-          <td class="de">rauschte</td>
-          <td class="de">hat gerauscht</td>
-          <td class="de">gerauscht</td>
-          <td class="de">rauschte</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 诗中用于否定句 "Es rauscht kein Wald"。</td></tr>
-        <tr>
-          <td class="de">schlagen</td>
-          <td class="de">schlägt</td>
-          <td class="de">schlug</td>
-          <td class="de">hat geschlagen</td>
-          <td class="de">geschlagen</td>
-          <td class="de">schlüge</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 强变化，现在时单数变元音 a→ä；诗中取"鸣禽啼唱"的专门用法。</td></tr>
-        <tr>
-          <td class="de">vorbeifliegen</td>
-          <td class="de">fliegt vorbei</td>
-          <td class="de">flog vorbei</td>
-          <td class="de">ist vorbeigeflogen</td>
-          <td class="de">vorbeigeflogen</td>
-          <td class="de">flöge vorbei</td>
-          <td>sein</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 可分动词；诗中 fliegt 与前缀 vorbei 分置于行首与行末，中间夹住整个状语。</td></tr>
-        <tr>
-          <td class="de">hängen（不及物）</td>
-          <td class="de">hängt</td>
-          <td class="de">hing</td>
-          <td class="de">hat gehangen</td>
-          <td class="de">gehangen</td>
-          <td class="de">hinge</td>
-          <td>haben</td>
-        </tr>
-        <tr class="verb-note"><td colspan="7">↳ 与及物的 hängen（hängte – gehängt，把某物挂上）为同形异变位动词。诗中为不及物用法的固定搭配 an jm. hängen（依恋）。</td></tr>
-        </tbody>
-      </table>
-    </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">语法要点</span>
-        <span class="section__de">Grammatik</span>
-      </header>
-            <div class="grammar-list">      <article class="grammar-item">
-        <h3 class="grammar-item__title">形式主语 es 与否定词 kein 的前置</h3>
-        <p class="grammar-item__quote">Es rauscht kein Wald, es schlägt im Mai / Kein Vogel ohn' Unterlaß;</p>
-        <div class="grammar-item__body">德语用 es 占据句首位置、把真正的主语推到动词之后，以强调该主语是新信息（"Es kommt ein Zug"）。本节两次使用这一结构，且真正的主语都带否定词 kein——因此每一句的重点都落在"没有"上。请注意 kein 的用法：它否定的是带不定冠词或零冠词的名词（kein Wald = 一片森林也没有），而 nicht 否定动词或带定冠词的名词。整整一节都在列举缺席之物，为第三节的转折蓄势。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">同形异变位：hängen 及物 vs. 不及物</h3>
-        <p class="grammar-item__quote">Doch hängt mein ganzes Herz an dir,</p>
-        <div class="grammar-item__body">德语中 hängen 有两套变位：不及物（某物挂着 / 依恋）为强变化 hing – hat gehangen；及物（把某物挂上）为弱变化 hängte – hat gehängt。本诗为不及物用法，构成固定搭配 an jemandem hängen（依恋某人某物）。类似的成对动词还有 liegen/legen、sitzen/setzen、stehen/stellen、erschrecken 的两套变位——这一组是德语中级阶段的核心难点，值得成组整理。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">前置第二格</h3>
-        <p class="grammar-item__quote">Der Jugend Zauber für und für</p>
-        <div class="grammar-item__body">= der Zauber der Jugend（青春的魔力）。第二格前置在19世纪诗歌中很常见，今日只保留在专有名词（Goethes Werke）与少数固定表达中。识别窍门：若一行以 der/des/die + 名词开头、后面紧跟另一个名词而没有动词，多半就是前置第二格。本站在荷尔德林、里尔克、特拉克尔、克劳迪乌斯诸诗中都标注过这一结构，可对照复习。</div>
-      </article>
-      <article class="grammar-item">
-        <h3 class="grammar-item__title">语气词 doch 的两种功能</h3>
-        <p class="grammar-item__quote">Doch hängt mein ganzes Herz an dir … / Ruht lächelnd doch auf dir, auf dir,</p>
-        <div class="grammar-item__body">doch 在第11行位于句首，是转折连词（然而），引起倒装；在第14行位于句中，是语气词，表示"仍然、毕竟"，加强断言而不构成转折。德语语气词（doch, ja, mal, eben, halt, wohl）几乎没有对应的中文词，只能靠语气传达，是学习者最难掌握也最能体现语感的部分。同一首诗里 doch 出现两次而功能不同，是很好的对照样本。</div>
-      </article>      </div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">文学意象与文化背景</span>
-        <span class="section__de">Hintergrund</span>
-      </header>
-      <div class="prose"><p>《那座城》作于1851年，写的是施托姆的故乡胡苏姆（Husum）——石勒苏益格的一座北海小城，今天当地仍以诗中的称呼自称"海边灰色的城"（die graue Stadt am Meer），这已成为胡苏姆的官方旅游标语。</p>
-<p>此诗写作的时间点很重要：1848年石勒苏益格-荷尔斯泰因起义失败后，作为丹麦统治下的德语律师，施托姆在1853年被迫离乡，此后流亡十余年才得以返回。诗中那种"明知它一无所有却仍系于其上"的语调，正来自这段即将到来的分离。</p>
-<p>全诗的构造极为克制：三节各五行，前两节几乎全是否定与匮乏——灰、雾、单调的海声、没有森林、没有五月的鸟鸣、只有一只叫声刺耳的过雁。直到第三节开头的 Doch（然而），情感才第一次出现，并且立刻在 "auf dir, auf dir" 的重复中溢出。最值得注意的是：即便在这最深情的一节，城依然是"灰色的"。施托姆没有为了抒情而修改事实，这份不加粉饰正是"诗意现实主义"（Poetischer Realismus）这一概念的教科书式例证——现实不被美化，但被赋予了情感的重量。</p>
-<p>此诗常与施托姆的《海滨》（Meeresstrand）并读，两首都写北海。它也被多次谱曲，阿尔班·贝尔格早年（1907年前后）的版本较为知名。</p></div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">译文说明</span>
-        <span class="section__de">Anmerkung</span>
-      </header>
-      <div class="prose"><p>中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1) grau（灰色）在诗中出现四次且是唯一的颜色词，译文一律作"灰色"，不作任何变化处理；(2) 第11行的 "an dir hängen" 是"依恋"的固定搭配，译作"心系在你身上"，不可按字面理解为"挂在"；(3) 第14行 "auf dir, auf dir" 的重复是全诗唯一的情感外露，译文照样重复，未作合并。第6行的 schlagen 特指鸣禽的婉转啼唱，译作"鸣唱"。已知此诗存在多个中文译本，因版权原因本站不转载具体译本全文。</p></div>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">德文原文出处</span>
-        <span class="section__de">Quellen</span>
-      </header>
-      <ul class="source-list">
-      <li>
-        <span class="source-name">textlog.de — Theodor Storm, „Die Stadt“（Gedichte · I. Buch）</span><a class="source-url" href="https://www.textlog.de/storm/gedichte/die-stadt" target="_blank" rel="noopener">https://www.textlog.de/storm/gedichte/die-stadt</a>
-        <span class="source-note">主来源。三节十五行完整，依施托姆《诗集》第一卷编排；第7行作省音形式 "ohn' Unterlaß"，第9行行末不加标点。</span>
-      </li>
-      <li>
-        <span class="source-name">gedichte7.de — „Am grauen Strand, am grauen Meer (Die Stadt) – Storm“</span><a class="source-url" href="https://www.gedichte7.de/die-stadt.html" target="_blank" rel="noopener">https://www.gedichte7.de/die-stadt.html</a>
-        <span class="source-note">辅助来源。三节十五行与主来源逐词一致，唯第7行作完整形式 "ohne Unterlaß"、第9行行末加逗号，用于交叉核对用词与标点。</span>
-      </li>
-    </ul>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">译文出处 · 版权</span>
-        <span class="section__de">Übersetzungsnachweis</span>
-      </header>
-      <ul class="source-list">
-      <li>
-        <span class="source-name">本站学习译文（中文）</span>
-        <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
-      </li>
-    </ul>
-    </section>
-    <section class="section reveal">
-      <header class="section__head">
-        <span class="section__zh">校对记录</span>
-        <span class="section__de">Korrektorat</span>
-      </header>
-      <div class="prose"><p>德文正文通过两个独立来源（textlog.de 的施托姆《诗集》第一卷数字化本与 gedichte7.de）逐词核对，三节各五行、内容一致。核实到两处排印层面的差异：(1) 第7行：主来源作省音形式 "ohn' Unterlaß"，gedichte7.de 作完整形式 "ohne Unterlaß"。省音形式少一个音节，更符合本行的四音步格律，本站从主来源。(2) 第9行行末：主来源不加标点（直接跨到下一行），gedichte7.de 加逗号。第9行与第10行在语法上是两个独立的句子（"雁飞过"与"草在摇动"），因此加不加标点会影响朗读的停顿，本站从主来源的无标点写法。此外，Unterlaß 为旧拼法（今 Unterlass），本站保留。需说明的是，本站未直接查阅施托姆《诗集》原刊或历史批评版，上述采择依据两个数字化来源；创作年代（1851年）依据通行的施托姆研究结论，未经原始文献核实，属待进一步核实项。</p></div>
-    </section>
-    <section class="section reveal section--wide">
-      <header class="section__head">
-        <span class="section__zh">上线前质量 Checklist</span>
-        <span class="section__de">Prüfliste</span>
-      </header>
-            <ul class="checklist">        <li>确认作者：Theodor Storm</li>
-        <li>确认标题与出处：《诗集》第一卷</li>
-        <li>德文原文主来源：textlog.de</li>
-        <li>德文原文辅助来源：gedichte7.de</li>
-        <li>核对诗节、行数、标点</li>
-        <li>记录版本差异（ohn'/ohne Unterlaß；第9行行末标点；旧新正字法）</li>
-        <li>查找已有中文译本（已知存在，未转载全文）</li>
-        <li>判断译文版权可用性（现代中译不可用）</li>
-        <li>制作本站学习译文（中文）</li>
-        <li>提取重点词汇</li>
-        <li>校对 lemma 与词性</li>
-        <li>补充动词变位</li>
-        <li>撰写语法要点</li>
-        <li>撰写背景说明</li>
-        <li>撰写 image brief</li>
-        <li class="pending">生成 AI 配图</li>
-        <li class="pending">页面视觉检查</li>
-        <li class="pending">核实创作年代与原刊标点（现依数字化选本）</li>
-        <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>      </ul>
-    </section>
+      </section>
+      <section class="section reveal section--wide">
+        <header class="section__head">
+          <span class="section__zh">上线前质量 Checklist</span>
+          <span class="section__de">Prüfliste</span>
+        </header>
+        <ul class="checklist">
+          <li>确认作者：Theodor Storm</li>
+          <li>确认标题与出处：《诗集》第一卷</li>
+          <li>德文原文主来源：textlog.de</li>
+          <li>德文原文辅助来源：gedichte7.de</li>
+          <li>核对诗节、行数、标点</li>
+          <li>记录版本差异（ohn'/ohne Unterlaß；第9行行末标点；旧新正字法）</li>
+          <li>查找已有中文译本（已知存在，未转载全文）</li>
+          <li>判断译文版权可用性（现代中译不可用）</li>
+          <li>制作本站学习译文（中文）</li>
+          <li>提取重点词汇</li>
+          <li>校对 lemma 与词性</li>
+          <li>补充动词变位</li>
+          <li>撰写语法要点</li>
+          <li>撰写背景说明</li>
+          <li>撰写 image brief</li>
+          <li>生成 AI 配图（已接入）</li>
+          <li>页面视觉检查</li>
+          <li class="pending">核实创作年代与原刊标点（现依数字化选本）</li>
+          <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
+          <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
+        </ul>
+      </section>
     </div>
   </main>
   <footer class="site-footer">
@@ -479,106 +605,110 @@
     <p class="site-footer__meta">详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
   </footer>
   <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor"
+      stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V6M6 12l6-6 6 6" />
+    </svg>
   </button>
-<script>
-  (function () {
-    // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (es) {
-        es.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+  <script>
+    (function () {
+      // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
+      }
+      // 朱批旁注联动：诗行 ↔ 注释互相高亮
+      function highlight(id, on, source) {
+        var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
+        var sel = '[data-noteref="' + escId + '"]';
+        document.querySelectorAll(sel).forEach(function (p) {
+          if (p !== source) p.classList.toggle('is-linked', on);
         });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-    } else {
-      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-in'); });
-    }
-    // 朱批旁注联动：诗行 ↔ 注释互相高亮
-    function highlight(id, on, source) {
-      var escId = (window.CSS && CSS.escape) ? CSS.escape(id) : id;
-      var sel = '[data-noteref="' + escId + '"]';
-      document.querySelectorAll(sel).forEach(function (p) {
-        if (p !== source) p.classList.toggle('is-linked', on);
+        if (source) source.classList.toggle('is-self', on);
+      }
+      // 鼠标：悬停诗行或注释
+      document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
+        var id = el.getAttribute('data-noteref');
+        el.addEventListener('mouseenter', function () { highlight(id, true, el); });
+        el.addEventListener('mouseleave', function () { highlight(id, false, el); });
       });
-      if (source) source.classList.toggle('is-self', on);
-    }
-    // 鼠标：悬停诗行或注释
-    document.querySelectorAll('.vline[data-noteref], .lnote[data-noteref]').forEach(function (el) {
-      var id = el.getAttribute('data-noteref');
-      el.addEventListener('mouseenter', function () { highlight(id, true, el); });
-      el.addEventListener('mouseleave', function () { highlight(id, false, el); });
-    });
-    // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
-    document.querySelectorAll('.refmark a').forEach(function (a) {
-      var vline = a.closest('.vline[data-noteref]');
-      if (!vline) return;
-      var id = vline.getAttribute('data-noteref');
-      a.addEventListener('focus', function () { highlight(id, true, vline); });
-      a.addEventListener('blur', function () { highlight(id, false, vline); });
-    });
-    // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
-    var toggle = document.querySelector('.theme-toggle');
-    if (toggle) {
-      var syncToggle = function () {
-        var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-        toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
-        toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
-      };
-      syncToggle();
-      toggle.addEventListener('click', function () {
-        var cur = document.documentElement.getAttribute('data-theme') || 'light';
-        var next = cur === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        try { localStorage.setItem('theme', next); } catch (e) {}
+      // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+      document.querySelectorAll('.refmark a').forEach(function (a) {
+        var vline = a.closest('.vline[data-noteref]');
+        if (!vline) return;
+        var id = vline.getAttribute('data-noteref');
+        a.addEventListener('focus', function () { highlight(id, true, vline); });
+        a.addEventListener('blur', function () { highlight(id, false, vline); });
+      });
+      // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+      var toggle = document.querySelector('.theme-toggle');
+      if (toggle) {
+        var syncToggle = function () {
+          var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+          toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
+          toggle.setAttribute('aria-label', dark ? '切换到浅色主题' : '切换到深色主题');
+        };
         syncToggle();
+        toggle.addEventListener('click', function () {
+          var cur = document.documentElement.getAttribute('data-theme') || 'light';
+          var next = cur === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) { }
+          syncToggle();
+        });
+      }
+      // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+      var modals = document.querySelectorAll('dialog.modal');
+      modals.forEach(function (modal) {
+        var closeBtn = modal.querySelector('.modal__close');
+        // ✕ 关闭
+        if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
+        // 点遮罩（dialog 自身区域）关闭
+        modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+        // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+        modal.addEventListener('close', function () {
+          document.body.classList.remove('modal-open');
+          var t = modal._trigger;
+          if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+        });
       });
-    }
-    // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
-    var modals = document.querySelectorAll('dialog.modal');
-    modals.forEach(function (modal) {
-      var closeBtn = modal.querySelector('.modal__close');
-      // ✕ 关闭
-      if (closeBtn) closeBtn.addEventListener('click', function () { modal.close(); });
-      // 点遮罩（dialog 自身区域）关闭
-      modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
-      // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
-      modal.addEventListener('close', function () {
-        document.body.classList.remove('modal-open');
-        var t = modal._trigger;
-        if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); modal._trigger = null; }
+      var triggers = document.querySelectorAll('.brief-trigger');
+      triggers.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var id = btn.getAttribute('data-modal');
+          var modal = id && document.getElementById(id);
+          if (!modal || typeof modal.showModal !== 'function') return;
+          if (modal.open) { modal.close(); return; }
+          modal._trigger = btn;
+          btn.setAttribute('aria-expanded', 'true');
+          modal.showModal();
+          document.body.classList.add('modal-open');
+          var c = modal.querySelector('.modal__close');
+          if (c) c.focus();
+        });
       });
-    });
-    var triggers = document.querySelectorAll('.brief-trigger');
-    triggers.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var id = btn.getAttribute('data-modal');
-        var modal = id && document.getElementById(id);
-        if (!modal || typeof modal.showModal !== 'function') return;
-        if (modal.open) { modal.close(); return; }
-        modal._trigger = btn;
-        btn.setAttribute('aria-expanded', 'true');
-        modal.showModal();
-        document.body.classList.add('modal-open');
-        var c = modal.querySelector('.modal__close');
-        if (c) c.focus();
-      });
-    });
-    // 回到顶部按钮：滚动一段距离后才显示
-    var toTop = document.querySelector('.to-top');
-    if (toTop) {
-      var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var syncToTop = function () {
-        if (window.scrollY > 420) toTop.classList.add('is-visible');
-        else toTop.classList.remove('is-visible');
-      };
-      window.addEventListener('scroll', syncToTop, { passive: true });
-      syncToTop();
-      toTop.addEventListener('click', function () {
-        window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
-      });
-    }
-  })();
+      // 回到顶部按钮：滚动一段距离后才显示
+      var toTop = document.querySelector('.to-top');
+      if (toTop) {
+        var prefersReduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var syncToTop = function () {
+          if (window.scrollY > 420) toTop.classList.add('is-visible');
+          else toTop.classList.remove('is-visible');
+        };
+        window.addEventListener('scroll', syncToTop, { passive: true });
+        syncToTop();
+        toTop.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
+        });
+      }
+    })();
   </script>
 </body>
+
 </html>

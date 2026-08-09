@@ -7,7 +7,8 @@
   "scripts": {
     "build": "node src/build.js",
     "serve": "node src/serve.js",
-    "dev": "node src/build.js && node src/serve.js"
+    "dev": "node src/build.js && node src/serve.js",
+    "check": "node src/validate-sources.js"
   },
   "engines": {
     "node": ">=18"
