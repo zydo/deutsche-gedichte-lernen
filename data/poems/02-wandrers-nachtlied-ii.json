@@ -44,22 +44,7 @@
       ]
     ]
   },
-  "translation_en": {
-    "type": "public-domain",
-    "translator": "Henry Wadsworth Longfellow（1807–1882）译本，公版；转引自英文维基百科 \"Wanderer's Nightsong\" 词条及多种公开引用来源",
-    "text": [
-      [
-        "O'er all the hilltops",
-        "Is quiet now,",
-        "In all the treetops",
-        "Hearest thou",
-        "Hardly a breath;",
-        "The birds are asleep in the trees:",
-        "Wait; soon like these",
-        "Thou too shalt rest."
-      ]
-    ]
-  },
+  "translation_en": null,
   "line_notes": [
     {
       "de": "Über allen Gipfeln",
