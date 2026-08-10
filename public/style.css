@@ -785,9 +785,13 @@ main {
   cursor: pointer;
   list-style: none;
   user-select: none;
+  margin: 0 -0.45rem;
+  padding: 0 0.45rem;
+  border-radius: 3px;
+  transition: background 0.15s ease;
 }
 
-/* 去掉各浏览器的默认三角，改用右侧自绘 caret */
+/* 去掉各浏览器的默认三角，改用右侧自绘控件 */
 .section--fold > summary::-webkit-details-marker {
   display: none;
 }
@@ -801,6 +805,12 @@ main {
   margin-bottom: 0;
 }
 
+/* 悬停 / 聚焦：整行底色变化 + 朱批红，明确「可点击展开」 */
+.section--fold > summary:hover,
+.section--fold > summary:focus-visible {
+  background: var(--paper-2);
+}
+
 .section--fold > summary:hover .section__zh,
 .section--fold > summary:focus-visible .section__zh {
   color: var(--korrektur);
@@ -808,39 +818,57 @@ main {
 
 .section--fold > summary:focus-visible {
   outline: 2px solid var(--korrektur);
-  outline-offset: 3px;
-  border-radius: 2px;
+  outline-offset: 2px;
 }
 
-/* 德文小标题与 caret 之间不再由 margin-left:auto 顶开 */
+/* 德文小标题靠右，与展开控件之间留白 */
 .section--fold > summary .section__de {
   margin-left: auto;
 }
 
-.section__caret {
+/* 右侧展开控件：文字标签 + 箭头，currentColor 随悬停变色 */
+.section__toggle {
   flex-shrink: 0;
-  width: 0.62rem;
-  height: 0.62rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   margin-left: 0.7rem;
-  border-right: 1.4px solid var(--ink-4);
-  border-bottom: 1.4px solid var(--ink-4);
-  transform: rotate(45deg) translate(-0.1rem, -0.1rem);
-  transition:
-    transform 0.18s ease,
-    border-color 0.18s ease;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-4);
+  transition: color 0.15s ease;
+}
+
+.section__toggle-text::before {
+  content: "展开";
+}
+
+.section--fold[open] > summary .section__toggle-text::before {
+  content: "收起";
+}
+
+.section__caret {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 1.4px solid currentColor;
+  border-bottom: 1.4px solid currentColor;
+  transform: rotate(45deg) translate(-0.06rem, -0.06rem);
+  transition: transform 0.18s ease;
 }
 
 .section--fold[open] > summary .section__caret {
-  transform: rotate(-135deg) translate(-0.16rem, -0.16rem);
+  transform: rotate(-135deg) translate(-0.14rem, -0.14rem);
 }
 
-.section--fold > summary:hover .section__caret {
-  border-color: var(--korrektur);
+.section--fold > summary:hover .section__toggle,
+.section--fold > summary:focus-visible .section__toggle {
+  color: var(--korrektur);
 }
 
 /* 打印时全部展开：纸面上没有"点开"这回事 */
 @media print {
-  .section--fold > summary .section__caret {
+  .section--fold > summary .section__toggle {
     display: none;
   }
 

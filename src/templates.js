@@ -621,7 +621,7 @@ function renderSections(secs) {
       <summary class="section__head">
         <span class="section__zh">${esc(s.zh)}</span>
         <span class="section__de">${esc(s.de)}</span>
-        <span class="section__caret" aria-hidden="true"></span>
+        <span class="section__toggle" aria-hidden="true"><span class="section__toggle-text"></span><span class="section__caret"></span></span>
       </summary>
       ${s.html}
     </details>`;
