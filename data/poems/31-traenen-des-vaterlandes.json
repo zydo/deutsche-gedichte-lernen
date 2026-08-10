@@ -302,7 +302,7 @@
       "done": true
     },
     {
-      "label": "德文原文辅助来源：gedichte7.de（现代化正字法）",
+      "label": "德文原文辅助来源：gedichte7.de（现代化正字法）/ Zeno.org（一级来源）",
       "done": true
     },
     {
@@ -375,7 +375,7 @@
     },
     {
       "label": "为1663年最后手定版再找一个独立的一级来源（现仅 Wikipedia 一家转录）",
-      "done": false
+      "done": true
     }
   ]
 }

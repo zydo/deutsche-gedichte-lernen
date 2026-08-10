@@ -289,7 +289,7 @@
       "done": true
     },
     {
-      "label": "德文原文辅助来源：gedichte7.de（通行版本）",
+      "label": "德文原文辅助来源：gedichte7.de（通行版本）/ deutschelyrik.de",
       "done": true
     },
     {
@@ -358,7 +358,7 @@
     },
     {
       "label": "补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）",
-      "done": false
+      "done": true
     }
   ]
 }
