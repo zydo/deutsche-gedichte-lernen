@@ -64,7 +64,7 @@
       "Und kommt ein Jung' übern Kirchhof her,",
       "So flüstert's im Baume: „Wist 'ne Beer?“",
       "Und kommt ein Mädel, so flüstert's: „Lütt Dirn,",
-      "Kumm man röwer, ich gew di 'ne Birn.“",
+      "Kumm man röwer, ick gew di 'ne Birn.“",
       "So spendet Segen noch immer die Hand",
       "Des von Ribbeck auf Ribbeck im Havelland."
     ]
@@ -188,7 +188,7 @@
       "zh": "flüstert's = flüstert es（形式主语 es，\"树里有什么在低语\"）。与第8行相比，说话的主语从\"他\"（er rief）变成了无人称的\"它\"（es flüstert）——老爷的声音已经变成了树的声音。此处低地德语作 Wist（Zeno 版），另有版本作 Wiste，详见校对记录。"
     },
     {
-      "de": "Kumm man röwer, ich gew di 'ne Birn.“",
+      "de": "Kumm man röwer, ick gew di 'ne Birn.“",
       "zh": "与第10行几乎完全相同，唯一的变化是 ick hebb（我有）变成了 ich gew di（我给你）——从\"我有\"到\"我给\"。另需注意：Zeno 版此处作标准德语的 ich，而第10行作低地德语的 ick；部分版本两处统一作 ick，详见校对记录。"
     },
     {
@@ -363,6 +363,11 @@
       "name": "gedichte7.de — „Herr von Ribbeck auf Ribbeck – Fontane“",
       "url": "https://www.gedichte7.de/herr-von-ribbeck-auf-ribbeck.html",
       "note": "辅助来源。同为四十二行、分四节（10/12/10/10），据此确认了主来源连续排印文本的分节方式；同时存在多处用词与排印差异（Mädel/Mädchen、was damals er tat/was er damals tat、Wist/Wiste、ich gew di/ick gew di、goldene/goldne 等），详见校对记录。"
+    },
+    {
+      "name": "deutschelyrik.de — 「Herr von Ribbeck auf Ribbeck im Havelland」（Fritz Stavenhagen 朗诵与文本站）",
+      "url": "https://www.deutschelyrik.de/herr-von-ribbeck-auf-ribbeck-im-havelland.436.html",
+      "note": "第三来源（二级），与前两者分属不同运营方。四十二行、分节 10/12/10/10，与本站一致。关键作用：第40行作 ick gew' di，与 gedichte7.de 的 ick gew di 同为低地德语 ick，据此判定 Zeno 的 ich gew di 为转录讹误（详见校对记录）。"
     }
   ],
   "translation_sources": [
@@ -371,7 +376,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文以 Zeno.org 转录的 Nymphenburger 版《冯塔纳全集》第20卷（第249—251页）为主来源，与 gedichte7.de 逐行核对，两来源行数一致（四十二行），分节为 10/12/10/10（主来源连续排印，分节依辅助来源并与通行版本一致）。核实到的差异较多，本站一律从主来源，现如实列出：(1) 第9行与第39行：主来源作 Mädel，辅助来源第9行作 Mädchen、第39行作 Mädel。(2) 第29行：主来源作 \"was damals er tat\"（状语前置的诗歌语序），辅助来源作 \"was er damals tat\"（常规语序）。(3) 第38行：主来源作 „Wist 'ne Beer?“，辅助来源作 „Wiste 'ne Beer?“（与第8行统一）。(4) 第40行：主来源作低地德语中夹标准德语的 \"ich gew di\"，辅助来源作全低地德语的 \"ick gew di\"——第10行两来源均作 ick，因此主来源在此处的 ich 是否为排印之误，本站未能判定，属待核实项。(5) 第3行与第35行：主来源作 goldene，辅助来源作 goldne（少一音节）。(6) 第17行：主来源作 \"Und drei Tage drauf, aus dem Doppeldachhaus,\"，辅助来源作 \"Und drei Tage darauf aus dem Doppeldachhaus\"。(7) 大小写：主来源每行行首一律大写（19世纪排印惯例），辅助来源仅句首大写。(8) 主来源在 der neue / der alte 处使用斜体强调，本站因纯文本呈现而未保留该排版特征。此外，本站未直接查阅1889年首刊或1898年《诗集》影印件，上述采择依据全集转录；第40行 ich/ick 的问题尤其建议对照原刊核实。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。",
+  "verification_notes": "德文正文以 Zeno.org 转录的 Nymphenburger 版《冯塔纳全集》第20卷（第249—251页）为主来源，与 gedichte7.de 逐行核对，两来源行数一致（四十二行），分节为 10/12/10/10（主来源连续排印，分节依辅助来源并与通行版本一致）。核实到的差异较多，本站一律从主来源，现如实列出：(1) 第9行与第39行：主来源作 Mädel，辅助来源第9行作 Mädchen、第39行作 Mädel。(2) 第29行：主来源作 \"was damals er tat\"（状语前置的诗歌语序），辅助来源作 \"was er damals tat\"（常规语序）。(3) 第38行：主来源作 „Wist 'ne Beer?“，辅助来源作 „Wiste 'ne Beer?“（与第8行统一）。(4) 第40行：主来源作低地德语中夹标准德语的 \"ich gew di\"，辅助来源作全低地德语的 \"ick gew di\"——第10行两来源均作 ick，因此主来源在此处的 ich 是否为排印之误，本站未能判定，属待核实项。(5) 第3行与第35行：主来源作 goldene，辅助来源作 goldne（少一音节）。(6) 第17行：主来源作 \"Und drei Tage drauf, aus dem Doppeldachhaus,\"，辅助来源作 \"Und drei Tage darauf aus dem Doppeldachhaus\"。(7) 大小写：主来源每行行首一律大写（19世纪排印惯例），辅助来源仅句首大写。(8) 主来源在 der neue / der alte 处使用斜体强调，本站因纯文本呈现而未保留该排版特征。此外，本站未直接查阅1889年首刊或1898年《诗集》影印件，上述采择依据全集转录；第40行 ich/ick 的问题尤其建议对照原刊核实。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（zeno）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。 【2026-08 补验证】依 SOURCES.md 规则 B，原有两个来源中 gedichte7.de 属三级来源，故补入第三个独立来源 deutschelyrik.de（二级）。逐行比对：行数、分节完全一致，用词与 Zeno 主来源基本相同，另有以下发现。（甲）本站正文已据此修订一处：第40行原从 Zeno 作 ich gew di，但 deutschelyrik.de 与 gedichte7.de 均作 ick。此处是梨树以低地德语（Plattdeutsch）说的引语，同一诗第10行为 ick hebb 'ne Birn，Zeno 本身在此并不自洽；高地德语 ich 不可能出现在这句低地德语里。三来源二比一，且有内证，故判定 Zeno 该处为转录讹误，正文改作 ick gew di —— 这是文献判断，不是编辑偏好。（乙）第38行 Zeno 作 Wist 'ne Beer?，另两来源作 Wiste 'ne Beer?（同第8行）。与（甲）不同，Wist / Wiste 皆为合法的低地德语形式，不构成内在矛盾，属真实版本异文，故正文仍从 Zeno 的 Wist，此处如实备案。（丙）deutschelyrik.de 用书名号 »…«，本站与 Zeno 用德式引号，同为德语规范，不视为异文。（丁）第28行 deutschelyrik.de 作 Mißtraun（缩略，更合音步），本站从 Zeno 作 Mißtrauen。（戊）第14行行末 deutschelyrik.de 用分号，本站从 Zeno 用逗号；第31行 deutschelyrik.de 无逗号，本站从 Zeno 作 Und im dritten Jahr, aus dem stillen Haus。以上标点差异不影响语义。（己）第23行破折号：deutschelyrik.de 用半长破折号，本站用长破折号，属排印惯例差异。",
   "checklist": [
     {
       "label": "确认作者：Theodor Fontane",

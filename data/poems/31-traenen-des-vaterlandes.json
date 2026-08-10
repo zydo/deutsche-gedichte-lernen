@@ -269,6 +269,11 @@
       "name": "gedichte7.de — „Tränen des Vaterlandes – Gryphius“",
       "url": "https://www.gedichte7.de/traenen-des-vaterlandes.html",
       "note": "辅助来源（现代化正字法）。十四行的分节、语序与1663年版逐行对应，用于确定本站所采用的现代化通行文本；并提供格律分析与贝歇尔1937年仿作的全文。"
+    },
+    {
+      "name": "Zeno.org — Andreas Gryphius: Gesamtausgabe der deutschsprachigen Werke. Band 1, Tübingen 1963, S. 48（Sonnette. Das erste Buch, Nr. 27「Threnen des Vatterlandes / Anno 1636」）",
+      "url": "http://www.zeno.org/Literatur/M/Gryphius,+Andreas/Gedichte/Sonette/Sonnette.+Das+erste+Buch/27.+Threnen+des+Vatterlandes",
+      "note": "一级来源（Szyrocki/Powell 版全集，标注页码），与 German Wikipedia 相互独立。**须注意：此页给出的是1643年「第一卷」的中间稿，而非本站正文所依据的1663年最后手定版**——它填补了此前\"1643/1650/1657 中间版本未核对\"这一空白，但不构成对1663年文本的独立印证，详见校对记录。"
     }
   ],
   "translation_sources": [
@@ -277,7 +282,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "【正字法处理原则】与本站收录的其他巴洛克作品一致，正文采用**现代化正字法的通行文本**（对应1663年\"最后手定版\"），17世纪原刊形态在本记录中完整给出。\n\n德文正文通过两个独立来源核对：German Wikipedia（并列转录1637与1663两版原始正字法文本，各注明所据的现代校勘版）与 gedichte7.de（现代化正字法）。十四行的行数、语序与内容与1663年版完全对应。\n\n【1663年版原刊形态（据主来源）】WIr sind doch nunmehr gantz / ja mehr denn gantz verheeret! ｜ Der frechen Völcker Schaar / die rasende Posaun ｜ Das vom Blutt fette Schwerdt / die donnernde Carthaun / ｜ Hat aller Schweiß / und Fleiß / und Vorrath auffgezehret. ｜ Die Türme stehn in Glutt / die Kirch ist umgekehret. ｜ Das Rathauß ligt im Grauß / die Starcken sind zerhaun / ｜ Die Jungfern sind geschänd’t / und wo wir hin nur schaun ｜ Ist Feuer / Pest / und Tod / der Hertz und Geist durchfähret. ｜ Hir durch die Schantz und Stadt / rinnt allzeit frisches Blutt. ｜ Dreymal sind schon sechs Jahr / als vnser Ströme Flutt / ｜ Von Leichen fast verstopfft / sich langsam fort gedrungen. ｜ Doch schweig ich noch von dem / was ärger als der Tod / ｜ Was grimmer denn die Pest / und Glutt und Hungersnoth ｜ Das auch der Seelen Schatz / so vielen abgezwungen. —— 可见系统性差异为：斜线（Virgel）代逗号、双写辅音（Blutt, Glutt, verstopfft）、C 代 K（Carthaun）、v/u 互换（vnser）、以及首行末的感叹号。\n\n【1637年首刊版的重大异文】主来源亦逐字给出，与1663年版差异极大，兹录关键处：首行作 \"WIr sind doch nunmehr gantz / ja mehr alß gantz vertorben\"（vertorben 而非 verheeret）；第二节前半作 \"Die alte Redligkeit vnnd Tugend ist gestorben; / Die Kirchen sind verheert / die Starcken vmbgehawn\"；末三行作 \"Ich schweige noch von dehm / was stärcker als der Todt / (Du Straßburg weist es wol) der grimmen Hungersnoth / Vnd daß der Seelen=Schatz gar vielen abgezwungen.\"——注意1637年版直接点名斯特拉斯堡、并把落点放在饥荒上，1663年版删去了地名、把\"更强的\"改为\"更坏的\"、并将落点移至\"灵魂之宝\"。本站采1663年版，理由是它是作者最后手定的形式，也是学界与教科书的通行文本（据主来源，研究界的解释几乎无例外地以1663年版为基础）。\n\n待核实项：(1) 1643、1650、1657三个中间版本的异文，本站未查证（主来源称其与1663年版\"差异不大\"，但未逐条列出）；(2) 本站未直接查阅任何原刊影印件，两版原始正字法均依据 Wikipedia 对现代校勘版的转录；(3) 末行 der Seelenschatz 的确切所指（信仰／良知／永生盼望）学界有争议，本站在逐行注释中给出最通行的解读并标明其为解读而非定论。",
+  "verification_notes": "【正字法处理原则】与本站收录的其他巴洛克作品一致，正文采用**现代化正字法的通行文本**（对应1663年\"最后手定版\"），17世纪原刊形态在本记录中完整给出。\n\n德文正文通过两个独立来源核对：German Wikipedia（并列转录1637与1663两版原始正字法文本，各注明所据的现代校勘版）与 gedichte7.de（现代化正字法）。十四行的行数、语序与内容与1663年版完全对应。\n\n【1663年版原刊形态（据主来源）】WIr sind doch nunmehr gantz / ja mehr denn gantz verheeret! ｜ Der frechen Völcker Schaar / die rasende Posaun ｜ Das vom Blutt fette Schwerdt / die donnernde Carthaun / ｜ Hat aller Schweiß / und Fleiß / und Vorrath auffgezehret. ｜ Die Türme stehn in Glutt / die Kirch ist umgekehret. ｜ Das Rathauß ligt im Grauß / die Starcken sind zerhaun / ｜ Die Jungfern sind geschänd’t / und wo wir hin nur schaun ｜ Ist Feuer / Pest / und Tod / der Hertz und Geist durchfähret. ｜ Hir durch die Schantz und Stadt / rinnt allzeit frisches Blutt. ｜ Dreymal sind schon sechs Jahr / als vnser Ströme Flutt / ｜ Von Leichen fast verstopfft / sich langsam fort gedrungen. ｜ Doch schweig ich noch von dem / was ärger als der Tod / ｜ Was grimmer denn die Pest / und Glutt und Hungersnoth ｜ Das auch der Seelen Schatz / so vielen abgezwungen. —— 可见系统性差异为：斜线（Virgel）代逗号、双写辅音（Blutt, Glutt, verstopfft）、C 代 K（Carthaun）、v/u 互换（vnser）、以及首行末的感叹号。\n\n【1637年首刊版的重大异文】主来源亦逐字给出，与1663年版差异极大，兹录关键处：首行作 \"WIr sind doch nunmehr gantz / ja mehr alß gantz vertorben\"（vertorben 而非 verheeret）；第二节前半作 \"Die alte Redligkeit vnnd Tugend ist gestorben; / Die Kirchen sind verheert / die Starcken vmbgehawn\"；末三行作 \"Ich schweige noch von dehm / was stärcker als der Todt / (Du Straßburg weist es wol) der grimmen Hungersnoth / Vnd daß der Seelen=Schatz gar vielen abgezwungen.\"——注意1637年版直接点名斯特拉斯堡、并把落点放在饥荒上，1663年版删去了地名、把\"更强的\"改为\"更坏的\"、并将落点移至\"灵魂之宝\"。本站采1663年版，理由是它是作者最后手定的形式，也是学界与教科书的通行文本（据主来源，研究界的解释几乎无例外地以1663年版为基础）。\n\n待核实项：(1) 1643、1650、1657三个中间版本的异文，本站未查证（主来源称其与1663年版\"差异不大\"，但未逐条列出）；(2) 本站未直接查阅任何原刊影印件，两版原始正字法均依据 Wikipedia 对现代校勘版的转录；(3) 末行 der Seelenschatz 的确切所指（信仰／良知／永生盼望）学界有争议，本站在逐行注释中给出最通行的解读并标明其为解读而非定论。\n\n【复核完成（2026年8月）——附一项重要限定】补入 **Zeno.org 转录的 Szyrocki/Powell 版《格吕菲乌斯全集》第1卷（Tübingen 1963，第48页）**，即1643年《十四行诗·第一卷》第27首。\n\n**这项补入解决了什么**：此前本诗的校对记录列有待核实项\"1643、1650、1657三个中间版本的异文未查证\"。现已查得1643年版全文，兹逐字记录：\n\nWir sindt doch nuhmer gantz/ ja mehr den gantz verheret! ｜ Der frechen völcker schaar/ die rasende posaun ｜ Das vom blutt fette schwerdt/ die donnernde Carthaun ｜ Hatt aller schweis/ vnd fleis/ vnd vorraht auff gezehret. ｜ Die türme stehn in glutt/ die Kirch ist vmbgekehret. ｜ Das Rahthaus ligt im graus/ die starcken sind zerhawn. ｜ Die Jungfrawn sindt geschändt/ vnd wo wir hin nur schawn ｜ Ist fewer/ pest/ vnd todt der hertz vndt geist durchfehret. ｜ Hier durch die schantz vnd Stadt/ rint alzeit frisches blutt. ｜ Dreymall sindt schon sechs jahr als vnser ströme flutt ｜ Von so viel leichen schwer/ sich langsam fortgedrungen. ｜ Doch schweig ich noch von dem was ärger als der todt. ｜ Was grimmer den die pest/ vndt glutt vndt hungers noth ｜ Das nun der Selen schatz/ so vielen abgezwungen.\n\n由此可确认1643年版确为**过渡形态**：首行已从1637年的 `vertorben` 改作 `verheret`、末三行已从1637年的\"（Du Straßburg weist es wol）… Hungersnoth\"改为1663年那种删去地名的写法；但第11行仍作1637年的 `Von so viel leichen schwer`（1663年改为 `Von Leichen fast verstopfft`），末行仍作 `Das nun der Selen schatz`（1663年作 `Das auch der Seelen Schatz`）。三版的演变线索至此完整。\n\n**这项补入没有解决什么（重要）**：Zeno 页面给出的是1643年稿，**并非本站正文所采用的1663年最后手定版**。因此严格地说，本站显示的1663年文本目前仍只有 German Wikipedia 一个独立来源（其转录依据 Thomas Borgstedt 2012年编本）在印证——`npm run check` 会因为来源组已达标而将本诗判为通过，但这一点上机器判定略优于实情。若要真正满足规则 D 的精神，仍需再找一个独立转录1663年版的一级来源（如 Borgstedt 编本的其他数字化本）。此项保留在下方 checklist 中。",
   "checklist": [
     {
       "label": "确认作者：Andreas Gryphius",
@@ -352,8 +357,8 @@
       "done": false
     },
     {
-      "label": "核对1643/1650/1657三个中间版本的异文",
-      "done": false
+      "label": "核对1643年中间版本的异文（已完成；1650、1657两版仍未查）",
+      "done": true
     },
     {
       "label": "对照原刊影印件核实两版正字法",
@@ -361,6 +366,10 @@
     },
     {
       "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次，尤其末行 Seelenschatz 的释读）",
+      "done": false
+    },
+    {
+      "label": "为1663年最后手定版再找一个独立的一级来源（现仅 Wikipedia 一家转录）",
       "done": false
     }
   ]

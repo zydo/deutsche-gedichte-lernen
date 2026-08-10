@@ -337,6 +337,11 @@
       "name": "gedichte7.de — „Am Turme – Droste-Hülshoff“",
       "url": "https://www.gedichte7.de/am-turme.html",
       "note": "辅助来源。四节三十二行与主来源逐词一致，采用现代化正字法（lass’ / Walross / muss）并将 Seemöwe 印作 Seemöve，用于独立交叉核对词序与分行。"
+    },
+    {
+      "name": "Zeno.org — Annette von Droste-Hülshoff: Sämtliche Werke in zwei Bänden. Band 1, München 1973, S. 68–69（Gedichte, Die Ausgabe von 1844 · Fels, Wald und See）",
+      "url": "http://www.zeno.org/Literatur/M/Droste-H%C3%BClshoff,+Annette+von/Gedichte/Gedichte+(Die+Ausgabe+von+1844)/Fels,+Wald+und+See/Am+Turme",
+      "note": "一级来源，标注纸质版出处与页码。32 行、分节 8×4 与本站一致；另确认本诗在 1844 年 Cotta 版中属「Fels, Wald und See」辑（非「Heidebilder」），初刊 1842 年。全部实词与标点与本站一致，仅省字符用法不同，见校对记录。"
     }
   ],
   "translation_sources": [
@@ -345,7 +350,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮等译者的中译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文通过两个独立来源（German Wikipedia 依1844年《诗集》，与 gedichte7.de）逐词核对，四节各八行、词序与内容完全一致。核实到的差异均属正字法与排印层面：(1) 标题与拼写：原刊及1844年版作 \"Am Thurme\"，现代通行标题作 \"Am Turme\"，本站从后者并在注释中说明；(2) 旧新正字法：laß’/lass’、Walroß/Walross、muß/muss，本站从 Wikipedia 所依 1844 年版的旧拼法；(3) 第24行 \"Seemöwe\"（Wikipedia）与 \"Seemöve\"（gedichte7.de）——两种写法在19世纪均通行，今日标准形式为 Seemöwe，本站从之。需说明的是，本站未直接查阅1844年《诗集》或1842年《晨报》的影印件，上述文本采择依据 Wikipedia 的转录，建议有条件的读者对照原刊核实；另，梅尔斯堡塔房、《晨报》题词等背景信息亦取自该词条，未经第三来源独立验证，属待核实项。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。",
+  "verification_notes": "德文正文通过两个独立来源（German Wikipedia 依1844年《诗集》，与 gedichte7.de）逐词核对，四节各八行、词序与内容完全一致。核实到的差异均属正字法与排印层面：(1) 标题与拼写：原刊及1844年版作 \"Am Thurme\"，现代通行标题作 \"Am Turme\"，本站从后者并在注释中说明；(2) 旧新正字法：laß’/lass’、Walroß/Walross、muß/muss，本站从 Wikipedia 所依 1844 年版的旧拼法；(3) 第24行 \"Seemöwe\"（Wikipedia）与 \"Seemöve\"（gedichte7.de）——两种写法在19世纪均通行，今日标准形式为 Seemöwe，本站从之。需说明的是，本站未直接查阅1844年《诗集》或1842年《晨报》的影印件，上述文本采择依据 Wikipedia 的转录，建议有条件的读者对照原刊核实；另，梅尔斯堡塔房、《晨报》题词等背景信息亦取自该词条，未经第三来源独立验证，属待核实项。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 与 zgedichte.de 属同一运营方（Heiko Possel），依 SOURCES.md 规则 B 不可充当两个必需来源之一，且依第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。 【2026-08 补验证】依 SOURCES.md 规则 D 补入一级来源 Zeno.org（Droste-Hülshoff《全集》二卷本第 1 卷，München 1973，S.68–69），运营方独立于原有的 Wikimedia 与 gedichte7.de。比对结果：32 行、分节 8×4、全部实词与标点完全一致，未发现任何异文。　差异仅存于省字符（Apostroph）用法，共 8 处，且两来源各有其内部逻辑：　· 本站作 steh’ / laß’ / seh’（两处）、möcht’、Wär（无省字符）；　· Zeno 1973 年版作 steh / laß / seh（不加）、möcht'、Wär'（加）。　即：Zeno 只在真正省略了音节的地方加省字符（möchte→möcht'、Wäre→Wär'），而对 stehe→steh 这类已完全词汇化的短形不加；本站沿用的 19 世纪排印惯例则相反。这是排印规范差异，不涉及读音、词形或语义。　本站正文不作改动，保留原有省字符形态，并在此备案 Zeno 的处理方式。　另一项收获：Zeno 目录页确证本诗归属 1844 年 Cotta 版的「Fels, Wald und See」组诗（此前误以为在「Heidebilder」组），初刊于 1842 年；相关信息已可用于 collection 字段的进一步核对。",
   "checklist": [
     {
       "label": "确认作者：Annette von Droste-Hülshoff",
