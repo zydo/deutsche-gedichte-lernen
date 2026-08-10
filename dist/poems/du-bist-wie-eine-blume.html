@@ -455,14 +455,6 @@
               </div>
             </article>
             <article class="grammar-item">
-              <h3 class="grammar-item__title">可分动词在诗行中被拆分</h3>
-              <p class="grammar-item__quote">Ich schau' dich an, und Wehmut / Schleicht mir in's Herz hinein.</p>
-              <div class="grammar-item__body">
-                anschauen 是可分动词，诗行断句恰好把前缀 an 留到下一行开头前的位置（本例中 an 紧跟在 dich
-                后但因换行造成视觉上的延迟），提醒学习者可分动词的前缀在从句/陈述句中位置固定在句尾，朗读时需连贯处理。
-              </div>
-            </article>
-            <article class="grammar-item">
               <h3 class="grammar-item__title">首尾呼应的形容词链</h3>
               <p class="grammar-item__quote">So hold und schön und rein; … So rein und schön und hold.</p>
               <div class="grammar-item__body">
@@ -489,23 +481,25 @@
             </p>
           </div>
         </section>
-        <section class="section reveal">
-          <header class="section__head">
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文说明</span>
             <span class="section__de">Anmerkung</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               中文译文为本站学习译文（AI 辅助），采用直译，并尽量保留原诗首尾呼应的三个形容词（hold, schön,
               rein）顺序变化这一形式特点。已知海涅这首诗有多个中文译本流传，因版权原因本站不转载具体译本全文。
             </p>
           </div>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">德文原文出处</span>
             <span class="section__de">Quellen</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name"
@@ -544,24 +538,26 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文出处 · 版权</span>
             <span class="section__de">Übersetzungsnachweis</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">本站学习译文（中文）</span>
               <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">校对记录</span>
             <span class="section__de">Korrektorat</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               德文正文通过两个独立来源（textlog.de 与
@@ -569,12 +565,13 @@
               '），不影响文本内容与词序，可信度很高。
             </p>
           </div>
-        </section>
-        <section class="section reveal section--wide">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
             <span class="section__zh">上线前质量 Checklist</span>
             <span class="section__de">Prüfliste</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="checklist">
             <li>确认作者：Heinrich Heine</li>
             <li>确认标题：Du bist wie eine Blume</li>
@@ -595,7 +592,7 @@
             <li>页面视觉检查</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
           </ul>
-        </section>
+        </details>
       </div>
     </main>
     <footer class="site-footer">
@@ -748,6 +745,24 @@
             window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
           });
         }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
       })();
     </script>
   </body>
