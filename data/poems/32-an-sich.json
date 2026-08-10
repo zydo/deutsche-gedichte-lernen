@@ -301,7 +301,7 @@
       "done": true
     },
     {
-      "label": "确认两来源相互独立（已排除同一运营方的 gedichte7/zgedichte 组合）",
+      "label": "确认两来源相互独立（gedichte7.de 依 SOURCES.md 第 4 节属三级来源，不与一级来源混计）",
       "done": true
     },
     {
