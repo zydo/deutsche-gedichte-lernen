@@ -780,6 +780,75 @@ main {
   margin-left: auto;
 }
 
+/* —— 可折叠章节（考据性内容默认收起） —— */
+.section--fold > summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+/* 去掉各浏览器的默认三角，改用右侧自绘 caret */
+.section--fold > summary::-webkit-details-marker {
+  display: none;
+}
+
+.section--fold > summary::marker {
+  content: "";
+}
+
+/* 收起时标题下方不留展开态的空当 */
+.section--fold:not([open]) > .section__head {
+  margin-bottom: 0;
+}
+
+.section--fold > summary:hover .section__zh,
+.section--fold > summary:focus-visible .section__zh {
+  color: var(--korrektur);
+}
+
+.section--fold > summary:focus-visible {
+  outline: 2px solid var(--korrektur);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* 德文小标题与 caret 之间不再由 margin-left:auto 顶开 */
+.section--fold > summary .section__de {
+  margin-left: auto;
+}
+
+.section__caret {
+  flex-shrink: 0;
+  width: 0.62rem;
+  height: 0.62rem;
+  margin-left: 0.7rem;
+  border-right: 1.4px solid var(--ink-4);
+  border-bottom: 1.4px solid var(--ink-4);
+  transform: rotate(45deg) translate(-0.1rem, -0.1rem);
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.section--fold[open] > summary .section__caret {
+  transform: rotate(-135deg) translate(-0.16rem, -0.16rem);
+}
+
+.section--fold > summary:hover .section__caret {
+  border-color: var(--korrektur);
+}
+
+/* 打印时全部展开：纸面上没有"点开"这回事 */
+@media print {
+  .section--fold > summary .section__caret {
+    display: none;
+  }
+
+  .section--fold:not([open]) > .section__head {
+    margin-bottom: 1.8rem;
+  }
+}
+
 /* —— 译文 —— */
 .translation-block {
   font-family: var(--zh);

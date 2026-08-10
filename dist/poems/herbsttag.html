@@ -556,11 +556,12 @@
             </p>
           </div>
         </section>
-        <section class="section reveal">
-          <header class="section__head">
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文说明</span>
             <span class="section__de">Anmerkung</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               中文译文为本站学习译文（AI
@@ -569,12 +570,13 @@
               70年保护期）进入公有领域，可放心使用；但目前存在的多个中文译本（如冯至、绿原、黄灿然等译者的版本）均由现代译者完成，版权仍在保护期内，本站不转载具体译本全文，仅在此说明存在这些广受认可的译本，供读者自行查阅。
             </p>
           </div>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">德文原文出处</span>
             <span class="section__de">Quellen</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">Deutsche Lyrik（deutschelyrik.de）— „Herbsttag (1902)“</span
@@ -605,12 +607,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文出处 · 版权</span>
             <span class="section__de">Übersetzungsnachweis</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">本站学习译文（中文）</span>
@@ -619,12 +622,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">校对记录</span>
             <span class="section__de">Korrektorat</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               德文正文通过两个独立来源（deutschelyrik.de 与 German
@@ -633,12 +637,13 @@
               标注的"1902"年份一致。里尔克1926年逝世，德文原文已于1996年进入公有领域，版权状态明确。
             </p>
           </div>
-        </section>
-        <section class="section reveal section--wide">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
             <span class="section__zh">上线前质量 Checklist</span>
             <span class="section__de">Prüfliste</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="checklist">
             <li>确认作者：Rainer Maria Rilke</li>
             <li>确认标题：Herbsttag</li>
@@ -659,7 +664,7 @@
             <li>页面视觉检查</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
           </ul>
-        </section>
+        </details>
       </div>
     </main>
     <footer class="site-footer">
@@ -812,6 +817,24 @@
             window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
           });
         }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
       })();
     </script>
   </body>

@@ -674,11 +674,12 @@
             </p>
           </div>
         </section>
-        <section class="section reveal">
-          <header class="section__head">
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文说明</span>
             <span class="section__de">Anmerkung</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明的处理：(1) 第9行 "Wanderer tritt still herein"
@@ -688,12 +689,13 @@
               全诗刻意不出现"圣餐""教堂"等词，中译亦严格保持这一克制。已知此诗存在多个中文译本（如林克、先刚等译者的翻译），因版权原因本站不转载具体译本全文。
             </p>
           </div>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">德文原文出处</span>
             <span class="section__de">Quellen</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name"
@@ -729,12 +731,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文出处 · 版权</span>
             <span class="section__de">Übersetzungsnachweis</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">本站学习译文（中文）</span>
@@ -743,12 +746,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">校对记录</span>
             <span class="section__de">Korrektorat</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               德文正文以 textlog.de 明确标注的"第2稿"（即《梦中的塞巴斯蒂安》定稿）为主来源，以 aphorismen.de
@@ -765,12 +769,13 @@
               版《梦中的塞巴斯蒂安》影印件或萨尔茨堡历史批评版，上述采择依据数字化转录，属待进一步核实项。
             </p>
           </div>
-        </section>
-        <section class="section reveal section--wide">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
             <span class="section__zh">上线前质量 Checklist</span>
             <span class="section__de">Prüfliste</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="checklist">
             <li>确认作者：Georg Trakl</li>
             <li>确认标题与出处：Sebastian im Traum · Der Herbst des Einsamen</li>
@@ -795,7 +800,7 @@
               最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其第9行的读法与海德格尔阐释的转述）
             </li>
           </ul>
-        </section>
+        </details>
       </div>
     </main>
     <footer class="site-footer">
@@ -948,6 +953,24 @@
             window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
           });
         }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
       })();
     </script>
   </body>

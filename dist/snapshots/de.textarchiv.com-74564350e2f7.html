@@ -252,6 +252,19 @@ v2026.07.22.2a5f4a1</pre>
         window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
       });
     }
+    // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+    var folds = document.querySelectorAll('details.section--fold');
+    var reopened = [];
+    window.addEventListener('beforeprint', function () {
+      reopened = [];
+      folds.forEach(function (d) {
+        if (!d.open) { d.open = true; reopened.push(d); }
+      });
+    });
+    window.addEventListener('afterprint', function () {
+      reopened.forEach(function (d) { d.open = false; });
+      reopened = [];
+    });
   })();
   </script>
 </body>

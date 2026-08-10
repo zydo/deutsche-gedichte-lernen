@@ -887,11 +887,12 @@
             </p>
           </div>
         </section>
-        <section class="section reveal">
-          <header class="section__head">
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文说明</span>
             <span class="section__de">Anmerkung</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               中文译文为本站学习译文（AI 辅助），采用直译。需要特别说明的是第四节 "Sind eitel arme Sünder" 中的
@@ -900,12 +901,13 @@
               则取今义"虚荣"，译文作"虚荣"——同一词根在同一首诗中两义并用，是本诗翻译中最需要留心之处。此外，译文保留了第七节末行由宏大祈祷突然收缩到"生病的邻人"这一落差，未作任何铺垫或修饰。本诗因作者1815年逝世，德文原文早已进入公有领域；已知存在多个中文译本，因版权原因本站不转载具体译本全文。
             </p>
           </div>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">德文原文出处</span>
             <span class="section__de">Quellen</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name"
@@ -971,24 +973,26 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文出处 · 版权</span>
             <span class="section__de">Übersetzungsnachweis</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">本站学习译文（中文）</span>
               <span class="source-note">AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。</span>
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">校对记录</span>
             <span class="section__de">Korrektorat</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               德文正文通过两个独立来源核对：German Wikipedia
@@ -1033,12 +1037,13 @@
               im），补验证后宜整体统一到某一个底本。
             </p>
           </div>
-        </section>
-        <section class="section reveal section--wide">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
             <span class="section__zh">上线前质量 Checklist</span>
             <span class="section__de">Prüfliste</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="checklist">
             <li>确认作者：Matthias Claudius</li>
             <li>确认标题与出处：Abendlied，首刊《缪斯年鉴 1779》</li>
@@ -1063,7 +1068,7 @@
             <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
             <li class="pending">补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）</li>
           </ul>
-        </section>
+        </details>
       </div>
     </main>
     <footer class="site-footer">
@@ -1216,6 +1221,24 @@
             window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
           });
         }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
       })();
     </script>
   </body>

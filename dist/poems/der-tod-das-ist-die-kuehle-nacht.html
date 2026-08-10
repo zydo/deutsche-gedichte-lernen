@@ -571,11 +571,12 @@
             </p>
           </div>
         </section>
-        <section class="section reveal">
-          <header class="section__head">
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文说明</span>
             <span class="section__de">Anmerkung</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               中文译文为本站学习译文（AI 辅助），采用直译。翻译中最难保留的是第1—2行 kühl / schwül
@@ -584,12 +585,13 @@
               schläfert）在中文中没有对应形式，译文以"天已经暗了，我困倦欲眠"近似处理，其"无主体、被动承受"的语法意味需参见"语法要点"。已知此诗存在多个中文译本（如钱春绮、冯至等译者的翻译），因版权原因本站不转载具体译本全文。
             </p>
           </div>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">德文原文出处</span>
             <span class="section__de">Quellen</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name"
@@ -630,12 +632,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文出处 · 版权</span>
             <span class="section__de">Übersetzungsnachweis</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">本站学习译文（中文）</span>
@@ -644,12 +647,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">校对记录</span>
             <span class="section__de">Korrektorat</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               德文正文通过两个独立来源（Kalliope 的《歌之书》数字化本与 planetlyrik.de
@@ -661,12 +665,13 @@
               planetlyrik 的分类信息，本站未直接查阅1827年初版影印件，属待进一步核实项。
             </p>
           </div>
-        </section>
-        <section class="section reveal section--wide">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
             <span class="section__zh">上线前质量 Checklist</span>
             <span class="section__de">Prüfliste</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="checklist">
             <li>确认作者：Heinrich Heine</li>
             <li>确认标题与出处：Buch der Lieder · Die Heimkehr</li>
@@ -688,7 +693,7 @@
             <li class="pending">核实《还乡集》中的编号（现依二手分类信息）</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
           </ul>
-        </section>
+        </details>
       </div>
     </main>
     <footer class="site-footer">
@@ -841,6 +846,24 @@
             window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
           });
         }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
       })();
     </script>
   </body>

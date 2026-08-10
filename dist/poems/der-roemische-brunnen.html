@@ -578,11 +578,12 @@
             </p>
           </div>
         </section>
-        <section class="section reveal">
-          <header class="section__head">
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文说明</span>
             <span class="section__de">Anmerkung</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               中文译文为本站学习译文（AI 辅助），采用直译。三处需要说明：(1)
@@ -593,12 +594,13 @@
               的骤然缩短在中文中无法用音节数复制，译文以短句"既流动，又静止"近似传达。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。
             </p>
           </div>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">德文原文出处</span>
             <span class="section__de">Quellen</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name"
@@ -661,12 +663,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">译文出处 · 版权</span>
             <span class="section__de">Übersetzungsnachweis</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="source-list">
             <li>
               <span class="source-name">本站学习译文（中文）</span>
@@ -675,12 +678,13 @@
               >
             </li>
           </ul>
-        </section>
-        <section class="section reveal">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
             <span class="section__zh">校对记录</span>
             <span class="section__de">Korrektorat</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <div class="prose">
             <p>
               德文正文以 Zeno.org 转录的 Hanser 版《迈耶全集》第2卷（第88页）为主来源，与 gedichte7.de
@@ -702,12 +706,13 @@
               同样把全诗排为单一诗节，进一步确证了本站不分节的排版决定。本诗现已满足《来源独立性规范》规则 A、B、D。
             </p>
           </div>
-        </section>
-        <section class="section reveal section--wide">
-          <header class="section__head">
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
             <span class="section__zh">上线前质量 Checklist</span>
             <span class="section__de">Prüfliste</span>
-          </header>
+            <span class="section__caret" aria-hidden="true"></span>
+          </summary>
           <ul class="checklist">
             <li>确认作者：Conrad Ferdinand Meyer</li>
             <li>确认标题与出处：《诗集》（1892年版）「旅行」辑</li>
@@ -731,7 +736,7 @@
             <li class="pending">最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）</li>
             <li>补入独立来源并完成三方逐词比对（已完成）</li>
           </ul>
-        </section>
+        </details>
       </div>
     </main>
     <footer class="site-footer">
@@ -884,6 +889,24 @@
             window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
           });
         }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
       })();
     </script>
   </body>

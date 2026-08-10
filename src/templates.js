@@ -190,6 +190,19 @@ const SITE_SCRIPT = `<script>
         window.scrollTo({ top: 0, behavior: prefersReduce ? 'auto' : 'smooth' });
       });
     }
+    // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+    var folds = document.querySelectorAll('details.section--fold');
+    var reopened = [];
+    window.addEventListener('beforeprint', function () {
+      reopened = [];
+      folds.forEach(function (d) {
+        if (!d.open) { d.open = true; reopened.push(d); }
+      });
+    });
+    window.addEventListener('afterprint', function () {
+      reopened.forEach(function (d) { d.open = false; });
+      reopened = [];
+    });
   })();
   </script>`;
 
@@ -599,17 +612,28 @@ ${renderBriefDL(prompt, aspect)}
 
 function renderSections(secs) {
   return secs
-    .map(
-      (
-        s,
-      ) => `    <section class="section reveal${s.wide ? " section--wide" : ""}${s.parallel ? " section--parallel" : ""}">
+    .map((s) => {
+      const cls = `section reveal${s.wide ? " section--wide" : ""}${s.parallel ? " section--parallel" : ""}`;
+      // 考据性章节默认折叠：正文与注释先入眼，出处、校对记录等按需展开。
+      // 用原生 <details>，无 JS 也能开合，键盘可达，打印时由 CSS 强制全部展开。
+      if (s.foldable) {
+        return `    <details class="${cls} section--fold">
+      <summary class="section__head">
+        <span class="section__zh">${esc(s.zh)}</span>
+        <span class="section__de">${esc(s.de)}</span>
+        <span class="section__caret" aria-hidden="true"></span>
+      </summary>
+      ${s.html}
+    </details>`;
+      }
+      return `    <section class="${cls}">
       <header class="section__head">
         <span class="section__zh">${esc(s.zh)}</span>
         <span class="section__de">${esc(s.de)}</span>
       </header>
       ${s.html}
-    </section>`,
-    )
+    </section>`;
+    })
     .join("\n");
 }
 
@@ -681,15 +705,26 @@ ${renderParallel(p.german_text, p.translation_zh.text, findNote)}
       html: `      <div class="grammar-list">${renderGrammarNotes(p.grammar_notes)}      </div>`,
     },
     { zh: "文学意象与文化背景", de: "Hintergrund", html: renderProse(p.cultural_notes) },
-    { zh: "译文说明", de: "Anmerkung", html: renderProse(p.translation_notes) },
-    { zh: "德文原文出处", de: "Quellen", html: renderSourceList(p.german_sources, snapshots, "../") },
-    { zh: "译文出处 · 版权", de: "Übersetzungsnachweis", html: renderSourceList(p.translation_sources) },
-    { zh: "校对记录", de: "Korrektorat", html: renderProse(p.verification_notes) },
+    { zh: "译文说明", de: "Anmerkung", html: renderProse(p.translation_notes), foldable: true },
+    {
+      zh: "德文原文出处",
+      de: "Quellen",
+      html: renderSourceList(p.german_sources, snapshots, "../"),
+      foldable: true,
+    },
+    {
+      zh: "译文出处 · 版权",
+      de: "Übersetzungsnachweis",
+      html: renderSourceList(p.translation_sources),
+      foldable: true,
+    },
+    { zh: "校对记录", de: "Korrektorat", html: renderProse(p.verification_notes), foldable: true },
     {
       zh: "上线前质量 Checklist",
       de: "Prüfliste",
       html: `      <ul class="checklist">${checklistItems}      </ul>`,
       wide: true,
+      foldable: true,
     },
   ];
 
