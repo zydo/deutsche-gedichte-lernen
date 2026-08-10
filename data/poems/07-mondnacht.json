@@ -104,7 +104,7 @@
       "term": "die Ähre, -n",
       "pos": "n.（阴性）",
       "meaning": "麦穗、谷穗",
-      "note": "常见于田园/自然诗，注意与同音异形词区分（如 Ehre“荣誉”）。"
+      "note": "常见于田园/自然诗；注意 Ähre [ˈɛːʀə] 与 Ehre（荣誉）[ˈeːʀə] 元音不同（前者为长 ä，后者为长 e），并非同音词，须区分。"
     },
     {
       "term": "wogen",
@@ -128,7 +128,7 @@
       "term": "spannen（die Flügel spannen）",
       "pos": "v.（弱变化）",
       "meaning": "展开、张开（翅膀）",
-      "note": "固定搭配 die Flügel ausspannen/spannen：“展翅”，可分动词 ausspannen 在诗中以 \"spannte … aus\" 的形式出现于诗行两端。"
+      "note": "诗中 \"spannte … aus\" 为可分动词 ausspannen 的过去时（前缀 aus 置于行尾），意为“展开（翅膀）”。需注意：现代德语中 ausspannen 的常义已是“放松、歇息”，“展翅”如今更常用 die Flügel ausbreiten 或 die Flügel spannen 表达，以免学习者按现代常义误读。"
     }
   ],
   "verb_forms": [
@@ -192,7 +192,7 @@
     {
       "title": "旧正字法 ß 的使用",
       "quote": "geküßt, müßt', leis'",
-      "body": "本诗写作年代早于1901年及1996年两次德语正字法改革，diesem geküßt（今 geküsst）等词沿用旧式 ß 拼写；本站按权威文本来源保留原始拼写，学习者书写现代德语时应使用改革后的拼写（geküsst、müsste）。"
+      "body": "本诗写作年代早于1901年及1996年两次德语正字法改革，geküßt（今 geküsst）等词沿用旧式 ß 拼写；本站按权威文本来源保留原始拼写，学习者书写现代德语时应使用改革后的拼写（geküsst、müsste）。"
     },
     {
       "title": "第三节的视角转换（外景→内心）",
@@ -200,12 +200,12 @@
       "body": "前两节皆以第三人称/无人称视角描写天地自然（Es war…、Die Luft ging…），第三节突然引入第一人称所属的 \"meine Seele\"，完成了从客观自然描写到主观灵魂体验的转折，这是解读全诗“天人合一”主题的关键结构点。"
     },
     {
-      "title": "交叉韵（Kreuzreim）与半 Hildebrandsstrophe",
+      "title": "交叉韵（Kreuzreim）与半 Hildebrandstrophe",
       "quote": "全诗三节，每节四行，abab 交叉韵",
-      "body": "全诗采用 abab 交叉韵（Kreuzreim）的格律形式，且第一、三行为“响韵”（双音节结尾）、第二、四行为“钝韵”（单音节结尾），德语诗律学称之为（半）Hildebrandsstrophe，是德国浪漫主义诗歌常见的格律形式之一。"
+      "body": "全诗采用 abab 交叉韵（Kreuzreim）的格律形式，且第一、三行为“响韵”（klingende Kadenz，双音节结尾）、第二、四行为“钝韵”（stumpfe Kadenz，单音节结尾），德语诗律学称之为（半）Hildebrandstrophe，是德国浪漫主义诗歌常见的格律形式之一。"
     }
   ],
-  "cultural_notes": "《月夜》被广泛认为是艾兴多夫最杰出、也是德语浪漫主义自然抒情诗的巅峰之作。托马斯·曼（Thomas Mann）称其为“珍珠中的珍珠”（die Perle der Perlen），阿多诺（Theodor W. Adorno）形容其“仿佛是被琴弓拉奏出来的”。诗歌的核心意象是“内在风景与外在风景的融合”（诗人乌拉·哈恩语）：天空与大地之吻、麦田与森林的私语，最终都汇入诗人灵魂“展翅飞向家园”的体验，是德国浪漫主义“自然与心灵合一”（Einheit von Natur und Seele）美学理想的典范表达。\n\n舒曼（Robert Schumann）1840年将其收入声乐套曲《Liederkreis》Op. 39 并置于全曲核心位置进行谱曲，勃拉姆斯（Johannes Brahms）1853年也曾为其谱曲，19世纪末已有超过40种曲谱版本。诗歌末节常被用于德语讣告（Todesanzeige）中，可见其在德语文化中已成为表达“灵魂归于安息/故土”的经典意象。",
+  "cultural_notes": "《月夜》被广泛认为是艾兴多夫最杰出、也是德语浪漫主义自然抒情诗的巅峰之作。托马斯·曼（Thomas Mann）称其为“珍珠中的珍珠”（die Perle der Perlen），阿多诺（Theodor W. Adorno）形容这首诗“仿佛是被琴弓拉奏出来的”（als wäre es mit dem Bogenstrich gespielt）——此二说广见于德语文学介绍资料。诗歌的核心意象常被概括为“内在风景与外在风景的融合”（归于诗人乌拉·哈恩 Ulla Hahn；该归属的具体出处待进一步核实）：天空与大地之吻、麦田与森林的私语，最终都汇入诗人灵魂“展翅飞向家园”的体验，是德国浪漫主义“自然与心灵合一”（Einheit von Natur und Seele）美学理想的典范表达。\n\n舒曼（Robert Schumann）1840年将其收入声乐套曲《Liederkreis》Op. 39 并置于全曲核心位置进行谱曲，勃拉姆斯（Johannes Brahms）1853年也曾为其谱曲，19世纪末已有超过40种曲谱版本。诗歌末节常被用于德语讣告（Todesanzeige）中，可见其在德语文化中已成为表达“灵魂归于安息/故土”的经典意象。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，力求保留原诗“虚拟式—比拟”的语气以及从自然描写到灵魂体验的视角转换。已知此诗有多个中文译本流传，因版权原因本站不转载具体译本全文。",
   "image_prompt": {
     "imagery": "星光下的田野与森林，天空与大地在月色中仿佛交融为一体；一只展翅的灵魂/剪影般的翅膀飞越寂静的原野",
@@ -225,7 +225,7 @@
     {
       "name": "German Wikipedia — \"Mondnacht (Eichendorff)\"",
       "url": "https://de.wikipedia.org/wiki/Mondnacht_(Eichendorff)",
-      "note": "独立引用全文，与 deutschelyrik.de 版本逐字一致；并提供详细的格律分析（Kreuzreim、Hildebrandsstrophe）、手稿收藏（柏林国立图书馆）及接受史信息，另链接 Zeno.org 与 Projekt Gutenberg-DE 作为补充来源。"
+      "note": "独立引用全文，与 deutschelyrik.de 版本逐字一致；并提供详细的格律分析（Kreuzreim、Hildebrandstrophe）、手稿收藏（柏林国立图书馆）及接受史信息，另链接 Zeno.org 与 Projekt Gutenberg-DE 作为补充来源。"
     }
   ],
   "translation_sources": [
