@@ -80,7 +80,7 @@
       [
         "“我儿，你为何惶恐地藏起脸庞？”——",
         "“父亲，您没看见那魔王吗？",
-        "戴着王冠、拖着长袍的魔王？”——",
+        "戴着王冠、拖着长尾的魔王？”——",
         "“我儿，那只是一缕薄雾。”"
       ],
       [
@@ -133,7 +133,7 @@
     },
     {
       "de": "Den Erlenkönig mit Kron' und Schweif? –",
-      "zh": "Kron' und Schweif（王冠与尾饰/长袍）是固定搭配式的意象并列，Kron' 为 Krone 的省音形式；破折号标记说话的中断或语气的悬置。"
+      "zh": "Kron' und Schweif（王冠与曳尾）并列描摹魔王的王者装束，Schweif 此处指“曳尾、拖垂的长尾”（而非长袍），Kron' 为 Krone 的省音形式；破折号标记说话的中断或语气的悬置。"
     },
     {
       "de": "„Du liebes Kind, komm, geh mit mir!",
@@ -216,6 +216,18 @@
       "pos": "固定搭配",
       "meaning": "好不容易、费尽周折",
       "note": "Mühe（辛劳）与 Not（困苦）并列构成的固定短语，现代德语中仍常用。"
+    },
+    {
+      "term": "warten（古体及物）",
+      "pos": "v.",
+      "meaning": "照料、侍候",
+      "note": "现代德语 warten 多作“等待”（不及物，warten auf + Akk.）；诗中 \"Meine Töchter sollen dich warten\" 用的是古体及物用法 jemanden warten（侍候、照料某人），与今义“等待”恰好相反，中译已作“照料”。"
+    },
+    {
+      "term": "ein Leids",
+      "pos": "固定搭配（古体形式）",
+      "meaning": "一点伤害、一个不是",
+      "note": "ein Leids 是 ein Leid 的古体形式；\"Erlkönig hat mir ein Leids getan\"（魔王对我做了一件有害的事）属固定搭配 jemandem ein Leid(s) tun（对某人造成伤害）。"
     }
   ],
   "verb_forms": [
@@ -273,8 +285,8 @@
   "grammar_notes": [
     {
       "title": "移动动词的完成时助动词 sein",
-      "quote": "Wer reitet so spät durch Nacht und Wind?",
-      "body": "reiten（骑马）属于表示位置移动的不及物动词，其完成时使用 sein 而非 haben（er ist geritten）。全诗虽以现在时叙述增强临场感，但了解这一助动词规则有助于日后正确使用完成时。"
+      "quote": "Wer reitet so spät durch Nacht und Wind? （本句为现在时，仅引出 reiten 一词）",
+      "body": "reiten（骑马）属表示位置移动的不及物动词，其完成时用 sein 而非 haben（er ist geritten）。本诗通篇以现在时叙述以增强临场感，并未出现 reiten 的完成时形式；此处仅作为助动词规则提示，便于日后正确使用完成时。"
     },
     {
       "title": "非人称动词结构 es graust jemandem",
@@ -292,7 +304,7 @@
       "body": "魔王用 willst du（你是否愿意，表询问意愿）引诱孩子，又用 sollen（本义“应当”，此处转为“将会、会负责”的许诺语气）描述女儿们的照料，两种情态动词的连用强化了魔王话语中“温柔的强迫感”。"
     }
   ],
-  "cultural_notes": "《魔王》取材于丹麦民谣传说，经赫尔德（Johann Gottfried Herder）译为德文《Erlkönigs Tochter》（收入《Stimmen der Völker in Liedern》，1778）后传入德语世界；一般认为 \"Erlkönig\" 是对丹麦语 \"ellerkonge\"（精灵之王）的误译（本应译作“精灵王”而非与榿木 Erle 相关的“榿木王”），但这一误译反而催生了德语文学史上最著名的超自然意象之一。\n\n歌德1782年将其写作为歌唱剧《Die Fischerin》中的插曲。舒伯特1815年为其谱写的同名艺术歌曲（D. 328，作品第1号）以钢琴伴奏模拟疾驰的马蹄声、并用不同音区区分叙述者、父亲、孩子、魔王四种声音，成为艺术歌曲史上的里程碑，据传是舒伯特17、18岁时的作品。\n\n全诗的核心张力在于“理性解释 vs. 超自然真实”：父亲始终用自然现象（雾、风、柳树）解释孩子的恐惧，但结局证明孩子的感知才是“真实”的——这种叙事结构常被视为浪漫主义文学中“表象与本质”命题的经典范例。",
+  "cultural_notes": "《魔王》取材于丹麦民谣传说，经赫尔德（Johann Gottfried Herder）译为德文《Erlkönigs Tochter》（收入赫尔德1778年出版的《Volkslieder》——该书在赫尔德身后的1807年再版时改题《Stimmen der Völker in Liedern》）后传入德语世界；一般认为 \"Erlkönig\" 是对丹麦语 \"ellerkonge\"（精灵之王）的误译（本应译作“精灵王”而非与榿木 Erle 相关的“榿木王”），但这一误译反而催生了德语文学史上最著名的超自然意象之一。\n\n歌德1782年将其写作为歌唱剧《Die Fischerin》中的插曲。舒伯特1815年为其谱写的同名艺术歌曲（D. 328，作品第1号）以钢琴伴奏模拟疾驰的马蹄声、并用不同音区区分叙述者、父亲、孩子、魔王四种声音，成为艺术歌曲史上的里程碑，据传是舒伯特17、18岁时的作品。\n\n全诗的核心张力在于“理性解释 vs. 超自然真实”：父亲始终用自然现象（雾、风、柳树）解释孩子的恐惧，但结局证明孩子的感知才是“真实”的——这种叙事结构常被视为浪漫主义文学中“表象与本质”命题的经典范例。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用叙事体直译，尽量保留原诗对话体的语气变化（父亲的安抚、孩子的惊恐、魔王的诱惑与威胁）。由于原诗押韵严谨（AABB 双行体），中译未强求押韵，以准确传达内容与语气为优先。已知存在钱春绮等译者的中文译本，因版权原因本站不转载全文。",
   "image_prompt": {
     "imagery": "深夜林间疾驰的骑马父子剪影，雾气中若隐若现的诡异王者身形",
