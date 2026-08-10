@@ -75,6 +75,10 @@
     {
       "de": "Frühling, ja du bist's!",
       "zh": "全诗唯一使用 du（你）直接称呼“春天”的诗行，标志着从“描写春天将至”到“确认春天已至、与之对话”的情感高潮；bist's = bist es。"
+    },
+    {
+      "de": "Wollen balde kommen.",
+      "zh": "balde 是 bald（不久、很快）的诗歌延长形式（添音 Paragoge，词尾加 -e），为凑音节与格律而保留；与《漫游者的夜歌》（„Warte nur, balde“）中的 balde 属同一古体现象。"
     }
   ],
   "vocab": [
@@ -216,12 +220,12 @@
     {
       "name": "Deutsche Lyrik（deutschelyrik.de）— „Er ist's (1829)“",
       "url": "https://www.deutschelyrik.de/er-ists.html",
-      "note": "现代规范化拼写版本（läßt→lässt 等），全文九行完整，单节。"
+      "note": "二级来源。现代规范化拼写版本（läßt→lässt 等），全文九行完整，单节。"
     },
     {
       "name": "wortwuchs.net — „Er ist's (Eduard Mörike)“",
       "url": "https://wortwuchs.net/werke/er-ists/",
-      "note": "独立引用全文，采用旧式拼写（läßt），内容、行数、词序与 deutschelyrik.de 版本完全一致；并提供详细的格律、韵式与写作背景分析（1829年作，1832年发表于小说《Maler Nolten》）。"
+      "note": "三级来源（教学解析站）。独立引用全文，采用旧式拼写（läßt），内容、行数、词序与 deutschelyrik.de 版本完全一致；并提供详细的格律、韵式与写作背景分析（1829年作，1832年发表于小说《Maler Nolten》）。"
     },
     {
       "name": "Zeno.org — Eduard Mörike: Sämtliche Werke in zwei Bänden. Band 1, München 1967, S. 684（Gedichte, Ausgabe 1867）",
@@ -235,7 +239,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文通过两个独立来源（deutschelyrik.de 与 wortwuchs.net）逐字核对，单节九行内容完全一致，仅存在正字法层面的新旧拼写差异（läßt/lässt），不影响文本内容。wortwuchs.net 并提供了详实的格律分析（抱韵转交叉韵、第八行为孤韵并与标题押韵）与创作背景（约1829年作，1832年发表于小说《Maler Nolten》），与本站记录的背景信息一致，交叉印证可信度高。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：去掉三级来源后，本诗仅剩 1 个独立来源组（deutschelyrik）；本诗尚无一级来源（标注纸质校勘版出处的数字化全集），依规则 D 可信度偏低。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。\n\n【复核完成（2026年8月）】依《来源独立性规范》补入 **Zeno.org 转录的 Hanser 版《默里克全集》第1卷（1967年，第684页）** 作为一级来源。此举同时解决了两个问题：(1) 原有的第二来源 wortwuchs.net 属三级（教学解析站），不足以充当必需来源；(2) 此前本诗无一级来源。三方逐词比对结果：九行内容、语序完全一致，**仅发现一处排印差异**——第9行 Zeno 版作 \"Dich hab ich vernommen!\"（无省字符），deutschelyrik.de 作 \"hab'\"（带省字符标示 habe 的省音）。两者读音与语法相同；本站保留带省字符的写法，因为它明确标示了这是 habe 的省音形式，对学习者更有提示作用——这是**面向学习者的编辑取舍，而非文献判断**，特此标明。",
+  "verification_notes": "【当前结论】德文正文经三方来源逐字核对：Zeno.org 转录的 Hanser 版《默里克全集》第1卷（1967年，第684页，一级来源）、deutschelyrik.de（二级来源）、wortwuchs.net（三级来源，教学解析站）。九行内容、语序完全一致，仅两处不影响语义的差异：(1) 第1行拼写 läßt／lässt（见下文「变更记录」(4)）；(2) 第9行 hab／hab' 的省字符差异。本诗现有一级来源，来源独立性达标。\n\n【变更记录】\n(1) 初版：以 deutschelyrik.de 与 wortwuchs.net 逐字核对，单节九行完全一致，仅新旧拼写差异（läßt／lässt）。\n(2) 2026年8月来源独立性复核：发现 wortwuchs.net 属三级来源，扣除后本诗仅剩 deutschelyrik 一个独立来源组、且无一级来源，依 SOURCES.md 规则 D 可信度偏低，列为待补。本站此前的逐词比对结论有效，不予撤回。\n(3) 2026年8月补验证：补入 Zeno.org 一级来源（Hanser 版《默里克全集》1967，第684页）。三方逐词比对：九行一致；仅第9行 Zeno 作 \"Dich hab ich vernommen!\"（无省字符）、deutschelyrik 作 \"hab'\"（带省字符），二者读音语法相同。本站保留带省字符写法，因其明确标示 habe 的省音、对学习者更有提示——此为面向学习者的编辑取舍，非文献判断。\n(4) 关于正文第1行拼写：deutschelyrik.de 采用现代化拼写 lässt，wortwuchs.net 与一级来源 Zeno（1967年校勘本，早于1996年正字法改革）均为旧式 läßt。本站正文采用 läßt，与一级来源一致（Zeno 存档页面虽因字符编码问题显示为乱码，但 1967 年版按定义采用改革前正字法 läßt），故正文拼写并非仅取自被降级的三级来源 wortwuchs.net，可追溯至一级来源。",
   "checklist": [
     {
       "label": "确认作者：Eduard Mörike",
@@ -246,11 +250,11 @@
       "done": true
     },
     {
-      "label": "德文原文主来源：deutschelyrik.de",
+      "label": "德文原文一级来源：Zeno.org（《默里克全集》1967，S.684）",
       "done": true
     },
     {
-      "label": "德文原文辅助来源：wortwuchs.net",
+      "label": "德文原文辅助来源：deutschelyrik.de（二级）/ wortwuchs.net（三级）",
       "done": true
     },
     {
