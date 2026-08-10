@@ -156,7 +156,7 @@
       "term": "der Schiffer, -",
       "pos": "n.（阳性）",
       "meaning": "船夫、舵手",
-      "note": "古旧用词，现代口语多用 der Schiffer 仍可用但更常见 der Bootsführer/Kapitän 视语境而定。"
+      "note": "古旧用词，指在内河或近海驾船的人；现代德语日常更常说 der Bootsführer（小艇舵手），正式航运语境多用 der Kapitän，der Schiffer 仍可懂但偏书面、古旧。"
     },
     {
       "term": "das Felsenriff, -e",
@@ -239,9 +239,14 @@
       "title": "诗歌拼写变体：Melodei / gold'nes / Weh'",
       "quote": "Gewaltige Melodei. … Ihr gold'nes Geschmeide … mit wildem Weh'",
       "body": "Melodei（今 Melodie）、gold'nes（今 goldenes 的省音）、Weh'（今 Wehe 的省音）都是为配合诗歌的韵律与尾韵而做的历史性/诗歌性拼写调整，属于诗歌语言现象，日常写作中应使用现代标准拼写。"
+    },
+    {
+      "title": "古典诗歌第三人称单数词尾 -et",
+      "quote": "Die schönste Jungfrau sitzet … Ihr gold'nes Geschmeide blitzet,",
+      "body": "sitzet / blitzet 保留了古典诗歌与早期新高地德语中第三人称单数的动词词尾 -et（现代德语作 sitzt / blitzet）。这与《漫游者的夜歌》中第二人称单数词尾 -est（spürest / ruhest）属同一类古体人称词尾现象，仅为体裁与音节需要而保留。"
     }
   ],
-  "cultural_notes": "值得说明的是，“罗蕾莱”并非古老的中世纪民间传说，而是19世纪初德国浪漫主义诗人克莱门斯·布伦塔诺（Clemens Brentano）在其1801年叙事诗《Zu Bacharach am Rheine》中首创的“文学传说”：一位因美貌招致祸端的女子最终投入莱茵河、化身为礁石上的幽灵。海涅1824年的这首诗对这一“新传说”进行了再创作，以更简洁的民歌体语言、更强的音乐性重新讲述，最终使“罗蕾莱”成为德语文化中最广为人知的莱茵河意象。\n\n这首诗曾长期以“作者不详的民歌”流传（尤其在纳粹时期，因海涅是犹太裔作家，其作品被查禁，但这首诗因太过流行而未被禁唱，只能以“佚名”标注作者）。诗中莱茵河畔圣戈阿斯豪森（St. Goarshausen）附近确有一块名为“罗蕾莱岩”（Loreley-Felsen）的真实礁石，是莱茵河航道最狭窄、最危险的路段之一，为传说提供了地理基础。\n\n此诗被弗里德里希·西尔歇尔（Friedrich Silcher，1837年）谱曲后成为广为传唱的民歌，也是德语学习者最早接触的经典诗歌之一。",
+  "cultural_notes": "值得说明的是，“罗蕾莱”并非古老的中世纪民间传说，而是19世纪初德国浪漫主义诗人克莱门斯·布伦塔诺（Clemens Brentano）在其1801年叙事诗《Zu Bacharach am Rheine》中首创的“文学传说”：一位因美貌招致祸端的女子最终投入莱茵河、化身为礁石上的幽灵。海涅1824年的这首诗对这一“新传说”进行了再创作，以更简洁的民歌体语言、更强的音乐性重新讲述，最终使“罗蕾莱”成为德语文化中最广为人知的莱茵河意象。\n\n这首诗曾长期以“作者不详的民歌”流传（纳粹时期因海涅的犹太裔身份，其作品遭查禁；据广为流传的说法，这首诗因太过流行而被保留，仅以“佚名”标注作者——但该说法的具体出处学界尚有争议，待进一步核实）。诗中莱茵河畔圣戈阿斯豪森（St. Goarshausen）附近确有一块名为“罗蕾莱岩”（Loreley-Felsen）的真实礁石，是莱茵河航道最狭窄、最危险的路段之一，为传说提供了地理基础。\n\n此诗被弗里德里希·西尔歇尔（Friedrich Silcher，1837年）谱曲后成为广为传唱的民歌，也是德语学习者最早接触的经典诗歌之一。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译，保留原诗第一人称“我”的叙述口吻与逐节推进的画面感。已知存在钱春绮、冯至等多位译者的中文译本，因版权原因本站不转载全文，感兴趣的读者可自行查阅相关诗歌选集。标题在德语原文中有 \"Lorelei\" 与 \"Loreley\" 两种拼法并存，本站依据 textlog.de 与 deutschelyrik.de 两个来源均采用的 \"Lorelei\"（正文最后一行）及 \"Die Loreley\"（deutschelyrik.de 标题）情况，在页面标题中统一使用更常见的 \"Die Lorelei\"，并在校对记录中说明此拼写差异。",
   "image_prompt": {
     "imagery": "莱茵河峡谷、暮色中高耸的礁石之巅坐着一位梳理金发的少女，山下小船与船夫",
