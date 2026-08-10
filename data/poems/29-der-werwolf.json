@@ -101,7 +101,7 @@
   "line_notes": [
     {
       "de": "Ein Werwolf eines Nachts entwich",
-      "zh": "全诗的笑话从第一个词就埋下了：Werwolf（狼人）的前半部分 Wer- 其实源自古高地德语 wer\"人\"（同英语 were-wolf、拉丁语 vir），与疑问代词 wer（谁）毫无关系——但它们碰巧同形。eines Nachts（某夜）是一个著名的\"错误\"属格：Nacht 是阴性名词，本应作 einer Nacht，但这一表达类推自 eines Tages（某日）而固化下来，今日已是标准用法。entweichen（逃脱、溜走）为可分与不可分兼有的强变化动词。"
+      "zh": "全诗的笑话从第一个词就埋下了：Werwolf（狼人）的前半部分 Wer- 其实源自古高地德语 wer\"人\"（同英语 were-wolf、拉丁语 vir），与疑问代词 wer（谁）毫无关系——但它们碰巧同形。eines Nachts（某夜）是一个著名的\"错误\"属格：Nacht 是阴性名词，本应作 einer Nacht，但这一表达类推自 eines Tages（某日）而固化下来，今日已是标准用法。entweichen（逃脱、溜走）为不可分强变化动词（ent- 为恒不可分前缀，过去时 entwich，完成时 ist entwichen，故过去分词不带 ge-）。"
     },
     {
       "de": "von Weib und Kind und sich begab",
@@ -145,7 +145,7 @@
     },
     {
       "de": "Indessen, bat er, füge doch / zur Einzahl auch die Mehrzahl noch!",
-      "zh": "die Einzahl / die Mehrzahl 是 Singular / Plural 的德语本土说法。füge…hinzu 的可分前缀在此省略（口语化）。doch 是语气词，加强请求。狼人的第二个请求推翻了整个体系。"
+      "zh": "die Einzahl / die Mehrzahl 是 Singular / Plural 的德语本土说法。此处用的是古体及物用法 etwas (Akk.) zu etwas (Dat.) fügen（把某物并入／衔接于某物），与今义\"添加\"的可分动词 hinzufügen 是不同的词；诗中用的是 simplex fügen，并非省略了可分前缀。doch 是语气词，加强请求。狼人的第二个请求推翻了整个体系。"
     },
     {
       "de": "Der Dorfschulmeister aber mußte / gestehn, daß er von ihr nichts wußte.",
@@ -311,7 +311,7 @@
     {
       "title": "疑问代词 wer 的变格与\"没有复数\"",
       "quote": "doch „Wer“ gäb's nur im Singular.",
-      "body": "疑问代词 wer 的四格为：wer – wessen（旧作 wes）– wem – wen。它确实没有复数形式：德语无法问\"谁们\"，只能用 wer 同时涵盖单数与复数（\"Wer kommt?\" 既可问一人也可问多人）。因此教师的回答在语法上完全正确。请注意与之相对的 was（什么）：was 只有 was – wessen – was 三个可用形式，第三格几乎不用。这两个疑问代词的变格表值得单独背下来。"
+      "body": "疑问代词 wer 的四格为：wer – wessen（旧作 wes）– wem – wen。它确实没有复数形式：德语无法问\"谁们\"，只能用 wer 同时涵盖单数与复数（\"Wer kommt?\" 既可问一人也可问多人）。因此教师的回答在语法上完全正确。请注意与之相对的 was（什么）：was 只有 was – wessen – was 三个可用形式，标准德语中 was 没有第三格形式；遇到介词须用 wo(r)- 复合形式（如 womit、wovon、wodurch）。这两个疑问代词的变格表值得单独背下来。"
     },
     {
       "title": "前置第二格（三例）",
