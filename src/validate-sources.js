@@ -44,7 +44,8 @@ function loadPoems() {
 
 function check() {
   const poems = loadPoems();
-  let errors = 0, warns = 0;
+  let errors = 0,
+    warns = 0;
   const report = [];
 
   for (const { file, poem } of poems) {
@@ -64,11 +65,9 @@ function check() {
         level: "WARN",
         msg: `去掉三级来源后仅剩 ${qualifying.length} 个独立组 [${qualifying.join(", ") || "无"}] —— 需补一个一级/二级来源`,
       });
-    if (!hasTier1)
-      problems.push({ level: "WARN", msg: "无一级来源（数字化全集/校勘版），可信度偏低（规则 D）" });
+    if (!hasTier1) problems.push({ level: "WARN", msg: "无一级来源（数字化全集/校勘版），可信度偏低（规则 D）" });
 
-    const level = problems.some((p) => p.level === "ERROR") ? "ERROR"
-      : problems.length ? "WARN" : "OK";
+    const level = problems.some((p) => p.level === "ERROR") ? "ERROR" : problems.length ? "WARN" : "OK";
     if (level === "ERROR") errors++;
     else if (level === "WARN") warns++;
 

@@ -349,8 +349,8 @@
       "done": true
     },
     {
-      "label": "生成 AI 配图",
-      "done": false
+      "label": "生成 AI 配图（已接入）",
+      "done": true
     },
     {
       "label": "页面视觉检查",

@@ -13,10 +13,7 @@ const FONT_LINK = `<link rel="preconnect" href="https://fonts.googleapis.com">
 
 function esc(str) {
   if (str === undefined || str === null) return "";
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;");
+  return String(str).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 }
 
 // 允许受控的内联标记直接透传
@@ -37,7 +34,10 @@ const ORNAMENT = `<svg class="ornament" viewBox="0 0 120 10" width="120" height=
 
 // 德文原诗用：连续行号（左侧书眉）+ 朱批红引用标记（链接到逐行注释）
 function makeNoteFinder(lineNotes) {
-  const norm = (s) => String(s || "").replace(/\s+/g, " ").trim();
+  const norm = (s) =>
+    String(s || "")
+      .replace(/\s+/g, " ")
+      .trim();
   const items = (lineNotes || []).map((n, i) => ({ i: i + 1, de: norm(n.de) }));
   const exact = new Map(items.map((it) => [it.de, it.i]));
   return function (line) {
@@ -68,9 +68,7 @@ function renderParallel(deStanzas, zhStanzas, findNote) {
       const deLine = de[i] || "";
       const zhLine = zh[i] || "";
       const noteN = deLine && findNote ? findNote(deLine) : 0;
-      const mark = noteN
-        ? `<sup class="refmark"><a href="#note-${noteN}">${noteN}</a></sup>`
-        : "";
+      const mark = noteN ? `<sup class="refmark"><a href="#note-${noteN}">${noteN}</a></sup>` : "";
       const deAttr = noteN ? ` data-noteref="${noteN}"` : "";
       rows.push(`        <div class="pline">
           <div class="pline__de vline"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
@@ -195,8 +193,8 @@ const SITE_SCRIPT = `<script>
   })();
   </script>`;
 
-function renderLayout({ title, description = "", bodyHtml, active = "" }) {
-  const root = active === "poem" ? "../" : "";
+function renderLayout({ title, description = "", bodyHtml, active = "", root: rootOverride }) {
+  const root = rootOverride !== undefined ? rootOverride : active === "poem" ? "../" : "";
   return `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -219,7 +217,7 @@ function renderLayout({ title, description = "", bodyHtml, active = "" }) {
   <meta name="description" content="${esc(description)}">
   <link rel="icon" type="image/svg+xml" href="${root}favicon.svg">
   ${FONT_LINK}
-  <link rel="stylesheet" href="${root}theme.css">
+  <link rel="stylesheet" href="${root}style.css">
 </head>
 <body>
   <header class="site-header">
@@ -278,7 +276,6 @@ function renderIndex(poems) {
         .map((p) => {
           const periodShort = (p.period || "").split("（", 1)[0].trim();
           return `        <a class="toc-row" href="poems/${p.slug}.html">
-          <span class="toc-num">${esc(p.id)}</span>
           <span class="toc-title">${esc(p.title_de)}<span class="toc-title-zh">${esc(p.title_zh)}</span></span>
           <span class="toc-leader" aria-hidden="true"></span>
           <span class="toc-meta">
@@ -341,7 +338,7 @@ function renderVerbTable(verbs) {
     .map((v) => {
       let noteRow = "";
       if (v.note) {
-        noteRow = "        <tr class=\"verb-note\"><td colspan=\"7\">↳ " + esc(v.note) + "</td></tr>";
+        noteRow = '        <tr class="verb-note"><td colspan="7">↳ ' + esc(v.note) + "</td></tr>";
       }
       return `        <tr>
           <td class="de">${esc(v.infinitive)}</td>
@@ -378,7 +375,7 @@ function renderGrammarNotes(notes) {
         <h3 class="grammar-item__title">${esc(n.title)}</h3>
         ${n.quote ? `<p class="grammar-item__quote">${esc(n.quote)}</p>` : ""}
         <div class="grammar-item__body">${esc(n.body)}</div>
-      </article>`
+      </article>`,
     )
     .join("\n");
 }
@@ -401,17 +398,141 @@ function renderLineNotes(notes) {
 
 // ---- 出处 ----
 
-function renderSourceList(sources) {
+// snapshots: manifest.json 的内容（URL → 存档记录），缺省时不渲染快照链接
+function renderSourceList(sources, snapshots = {}, root = "") {
   return `<ul class="source-list">
 ${sources
-      .map(
-        (s) => `      <li>
-        <span class="source-name">${esc(s.name)}</span>${s.url ? `<a class="source-url" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>` : ""}
+  .map((s) => {
+    const snap = s.url ? snapshots[s.url] : null;
+    let snapLink = "";
+    if (snap && snap.ok) {
+      snapLink = `<a class="source-snap" href="${root}snapshots/${esc(snap.id)}.html" title="抓取于 ${esc(snap.fetched_at)} 的本地存档">快照（${esc(snapDate(snap))}）</a>`;
+    } else if (snap) {
+      // 抓取失败也照实显示，不假装存档存在（如对方站点屏蔽了非浏览器请求）
+      const why = snap.http_status ? `HTTP ${snap.http_status}` : snap.error || "抓取失败";
+      snapLink = `<span class="source-snap source-snap--failed" title="${esc(String(snap.attempted_at || "").slice(0, 10))} 抓取失败：${esc(why)}">快照（未能抓取）</span>`;
+    }
+    return `      <li>
+        <span class="source-name">${esc(s.name)}</span>${s.url ? `<a class="source-url" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>` : ""}${snapLink}
         ${s.note ? `<span class="source-note">${esc(s.note)}</span>` : ""}
-      </li>`
-      )
-      .join("\n")}
+      </li>`;
+  })
+  .join("\n")}
     </ul>`;
+}
+
+function snapDate(snap) {
+  return String(snap.fetched_at || "").slice(0, 10);
+}
+
+// ---- 出处快照页 ----
+
+// 把存档下来的第三方页面转成纯文本：只保留可读正文，丢弃脚本、样式与版式。
+// 站点发布的是这份文本，而不是第三方页面本身——存档的用途是核对诗歌正文。
+const ENTITIES = {
+  nbsp: " ",
+  amp: "&",
+  lt: "<",
+  gt: ">",
+  quot: '"',
+  apos: "'",
+  "#39": "'",
+  auml: "ä",
+  ouml: "ö",
+  uuml: "ü",
+  Auml: "Ä",
+  Ouml: "Ö",
+  Uuml: "Ü",
+  szlig: "ß",
+  eacute: "é",
+  egrave: "è",
+  agrave: "à",
+  ccedil: "ç",
+  ndash: "–",
+  mdash: "—",
+  laquo: "«",
+  raquo: "»",
+  bdquo: "„",
+  ldquo: "“",
+  rdquo: "”",
+  sbquo: "‚",
+  lsquo: "‘",
+  rsquo: "’",
+  hellip: "…",
+  middot: "·",
+  shy: "",
+  zwnj: "",
+};
+
+function decodeEntities(s) {
+  return s
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&([a-z#0-9]+);/gi, (m, name) => (name in ENTITIES ? ENTITIES[name] : m));
+}
+
+function htmlToText(html) {
+  return decodeEntities(
+    String(html)
+      .replace(/<!--[\s\S]*?-->/g, "")
+      .replace(/<(script|style|noscript|svg|head)[\s\S]*?<\/\1>/gi, "")
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<\/(p|div|li|tr|h[1-6]|blockquote|section|article|table)>/gi, "\n\n")
+      .replace(/<[^>]+>/g, ""),
+  )
+    .replace(/\r\n?/g, "\n")
+    .replace(/[ \t]+/g, " ")
+    .replace(/ *\n */g, "\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function renderSnapshotPage(snap, rawHtml, poems = []) {
+  const text = htmlToText(rawHtml);
+  const kb = (snap.bytes / 1024).toFixed(1);
+  const rows = [
+    ["原始 URL", `<a href="${esc(snap.url)}" target="_blank" rel="noopener">${esc(snap.url)}</a>`],
+    snap.final_url ? ["最终 URL（重定向后）", esc(snap.final_url)] : null,
+    ["抓取时间", esc(snap.fetched_at)],
+    ["HTTP 状态", esc(String(snap.http_status))],
+    ["Content-Type", esc(snap.content_type || "—")],
+    ["原始大小", `${esc(kb)} KB`],
+    ["SHA-256", `<code class="snap-hash">${esc(snap.sha256)}</code>`],
+    ["页面标题", esc(snap.title || "—")],
+  ].filter(Boolean);
+
+  const used = poems.length
+    ? `<p class="snap-used">被以下诗歌用作德文原文出处：${poems
+        .map((p) => `<a href="../poems/${esc(p.slug)}.html">${esc(p.title_de)}</a>`)
+        .join("、")}</p>`
+    : "";
+
+  const body = `
+    <article class="snapshot reveal">
+      <header class="snapshot__head">
+        <p class="snapshot__kicker">Quellen-Schnappschuss · 出处快照</p>
+        <h1 class="snapshot__title">${esc(snap.title || snap.url)}</h1>
+        <p class="snapshot__lede">这是本站在 <strong>${esc(snapDate(snap))}</strong> 抓取的该页面纯文本存档，用于日后核对德文原文——网页会改版、下线或被悄悄修改，出处链接本身并不足以自证。</p>
+      </header>
+      <div class="snapshot__note">
+        <p>本页只呈现抓取时页面的<strong>文字内容</strong>，不复制对方站点的版式、图片与脚本；原始 HTML 正本保存在仓库 <code>snapshots/raw/${esc(snap.file)}</code>，可用上方 SHA-256 校验其未被改动。页面著作权归原站点所有，此处仅作出处核验之用。</p>
+      </div>
+      ${used}
+      <table class="snap-meta">
+        <tbody>
+${rows.map(([k, v]) => `          <tr><th scope="row">${k}</th><td>${v}</td></tr>`).join("\n")}
+        </tbody>
+      </table>
+      <h2 class="snap-h2">存档正文</h2>
+      <pre class="snap-text">${esc(text)}</pre>
+    </article>`;
+
+  return renderLayout({
+    title: `快照 ${snapDate(snap)} · ${snap.title || snap.url} | 德语诗歌学习画册`,
+    description: `${snap.url} 在 ${snapDate(snap)} 的本地存档，用于德文原文出处核验。`,
+    bodyHtml: body,
+    root: "../",
+  });
 }
 
 // ---- 散文段 ----
@@ -478,19 +599,23 @@ ${renderBriefDL(prompt, aspect)}
 
 function renderSections(secs) {
   return secs
-    .map((s) => `    <section class="section reveal${s.wide ? " section--wide" : ""}${s.parallel ? " section--parallel" : ""}">
+    .map(
+      (
+        s,
+      ) => `    <section class="section reveal${s.wide ? " section--wide" : ""}${s.parallel ? " section--parallel" : ""}">
       <header class="section__head">
         <span class="section__zh">${esc(s.zh)}</span>
         <span class="section__de">${esc(s.de)}</span>
       </header>
       ${s.html}
-    </section>`)
+    </section>`,
+    )
     .join("\n");
 }
 
 // ---- 诗歌详情页 ----
 
-function renderPoemPage(p, prev, next) {
+function renderPoemPage(p, prev, next, snapshots = {}) {
   const findNote = makeNoteFinder(p.line_notes);
 
   // 上一首 / 下一首导航（仅显示中文译名；首/末首对应一侧隐藏）
@@ -529,23 +654,43 @@ ${renderParallel(p.german_text, p.translation_zh.text, findNote)}
         <p class="translation-meta">${esc(p.translation_zh.translator)}</p>
       </div>`;
 
-  const checklistItems = (p.checklist || []).map((c) => {
-    const classAttr = c.done ? "" : ' class="pending"';
-    return `        <li${classAttr}>${esc(c.label)}</li>`;
-  }).join("\n");
+  const checklistItems = (p.checklist || [])
+    .map((c) => {
+      const classAttr = c.done ? "" : ' class="pending"';
+      return `        <li${classAttr}>${esc(c.label)}</li>`;
+    })
+    .join("\n");
 
   const secs = [
     { zh: "原诗 · 译文", de: "Gedicht · Übertragung", html: parallelBlock, parallel: true },
-    { zh: "逐行注释", de: "Zeilenkommentar", html: `      <div class="lnotes">${renderLineNotes(p.line_notes)}      </div>` },
-    { zh: "重点词汇", de: "Wortschatz", html: `      <div class="vocab-list">${p.vocab.map(renderVocabCard).join("\n")}      </div>`, wide: true },
+    {
+      zh: "逐行注释",
+      de: "Zeilenkommentar",
+      html: `      <div class="lnotes">${renderLineNotes(p.line_notes)}      </div>`,
+    },
+    {
+      zh: "重点词汇",
+      de: "Wortschatz",
+      html: `      <div class="vocab-list">${p.vocab.map(renderVocabCard).join("\n")}      </div>`,
+      wide: true,
+    },
     { zh: "动词变位", de: "Konjugation", html: renderVerbTable(p.verb_forms), wide: true },
-    { zh: "语法要点", de: "Grammatik", html: `      <div class="grammar-list">${renderGrammarNotes(p.grammar_notes)}      </div>` },
+    {
+      zh: "语法要点",
+      de: "Grammatik",
+      html: `      <div class="grammar-list">${renderGrammarNotes(p.grammar_notes)}      </div>`,
+    },
     { zh: "文学意象与文化背景", de: "Hintergrund", html: renderProse(p.cultural_notes) },
     { zh: "译文说明", de: "Anmerkung", html: renderProse(p.translation_notes) },
-    { zh: "德文原文出处", de: "Quellen", html: renderSourceList(p.german_sources) },
+    { zh: "德文原文出处", de: "Quellen", html: renderSourceList(p.german_sources, snapshots, "../") },
     { zh: "译文出处 · 版权", de: "Übersetzungsnachweis", html: renderSourceList(p.translation_sources) },
     { zh: "校对记录", de: "Korrektorat", html: renderProse(p.verification_notes) },
-    { zh: "上线前质量 Checklist", de: "Prüfliste", html: `      <ul class="checklist">${checklistItems}      </ul>`, wide: true },
+    {
+      zh: "上线前质量 Checklist",
+      de: "Prüfliste",
+      html: `      <ul class="checklist">${checklistItems}      </ul>`,
+      wide: true,
+    },
   ];
 
   const body = `
@@ -573,11 +718,45 @@ function renderAbout(poemsCount) {
     </header>`;
 
   const secs = [
-    { zh: "项目定位", de: "Profil", html: renderProse("本站是面向德语学习者与文学爱好者的诗歌学习资料库，目前收录 " + poemsCount + " 首德语经典诗歌（第一批）。每首诗提供德文原诗（含出处）、本站学习中译（AI 辅助）、逐行注释、重点词汇、动词变位、语法要点、文学背景与完整的校对记录，目标是成为“可信的文学学习资料”，而不是“看起来像真的 AI 内容”。") },
-    { zh: "德文原文的校对原则", de: "Korrekturprinzip", html: renderProse("每首诗的德文原文均来自公开、可核实的文本来源（如 deutschelyrik.de、textlog.de、Zeno.org、维基百科所引权威版本等），并至少用两个独立来源交叉核对诗节、行数、标点与新旧拼法差异。凡两来源之间存在异文（例如 Goethe《Heidenröslein》1789 年 Göschen 版与 1827 年 Ausgabe letzter Hand 版的代词/动词差异），均在该诗页面的“校对记录”中说明，不擅自取舍或改写。少数诗仅取得单一直接来源核对、尚待第二独立来源复核的，会在“校对记录”中明确标注“待进一步核实”。") },
-    { zh: "中文 / 英文译文策略", de: "Übersetzungsweise", html: renderProse("已出版的现代译本（如钱春绮、冯至、杨武能等译者的中译）大多仍在版权保护期内，本站不会未经授权大段复制其译文全文；页面中仅以文字提及这些译本的存在，供读者自行查阅，不作为可核实的书目引用。\n\n本站展示的中文译文为“本站学习译文（AI 辅助）”：在人工核对德文原意的基础上，由本站编写/AI 辅助生成，以贴近原文结构、便于学习者对照单词与语法为首要目标，不追求诗意的独立文学价值，页面中均以徽标明确标注。\n\n英文译文分两种情况：对于 Goethe、Heine 等作者的作品，如确认存在已进入公有领域的 19 世纪译本（如 Edgar Alfred Bowring 译 Goethe，1853），会标注为公版译本并说明出处；否则同样使用本站学习译文（AI 辅助），并明确标注。") },
-    { zh: "图片说明", de: "Bildnachweis", html: renderProse("当前部署环境未接入可用的 AI 图像生成模型，因此本批内容尚未生成配图。每首诗页面保留了完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容），供后续使用受信任的图像生成工具补充。生成后的插图应在图下统一标注“图片由 AI 生成”，并需人工检查确认无文字、水印、肢体错误或明显违和的现代元素后方可上线。") },
-    { zh: "局限性与后续工作", de: "Grenzen", html: renderProse("本项目为第一批内容（" + poemsCount + " 首），后续会按照 README 中“如何添加一首新诗”的流程持续扩充。所有标注为“待核实”的信息，欢迎读者对照来源自行验证；如发现错误，请以 README 中的方式反馈或直接修改对应的诗歌 JSON 数据文件。") },
+    {
+      zh: "项目定位",
+      de: "Profil",
+      html: renderProse(
+        "本站是面向德语学习者与文学爱好者的诗歌学习资料库，目前收录 " +
+          poemsCount +
+          " 首德语经典诗歌（第一批）。每首诗提供德文原诗（含出处）、本站学习中译（AI 辅助）、逐行注释、重点词汇、动词变位、语法要点、文学背景与完整的校对记录，目标是成为“可信的文学学习资料”，而不是“看起来像真的 AI 内容”。",
+      ),
+    },
+    {
+      zh: "德文原文的校对原则",
+      de: "Korrekturprinzip",
+      html: renderProse(
+        "每首诗的德文原文均来自公开、可核实的文本来源（如 deutschelyrik.de、textlog.de、Zeno.org、维基百科所引权威版本等），并至少用两个独立来源交叉核对诗节、行数、标点与新旧拼法差异。凡两来源之间存在异文（例如 Goethe《Heidenröslein》1789 年 Göschen 版与 1827 年 Ausgabe letzter Hand 版的代词/动词差异），均在该诗页面的“校对记录”中说明，不擅自取舍或改写。少数诗仅取得单一直接来源核对、尚待第二独立来源复核的，会在“校对记录”中明确标注“待进一步核实”。",
+      ),
+    },
+    {
+      zh: "中文 / 英文译文策略",
+      de: "Übersetzungsweise",
+      html: renderProse(
+        "已出版的现代译本（如钱春绮、冯至、杨武能等译者的中译）大多仍在版权保护期内，本站不会未经授权大段复制其译文全文；页面中仅以文字提及这些译本的存在，供读者自行查阅，不作为可核实的书目引用。\n\n本站展示的中文译文为“本站学习译文（AI 辅助）”：在人工核对德文原意的基础上，由本站编写/AI 辅助生成，以贴近原文结构、便于学习者对照单词与语法为首要目标，不追求诗意的独立文学价值，页面中均以徽标明确标注。\n\n英文译文分两种情况：对于 Goethe、Heine 等作者的作品，如确认存在已进入公有领域的 19 世纪译本（如 Edgar Alfred Bowring 译 Goethe，1853），会标注为公版译本并说明出处；否则同样使用本站学习译文（AI 辅助），并明确标注。",
+      ),
+    },
+    {
+      zh: "图片说明",
+      de: "Bildnachweis",
+      html: renderProse(
+        "当前部署环境未接入可用的 AI 图像生成模型，因此本批内容尚未生成配图。每首诗页面保留了完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容），供后续使用受信任的图像生成工具补充。生成后的插图应在图下统一标注“图片由 AI 生成”，并需人工检查确认无文字、水印、肢体错误或明显违和的现代元素后方可上线。",
+      ),
+    },
+    {
+      zh: "局限性与后续工作",
+      de: "Grenzen",
+      html: renderProse(
+        "本项目为第一批内容（" +
+          poemsCount +
+          " 首），后续会按照 README 中“如何添加一首新诗”的流程持续扩充。所有标注为“待核实”的信息，欢迎读者对照来源自行验证；如发现错误，请以 README 中的方式反馈或直接修改对应的诗歌 JSON 数据文件。",
+      ),
+    },
   ];
 
   const body = `
@@ -593,4 +772,4 @@ ${renderSections(secs)}
   });
 }
 
-export { renderIndex, renderPoemPage, renderAbout, esc };
+export { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage, htmlToText, esc };

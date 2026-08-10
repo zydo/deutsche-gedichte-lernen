@@ -30,7 +30,7 @@
   /* 档案蓝（链接） */
   --korrektur: #9e3326;
   /* 教师朱批红（注释标记 / 待办 / 激活） */
-  --korrektur-soft: rgba(158, 51, 38, 0.10);
+  --korrektur-soft: rgba(158, 51, 38, 0.1);
   --gold: #8c6a2a;
   /* 旧书烫金（仅极小书眉数字） */
   --sage: #4e6a47;
@@ -227,7 +227,10 @@ a:focus-visible,
   border-radius: 50%;
   color: var(--ink-3);
   cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
 }
 
 .theme-toggle:hover,
@@ -432,7 +435,9 @@ main {
   border-bottom: 1px dotted var(--rule);
   text-decoration: none;
   color: var(--ink);
-  transition: background 0.16s ease, padding 0.16s ease;
+  transition:
+    background 0.16s ease,
+    padding 0.16s ease;
   border-radius: 2px;
 }
 
@@ -440,15 +445,6 @@ main {
 .toc-row:focus-visible {
   background: var(--paper-2);
   text-decoration: none;
-}
-
-.toc-num {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--gold);
-  width: 1.8rem;
-  flex-shrink: 0;
-  letter-spacing: 0.04em;
 }
 
 .toc-title {
@@ -1064,9 +1060,7 @@ tr.verb-note td {
 /* —— 配图位 —— */
 .image-slot {
   border: 1px solid var(--rule);
-  background:
-    repeating-linear-gradient(45deg, transparent 0 11px, rgba(140, 106, 42, 0.04) 11px 12px),
-    var(--paper-2);
+  background: repeating-linear-gradient(45deg, transparent 0 11px, rgba(140, 106, 42, 0.04) 11px 12px), var(--paper-2);
   padding: 1.5rem 1.7rem;
 }
 
@@ -1229,7 +1223,10 @@ tr.verb-note td {
   cursor: pointer;
   font-size: 0.95rem;
   line-height: 1;
-  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
 }
 
 .modal__close:hover {
@@ -1286,8 +1283,14 @@ body.modal-open {
   visibility: hidden;
   transform: translateY(10px);
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease,
-    color 0.15s ease, border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .to-top svg {
@@ -1349,6 +1352,152 @@ body.modal-open {
   display: block;
   margin-top: 0.4rem;
   line-height: 1.75;
+}
+
+/* 出处快照：链到本站抓取的存档副本 */
+.source-snap {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0.25rem 0 0 0.6rem;
+  padding: 0.08rem 0.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.source-snap:hover,
+.source-snap:focus-visible {
+  color: var(--korrektur);
+  border-color: var(--korrektur);
+  text-decoration: none;
+}
+
+.source-snap--failed {
+  color: var(--ink-4);
+  border-style: dashed;
+  cursor: help;
+}
+
+.source-snap--failed:hover {
+  color: var(--ink-4);
+  border-color: var(--rule);
+}
+
+/* —— 出处快照页 —— */
+.snapshot {
+  max-width: var(--shell);
+  margin: 0 auto;
+  padding: 2.5rem 1.2rem 4rem;
+}
+
+.snapshot__kicker {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-4);
+  margin: 0 0 0.5rem;
+}
+
+.snapshot__title {
+  font-family: var(--display);
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 0 0 0.7rem;
+  overflow-wrap: anywhere;
+}
+
+.snapshot__lede,
+.snapshot__note p,
+.snap-used {
+  font-family: var(--zh);
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: var(--ink-2);
+  max-width: var(--measure);
+}
+
+.snapshot__note {
+  border-left: 2px solid var(--korrektur);
+  background: var(--korrektur-soft);
+  padding: 0.8rem 1rem;
+  margin: 1.4rem 0;
+  border-radius: 0 2px 2px 0;
+}
+
+.snapshot__note p {
+  margin: 0;
+  color: var(--ink-3);
+  font-size: 0.84rem;
+}
+
+.snap-used {
+  margin: 1.2rem 0;
+  color: var(--ink-3);
+}
+
+.snap-meta {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.6rem 0 2.4rem;
+  font-size: 0.78rem;
+}
+
+.snap-meta th,
+.snap-meta td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--rule-soft);
+  overflow-wrap: anywhere;
+}
+
+.snap-meta th {
+  font-family: var(--ui);
+  font-weight: 500;
+  color: var(--ink-4);
+  white-space: nowrap;
+  width: 12rem;
+}
+
+.snap-meta td {
+  font-family: var(--mono);
+  color: var(--ink-2);
+}
+
+.snap-hash {
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+
+.snap-h2 {
+  font-family: var(--display);
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin: 0 0 0.8rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.snap-text {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  line-height: 1.85;
+  color: var(--ink-2);
+  background: var(--paper-2);
+  border: 1px solid var(--rule-soft);
+  border-radius: 2px;
+  padding: 1.2rem;
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 
 /* 校对记录：与其它章节一致，使用普通 .prose 样式，无额外框效。 */
@@ -1433,7 +1582,9 @@ body.modal-open {
 .reveal {
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .reveal.is-in {

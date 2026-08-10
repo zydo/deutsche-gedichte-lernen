@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> 
+ Bitte | Weil' auf mir, du dunkles Auge | LiederNet
+</title>
+<!--<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />-->
+<meta name="google-site-verification" content="1X0R00VYafsido-bovKUJjyCu4rra_W_9elarBiO8H8" />
+<meta charset="UTF-8">
+<meta name="identifier-url" content="https://www.lieder.net/">
+<meta name="copyright" content="© The LiederNet Archive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="favicon" rel="shortcut icon" href="/favicon/favicon.ico?v=2" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=2">
+<meta name="theme-color" content="#284358">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=2">
+<link rel="manifest" href="favicon/site.webmanifest?v=2">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=2" color="#3b6f96">
+<meta name="description" content="Texts and Translations to Lieder and other classical vocal works in more than a hundred languages">
+<meta name="keywords" content="Lieder, translation, lyrics, art song, poetry, vocal text, kunstlieder, uebersetzungen, gedichte, melodie, traductions, Liederen, canzoni, laulua, piosenki, pisne, letra, cancoe">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<style type="text/css">
+  @media print {
+    main { display:none; }
+  }
+</style>
+
+<link rel="preload" as="style" href="/lieder/style/style_sheet.css?v=129" type="text/css">
+
+<link rel="stylesheet" href="/lieder/style/style_sheet.css?v=129" type="text/css">
+
+<link rel="preload" fetchpriority="high" as="image" href="/images/Hirt4transp.png" type="image/png">
+
+<link rel="preload" href="/lieder/fonts/lato-v24-latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/lieder/fonts/lato-v24-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/lieder/jquery/jquery-3.7.1.min.js" as="script" type="text/javascript">
+<script fetchpriority="high" src="/lieder/jquery/jquery-3.7.1.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+function delete_my_cookie ( cookie_name )
+{
+  var cookie_date = new Date ( );  // current date & time
+  cookie_date.setTime ( cookie_date.getTime() - 1 );
+  document.cookie = cookie_name + "=X;expires=" + cookie_date.toGMTString();
+}
+
+function sign_out() {
+  delete_my_cookie("lieder");
+  location.reload();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const trailingTrimOnly = ['new_text', 'display_text'];
+  
+  // Function to trim an input
+  function trimInput(input) {
+    if (input.tagName === 'TEXTAREA' && trailingTrimOnly.includes(input.id)) {
+      input.value = input.value.replace(/\s+$/g, '');
+    } else if ((input.tagName === 'INPUT' && ['text', 'email', 'search', 'tel', 'url'].includes(input.type)) || 
+               input.tagName === 'TEXTAREA') {
+      input.value = input.value.trim();
+    }
+  }
+  
+  // Attach blur listeners directly to all inputs
+  function attachBlurListeners() {
+    const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="search"], input[type="tel"], input[type="url"], textarea');
+    inputs.forEach(function(input) {
+      input.addEventListener('blur', function() {
+        trimInput(this);
+      });
+    });
+  }
+  
+  // Run initially
+  attachBlurListeners();
+  
+  // Also use MutationObserver to handle dynamically added inputs
+  const observer = new MutationObserver(function(mutations) {
+    attachBlurListeners();
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+
+</script>
+
+
+
+
+<script async src="/lieder/js/sha3.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("body").show();
+        sf();
+    });
+
+function sf() { 
+    if (document.f) { 
+        if (document.f.username) {
+            document.f.username.focus(); 
+        } else {
+            document.f.submit.focus(); 
+        }
+    }
+}
+
+function hashIt() {
+   var hash = CryptoJS.SHA3($("#password").val(), { outputLength: 224 });
+   $("#password").val(hash);
+   return true;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function readCookie(desc) {
+  var nameEq = desc + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cArray = decodedCookie.split(';');
+  for(var i = 0; i < cArray.length; i++) {
+    var ck = cArray[i];
+    while (ck.charAt(0) == ' ') {
+      ck = ck.substring(1);
+    }
+    if (ck.indexOf(nameEq) == 0) {
+      return ck.substring(nameEq.length, ck.length);
+    }
+  }
+  return "";
+}
+
+function createCookie(keyName,value,days) {
+    var today = new Date();
+    var expiry = new Date(today.getTime() + (days*24*60*60*1000));
+    document.cookie = keyName + "=" + value + ";expires=" + expiry.toUTCString() + ";path=/";
+}
+
+function updateFastScrollOffset() {
+    var cookieNotice = document.getElementById('cookie-notice');
+    var root = document.documentElement;
+    var offset = 0;
+    var isVisible = false;
+
+    if (cookieNotice) {
+        if (cookieNotice.style.visibility) {
+            isVisible = cookieNotice.style.visibility === 'visible';
+        } else {
+            isVisible = window.getComputedStyle(cookieNotice).visibility === 'visible';
+        }
+    }
+
+    if (isVisible) {
+        offset = cookieNotice.offsetHeight + 16;
+    }
+
+    root.style.setProperty('--cookie-notice-offset', offset + 'px');
+}
+
+function accept() {
+    createCookie('accepts','Y','60');
+    hasAccepted();
+}
+
+function hasAccepted() {
+    var accepted = readCookie('accepts');
+    if (accepted != 'Y') {
+        document.getElementById('cookie-notice').style.visibility='visible';
+        document.getElementById('cookie-notice').style.opacity=1;
+    } else {
+        document.getElementById('cookie-notice').style.visibility='hidden';
+        document.getElementById('cookie-notice').style.opacity=0;
+    }
+
+    updateFastScrollOffset();
+}
+
+document.addEventListener('DOMContentLoaded', hasAccepted);
+window.addEventListener('resize', updateFastScrollOffset);
+
+function toggle(div_id) {
+	var el = document.getElementById(div_id);
+	if ( el.style.display == 'none' ) {	el.style.display = 'block';}
+	else {el.style.display = 'none';}
+}
+
+function toggleMenu() {
+    var menu = document.getElementById('left-nav');
+    if (menu.classList.contains('nav-hidden')) { 
+        openMenu();
+    } else {
+        closeMenu();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(e) {
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    var w = window.matchMedia("screen and (min-width: 100rem)");
+    // Snap menu and arrow to correct state on initial page load
+    menu.style.transition = 'none';
+    arrow.style.transition = 'none';
+    autoMenu();
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            menu.style.transition = '';
+            arrow.style.transition = '';
+        });
+    });
+
+    w.addListener(autoMenu);
+    function autoMenu() {
+        if (w.matches) { 
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    }
+});
+
+window.addEventListener('load', () => {
+    const emails = document.getElementsByClassName('email');
+        Array.from(emails).forEach(function(email) {
+            const decoded = atob(email.name);
+            email.href = "mailto:" + decoded;
+    });
+});
+
+function openMenu() {
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    menu.classList.remove('nav-initial');
+    menu.classList.remove('nav-hidden');
+    menu.classList.add('nav-show');
+    arrow.classList.add('menu-close-arrow');
+    if (window.matchMedia("(min-width: 1600px)").matches) {
+        menu.classList.add('menu-width');
+        document.getElementById('donations-card').classList.add('donations-wide');
+    }
+    document.getElementById('menu-toggle-text').textContent = 'Close Menu';
+}
+
+function closeMenu() {
+    document.getElementById('menu-toggle-text').textContent = 'MENU';
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    menu.classList.remove('nav-initial');
+    arrow.classList.remove('menu-close-arrow');
+    menu.classList.remove('nav-show');
+    menu.classList.add('nav-hidden');
+    menu.classList.remove('menu-width');
+    document.getElementById('donations-card').classList.remove('donations-wide');
+}
+
+document.addEventListener('keyup', function (event) {
+    var key = event.key;
+    if (key === 'Escape' || key === 'Esc' || key === 27)  {
+        if (document.getElementById('left-nav').classList.contains('nav-show')) {
+            closeMenu();
+        }
+    }
+});
+
+window.addEventListener('beforeunload', function() {
+    var spinner = document.querySelector('.loader');
+    spinner.style.visibility = 'visible';
+    spinner.style.opacity = 1;
+    // For browsers without cross-document view transitions
+    if (!CSS.supports('selector(:active-view-transition)')) {
+        document.body.style.visibility = 'hidden';
+    }
+});
+
+// Hide spinner before view-transition snapshot
+window.addEventListener('pageswap', function() {
+    var spinner = document.querySelector('.loader');
+    spinner.style.transition = 'none';
+    spinner.style.visibility = 'hidden';
+    spinner.style.opacity = 0;
+});
+
+window.addEventListener('pageshow', function() {
+    var spinner = document.querySelector('.loader');
+    spinner.style.visibility = 'hidden';
+    spinner.style.opacity = 0;
+    document.body.style.visibility = '';
+});
+
+// During view-transition navigation, snap menu to correct state
+window.addEventListener('pagereveal', function() {
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    menu.style.transition = 'none';
+    arrow.style.transition = 'none';
+    var w = window.matchMedia('screen and (min-width: 100rem)');
+    if (w.matches) {
+        openMenu();
+    } else {
+        closeMenu();
+    }
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            menu.style.transition = '';
+            arrow.style.transition = '';
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const upBtn = document.getElementById("fast-scroll-up");
+    const downBtn = document.getElementById("fast-scroll-down");
+    const contentSection = document.getElementById("content");
+    const buttonRevealOffset = 300;
+    const topScrollThreshold = 10;
+
+    if (!upBtn || !downBtn || !contentSection) return;
+
+    const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const scrollBehavior = motionOk ? 'smooth' : 'auto';
+
+    let ticking = false;
+    let hasScrolled = false;
+
+    function getScrollTop() {
+        return window.scrollY || document.documentElement.scrollTop || 0;
+    }
+
+    function evaluateScrollButtons() {
+        const rect = contentSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const scrollTop = getScrollTop();
+
+        if (rect.top < -buttonRevealOffset) {
+            upBtn.classList.add("show");
+        } else {
+            upBtn.classList.remove("show");
+        }
+
+        if (hasScrolled && scrollTop > topScrollThreshold && rect.bottom > viewportHeight + buttonRevealOffset) {
+            downBtn.classList.add("show");
+        } else {
+            downBtn.classList.remove("show");
+        }
+    }
+
+    function scheduleButtonEvaluation() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                evaluateScrollButtons();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    function onScroll() {
+        hasScrolled = getScrollTop() > topScrollThreshold;
+        scheduleButtonEvaluation();
+    }
+
+    function onResize() {
+        updateFastScrollOffset();
+        scheduleButtonEvaluation();
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+    setTimeout(function() {
+        updateFastScrollOffset();
+        evaluateScrollButtons();
+    }, 100);
+
+    upBtn.addEventListener("click", function() {
+        contentSection.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
+    });
+
+    downBtn.addEventListener("click", function() {
+        contentSection.scrollIntoView({ behavior: scrollBehavior, block: 'end' });
+    });
+});
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+function hasSessionId(url) {
+  try {
+    const urlObj = new URL(url);
+    const params = urlObj.searchParams;
+    
+    // Common session ID parameter names (case-insensitive)
+    const sessionParams = [
+      'sid',
+      'sessionid',
+      'session_id',
+      'phpsessid',
+      'jsessionid',
+      'aspsessionid',
+      'aspsession',
+      'cfid',
+      'cftoken',
+      'sessid',
+      'session'
+    ];
+    
+    // Check if any session parameter exists
+    for (const param of sessionParams) {
+      // Check both lowercase and uppercase versions
+      if (params.has(param) || params.has(param.toUpperCase())) {
+        return true;
+      }
+    }
+    
+    return false;
+    
+  } catch (e) {
+    // If URL is invalid, return true to flag it for review
+    console.warn('Invalid URL:', url, e);
+    return true;
+  }
+}
+
+function isValidUrl(url) {
+  if (!url) return false;
+  
+  try {
+    const parsed = new URL(url);
+    
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+      return false;
+    }
+    
+    if (!parsed.hostname || !parsed.hostname.includes('.')) {
+      return false;
+    }
+    
+    const parts = parsed.hostname.split('.');
+    const tld = parts[parts.length - 1];
+    if (tld.length < 2) {
+      return false;
+    }
+    
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+document.addEventListener('submit', function(e) {
+  // Create an array to hold all URL inputs we need to check
+  const urlInputs = [];
+  
+  // Check for input[name="url"]
+  const urlInput = e.target.querySelector('input[name="url"]');
+  if (urlInput) {
+    urlInputs.push(urlInput);
+  }
+
+  // Check for input[name="new_website"]
+  const newWebsiteInput = e.target.querySelector('input[name="new_website"]');
+  if (newWebsiteInput) {
+    urlInputs.push(newWebsiteInput);
+  }
+  
+  // Check for inputs with id matching 'new_link' followed by numbers
+  const newLinkInputs = e.target.querySelectorAll('input[id^="new_link"]');
+  newLinkInputs.forEach(input => {
+    // Verify it matches the pattern exactly (new_link followed by digits)
+    if (/^new_link\d+$/.test(input.id)) {
+      urlInputs.push(input);
+    }
+  });
+  
+  // Validate all URL inputs
+  for (const input of urlInputs) {
+    const url = input.value.trim();
+    
+    // Skip empty inputs
+    if (!url) continue;
+    
+    if (!isValidUrl(url)) {
+      e.preventDefault();
+      alert('Please fix the URL ' + url + ' - it needs to be a valid URL starting with http:// or https:// followed by an internet webserver name');
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+    
+    if (hasSessionId(url)) {
+      e.preventDefault();
+      alert('Please remove the session ID from the URL ' + url);
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+
+    if (/lieder\.net/i.test(url)) {
+      e.preventDefault();
+      alert("Oops, your external link does not appear to be external, but rather links to LiederNet! Please try again. Perhaps your computer didn't hear your copy command.");
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+
+
+    if (/imslp\.(org|info|net)/i.test(url) && /\.pdf/i.test(url)) {
+      e.preventDefault();
+      alert("Please link to the main page of the work in IMSLP. The PDF file locations have a way of moving around sometimes.");
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+
+    // Check for video and audio platforms, as well as social media and shopping
+    if (/youtube/i.test(url) || 
+      /youtu\.be/i.test(url) || 
+      /soundcloud/i.test(url) || 
+      /spotify/i.test(url) ||
+      /vimeo/i.test(url) ||
+      /dailymotion/i.test(url) ||
+      /twitch/i.test(url) ||
+      /tiktok/i.test(url) ||
+      /apple\.com\/.*music/i.test(url) ||
+      /deezer/i.test(url) ||
+      /tidal/i.test(url) ||
+      /pandora/i.test(url) ||
+      /bandcamp/i.test(url) ||
+      /facebook\.com\/.*\/videos/i.test(url) ||
+      /instagram\.com\/.*\/reels/i.test(url) ||
+      /shopify/i.test(url) ||
+      /sheetmusicplus/i.test(url) ||
+      /\.zip/i.test(url) ||
+      /ebay/i.test(url) ||
+      /\.(mp3|mp4|wav|m4a|flac|ogg|avi|mov|wmv|flv|webm)(\?|$)/i.test(url)) {
+          e.preventDefault();
+          alert("Please do not link to videos, recordings, social media sites, zip files, or shopping platforms.");
+          input.focus();
+          input.style.borderColor = 'red';
+          return;
+    }
+
+  }
+});
+
+// Reset border color when user starts typing
+document.addEventListener('input', function(e) {
+  // Check if it's one of the URL inputs we validate
+  if (e.target.name === 'url' || (e.target.id && /^new_link\d+$/.test(e.target.id))) {
+    e.target.style.borderColor = '';
+  }
+});
+
+</script>
+
+ <!-- Needed for subdirectories like guest_editors to override -->
+
+<!-- ANALYTICS -->
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/" >
+<link href="https://www.googletagmanager.com/gtag/js?id=UA-34594381-1" rel="preload" as="script">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34594381-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-34594381-1');
+  gtag('config', 'G-TZQ9RWX000');
+</script>
+<!-- /ANALYTICS -->
+
+<!-- GOOGLE ADS -->
+<!-- /GOOGLE ADS -->
+
+</head>
+
+<body 
+onLoad=sf()
+>
+<div class="loader"></div>
+
+
+<!-- FUNDRAISING BANNER -->
+
+
+
+<script>
+function dismiss() {
+    createCookie('new_feature_dismissed','Y','10');
+    hasDismissed();
+}
+
+function hasDismissed() {
+    var dismissed = readCookie('new_feature_dismissed');
+    if (dismissed === 'Y') {
+        var fundraiser = document.getElementById('fundraiser');
+        void fundraiser.offsetWidth;
+        fundraiser.classList.add('hidden');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', hasDismissed);
+</script>
+
+<!-- /FUNDRAISING BANNER -->
+
+<!-- Maintenance window banner -->
+<!-- Maintenance window banner -->
+
+
+<!-- SITE BANNER -->
+<header role="banner" id="site-header" class="site-header">
+    <div class="banner">
+        <div class="banner-background"></div>
+        <div class="logo-box">
+            <a class="logo-home" href="/lieder/">
+<img aria-label="LiederNet Archive logo" class="logo-large" class="logo-large" src="/images/LN_logo_colour.svg" alt="LiederNet logo">
+            </a>
+        </div>    
+
+        <!-- no log-in button for now
+        <a href="/lieder/my_account.html?sign_in=1">
+            <div class="login-button">
+                <p class="login-btn-text">Log in</p>
+            </div>
+        </a>
+        -->
+    </div>
+    
+</header>
+<!-- /SITE BANNER -->
+
+<!-- MAIN -->
+<main id="main" class="main">
+
+<!-- INFO BAR -->
+<div id="info-bar" class="info-bar">
+    <span class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+        <span class="arrow-container">
+            <svg height="19" width="19">
+                <polygon id="menu-toggle-arrow" class="menu-arrow" points="4,3 4,19 19,11" />
+            </svg>
+        </span>
+    <span id="menu-toggle-text" class="menu-toggle-text"></span>
+    </span>
+    <span class="user-info">
+
+
+    </span>
+</div>
+<!-- /INFO BAR -->
+<!-- NAVBAR + CONTENT -->
+<div class="nav-and-content">
+<!-- NAVBAR -->
+<nav class="left-nav nav-initial" id="left-nav"><p class="nav-title">CONTENTS</p>
+    <span class="mobile-menu-close" onclick="toggleMenu()">&times;</span>
+    <ul>
+    <li class="nav-item"><a href="/lieder/">Home</a> | <a href="/lieder/intro.html">Introduction</a></li>
+    <li class="nav-item"><a href="/lieder/cindex.html">Composers&nbsp;(21,020)</a></li>
+    <li class="nav-item"><a href="/lieder/pindex.html">Text&nbsp;Authors&nbsp;(21,077)</a></li>
+    <li class="nav-item">
+        <a href="/lieder/random.html?85652">Go&nbsp;to&nbsp;a&nbsp;Random&nbsp;Text</a></li>
+    <li class="nav-item"><a href="/lieder/new.html">What&rsquo;s New</a></li>
+    <li class="nav-item"><a href="/lieder/tour.html">A&nbsp;Small&nbsp;Tour</a></li>
+    <li class="nav-item"><a href="/lieder/faq.html">FAQ & Links</a></li>
+    <li class="nav-item"><a href="/lieder/donors.html">Donors</a></li>
+    </ul>
+    <ul><li class="nav-item donate-page-btn"><a href="/lieder/donate.html">DONATE</a></li></ul>
+    <p class="nav-title">UTILITIES</p>
+    <ul>
+    <li class="nav-item"><a href="/lieder/search.html">Search&nbsp;Everything</a></li>
+    <li class="nav-item"><a href="/lieder/quick_find.html">Search&nbsp;by&nbsp;Surname</a></li>
+    <li class="nav-item"><a href="/lieder/find_titles_and_first_lines.html">Search&nbsp;by&nbsp;Title&nbsp;or&nbsp;First&nbsp;Line</a></li>
+    <li class="nav-item"><a href="/lieder/find_settings_by_date.html">Search&nbsp;by&nbsp;Year</a></li>
+    <li class="nav-item"><a href="/lieder/find_text_compilations.html">Search&nbsp;by&nbsp;Collection</a></li>
+    <!-- <li class="nav-item"><a href="/lieder/random.html?type=sc">Random&nbsp;Song&nbsp;Cycle</a></li> --> 
+    </ul>
+    <p class="nav-title">CREDITS</p>
+    <ul>
+    <li class="nav-item"><a href="/lieder/emily_ezust.html">Emily&nbsp;Ezust</a></li> <!-- New page? -->
+    <li class="nav-item"><a href="/lieder/contrib.html">Contributors&nbsp;(1,134)</a></li>
+    <li class="nav-item"><a href="/lieder/contact.html">Contact Information</a></li>
+    <li class="nav-item"><a href="/lieder/biblio.html">Bibliography</a></li>    
+
+    <li class="nav-item"><hr aria-label="separator"></li>
+
+    <li class="nav-item"><a href="/lieder/copyright.html">Copyright Statement</a></li>
+    <li class="nav-item"><a href="/lieder/privacy_policy.html">Privacy Policy</a></li>
+    
+
+    <li class="nav-item"></li>
+    </ul>
+    <p style="text-align: center; margin: 0.5rem;">
+        <a class="fb-link" href="https://www.facebook.com/TheLiedArtSongAndChoralTextsArchive">Follow us on Facebook</a>
+    </p>
+
+</nav>
+<!-- /NAVBAR -->
+  
+<!-- PRIMARY CONTENT AND ASSOCIATED ELEMENTS -->
+    <section id="content" class="content">
+
+
+
+   
+
+<a id="placard" style="display: none;" class="placard" href="donate.html" target="_blank">
+</a>
+
+
+
+<div id="text-buttons">
+</div>
+
+<div id="related-ad-and-text">
+<!-- logic for the related ad -->
+
+
+
+<div id="text-table" class="text-table">
+    <div id="tr-auth" class="auth tr-auth"> by <a href="/lieder/get_author_texts.html?AuthorId=1605">Nikolaus Lenau</a> (1802 - 1850)</div><br>
+        <div id="tr-title" class="title tr-title"><I>Weil'&nbsp;auf&nbsp;mir,&nbsp;du&nbsp;dunkles&nbsp;Auge</I></div>
+        <div id="tr-lang" class="lang tr-lang detail">Language:&ensp;<span class="orig">German&nbsp;(Deutsch)&nbsp;</span></div>
+        <div id="tr-trs" class="trs tr-trs detail"><span>Our&nbsp;translations:&nbsp; <b class="tr"><a title="Catalan&nbsp;(Català)" class="transbox1" href="/lieder/get_text.html?TextId=108993">CAT</a></b> <b class="tr"><a title="Catalan&nbsp;(Català)" class="transbox1" href="/lieder/get_text.html?TextId=160084">CAT</a></b> <b class="singable_tr"><a title="Singable Dutch&nbsp;(Nederlands)" class="transbox1" href="/lieder/get_text.html?TextId=119983">DUT</a></b> <b class="tr"><a title="English" class="transbox1" href="/lieder/get_text.html?TextId=9986">ENG</a></b> <b class="singable_tr"><a title="Singable English" class="transbox1" href="/lieder/get_text.html?TextId=38208">ENG</a></b> <b class="tr"><a title="English" class="transbox1" href="/lieder/get_text.html?TextId=174706">ENG</a></b> <b class="tr"><a title="French&nbsp;(Français)" class="transbox1" href="/lieder/get_text.html?TextId=52304">FRE</a></b></span></div>
+        <div id="tr-prmlinks" class="prm-links tr-prmlinks detail"><a href="/lieder/get_text.html?select_for_diff=1&TextId=9985">Choose for Diff</a></div>
+        <div id="tr-gelinks" class="ge-links tr-gelinks detail"></div>
+        <div id="tr-admlinks" class="adm-links tr-admlinks detail"></div>
+        <div id="the-tr" class="text the-tr notranslate"><pre>Weil' auf mir, du dunkles Auge,
+Übe deine ganze Macht,
+[Ernste, milde, träumerische]<sup>1</sup>,
+Unergründlich süße Nacht!
+
+Nimm mit deinem Zauberdunkel
+Diese Welt von hinnen mir,
+Daß du über meinem Leben
+Einsam schwebest für und für.</pre>
+</div>
+        <div id="tr-sung-texts" class="notes tr-sung-texts detail"><div class="sung-texts"><p>Available sung texts: <a style="font-weight: normal; font-style: italic" href="/lieder/about_sung_texts.html">&emsp;&ensp;&larr;&nbsp;What is this?</a></p><span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=163769">A. Amadei</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=34150">W. Baumgartner</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=67560">J. Blumenthal</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=165514">C. Faisst</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11711">R. Franz</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=121967">F. Gernsheim</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=33480">H. Goetz</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=47153">J. Grimm</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=164791">W. Heiser</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=178582">H. Hennings</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11715">F. Hensel</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=167104">H. von Hochberg</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11713">C. Ives</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=141394">P. Kletzki</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11714">C. Loewe</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=134562">E. Mandyczewski</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=133159">C. Marek</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=27089">E. Moór</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11717">C. Orff</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=75674">R. Pohl</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=96118">B. Randhartinger</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11718">M. Reger</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=73540">E. Schultz</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=11720">E. Sjögren</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=119493">J. Stich</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=164679">E. Tinel</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=9985&SettingId=204114">P. Wolfrum</a>&ensp;</div></div>
+        <div id="tr-notes" class="notes tr-notes detail notranslate"><p></p><p><a href="/lieder/faq.html#italic_headlines" target="_blank">About the headline</a> (FAQ)</p><a href="get_text.html?TextId=9985&RF=1">View text without footnotes</a><br>
+ <p>Confirmed with <u>Nicolaus Lenau's sämtliche Werke</u>, herausgegeben von G. Emil Barthel, Leipzig: Druck und Verlag von Philipp Reclam jun., [1883], page 11.</p>
+
+<sup>1</sup> Bolko von Hochberg: "Ernste, milde, zauberische"; Sjögren: "Ernste, milde, träumereiche", Stich: "Träumerische, ernste, milde"<br><br>
+<p><p class="text-info">Text Authorship:</p><ul><li> by <a href="/lieder/get_author_texts.html?AuthorId=1605">Nikolaus Lenau</a> (1802 - 1850), "Bitte", appears in <I><a href="/lieder/show_poems_in_group.html?CID=6407">Gedichte</a></I>, in 1. <I><a href="/lieder/show_poems_in_group.html?CID=1333">Erstes Buch</a></I>, in <I><a href="/lieder/show_poems_in_group.html?CID=499">Sehnsucht</a></I>&emsp13;<a href="/lieder/status_info.html"><span class="verified">[author's text checked 2 times against a primary source]</span></a></li></ul></p><a id="settings"></a>
+<p class="text-info">Musical settings <span style="font-weight:normal;">(art songs, Lieder, m&eacute;lodies, (etc.), choral pieces, and other vocal works set to this text), listed by composer (not necessarily exhaustive):</span></p><ul>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9133">Károly Aggházy</a> (1855 - 1918), "Bitte", op. 23 (<i><a href="/lieder/assemble_opus.html?ComposerId=9133&Opus=23">F&uuml;nf Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1894 [&nbsp;voice and piano&nbsp;], Budapest, R&oacute;zsav&ouml;lgyi & Co.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3176">Albert Felix, Graf Amadei</a> (1851 - 1894), "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=3176&Opus=3">3 Gesänge für eine Sopran- oder Tenorstimme mit Pianoforte</a></i>) no. 1, published 1873 [&nbsp;soprano or tenor and piano&nbsp;], Wien, Gotthard&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11285">Johann Baptiste André</a> (1823 - 1882), "Zauber der Nacht", op. 15 (<i><a href="/lieder/assemble_opus.html?ComposerId=11285&Opus=15">Acht Lieder für eine Singstimme mit Begleitung des Pianoforte</a></i>), Heft 1 no. 5, published 1853 [&nbsp;voice and piano&nbsp;], Offenbach a./M., Joh. André&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3203">Conrad (Eduard Reinhold) Ansorge</a> (1862 - 1930), "Bitte", published 1906 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10439">Zwei Lieder nach Nikolaus Lenau</a>, no. 1, Berlin, Dreililien&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3291">Carl Banck</a> (1809 - 1889), "In der Nacht", op. 50 (<i><a href="/lieder/assemble_opus.html?ComposerId=3291&Opus=50">2 Duetten f&uuml; 2 Singstimmen mit Pianofortebegleitung</a></i>) no. 2, published 1843 [&nbsp;vocal duet with piano&nbsp;], Hamburg, Schuberth u. Co.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3291">Carl Banck</a> (1809 - 1889), "Bitte", op. 69 (<i><a href="/lieder/assemble_opus.html?ComposerId=3291&Opus=69">Dichtungen von Lenau, f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 2, published 1878 [&nbsp;voice and piano&nbsp;], Leipzig, Kistner&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3314">Günther Bartel</a> (1833 - 1866), "Weil' auf mir, du dunkles Auge", op. 41 (<i><a href="/lieder/assemble_opus.html?ComposerId=3314&Opus=41">Lieder und Gesänge für 1 hohe Singstimme mit Pianoforte</a></i>) no. 2, published 1899 [&nbsp;high voice and piano&nbsp;], Berlin, Hoffheinz&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=23076">Louis Bauer</a> , "Bitte", op. 21 (<i><a href="/lieder/assemble_opus.html?ComposerId=23076&Opus=21">Drei Ges&auml;nge f&uuml;r vierstimmigen M&auml;nnerchor</a></i>) no. 3, published 1885 [&nbsp;ttbb chorus a cappella&nbsp;], Berlin, Challier & Co.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3331">Wilhelm Baumgartner</a> (1820 - 1867), "Bitte", op. 12 (<i><a href="/lieder/assemble_opus.html?ComposerId=3331&Opus=12">Eine Fr&uuml;hlingsliebe</a></i>), Heft 2 no. 5, published 1850 [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9216">Albert Ernst Anton Becker</a> (1834 - 1899), "An die Nacht", op. 93 (<i><a href="/lieder/assemble_opus.html?ComposerId=9216&Opus=93">F&uuml;nf ernste Ges&auml;nge f&uuml;r M&auml;nnerchor</a></i>) no. 3, published 1899 [&nbsp;men's chorus&nbsp;], Leipzig, Breitkopf & H&auml;rtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25209">Anton Beer</a> , "Bitte", op. 13 (<i><a href="/lieder/assemble_opus.html?ComposerId=25209&Opus=13">Drei Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 2, published 1897 [&nbsp;voice and piano&nbsp;], M&uuml;nchen, Schmid Nachf.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9052">Anton Beer-Walbrunn</a> (1864 - 1929), "Bitte", op. 13 (<i><a href="/lieder/assemble_opus.html?ComposerId=9052&Opus=13">Drei Lieder f&uuml;r 1 Singstimme mit Pianoforte </a></i>) no. 1, published 1900 [&nbsp;voice and piano&nbsp;], Leipzig, Edit. Peters &emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3356">Rafael Behn</a> , "Bitte", op. 6 (<i><a href="/lieder/assemble_opus.html?ComposerId=3356&Opus=6">Sechs Lieder f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 1, published 1894 [&nbsp;voice and piano&nbsp;], Berlin, Ries & Erler&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11009">Franz Bendel</a> (1833 - 1874), "Bitte", op. 100 (<i><a href="/lieder/assemble_opus.html?ComposerId=11009&Opus=100">Acht Lieder</a></i>) no. 2, published 1877 [&nbsp;voice and piano&nbsp;], Leipzig, Forberg&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3370">Julius Benedict</a> (1804 - 1885), "Bitte", published 1847 [&nbsp;voice and piano&nbsp;], Leipzig, Breitkopf & Härtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3389">Natanael Berg</a> (1879 - 1957), "Bitte", from  <a href="/lieder/assemble_texts.html?SongCycleId=2384">Traumgewalten und andere Gedichte</a>, no. 2&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7753">Gustav Bergmann</a> (1837 - 1892), "Bitte", op. 32 (<i><a href="/lieder/assemble_opus.html?ComposerId=7753&Opus=32">Sechs Ges&auml;nge</a></i>) no. 1, published 1883 [&nbsp;SATB chorus&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=28902">Th. Birt</a> , "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=28902&Opus=3">Vier Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 4, published 1885 [&nbsp;voice and piano&nbsp;], Marburg, Lorch&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7623">Adolf Blomberg</a> , "Bitte", op. 10 (<i><a href="/lieder/assemble_opus.html?ComposerId=7623&Opus=10">Sechs Lieder für 1 mittlere Stimme mit Pianoforte</a></i>) no. 2, published 1883 [&nbsp;medium voice and piano&nbsp;], Bonn, Cohen&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3464">Jacques Blumenthal</a> (1829 - 1908), "Bitte" [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25646">Martin Blumner</a> (1827 - 1901), "An die Nacht", op. 10 (<i><a href="/lieder/assemble_opus.html?ComposerId=25646&Opus=10">Sechs Lieder von G&ouml;the, Geibel, Lenau, Rodenberg und Beck, f&uuml;r S., A., T. und B. </a></i>) no. 4, published 1861 [&nbsp;SATB chorus a cappella&nbsp;], Berlin, Bahn&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3479">Carl Bohm</a> (1844 - 1920), "An die Nacht", op. 326 (<i><a href="/lieder/assemble_opus.html?ComposerId=3479&Opus=326">Lieder f&uuml;r 1 hohe Stimme -- f&uuml;r 1 tiefe Stimme mit Pianoforte</a></i>) no. 69, published 1894 [&nbsp;voice and piano&nbsp;], Berlin, Simrock&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3479">Carl Bohm</a> (1844 - 1920), "An die Nacht", published 1900 [&nbsp;vocal duet with piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=11306">Duette f&uuml;r 2 Singstimme mit Pianoforte</a>, no. 1, Berlin, Simrock&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9137">(Johann Hermann) Heinrich Böie</a> (1825 - 1879), "Weil auf mir", op. 11 (<i><a href="/lieder/assemble_opus.html?ComposerId=9137&Opus=11">Vier Lieder f&uuml;r Sopran</a></i>) no. 2, published 1860 [&nbsp;soprano and piano&nbsp;], Hamburg, Cranz&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3531">Wenzel Theodor Bradsky</a> (1833 - 1881), "Bitte", op. 32 (<i><a href="/lieder/assemble_opus.html?ComposerId=3531&Opus=32">Zwei Lieder f&uuml;r eine Singstimme mit Pianoforte</a></i>) no. 1, published 1869 [&nbsp;voice and piano&nbsp;], Berlin, Schlesinger&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=38803">Gerardus Hubertus Galenus von Brucken Fock</a> (1859 - 1935), "Bitte", op. 14 (<i><a href="/lieder/assemble_opus.html?ComposerId=38803&Opus=14">Drei Lieder für 1 hohe Stimme mit Pianoforte</a></i>) no. 2, published 1891 [&nbsp;high voice and piano&nbsp;], Leipzig, Kahnt Nachfolge&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25089">August Heinrich Diedrich Bünte</a> (1836 - 1920), "Bitte", op. 10 (<i><a href="/lieder/assemble_opus.html?ComposerId=25089&Opus=10">Zwei Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1877 [&nbsp;voice and piano&nbsp;], Hannover, Nagel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3618">Willy Burkhard</a> (1900 - 1955), "Bitte", op. 6 (<i><a href="/lieder/assemble_opus.html?ComposerId=3618&Opus=6">Vier Lieder</a></i>) no. 1&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9887">Gerard Francis Cobb</a> (1838 - ?), "Weil' auf mir, du dunkles Auge", published 1885 [&nbsp;medium voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9410">Sechs Lieder und Ges&auml;nge f&uuml;r 1 mittlere Stimme mit Pianoforte</a>, no. 3, Leipzig, Klemm&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3812">Leopold Damrosch</a> (1832 - 1885), "Bitte", op. 5 (<i><a href="/lieder/assemble_opus.html?ComposerId=3812&Opus=5">5 Lieder</a></i>) no. 1, published 1858 [&nbsp;voice and piano&nbsp;], Weimar, Kühn&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10727">Anton Eberhardt</a> (1855 - 1922), "Bitte", op. 20, Heft 1 no. 5, published 1891 [&nbsp;soprano or tenor and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9377">Amata. Ein Cyklus von 30 Liedern f&uuml;r Sopran (oder Tenor) mit Pianoforte</a>, no. 5, Leipzig, Kistner&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=21346">Toni Edelmann</a> (b. 1945), "Bitte", published c2003 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=8429">Herbstlieder</a>, no. 11, Helsinki : Sulasol&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=8098">Louis Ehlert</a> (1825 - 1884), "Weil' auf mir, du dunkles Auge", op. 14 (<i><a href="/lieder/assemble_opus.html?ComposerId=8098&Opus=14">Sechs Lieder für eine Singstimme mit Pianoforte</a></i>) no. 2, published c1846 [&nbsp;voice and piano&nbsp;], Leipzig: C. F. Peters&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25384">Emil Ehrismann</a> , "Weil' auf mir du dunkles Auge", published 1876 [&nbsp;high voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9428">Zw&ouml;lf Lieder f&uuml;r 1 hohe Stimme mit Pianoforte</a>, no. 8, Berlin, Luckhardt  &emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25095">Johann Dietrich Eickhoff</a> (1814 - 1884), "Zauber der Nacht", published 1895 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9215">Zehn Lieder f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 4, Remscheid, Krumm&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=15987">Clara Mathilda Faisst</a> (1872 - 1948), "Bitte" [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4025">Zdenko Antonín Václav Fibich</a> (1850 - 1900), "Bitte", H. 100 (1868)&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11636">Otto Fiebach</a> (1851 - 1937), "Bitte", published 1880 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=423">An Susanne. Lieder der Liebe f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 5, Berlin, (Sulzbach)&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4027">Alexander von Fielitz</a> (1860 - 1930), "Bitte", op. 11 (<i><a href="/lieder/assemble_opus.html?ComposerId=4027&Opus=11">Drei Lieder f&uuml;r mittlere Stimme und Klavier</a></i>) no. 3, published 1891 [&nbsp;medium voice and piano&nbsp;], Leipzig, Breitkopf & H&auml;rtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10436">Hans Fleischer</a> (1896 - 1981), "Weil' auf mir, du dunkles Auge", op. 54 (<i><a href="/lieder/assemble_opus.html?ComposerId=10436&Opus=54">6 Lieder f&uuml;r Alt, obligate Violine und Klavier</a></i>) no. 3 (1927) [&nbsp;alto, violin obbligato, and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4055">Gustav Flügel</a> (1812 - 1900), "Bitte", op. 45 (<i><a href="/lieder/assemble_opus.html?ComposerId=4055&Opus=45">Sechs Lieder für Singstimme mit Begleitung des Pianoforte</a></i>) no. 6, published 1856 [&nbsp;voice and piano&nbsp;], Cassel, Luckhardt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4074">Wolfgang Fortner</a> (1907 - 1987), "Bitte", 1970/80 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9456">Lieder aus dem Nachlass</a>, no. 6, Schott Music&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4074">Wolfgang Fortner</a> (1907 - 1987), "Eine kleine Bitte", 1970/80 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9456">Lieder aus dem Nachlass</a>, no. 7, Schott Music&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4091">Robert Franz</a> (1815 - 1892), "Bitte", op. 9 (<i><a href="/lieder/assemble_opus.html?ComposerId=4091&Opus=9">Sechs Ges&auml;nge</a></i>) no. 3, published 1847 [&nbsp;voice and piano&nbsp;], Leipzig, Leuckart&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=33507">Walther Friederichsen</a> , "Bitte", published 1901 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=13893">Zwei Lieder von N. Lenau für 1 Singstimme mit Pianoforte</a>, no. 1, Offenbach am Main: Johann André&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=22617">Wilhelm Gericke</a> (1845 - 1925), "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=22617&Opus=2">Vier Lieder f&uuml;r 1 Tenor- oder Sopranstimme mit Pianofortebegleitung</a></i>) no. 1, published 1875 [&nbsp;soprano or tenor and piano&nbsp;], Wien, Bösendorfer &emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4164">Friedrich Gernsheim</a> (1839 - 1916), "Bitte", op. 34 (<i><a href="/lieder/assemble_opus.html?ComposerId=4164&Opus=34">Vier Lieder und Ges&auml;nge f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 1, published 1883 [&nbsp;voice and piano&nbsp;], Berlin, Raabe & Plothow&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4207">Hermann (Gustav) Goetz</a> (1840 - 1876), "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=4207&Opus=3">Drei Lieder von Lenau, Uhland, und Eichendorff</a></i>) no. 2 (1861), published 1862 [&nbsp;voice and piano&nbsp;], Berlin, Challier und Co.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4237">Carl Georg Peter Grädener</a> (1812 - 1883), "Weil' auf mir du dunkles Auge", op. 26 (<i><a href="/lieder/assemble_opus.html?ComposerId=4237&Opus=26">Vier Lieder f&uuml;r 1 mittlere Singstimme mit Pianoforte</a></i>) no. 1, published 1870 [&nbsp;medium voice and piano&nbsp;], Hamburg, Schuberth&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=12369">Julius Otto Grimm</a> (1827 - 1903), "Bitte", op. 15 (<i><a href="/lieder/assemble_opus.html?ComposerId=12369&Opus=15">Sechs Lieder</a></i>) no. 2, published 1868 [&nbsp;low voice and piano&nbsp;], Leipzig: J. Rieter-Biedermann&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=38865">Jakob Adolf Hägg</a> (1850 - 1928), "Bitte", op. 31 (<i><a href="/lieder/assemble_opus.html?ComposerId=38865&Opus=31">Sieben Lieder für eine Singstimme mit Begleitung des Pianoforte</a></i>) no. 7 [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7603">Carl Hauer</a> (1828 - 1892), "Bitte", published 1866 [&nbsp;medium voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=2064">Drei Lieder f&uuml;r eine Singstimme mit Pianoforte</a>, no. 1, Berlin, Trautwein&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4377">Wilhelm Heiser</a> (1816 - 1897), "Weil' auf mir, du dunkles Auge", op. 289, published 1882 [&nbsp;voice and piano&nbsp;], in <i>Neue Musik-Zeitung</i>, 1882, No.23. Cologne: P.J. Tonger&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4391">Henrik Hennings</a> (1848 - 1923), "Weil auf mir du dunkles Auge" [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=15020">[Sechs] Lieder und Gesänge für eine Singstimme mit Begleitung des Pianoforte</a>, no. 6, Kjöbenhavn: Oscar Risom&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5037">Fanny Hensel</a> (1805 - 1847), "Bitte", op. 7 (<i><a href="/lieder/assemble_opus.html?ComposerId=5037&Opus=7">Sechs Lieder</a></i>) no. 5&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25565">Julius Hirschberg</a> , "Bitte", op. 15 (<i><a href="/lieder/assemble_opus.html?ComposerId=25565&Opus=15">Zwei Lieder f&uuml;r Bariton (oder Alt) mit Pianofortebegleitung</a></i>) no. 1, published 1885 [&nbsp;baritone or alto and piano&nbsp;], Breslau, Hientzsch (Dinger)&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10422">Hans Heinrich XIV, Graf Bolko von Hochberg</a> (1843 - 1926), "Bitte", published [1895] [&nbsp;voice and piano&nbsp;], Offenbach am Main, Johann André, in <i>Ausgewählte Lieder</i>&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4431">Adolf Hoffmann</a> (flourished 1884-1887), "Gebet", op. 5 (<i><a href="/lieder/assemble_opus.html?ComposerId=4431&Opus=5">Zehn Ges&auml;nge</a></i>) no. 3, published 1844 [&nbsp;voice and piano&nbsp;], Leipzig, D&ouml;rffel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25510">Josef Hofmann</a> , "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=25510&Opus=3">Drei Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1886 [&nbsp;voice and piano&nbsp;], Wien, Chmel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4461">(Ludwig) Bernhard Hopffer</a> (1840 - 1877), "Bitte", published 1886 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9474">Zw&ouml;lf Lieder f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 5, Berlin, Ries & Erler  &emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=22711">Camillo Horn</a> (1860 - 1941), "Bitte", op. 55 (<i><a href="/lieder/assemble_opus.html?ComposerId=22711&Opus=55">Zwei Lieder für mittlere Singstimme mit Klavierbegleitung</a></i>) no. 2, published 1906-1913 [&nbsp;medium voice and piano&nbsp;], Leipzig, Kahnt Nachfolger&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=1307">Charles Edward Ives</a> (1874 - 1954), "Weil' auf mir", 1902, also set in <a href="/lieder/get_text.html?TextId=18672">English</a>&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=16097">Karl Jürgens</a> (1879 - 1954), "Bitte", op. 4 (<i><a href="/lieder/assemble_opus.html?ComposerId=16097&Opus=4">17 Lieder</a></i>) no. 2 (1926) [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4574">Robert Kahn</a> (1865 - 1951), "Bitte", 1879 [&nbsp;women's chorus&nbsp;], fragment&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=27914">Georg Kaiser</a> , "Bitte", published 1884 [&nbsp;medium voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10718">Drei Lieder f&uuml;r 1 mittlere Singstimme mit Pianoforte</a>, no. 3, Berlin, Schlesinger&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11744">Ludwig Keller</a> (1847 - 1930), "Bitte" [&nbsp;chorus&nbsp;]<br>&nbsp;&nbsp;&nbsp;&nbsp;Score: <a href="https://digital.blb-karlsruhe.de/blbihd/content/titleinfo/807054" target="_blank">Stadtbibliothek Karlsruhe</a> [external link]
+&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4645">Theodor Fürchtegott Kirchner</a> (1823 - 1903), "Bitte", published 1875 [&nbsp;soprano and piano&nbsp;], Berlin, Erler&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=18016">Carl Kleemann</a> , "Bitte", op. 8 (<i><a href="/lieder/assemble_opus.html?ComposerId=18016&Opus=8">Vier Lieder</a></i>) no. 3, published 1885 [&nbsp;voice and piano&nbsp;], Berlin: Simrock&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=16839">Richard Kleinmichel</a> (1846 - 1901), "Bitte", op. 29 (<i><a href="/lieder/assemble_opus.html?ComposerId=16839&Opus=29">Sechs Ges&auml;nge f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 2, published 1876 [&nbsp;voice and piano&nbsp;], Mainz, Schott&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=30084">Paul Kletzki</a> (1900 - 1973), "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=30084&Opus=2">Vier Lieder</a></i>) no. 4 [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9190">Theobald Kretschmann</a> (1850 - 1919), "Bitte", op. 14 no. 1, published 1882 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10398">Zwei Lieder f&uuml;r 1 Singstimme mit Pianofortebegleitung</a>, no. 1, Wien, Wetzler&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4729">Franz Krežma</a> (1862 - 1881), "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=4729&Opus=3">Zw&ouml;lf Lieder f&uuml;r 1 hohe Stimme mit Pianoforte</a></i>) no. 1, published 1879 [&nbsp;high voice and piano&nbsp;], Wien, Gutmann&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=28883">Martin Levy</a> (flourished 1885-1892), "Bitte", published 1893 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=11318">Vier Lieder f&uuml;r 1 Singstimme mit Pianofortebegleitung</a>, no. 2, Berlin, Bote & Bock&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=1674">Carl Loewe</a> (1796 - 1869), "Das dunkle Auge"&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=4885">Otto Lohse</a> (1858 - 1925), "Bitte", op. 5 no. 3, published 1890 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10423">Lied und Liebe. F&uuml;nf Ges&auml;nge f&uuml;r 1 Singstimme mit Pianofortebegleitung</a>, no. 3, Riga, Neldner&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10840">Carl Machts</a> (1846 - 1903), "Bitte", op. 29 (<i><a href="/lieder/assemble_opus.html?ComposerId=10840&Opus=29">Vier Lieder f&uuml;r Sopran oder Tenor mit Pianoforte</a></i>) no. 2, published 1874 [&nbsp;soprano or tenor and piano&nbsp;], Leipzig, Kahnt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=13797">George Washington Magnus</a> (1863 - 1917), "Bitte", op. 9 (<i><a href="/lieder/assemble_opus.html?ComposerId=13797&Opus=9">F&uuml;nf Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 2, published 1897 [&nbsp;voice and piano&nbsp;], Leipzig, W. Hansen&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=15880">Eusebius Mandyczewski</a> (1857 - 1929), "Bitte" [&nbsp;medium voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=11377">Sieben Lieder</a>&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11410">Czesław Józef Marek</a> (1891 - 1985), "Bitte", op. 17 no. 4 (1917), published 1977 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=11275">Fünf Lenau-Lieder</a>, no. 4&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=17149">Ernest Nikolayevich Merten</a> (1814 - 1876), "Bitte", op. 16 (<i><a href="/lieder/assemble_opus.html?ComposerId=17149&Opus=16">Sechs Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1882 [&nbsp;voice and piano&nbsp;], Leipzig, Kahnt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5047">Erik Meyer-Helmund</a> (1861 - 1932), "Bitte", op. 29 (<i><a href="/lieder/assemble_opus.html?ComposerId=5047&Opus=29">Drei Lieder</a></i>) no. 3, published 1886 [&nbsp;voice and piano&nbsp;], Hamburg, Rahter&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=28708">Klaus Miehling</a> (b. 1963), "Bitte", op. 251 no. 3 (2016) [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=11772">Drei Lieder nach Nikolaus Lenau</a>, no. 3&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5054">Anna Mier, Gräfin</a> , "Bitte", published 1875 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=8830">Drei Lieder f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 2, Wien, Wessely&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5093">Emanuel Moór</a> (1863 - 1931), "Die Bitte", op. 13 (<i><a href="/lieder/assemble_opus.html?ComposerId=5093&Opus=13">Sechzehn Lieder</a></i>) no. 4, published 1889 [&nbsp;voice and piano&nbsp;], London, Schott&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5115">Moritz Moszkowski</a> (1854 - 1925), "Bitte", op. 13 (<i><a href="/lieder/assemble_opus.html?ComposerId=5115&Opus=13">Drei Lieder</a></i>) no. 1, published 1877 [&nbsp;baritone and piano&nbsp;], Breslau, Hainauer&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=23641">Wolfgang Nening</a> (b. 1966), "Bitte", 1989 [&nbsp;mezzo-soprano, bass, clarinet, violin, viola, piano&nbsp;], from cantata <a href="/lieder/assemble_texts.html?SongCycleId=14507">Herbstlieder. Kantate nach Texten von Nikolaus Lenau</a>, no. 3&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25527">Jean Louis Nicodé</a> (1853 - 1919), "Bitte", op. 30 no. 2, published 1886 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9506">Dem Andenken an Amarantha. Ein Liedercyklus f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 2, Leipzig, Breitkopf & H&auml;rtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11391">Carl, Graf Nostitz</a> , "Du dunkles Auge", published 1886 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=5898">F&uuml;nfzig Lieder</a>, no. 44, Prag, Hoffmann&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=16778">Max (Heinrich Edler von) Oberleithner</a> (1868 - 1935), "Bitte", published 1894 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=44">F&uuml;nf Lieder f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 4, Berlin, Schlesinger&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25232">Max Ohnec</a> , "Bitte", published 1899 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=9334">Sieben Lieder f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 5, Hamburg, Hoffmann&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=31347">Omâra</a> , "Weil auf mir du dunkles Auge", published 1880 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=12675">7 Lieder f&uuml;r 1 Singstimme mit Pianoforte</a>, no. 1, Berlin, Paez&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5237">Carl Orff</a> (1895 - 1982), "Bitte", 1919 [&nbsp;high voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=11525">Zwei Lieder für hohe Stimme</a>, no. 1&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9207">Richard Pohl</a> (1826 - 1896), "Bitte", published 1888 [&nbsp;soprano and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=5987">Vier Lieder f&uuml;r Sopran mit Pianofortebegleitung</a>, no. 1, Leipzig, Fritzsch&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7624">Gustav Pressel</a> (1827 - 1890), "Weil' auf mir, du dunkles Auge" [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=1511">Sieben Lieder</a>, no. 7&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=23231">Rudolph, Freiherr von Procházka</a> (1864 - 1936), "Bitte", op. 10 (<i><a href="/lieder/assemble_opus.html?ComposerId=23231&Opus=10">Acht Lieder und Ges&auml;nge f&uuml;r Mezzo-Sopran mit Pianoforte</a></i>) no. 1, published 1895 [&nbsp;mezzo-soprano and piano&nbsp;], Braunschweig, Litolff&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5416">Natalie Quiteria, Vicomtesse de Santa</a> , "Bitte", op. 32 (<i><a href="/lieder/assemble_opus.html?ComposerId=5416&Opus=32">Vier Lieder f&uuml;r 1 Singstimme und Pianofortebegleitung</a></i>) no. 1, published 1884 [&nbsp;voice and piano&nbsp;], Baden-Baden, Sommermeyer&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10920">Benedikt Randhartinger</a> (1802 - 1893), "Bitte" [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25671">Julius Rauscher</a> (1859 - 1929), "Bitte", op. 6 (<i><a href="/lieder/assemble_opus.html?ComposerId=25671&Opus=6">Sechs Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 3, published 1894 [&nbsp;voice and piano&nbsp;], Prag, Urb&aacute;nek&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5461">Max Reger</a> (1873 - 1916), "Bitte", 1890/1 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=7430">Jugendlieder</a>, no. 6&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7622">Carl Ressler</a> (1850 - c1900), "Bitte", published 1887 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10135">Lieder f&uuml;r 1 Singstimme mit Pianofortebleitung</a>, no. 14, M&uuml;nchen, Schmid&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10567">Franz Ries</a> (1846 - 1932), "Bitte", op. 25 (<i><a href="/lieder/assemble_opus.html?ComposerId=10567&Opus=25">Vier Lieder f&uuml;r 1 Mittelstimme mit Pianofortebegleitung</a></i>) no. 2, published 1876 [&nbsp;medium voice and piano&nbsp;], Dresden, Ries&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10214">Heinrich Rietsch</a> (1860 - 1927), "Bitte", published 1887 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=1870">Neun Lieder f&uuml;r 1 Singstimme mit Pianofortebleitung</a>, no. 9, Leipzig, Breitkopf & H&auml;rtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=27499">Silvio Rigutini</a> , "Bitte", published 1886 [&nbsp;medium voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10409">Drei Lieder f&uuml;r 1 mittlere Singstimme mit Pianofortebleitung</a>, no. 1, Frankfurt a/M., Steyl & Thomas&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=28004">Edmund Rochlich</a> , "Bitte", op. 9 (<i><a href="/lieder/assemble_opus.html?ComposerId=28004&Opus=9">Zwei Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 2, published 1882 [&nbsp;voice and piano&nbsp;], Leipzig, Kahnt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9007">Martin Roeder</a> (1851 - 1895), "Weil' auf mir, du dunkles Auge", op. 12 (<i><a href="/lieder/assemble_opus.html?ComposerId=9007&Opus=12">Sieben Gesänge für 1 Singstimme mit Pianoforte</a></i>) no. 5, published 1878 [&nbsp;soprano or tenor and piano&nbsp;], Leipzig, Breitkopf & Härtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=27184">Hugo Röhr</a> (1866 - 1937), "Bitte", published 1887 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10232">Vier Lieder f&uuml;r 1 Singstimme mit Pianofortebleitung</a>, no. 2, Dresden, Hoffarth&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10215">Wilhelm Rosenberg</a> (b. 1862), "Zauber der Nacht", op. 1 (<i><a href="/lieder/assemble_opus.html?ComposerId=10215&Opus=1">F&uuml;nf Duette f&uuml;r Sopran und Alt mit Pianofortebegleitung</a></i>) no. 4, published 1888 [&nbsp;vocal duet for soprano and alto with piano&nbsp;], Leipzig, W. Hansen&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5574">Anton Grigoryevich Rubinstein</a> (1829 - 1894), "Bitte", c1874, published 1875 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=5001">Sechs Lieder</a>, no. 2, Leipzig, Senff&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5576">Ernst (Friedrich Karl) Rudorff</a> (1840 - 1916), "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=5576&Opus=2">Sechs Lieder</a></i>) no. 6, published 1864 [&nbsp;voice and piano&nbsp;], Leipzig, Senff&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10293">Martha von Sabinin</a> (1831 - 1892), "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=10293&Opus=3">Sechs Gedichte f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1859 [&nbsp;voice and piano&nbsp;], Weimar, Kühn&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7597">Curt Sachs</a> , "Bitte"&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=33365">Paul Sakolowski</a> (1872 - 1913), "Bitte", op. 23 (<i><a href="/lieder/assemble_opus.html?ComposerId=33365&Opus=23">8 Gesänge für 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1901 [&nbsp;voice and piano&nbsp;], Leipzig, Herrn. Seemann Nachf.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=43946">Siegfried Salomon</a> (flourished 1895+), "Bitte", op. 6 (<i><a href="/lieder/assemble_opus.html?ComposerId=43946&Opus=6">Sieben Lieder für 1 Singstimme mit Pianoforte</a></i>) no. 2, published 1897 [&nbsp;voice and piano&nbsp;], Hamburg, Leichssenring&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5654">Leander Schlegel</a> (1844 - 1913), "Bitte", op. 20 no. 6 (1900), published 1900 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=10566">Deutsche Liebeslieder. Ein Cyklus f&uuml;r 1 Singstimme und Pianofortebegleitung</a>, no. 6, Leipzig, Fritzsch&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9465">Alfred Schlenker</a> (1876 - 1950), "Bitte", published 1923 [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5656">Louis Schlottmann</a> (1826 - 1905), "Weil' auf mir, du dunkles Auge", op. 10 (<i><a href="/lieder/assemble_opus.html?ComposerId=5656&Opus=10">Sieben Lieder</a></i>) no. 4, published 1859 [&nbsp;voice and piano&nbsp;], Leipzig, Breitkopf und H&auml;rtel&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=7630">Joseph Schmid</a> , "Bitte", op. 25 (<i><a href="/lieder/assemble_opus.html?ComposerId=7630&Opus=25">Zwei Lieder f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 2, published 1899 [&nbsp;voice and piano&nbsp;], M&uuml;nchen, Schmid Nachf.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11482">Bernhard Ernst Scholz</a> (1835 - 1916), "Bitte", op. 42, published 1875 [&nbsp;alto or baritone and piano&nbsp;], Cassel, Luckhardt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5678">Walter Schulthess</a> (1894 - 1971), "Bitte"&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10808">Edwin Schultz</a> (1827 - 1907), "Bitte", op. 12 (<i><a href="/lieder/assemble_opus.html?ComposerId=10808&Opus=12">Fünf Lieder für 1 Singstimme mit Pianoforte</a></i>) no. 1, published 1856 [&nbsp;voice and piano&nbsp;], Berlin, Bote und Bock&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11790">Heinrich Schulz-Beuthen</a> (1838 - 1915), "Zauber der Nacht", op. 18 (<i><a href="/lieder/assemble_opus.html?ComposerId=11790&Opus=18">Drei Lieder für Alt oder tiefere Sopranostimme mit Klavier-Begleitung</a></i>) no. 1, published 1876 [&nbsp;low voice and piano&nbsp;], Leipzig: C.F. Kahnt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25228">Karl Julius Schwab</a> , "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=25228&Opus=2">Drei Lieder f&uuml;r Sopran (oder Tenor) mit Pianoforte</a></i>) no. 2, published 1885 [&nbsp;soprano or tenor and piano&nbsp;], Stuttgart, Ebner&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11145">Heinrich Schwartz</a> (1861 - 1924), "Weil' auf mir, du dunkles Auge", published 1900 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=2158">Drei Lieder</a>, no. 3, M&uuml;nchen, Schmid Nachf.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11484">Eduard, Freiherr von Seldeneck</a> (1831 - 1886), "Weil auf mir, du dunkles Auge", op. 12 (<i><a href="/lieder/assemble_opus.html?ComposerId=11484&Opus=12">Sechs Lieder f&uuml;r eine Singstimme mit Pianofortebegleitung</a></i>) no. 5, published 1874 [&nbsp;voice and piano&nbsp;], Leipzig, Eulenburg &emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=27173">Emil Severin</a> , "Bitte", op. 14 (<i><a href="/lieder/assemble_opus.html?ComposerId=27173&Opus=14">Drei Lieder für 1 Singstimme mit Pianoforte</a></i>) no. 2, published 1894 [&nbsp;voice and piano&nbsp;], Berlin, Paez&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5764">(Johan Gustaf) Emil Sjögren</a> (1853 - 1918), "Weil' auf mir, du dunkles Auge", op. 16 no. 2 (1886), published 1886 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=3160">An Eine : f&uuml;nf Lieder</a>, no. 2, Breslau, Hainauer&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=38701">Adolf Stemler</a> , "Bitte", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=38701&Opus=3">Drei Lieder für 1 Singstimme mit Pianoforte</a></i>) no. 2, published 1893 [&nbsp;alto or baritone and piano&nbsp;], Berlin, Paez&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=25614">Joseph Stich</a> (1850 - 1914), "Weil' auf mir, du dunkles Auge", op. 12 (<i><a href="/lieder/assemble_opus.html?ComposerId=25614&Opus=12">Drei Lieder f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 1, published 1890 [&nbsp;voice and piano&nbsp;], M&uuml;nchen, Lederer&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=27732">Leopold Stolz</a> , "Bitte", op. 9 (<i><a href="/lieder/assemble_opus.html?ComposerId=27732&Opus=9">Zwei Ges&auml;nge f&uuml;r 1 tiefe Singstimme mit Pianofortebegleitung</a></i>) no. 2, published 1900 [&nbsp;low voice and piano&nbsp;], Wiesbaden, Ernst Schellenberg&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11745">Johann Heinrich Stuckenschmidt</a> (1819 - 1870), "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=11745&Opus=2">5 Lieder für eine Singstimme mit Pianoforte</a></i>) no. 4, published 1853 [&nbsp;voice and piano&nbsp;], Mainz, Schott&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10957">Emil Sulzbach</a> (1885 - 1932), "Bitte", op. 19 (<i><a href="/lieder/assemble_opus.html?ComposerId=10957&Opus=19">Vier Lieder für 1 mittlere Stimme mit Pianoforte</a></i>) no. 1, published 1888 [&nbsp;medium voice and piano&nbsp;], Frankfurt a/M., Firnberg&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=8134">Hermann Suter</a> (1870 - 1926), "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=8134&Opus=2">F&uuml;nf Lieder</a></i>) no. 1&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=10856">Ernst Edward Taubert</a> (1838 - 1934), "Bitte", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=10856&Opus=2">Sechs Ges&auml;nge f&uuml;r Sopran mit Pianoforte</a></i>) no. 2, published 1865 [&nbsp;soprano and piano&nbsp;], Berlin, Trautwein&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=5969">Edgar Pierre Joseph Tinel</a> (1854 - 1912), "Bitte", op. 11 no. 2 (1875), published 1877 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=14322">Fünf Gesänge aus Nikolaus Lenaus <i>Lieder der Sehnsucht</i></a>, no. 2, Bruxelles, Schott Frères&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=13794">Albert Theodor Töpken</a> , "Zauber der Nacht", published 1882 [&nbsp;alto or baritone and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=12021">Vier Lieder und Gesänge für 1 Singstimme mit Pianoforte (Heft III der nachgelassenen Werke)</a>, no. 1, Bremen, Praeger & Meier&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9122">Anton Urspruch</a> (1850 - 1907), "Weil auf mir, du dunkles Auge", op. 3 (<i><a href="/lieder/assemble_opus.html?ComposerId=9122&Opus=3">Sechs Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 6, published 1875 [&nbsp;voice and piano&nbsp;], Leipzig, Kistner&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6068">Johann Vesque von Püttlingen</a> (1803 - 1883), "Bitte", op. 43 (<i><a href="/lieder/assemble_opus.html?ComposerId=6068&Opus=43">Sechs Ges&auml;nge f&uuml;r Alt mit Begleitung des Pianoforte </a></i>) no. 2 (1844-51?)&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6140">Heinrich Weidt</a> (1824 - 1901), "Weil' auf mir du dunkles Auge", op. 68 (<i><a href="/lieder/assemble_opus.html?ComposerId=6140&Opus=68">Vier Quartetten f&uuml;r M&auml;nnerstimmen</a></i>) no. 4, published 1879 [&nbsp;vocal quartet of male voices&nbsp;], Kassel, Voigt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6140">Heinrich Weidt</a> (1824 - 1901), "Weil' auf mir du dunkles Auge", op. 62 (<i><a href="/lieder/assemble_opus.html?ComposerId=6140&Opus=62">Drei Lieder f&uuml;r Sopran (oder Tenor) mit Pianofortebegleitung -- f&uuml;r Alt (oder Baryton) mit Pianofortebegleitung</a></i>) no. 3, published 1879 [&nbsp;voice and piano&nbsp;], Kassel, Voigt&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6146">Felix Paul Weingartner</a> (1863 - 1942), "Bitte", op. 16 (<i><a href="/lieder/assemble_opus.html?ComposerId=6146&Opus=16">Acht Gedichte von Nicolaus Lenau f&uuml;r 1 Singstimme mit Pianofortebegleitung</a></i>) no. 6 (1891?), published 1894 [&nbsp;voice and piano&nbsp;], Berlin, Challier & Co.&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=11757">Julius Weiss</a> (1814 - 1898), "Bitte", op. 113 (<i><a href="/lieder/assemble_opus.html?ComposerId=11757&Opus=113">Sechs Lieder für 1 Singstimme mit Pianoforte</a></i>) no. 4, published 1889 [&nbsp;voice and piano&nbsp;], Berlin, Weiss&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=9199">Friedrich von Wickede</a> (1834 - 1904), "Bitte", op. 13 (<i><a href="/lieder/assemble_opus.html?ComposerId=9199&Opus=13">Sechs Lieder</a></i>) no. 1, published 1872 [&nbsp;voice and piano&nbsp;], Hannover, Schl&uuml;ter&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6210">Theodor Winkelmann</a> , "Bitte", published 1883 [&nbsp;voice and piano&nbsp;], from  <a href="/lieder/assemble_texts.html?SongCycleId=2302">Neun Lieder</a>, no. 6, Leipzig, Kistner&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6224">Philip Wolfrum</a> (1854 - 1919), "Bitte", op. 9 (<i><a href="/lieder/assemble_opus.html?ComposerId=6224&Opus=9">Lieder und Gesänge, Heft II</a></i>) no. 2 [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6769">Felix von Woyrsch</a> (1860 - 1944), "Weil' auf mir, du dunkles Auge", op. 2 (<i><a href="/lieder/assemble_opus.html?ComposerId=6769&Opus=2">Vier Lieder f&uuml;r 1 Singstimme mit Pianoforte und V. resp. Vcello. </a></i>) no. 4, published 1884 [&nbsp;voice, piano, and violin&nbsp;], Hamburg, Cranz&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=23570">Arthur Wulffius</a> (1867 - 1920), "Bitte", op. 1 (<i><a href="/lieder/assemble_opus.html?ComposerId=23570&Opus=1">Sechs Lieder f&uuml;r 1 Singstimme mit Pianoforte</a></i>) no. 3, published 1895 [&nbsp;voice and piano&nbsp;], Berlin, Ries & Erler&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+</ul>
+<p>Settings in other languages, adaptations, or excerpts:<br></p>
+<ul>
+<li>Also set in English, a translation  possibly by <a href="/lieder/get_author_texts.html?AuthorId=3008">Arthur Westbrook</a> ; composed by Charles Edward Ives. <ul><li> <a href="/lieder/get_text.html?TextId=18672">Go to the text.</a><br></li></ul></li><li>Also set in English, a translation  by <a href="/lieder/get_author_texts.html?AuthorId=70">Anonymous/Unidentified Artist</a>   ; composed by John Ford Barbour. <ul><li> <a href="/lieder/get_text.html?TextId=25616">Go to the text.</a> <span style="color:red">[Note: the text is not in the database yet.]</span><br></li></ul></li></ul>
+<p><p class="text-info">Other available&nbsp;translations, adaptations or excerpts, and transliterations (if applicable):</p><ul><li><B class="tr">CAT</B> <a href="/lieder/get_text.html?TextId=108993">Catalan&nbsp;(Català)</a> (Salvador Pila)  , <b>copyright &copy;</b> 2015, (re)printed on this website with kind permission </li><li><B class="tr">CAT</B> <a href="/lieder/get_text.html?TextId=160084">Catalan&nbsp;(Català)</a> (Manuel Capdevila i Font)  , <b>copyright &copy;</b> 2025, (re)printed on this website with kind permission </li><li><B class="tr">DUT</B> <a href="/lieder/get_text.html?TextId=119983">Dutch&nbsp;(Nederlands)</a> [singable]  (Lau Kanen)  , <b>copyright &copy;</b> 2017, (re)printed on this website with kind permission </li><li><B class="tr">ENG</B> <a href="/lieder/get_text.html?TextId=9986">English</a> (Emily Ezust)  , "Linger on me, dark eyes", <b>copyright &copy;</b> </li><li><B class="tr">ENG</B> <a href="/lieder/get_text.html?TextId=38208">English</a> [singable]  (Walter A. Aue)  , "Stay with me, endarkened vision", <b>copyright &copy;</b> 2008, (re)printed on this website with kind permission </li><li><B class="tr">ENG</B> <a href="/lieder/get_text.html?TextId=174706">English</a> (Sharon Krebs)  , <b>copyright &copy;</b> 2022, (re)printed on this website with kind permission </li><li><B class="tr">FRE</B> <a href="/lieder/get_text.html?TextId=52304">French&nbsp;(Français)</a> (Pierre Mathé)  , "S'il te plait", <b>copyright &copy;</b> 2009, (re)printed on this website with kind permission </li></ul></p>
+<br>Research team  for this page: Emily Ezust  <b>[Administrator]</b> , Sharon Krebs  <b>[Senior Associate Editor]</b>, Johann Winkler <p>This text was added to the website between May 1995 and September 2003.<br>Line count: <b>8</b><br>
+Word count: <b>37</b></p>
+</div>  
+</div>
+</div>
+
+<script src="/lieder/js/placard.js?v=2"></script>
+
+<script>
+    function toggleInterleaved() {
+        if (document.getElementById('text-table').classList.contains('combined-columns')) {
+            separate();
+        } else {
+            combine();
+        }
+    }
+
+    function combine() {
+        showFewer();
+        document.getElementById('text-table').classList.add('combined-columns');
+        document.getElementById('text-title').classList.add('interleaved');
+        document.getElementById('the-text').classList.add('interleaved');
+        document.getElementById('tr-title').classList.add('interleaved', 'interleaved-tr-title');
+        document.getElementById('the-tr').classList.add('interleaved', 'interleaved-tr');
+        document.getElementById('text-auth').classList.add('interleaved');
+        document.getElementById('tr-auth').classList.add('interleaved', 'interleaved-tr-auth');
+        document.getElementById('combine-columns').textContent = 'Show text and translation separately';
+    }
+
+    function separate() {
+        showMore();
+        document.getElementById('text-table').classList.remove('combined-columns');
+        document.getElementById('text-title').classList.remove('interleaved');
+        document.getElementById('the-text').classList.remove('interleaved');
+        document.getElementById('tr-title').classList.remove('interleaved','interleaved-tr-title');
+        document.getElementById('the-tr').classList.remove('interleaved', 'interleaved-tr');
+        document.getElementById('text-auth').classList.remove('interleaved');
+        document.getElementById('tr-auth').classList.remove('interleaved', 'interleaved-tr-auth');
+        document.getElementById('combine-columns').textContent = 'Show text and translation together';
+    }
+
+    function toggleDetails() { 
+        if (document.getElementById('details-btn').textContent === 'Show fewer details') {
+            showFewer();
+        }
+        else {
+            if (document.getElementById('text-table').classList.contains('combined-columns')) {
+                separate();
+            } else {
+                showMore();
+            }
+        }
+    }
+
+    function showMore() {
+        var elements = document.getElementsByClassName('detail')
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = '';
+        }
+        document.getElementById('text-auth').classList.remove('show');
+        document.getElementById('tr-auth').classList.remove('show');
+        document.getElementById('details-btn').textContent = 'Show fewer details';
+    }
+
+    function showFewer() {
+        var elements = document.getElementsByClassName('detail')
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'none';
+        }
+        document.getElementById('text-auth').classList.add('show');
+        document.getElementById('tr-auth').classList.add('show');
+        document.getElementById('details-btn').textContent = 'Show more details';
+    }
+</script>
+
+
+
+
+    
+    </section>
+<!-- / PRIMARY CONTENT AND ASSOCIATED ELEMENTS -->
+</div>
+<!-- /NAV + CONTENT -->
+</main>
+<!-- /MAIN -->
+<!-- ANYTHING THAT FOLLOWS THE CONTENT -->
+    <aside id="after-the-content">
+<div id="donations-card" class="donations-card">
+<div class="donations-title">Gentle Reminder</div>
+<p>
+
+This website began in 1995 as a personal project by Emily Ezust, who has
+been working on it full-time without a salary since 2008. Our research has 
+never had any government or institutional funding, so if you
+
+found
+
+the information here useful, please consider making a 
+donation.
+Your help is greatly appreciated!<br>
+&ndash;Emily Ezust, Founder</p>
+<div style="margin-left:auto;margin-right:auto">
+<a class="donate-page-btn" href="/lieder/donate.html">Donate</a>
+</div>
+</div>
+<script>
+function showSometimes() {
+  var rnd = Math.random();
+    if (rnd < .2) {
+      document.getElementById('donations-card').style.display='block';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', showSometimes);
+</script>
+
+
+
+    <br>
+    </aside>
+<!-- /ANYTHING THAT FOLLOWS THE CONTENT -->
+
+<div id="fast-scroll-container" class="fast-scroll-container">
+    <button id="fast-scroll-up" class="fast-scroll-btn" aria-label="Scroll to top of content" title="Top of content">
+        <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+    </button>
+    <button id="fast-scroll-down" class="fast-scroll-btn" aria-label="Scroll to bottom of content" title="Bottom of content">
+        <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20l8-8h-5v-8h-6v8h-5z"/></svg>
+    </button>
+</div>
+
+<div id="cookie-notice" class="cookie-notice">
+<p class="cookie-msg">We use cookies for internal analytics and to earn much-needed advertising revenue. (Did you know you can help support us by turning off ad-blockers?) To learn more, see our <a href="/lieder/privacy_policy.html">Privacy Policy</a>. To learn how to opt out of cookies, please visit <a href="https://www.cookiesandyou.com/" target="_blank">this site</a>.</p>
+<p class="cookie-btn" onclick="accept()">I acknowledge the use of cookies</p>
+</div> 
+<!-- FOOTER -->
+<footer class="footer">
+    <p><a href="/lieder/contact.html">Contact</a><br>
+    <a href="/lieder/copyright.html">Copyright</a><br>
+    <a href="/lieder/privacy_policy.html">Privacy</a><br></p>
+    <p>Copyright &copy; 2026 The LiederNet Archive</p>
+    <a id="design" href="https://www.thuris.com" target="_blank">Site redesign by Shawn Thuris</a>
+</footer>
+<!-- /FOOTER -->
+</body>
+</html>
+
+ 
+
+
+
+
+
+

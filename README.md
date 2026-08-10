@@ -9,9 +9,9 @@
 > **当前状态：共 33 首诗，分四批录入。**
 >
 > - **第一批（11 首）**：Goethe ×3、Heine ×3、Eichendorff、Mörike、Hölderlin、Rilke ×2 — 已配图。
-> - **第二批（9 首）**：Goethe ×2（*Wandrers Nachtlied I*、*Mignon*）、Heine（*Der Tod, das ist die kühle Nacht*）、Rilke（*Archaïscher Torso Apollos*）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 已配图。
+> - **第二批（9 首）**：Goethe ×2（_Wandrers Nachtlied I_、_Mignon_）、Heine（_Der Tod, das ist die kühle Nacht_）、Rilke（_Archaïscher Torso Apollos_）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 已配图。
 > - **第三批（9 首）**：Brentano、Uhland、Lenau、Hebbel、Storm、C. F. Meyer、Fontane、Hofmannsthal、Morgenstern — 已配图。
-> - **第四批（4 首，进行中）**：Gryphius ×2、Fleming、van Hoddis — 填补巴洛克与表现主义两个时代缺口的第一部分，**配图待生成**。这一批原计划 12 首，目前完成 4 首，未完成部分见[已知局限](#已知局限--后续工作)。
+> - **第四批（4 首，进行中）**：Gryphius ×2、Fleming、van Hoddis — 填补巴洛克与表现主义两个时代缺口的第一部分 — 已配图。这一批原计划 12 首，目前完成 4 首，未完成部分见[已知局限](#已知局限--后续工作)。
 >
 > 收录诗人现共 23 位，时间跨度自 17 世纪的 Gryphius、Fleming 至 20 世纪的 van Hoddis。技术架构支持持续扩充，见下方"如何添加一首新诗"。
 >
@@ -35,6 +35,7 @@
   - [如何添加一首新诗](#如何添加一首新诗)
   - [如何添加或替换配图](#如何添加或替换配图)
   - [如何记录来源](#如何记录来源)
+    - [出处快照（Quellen-Schnappschuss）](#出处快照quellen-schnappschuss)
   - [内容与译文版权注意事项](#内容与译文版权注意事项)
   - [已知局限 / 后续工作](#已知局限--后续工作)
 
@@ -49,7 +50,7 @@
 - 任何不确定的信息（版本差异、缺失的第二来源等）都在页面"校对记录"中如实注明"待核实"，不做主观取舍或美化。
 - 每首诗页面末尾附带一份可见的**上线前质量 Checklist**，尚未完成的项目会明确标红（如"生成 AI 配图"——见下文说明）。
 
-**关于配图**：第一至三批共 29 首诗已配有 AI 生成插图（`public/images/`）。**第四批 4 首尚未配图**——当前部署环境未接入可用的图像生成模型，因此这 4 首的 `image_path` 均为 `null`，页面会渲染完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）作为占位，供你在有图像生成工具时按简报补充；详见[如何添加或替换配图](#如何添加或替换配图)。
+**关于配图**：全部 33 首诗均已配有 AI 生成插图（`public/images/`，4:3 横版）。若某首诗的 `image_path` 为 `null`，页面会自动改为渲染完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）作为占位；详见[如何添加或替换配图](#如何添加或替换配图)。
 
 ---
 
@@ -62,16 +63,20 @@
 ├── data/
 │   └── poems/                  # 每首诗一个 JSON 文件，是全站唯一的数据源
 │       ├── 01-heidenroeslein.json
-│       ├── 02-wandrers-nachtlied.json
+│       ├── 02-wandrers-nachtlied-ii.json
 │       └── ...                  # 目前共 33 个文件（01–33）
 ├── public/
 │   ├── style.css                # 主样式表（纸张质感 / 衬线字体 / 配色变量）
-│   └── images/                  # 配图（目前为第一至三批共 29 首）
+│   └── images/                  # 配图（33 首，与 data/poems/ 一一对应）
 ├── src/
 │   ├── build.js                 # 构建脚本：读取 data/poems/*.json → 生成 dist/
 │   ├── templates.js             # 纯字符串 HTML 模板（无第三方模板引擎）
 │   ├── validate-sources.js      # 来源独立性校验（npm run check），规则见 SOURCES.md
+│   ├── snapshot.js              # 抓取出处网页存档（npm run snapshot）
 │   └── serve.js                 # 零依赖本地静态文件服务器（预览用）
+├── snapshots/                   # 德文原文出处的网页存档（npm run snapshot 生成）
+│   ├── raw/                     # 抓取到的原始 HTML 正本
+│   └── manifest.json            # 清单：URL → 抓取时间 / HTTP 状态 / SHA-256
 ├── dist/                        # 构建产物（HTML + CSS），可直接部署到任意静态托管
 ├── SOURCES.md                   # ★ 来源独立性规范（强制性，新增诗歌前必读）
 ├── package.json
@@ -125,8 +130,9 @@ node src/build.js && node src/serve.js
 npm run build   # 等价于 node src/build.js
 npm run serve   # 等价于 node src/serve.js
 npm run dev     # 等价于先 build 再 serve
-npm run check   # 来源独立性校验（node src/validate-sources.js），规则见 SOURCES.md
-npm run format  # 格式化 dist/ 下的 HTML（需先 npm install；pre-commit hook 会自动执行）
+npm run check    # 来源独立性校验（node src/validate-sources.js），规则见 SOURCES.md
+npm run snapshot # 抓取德文原文出处的网页存档到 snapshots/（见"出处快照"一节）
+npm run format   # 格式化仓库代码与文档（需先 npm install；pre-commit hook 会自动格式化 dist/）
 ```
 
 打开浏览器访问 `http://localhost:4321` 即可看到首页；也可以直接用浏览器打开 `dist/index.html`（部分相对路径在 `file://` 协议下也能正常工作，但仍推荐用本地服务器预览，行为更接近真实部署）。
@@ -144,11 +150,12 @@ node src/build.js
 1. 读取 `data/poems/` 目录下所有 `.json` 文件；
 2. 对每首诗做基本字段完整性校验（缺字段会在终端打印 `⚠️` 警告，但不会中断构建，便于你在草稿阶段先看到渲染效果再补全数据）；
 3. 生成 `dist/index.html`（诗歌总览）、`dist/about.html`（关于本站/校对说明）以及 `dist/poems/<slug>.html`（每首诗的详情页）；
-4. 复制样式表到 `dist/theme.css`。
+4. 由 `snapshots/` 生成 `dist/snapshots/<id>.html`（德文原文出处的存档页）；
+5. 复制样式表与配图到 `dist/`。
 
 构建产物 `dist/` 是完全独立的静态文件集合，可以直接拖拽到 Netlify / Vercel / GitHub Pages / 任意静态文件服务器上部署，无需服务端运行环境。
 
-> **注意（本沙箱环境特有的实现细节）**：由于本项目开发所在的沙箱环境不允许删除或重命名 `outputs` 目录下已创建的文件，`build.js` 采用"覆盖写入"而非"先清空 dist/ 再重建"的策略；样式表输出文件名是 `theme.css` 而非更直觉的 `style.css`（因为构建过程中一次失败的复制操作意外占用了 `style.css` 这个文件名）。如果你在自己的电脑/服务器上重新克隆本项目运行，这些历史包袱可以随意清理：直接删除 `dist/` 目录后重新构建即可，不受此限制。
+> **注意**：`build.js` 采用"覆盖写入"而非"先清空 `dist/` 再重建"的策略。重命名 slug 或删除某首诗后，`dist/` 下的旧页面不会自动消失——此时手动删除 `dist/` 再构建一次即可。
 
 ---
 
@@ -218,6 +225,25 @@ node src/build.js
 - **译文出处**（`translation_sources`）：说明译文性质（公版译本 / 本站学习译文 / 已知存在但因版权未转载的译本名称），不需要 URL（本站学习译文没有外部出处）。
 - **校对记录**（`verification_notes`）：自由文本，用于记录交叉核对的具体过程、发现的版本差异、以及尚未解决的疑点。这是最重要的可信度记录，请认真填写，不要留空或写套话。
 
+### 出处快照（Quellen-Schnappschuss）
+
+出处链接本身并不足以自证：网页会改版、下线，或被悄悄修改。因此 `german_sources` 中的每个 URL 都会被抓取存档一次，页面上以「快照（YYYY-MM-DD）」链接呈现。
+
+```bash
+npm run snapshot              # 只抓尚未存档的 URL（增量，可反复运行）
+npm run snapshot -- --refresh # 重抓全部，更新已有存档
+npm run build                 # 由存档生成 dist/snapshots/*.html
+```
+
+产物分两层：
+
+- `snapshots/raw/<id>.html` —— 抓取到的**原始字节**，是存档正本，随仓库一起提交；
+- `snapshots/manifest.json` —— 清单：URL → 文件名、抓取时间、HTTP 状态、字节数、**SHA-256**、页面标题、被哪几首诗引用。
+
+网站上发布的是由正本渲染出的**纯文本**存档页（含上述全部元数据），**不转发第三方页面自身的版式、图片与脚本**——存档的用途是核对诗歌正文，不是镜像别人的网站；页面著作权仍归原站点所有。正本的 SHA-256 记在清单里，任何人都可以据此验证存档未被事后改动。
+
+抓取失败的来源（例如对方站点屏蔽非浏览器请求）不会被静默跳过：清单中记录失败原因，页面上照实显示「快照（未能抓取）」。新增诗歌后记得跑一次 `npm run snapshot`。
+
 ---
 
 ## 内容与译文版权注意事项
@@ -226,7 +252,7 @@ node src/build.js
 - **德文原文的具体录入版本**：即便原诗本身公版，某些出版社/编辑校勘的"具体版本"（如某大学出版社的现代校勘本）本身可能受编辑劳动的版权保护；本站引用的 deutschelyrik.de、textlog.de、Zeno.org、Kalliope、gedichte7.de、维基百科等均为面向公众免费开放阅读的资源，但如果你计划将本项目用于商业用途，建议进一步核实这些网站的转载政策。
 - **现代中文/英文译本**：绝大多数广为流传的名家译本（如钱春绮、冯至、杨武能、Stephen Mitchell 等译者的作品）译者去世未满 70 年，仍受版权保护。**本站不转载任何此类译本的原文**，仅在"译文说明"中提及其存在，供读者自行查阅正版出版物。
 - **本站学习译文**：由 AI 辅助生成，以贴近原文结构、便于学习为目标，不追求独立文学价值。这些译文可视为本项目的原创内容，采用与本项目其余部分相同的开源/非商业学习用途授权（具体授权条款请项目维护者自行补充选定的 License，例如 CC BY-NC 4.0）。
-- **AI 配图**（未来添加时）：生成的图片需在页面中明确标注 "AI-generated illustration inspired by the poem"，并遵循所使用图像生成工具自身的服务条款。
+- **AI 配图**：生成的图片已在页面中标注 "AI-generated illustration inspired by the poem"，并遵循所使用图像生成工具自身的服务条款。
 
 ---
 
@@ -238,7 +264,7 @@ node src/build.js
   1. 制定强制性的 **[SOURCES.md](SOURCES.md)**（运营方分组表、来源三级分级、规则 A–E、新增诗歌的来源工作流）；
   2. 写了机器校验 `npm run check`（`src/validate-sources.js`），把规则变成可执行的检查，而不是口头约定；
   3. 对全部 33 首做了审计。**结果：0 个 ERROR** —— 没有任何一首诗真的只靠 Possel 一组站点自证，每首都另有至少一个独立来源，此前记录的逐词比对结论全部有效、不予撤回。
-  但有 **12 首**在扣除三级来源后独立来源不足 2 个（多为「Zeno/Wikipedia + gedichte7」的组合）。
+     但有 **12 首**在扣除三级来源后独立来源不足 2 个（多为「Zeno/Wikipedia + gedichte7」的组合）。
 
   **补验证已于 2026 年 8 月完成**：这 12 首逐首补入了第三个独立来源（Zeno 一级来源 3 首、deutschelyrik.de 二级来源 8 首），现全站 **0 个 ERROR、1 个 WARN、32 首通过**。补验证并非走过场，它实际改动了正文并暴露了三类问题：
 
@@ -247,7 +273,7 @@ node src/build.js
   - **查出 3 首诗存在真正的版本异文**（17 `ewgen`/`wahren`、20 `im Himmel`/`in Himmel`、21 两个传本并存）。这三处一律**不擅改正文**，而是并列两读、说明倾向、列为待核实项。
 
   余下 1 个 WARN（33 Weltende）与几项未了结的版本问题见 [SOURCES.md](SOURCES.md) 第 8 节。
-- **第四批 4 首的 AI 配图尚未生成**（见上文说明）；每首诗的 `image_prompt` 已按 4:3 横版写好，可直接用于生成。
+
 - 各批次中**尚未解决的文本疑点**均已写入对应诗页的"校对记录"，并在 checklist 中标为未完成，特此汇总提醒：
   - Novalis《Wenn nicht mehr Zahlen und Figuren》第10、11 行存在两处实质异文（`ewgen`/`wahren`、`vor Einem`/`von einem`），本站从历史批评版，但流通版本异文的来源尚未查明。
   - Claudius《Abendlied》1783 年版第 35 行作 `Laß uns im Himmel kommen`（第三格），按现代语法应为 `in den Himmel`；究竟是 18 世纪用法波动还是排印之误，本站未能确定。

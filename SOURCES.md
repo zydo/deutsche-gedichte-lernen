@@ -20,24 +20,37 @@
 ## 2. 核心规则
 
 ### 规则 A —— 数量
+
 每首诗的 `german_sources` **至少 2 条**。
 
 ### 规则 B —— 独立性
+
 这 2 条**必须分属不同的运营方组**（见第 3 节的分组表）。
 同一组内的任意两个站点，无论域名是否相同，**都不算两个来源**。
 
 ### 规则 C —— 镜像不算
+
 同一文本的转载、镜像、聚合（如某站点直接抄录 Wikisource 全文）不构成独立来源，
 即使域名不同。判断标准是：**这两个来源是否各自独立地录入／校勘过文本**。
 
 ### 规则 D —— 优先级
+
 在满足 A、B 的前提下，应尽量包含**至少一个第 4 节的「一级来源」**
 （即标注了纸质校勘版出处的数字化全集）。仅有两个二级选本相互印证，可信度偏低，
 应在 `verification_notes` 中说明。
 
 ### 规则 E —— 如实记录
+
 两个来源之间的任何差异（异文、标点、正字法、分节）都必须写入 `verification_notes`，
 并说明本站采用了哪一个、依据是什么。**发现"无差异"也要写明"未发现异文"。**
+
+### 规则 F —— 存档
+
+出处链接不等于出处：网页会改版、下线或被悄悄修改，事后无从复核。
+`german_sources` 中的每个 URL 都必须用 `npm run snapshot` 抓取一份**本地存档**，
+正本存于 `snapshots/raw/`，抓取时间与 SHA-256 记入 `snapshots/manifest.json`，
+并在诗页出处栏以「快照（YYYY-MM-DD）」呈现。抓取失败的来源照实标注为「快照（未能抓取）」，
+不得静默跳过。存档只发布纯文本，不镜像对方站点的版式与脚本。
 
 ---
 
@@ -116,7 +129,8 @@ npm run check
 3. 逐词逐标点比对，把**所有**差异写进 `verification_notes`。
 4. 若要额外附上 `gedichte7.de` 的现代化文本，作为**第三条**列出，并在 `note` 中标明其为三级来源。
 5. 运行 `npm run check`，确认无 `ERROR`。
-6. 凡未能亲自查阅原刊影印件的，一律在 `verification_notes` 的"待核实项"中写明。
+6. 运行 `npm run snapshot` 抓取新来源的网页存档（规则 F），再 `npm run build`。
+7. 凡未能亲自查阅原刊影印件的，一律在 `verification_notes` 的"待核实项"中写明。
 
 ---
 
@@ -126,24 +140,24 @@ npm run check
 
 ### 已完成 ✅（16 首）
 
-| # | 诗 | 补入的来源 | 比对结果 |
-|---|---|---|---|
-| 08 | Er ist's | Zeno（Mörike SW Bd.1, 1967, S.684）**一级** | 一致；`hab`/`hab'` 省字符差异 |
-| 16 | Das Mädchen aus der Fremde | deutschelyrik.de | **完全一致，零异文**；确认 `wußte`、`andern`、`glücklichern` |
-| 17 | Wenn nicht mehr Zahlen und Figuren | deutschelyrik.de | ⚠️ 第 10 行 `ewgen` / `wahren` **实词异文**；仍缺一级来源 |
-| 18 | Am Turme | Zeno（Droste SW Bd.1, 1973, S.68–69）**一级** | 实词标点全同；8 处省字符惯例差异；确认属「Fels, Wald und See」辑 |
-| 20 | Abendlied | Zeno（Claudius《作品单卷本》1976, S.217–218）**一级** | ⚠️ 第 35 行 `im Himmel` / `in Himmel` **实词异文**；另 6 处拼写标点 |
-| 21 | Der Spinnerin Nachtlied | deutschelyrik.de | ⚠️ 疑似**两个传本**：`Als`/`Da`、`Denk' ich wohl`/`Gedenk ich`；题名亦不同 |
-| 22 | Frühlingsglaube | deutschelyrik.de | **完全一致，零异文**；确认 `Herze`/`Herz` 与第 10 行冒号 |
-| 24 | Herbstbild | Zeno（Hebbel SW I, 1911ff, S.232）**一级** | 一致；5 处 19 世纪正字法；另确认辑目归属 |
-| 25 | Die Stadt | Zeno（Storm SW Bd.1, ⁴1978, S.112）**一级** | 一致；`ohn`/`ohn'`/`ohne` **三方各异** |
-| 26 | Der römische Brunnen | deutschelyrik.de | 完全一致，另确证单节排版 |
-| 27 | Herr von Ribbeck | deutschelyrik.de | **查出 Zeno 的转录讹误**，正文已改 `ich gew di` → `ick gew di` |
-| 28 | Die Beiden | Zeno（Hofmannsthal GW Bd.1, 1924, S.7）**一级** | **查出本站转录错误**；`glich` 与标题大小写定案 |
-| 30 | Es ist alles eitel | deutschelyrik.de | 实词全同；5 处现代化程度差异（`vor`/`für`、`findt`/`find't` 等）|
-| 31 | Tränen des Vaterlandes | Zeno（Gryphius GA Bd.1, 1963, S.48）**一级** | 查得 **1643 年中间稿全文**；见下方限定 |
-| 32 | An Sich | Zeno（Fleming, Lappenberg 1865, S.472）**一级** | 一致；**发现辑内编号差异**（Lappenberg 26 vs. Olearius 24）|
-| 33 | Weltende | deutschelyrik.de | 用词一致；第 3 行行末逗号异文 |
+| #   | 诗                                 | 补入的来源                                            | 比对结果                                                                   |
+| --- | ---------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------- |
+| 08  | Er ist's                           | Zeno（Mörike SW Bd.1, 1967, S.684）**一级**           | 一致；`hab`/`hab'` 省字符差异                                              |
+| 16  | Das Mädchen aus der Fremde         | deutschelyrik.de                                      | **完全一致，零异文**；确认 `wußte`、`andern`、`glücklichern`               |
+| 17  | Wenn nicht mehr Zahlen und Figuren | deutschelyrik.de                                      | ⚠️ 第 10 行 `ewgen` / `wahren` **实词异文**；仍缺一级来源                  |
+| 18  | Am Turme                           | Zeno（Droste SW Bd.1, 1973, S.68–69）**一级**         | 实词标点全同；8 处省字符惯例差异；确认属「Fels, Wald und See」辑           |
+| 20  | Abendlied                          | Zeno（Claudius《作品单卷本》1976, S.217–218）**一级** | ⚠️ 第 35 行 `im Himmel` / `in Himmel` **实词异文**；另 6 处拼写标点        |
+| 21  | Der Spinnerin Nachtlied            | deutschelyrik.de                                      | ⚠️ 疑似**两个传本**：`Als`/`Da`、`Denk' ich wohl`/`Gedenk ich`；题名亦不同 |
+| 22  | Frühlingsglaube                    | deutschelyrik.de                                      | **完全一致，零异文**；确认 `Herze`/`Herz` 与第 10 行冒号                   |
+| 24  | Herbstbild                         | Zeno（Hebbel SW I, 1911ff, S.232）**一级**            | 一致；5 处 19 世纪正字法；另确认辑目归属                                   |
+| 25  | Die Stadt                          | Zeno（Storm SW Bd.1, ⁴1978, S.112）**一级**           | 一致；`ohn`/`ohn'`/`ohne` **三方各异**                                     |
+| 26  | Der römische Brunnen               | deutschelyrik.de                                      | 完全一致，另确证单节排版                                                   |
+| 27  | Herr von Ribbeck                   | deutschelyrik.de                                      | **查出 Zeno 的转录讹误**，正文已改 `ich gew di` → `ick gew di`             |
+| 28  | Die Beiden                         | Zeno（Hofmannsthal GW Bd.1, 1924, S.7）**一级**       | **查出本站转录错误**；`glich` 与标题大小写定案                             |
+| 30  | Es ist alles eitel                 | deutschelyrik.de                                      | 实词全同；5 处现代化程度差异（`vor`/`für`、`findt`/`find't` 等）           |
+| 31  | Tränen des Vaterlandes             | Zeno（Gryphius GA Bd.1, 1963, S.48）**一级**          | 查得 **1643 年中间稿全文**；见下方限定                                     |
+| 32  | An Sich                            | Zeno（Fleming, Lappenberg 1865, S.472）**一级**       | 一致；**发现辑内编号差异**（Lappenberg 26 vs. Olearius 24）                |
+| 33  | Weltende                           | deutschelyrik.de                                      | 用词一致；第 3 行行末逗号异文                                              |
 
 ### 本轮最有价值的三个发现
 
@@ -161,13 +175,13 @@ npm run check
 
 ### 仍未了结的问题 ⏳
 
-| # | 诗 | 问题 | 下一步 |
-|---|---|---|---|
-| 33 | Weltende | **唯一的 WARN**：planetlyrik + possel + deutschelyrik，三源皆非一级 | 查 1911 年《Der Demokrat》初刊，或 de.wikipedia 的 Weltende 条目（wikimedia 组，且常引校勘版）|
-| 31 | Tränen des Vaterlandes | 机器判通过，但 Zeno 给的是 **1643 年稿**，本站正文用的 1663 年最后手定版仍只有 Wikipedia 一家转录 | 找一个独立转录 1663 年版的一级来源 |
-| 17 | Wenn nicht mehr Zahlen und Figuren | 第 10 行 `ewgen` / `wahren`；三来源中无一级来源 | Novalis 历史批评版（Kluckhohn / Samuel 编）|
-| 20 | Abendlied | 第 35 行 `im` / `in Himmel`（Zeno 的 `in` 是"较难读法"，更可能是原貌）；另本站正文正字法不自洽（保留 `seyn` 却用现代的 `im`）| 1779 年《Musenalmanach》初刊或 1783 年《Asmus》第四部影印件 |
-| 21 | Der Spinnerin Nachtlied | 两个传本并存，尚不能判定孰先孰后 | 1801 年《戈德维》原刊或 Frankfurter Brentano-Ausgabe |
+| #   | 诗                                 | 问题                                                                                                                          | 下一步                                                                                         |
+| --- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 33  | Weltende                           | **唯一的 WARN**：planetlyrik + possel + deutschelyrik，三源皆非一级                                                           | 查 1911 年《Der Demokrat》初刊，或 de.wikipedia 的 Weltende 条目（wikimedia 组，且常引校勘版） |
+| 31  | Tränen des Vaterlandes             | 机器判通过，但 Zeno 给的是 **1643 年稿**，本站正文用的 1663 年最后手定版仍只有 Wikipedia 一家转录                             | 找一个独立转录 1663 年版的一级来源                                                             |
+| 17  | Wenn nicht mehr Zahlen und Figuren | 第 10 行 `ewgen` / `wahren`；三来源中无一级来源                                                                               | Novalis 历史批评版（Kluckhohn / Samuel 编）                                                    |
+| 20  | Abendlied                          | 第 35 行 `im` / `in Himmel`（Zeno 的 `in` 是"较难读法"，更可能是原貌）；另本站正文正字法不自洽（保留 `seyn` 却用现代的 `im`） | 1779 年《Musenalmanach》初刊或 1783 年《Asmus》第四部影印件                                    |
+| 21  | Der Spinnerin Nachtlied            | 两个传本并存，尚不能判定孰先孰后                                                                                              | 1801 年《戈德维》原刊或 Frankfurter Brentano-Ausgabe                                           |
 
 > ⚠️ **31 的限定仍然有效**：`npm run check` 会判本诗通过，这一点上机器判定优于实情。
 

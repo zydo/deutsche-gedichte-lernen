@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: 来源独立性校验（规则见 SOURCES.md）
+        run: npm run check
       - name: 构建静态站点
         run: npm run build
       - uses: actions/configure-pages@v5

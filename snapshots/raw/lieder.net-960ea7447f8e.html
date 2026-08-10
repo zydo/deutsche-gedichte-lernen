@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> 
+ Die Beiden | Sie trug den Becher in der Hand | LiederNet
+</title>
+<!--<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />-->
+<meta name="google-site-verification" content="1X0R00VYafsido-bovKUJjyCu4rra_W_9elarBiO8H8" />
+<meta charset="UTF-8">
+<meta name="identifier-url" content="https://www.lieder.net/">
+<meta name="copyright" content="© The LiederNet Archive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="favicon" rel="shortcut icon" href="/favicon/favicon.ico?v=2" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png?v=2">
+<meta name="theme-color" content="#284358">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png?v=2">
+<link rel="manifest" href="favicon/site.webmanifest?v=2">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg?v=2" color="#3b6f96">
+<meta name="description" content="Texts and Translations to Lieder and other classical vocal works in more than a hundred languages">
+<meta name="keywords" content="Lieder, translation, lyrics, art song, poetry, vocal text, kunstlieder, uebersetzungen, gedichte, melodie, traductions, Liederen, canzoni, laulua, piosenki, pisne, letra, cancoe">
+<meta name="robots" content="index,follow">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<style type="text/css">
+  @media print {
+    main { display:none; }
+  }
+</style>
+
+<link rel="preload" as="style" href="/lieder/style/style_sheet.css?v=129" type="text/css">
+
+<link rel="stylesheet" href="/lieder/style/style_sheet.css?v=129" type="text/css">
+
+<link rel="preload" fetchpriority="high" as="image" href="/images/Hirt4transp.png" type="image/png">
+
+<link rel="preload" href="/lieder/fonts/lato-v24-latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/lieder/fonts/lato-v24-latin-ext-700.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/lieder/jquery/jquery-3.7.1.min.js" as="script" type="text/javascript">
+<script fetchpriority="high" src="/lieder/jquery/jquery-3.7.1.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+function delete_my_cookie ( cookie_name )
+{
+  var cookie_date = new Date ( );  // current date & time
+  cookie_date.setTime ( cookie_date.getTime() - 1 );
+  document.cookie = cookie_name + "=X;expires=" + cookie_date.toGMTString();
+}
+
+function sign_out() {
+  delete_my_cookie("lieder");
+  location.reload();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const trailingTrimOnly = ['new_text', 'display_text'];
+  
+  // Function to trim an input
+  function trimInput(input) {
+    if (input.tagName === 'TEXTAREA' && trailingTrimOnly.includes(input.id)) {
+      input.value = input.value.replace(/\s+$/g, '');
+    } else if ((input.tagName === 'INPUT' && ['text', 'email', 'search', 'tel', 'url'].includes(input.type)) || 
+               input.tagName === 'TEXTAREA') {
+      input.value = input.value.trim();
+    }
+  }
+  
+  // Attach blur listeners directly to all inputs
+  function attachBlurListeners() {
+    const inputs = document.querySelectorAll('input[type="text"], input[type="email"], input[type="search"], input[type="tel"], input[type="url"], textarea');
+    inputs.forEach(function(input) {
+      input.addEventListener('blur', function() {
+        trimInput(this);
+      });
+    });
+  }
+  
+  // Run initially
+  attachBlurListeners();
+  
+  // Also use MutationObserver to handle dynamically added inputs
+  const observer = new MutationObserver(function(mutations) {
+    attachBlurListeners();
+  });
+  
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+});
+
+</script>
+
+
+
+
+<script async src="/lieder/js/sha3.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("body").show();
+        sf();
+    });
+
+function sf() { 
+    if (document.f) { 
+        if (document.f.username) {
+            document.f.username.focus(); 
+        } else {
+            document.f.submit.focus(); 
+        }
+    }
+}
+
+function hashIt() {
+   var hash = CryptoJS.SHA3($("#password").val(), { outputLength: 224 });
+   $("#password").val(hash);
+   return true;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function readCookie(desc) {
+  var nameEq = desc + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cArray = decodedCookie.split(';');
+  for(var i = 0; i < cArray.length; i++) {
+    var ck = cArray[i];
+    while (ck.charAt(0) == ' ') {
+      ck = ck.substring(1);
+    }
+    if (ck.indexOf(nameEq) == 0) {
+      return ck.substring(nameEq.length, ck.length);
+    }
+  }
+  return "";
+}
+
+function createCookie(keyName,value,days) {
+    var today = new Date();
+    var expiry = new Date(today.getTime() + (days*24*60*60*1000));
+    document.cookie = keyName + "=" + value + ";expires=" + expiry.toUTCString() + ";path=/";
+}
+
+function updateFastScrollOffset() {
+    var cookieNotice = document.getElementById('cookie-notice');
+    var root = document.documentElement;
+    var offset = 0;
+    var isVisible = false;
+
+    if (cookieNotice) {
+        if (cookieNotice.style.visibility) {
+            isVisible = cookieNotice.style.visibility === 'visible';
+        } else {
+            isVisible = window.getComputedStyle(cookieNotice).visibility === 'visible';
+        }
+    }
+
+    if (isVisible) {
+        offset = cookieNotice.offsetHeight + 16;
+    }
+
+    root.style.setProperty('--cookie-notice-offset', offset + 'px');
+}
+
+function accept() {
+    createCookie('accepts','Y','60');
+    hasAccepted();
+}
+
+function hasAccepted() {
+    var accepted = readCookie('accepts');
+    if (accepted != 'Y') {
+        document.getElementById('cookie-notice').style.visibility='visible';
+        document.getElementById('cookie-notice').style.opacity=1;
+    } else {
+        document.getElementById('cookie-notice').style.visibility='hidden';
+        document.getElementById('cookie-notice').style.opacity=0;
+    }
+
+    updateFastScrollOffset();
+}
+
+document.addEventListener('DOMContentLoaded', hasAccepted);
+window.addEventListener('resize', updateFastScrollOffset);
+
+function toggle(div_id) {
+	var el = document.getElementById(div_id);
+	if ( el.style.display == 'none' ) {	el.style.display = 'block';}
+	else {el.style.display = 'none';}
+}
+
+function toggleMenu() {
+    var menu = document.getElementById('left-nav');
+    if (menu.classList.contains('nav-hidden')) { 
+        openMenu();
+    } else {
+        closeMenu();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(e) {
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    var w = window.matchMedia("screen and (min-width: 100rem)");
+    // Snap menu and arrow to correct state on initial page load
+    menu.style.transition = 'none';
+    arrow.style.transition = 'none';
+    autoMenu();
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            menu.style.transition = '';
+            arrow.style.transition = '';
+        });
+    });
+
+    w.addListener(autoMenu);
+    function autoMenu() {
+        if (w.matches) { 
+            openMenu();
+        } else {
+            closeMenu();
+        }
+    }
+});
+
+window.addEventListener('load', () => {
+    const emails = document.getElementsByClassName('email');
+        Array.from(emails).forEach(function(email) {
+            const decoded = atob(email.name);
+            email.href = "mailto:" + decoded;
+    });
+});
+
+function openMenu() {
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    menu.classList.remove('nav-initial');
+    menu.classList.remove('nav-hidden');
+    menu.classList.add('nav-show');
+    arrow.classList.add('menu-close-arrow');
+    if (window.matchMedia("(min-width: 1600px)").matches) {
+        menu.classList.add('menu-width');
+        document.getElementById('donations-card').classList.add('donations-wide');
+    }
+    document.getElementById('menu-toggle-text').textContent = 'Close Menu';
+}
+
+function closeMenu() {
+    document.getElementById('menu-toggle-text').textContent = 'MENU';
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    menu.classList.remove('nav-initial');
+    arrow.classList.remove('menu-close-arrow');
+    menu.classList.remove('nav-show');
+    menu.classList.add('nav-hidden');
+    menu.classList.remove('menu-width');
+    document.getElementById('donations-card').classList.remove('donations-wide');
+}
+
+document.addEventListener('keyup', function (event) {
+    var key = event.key;
+    if (key === 'Escape' || key === 'Esc' || key === 27)  {
+        if (document.getElementById('left-nav').classList.contains('nav-show')) {
+            closeMenu();
+        }
+    }
+});
+
+window.addEventListener('beforeunload', function() {
+    var spinner = document.querySelector('.loader');
+    spinner.style.visibility = 'visible';
+    spinner.style.opacity = 1;
+    // For browsers without cross-document view transitions
+    if (!CSS.supports('selector(:active-view-transition)')) {
+        document.body.style.visibility = 'hidden';
+    }
+});
+
+// Hide spinner before view-transition snapshot
+window.addEventListener('pageswap', function() {
+    var spinner = document.querySelector('.loader');
+    spinner.style.transition = 'none';
+    spinner.style.visibility = 'hidden';
+    spinner.style.opacity = 0;
+});
+
+window.addEventListener('pageshow', function() {
+    var spinner = document.querySelector('.loader');
+    spinner.style.visibility = 'hidden';
+    spinner.style.opacity = 0;
+    document.body.style.visibility = '';
+});
+
+// During view-transition navigation, snap menu to correct state
+window.addEventListener('pagereveal', function() {
+    var menu = document.getElementById('left-nav');
+    var arrow = document.getElementById('menu-toggle-arrow');
+    menu.style.transition = 'none';
+    arrow.style.transition = 'none';
+    var w = window.matchMedia('screen and (min-width: 100rem)');
+    if (w.matches) {
+        openMenu();
+    } else {
+        closeMenu();
+    }
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            menu.style.transition = '';
+            arrow.style.transition = '';
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const upBtn = document.getElementById("fast-scroll-up");
+    const downBtn = document.getElementById("fast-scroll-down");
+    const contentSection = document.getElementById("content");
+    const buttonRevealOffset = 300;
+    const topScrollThreshold = 10;
+
+    if (!upBtn || !downBtn || !contentSection) return;
+
+    const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const scrollBehavior = motionOk ? 'smooth' : 'auto';
+
+    let ticking = false;
+    let hasScrolled = false;
+
+    function getScrollTop() {
+        return window.scrollY || document.documentElement.scrollTop || 0;
+    }
+
+    function evaluateScrollButtons() {
+        const rect = contentSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const scrollTop = getScrollTop();
+
+        if (rect.top < -buttonRevealOffset) {
+            upBtn.classList.add("show");
+        } else {
+            upBtn.classList.remove("show");
+        }
+
+        if (hasScrolled && scrollTop > topScrollThreshold && rect.bottom > viewportHeight + buttonRevealOffset) {
+            downBtn.classList.add("show");
+        } else {
+            downBtn.classList.remove("show");
+        }
+    }
+
+    function scheduleButtonEvaluation() {
+        if (!ticking) {
+            requestAnimationFrame(function() {
+                evaluateScrollButtons();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    function onScroll() {
+        hasScrolled = getScrollTop() > topScrollThreshold;
+        scheduleButtonEvaluation();
+    }
+
+    function onResize() {
+        updateFastScrollOffset();
+        scheduleButtonEvaluation();
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+    setTimeout(function() {
+        updateFastScrollOffset();
+        evaluateScrollButtons();
+    }, 100);
+
+    upBtn.addEventListener("click", function() {
+        contentSection.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
+    });
+
+    downBtn.addEventListener("click", function() {
+        contentSection.scrollIntoView({ behavior: scrollBehavior, block: 'end' });
+    });
+});
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+function hasSessionId(url) {
+  try {
+    const urlObj = new URL(url);
+    const params = urlObj.searchParams;
+    
+    // Common session ID parameter names (case-insensitive)
+    const sessionParams = [
+      'sid',
+      'sessionid',
+      'session_id',
+      'phpsessid',
+      'jsessionid',
+      'aspsessionid',
+      'aspsession',
+      'cfid',
+      'cftoken',
+      'sessid',
+      'session'
+    ];
+    
+    // Check if any session parameter exists
+    for (const param of sessionParams) {
+      // Check both lowercase and uppercase versions
+      if (params.has(param) || params.has(param.toUpperCase())) {
+        return true;
+      }
+    }
+    
+    return false;
+    
+  } catch (e) {
+    // If URL is invalid, return true to flag it for review
+    console.warn('Invalid URL:', url, e);
+    return true;
+  }
+}
+
+function isValidUrl(url) {
+  if (!url) return false;
+  
+  try {
+    const parsed = new URL(url);
+    
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+      return false;
+    }
+    
+    if (!parsed.hostname || !parsed.hostname.includes('.')) {
+      return false;
+    }
+    
+    const parts = parsed.hostname.split('.');
+    const tld = parts[parts.length - 1];
+    if (tld.length < 2) {
+      return false;
+    }
+    
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+document.addEventListener('submit', function(e) {
+  // Create an array to hold all URL inputs we need to check
+  const urlInputs = [];
+  
+  // Check for input[name="url"]
+  const urlInput = e.target.querySelector('input[name="url"]');
+  if (urlInput) {
+    urlInputs.push(urlInput);
+  }
+
+  // Check for input[name="new_website"]
+  const newWebsiteInput = e.target.querySelector('input[name="new_website"]');
+  if (newWebsiteInput) {
+    urlInputs.push(newWebsiteInput);
+  }
+  
+  // Check for inputs with id matching 'new_link' followed by numbers
+  const newLinkInputs = e.target.querySelectorAll('input[id^="new_link"]');
+  newLinkInputs.forEach(input => {
+    // Verify it matches the pattern exactly (new_link followed by digits)
+    if (/^new_link\d+$/.test(input.id)) {
+      urlInputs.push(input);
+    }
+  });
+  
+  // Validate all URL inputs
+  for (const input of urlInputs) {
+    const url = input.value.trim();
+    
+    // Skip empty inputs
+    if (!url) continue;
+    
+    if (!isValidUrl(url)) {
+      e.preventDefault();
+      alert('Please fix the URL ' + url + ' - it needs to be a valid URL starting with http:// or https:// followed by an internet webserver name');
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+    
+    if (hasSessionId(url)) {
+      e.preventDefault();
+      alert('Please remove the session ID from the URL ' + url);
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+
+    if (/lieder\.net/i.test(url)) {
+      e.preventDefault();
+      alert("Oops, your external link does not appear to be external, but rather links to LiederNet! Please try again. Perhaps your computer didn't hear your copy command.");
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+
+
+    if (/imslp\.(org|info|net)/i.test(url) && /\.pdf/i.test(url)) {
+      e.preventDefault();
+      alert("Please link to the main page of the work in IMSLP. The PDF file locations have a way of moving around sometimes.");
+      input.focus();
+      input.style.borderColor = 'red';
+      return;
+    }
+
+    // Check for video and audio platforms, as well as social media and shopping
+    if (/youtube/i.test(url) || 
+      /youtu\.be/i.test(url) || 
+      /soundcloud/i.test(url) || 
+      /spotify/i.test(url) ||
+      /vimeo/i.test(url) ||
+      /dailymotion/i.test(url) ||
+      /twitch/i.test(url) ||
+      /tiktok/i.test(url) ||
+      /apple\.com\/.*music/i.test(url) ||
+      /deezer/i.test(url) ||
+      /tidal/i.test(url) ||
+      /pandora/i.test(url) ||
+      /bandcamp/i.test(url) ||
+      /facebook\.com\/.*\/videos/i.test(url) ||
+      /instagram\.com\/.*\/reels/i.test(url) ||
+      /shopify/i.test(url) ||
+      /sheetmusicplus/i.test(url) ||
+      /\.zip/i.test(url) ||
+      /ebay/i.test(url) ||
+      /\.(mp3|mp4|wav|m4a|flac|ogg|avi|mov|wmv|flv|webm)(\?|$)/i.test(url)) {
+          e.preventDefault();
+          alert("Please do not link to videos, recordings, social media sites, zip files, or shopping platforms.");
+          input.focus();
+          input.style.borderColor = 'red';
+          return;
+    }
+
+  }
+});
+
+// Reset border color when user starts typing
+document.addEventListener('input', function(e) {
+  // Check if it's one of the URL inputs we validate
+  if (e.target.name === 'url' || (e.target.id && /^new_link\d+$/.test(e.target.id))) {
+    e.target.style.borderColor = '';
+  }
+});
+
+</script>
+
+ <!-- Needed for subdirectories like guest_editors to override -->
+
+<!-- ANALYTICS -->
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/" >
+<link href="https://www.googletagmanager.com/gtag/js?id=UA-34594381-1" rel="preload" as="script">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34594381-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-34594381-1');
+  gtag('config', 'G-TZQ9RWX000');
+</script>
+<!-- /ANALYTICS -->
+
+<!-- GOOGLE ADS -->
+<!-- /GOOGLE ADS -->
+
+</head>
+
+<body 
+onLoad=sf()
+>
+<div class="loader"></div>
+
+
+<!-- FUNDRAISING BANNER -->
+
+
+
+<script>
+function dismiss() {
+    createCookie('new_feature_dismissed','Y','10');
+    hasDismissed();
+}
+
+function hasDismissed() {
+    var dismissed = readCookie('new_feature_dismissed');
+    if (dismissed === 'Y') {
+        var fundraiser = document.getElementById('fundraiser');
+        void fundraiser.offsetWidth;
+        fundraiser.classList.add('hidden');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', hasDismissed);
+</script>
+
+<!-- /FUNDRAISING BANNER -->
+
+<!-- Maintenance window banner -->
+<!-- Maintenance window banner -->
+
+
+<!-- SITE BANNER -->
+<header role="banner" id="site-header" class="site-header">
+    <div class="banner">
+        <div class="banner-background"></div>
+        <div class="logo-box">
+            <a class="logo-home" href="/lieder/">
+<img aria-label="LiederNet Archive logo" class="logo-large" class="logo-large" src="/images/LN_logo_colour.svg" alt="LiederNet logo">
+            </a>
+        </div>    
+
+        <!-- no log-in button for now
+        <a href="/lieder/my_account.html?sign_in=1">
+            <div class="login-button">
+                <p class="login-btn-text">Log in</p>
+            </div>
+        </a>
+        -->
+    </div>
+    
+</header>
+<!-- /SITE BANNER -->
+
+<!-- MAIN -->
+<main id="main" class="main">
+
+<!-- INFO BAR -->
+<div id="info-bar" class="info-bar">
+    <span class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+        <span class="arrow-container">
+            <svg height="19" width="19">
+                <polygon id="menu-toggle-arrow" class="menu-arrow" points="4,3 4,19 19,11" />
+            </svg>
+        </span>
+    <span id="menu-toggle-text" class="menu-toggle-text"></span>
+    </span>
+    <span class="user-info">
+
+
+    </span>
+</div>
+<!-- /INFO BAR -->
+<!-- NAVBAR + CONTENT -->
+<div class="nav-and-content">
+<!-- NAVBAR -->
+<nav class="left-nav nav-initial" id="left-nav"><p class="nav-title">CONTENTS</p>
+    <span class="mobile-menu-close" onclick="toggleMenu()">&times;</span>
+    <ul>
+    <li class="nav-item"><a href="/lieder/">Home</a> | <a href="/lieder/intro.html">Introduction</a></li>
+    <li class="nav-item"><a href="/lieder/cindex.html">Composers&nbsp;(21,011)</a></li>
+    <li class="nav-item"><a href="/lieder/pindex.html">Text&nbsp;Authors&nbsp;(21,050)</a></li>
+    <li class="nav-item">
+        <a href="/lieder/random.html?78824">Go&nbsp;to&nbsp;a&nbsp;Random&nbsp;Text</a></li>
+    <li class="nav-item"><a href="/lieder/new.html">What&rsquo;s New</a></li>
+    <li class="nav-item"><a href="/lieder/tour.html">A&nbsp;Small&nbsp;Tour</a></li>
+    <li class="nav-item"><a href="/lieder/faq.html">FAQ & Links</a></li>
+    <li class="nav-item"><a href="/lieder/donors.html">Donors</a></li>
+    </ul>
+    <ul><li class="nav-item donate-page-btn"><a href="/lieder/donate.html">DONATE</a></li></ul>
+    <p class="nav-title">UTILITIES</p>
+    <ul>
+    <li class="nav-item"><a href="/lieder/search.html">Search&nbsp;Everything</a></li>
+    <li class="nav-item"><a href="/lieder/quick_find.html">Search&nbsp;by&nbsp;Surname</a></li>
+    <li class="nav-item"><a href="/lieder/find_titles_and_first_lines.html">Search&nbsp;by&nbsp;Title&nbsp;or&nbsp;First&nbsp;Line</a></li>
+    <li class="nav-item"><a href="/lieder/find_settings_by_date.html">Search&nbsp;by&nbsp;Year</a></li>
+    <li class="nav-item"><a href="/lieder/find_text_compilations.html">Search&nbsp;by&nbsp;Collection</a></li>
+    <!-- <li class="nav-item"><a href="/lieder/random.html?type=sc">Random&nbsp;Song&nbsp;Cycle</a></li> --> 
+    </ul>
+    <p class="nav-title">CREDITS</p>
+    <ul>
+    <li class="nav-item"><a href="/lieder/emily_ezust.html">Emily&nbsp;Ezust</a></li> <!-- New page? -->
+    <li class="nav-item"><a href="/lieder/contrib.html">Contributors&nbsp;(1,134)</a></li>
+    <li class="nav-item"><a href="/lieder/contact.html">Contact Information</a></li>
+    <li class="nav-item"><a href="/lieder/biblio.html">Bibliography</a></li>    
+
+    <li class="nav-item"><hr aria-label="separator"></li>
+
+    <li class="nav-item"><a href="/lieder/copyright.html">Copyright Statement</a></li>
+    <li class="nav-item"><a href="/lieder/privacy_policy.html">Privacy Policy</a></li>
+    
+
+    <li class="nav-item"></li>
+    </ul>
+    <p style="text-align: center; margin: 0.5rem;">
+        <a class="fb-link" href="https://www.facebook.com/TheLiedArtSongAndChoralTextsArchive">Follow us on Facebook</a>
+    </p>
+
+</nav>
+<!-- /NAVBAR -->
+  
+<!-- PRIMARY CONTENT AND ASSOCIATED ELEMENTS -->
+    <section id="content" class="content">
+
+
+
+   
+
+<a id="placard" style="display: none;" class="placard" href="donate.html" target="_blank">
+</a>
+
+
+
+<div id="text-buttons">
+</div>
+
+<div id="related-ad-and-text">
+<!-- logic for the related ad -->
+
+
+
+<div id="text-table" class="text-table">
+    <div id="tr-auth" class="auth tr-auth"> by <a href="/lieder/get_author_texts.html?AuthorId=1229">Hugo Hofmann, Edler von Hofmannsthal</a> (1874 - 1929)</div><br>
+        <div id="tr-title" class="title tr-title">Die&nbsp;Beiden</div>
+        <div id="tr-lang" class="lang tr-lang detail">Language:&ensp;<span class="orig">German&nbsp;(Deutsch)&nbsp;</span></div>
+        <div id="tr-trs" class="trs tr-trs detail"><span>Our&nbsp;translations:&nbsp; <b class="tr"><a title="English" class="transbox1" href="/lieder/get_text.html?TextId=58114">ENG</a></b> <b class="tr"><a title="English" class="transbox1" href="/lieder/get_text.html?TextId=58115">ENG</a></b> <b class="tr"><a title="English" class="transbox1" href="/lieder/get_text.html?TextId=91363">ENG</a></b> <b class="tr"><a title="French&nbsp;(Français)" class="transbox1" href="/lieder/get_text.html?TextId=73805">FRE</a></b> <b class="tr"><a title="Italian&nbsp;(Italiano)" class="transbox1" href="/lieder/get_text.html?TextId=50375">ITA</a></b></span></div>
+        <div id="tr-prmlinks" class="prm-links tr-prmlinks detail"><a href="/lieder/get_text.html?select_for_diff=1&TextId=8228">Choose for Diff</a></div>
+        <div id="tr-gelinks" class="ge-links tr-gelinks detail"></div>
+        <div id="tr-admlinks" class="adm-links tr-admlinks detail"></div>
+        <div id="the-tr" class="text the-tr notranslate"><pre>Sie trug den Becher in der Hand
+-- Ihr Kinn und Mund glich seinem Rand --
+So leicht und sicher war ihr Gang,
+Kein Tropfen aus dem Becher sprang.
+
+So leicht und fest war seine Hand:
+Er ritt auf einem jungen Pferde
+Und mit nachlässiger Gebärde
+Erzwang er, daß es zitternd stand.
+
+Jedoch wenn er aus ihrer Hand 
+Den leichten Becher nehmen sollte,
+So war es beiden [allzu]<sup>1</sup> schwer:
+Denn beide bebten sie so sehr,
+Daß keine Hand die andre fand,
+Und dunkler Wein am Boden rollte.</pre>
+</div>
+        <div id="tr-sung-texts" class="notes tr-sung-texts detail"><div class="sung-texts"><p>Available sung texts: <a style="font-weight: normal; font-style: italic" href="/lieder/about_sung_texts.html">&emsp;&ensp;&larr;&nbsp;What is this?</a></p><span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=8228&SettingId=9848">A. Schoenberg</a>&ensp;<span>&bull;&nbsp;&nbsp;&nbsp;</span><a href="/lieder/get_text.html?TextId=8228&SettingId=9849">A. Zemlinsky</a>&ensp;</div></div>
+        <div id="tr-notes" class="notes tr-notes detail notranslate"><p></p><a href="get_text.html?TextId=8228&RF=1">View text without footnotes</a><br>
+ <p>Confirmed with <u>Deutsche Lyrik seit Liliencron</u>, herausgegeben von Hans Bethge, Leipzig: Hesse & Becker Verlag, 1921, pp. 119-120.</p>
+
+<sup>1</sup> Schoenberg, Zemlinsky: "gar zu"<br><br>
+<p><p class="text-info">Text Authorship:</p><ul><li> by <a href="/lieder/get_author_texts.html?AuthorId=1229">Hugo Hofmann, Edler von Hofmannsthal</a> (1874 - 1929), "Die Beiden"&emsp13;<a href="/lieder/status_info.html"><span class="verified">[author's text checked 1 time against a primary source]</span></a></li></ul></p><a id="settings"></a>
+<p class="text-info">Musical settings <span style="font-weight:normal;">(art songs, Lieder, m&eacute;lodies, (etc.), choral pieces, and other vocal works set to this text), listed by composer (not necessarily exhaustive):</span></p><ul>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=40820">Antonio Berti</a> , "Die Beiden", published 1992 [&nbsp;voice and piano&nbsp;], Milano : Antonio Berti&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=3611">Gerard Bunk</a> (1888 - 1958), "Die Beiden", op. 56 (<i><a href="/lieder/assemble_opus.html?ComposerId=3611&Opus=56">Sechs Lieder nach Texten verschieder Dichter</a></i>) no. 4 (1915/6) [&nbsp;voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=8290">Paul Frankenburger</a> (1897 - 1984), "Die Beiden", from  <a href="/lieder/assemble_texts.html?SongCycleId=1434">Vier Lieder nach Gedichten von Hugo von Hofmannsthal</a>, no. 3&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6679">Sándor Jemnitz</a> (1890 - 1963), "Die Beiden", op. 6 (<i><a href="/lieder/assemble_opus.html?ComposerId=6679&Opus=6">Neun Lieder</a></i>) no. 7, published 1920 [&nbsp;bass and piano&nbsp;], München: Wunderhornverlag&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=12463">Robert Owens</a> (1925 - 2017), "Die Beiden", op. 47 (<i><a href="/lieder/assemble_opus.html?ComposerId=12463&Opus=47">3 Lieder</a></i>) no. 2 [&nbsp;low voice and piano&nbsp;]&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=2512">Arnold Franz Walter Schoenberg</a> (1874 - 1951), "Die Beiden", 189-?&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=40818">Paul Weiss</a> (1898  - 1967 ), "Die Beiden", op. 19 (<i><a href="/lieder/assemble_opus.html?ComposerId=40818&Opus=19">Sechs Lieder</a></i>) no. 4, published 1929 [&nbsp;voice and piano&nbsp;], Wien, Leipzig : Leo Tublin&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="unverified">[sung text not yet checked]</span></a></li>
+<li>  by <a href="/lieder/get_settings.html?ComposerId=6269">Alexander Zemlinsky</a> (1871 - 1942), "Die Beiden", 1916&emsp13;<a href="/lieder/status_info.html"><span data-nosnippet class="verified">[sung text checked 1 time]</span></a></li>
+</ul>
+<p>Settings in other languages, adaptations, or excerpts:<br></p>
+<ul>
+<li>Also set in Czech&nbsp;(Čeština), a translation  by <a href="/lieder/get_author_texts.html?AuthorId=40812">M. Havlenové</a>  , "Dva" ; composed by Vladimír Polívka. <ul><li> <a href="/lieder/get_text.html?TextId=175974">Go to the text.</a><br></li></ul></li></ul>
+<p><p class="text-info">Other available&nbsp;translations, adaptations or excerpts, and transliterations (if applicable):</p><ul><li><B class="tr">ENG</B> <a href="/lieder/get_text.html?TextId=58114">English</a> (Walter Meyer)  , "The Two", <b>copyright &copy;</b> 2005, (re)printed on this website with kind permission </li><li><B class="tr">ENG</B> <a href="/lieder/get_text.html?TextId=58115">English</a> (Walter Meyer)  , "The Two", <b>copyright &copy;</b> 2005, (re)printed on this website with kind permission </li><li><B class="tr">ENG</B> <a href="/lieder/get_text.html?TextId=91363">English</a> (Markham Anderson)  , "The two", <b>copyright &copy;</b> 2012, (re)printed on this website with kind permission </li><li><B class="tr">FRE</B> <a href="/lieder/get_text.html?TextId=73805">French&nbsp;(Français)</a> (Pierre Mathé)  , "Tous deux", <b>copyright &copy;</b> 2011, (re)printed on this website with kind permission </li><li><B class="tr">ITA</B> <a href="/lieder/get_text.html?TextId=50375">Italian&nbsp;(Italiano)</a> (Ferdinando Albeggiani)  , "I due", <b>copyright &copy;</b> 2009, (re)printed on this website with kind permission </li></ul></p>
+<br>Researcher  for this page: Peter Donderwinkel <p>This text was added to the website between May 1995 and September 2003.<br>Line count: <b>14</b><br>
+Word count: <b>86</b></p>
+</div>  
+</div>
+</div>
+
+<script src="/lieder/js/placard.js?v=2"></script>
+
+<script>
+    function toggleInterleaved() {
+        if (document.getElementById('text-table').classList.contains('combined-columns')) {
+            separate();
+        } else {
+            combine();
+        }
+    }
+
+    function combine() {
+        showFewer();
+        document.getElementById('text-table').classList.add('combined-columns');
+        document.getElementById('text-title').classList.add('interleaved');
+        document.getElementById('the-text').classList.add('interleaved');
+        document.getElementById('tr-title').classList.add('interleaved', 'interleaved-tr-title');
+        document.getElementById('the-tr').classList.add('interleaved', 'interleaved-tr');
+        document.getElementById('text-auth').classList.add('interleaved');
+        document.getElementById('tr-auth').classList.add('interleaved', 'interleaved-tr-auth');
+        document.getElementById('combine-columns').textContent = 'Show text and translation separately';
+    }
+
+    function separate() {
+        showMore();
+        document.getElementById('text-table').classList.remove('combined-columns');
+        document.getElementById('text-title').classList.remove('interleaved');
+        document.getElementById('the-text').classList.remove('interleaved');
+        document.getElementById('tr-title').classList.remove('interleaved','interleaved-tr-title');
+        document.getElementById('the-tr').classList.remove('interleaved', 'interleaved-tr');
+        document.getElementById('text-auth').classList.remove('interleaved');
+        document.getElementById('tr-auth').classList.remove('interleaved', 'interleaved-tr-auth');
+        document.getElementById('combine-columns').textContent = 'Show text and translation together';
+    }
+
+    function toggleDetails() { 
+        if (document.getElementById('details-btn').textContent === 'Show fewer details') {
+            showFewer();
+        }
+        else {
+            if (document.getElementById('text-table').classList.contains('combined-columns')) {
+                separate();
+            } else {
+                showMore();
+            }
+        }
+    }
+
+    function showMore() {
+        var elements = document.getElementsByClassName('detail')
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = '';
+        }
+        document.getElementById('text-auth').classList.remove('show');
+        document.getElementById('tr-auth').classList.remove('show');
+        document.getElementById('details-btn').textContent = 'Show fewer details';
+    }
+
+    function showFewer() {
+        var elements = document.getElementsByClassName('detail')
+        for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = 'none';
+        }
+        document.getElementById('text-auth').classList.add('show');
+        document.getElementById('tr-auth').classList.add('show');
+        document.getElementById('details-btn').textContent = 'Show more details';
+    }
+</script>
+
+
+
+
+    
+    </section>
+<!-- / PRIMARY CONTENT AND ASSOCIATED ELEMENTS -->
+</div>
+<!-- /NAV + CONTENT -->
+</main>
+<!-- /MAIN -->
+<!-- ANYTHING THAT FOLLOWS THE CONTENT -->
+    <aside id="after-the-content">
+<div id="donations-card" class="donations-card">
+<div class="donations-title">Gentle Reminder</div>
+<p>
+
+This website began in 1995 as a personal project by Emily Ezust, who has
+been working on it full-time without a salary since 2008. Our research has 
+never had any government or institutional funding, so if you
+
+found
+
+the information here useful, please consider making a 
+donation.
+Your help is greatly appreciated!<br>
+&ndash;Emily Ezust, Founder</p>
+<div style="margin-left:auto;margin-right:auto">
+<a class="donate-page-btn" href="/lieder/donate.html">Donate</a>
+</div>
+</div>
+<script>
+function showSometimes() {
+  var rnd = Math.random();
+    if (rnd < .2) {
+      document.getElementById('donations-card').style.display='block';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', showSometimes);
+</script>
+
+
+
+    <br>
+    </aside>
+<!-- /ANYTHING THAT FOLLOWS THE CONTENT -->
+
+<div id="fast-scroll-container" class="fast-scroll-container">
+    <button id="fast-scroll-up" class="fast-scroll-btn" aria-label="Scroll to top of content" title="Top of content">
+        <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
+    </button>
+    <button id="fast-scroll-down" class="fast-scroll-btn" aria-label="Scroll to bottom of content" title="Bottom of content">
+        <svg width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20l8-8h-5v-8h-6v8h-5z"/></svg>
+    </button>
+</div>
+
+<div id="cookie-notice" class="cookie-notice">
+<p class="cookie-msg">We use cookies for internal analytics and to earn much-needed advertising revenue. (Did you know you can help support us by turning off ad-blockers?) To learn more, see our <a href="/lieder/privacy_policy.html">Privacy Policy</a>. To learn how to opt out of cookies, please visit <a href="https://www.cookiesandyou.com/" target="_blank">this site</a>.</p>
+<p class="cookie-btn" onclick="accept()">I acknowledge the use of cookies</p>
+</div> 
+<!-- FOOTER -->
+<footer class="footer">
+    <p><a href="/lieder/contact.html">Contact</a><br>
+    <a href="/lieder/copyright.html">Copyright</a><br>
+    <a href="/lieder/privacy_policy.html">Privacy</a><br></p>
+    <p>Copyright &copy; 2026 The LiederNet Archive</p>
+    <a id="design" href="https://www.thuris.com" target="_blank">Site redesign by Shawn Thuris</a>
+</footer>
+<!-- /FOOTER -->
+</body>
+</html>
+
+ 
+
+
+
+
+
+

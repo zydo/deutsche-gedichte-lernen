@@ -1,0 +1,15 @@
+# 构建产物中的非 HTML 文件由 build.js 原样复制，不需要格式化
+dist/**/*.css
+dist/**/*.svg
+
+# 诗歌数据：每个数组元素单独占一行是刻意为之——诗行、译文行与注释条目
+# 因此能在 git diff 中逐行比对，这正是本项目校对流程依赖的东西。
+# prettier 的 printWidth 会把短诗行折叠成一行，破坏这一点。
+data/poems/*.json
+
+# 出处存档：raw/ 是抓取到的第三方页面正本，必须保持原始字节（SHA-256 已记录在
+# manifest.json 中，格式化会使校验失败）；manifest.json 由脚本生成。
+snapshots/
+
+package-lock.json
+node_modules/
