@@ -9,6 +9,8 @@ import {
   lintCrossReferences,
   lintLineParity,
   lintPending,
+  lintRhymeScheme,
+  rhymeKey,
 } from "../src/validate-content.js";
 
 function poem(overrides = {}) {
@@ -119,4 +121,88 @@ test("published poem DOM stays bilingual unless text_nhd exists", () => {
   assert.match(trilingual, /parallel--trilingual/);
   assert.match(trilingual, /pline__nhd/);
   assert.match(trilingual, /Mhd\. · 原文/);
+});
+
+// ---- §0.3 韵式自校验（G8）----
+
+test("rhyme keys fold German spelling onto sound", () => {
+  // 长音 h / 重复元音：Baal 与 Zahl 同韵。
+  assert.equal(rhymeKey("Baal"), rhymeKey("Zahl"));
+  // 词尾清化：Tod 与 Gott、Wind 与 findt。
+  assert.equal(rhymeKey("Tod"), rhymeKey("Gott"));
+  assert.equal(rhymeKey("Wind"), rhymeKey("findt"));
+  // ai/ei 同音：Mai 与 Schrei。
+  assert.equal(rhymeKey("Mai"), rhymeKey("Schrei"));
+  // qu = /kv/，Qual 的 u 不是元音。
+  assert.equal(rhymeKey("Qual"), rhymeKey("Zahl"));
+  // 弱读词尾要往前取一个音节：schließen 押 -ießen，不与 Verlangen 混。
+  assert.equal(rhymeKey("schließen"), rhymeKey("fließen"));
+  assert.notEqual(rhymeKey("schließen"), rhymeKey("Verlangen"));
+  // sehn（单音节）与 sehen（双音节）是不同的韵。
+  assert.notEqual(rhymeKey("sehn"), rhymeKey("sehen"));
+  assert.equal(rhymeKey("sehen"), rhymeKey("stehen"));
+});
+
+function rhymePoem(overrides = {}) {
+  return poem({
+    german_text: [["breit", "Stirn", "Einsamkeit", "verirrn"]],
+    translation_zh: { text: [["一", "二", "三", "四"]] },
+    ...overrides,
+  });
+}
+
+test("rhyme lint accepts a scheme that matches the measured rhymes", () => {
+  const fixture = rhymePoem({ grammar_notes: [{ title: "形式", body: "韵式 abab（交叉韵）。" }] });
+  assert.deepEqual(lintRhymeScheme(fixture).errors, []);
+});
+
+test("rhyme lint rejects a scheme that denies a real rhyme (G1 类)", () => {
+  // abcd 声称四行互不押韵，但 breit/Einsamkeit 与 Stirn/verirrn 各自相押。
+  const fixture = rhymePoem({ grammar_notes: [{ title: "形式", body: "韵式 abcd。" }] });
+  const errors = lintRhymeScheme(fixture).errors;
+  assert.equal(errors.length, 1);
+  assert.equal(errors[0].code, "rhyme-scheme");
+  assert.match(errors[0].message, /实测/);
+});
+
+test("rhyme lint warns about letters that appear only once", () => {
+  const fixture = rhymePoem({ grammar_notes: [{ title: "形式", body: "韵式 abcd。" }] });
+  const { warnings } = lintRhymeScheme(fixture);
+  assert.equal(warnings.length, 1);
+  assert.match(warnings[0], /只出现一次/);
+});
+
+test("rhyme lint requires form prose when a form tag is in the header", () => {
+  const fixture = rhymePoem({ tags: ["交叉韵"], grammar_notes: [{ title: "词汇", body: "无关内容。" }] });
+  const errors = lintRhymeScheme(fixture).errors;
+  assert.equal(errors.length, 1);
+  assert.equal(errors[0].code, "rhyme-missing");
+});
+
+test("rhyme lint skips refrain lines listed in rhyme_exempt_lines", () => {
+  const fixture = rhymePoem({
+    german_text: [["linden", "heide", "was", "vinden", "beide", "gras", "tal", "tandaradei", "nahtegal"]],
+    translation_zh: { text: [["一", "二", "三", "四", "五", "六", "七", "八", "九"]] },
+    rhyme_exempt_lines: [8],
+    grammar_notes: [{ title: "形式", body: "韵式 abc abc d–d。" }],
+  });
+  assert.deepEqual(lintRhymeScheme(fixture).errors, []);
+});
+
+test("rhyme lint flags an unmarked refrain line", () => {
+  const fixture = rhymePoem({
+    german_text: [["linden", "heide", "was", "vinden", "beide", "gras", "tal", "tandaradei", "nahtegal"]],
+    translation_zh: { text: [["一", "二", "三", "四", "五", "六", "七", "八", "九"]] },
+    grammar_notes: [{ title: "形式", body: "韵式 abc abc d–d。" }],
+  });
+  const errors = lintRhymeScheme(fixture).errors;
+  assert.equal(errors.length, 1);
+  assert.equal(errors[0].code, "rhyme-scheme");
+});
+
+test("irregular poems must actually say so", () => {
+  const fixture = rhymePoem({ rhyme_scheme: "irregular", grammar_notes: [{ title: "形式", body: "押韵零散。" }] });
+  const errors = lintRhymeScheme(fixture).errors;
+  assert.equal(errors.length, 1);
+  assert.equal(errors[0].code, "rhyme-irregular");
 });

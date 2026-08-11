@@ -250,6 +250,283 @@ function lintPublicDomain(poem) {
   return [];
 }
 
+// ==========================================================================
+// §0.3 韵式自校验 —— 声明的韵式必须与正文实测的韵脚聚类一致（G8）
+//
+// 正向：页面写出「韵式 abab…」时，从 german_text 逐行取末词、按韵尾聚类、
+//       转成规范字母串，与声明比对。
+// 反向：tags/页眉声明了形式（十四行、交叉韵、叠句…）而正文没有任何
+//       韵式或格律表述 → 同样报错。G2–G6 全属这一类。
+// ==========================================================================
+
+const RHYME_LETTERS = "abcdefghijklmnopqrstuvwxyz";
+const RHYME_VOWELS = "aeiouyäöü";
+const RHYME_WORD_RE = /[A-Za-zÄÖÜäöüßÀ-ÖØ-öø-ÿ]+/g;
+// 末音节为弱读（Schwa）时，韵脚要往前一个音节取：schließen 的韵是 -ießen 而非 -en。
+const SCHWA_TAIL_RE = /^e[nlmr]{0,2}$/;
+const SCHEME_LETTERS = "[a-z]+(?:[\\s/|·–—-]*[a-z]+)*";
+const SCHEME_DECL_RE = new RegExp(
+  `(?:第\\s*([0-9一二三四五六七八九十]+)\\s*节(?:的)?\\s*)?韵式(?:为|是|：|:)?\\s*(${SCHEME_LETTERS})`,
+  "g",
+);
+const NO_RHYME_RE = /没有韵式|无韵式|不押韵|无尾韵/;
+// 页眉一旦声明这些形式，正文就必须给出韵式或格律表述（本站 §0.3）。
+const FORM_TAGS = ["十四行", "交叉韵", "抱韵", "亚历山大体", "韵脚", "长行诗", "叠句", "对句"];
+const FORM_EVIDENCE_RE =
+  /韵式|押韵|韵脚|尾韵|抱韵|交叉韵|随韵|对句|格律|音步|音节|抑扬格|扬抑格|Reim|Vers(?:maß|zeile)/;
+
+function rhymeLastWord(line) {
+  const words = String(line ?? "").match(RHYME_WORD_RE);
+  return words ? words[words.length - 1] : "";
+}
+
+function foldRhymeWord(word) {
+  return (
+    word
+      .toLowerCase()
+      .replace(/æ/g, "ä")
+      .replace(/œ/g, "ö")
+      .replace(/[àáâãå]/g, "a")
+      .replace(/[èéêë]/g, "e")
+      .replace(/[ìíîï]/g, "i")
+      .replace(/[òóôõ]/g, "o")
+      .replace(/[ùúû]/g, "u")
+      .replace(/[^a-zäöüß]/g, "")
+      // qu = /kv/：Qual 的 u 不是元音，否则韵尾会误取成 -ual 而不与 Zahl 相押。
+      .replace(/qu/g, "kv")
+  );
+}
+
+// 只归并「同音不同写」：长音 h、重复元音、ie、chs/x、ck/tz 等。
+// 按规格，ä/ö/ü 不与 a/o/u 归并（ä 与 e 同音，故并入 e）；ss/ß 归并。
+function rhymeSoundKey(tail) {
+  return (
+    tail
+      .replace(/ß/g, "ss")
+      // 长音 h 只在不接元音时脱落：sehn → -en，但 sehen 仍是双音节 -ehen（阴性韵）。
+      .replace(/([aeiouyäöü])h(?![aeiouyäöü])/g, "$1")
+      .replace(/äu/g, "eu")
+      .replace(/ai/g, "ei")
+      .replace(/ä/g, "e")
+      .replace(/aa/g, "a")
+      .replace(/ee/g, "e")
+      .replace(/oo/g, "o")
+      .replace(/ie/g, "i")
+      .replace(/chs/g, "ks")
+      .replace(/x/g, "ks")
+      .replace(/ph/g, "f")
+      .replace(/th/g, "t")
+      .replace(/dt/g, "t")
+      .replace(/ck/g, "k")
+      .replace(/tz/g, "ts")
+      .replace(/([bcdfgklmnprstv])\1/g, "$1")
+      // 词尾清化（Auslautverhärtung）：Tod 与 Gott、Wind 与 findt 在德语里是真押韵。
+      .replace(/b$/, "p")
+      .replace(/d$/, "t")
+      .replace(/g$/, "k")
+  );
+}
+
+function vowelGroupStarts(word) {
+  const starts = [];
+  let inGroup = false;
+  for (let index = 0; index < word.length; index += 1) {
+    const isVowel = RHYME_VOWELS.includes(word[index]);
+    if (isVowel && !inGroup) starts.push(index);
+    inGroup = isVowel;
+  }
+  return starts;
+}
+
+function rhymeKey(word) {
+  const folded = foldRhymeWord(word);
+  const starts = vowelGroupStarts(folded);
+  if (!starts.length) return folded;
+  let start = starts[starts.length - 1];
+  if (starts.length > 1 && SCHWA_TAIL_RE.test(folded.slice(start))) start = starts[starts.length - 2];
+  return rhymeSoundKey(folded.slice(start));
+}
+
+// 逐行末词 → { 行号, 节号, 末词, 韵尾键 }，叠句等豁免行标 exempt。
+//
+// rhyme_groups 显式声明的行组会覆盖自动聚类，两种用途：
+//   (a) 不纯韵（unreiner Reim）：stille/Hülle 写法不同音也不同，但诗人当作一个韵；
+//   (b) 非重读词尾：schnurrend/murrend 的 -end 不重读，自动聚类会把它误并到
+//       behend/rennt 的重读 -end 上。重音位置无法由拼写推出，只能显式声明。
+function rhymeLines(poem) {
+  const exempt = new Set((poem.rhyme_exempt_lines || []).map(Number));
+  const merged = new Map();
+  (poem.rhyme_groups || []).forEach((group, index) => {
+    for (const line of group) merged.set(Number(line), `=${index}`);
+  });
+
+  const lines = [];
+  let lineNumber = 0;
+  (poem.german_text || []).forEach((stanza, stanzaIndex) => {
+    (Array.isArray(stanza) ? stanza : []).forEach((line) => {
+      lineNumber += 1;
+      const word = rhymeLastWord(line);
+      lines.push({
+        line: lineNumber,
+        stanza: stanzaIndex + 1,
+        word,
+        key: merged.get(lineNumber) || rhymeKey(word),
+        exempt: exempt.has(lineNumber),
+      });
+    });
+  });
+  return lines;
+}
+
+function rhymeLetter(index) {
+  if (index < 26) return RHYME_LETTERS[index];
+  return RHYME_LETTERS[Math.floor(index / 26) - 1] + RHYME_LETTERS[index % 26];
+}
+
+function schemeOf(entries, shared = new Map()) {
+  return entries
+    .filter((entry) => !entry.exempt)
+    .map((entry) => {
+      if (!shared.has(entry.key)) shared.set(entry.key, rhymeLetter(shared.size));
+      return shared.get(entry.key);
+    })
+    .join("");
+}
+
+function byStanza(lines) {
+  const groups = [];
+  for (const entry of lines) {
+    const index = entry.stanza - 1;
+    (groups[index] ||= []).push(entry);
+  }
+  return groups.map((group) => group || []);
+}
+
+// 本站三种合法写法：①全诗连续编字母（跨节复用同韵）②逐节重新编字母 ③各节同型时只写一节。
+function measuredSchemes(lines) {
+  const stanzas = byStanza(lines);
+  const global = schemeOf(lines);
+  const perStanza = stanzas.map((stanza) => schemeOf(stanza));
+  const variants = new Map([
+    ["全诗连续编号", global],
+    ["逐节重新编号", perStanza.join("")],
+  ]);
+  const nonEmpty = perStanza.filter(Boolean);
+  if (nonEmpty.length > 1 && nonEmpty.every((scheme) => scheme === nonEmpty[0])) {
+    variants.set("各节同型（只写一节）", nonEmpty[0]);
+  }
+  return { variants, global, perStanza };
+}
+
+// 一条声明可以只覆盖诗的一段（如十四行诗只讲两个四行节）。
+// 合法范围限定为「连续若干个完整诗节」，避免任意截断蒙混过关。
+function schemeWindows(lines) {
+  const stanzas = byStanza(lines).filter((stanza) => stanza.length);
+  const windows = new Set();
+  for (let start = 0; start < stanzas.length; start += 1) {
+    for (let end = start + 1; end <= stanzas.length; end += 1) {
+      const slice = stanzas.slice(start, end).flat();
+      for (const scheme of measuredSchemes(slice).variants.values()) windows.add(scheme);
+    }
+  }
+  return windows;
+}
+
+function normalizeDeclared(text) {
+  return text.toLowerCase().replace(/[^a-z]/g, "");
+}
+
+function stanzaNumber(token) {
+  return /^\d+$/.test(token) ? Number(token) : chineseNumber(token);
+}
+
+function lineRoster(entries) {
+  return entries
+    .map((entry) => `${entry.line}. ${entry.word || "—"}${entry.exempt ? "（豁免）" : `[${entry.key}]`}`)
+    .join("　");
+}
+
+function lintRhymeScheme(poem) {
+  const errors = [];
+  const warnings = [];
+  const texts = teachingTexts(poem);
+  const corpus = texts.map(({ text }) => text).join("\n");
+  const lines = rhymeLines(poem);
+  if (!lines.length) return { errors, warnings };
+
+  const declaredIrregular = poem.rhyme_scheme === "irregular";
+  const declaredNone = NO_RHYME_RE.test(corpus);
+
+  // —— 反向校验：页眉声明了形式，正文必须给出韵式/格律表述 ——
+  const formTags = (poem.tags || []).filter((tag) => FORM_TAGS.some((form) => String(tag).includes(form)));
+  if (formTags.length && !FORM_EVIDENCE_RE.test(corpus)) {
+    errors.push({
+      code: "rhyme-missing",
+      poem: poem.slug,
+      message: `页眉声明了形式（tags: ${formTags.join("、")}），正文未给出任何韵式或格律表述`,
+    });
+  }
+
+  if (declaredIrregular && !/不规则/.test(corpus)) {
+    errors.push({
+      code: "rhyme-irregular",
+      poem: poem.slug,
+      message: 'rhyme_scheme 为 "irregular" 时，正文必须写明「押韵不规则」并给出实际韵脚清单',
+    });
+  }
+
+  // —— 正向校验：逐条比对声明的字母串 ——
+  for (const { path, text } of texts) {
+    SCHEME_DECL_RE.lastIndex = 0;
+    for (const match of text.matchAll(SCHEME_DECL_RE)) {
+      const declared = normalizeDeclared(match[2]);
+      if (declared.length < 2) continue;
+      const scopeToken = match[1];
+      const scope = scopeToken ? stanzaNumber(scopeToken) : null;
+      const entries = scope ? lines.filter((entry) => entry.stanza === scope) : lines;
+
+      if (scope && !entries.length) {
+        errors.push({
+          code: "rhyme-scope",
+          poem: poem.slug,
+          path,
+          message: `声明了第 ${scope} 节的韵式，但本诗只有 ${byStanza(lines).length} 节`,
+        });
+        continue;
+      }
+
+      const singles = [...new Set([...declared])].filter((letter) => declared.split(letter).length - 1 === 1);
+      if (singles.length) {
+        warnings.push(
+          `[${poem.slug}] 声明「韵式 ${match[2].trim()}」中的字母 ${singles.join("、")} 只出现一次，` +
+            "即这些行被声明为不入韵，请确认。",
+        );
+      }
+
+      const { variants } = measuredSchemes(entries);
+      if ([...variants.values()].includes(declared)) continue;
+      if (!scope && schemeWindows(entries).has(declared)) continue;
+
+      const measured = [...variants.entries()].map(([label, scheme]) => `${label} ${scheme}`).join(" / ");
+      errors.push({
+        code: "rhyme-scheme",
+        poem: poem.slug,
+        path,
+        message:
+          `${scope ? `第 ${scope} 节韵式` : "韵式"}声明与实测不符\n` +
+          `   声明：${declared}\n` +
+          `   实测：${measured}\n` +
+          `   逐行末词：${lineRoster(entries)}`,
+      });
+    }
+  }
+
+  if (declaredIrregular || declaredNone) {
+    return { errors: errors.filter((error) => error.code !== "rhyme-scheme"), warnings };
+  }
+  return { errors, warnings };
+}
+
 function lintGhostTokens(poem) {
   const errors = [];
   for (const { path, text } of teachingTexts(poem)) {
@@ -295,6 +572,7 @@ function lintPending(record, now = new Date()) {
 
 function validateContent({ published, pending }, options = {}) {
   const errors = [];
+  const warnings = [];
   const poems = published.map(({ poem }) => poem);
   const bySlug = new Map();
   const byId = new Map();
@@ -326,6 +604,9 @@ function validateContent({ published, pending }, options = {}) {
     errors.push(...lintCrossReferences(poem, bySlug));
     errors.push(...lintPublicDomain(poem));
     errors.push(...lintGhostTokens(poem));
+    const rhyme = lintRhymeScheme(poem);
+    errors.push(...rhyme.errors);
+    warnings.push(...rhyme.warnings);
   }
 
   for (const record of pending) errors.push(...lintPending(record, options.now));
@@ -342,6 +623,7 @@ function validateContent({ published, pending }, options = {}) {
     }
   }
 
+  errors.warnings = warnings;
   return errors;
 }
 
@@ -358,6 +640,7 @@ function runCli() {
   const records = loadPoemRecords();
   const errors = validateContent(records);
   console.log(`内容校验 — ${records.published.length} 首已发布，${records.pending.length} 个 pending`);
+  for (const warning of errors.warnings || []) console.log(`⚠️  ${warning}`);
   if (errors.length) {
     console.log(`\n${formatContentErrors(errors)}\n\n合计：${errors.length} 个 ERROR。`);
     process.exitCode = 1;
@@ -378,5 +661,8 @@ export {
   lintCrossReferences,
   lintLineParity,
   lintPending,
+  lintRhymeScheme,
+  rhymeKey,
+  rhymeLines,
   validateContent,
 };

@@ -158,6 +158,11 @@
   ],
   "grammar_notes": [
     {
+      "title": "框形结构（Rahmen）：韵式 abaab cdeed abaab，第3节与第1节逐字相同",
+      "body": "全诗 3 节 × 5 行。逐行数韵脚：第1节 Nachtigall（a）／gesungen（b）／Schall（a）／Widerhall（a）／aufgesprungen（b），即 abaab——a 韵 -all 连占三行（第1、3、4行），b 韵 -ungen 收在第2、5行；第2节 Kind（c）／Sinnen（d）／Sommerhut（e）／Glut（e）／beginnen（d），即 cdeed，是一个抱韵包着一个对句——请注意 c（Kind）在全诗中不与任何一行相押，是唯一的孤韵。这一点正好印证本页的关键异文判断：贝尔格谱曲版把该行改作 ein wildes Blut，Blut 恰好押住 Sommerhut／Glut，把孤韵抹平成 cddcd；原诗留着这处不押韵，改词版把它\"修\"掉了——韵式本身就是辨别两种读法的证据（详见逐行注释与校对记录）。第3节与第1节逐字相同，韵脚随之复现，故全诗韵式为 abaab cdeed abaab。请注意两节的内部逻辑正好相反：第1节让一个韵连响三次（Schall／Widerhall 本身就是\"回声\"），第2节则把韵向内收拢（d…ee…d），一个向外扩散，一个向内闭合。第3节把第1节整节原样搬回，构成框形结构（Rahmen）：读者绕了一圈回到起点，但中间那节已经改变了它的意思——第一次读是夜莺唱歌使玫瑰绽放，第二次读是这歌声解释了那个姑娘为什么变了。这与本站《春天的信念》（编号22）、《那座城》（编号25）的叠句属不同类型：那两首重复的是单行（Nun muß sich alles, alles wenden／graue Stadt am Meer），重复项嵌在变化的诗节里；本首重复的是整整一节，五行连韵式一起原样返回。单行叠句是节拍，整节复现是框——前者推动，后者闭合。",
+      "quote": "第1节 Nachtigall／gesungen／Schall／Widerhall／aufgesprungen ＝ abaab；第3节逐字重复第1节"
+    },
+    {
       "title": "\"Das macht, …\" —— 口语因果句式",
       "quote": "Das macht, es hat die Nachtigall Die ganze Nacht gesungen;",
       "body": "日常德语中，\"Das macht, …\"（这是因为……）用一个独立小句引出原因，相当于\"原因在于……\"，语气口语化、教材少见但极高频。结构：陈述一个结果（玫瑰绽开/少女变了），再用\"Das macht, …\"补出原因（夜莺唱了一夜）。本页是这一句式的好样本。"
@@ -217,7 +222,9 @@
   ],
   "cross_references": [
     {"target_slug": "der-spinnerin-nachtlied", "needle": "die Nachtigall", "context": "《纺纱女的夜歌》"},
-    {"target_slug": "der-tod-das-ist-die-kuehle-nacht", "needle": "Nachtigall", "context": "《死亡，那是清凉的夜》"}
+    {"target_slug": "der-tod-das-ist-die-kuehle-nacht", "needle": "Nachtigall", "context": "《死亡，那是清凉的夜》"},
+    {"target_slug": "fruehlingsglaube", "needle": "Nun muß sich alles, alles wenden", "context": "《春天的信念》"},
+    {"target_slug": "die-stadt", "needle": "graue Stadt am Meer", "context": "《那座城》"}
   ],
   "verification_notes": "【三源核对】德文正文读法以 textlog.de、Projekt Gutenberg-DE、LiederNet 三个直接抓取的独立来源交叉确认（均作 wildes Kind），一级来源 Zeno.org《施托姆四卷全集》第1卷第115页标注页码著录（本次主机拒绝连接）。3 节、行数 5/5/5（共15行）、首末两节原样重复——一致。\n\n【关键异文：wildes Kind vs wildes Blut】作者原诗确定作\"ein wildes Kind\"（一个野孩子）。textlog、Gutenberg-DE、LiederNet（其 apparatus 经一手核对）一致。\"ein wildes Blut\"（一个野性子的血性姑娘）出自阿尔班·贝尔格1907/08年《七首早期歌曲》的谱曲改词，后流传到 deutschelyrik.de 等部分网络诗库——这是歌曲版本的读法，非原诗。本站从原诗 wildes Kind。这一条是本页最重要的反误读点。\n\n【待进一步核实】(1) 具体创作/首刊年份：各来源或作1855或作1856，本站写\"约1855/1856\"；(2) Zeno 主机本次拒绝连接，其 S.115 页码据 Zeno 元数据，待恢复后补抓快照复核；(3) 该诗不在施托姆1851年《Sommergeschichten und Lieder》中，而在《Gedichte》第一卷，确切首刊载体待核。\n\n【公版】施托姆1888年卒，公版起始年 = 1888 + 71 = 1959。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / textlog / gutenberg / liedernet）、D（含一级来源 Zeno 全集本）。",
   "checklist": [

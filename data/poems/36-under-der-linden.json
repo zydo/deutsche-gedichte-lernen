@@ -195,7 +195,13 @@
     }
   ],
   "verb_forms": [],
+  "rhyme_exempt_lines": [8, 17, 26, 35],
   "grammar_notes": [
+    {
+      "title": "Stollenstrophe（Aufgesang + Abgesang）—— Minnesang 的标准诗节结构",
+      "quote": "四节同型，韵式 abc abc d–d ‖ efg efg h–h ‖ ijk ijk l–l ‖ mno mno p–p（“–”＝叠句 tandaradei，不入韵）",
+      "body": "本诗每节 9 行，是 Minnesang 与后世 Meistersang 通用的分段式诗节 Stollenstrophe：前 6 行分成两个格律与韵式完全相同的 Stollen（第1—3行与第4—6行），合称 Aufgesang；后 3 行换韵换律，称 Abgesang。逐节数韵脚：第一节 linden／heide／was ‖ vinden／beide／gras——两个 Stollen 都是 abc，第1与第4行押 -inden、第2与第5行押 -eide、第3与第6行押 -as；Abgesang 为 tal ／ tandaradei ／ nahtegal，其中 tal 与 nahtegal 押 -al，中间的 tandaradei 是拟声叠句，不与任何行相押，故在韵式中记作“–”。其余三节同型：第二节 gegangen／ouwe／ê ‖ enpfangen／frouwe／mê ‖ tûsentstunt–munt；第三节 gemachet／rîche／bettestat ‖ gelachet／inneclîche／pfat ‖ mac–lac；第四节 læge／iemen／mich ‖ pflæge／niemen／ich ‖ vogellîn–sîn。四节的韵脚各不相同，但结构分毫不差——这正是 Stollenstrophe 的意义：它是一个可以被反复填充的模子，也是后来 Meistersang“依调填词”（Töne）制度的源头。本站《晚歌》（编号20）的 Schweifreim（aabccb，第三、六行相押）是分段式诗节的另一种形态：那一首靠一个跨越的长韵把六行扣合，本首靠两个完全对称的 Stollen 加一个换韵的 Abgesang——同为分段诗节，一个用韵的跨度分段，一个用韵的重复分段。"
+    },
     {
       "title": "中古高地德语 → 新高地德语的三大音变（本页核心价值）",
       "quote": "实例取自本诗：mîn / dâ / guot / liep 型词",

@@ -66,6 +66,9 @@
   ],
   "verb_forms": [],
   "grammar_notes": [
+    {"title": "行长与韵式随叙事段落变化：女巫框架 vs 中间叙事",
+     "quote": "全诗 9 节，节形 5/5/6/8/8/8/8/8/12（共68行），韵式 aabac / dedff / cgcchh / iijjkkll / ffmmnnff / ooppqqrr / ssttuuff / iijjvvuu / aaawcxyxzzhh",
+     "body": "本诗的形式随叙事段落切换，这一点必须连着韵式一起看才成立。逐节数韵脚后可以看到两种截然不同的形态。(1) 女巫框架段（第1、3、9节，节形 5/6/12）：韵式散乱，行长短促。第1节 zusamm／Brückendamm／Mittelpfeiler／Flamm／mit ＝ aabac——三行押 -amm，Mittelpfeiler 与 mit 各自孤立；第9节 12 行里 komme、Namen 都不入韵，韵脚随女巫的轮流开口而随机落下。这是咒语的节奏，不是叙事的节奏。(2) 中间叙事段（第4—8节，每节整齐 8 行）：全部是严格的成对韵。第4节 Brückenhaus／aus ‖ Ruh／zu ‖ Licht／spricht ‖ Sturmesflug／Zug ＝ iijjkkll，第6、7、8节同型（ooppqqrr／ssttuuff／iijjvvuu）——四对韵一路推下去，正是火车行进的节奏。(3) 第2节 dedff 是过渡：前三行还散（her／Süden／Meer），后两行已经成对（Ringelreihn／hinein）。所以\"行长随叙事段落变化\"这句话的完整形式是：框架段行短而韵散，叙事段行齐而韵成对；女巫说话时形式是碎的，火车行进时形式是整的，而第9节车毁人亡处，形式重新碎回第1节的样子——韵式本身完成了这个框。另可注意跨节复现的韵：第8节把第4节的 iijj 原样搬回（Brückenhaus／aus／Ruh／zu 四行几乎重复），韵脚与词句一同回环；-ein 韵（f）则贯穿第2、5、7节，是全诗出现次数最多的韵。"},
     {"title": "叠句（Refrain）与框形结构",
      "quote": "\"Tand, Tand / Ist das Gebilde von Menschenhand!\"（第3节末 + 第9节末）；\"Wann treffen wir drei wieder zusamm?\"（第1节首 + 第9节首）",
      "body": "本诗用双重叠句与首尾呼应构成框形结构：(1) 女巫的问句\"Wann treffen wir drei wieder zusamm?\"在第1节首与第9节首出现，闭合外框；(2) 女巫的判词\"Tand, Tand …\"在第3节末与第9节末出现，为内框；(3) 第4节与第8节几乎原样重复\"桥头屋望南\"一段，第4节是期盼、第8节是灾临。与本站《那座城》（编号25）、《春天的信念》（编号22）的叠句/复现构成主题簇。"},
@@ -87,11 +90,11 @@
     {"target_slug": "herr-von-ribbeck", "needle": "Fontane", "context": "《里贝克队长》"},
     {"target_slug": "die-stadt", "needle": "叠句", "context": "《那座城》"}
   ],
-  "verification_notes": "【三源核对】正文以 German Wikisource 转写的《冯塔纳德语诗集》第2卷（Insel 1984，S.585–587）为底本，另以两个独立来源核对：Projekt Gutenberg-DE 所收 Avenarius《Balladenbuch》（Steingrüben 1951，独立运营方）、martinschlu.de（三级）。9 节、行数 5/5/6/8/8/8/8/8/11（共67行）——用词一致，差异在标题撇号、'ein/einen Ringelreihn'、末节断行。\n\n【异文】(1) 标题撇号：Die Brück' am Tay（Wikisource/Insel，省音撇号）vs Die Brück am Tay（Avenarius，无撇号）vs Die Brück´ am Tay（martinschlu，反引号）。本站从 Wikisource 的撇号拼法（与 slug 对应的省音标记）。(2) 第2节第4行：einen Ringelreihn（Wikisource/Insel + Avenarius，两源含一级）vs ein Ringelreihn（martinschlu）。本站从两源支持的 einen。(3) 省音撇号：die Flamm.（Wikisource 无撇）vs die Flamm'（martinschlu）；Ich seh'（Wikisource）vs Ich seh（martinschlu）；fiel'（Wikisource）。(4) 末节：Wikisource 作\"Hei!\"单行 + \"Wie Splitter…\"次行（共11行）；martinschlu 合为一行。本站从 Wikisource 的两行读法（S9=11行）。\n\n【叠句与框形结构】(1) \"Tand, Tand / Ist das Gebilde von Menschenhand!\"在第3节末（第3节第5—6行）与第9节末（第9节第11—12行）出现——两处原样重复。(2) \"Wann treffen wir drei wieder zusamm?\"在第1节首与第9节首出现。(3) 第4节与第8节的\"桥头屋望南\"四行近乎原样重复。\n\n【待进一步核实】(1) 1879年12月28日泰河桥事故的具体伤亡数字与工程细节（各来源不一）；(2) 莎士比亚《麦克白》第一幕第一场的具体对位行（本页仅笼统说明互文，未逐行核）；(3) 冯塔纳本诗在《诗集》中的确切位置。\n\n【公版】冯塔纳1898年卒，公版起始年 = 1898 + 71 = 1969。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / gutenberg / martinschlu）、D（含两个一级来源：Insel 1984 + Avenarius 1951）。",
+  "verification_notes": "【三源核对】正文以 German Wikisource 转写的《冯塔纳德语诗集》第2卷（Insel 1984，S.585–587）为底本，另以两个独立来源核对：Projekt Gutenberg-DE 所收 Avenarius《Balladenbuch》（Steingrüben 1951，独立运营方）、martinschlu.de（三级）。9 节、行数 5/5/6/8/8/8/8/8/12（共68行）——用词一致，差异在标题撇号、'ein/einen Ringelreihn'、末节断行。\n\n【异文】(1) 标题撇号：Die Brück' am Tay（Wikisource/Insel，省音撇号）vs Die Brück am Tay（Avenarius，无撇号）vs Die Brück´ am Tay（martinschlu，反引号）。本站从 Wikisource 的撇号拼法（与 slug 对应的省音标记）。(2) 第2节第4行：einen Ringelreihn（Wikisource/Insel + Avenarius，两源含一级）vs ein Ringelreihn（martinschlu）。本站从两源支持的 einen。(3) 省音撇号：die Flamm.（Wikisource 无撇）vs die Flamm'（martinschlu）；Ich seh'（Wikisource）vs Ich seh（martinschlu）；fiel'（Wikisource）。(4) 末节：Wikisource 作\"Hei!\"单行 + \"Wie Splitter…\"次行（共12行）；martinschlu 把两者合为一行（共11行）。本站从 Wikisource 的两行读法（S9=12行，全诗68行）。\n\n【叠句与框形结构】(1) \"Tand, Tand / Ist das Gebilde von Menschenhand!\"在第3节末（第3节第5—6行）与第9节末（第9节第11—12行）出现——两处原样重复。(2) \"Wann treffen wir drei wieder zusamm?\"在第1节首与第9节首出现。(3) 第4节与第8节的\"桥头屋望南\"四行近乎原样重复。\n\n【待进一步核实】(1) 1879年12月28日泰河桥事故的具体伤亡数字与工程细节（各来源不一）；(2) 莎士比亚《麦克白》第一幕第一场的具体对位行（本页仅笼统说明互文，未逐行核）；(3) 冯塔纳本诗在《诗集》中的确切位置。\n\n【公版】冯塔纳1898年卒，公版起始年 = 1898 + 71 = 1969。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / gutenberg / martinschlu）、D（含两个一级来源：Insel 1984 + Avenarius 1951）。",
   "checklist": [
     {"label": "确认作者：Theodor Fontane", "done": true},
     {"label": "确认出处：记1879.12.28泰河桥事故 / Insel 1984 S.585–587", "done": true},
-    {"label": "核对节数（9节，67行）、框形叠句结构", "done": true},
+    {"label": "核对节数（9节，68行）、框形叠句结构", "done": true},
     {"label": "记录标题撇号、ein/einen、末节断行异文", "done": true},
     {"label": "麦克白互文说明", "done": true},
     {"label": "叠句与框形结构说明（与die-stadt对照）", "done": true},

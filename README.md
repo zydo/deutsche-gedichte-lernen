@@ -18,11 +18,11 @@
 >
 > ★ **编辑工作规范**：从候选诗到可发布页面的端到端流程（选诗、来源矩阵、正文锁定、逐行审计、形式自验、跨页接线、构建门槛）见新增的 **[EDITORIAL_WORKFLOW.md](EDITORIAL_WORKFLOW.md)**。第五批起的新增诗（编号 ≥34）采用更严格的来源规则：至少 3 个独立运营方 + 至少 1 个一级来源（每条来源显式标 tier，一级来源写纸本版次/页码），由 `npm run check` 机器校验。
 >
-> 收录诗人现共 23 位，时间跨度自 17 世纪的 Gryphius、Fleming 至 20 世纪的 van Hoddis。技术架构支持持续扩充，见下方"如何添加一首新诗"。
+> 技术架构支持持续扩充，见下方"如何添加一首新诗"。
 >
 > ⚠️ **来源独立性问题（2026 年 8 月发现并处理）**：`gedichte7.de` 与 `zgedichte.de` 属同一运营方（页面 metadata 中 `meta-author` 均为 Heiko Possel），
 > 此前曾被当作两个独立来源使用。全站已重新审计：**未发现任何一首诗真的只靠这一组站点自证**（0 个 ERROR），
-> 12 首在扣除三级来源后独立来源不足。**截至 2026 年 8 月已全部补验证完毕，目前 33 首中 32 首通过、仅剩 1 首 WARN**；
+> 12 首在扣除三级来源后独立来源不足。**截至 2026 年 8 月已全部补验证完毕，目前 50 首中 49 首通过、仅剩 1 首 WARN**；
 > 补验证过程中查出 1 处本站转录错误、1 处 Zeno 一级来源的转录讹误、以及 3 首诗的真实版本异文，均已如实记录。
 > 新的强制性标准见 **[SOURCES.md](SOURCES.md)**，可用 `npm run check` 做机器校验。
 
@@ -55,7 +55,7 @@
 - 任何不确定的信息（版本差异、缺失的第二来源等）都在页面"校对记录"中如实注明"待核实"，不做主观取舍或美化。
 - 每首诗页面末尾附带一份可见的**上线前质量 Checklist**，尚未完成的项目会明确标红（如"生成 AI 配图"——见下文说明）。
 
-**关于配图**：全部 33 首诗均已配有 AI 生成插图（`public/images/`，4:3 横版）。若某首诗的 `image_path` 为 `null`，页面会自动改为渲染完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）作为占位；详见[如何添加或替换配图](#如何添加或替换配图)。
+**关于配图**：50 首中前 33 首（编号 01–33）已配有 AI 生成插图（`public/images/`，4:3 横版）；第五批的 17 首（编号 34–50）正文已录入、配图待生成。若某首诗的 `image_path` 为 `null`，页面会自动改为渲染完整的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）作为占位；详见[如何添加或替换配图](#如何添加或替换配图)。
 
 ---
 
@@ -69,14 +69,16 @@
 │   └── poems/                  # 每首诗一个 JSON 文件，是全站唯一的数据源
 │       ├── 01-heidenroeslein.json
 │       ├── 02-wandrers-nachtlied-ii.json
-│       └── ...                  # 目前共 33 个文件（01–33）
+│       ├── ...                  # 目前共 50 个文件（01–50）
+│       └── pending/             # 未到公版日的条目（published: false，正文留空）
 ├── public/
 │   ├── style.css                # 主样式表（纸张质感 / 衬线字体 / 配色变量）
-│   └── images/                  # 配图（33 首，与 data/poems/ 一一对应）
+│   └── images/                  # 配图（33 张，对应编号 01–33）
 ├── src/
 │   ├── build.js                 # 构建脚本：读取 data/poems/*.json → 生成 dist/
 │   ├── templates.js             # 纯字符串 HTML 模板（无第三方模板引擎）
 │   ├── validate-sources.js      # 来源独立性校验（npm run check），规则见 SOURCES.md
+│   ├── validate-content.js      # 内容一致性校验：计数—行号、跨页断言、韵式自校验等
 │   ├── snapshot.js              # 抓取出处网页存档（npm run snapshot）
 │   └── serve.js                 # 零依赖本地静态文件服务器（预览用）
 ├── snapshots/                   # 德文原文出处的网页存档（npm run snapshot 生成）
@@ -135,7 +137,7 @@ node src/build.js && node src/serve.js
 npm run build   # 等价于 node src/build.js
 npm run serve   # 等价于 node src/serve.js
 npm run dev     # 等价于先 build 再 serve
-npm run check    # 来源独立性校验（node src/validate-sources.js），规则见 SOURCES.md
+npm run check    # 来源独立性校验 + 内容一致性校验（validate-sources.js 与 validate-content.js）
 npm run snapshot # 抓取德文原文出处的网页存档到 snapshots/（见"出处快照"一节）
 npm run format   # 格式化仓库代码与文档（需先 npm install；pre-commit hook 会自动格式化 dist/）
 ```
@@ -253,7 +255,7 @@ npm run build                 # 由存档生成 dist/snapshots/*.html
 
 ## 内容与译文版权注意事项
 
-- **德文原文**：目前收录的 33 首诗，作者均已去世超过 70 年。逝世最晚的是 Hugo von Hofmannsthal（1929年，其作品自2000年起进入公有领域），其次为 Rilke（1926）、Trakl 与 Morgenstern（均 1914）。所有原始德文文本在德国/欧盟法律下均已进入公有领域，可以自由使用、展示、转载。
+- **德文原文**：目前收录的 50 首诗，作者均已去世超过 70 年。逝世最晚的是 Else Lasker-Schüler（1945年，其作品自2016年起进入公有领域），其次为 Stramm（1915）、Stadler 与 Morgenstern（均 1914）、Heym（1912）。所有原始德文文本在德国/欧盟法律下均已进入公有领域，可以自由使用、展示、转载。每首诗的公版年份复算记录在 JSON 的 `public_domain` 字段中，由 `npm run check` 机器校验。
 - **德文原文的具体录入版本**：即便原诗本身公版，某些出版社/编辑校勘的"具体版本"（如某大学出版社的现代校勘本）本身可能受编辑劳动的版权保护；本站引用的 deutschelyrik.de、textlog.de、Zeno.org、Kalliope、gedichte7.de、维基百科等均为面向公众免费开放阅读的资源，但如果你计划将本项目用于商业用途，建议进一步核实这些网站的转载政策。
 - **现代中文/英文译本**：绝大多数广为流传的名家译本（如钱春绮、冯至、杨武能、Stephen Mitchell 等译者的作品）译者去世未满 70 年，仍受版权保护。**本站不转载任何此类译本的原文**，仅在"译文说明"中提及其存在，供读者自行查阅正版出版物。
 - **本站学习译文**：由 AI 辅助生成，以贴近原文结构、便于学习为目标，不追求独立文学价值。这些译文可视为本项目的原创内容，采用与本项目其余部分相同的开源/非商业学习用途授权（具体授权条款请项目维护者自行补充选定的 License，例如 CC BY-NC 4.0）。
@@ -263,15 +265,16 @@ npm run build                 # 由存档生成 dist/snapshots/*.html
 
 ## 已知局限 / 后续工作
 
-- 当前共 **33 首、23 位诗人**：Goethe ×5、Heine ×4、Rilke ×3、Gryphius ×2，以及 Eichendorff、Mörike、Hölderlin、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius、Brentano、Uhland、Lenau、Hebbel、Storm、C. F. Meyer、Fontane、Hofmannsthal、Morgenstern、Fleming、van Hoddis 各 1 首。
-- **第四批未完成部分（8 首）**：原计划巴洛克 ×6 + 表现主义 ×6，目前完成 Gryphius ×2、Fleming、van Hoddis 共 4 首。尚待补入的候选为——巴洛克：Opitz《Ach Liebste, laß uns eilen》、Hoffmannswaldau《Vergänglichkeit der Schönheit》、Angelus Silesius《Cherubinischer Wandersmann》选段；表现主义：Heym《Der Gott der Stadt》、Stadler《Fahrt über die Kölner Rheinbrücke bei Nacht》、Lasker-Schüler《Ein alter Tibetteppich》、Lichtenstein《Die Dämmerung》、Stramm《Patrouille》（均已公版）。**注意：Gottfried Benn 逝世于 1956 年，其作品要到 2027 年才进入公有领域，本项目在此之前不得收录。**
+- 当前共 **50 首、30 位具名诗人 + 1 个匿名民歌组**：Goethe ×7、Heine ×5、Rilke ×3，Eichendorff／Schiller／Storm／C. F. Meyer／Fontane／Morgenstern／Gryphius 各 ×2，其余 21 位各 1 首。
+- **第四批遗留清单：已由第五批基本结清**。第四批原计划巴洛克 ×6 + 表现主义 ×6，当时只完成 Gryphius ×2、Fleming、van Hoddis 共 4 首；第五批（编号 34–50）补入了当时清单上的 6 首——巴洛克：Hoffmannswaldau《Vergänglichkeit der Schönheit》（42）、Angelus Silesius《Cherubinischer Wandersmann》选段（43）；表现主义：Heym《Der Gott der Stadt》（37）、Stadler《Fahrt über die Kölner Rheinbrücke bei Nacht》（44）、Lasker-Schüler《Ein alter Tibetteppich》（38）、Stramm《Patrouille》（45）。**真正尚未收录的候选只剩 2 首**：Opitz《Ach Liebste, laß uns eilen》（巴洛克）与 Lichtenstein《Die Dämmerung》（表现主义），二者均已公版。
+- **未到公版日的作者**：Gottfried Benn 与 Bertolt Brecht 均逝于 1956 年，公版起始年为 2027 年。本站已在 `data/poems/pending/` 预置 4 条元数据骨架（`published: false`、`german_text` 为空），正文须待公版日后按 [SOURCES.md](SOURCES.md) 的来源规则抓取录入；`npm run check` 会强制校验：release_date 之前写入德文正文即报 ERROR。
 - **★ 来源独立性问题与全站审计（最重要的一项）**：`gedichte7.de` 与 `zgedichte.de` 由同一运营方维护（页面 metadata 中 `meta-author` / `meta-copyright` 均为 Heiko Possel），**不可互相充当"两个独立来源"**。发现后已做三件事：
   1. 制定强制性的 **[SOURCES.md](SOURCES.md)**（运营方分组表、来源三级分级、规则 A–E、新增诗歌的来源工作流）；
   2. 写了机器校验 `npm run check`（`src/validate-sources.js`），把规则变成可执行的检查，而不是口头约定；
-  3. 对全部 33 首做了审计。**结果：0 个 ERROR** —— 没有任何一首诗真的只靠 Possel 一组站点自证，每首都另有至少一个独立来源，此前记录的逐词比对结论全部有效、不予撤回。
+  3. 对当时在库的全部 33 首做了审计（第五批的 34–50 于其后录入，直接适用更严格的新版规则）。**结果：0 个 ERROR** —— 没有任何一首诗真的只靠 Possel 一组站点自证，每首都另有至少一个独立来源，此前记录的逐词比对结论全部有效、不予撤回。
      但有 **12 首**在扣除三级来源后独立来源不足 2 个（多为「Zeno/Wikipedia + gedichte7」的组合）。
 
-  **补验证已于 2026 年 8 月完成**：这 12 首逐首补入了第三个独立来源（Zeno 一级来源 3 首、deutschelyrik.de 二级来源 8 首），现全站 **0 个 ERROR、1 个 WARN、32 首通过**。补验证并非走过场，它实际改动了正文并暴露了三类问题：
+  **补验证已于 2026 年 8 月完成**：这 12 首逐首补入了第三个独立来源（Zeno 一级来源 3 首、deutschelyrik.de 二级来源 8 首），当时全站 **0 个 ERROR、1 个 WARN、32 首通过**（扩容至 50 首后为 0 个 ERROR、1 个 WARN、49 首通过）。补验证并非走过场，它实际改动了正文并暴露了三类问题：
 
   - **查出本站自己的转录错误 1 处**（28 Die Beiden 首行行末破折号误置于次行行首）；
   - **查出一级来源的转录讹误 1 处**（27 Herr von Ribbeck 第 40 行，Zeno 的《冯塔纳全集》作 `ich gew di`，但该行是低地德语引语、同诗第 10 行即为 `ick hebb`，三来源二比一 + 内证 ⇒ 判为讹误，正文已改作 `ick`）；
