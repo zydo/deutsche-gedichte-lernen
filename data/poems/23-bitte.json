@@ -14,8 +14,7 @@
     "眼睛",
     "忧郁",
     "呼语",
-    "极短诗",
-    "被谱曲最多"
+    "极短诗"
   ],
   "german_text": [
     [
@@ -33,7 +32,7 @@
   ],
   "translation_zh": {
     "type": "site",
-    "translator": "本站学习译文（AI 辅助），直译，保留全诗四个命令式动词的祈求语气与第3—4行长呼语的悬置结构",
+    "translator": "本站学习译文（AI 辅助），直译，保留全诗三个命令式动词的祈求语气与第3—4行长呼语的悬置结构",
     "text": [
       [
         "停留在我身上吧，你幽暗的眼睛，",
@@ -53,7 +52,7 @@
   "line_notes": [
     {
       "de": "Weil auf mir, du dunkles Auge,",
-      "zh": "全诗最容易被误读的一行。Weil 在此不是连词\"因为\"，而是动词 weilen（停留、逗留）的第二人称单数命令式！整句意为\"停留在我身上吧\"。正因为易混，不少版本（如 Reclam 1883 年版）印作带省字符的 \"Weil'\"。若把它读成\"因为\"，全诗立刻不通——这是德语阅读中著名的陷阱之一。"
+      "zh": "全诗最容易被误读的一行。Weil 在此不是连词\"因为\"，而是动词 weilen（停留、逗留）的第二人称单数命令式！整句意为\"停留在我身上吧\"。正因为易混，部分版本（如 Reclam 1883 年版）印作带省字符的 \"Weil'\"。若把它读成\"因为\"，全诗立刻不通——这是德语阅读中著名的陷阱之一。"
     },
     {
       "de": "Übe deine ganze Macht,",
@@ -61,7 +60,7 @@
     },
     {
       "de": "Ernste, milde, träumerische,",
-      "zh": "三个形容词并列，全部是阴性单数第一格的弱变化形式（因为它们修饰下一行的 Nacht，并与其构成一个巨大的后置呼语）。整整一行只有形容词而没有中心词，读者必须读到下一行才知道它们在修饰什么——这种悬置正是全诗紧张感的来源。此行另有版本作 \"Ernste, milde, zauberische\" 等，属作曲家改动，详见校对记录。"
+      "zh": "三个形容词并列，全部是阴性单数第一格的强变化形式（无冠词，形容词承担强变化词尾 -e）（因为它们修饰下一行的 Nacht，并与其构成一个巨大的后置呼语）。整整一行只有形容词而没有中心词，读者必须读到下一行才知道它们在修饰什么——这种悬置正是全诗紧张感的来源。此行另有版本作 \"Ernste, milde, zauberische\" 等，属作曲家改动，详见校对记录。"
     },
     {
       "de": "Unergründlich süße Nacht!",
@@ -81,7 +80,7 @@
     },
     {
       "de": "Einsam schwebest für und für.",
-      "zh": "schwebest 是 schweben（悬浮）的第二人称单数古体词尾 -est 形式（诗歌延长形式，今 schwebst）。für und für 是古老的固定表达，意为\"永远、绵绵不绝\"（今日已废，可对照英语 for ever and ever）。全诗以\"孤独地悬浮\"作结：说话者祈求的不是解脱，而是被这片幽暗永久地笼罩——这是莱瑙式忧郁最典型的姿态。"
+      "zh": "schwebest 位于 daß 目的从句末尾，与直陈式延长形式（今 schwebst）同形，但更可能解读为**虚拟式一式**（Konjunktiv I）第二人称单数——与本站《晚歌》的 Wollst、《纺纱女的夜歌》的 wolle 同属表祈愿的虚拟式一式。für und für 是古老的固定表达，意为\"永远、绵绵不绝\"（今日已废，可对照英语 for ever and ever）。全诗以\"孤独地悬浮\"作结：说话者祈求的不是解脱，而是被这片幽暗永久地笼罩——这是莱瑙式忧郁最典型的姿态。"
     }
   ],
   "vocab": [
@@ -113,7 +112,7 @@
       "term": "von hinnen",
       "pos": "副词短语（古语）",
       "meaning": "从此处离开",
-      "note": "今日仅存于 \"von hinnen gehen/scheiden\"（去世）这一委婉说法中；与 hier（此处）同源的方位副词系列还有 hierhin、dorthin。"
+      "note": "今日仅存于 \"von hinnen gehen/scheiden\"（去世）这一委婉说法中。`hinnen` 与 `hier` 同源；对应的另一组为 `von dannen`（`dannen` 与 `dort` 同源）。"
     },
     {
       "term": "schweben",
@@ -167,14 +166,14 @@
       "participle_ii": "geschwebt",
       "subjunctive_ii": "schwebte",
       "auxiliary": "haben（表状态）／sein（表位移）",
-      "note": "诗中第二人称单数延长形式 schwebest（今 schwebst），位于 daß 从句末尾。"
+      "note": "诗中位于 daß 从句末尾，schwebest 可读作虚拟式一式（KI）第二人称单数，或直陈式延长形式（今 schwebst），两式同形。"
     }
   ],
   "grammar_notes": [
     {
       "title": "命令式的形态：加 -e 还是不加？",
       "quote": "Weil auf mir … / Übe deine ganze Macht … / Nimm mit deinem Zauberdunkel …",
-      "body": "德语第二人称单数命令式有三种情况：(1) 弱变化动词可加可不加 -e（Übe! / Üb!、Weile! / Weil!），今日口语多不加；(2) 词干以 -t、-d、-ig 等结尾的必须加（Arbeite!、Entschuldige!）；(3) 现在时变元音 e→i/ie 的强变化动词一律不加，且必须变元音（nehmen → nimm!、geben → gib!、sehen → sieh!、helfen → hilf!）。本诗八行之内三种命令式全部出现，是一个浓缩的样本。"
+      "body": "德语第二人称单数命令式有三种情况：(1) 弱变化动词可加可不加 -e（Übe! / Üb!、Weile! / Weil!），今日口语多不加；(2) 词干以 -t、-d、-ig 等结尾的必须加（Arbeite!、Entschuldige!）；(3) 现在时变元音 e→i/ie 的强变化动词一律不加，且必须变元音（nehmen → nimm!、geben → gib!、sehen → sieh!、helfen → hilf!）。本诗八行之内出现三类中的两类（第(1)类：Übe / Weil；第(3)类：Nimm），是一个浓缩的样本。"
     },
     {
       "title": "同形陷阱：Weil（命令式）vs. weil（连词）",
@@ -184,7 +183,7 @@
     {
       "title": "后置的长呼语与悬置的中心词",
       "quote": "Ernste, milde, träumerische, / Unergründlich süße Nacht!",
-      "body": "第3行整行只有三个形容词，第4行才出现被修饰的名词 Nacht。德语的形容词必须与所修饰名词保持性、数、格一致，因此这三个词的弱变化词尾 -e 早已泄露了答案（阴性单数第一格），但意义要到下一行才落地。这种\"先给属性、后给对象\"的手法在德语诗歌中极常见（参见本站荷尔德林《生命的中途》的开篇），阅读时应学会先记住悬空的修饰语、等待中心词出现。"
+      "body": "第3行整行只有三个形容词，第4行才出现被修饰的名词 Nacht。德语的形容词必须与所修饰名词保持性、数、格一致，因此这三个词的强变化词尾 -e 指向阴性单数第一格或第四格（此处为呼语，取第一格），但意义要到下一行才落地。这种\"先给属性、后给对象\"的手法在德语诗歌中极常见（参见本站荷尔德林《生命的中途》的开篇），阅读时应学会先记住悬空的修饰语、等待中心词出现。"
     },
     {
       "title": "利益/损失第三格（Dativus commodi/incommodi）",
@@ -192,7 +191,7 @@
       "body": "mir 在此不是间接宾语（\"给我\"），而是表示动作涉及谁的\"损失第三格\"：把世界从\"我这里\"拿走。德语中这种第三格极常见：\"Er hat mir das Buch weggenommen\"（他把书从我这儿拿走了）、\"Mir ist die Tasse zerbrochen\"（我的杯子碎了）。它不能按\"给某人\"来理解，而应译为\"从某人处／对某人而言\"。"
     }
   ],
-  "cultural_notes": "《祈求》是莱瑙最著名的短诗，收在1832年《诗集》第一卷的「渴望」一辑中。莱瑙（本名 Nikolaus Franz Niembsch Edler von Strehlenau）出生于今匈牙利境内的德意志家庭，1832年曾赴美国购置土地、试图定居，很快失望而归；晚年患精神疾病，1844年后完全丧失创作能力，1850年去世。他的诗以浓重的忧郁著称，德语中甚至有 \"Lenau-Ton\"（莱瑙调）之说。\n\n这首诗只有八行，却完成了一次意象的合并：开篇呼唤的是\"幽暗的眼睛\"（du dunkles Auge），到第四行读者才发现，这只眼睛同时就是\"夜\"。这一双关使全诗可以有至少两种读法：一是把它当作情诗，对着一双深色的眼睛说话；二是把它当作对夜、对遗忘、乃至对死亡的祈求。莱瑙本人没有给出答案，两种读法在诗中始终并存。\n\n值得注意的是全诗的祈求内容：说话者要的不是安慰，也不是解脱，而是\"把这个世界从我这里带走\"，并且要那片幽暗\"孤独地永远悬浮\"在自己的生命之上。这不是从忧郁中求救，而是请求忧郁长久驻留——这种姿态是理解19世纪\"世界痛苦\"（Weltschmerz）的一把钥匙。\n\n此诗被谱曲的次数惊人，LiederNet 收录的作曲家超过二十位，其中包括罗伯特·弗朗茨、卡尔·勒韦、法妮·亨泽尔（门德尔松之姊）、马克斯·雷格、卡尔·奥尔夫，以及美国作曲家查尔斯·艾夫斯（1902年，同时另有英文版）。有几位作曲家还改动了第3行的形容词（如\"zauberische\"\"träumereiche\"），可见这一行在演唱时的难度。",
+  "cultural_notes": "《祈求》是莱瑙最著名的短诗，收在1832年《诗集》第一卷的「渴望」一辑中。莱瑙（本名 Nikolaus Franz Niembsch Edler von Strehlenau）出生于今罗马尼亚境内的德意志家庭（巴纳特地区 Csatád，今名 Lenauheim；行政归属待进一步核实），1832年曾赴美国购置土地、试图定居，很快失望而归；晚年患精神疾病，1844年后完全丧失创作能力，1850年去世。他的诗以浓重的忧郁著称，德语中甚至有 \"Lenau-Ton\"（莱瑙调）之说。\n\n这首诗只有八行，却完成了一次意象的合并：开篇呼唤的是\"幽暗的眼睛\"（du dunkles Auge），到第四行读者才发现，这只眼睛同时就是\"夜\"。这一双关使全诗可以有至少两种读法：一是把它当作情诗，对着一双深色的眼睛说话；二是把它当作对夜、对遗忘、乃至对死亡的祈求。莱瑙本人没有给出答案，两种读法在诗中始终并存。\n\n值得注意的是全诗的祈求内容：说话者要的不是安慰，也不是解脱，而是\"把这个世界从我这里带走\"，并且要那片幽暗\"孤独地永远悬浮\"在自己的生命之上。这不是从忧郁中求救，而是请求忧郁长久驻留——这种姿态是理解19世纪\"世界痛苦\"（Weltschmerz）的一把钥匙。\n\n此诗被谱曲的次数惊人，LiederNet 收录的作曲家超过二十位，其中包括罗伯特·弗朗茨、卡尔·勒韦、法妮·亨泽尔（门德尔松之姊）、马克斯·雷格、卡尔·奥尔夫，以及美国作曲家查尔斯·艾夫斯（1902年，同时另有英文版）。有几位作曲家还改动了第3行的形容词（如\"zauberische\"\"träumereiche\"），可见这一行在演唱时的难度。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。最关键的一处是首行的 Weil：它是动词 weilen（停留）的命令式，而非连词\"因为\"，译文作\"停留在我身上吧\"，详见逐行注释与语法要点——这是本诗翻译中不容出错的一点。第二处需说明的是第6行的 mir（损失第三格），译文作\"从我这里\"，而非\"给我\"。第3—4行的长呼语在中文中难以保持悬置效果，译文以四个并列修饰语加句末的\"夜\"近似传达。已知此诗存在钱春绮等译者的中译本，因版权原因本站不转载具体译本全文。",
   "image_prompt": {
     "imagery": "极暗的画面：一片没有星光的深蓝夜空低低笼罩着一道模糊的地平线，画面中央偏上有一处稍浅的、近乎瞳孔状的幽暗区域，似夜似眼",
@@ -207,12 +206,12 @@
     {
       "name": "Zeno.org — Nikolaus Lenau: Sämtliche Werke und Briefe. Band 1, Leipzig und Frankfurt a. M. 1970, S. 17（Gedichte · Erstes Buch · Sehnsucht · Bitte）",
       "url": "http://www.zeno.org/Literatur/M/Lenau,+Nikolaus/Gedichte/Gedichte/Erstes+Buch/Sehnsucht/Bitte",
-      "note": "主来源。依 Insel 版《莱瑙全集与书信》第1卷数字化本，两节八行完整，首行作 \"Weil\"（不带省字符），保留旧正字法 Daß。"
+      "note": "一级来源。主来源。依 Insel 版《莱瑙全集与书信》第1卷数字化本，两节八行完整，首行作 \"Weil\"（不带省字符），保留旧正字法 Daß。"
     },
     {
       "name": "The LiederNet Archive — Nikolaus Lenau, „Bitte“（„Weil' auf mir, du dunkles Auge“）",
       "url": "https://www.lieder.net/lieder/get_text.html?TextId=9985",
-      "note": "辅助来源。标注核对自 Nicolaus Lenau's sämtliche Werke, hrsg. von G. Emil Barthel, Leipzig: Reclam [1883], S. 11；八行与主来源逐词一致，唯首行作带省字符的 \"Weil'\"，并记录了多位作曲家对第3行的改动。"
+      "note": "二级来源。辅助来源。标注核对自 Nicolaus Lenau's sämtliche Werke, hrsg. von G. Emil Barthel, Leipzig: Reclam [1883], S. 11；八行与主来源逐词一致，唯首行作带省字符的 \"Weil'\"，并记录了多位作曲家对第3行的改动。"
     }
   ],
   "translation_sources": [
