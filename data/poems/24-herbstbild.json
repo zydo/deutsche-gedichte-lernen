@@ -338,5 +338,12 @@
       "label": "补入一级来源（Zeno 全集本）并完成三方逐词比对（已完成）",
       "done": true
     }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "herbsttag",
+      "needle": "befehlen",
+      "context": "《秋日》"
+    }
   ]
 }

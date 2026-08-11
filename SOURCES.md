@@ -52,25 +52,46 @@
 并在诗页出处栏以「快照（YYYY-MM-DD）」呈现。抓取失败的来源照实标注为「快照（未能抓取）」，
 不得静默跳过。存档只发布纯文本，不镜像对方站点的版式与脚本。
 
+### 规则 G —— 新版规则（编号 ≥34 起适用，更严格）
+
+第五批（编号 34 起）的新增诗采用比规则 A–D 更严格的标准，由 `src/validate-sources.js` 的 v2 分支强制：
+
+- **规则 A+（数量）**：`german_sources` 至少 **3 条**（而非 2 条）。
+- **规则 B+（独立性）**：至少 **3 个互相独立的运营方组**。
+- **规则 D+（一级来源与版次）**：每条来源显式写 `tier`（1/2/3）；至少一个一级来源；一级来源须写结构化 `citation`，含**纸本版次与页码**（或抄本 folio、或格言集卷次编号 Nr./Buch——按文本类型择一）。
+- 三级聚合站（possel 等）只能作辅助，不得独自补足必需的独立来源数。
+
+`npm run check` 对编号 ≥34 的诗执行 v2 校验，对 01–33 沿用 legacy 规则（≥2）。新增内容校验（计数—行号、跨页断言、逐行对齐、公版复算、pending 正文禁入、幽灵 token、Hölderlin 前置第二格回归）见 `EDITORIAL_WORKFLOW.md` 第 8 节。
+
 ---
 
 ## 3. 运营方分组表
 
 校验脚本 `src/validate-sources.js` 依此表判定独立性。**新增来源站点前请先在此登记。**
 
-| 组 ID           | 站点                                                        | 说明                                             |
-| --------------- | ----------------------------------------------------------- | ------------------------------------------------ |
-| `possel`        | `gedichte7.de`、`zgedichte.de`                              | **同一运营方**（Heiko Possel）。二者不可互证。   |
-| `zeno`          | `zeno.org`                                                  | 数字化全集库，标注纸质版出处。                   |
-| `wikimedia`     | `de.wikipedia.org`、`en.wikipedia.org`、`de.wikisource.org` | 维基媒体项目，视为同一组。                       |
-| `textlog`       | `textlog.de`                                                | 数字化全集库。                                   |
-| `deutschelyrik` | `deutschelyrik.de`                                          | Fritz Stavenhagen 的朗诵与文本站。               |
-| `planetlyrik`   | `planetlyrik.de`                                            | 附《德国广播电台抒情诗历》评注，标注纸质版出处。 |
-| `liedernet`     | `lieder.net`                                                | LiederNet Archive，标注所据印本。                |
-| `kalliope`      | `kalliope.org`                                              | 丹麦 Kalliope 文库。                             |
-| `textarchiv`    | `textarchiv.com`、`de.textarchiv.com`                       |                                                  |
-| `aphorismen`    | `aphorismen.de`                                             |                                                  |
-| `wortwuchs`     | `wortwuchs.net`                                             | 教学解析站，仅作辅助。                           |
+| 组 ID             | 站点                                                        | 说明                                                  |
+| ----------------- | ----------------------------------------------------------- | ----------------------------------------------------- |
+| `possel`          | `gedichte7.de`、`zgedichte.de`                              | **同一运营方**（Heiko Possel）。二者不可互证。        |
+| `zeno`            | `zeno.org`                                                  | 数字化全集库，标注纸质版出处。                        |
+| `wikimedia`       | `de.wikipedia.org`、`en.wikipedia.org`、`de.wikisource.org` | 维基媒体项目，视为同一组。                            |
+| `textlog`         | `textlog.de`                                                | 数字化全集库。                                        |
+| `deutschelyrik`   | `deutschelyrik.de`                                          | Fritz Stavenhagen 的朗诵与文本站。                    |
+| `planetlyrik`     | `planetlyrik.de`                                            | 附《德国广播电台抒情诗历》评注，标注纸质版出处。      |
+| `liedernet`       | `lieder.net`                                                | LiederNet Archive，标注所据印本。                     |
+| `kalliope`        | `kalliope.org`                                              | 丹麦 Kalliope 文库。                                  |
+| `textarchiv`      | `textarchiv.com`、`de.textarchiv.com`                       |                                                       |
+| `aphorismen`      | `aphorismen.de`                                             |                                                       |
+| `wortwuchs`       | `wortwuchs.net`                                             | 教学解析站，仅作辅助。                                |
+| `augustana`       | `hs-augsburg.de`、`bibliotheca-augustana.net`               | Bibliotheca Augustana，Mhd./早期文本。                |
+| `ldm`             | `ldm-digital.de`                                            | BBAW「Lyrik des deutschen Mittelalters」数字化新版。  |
+| `liederlexikon`   | `liederlexikon.de`、`deutscheslied.com`                     | Volksliedarchiv 系民歌数据库。                        |
+| `gutenberg`       | `projekt-gutenberg.org`、`gutenberg.org`                    | Projekt Gutenberg-DE / Project Gutenberg。            |
+| `volksliedarchiv` | `volksliedarchiv.de`                                        | Deutsches Volksliedarchiv。                           |
+| `liederprojekt`   | `liederprojekt.org`                                         | 民歌项目。                                            |
+| `heidelberg`      | `digi.ub.uni-heidelberg.de`                                 | 海德堡大学图书馆数字化（含 Codex Manesse 抄本原件）。 |
+| `dta`             | `deutschestextarchiv.de`                                    | Deutsches Textarchiv（BBAW），印刷本扫描。            |
+| `archive`         | `archive.org`                                               | Internet Archive（影印再版）。                        |
+| `freiburger`      | `freiburger-anthologie.ub.uni-freiburg.de`                  | 弗莱堡大学德语抒情诗选集（附学术注解）。              |
 
 > **维基媒体各项目算同一组**：de.wikipedia 与 de.wikisource 常互相引用同一底本，
 > 不应视为彼此独立。

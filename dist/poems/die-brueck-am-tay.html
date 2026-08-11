@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Die Brück' am Tay · 泰河桥 — Theodor Fontane | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Die Brück' am Tay（泰河桥）— Theodor Fontane。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="gingo-biloba.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">银杏</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="das-aesthetische-wiesel.html" rel="next"
+            ><span class="poem-nav__title">美学的鼬</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Die Brück' am Tay</h1>
+          <p class="poem-titleblock__author">Theodor Fontane</p>
+          <p class="poem-titleblock__zh">泰河桥</p>
+          <p class="poem-titleblock__author-zh">特奥多尔·冯塔纳</p>
+          <div class="poem-titleblock__biblio">
+            <p>单篇叙事诗（收入多种冯塔纳诗选）</p>
+            <p>诗意现实主义</p>
+            <p>1879年12月28日作（记1879年12月28日苏格兰泰河桥断裂事故）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2</span>
+            <span class="tag">叙事诗</span>
+            <span class="tag">麦克白</span>
+            <span class="tag">技术</span>
+            <span class="tag">叠句</span>
+            <span class="tag">框形结构</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一座19世纪钢桁架铁路桥在风暴夜中，一列车头灯正驶入桥中段；桥下是汹涌的河口黑水；桥的远端上空隐约三个女巫的剪影（不清晰，只作暗示）
+              </dd>
+              <dt>情绪</dt>
+              <dd>宿命的、即将降临的毁灭；不是事故现场，而是"毁灭已被预言"的压抑瞬间</dd>
+              <dt>画面元素</dt>
+              <dd>19世纪钢桁架长桥、风暴与浪涌、驶入桥中的列车车头灯、河口黑水、远端天空隐约的三女巫剪影</dd>
+              <dt>时代感</dt>
+              <dd>1879年苏格兰，桥梁为维多利亚时代钢桁架结构</dd>
+              <dt>推荐风格</dt>
+              <dd>
+                维多利亚浪漫—写实风景画质感，风暴夜景，色调墨蓝与暖黄（车灯）对比，构图强调桥的纵深与上方天空的宿命感
+              </dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得画出坠毁/血腥/尸体（本诗以光暗示，不正面写）；女巫只作远景暗示，不可画成流行奇幻女巫（尖帽/绿皮）；不得出现现代元素；不得出现文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >»Wann treffen wir drei wieder zusamm?«<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">"我们三个何时再聚首？"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">»Um die siebente Stund', am Brückendamm.«</span>
+                </div>
+                <div class="pline__zh">"七点钟，在桥坝上。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Am Mittelpfeiler.«</span></div>
+                <div class="pline__zh">"在中柱那儿。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >»Ich lösche die Flamm.«<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">"我去熄了那火。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >»Ich mit.«<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">"我也来。"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Ich komme vom Norden her.«</span></div>
+                <div class="pline__zh">"我从北方来。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Und ich vom Süden.«</span></div>
+                <div class="pline__zh">"我从南方。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Und ich vom Meer.«</span></div>
+                <div class="pline__zh">"我从海上。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Hei, das gibt einen Ringelreihn,</span></div>
+                <div class="pline__zh">"嘿，这要跳起一圈环舞，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und die Brücke muß in den Grund hinein.«</span>
+                </div>
+                <div class="pline__zh">那桥就得沉进地底去。"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Und der Zug, der in die Brücke tritt</span></div>
+                <div class="pline__zh">"那七点钟</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Um die siebente Stund'?«</span></div>
+                <div class="pline__zh">正开进桥里的火车呢？"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Ei, der muß mit.«</span></div>
+                <div class="pline__zh">"嘿，它也得跟着。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Muß mit.«</span></div>
+                <div class="pline__zh">"得跟着。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Tand, Tand</span></div>
+                <div class="pline__zh">"虚妄，虚妄</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ist das Gebilde von Menschenhand!«</span></div>
+                <div class="pline__zh">是这人手所造的东西！"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Auf der Norderseite, das Brückenhaus —<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在北岸，那座桥头屋——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Alle Fenster sehen nach Süden aus,</span></div>
+                <div class="pline__zh">所有的窗都朝南开着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und die Brücknersleut' ohne Rast und Ruh</span>
+                </div>
+                <div class="pline__zh">守桥人夫妇不得安息、</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und in Bangen sehen nach Süden zu,</span></div>
+                <div class="pline__zh">提心吊胆地朝南望着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Sehen und warten, ob nicht ein Licht</span></div>
+                <div class="pline__zh">望着、等着，看有没有一盏灯</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Übers Wasser hin »Ich komme« spricht,</span></div>
+                <div class="pline__zh">越过水面说"我来了"，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">»Ich komme, trotz Nacht und Sturmesflug,</span>
+                </div>
+                <div class="pline__zh">"我来了，不怕黑夜与风暴，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich, der Edinburger Zug.«</span></div>
+                <div class="pline__zh">我，爱丁堡那趟车。"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und der Brückner jetzt: »Ich seh' einen Schein</span>
+                </div>
+                <div class="pline__zh">守桥人这时说："我看见一团光</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Am anderen Ufer. Das muß er sein.</span></div>
+                <div class="pline__zh">在对岸。那必定是他。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Nun, Mutter, weg mit dem bangen Traum,</span></div>
+                <div class="pline__zh">好啦，老伴，别再做那吓人的梦了，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Unser Johnie kommt und will seinen Baum,</span>
+                </div>
+                <div class="pline__zh">咱们的约翰尼要回来了，他要他的树，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und was noch am Baume von Lichtern ist,</span></div>
+                <div class="pline__zh">把树上还剩的灯</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zünd' alles an wie zum heiligen Christ,</span></div>
+                <div class="pline__zh">全都点上，像过神圣圣诞一样，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Der will heuer zweimal mit uns sein, —</span></div>
+                <div class="pline__zh">他今年要跟我们过两次——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Und in elf Minuten ist er herein.«<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">再过十一分钟他就到家了。"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und es war der Zug. Am Süderturm</span></div>
+                <div class="pline__zh">而那正是那趟车。在南塔旁</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Keucht er vorbei jetzt gegen den Sturm,</span></div>
+                <div class="pline__zh">它此刻正迎着风暴喘息而过，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und Johnie spricht: »Die Brücke noch!</span></div>
+                <div class="pline__zh">约翰尼说："还有这座桥！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Aber was tut es, wir zwingen es doch.</span></div>
+                <div class="pline__zh">可那算什么，我们照样能征服它。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ein fester Kessel, ein doppelter Dampf,</span></div>
+                <div class="pline__zh">结实的锅炉、双倍的蒸汽，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die bleiben Sieger in solchem Kampf.</span></div>
+                <div class="pline__zh">在这样的较量里它们定是赢家。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und wie's auch rast und ringt und rennt,</span>
+                </div>
+                <div class="pline__zh">不管它怎么挣扎、绞扭、狂奔，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wir kriegen es unter, das Element.«</span></div>
+                <div class="pline__zh">我们终归能把它压下去——那元素。"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Und unser Stolz ist unsre Brück';</span></div>
+                <div class="pline__zh">"而我们的骄傲就是我们的桥；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich lache, denk' ich an früher zurück,</span></div>
+                <div class="pline__zh">我一想到从前就发笑，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">An all den Jammer und all die Not</span></div>
+                <div class="pline__zh">想到乘那只可怜的旧渡船</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mit dem elend alten Schifferboot;</span></div>
+                <div class="pline__zh">所受的一切苦、一切难；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie manche liebe Christfestnacht</span></div>
+                <div class="pline__zh">有多少个亲爱的圣诞夜</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hab' ich im Fährhaus zugebracht</span></div>
+                <div class="pline__zh">我是守在渡口屋里度过的，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und sah unsrer Fenster lichten Schein</span></div>
+                <div class="pline__zh">望着我们自己窗户的亮光，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und zählte und konnte nicht drüben sein.«</span>
+                </div>
+                <div class="pline__zh">数着、数着，却过不了河。"</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Auf der Norderseite, das Brückenhaus —<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在北岸，那座桥头屋——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Alle Fenster sehen nach Süden aus,</span></div>
+                <div class="pline__zh">所有的窗都朝南开着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und die Brücknersleut' ohne Rast und Ruh</span>
+                </div>
+                <div class="pline__zh">守桥人夫妇不得安息、</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und in Bangen sehen nach Süden zu;</span></div>
+                <div class="pline__zh">提心吊胆地朝南望着；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Denn wütender wurde der Winde Spiel,</span></div>
+                <div class="pline__zh">因为风刮得更凶了，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und jetzt, als ob Feuer vom Himmel fiel',</span>
+                </div>
+                <div class="pline__zh">而现在，仿佛有火从天而降，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Erglüht es in niederschießender Pracht<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一道下射的光华亮起</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Überm Wasser unten... Und wieder ist Nacht.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在下方的水面上……然后又是黑夜。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >»Wann treffen wir drei wieder zusamm?«<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">"我们三个何时再聚首？"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Um Mitternacht, am Bergeskamm,«</span></div>
+                <div class="pline__zh">"午夜，在山脊上，"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Auf dem hohen Moor, am Erlenstamm.«</span></div>
+                <div class="pline__zh">"在高高的荒原，赤杨树干旁。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Ich komme.«</span></div>
+                <div class="pline__zh">"我来。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >»Ich mit.«<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">"我也来。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Ich nenn' euch die Zahl.«</span></div>
+                <div class="pline__zh">"我来报那数字。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Und ich die Namen.«</span></div>
+                <div class="pline__zh">"我来报那些名字。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Und ich die Qual.«</span></div>
+                <div class="pline__zh">"我来报那苦痛。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Hei!</span></div>
+                <div class="pline__zh">"嘿！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie Splitter brach das Gebälk entzwei.«</span></div>
+                <div class="pline__zh">椽子像碎片一样断成两半。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Tand, Tand</span></div>
+                <div class="pline__zh">"虚妄，虚妄</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ist das Gebilde von Menschenhand.«</span></div>
+                <div class="pline__zh">是人手所造的东西。"</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译叙事，保留女巫短促对白与"Tand, Tand"叠句的框形结构
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">»Wann treffen wir drei wieder zusamm?«</p>
+              <p class="lnote__zh">
+                ★开篇三个女巫的对话，直接改写自莎士比亚《麦克白》第一幕第一场（"When shall we three meet
+                again?"）。冯塔纳把一场工程事故写成命运：女巫（自然/命运之力）在桥断之前已定下毁灭。"wir
+                drei"（我们三个）即女巫三人。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Tand, Tand / Ist das Gebilde von Menschenhand!</p>
+              <p class="lnote__zh">
+                ★叠句（Refrain）："虚妄，虚妄，是人手所造的东西！"出现在第3节末与第9节末，构成框形结构的内框。der
+                Tand（无用之物、虚饰、破烂）；das Gebilde von Menschenhand（人手所造之物，=
+                人工的桥）。女巫的预言把人工技术判为"虚妄"——它终将被自然摧毁。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">»Ich lösche die Flamm.« / »Ich mit.«</p>
+              <p class="lnote__zh">
+                女巫的短促对白："我去熄了那火""我也来"——"熄火"即制造黑暗与灾难。这些两三个词的短行（Ich mit. / Muß
+                mit.）制造不祥的、断续的节奏，与中间叙事段（4—8节，每节8行长行）形成对照。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Auf der Norderseite, das Brückenhaus —</p>
+              <p class="lnote__zh">
+                第4节转入叙事：守桥人一家（die
+                Brücknersleut'）在北岸桥头屋等待从爱丁堡乘火车回来的儿子约翰尼（Johnie）。这首诗的私人线是亲情（父母等儿子），公共线是技术（桥、火车）。第4节与第8节几乎原样重复（桥头屋望南），构成框形结构——第4节是期盼，第8节是灾难降临。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Und in elf Minuten ist er herein.«</p>
+              <p class="lnote__zh">
+                守桥人算定"再过十一分钟"儿子就到家——这个精确的时间倒计时正是悲剧的机关：读者已知女巫的预言（桥要塌），十一分钟的期盼实则通向毁灭。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">
+                Erglüht es in niederschießender Pracht / Überm Wasser unten... Und wieder ist Nacht.
+              </p>
+              <p class="lnote__zh">
+                第8节末："一道下射的光华亮起在下方的水面上……然后又是黑夜。"——火车坠桥的瞬间没有正面描写，只用"光"与"复归于黑夜"暗示。这是诗意现实主义的节制：灾难不写血腥，只写光的闪灭。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">»Wann treffen wir drei wieder zusamm?«</p>
+              <p class="lnote__zh">
+                末节（第9节）女巫重新登场，与开篇呼应，构成框形结构的外框。女巫报"数字、名字、苦痛"——灾难已成的清点。最后再次唱出"Tand,
+                Tand / Ist das Gebilde von Menschenhand"，与第3节末的叠句闭合。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Brück', -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">桥（die Brücke 的省音形）</div>
+              <div class="vocab-card__note">
+                诗题"Die Brück' am Tay"中 Brück' 是 Brücke 省去词尾 -e
+                的诗/口语形（以撇号标省音）。本站诗题保留冯塔纳的撇号拼法（Die Brück' am Tay）；部分选本（如 Avenarius
+                Balladenbuch）省去撇号作"Die Brück am Tay"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Tand, -e（多单数）</span></div>
+              <span class="vocab-card__pos">n.（阳性，雅/古）</span>
+              <div class="vocab-card__meaning">无用之物、虚饰、破烂</div>
+              <div class="vocab-card__note">
+                诗中叠句"Tand, Tand / Ist das Gebilde von Menschenhand!"——女巫把人工之桥判为"虚妄"。今日多见于"Tand
+                sein"（无价值）等雅语。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Ringelreihn, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性，古）</span>
+              <div class="vocab-card__meaning">环舞、围圈舞</div>
+              <div class="vocab-card__note">
+                ringeln（绕圈）+ Reihen（行列舞）。诗中"Hei, das gibt einen Ringelreihn"——女巫的环舞即毁灭的仪式。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Gebilde, -</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">造物、形成物</div>
+              <div class="vocab-card__note">
+                bilden（塑造）的名词化。诗中 das Gebilde von Menschenhand（人手所造之物，即桥）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Christ / das Christfest</span></div>
+              <span class="vocab-card__pos">n.</span>
+              <div class="vocab-card__meaning">（古/方言）圣诞；基督</div>
+              <div class="vocab-card__note">
+                诗中"wie zum heiligen Christ"（像过神圣圣诞一样）——Christ 在此指 das Christfest（圣诞节），南德/古用法。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Kessel, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">锅炉；（烹）锅</div>
+              <div class="vocab-card__note">
+                诗中"Ein fester Kessel, ein doppelter
+                Dampf"（结实的锅炉、双倍的蒸汽）——约翰尼对火车技术的自信。这种对技术的自信正是悲剧的反讽铺垫。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <p class="prose">本诗中未标注需要特别说明的不规则动词变位。</p>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">叠句（Refrain）与框形结构</h3>
+              <p class="grammar-item__quote">
+                "Tand, Tand / Ist das Gebilde von Menschenhand!"（第3节末 + 第9节末）；"Wann treffen wir drei wieder
+                zusamm?"（第1节首 + 第9节首）
+              </p>
+              <div class="grammar-item__body">
+                本诗用双重叠句与首尾呼应构成框形结构：(1) 女巫的问句"Wann treffen wir drei wieder
+                zusamm?"在第1节首与第9节首出现，闭合外框；(2) 女巫的判词"Tand, Tand
+                …"在第3节末与第9节末出现，为内框；(3)
+                第4节与第8节几乎原样重复"桥头屋望南"一段，第4节是期盼、第8节是灾临。与本站《那座城》（编号25）、《春天的信念》（编号22）的叠句/复现构成主题簇。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">女巫台词中的虚拟式与祈使；麦克白互文</h3>
+              <p class="grammar-item__quote">»Wann treffen wir drei wieder zusamm?« … »Ich lösche die Flamm.«</p>
+              <div class="grammar-item__body">
+                女巫的对白短促、断续（Ich mit. / Muß mit.），多用祈使与现在时预言（"die Brücke muß in den Grund
+                hinein"）。开篇直接改写自莎士比亚《麦克白》第一幕第一场三女巫的开场（"When shall we three meet
+                again?"）。冯塔纳借此把一场1879年的工程事故写成命运悲剧：自然（女巫）早已判定人工（桥）必毁。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              特奥多尔·冯塔纳（1819—1898）是德语诗意现实主义最伟大的小说家（《艾菲·布里斯特》），也写叙事诗。《里贝克队长》（本站编号27）与《泰河桥》是他最常被选读的两首。
+            </p>
+            <p>
+              《泰河桥》作于1879年12月28日，记当日发生的苏格兰泰河桥（Tay
+              Bridge）断裂事故：一列火车在风暴中随桥坠河。冯塔纳把这场工程事故写成一首"命运叙事诗"——开篇三女巫（直接取自《麦克白》）预告毁灭，中间写守桥人一家等待从爱丁堡乘火车归来的儿子约翰尼，末节女巫重来、灾难闭合。
+            </p>
+            <p>
+              本诗与本站《里贝克队长》（编号27）同作者而气质相反：一首写乡土的温情延续（梨树年年结果），一首写技术的骤然崩塌（桥断、车坠）。两首对照可见冯塔纳叙事诗的宽度。（1879年事故的具体伤亡数字与工程细节，各来源不一，标【待核】。）
+            </p>
+            <p>诗中苏格兰地名（Tay、Edinburgh）为专名，Wortschatz 不收，只在注释中解释。</p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译叙事。说明：(1) 诗题保留冯塔纳的撇号拼法 Die Brück' am Tay（=
+              die Brücke，省音），差异在校对记录；(2) 女巫短促对白（Ich mit. / Muß mit.）译文保留其断续节奏；(3)
+              叠句"Tand, Tand"译"虚妄，虚妄"，在两处（第3、9节末）原样重复；(4)
+              火车坠桥的瞬间诗意现实主义地以"光"暗示，不写血腥，译文照办。本诗与本站《里贝克队长》（编号27）同作者，建议对照。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >German Wikisource — Die Brück' am Tay（Deutsche Gedichte II, Insel 1984, S.585–587）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/Die_Br%C3%BCck%27_am_Tay"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/Die_Br%C3%BCck%27_am_Tay</a
+              >
+              <span class="source-citation"
+                >Theodor Fontane: Deutsche Gedichte II (Insel Verlag, Frankfurt/M., 4. Aufl. 1984), S.
+                585–587（记1879年12月28日）</span
+              >
+              <span class="source-note"
+                >一级来源（数字化印刷本，标注页码）。题作 Die Brück' am
+                Tay（带撇号）。本站正文据此（9节，含"Hei!"单行断）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">Projekt Gutenberg-DE / Avenarius Balladenbuch — Die Brück am Tay</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://projekt-gutenberg.org/authors/anthologien/books/deutsche-balladen-aus-ferdinand-avenarius-balladenbuch/chapter/29/"
+                target="_blank"
+                rel="noopener"
+                >https://projekt-gutenberg.org/authors/anthologien/books/deutsche-balladen-aus-ferdinand-avenarius-balladenbuch/chapter/29/</a
+              >
+              <span class="source-citation"
+                >Deutsche Balladen. Aus Ferdinand Avenarius' Balladenbuch (Steingrüben 1951), Kap. 29（独立运营方
+                Gutenberg-DE）</span
+              >
+              <span class="source-note"
+                >一级来源（独立选本重印，标注出版社年份）。题作 Die Brück am Tay（无撇号），确认"einen
+                Ringelreihn"读法，与 Wikisource 互证。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">martinschlu.de — Die Brück' am Tay</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.martinschlu.de/kulturgeschichte/neunzehntes/vormaerz/fontane/balladen/brueckeamtay.htm"
+                target="_blank"
+                rel="noopener"
+                >https://www.martinschlu.de/kulturgeschichte/neunzehntes/vormaerz/fontane/balladen/brueckeamtay.htm</a
+              >
+              <span class="source-citation">现代通行文本（私人文化史站）</span>
+              <span class="source-note"
+                >三级来源（独立运营方）。关键异文见证：作"ein Ringelreihn"（无 -en）、撇号字形多变、末节"Hei! Wie
+                Splitter…"合为一行。本站从 Wikisource/Insel 读法。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文以 German Wikisource 转写的《冯塔纳德语诗集》第2卷（Insel
+              1984，S.585–587）为底本，另以两个独立来源核对：Projekt Gutenberg-DE 所收
+              Avenarius《Balladenbuch》（Steingrüben 1951，独立运营方）、martinschlu.de（三级）。9 节、行数
+              5/5/6/8/8/8/8/8/11（共67行）——用词一致，差异在标题撇号、'ein/einen Ringelreihn'、末节断行。
+            </p>
+            <p>
+              【异文】(1) 标题撇号：Die Brück' am Tay（Wikisource/Insel，省音撇号）vs Die Brück am
+              Tay（Avenarius，无撇号）vs Die Brück´ am Tay（martinschlu，反引号）。本站从 Wikisource 的撇号拼法（与 slug
+              对应的省音标记）。(2) 第2节第4行：einen Ringelreihn（Wikisource/Insel + Avenarius，两源含一级）vs ein
+              Ringelreihn（martinschlu）。本站从两源支持的 einen。(3) 省音撇号：die Flamm.（Wikisource 无撇）vs die
+              Flamm'（martinschlu）；Ich seh'（Wikisource）vs Ich seh（martinschlu）；fiel'（Wikisource）。(4)
+              末节：Wikisource 作"Hei!"单行 + "Wie Splitter…"次行（共11行）；martinschlu 合为一行。本站从 Wikisource
+              的两行读法（S9=11行）。
+            </p>
+            <p>
+              【叠句与框形结构】(1) "Tand, Tand / Ist das Gebilde von
+              Menschenhand!"在第3节末（第3节第5—6行）与第9节末（第9节第11—12行）出现——两处原样重复。(2) "Wann treffen
+              wir drei wieder zusamm?"在第1节首与第9节首出现。(3) 第4节与第8节的"桥头屋望南"四行近乎原样重复。
+            </p>
+            <p>
+              【待进一步核实】(1) 1879年12月28日泰河桥事故的具体伤亡数字与工程细节（各来源不一）；(2)
+              莎士比亚《麦克白》第一幕第一场的具体对位行（本页仅笼统说明互文，未逐行核）；(3)
+              冯塔纳本诗在《诗集》中的确切位置。
+            </p>
+            <p>【公版】冯塔纳1898年卒，公版起始年 = 1898 + 71 = 1969。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / gutenberg /
+              martinschlu）、D（含两个一级来源：Insel 1984 + Avenarius 1951）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Theodor Fontane</li>
+            <li>确认出处：记1879.12.28泰河桥事故 / Insel 1984 S.585–587</li>
+            <li>核对节数（9节，67行）、框形叠句结构</li>
+            <li>记录标题撇号、ein/einen、末节断行异文</li>
+            <li>麦克白互文说明</li>
+            <li>叠句与框形结构说明（与die-stadt对照）</li>
+            <li>同作者与《里贝克队长》对照</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1898 + 71 = 1969</li>
+            <li>伤亡数字与工程细节标注待核</li>
+            <li>撰写 image brief（含禁忌：无血腥、女巫远景）</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查（长叙事诗布局）</li>
+            <li class="pending">核实1879事故伤亡数字</li>
+            <li class="pending">逐行核对《麦克白》第一幕第一场互文</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议冯塔纳/叙事诗专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

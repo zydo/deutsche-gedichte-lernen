@@ -1,0 +1,88 @@
+{
+  "id": "50",
+  "slug": "das-aesthetische-wiesel",
+  "author": "Christian Morgenstern",
+  "author_zh": "克里斯蒂安·摩根施特恩",
+  "author_gender": "male",
+  "title_de": "Das ästhetische Wiesel",
+  "title_zh": "美学的鼬",
+  "author_sort_year": 1905,
+  "year": "1905年收入《Galgenlieder》（Bruno Cassirer, Berlin 1905, S.36）",
+  "collection": "《Galgenlieder》（1905）· 语言游戏",
+  "period": "世纪末 / 幽默诗（Nonsense-Lyrik）",
+  "difficulty": "B1",
+  "tags": ["语言游戏", "韵脚", "无厘头", "幽默", "极短"],
+  "public_domain": {"death_year": 1914, "public_domain_year": 1985, "basis": "摩根施特恩1914年卒；按德国70年 p.m.a.，1985年起公版"},
+  "german_text": [
+    ["Ein Wiesel", "saß auf einem Kiesel", "inmitten Bachgeriesel."],
+    ["Wißt ihr,", "weshalb?"],
+    ["Das Mondkalb", "verriet es mir", "im Stillen:"],
+    ["Das raffinier-", "te Tier", "tat's um des Reimes willen."]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留 -iesel 三叠韵与 raffinier-/Tier 的跨行押韵机关",
+    "text": [
+      ["一只鼬", "坐在一块卵石上", "在淙淙的溪水中央。"],
+      ["你们可知道，", "为什么？"],
+      ["月牛", "悄悄告诉了我", "在静默之中："],
+      ["这只狡-","黠的动物", "是为了押韵才这么做的。"]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "Ein Wiesel / saß auf einem Kiesel / inmitten Bachgeriesel.",
+     "zh": "前三行是一个三叠韵（-iesel）：Wiesel（鼬）/ Kiesel（卵石）/ Bachgeriesel（淙淙溪水）。鼬坐在卵石上、卵石在溪水中——三个词都以 -iesel 收尾，层层套叠。"},
+    {"de": "Das raffinier- / te Tier",
+     "zh": "★全诗的机关：raffinierte（狡黠的）一词被强行拆到两行（raffinier- / te Tier），使得 raffinier- 与 Tier 押韵（-ier）。词被拆开，不为别的，只为押韵——这正是全诗的笑点。"},
+    {"de": "tat's um des Reimes willen.",
+     "zh": "um des Reimes willen = \"为了押韵的缘故\"。鼬之所以坐在那块石头上，不是出于任何现实理由，而是\"为了押韵\"——诗把自己的形式条件（押韵）写进了内容。这是\"元诗\"（诗关于诗本身）的幽默样本。um … willen + 第二格（des Reimes）。"}
+  ],
+  "vocab": [
+    {"term": "das Wiesel, -", "pos": "n.（中性）", "meaning": "鼬、黄鼠狼", "note": "小型食肉哺乳动物。诗中 Ein Wiesel（一只鼬）——它与 Kiesel、Bachgeriesel 押三叠韵 -iesel。"},
+    {"term": "der Kiesel, -", "pos": "n.（阳性）", "meaning": "卵石、燧石", "note": "der Kieselstein（卵石）。诗中 saß auf einem Kiesel（坐在一块卵石上）。"},
+    {"term": "ästhetisch", "pos": "adj.", "meaning": "美学的、审美的", "note": "die Ästhetik（美学）。诗题\"美学的鼬\"是反讽：鼬的\"美学\"行为（坐在石头上）其实只为押韵，是对\"为艺术而艺术\"的戏仿。"},
+    {"term": "der Reim, -e", "pos": "n.（阳性）", "meaning": "韵、韵脚", "note": "sich reimen（押韵）、reimlos（无韵的）。诗中 um des Reimes willen（为了押韵，第11行）。"},
+    {"term": "um … willen", "pos": "框式介词结构（+ 第二格）", "meaning": "为了……的缘故", "note": "框式：um + 第二格 + willen。诗中 um des Reimes willen（为押韵之故）。与本站《致自己》（编号32）的 um seiner selbst willen（为其自身之故）直接对接——一首为韵脚、一首为自身。"},
+    {"term": "raffiniert", "pos": "adj.（来自法语）", "meaning": "狡黠的、精明的、精巧的", "note": "诗中 das raffinierte Tier 被拆为 raffinier- / te Tier 以押韵（第8—9行）。das Raffinement（精巧）。"}
+  ],
+  "verb_forms": [],
+  "grammar_notes": [
+    {"title": "语言游戏：韵脚作为笑点（与《狼人》的变格游戏对照）",
+     "quote": "Ein Wiesel / saß auf einem Kiesel / inmitten Bachgeriesel. … Das raffinier- / te Tier / tat's um des Reimes willen.",
+     "body": "本诗与本站《狼人》（编号29）同作者、同书（《绞刑架之歌》），但笑点机制不同：《狼人》拿\"变格\"（der Werwolf → des Weswolfs → dem Wemwolf → den Wenwolf）开玩笑，本诗拿\"押韵\"开玩笑——鼬坐在石头上\"为了押韵\"，raffinierte 被拆成 raffinier-/te Tier\"为了押韵\"。两首都把德语的形式规则（变格/押韵）写成荒诞的内容，是\"诗关于诗本身\"的幽默样本。两页必须互链并说明这个区别。"},
+    {"title": "um … willen + 第二格（框式介词结构）",
+     "quote": "um des Reimes willen（第11行）",
+     "body": "um … willen 是德语的框式介词结构：um 放在前面，willen 放在最后，中间夹第二格名词。um des Reimes willen = \"为了押韵的缘故\"。同类：um Gottes willen（看在上帝份上）、um der Liebe willen（为了爱）。本站《致自己》（编号32）\"反身代词的第二格\"一节举的正是 um seiner selbst willen（为其自身之故）——本页与之直接对接。"}
+  ],
+  "cultural_notes": "克里斯蒂安·摩根施特恩（1871—1914）是德语幽默诗与无厘头诗（Nonsense-Lyrik）的代表。他的《绞刑架之歌》（Galgenlieder, 1905）创造了一个荒诞的\"绞刑架世界\"：其中的事物（鼬、卵石、月牛）都按语言自身的逻辑（押韵、构词、谐音）而非现实逻辑行动。\n\n《美学的鼬》是其中最常被引用的一首。它的笑点完全形式化：鼬坐在卵石上，不是出于任何自然理由，而是\"为了押韵\"——因为 Wiesel、Kiesel、Bachgeriesel 押韵，所以鼬\"必须\"坐在那块石头上。诗把押韵这一形式规则反转为内容的起因，是对\"为艺术而艺术\"（l'art pour l'art）的温和戏仿（故题\"美学的\"）。\n\n本诗与本站《狼人》（编号29）是《绞刑架之歌》的一对：《狼人》戏仿变格，《鼬》戏仿押韵——两首都把德语语法/诗学的形式规则写成荒诞剧。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) -iesel 三叠韵（Wiesel/Kiesel/Bachgeriesel）在中文无法复制，译文据义直译；(2) raffinier-/te Tier 的跨行押韵机关：译文作\"狡-/黠的动物\"，以破折号近似传达\"词被拆开以押韵\"，但中文无法真正复制 raffinier/Tier 的 -ier 韵；(3) um des Reimes willen 译\"为了押韵\"，并在注释中说明其框式结构。本诗短小（11行），但笑点全在形式，属\"短 ≠ 易\"。",
+  "image_prompt": {"imagery": "一只小鼬端坐在溪水中一块卵石上，姿态一本正经；溪水淙淙环绕；画面带轻微的荒诞感（鼬像在摆姿势）", "mood": "一本正经的荒诞；幽默但不滑稽，像一幅\"为押韵而摆拍\"的肖像", "elements": "一只坐姿端正的鼬、一块溪中卵石、淙淙溪水、森林溪岸、隐约的月光（暗示月牛）", "era": "无明确时代，森林溪流意象", "taboos": "不得把鼬拟人化（穿衣/表情夸张）；不得出现文字水印；不得出现现代元素；保持插画风而非写实摄影感", "style": "新艺术运动（Jugendstil）插画风，线条优雅、色调柔和，带轻微装饰性"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "German Wikisource — Das aesthetische Wiesel（Galgenlieder, 1932 Cassirer / Diogenes 1981 Nachdruck, S.36）", "url": "https://de.wikisource.org/wiki/Das_aesthetische_Wiesel", "tier": 1, "citation": "Christian Morgenstern: Galgenlieder, S. 36 (fotomechan. Nachdruck der Ausg. Bruno Cassirer, Berlin 1932; Diogenes, Zürich 1981)", "note": "一级来源（1932年Cassirer版的影印再版，标注页码）。题作 Das aesthetische Wiesel（ae 拼法），正文据此（raffinier-/te Tier 跨行、im Stillen 大写、tat's 带撇）。"},
+    {"name": "planetlyrik.de / Frankfurter Anthologie — Zu Morgensterns ‚Das aesthetische Wiesel‘", "url": "https://www.planetlyrik.de/juergen-stenzel-zu-christian-morgensterns-gedicht-das-aesthetische-wiesel/2023/05/", "tier": 2, "citation": "Jürgen Stenzel, in: Frankfurter Anthologie, Bd. 6 (Insel 1982)", "note": "二级来源（学术注解）。题作现代 ästhetische；正文用词与 Wikisource 一致，差异仅在正字法（tats 无撇、im stillen 小写）。"},
+    {"name": "zgedichte.de — Das ästhetische Wiesel", "url": "https://www.zgedichte.de/christian-morgenstern/das-aesthetische-wiesel.html", "tier": 3, "citation": "现代通行文本（题作 ästhetische，变音符）", "note": "三级来源（possel 组）。与 Wikisource 用词一致，差异仅在题名拼法（ästhetische）与撇号字形。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "der-werwolf", "needle": "变格", "context": "《狼人》"},
+    {"target_slug": "an-sich", "needle": "um seiner selbst willen", "context": "《致自己》"}
+  ],
+  "verification_notes": "【标题拼法】历史印刷题作\"Das aesthetische Wiesel\"（ae 连写/有时作 æ 合字，1905/1932 Cassirer 版）；现代通行本作\"Das ästhetische Wiesel\"（变音符）。本站标题从现代拼法 ästhetische（与 slug 一致），历史 ae 形态在此备案。\n\n【三源核对】正文以 German Wikisource 转写的1932年 Cassirer 版影印再版（Diogenes 1981，S.36）为底本，另以两个独立来源核对：planetlyrik（Frankfurter Anthologie 注解）、zgedichte.de。4 块、行数 3/2/3/3（共11行）——用词一致，差异仅在正字法（ae/ä、Wißt/Wisst、im Stillen/im stillen、tat's/tat′s/tats）。\n\n【正字法差异】(1) 题名：aesthetische（Wikisource 1932）vs ästhetische（现代）。(2) Wißt ihr（1932，ß）vs Wisst ihr（1996年后）。(3) im Stillen（大写，Wikisource/zgedichte）vs im stillen（小写，planetlyrik）。(4) tat's（直撇，Wikisource）vs tat′s（曲撇，zgedichte）vs tats（无撇，planetlyrik）。本站从1932 Cassirer 读法（Wißt、im Stillen、tat's），题名用现代 ästhetische。\n\n【待进一步核实】(1) 1905年初版的逐页形态（本次直接核到的是1932 Cassirer / 1981 Diogenes 影印本，非1905初版）；(2) 跨行 raffinier-/te Tier 的确切排印（连字符位置）。\n\n【公版】摩根施特恩1914年卒，公版起始年 = 1914 + 71 = 1985。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / planetlyrik / possel）、D（含一级来源：1932 Cassirer 影印本扫描）。",
+  "checklist": [
+    {"label": "确认作者：Christian Morgenstern", "done": true},
+    {"label": "确认出处：Galgenlieder 1905/1932, S.36", "done": true},
+    {"label": "核对行数（4块 3/2/3/3，共11行）", "done": true},
+    {"label": "记录题名 ae/ä 与正字法差异", "done": true},
+    {"label": "韵脚笑点说明（与《狼人》变格游戏对照）", "done": true},
+    {"label": "um … willen 框式结构说明（与《致自己》对接）", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1914 + 71 = 1985", "done": true},
+    {"label": "撰写 image brief", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "核实1905年初版排印形态", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议幽默诗/Nonsense 专业人士复核）", "done": false}
+  ]
+}

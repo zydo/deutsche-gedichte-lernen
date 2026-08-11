@@ -6,6 +6,8 @@ import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage } from "./templates.js";
+import { loadPoemRecords } from "./poem-data.js";
+import { formatContentErrors, validateContent } from "./validate-content.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -13,20 +15,6 @@ const DATA_DIR = path.join(ROOT, "data", "poems");
 const DIST_DIR = path.join(ROOT, "dist");
 const PUBLIC_DIR = path.join(ROOT, "public");
 const SNAP_DIR = path.join(ROOT, "snapshots");
-
-function loadPoems() {
-  const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
-  const poems = files.map((f) => {
-    const raw = readFileSync(path.join(DATA_DIR, f), "utf-8");
-    try {
-      return JSON.parse(raw);
-    } catch (e) {
-      throw new Error(`JSON 解析失败: ${f} — ${e.message}`);
-    }
-  });
-  poems.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-  return poems;
-}
 
 function validatePoem(p, filename) {
   // prettier-ignore
@@ -105,8 +93,14 @@ function build() {
   mkdirSync(DIST_DIR, { recursive: true });
   mkdirSync(path.join(DIST_DIR, "poems"), { recursive: true });
 
-  const poems = loadPoems();
-  console.log(`读取到 ${poems.length} 首诗歌数据。`);
+  const records = loadPoemRecords(DATA_DIR);
+  const poems = records.poems;
+  console.log(`读取到 ${poems.length} 首已发布诗歌数据、${records.pending.length} 个 pending 条目。`);
+
+  const contentErrors = validateContent(records);
+  if (contentErrors.length) {
+    throw new Error(`内容 lint 失败：\n${formatContentErrors(contentErrors)}`);
+  }
 
   const seenSlugs = new Set();
   for (const p of poems) {
@@ -121,7 +115,7 @@ function build() {
   writeFileSync(path.join(DIST_DIR, "index.html"), renderIndex(poems), "utf-8");
 
   // about
-  writeFileSync(path.join(DIST_DIR, "about.html"), renderAbout(poems.length), "utf-8");
+  writeFileSync(path.join(DIST_DIR, "about.html"), renderAbout(poems), "utf-8");
 
   const snapshots = loadSnapshots();
 

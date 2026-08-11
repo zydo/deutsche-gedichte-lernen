@@ -314,7 +314,7 @@
       "body": "疑问代词 wer 的四格为：wer – wessen（旧作 wes）– wem – wen。它确实没有复数形式：德语无法问\"谁们\"，只能用 wer 同时涵盖单数与复数（\"Wer kommt?\" 既可问一人也可问多人）。因此教师的回答在语法上完全正确。请注意与之相对的 was（什么）：was 只有 was – wessen – was 三个可用形式，标准德语中 was 没有第三格形式；遇到介词须用 wo(r)- 复合形式（如 womit、wovon、wodurch）。这两个疑问代词的变格表值得单独背下来。"
     },
     {
-      "title": "前置第二格（三例）",
+      "title": "前置第二格（三例：第2、3、6行）",
       "quote": "an eines Dorfschullehrers Grab … auf seines Blechschilds Messingknauf",
       "body": "= das Grab eines Dorfschullehrers、der Messingknauf seines Blechschilds。这首诗一边在讲第二格，一边在用最古雅的第二格语序——形式与内容再次重合。请注意第二格的形态标记：阳性/中性单数名词在第二格要加 -s 或 -es（des Wolfs, des Kindes），这也正是诗中 \"des Weswolfs\" 那个 -s 的来历。"
     },
@@ -438,6 +438,13 @@
     {
       "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次，尤其中译策略的取舍）",
       "done": false
+    }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "wenn-nicht-mehr-zahlen-und-figuren",
+      "needle": "sich begeben",
+      "context": "《当数字与图形不再》"
     }
   ]
 }

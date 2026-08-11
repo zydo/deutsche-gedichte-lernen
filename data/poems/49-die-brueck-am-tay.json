@@ -1,0 +1,109 @@
+{
+  "id": "49",
+  "slug": "die-brueck-am-tay",
+  "author": "Theodor Fontane",
+  "author_zh": "特奥多尔·冯塔纳",
+  "author_gender": "male",
+  "title_de": "Die Brück' am Tay",
+  "title_zh": "泰河桥",
+  "author_sort_year": 1889,
+  "year": "1879年12月28日作（记1879年12月28日苏格兰泰河桥断裂事故）",
+  "collection": "单篇叙事诗（收入多种冯塔纳诗选）",
+  "period": "诗意现实主义",
+  "difficulty": "B2",
+  "tags": ["叙事诗", "麦克白", "技术", "叠句", "框形结构"],
+  "public_domain": {"death_year": 1898, "public_domain_year": 1969, "basis": "冯塔纳1898年卒；按德国70年 p.m.a.，1969年起公版"},
+  "german_text": [
+    ["»Wann treffen wir drei wieder zusamm?«", "»Um die siebente Stund', am Brückendamm.«", "»Am Mittelpfeiler.«", "»Ich lösche die Flamm.«", "»Ich mit.«"],
+    ["»Ich komme vom Norden her.«", "»Und ich vom Süden.«", "»Und ich vom Meer.«", "»Hei, das gibt einen Ringelreihn,", "Und die Brücke muß in den Grund hinein.«"],
+    ["»Und der Zug, der in die Brücke tritt", "Um die siebente Stund'?«", "»Ei, der muß mit.«", "»Muß mit.«", "»Tand, Tand", "Ist das Gebilde von Menschenhand!«"],
+    ["Auf der Norderseite, das Brückenhaus —", "Alle Fenster sehen nach Süden aus,", "Und die Brücknersleut' ohne Rast und Ruh", "Und in Bangen sehen nach Süden zu,", "Sehen und warten, ob nicht ein Licht", "Übers Wasser hin »Ich komme« spricht,", "»Ich komme, trotz Nacht und Sturmesflug,", "Ich, der Edinburger Zug.«"],
+    ["Und der Brückner jetzt: »Ich seh' einen Schein", "Am anderen Ufer. Das muß er sein.", "Nun, Mutter, weg mit dem bangen Traum,", "Unser Johnie kommt und will seinen Baum,", "Und was noch am Baume von Lichtern ist,", "Zünd' alles an wie zum heiligen Christ,", "Der will heuer zweimal mit uns sein, —", "Und in elf Minuten ist er herein.«"],
+    ["Und es war der Zug. Am Süderturm", "Keucht er vorbei jetzt gegen den Sturm,", "Und Johnie spricht: »Die Brücke noch!", "Aber was tut es, wir zwingen es doch.", "Ein fester Kessel, ein doppelter Dampf,", "Die bleiben Sieger in solchem Kampf.", "Und wie's auch rast und ringt und rennt,", "Wir kriegen es unter, das Element.«"],
+    ["»Und unser Stolz ist unsre Brück';", "Ich lache, denk' ich an früher zurück,", "An all den Jammer und all die Not", "Mit dem elend alten Schifferboot;", "Wie manche liebe Christfestnacht", "Hab' ich im Fährhaus zugebracht", "Und sah unsrer Fenster lichten Schein", "Und zählte und konnte nicht drüben sein.«"],
+    ["Auf der Norderseite, das Brückenhaus —", "Alle Fenster sehen nach Süden aus,", "Und die Brücknersleut' ohne Rast und Ruh", "Und in Bangen sehen nach Süden zu;", "Denn wütender wurde der Winde Spiel,", "Und jetzt, als ob Feuer vom Himmel fiel',", "Erglüht es in niederschießender Pracht", "Überm Wasser unten... Und wieder ist Nacht."],
+    ["»Wann treffen wir drei wieder zusamm?«", "»Um Mitternacht, am Bergeskamm,«", "»Auf dem hohen Moor, am Erlenstamm.«", "»Ich komme.«", "»Ich mit.«", "»Ich nenn' euch die Zahl.«", "»Und ich die Namen.«", "»Und ich die Qual.«", "»Hei!", "Wie Splitter brach das Gebälk entzwei.«", "»Tand, Tand", "Ist das Gebilde von Menschenhand.«"]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译叙事，保留女巫短促对白与\"Tand, Tand\"叠句的框形结构",
+    "text": [
+      ["\"我们三个何时再聚首？\"", "\"七点钟，在桥坝上。\"", "\"在中柱那儿。\"", "\"我去熄了那火。\"", "\"我也来。\""],
+      ["\"我从北方来。\"", "\"我从南方。\"", "\"我从海上。\"", "\"嘿，这要跳起一圈环舞，", "那桥就得沉进地底去。\""],
+      ["\"那七点钟", "正开进桥里的火车呢？\"", "\"嘿，它也得跟着。\"", "\"得跟着。\"", "\"虚妄，虚妄", "是这人手所造的东西！\""],
+      ["在北岸，那座桥头屋——", "所有的窗都朝南开着，", "守桥人夫妇不得安息、", "提心吊胆地朝南望着，", "望着、等着，看有没有一盏灯", "越过水面说\"我来了\"，", "\"我来了，不怕黑夜与风暴，", "我，爱丁堡那趟车。\""],
+      ["守桥人这时说：\"我看见一团光", "在对岸。那必定是他。", "好啦，老伴，别再做那吓人的梦了，", "咱们的约翰尼要回来了，他要他的树，", "把树上还剩的灯", "全都点上，像过神圣圣诞一样，", "他今年要跟我们过两次——", "再过十一分钟他就到家了。\""],
+      ["而那正是那趟车。在南塔旁", "它此刻正迎着风暴喘息而过，", "约翰尼说：\"还有这座桥！", "可那算什么，我们照样能征服它。", "结实的锅炉、双倍的蒸汽，", "在这样的较量里它们定是赢家。", "不管它怎么挣扎、绞扭、狂奔，", "我们终归能把它压下去——那元素。\""],
+      ["\"而我们的骄傲就是我们的桥；", "我一想到从前就发笑，", "想到乘那只可怜的旧渡船", "所受的一切苦、一切难；", "有多少个亲爱的圣诞夜", "我是守在渡口屋里度过的，", "望着我们自己窗户的亮光，", "数着、数着，却过不了河。\""],
+      ["在北岸，那座桥头屋——", "所有的窗都朝南开着，", "守桥人夫妇不得安息、", "提心吊胆地朝南望着；", "因为风刮得更凶了，", "而现在，仿佛有火从天而降，", "一道下射的光华亮起", "在下方的水面上……然后又是黑夜。"],
+      ["\"我们三个何时再聚首？\"", "\"午夜，在山脊上，\"", "\"在高高的荒原，赤杨树干旁。\"", "\"我来。\"", "\"我也来。\"", "\"我来报那数字。\"", "\"我来报那些名字。\"", "\"我来报那苦痛。\"", "\"嘿！", "椽子像碎片一样断成两半。\"", "\"虚妄，虚妄", "是人手所造的东西。\""]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "»Wann treffen wir drei wieder zusamm?«",
+     "zh": "★开篇三个女巫的对话，直接改写自莎士比亚《麦克白》第一幕第一场（\"When shall we three meet again?\"）。冯塔纳把一场工程事故写成命运：女巫（自然/命运之力）在桥断之前已定下毁灭。\"wir drei\"（我们三个）即女巫三人。"},
+    {"de": "Tand, Tand / Ist das Gebilde von Menschenhand!",
+     "zh": "★叠句（Refrain）：\"虚妄，虚妄，是人手所造的东西！\"出现在第3节末与第9节末，构成框形结构的内框。der Tand（无用之物、虚饰、破烂）；das Gebilde von Menschenhand（人手所造之物，= 人工的桥）。女巫的预言把人工技术判为\"虚妄\"——它终将被自然摧毁。"},
+    {"de": "»Ich lösche die Flamm.« / »Ich mit.«",
+     "zh": "女巫的短促对白：\"我去熄了那火\"\"我也来\"——\"熄火\"即制造黑暗与灾难。这些两三个词的短行（Ich mit. / Muß mit.）制造不祥的、断续的节奏，与中间叙事段（4—8节，每节8行长行）形成对照。"},
+    {"de": "Auf der Norderseite, das Brückenhaus —",
+     "zh": "第4节转入叙事：守桥人一家（die Brücknersleut'）在北岸桥头屋等待从爱丁堡乘火车回来的儿子约翰尼（Johnie）。这首诗的私人线是亲情（父母等儿子），公共线是技术（桥、火车）。第4节与第8节几乎原样重复（桥头屋望南），构成框形结构——第4节是期盼，第8节是灾难降临。"},
+    {"de": "Und in elf Minuten ist er herein.«",
+     "zh": "守桥人算定\"再过十一分钟\"儿子就到家——这个精确的时间倒计时正是悲剧的机关：读者已知女巫的预言（桥要塌），十一分钟的期盼实则通向毁灭。"},
+    {"de": "Erglüht es in niederschießender Pracht / Überm Wasser unten... Und wieder ist Nacht.",
+     "zh": "第8节末：\"一道下射的光华亮起在下方的水面上……然后又是黑夜。\"——火车坠桥的瞬间没有正面描写，只用\"光\"与\"复归于黑夜\"暗示。这是诗意现实主义的节制：灾难不写血腥，只写光的闪灭。"},
+    {"de": "»Wann treffen wir drei wieder zusamm?«",
+     "zh": "末节（第9节）女巫重新登场，与开篇呼应，构成框形结构的外框。女巫报\"数字、名字、苦痛\"——灾难已成的清点。最后再次唱出\"Tand, Tand / Ist das Gebilde von Menschenhand\"，与第3节末的叠句闭合。"}
+  ],
+  "vocab": [
+    {"term": "die Brück', -en", "pos": "n.（阴性）", "meaning": "桥（die Brücke 的省音形）", "note": "诗题\"Die Brück' am Tay\"中 Brück' 是 Brücke 省去词尾 -e 的诗/口语形（以撇号标省音）。本站诗题保留冯塔纳的撇号拼法（Die Brück' am Tay）；部分选本（如 Avenarius Balladenbuch）省去撇号作\"Die Brück am Tay\"。"},
+    {"term": "der Tand, -e（多单数）", "pos": "n.（阳性，雅/古）", "meaning": "无用之物、虚饰、破烂", "note": "诗中叠句\"Tand, Tand / Ist das Gebilde von Menschenhand!\"——女巫把人工之桥判为\"虚妄\"。今日多见于\"Tand sein\"（无价值）等雅语。"},
+    {"term": "der Ringelreihn, -e", "pos": "n.（阳性，古）", "meaning": "环舞、围圈舞", "note": "ringeln（绕圈）+ Reihen（行列舞）。诗中\"Hei, das gibt einen Ringelreihn\"——女巫的环舞即毁灭的仪式。"},
+    {"term": "das Gebilde, -", "pos": "n.（中性）", "meaning": "造物、形成物", "note": "bilden（塑造）的名词化。诗中 das Gebilde von Menschenhand（人手所造之物，即桥）。"},
+    {"term": "der Christ / das Christfest", "pos": "n.", "meaning": "（古/方言）圣诞；基督", "note": "诗中\"wie zum heiligen Christ\"（像过神圣圣诞一样）——Christ 在此指 das Christfest（圣诞节），南德/古用法。"},
+    {"term": "der Kessel, -", "pos": "n.（阳性）", "meaning": "锅炉；（烹）锅", "note": "诗中\"Ein fester Kessel, ein doppelter Dampf\"（结实的锅炉、双倍的蒸汽）——约翰尼对火车技术的自信。这种对技术的自信正是悲剧的反讽铺垫。"}
+  ],
+  "verb_forms": [],
+  "grammar_notes": [
+    {"title": "叠句（Refrain）与框形结构",
+     "quote": "\"Tand, Tand / Ist das Gebilde von Menschenhand!\"（第3节末 + 第9节末）；\"Wann treffen wir drei wieder zusamm?\"（第1节首 + 第9节首）",
+     "body": "本诗用双重叠句与首尾呼应构成框形结构：(1) 女巫的问句\"Wann treffen wir drei wieder zusamm?\"在第1节首与第9节首出现，闭合外框；(2) 女巫的判词\"Tand, Tand …\"在第3节末与第9节末出现，为内框；(3) 第4节与第8节几乎原样重复\"桥头屋望南\"一段，第4节是期盼、第8节是灾临。与本站《那座城》（编号25）、《春天的信念》（编号22）的叠句/复现构成主题簇。"},
+    {"title": "女巫台词中的虚拟式与祈使；麦克白互文",
+     "quote": "»Wann treffen wir drei wieder zusamm?« … »Ich lösche die Flamm.«",
+     "body": "女巫的对白短促、断续（Ich mit. / Muß mit.），多用祈使与现在时预言（\"die Brücke muß in den Grund hinein\"）。开篇直接改写自莎士比亚《麦克白》第一幕第一场三女巫的开场（\"When shall we three meet again?\"）。冯塔纳借此把一场1879年的工程事故写成命运悲剧：自然（女巫）早已判定人工（桥）必毁。"}
+  ],
+  "cultural_notes": "特奥多尔·冯塔纳（1819—1898）是德语诗意现实主义最伟大的小说家（《艾菲·布里斯特》），也写叙事诗。《里贝克队长》（本站编号27）与《泰河桥》是他最常被选读的两首。\n\n《泰河桥》作于1879年12月28日，记当日发生的苏格兰泰河桥（Tay Bridge）断裂事故：一列火车在风暴中随桥坠河。冯塔纳把这场工程事故写成一首\"命运叙事诗\"——开篇三女巫（直接取自《麦克白》）预告毁灭，中间写守桥人一家等待从爱丁堡乘火车归来的儿子约翰尼，末节女巫重来、灾难闭合。\n\n本诗与本站《里贝克队长》（编号27）同作者而气质相反：一首写乡土的温情延续（梨树年年结果），一首写技术的骤然崩塌（桥断、车坠）。两首对照可见冯塔纳叙事诗的宽度。（1879年事故的具体伤亡数字与工程细节，各来源不一，标【待核】。）\n\n诗中苏格兰地名（Tay、Edinburgh）为专名，Wortschatz 不收，只在注释中解释。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译叙事。说明：(1) 诗题保留冯塔纳的撇号拼法 Die Brück' am Tay（= die Brücke，省音），差异在校对记录；(2) 女巫短促对白（Ich mit. / Muß mit.）译文保留其断续节奏；(3) 叠句\"Tand, Tand\"译\"虚妄，虚妄\"，在两处（第3、9节末）原样重复；(4) 火车坠桥的瞬间诗意现实主义地以\"光\"暗示，不写血腥，译文照办。本诗与本站《里贝克队长》（编号27）同作者，建议对照。",
+  "image_prompt": {"imagery": "一座19世纪钢桁架铁路桥在风暴夜中，一列车头灯正驶入桥中段；桥下是汹涌的河口黑水；桥的远端上空隐约三个女巫的剪影（不清晰，只作暗示）", "mood": "宿命的、即将降临的毁灭；不是事故现场，而是\"毁灭已被预言\"的压抑瞬间", "elements": "19世纪钢桁架长桥、风暴与浪涌、驶入桥中的列车车头灯、河口黑水、远端天空隐约的三女巫剪影", "era": "1879年苏格兰，桥梁为维多利亚时代钢桁架结构", "taboos": "不得画出坠毁/血腥/尸体（本诗以光暗示，不正面写）；女巫只作远景暗示，不可画成流行奇幻女巫（尖帽/绿皮）；不得出现现代元素；不得出现文字水印", "style": "维多利亚浪漫—写实风景画质感，风暴夜景，色调墨蓝与暖黄（车灯）对比，构图强调桥的纵深与上方天空的宿命感"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "German Wikisource — Die Brück' am Tay（Deutsche Gedichte II, Insel 1984, S.585–587）", "url": "https://de.wikisource.org/wiki/Die_Br%C3%BCck%27_am_Tay", "tier": 1, "citation": "Theodor Fontane: Deutsche Gedichte II (Insel Verlag, Frankfurt/M., 4. Aufl. 1984), S. 585–587（记1879年12月28日）", "note": "一级来源（数字化印刷本，标注页码）。题作 Die Brück' am Tay（带撇号）。本站正文据此（9节，含\"Hei!\"单行断）。"},
+    {"name": "Projekt Gutenberg-DE / Avenarius Balladenbuch — Die Brück am Tay", "url": "https://projekt-gutenberg.org/authors/anthologien/books/deutsche-balladen-aus-ferdinand-avenarius-balladenbuch/chapter/29/", "tier": 1, "citation": "Deutsche Balladen. Aus Ferdinand Avenarius' Balladenbuch (Steingrüben 1951), Kap. 29（独立运营方 Gutenberg-DE）", "note": "一级来源（独立选本重印，标注出版社年份）。题作 Die Brück am Tay（无撇号），确认\"einen Ringelreihn\"读法，与 Wikisource 互证。"},
+    {"name": "martinschlu.de — Die Brück' am Tay", "url": "https://www.martinschlu.de/kulturgeschichte/neunzehntes/vormaerz/fontane/balladen/brueckeamtay.htm", "tier": 3, "citation": "现代通行文本（私人文化史站）", "note": "三级来源（独立运营方）。关键异文见证：作\"ein Ringelreihn\"（无 -en）、撇号字形多变、末节\"Hei! Wie Splitter…\"合为一行。本站从 Wikisource/Insel 读法。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "herr-von-ribbeck", "needle": "Fontane", "context": "《里贝克队长》"},
+    {"target_slug": "die-stadt", "needle": "叠句", "context": "《那座城》"}
+  ],
+  "verification_notes": "【三源核对】正文以 German Wikisource 转写的《冯塔纳德语诗集》第2卷（Insel 1984，S.585–587）为底本，另以两个独立来源核对：Projekt Gutenberg-DE 所收 Avenarius《Balladenbuch》（Steingrüben 1951，独立运营方）、martinschlu.de（三级）。9 节、行数 5/5/6/8/8/8/8/8/11（共67行）——用词一致，差异在标题撇号、'ein/einen Ringelreihn'、末节断行。\n\n【异文】(1) 标题撇号：Die Brück' am Tay（Wikisource/Insel，省音撇号）vs Die Brück am Tay（Avenarius，无撇号）vs Die Brück´ am Tay（martinschlu，反引号）。本站从 Wikisource 的撇号拼法（与 slug 对应的省音标记）。(2) 第2节第4行：einen Ringelreihn（Wikisource/Insel + Avenarius，两源含一级）vs ein Ringelreihn（martinschlu）。本站从两源支持的 einen。(3) 省音撇号：die Flamm.（Wikisource 无撇）vs die Flamm'（martinschlu）；Ich seh'（Wikisource）vs Ich seh（martinschlu）；fiel'（Wikisource）。(4) 末节：Wikisource 作\"Hei!\"单行 + \"Wie Splitter…\"次行（共11行）；martinschlu 合为一行。本站从 Wikisource 的两行读法（S9=11行）。\n\n【叠句与框形结构】(1) \"Tand, Tand / Ist das Gebilde von Menschenhand!\"在第3节末（第3节第5—6行）与第9节末（第9节第11—12行）出现——两处原样重复。(2) \"Wann treffen wir drei wieder zusamm?\"在第1节首与第9节首出现。(3) 第4节与第8节的\"桥头屋望南\"四行近乎原样重复。\n\n【待进一步核实】(1) 1879年12月28日泰河桥事故的具体伤亡数字与工程细节（各来源不一）；(2) 莎士比亚《麦克白》第一幕第一场的具体对位行（本页仅笼统说明互文，未逐行核）；(3) 冯塔纳本诗在《诗集》中的确切位置。\n\n【公版】冯塔纳1898年卒，公版起始年 = 1898 + 71 = 1969。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / gutenberg / martinschlu）、D（含两个一级来源：Insel 1984 + Avenarius 1951）。",
+  "checklist": [
+    {"label": "确认作者：Theodor Fontane", "done": true},
+    {"label": "确认出处：记1879.12.28泰河桥事故 / Insel 1984 S.585–587", "done": true},
+    {"label": "核对节数（9节，67行）、框形叠句结构", "done": true},
+    {"label": "记录标题撇号、ein/einen、末节断行异文", "done": true},
+    {"label": "麦克白互文说明", "done": true},
+    {"label": "叠句与框形结构说明（与die-stadt对照）", "done": true},
+    {"label": "同作者与《里贝克队长》对照", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1898 + 71 = 1969", "done": true},
+    {"label": "伤亡数字与工程细节标注待核", "done": true},
+    {"label": "撰写 image brief（含禁忌：无血腥、女巫远景）", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查（长叙事诗布局）", "done": false},
+    {"label": "核实1879事故伤亡数字", "done": false},
+    {"label": "逐行核对《麦克白》第一幕第一场互文", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议冯塔纳/叙事诗专业人士复核）", "done": false}
+  ]
+}

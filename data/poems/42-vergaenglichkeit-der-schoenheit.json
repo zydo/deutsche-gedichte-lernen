@@ -1,0 +1,101 @@
+{
+  "id": "42",
+  "slug": "vergaenglichkeit-der-schoenheit",
+  "author": "Christian Hoffmann von Hoffmannswaldau",
+  "author_zh": "克里斯蒂安·霍夫曼·冯·霍夫曼斯瓦尔道",
+  "author_gender": "male",
+  "title_de": "Vergänglichkeit der Schönheit",
+  "title_zh": "美之易逝",
+  "author_sort_year": 1650,
+  "year": "约17世纪中期作；生前未刊，1695年由 Benjamin Neukirch 编入《Herrn von Hoffmannswaldau und andrer Deutschen … Gedichte》第一卷（系年待核）",
+  "collection": "《Herrn von Hoffmannswaldau und andrer Deutschen auserlesener … Gedichte Erster Theil》（Neukirch, 1695）· 第二西里西亚派 / 华丽风格",
+  "period": "巴洛克（第二西里西亚派 / galante Dichtung）",
+  "difficulty": "B2–C1",
+  "tags": ["十四行诗", "亚历山大体", "vanitas", "肉身", "华丽风格"],
+  "public_domain": {"death_year": 1679, "public_domain_year": 1750, "basis": "Hoffmannswaldau 1679年卒；按德国70年 p.m.a.，1750年起公版"},
+  "german_text": [
+    ["Es wird der bleiche Tod mit seiner kalten Hand", "Dir endlich mit der Zeit um deine Brüste streichen,", "Der liebliche Korall der Lippen wird verbleichen;", "Der Schultern warmer Schnee wird werden kalter Sand,"],
+    ["Der Augen süßer Blitz, die Kräfte deiner Hand,", "Für welchen solches fällt, die werden zeitlich weichen,", "Das Haar, das itzund kann des Goldes Glanz erreichen,", "Tilgt endlich Tag und Jahr als ein gemeines Band."],
+    ["Der wohlgesetzte Fuß, die lieblichen Gebärden,", "Die werden teils zu Staub, teils nichts und nichtig werden,", "Denn opfert keiner mehr der Gottheit deiner Pracht."],
+    ["Dies und noch mehr als dies muss endlich untergehen,", "Dein Herz kann allein zu aller Zeit bestehen,", "Dieweil es die Natur aus Diamant gemacht."]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留亚历山大体 abba abba ccd eed 的十四行结构与逐器官具体化的修辞",
+    "text": [
+      ["苍白的死神终会用他冰冷的手", "最终随着时间抚摸你的双乳，", "嘴唇那可爱的珊瑚将会褪色；", "双肩那温暖的雪将会变成冰冷的沙，"],
+      ["双眼那甜美的闪电、你双手的力量，", "——这一切若坍塌，它们都会随时间消退，", "那此刻能匹及黄金光泽的头发，", "终将被日与年像抹去一道平常束带那样抹去。"],
+      ["那姿态优美的脚、那可爱的举止，", "它们一部分将化为尘土，一部分化为虚无，", "于是再没有人向你的华美的神灵献祭。"],
+      ["这一切以及比这更多的，终归要消逝，", "唯独你的心能够万古长存，", "因为自然用钻石造了它。"]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "Es wird der bleiche Tod mit seiner kalten Hand / Dir endlich mit der Zeit um deine Brüste streichen,",
+     "zh": "全诗的策略：把 vanitas（虚空）的抽象命题\"逐器官具体化\"。开篇即\"苍白的死神终会抚摸你的双乳\"——不是泛泛说\"美会消逝\"，而是一一列举身体的部位（乳房、唇、肩、眼、手、发、足、举止）。这种肉身的、近乎情色的铺陈，是\"华丽风格\"（Schwulst）的特征。"},
+    {"de": "Der liebliche Korall der Lippen wird verbleichen;",
+     "zh": "verbleichen（变苍白、褪色）——嘴唇被比作珊瑚（Korall），珊瑚的红色将褪。注意与 verwesen（腐烂）的区分：verbleichen 指颜色褪去，verwesen 指有机体腐败（参见词汇表 verwesen/der Verweser 同形异义）。"},
+    {"de": "Der Schultern warmer Schnee wird werden kalter Sand,",
+     "zh": "双肩的\"温暖的雪\"将变成\"冰冷的沙\"——雪（白皙肌肤）变沙（粗糙）。每组器官都给一个\"由美到丑\"的转化。"},
+    {"de": "Das Haar, das itzund kann des Goldes Glanz erreichen,",
+     "zh": "itzund（此刻、如今）是 itzt 的巴洛克扩展形（= jetzt，见17世纪正字法表）。头发此刻能匹及黄金的光泽，终将被时间抹去。"},
+    {"de": "Denn opfert keiner mehr der Gottheit deiner Pracht.",
+     "zh": "转折（Volta）前的逻辑：一旦美消逝，再没有人向\"你的华美的神灵\"（der Gottheit deiner Pracht，即把美人的美貌比作值得献祭的神）献祭。美即神圣——而它会衰败。"},
+    {"de": "Dein Herz kann allein zu aller Zeit bestehen, / Dieweil es die Natur aus Diamant gemacht.",
+     "zh": "末两行格言式收束（与《致自己》编号32 末两行同类手法）：唯独心能万古长存，因为自然用钻石造了它。整首十四行的肉身铺陈在此被一个反转收束——美会消逝，但\"心\"（内在的、不可见的）是钻石做的。这是巴洛克\"虚空\"中留出的唯一救赎。"}
+  ],
+  "vocab": [
+    {"term": "die Vergänglichkeit", "pos": "n.（阴性）", "meaning": "易逝性、无常", "note": "vergehen（消逝）的名词化，巴洛克核心概念。诗题即此。与 vanitas（虚空）同义、与《一切都是虚空》（编号30）的 Eitelkeit 同族。"},
+    {"term": "bleich", "pos": "adj.", "meaning": "苍白的", "note": "动词 erbleichen（变苍白）。诗中 der bleiche Tod（苍白的死神，第1行）。"},
+    {"term": "der Zunder, -", "pos": "n.（阳性）", "meaning": "引火物、火绒", "note": "易燃的引火物；比喻\"易引燃之物\"。与本诗 vanitas 主题相邻（肉体之美的\"易燃\"）。诗中虽未单用 Zunder，收入是因为其\"易逝/易燃\"义与 erbleichen/vergehen 词族相关。"},
+    {"term": "erbleichen", "pos": "v.（强变化）", "meaning": "变苍白、褪色", "note": "变位 erbleicht – erblich – ist erblichen。诗中 wird verbleichen（第3行，弱变化同义 verbleichen）。注意强变化 erbleichen（i–a–i）与弱变化 verbleichen 的区分。"},
+    {"term": "die Zier, -en", "pos": "n.（阴性，雅/古）", "meaning": "装饰、华美", "note": "schmücken（装饰）的雅词。与 die Zierde（装饰）同源。诗中虽未单用 Zier，但\"der Gottheit deiner Pracht\"即一种 Zier。"},
+    {"term": "verwesen vs der Verweser", "pos": "——", "meaning": "verwesen（腐烂）/ der Verweser（代理人）——同形异义", "note": "★同形异义：verwesen（腐烂，强变化 verwirkt/verwest，ist verwesen）的第三人称单数 verwest 与 der Verweser（代理人、临时代管）形近。诗中虽用 verbleichen 不用 verwesen，收入以提醒这一经典混淆。"},
+    {"term": "itzund", "pos": "adv.（巴洛克）", "meaning": "此刻、如今（= jetzt）", "note": "= jetzt 的巴洛克扩展形（itz/itzt/itzund/itztund）。诗中 das itzund kann（第7行）。详见17世纪正字法表。"}
+  ],
+  "verb_forms": [],
+  "grammar_notes": [
+    {"title": "亚历山大体与十四行结构（接《致自己》《祖国之泪》）",
+     "quote": "全诗 4+4+3+3 行，韵式 abba abba ccd eed，亚历山大体（六音步抑扬格 + 第6音节后 Zäsur）",
+     "body": "本诗是彼特拉克式十四行：两个四行诗节（Quartett，抱韵 abba）+ 两个三行诗节（Terzett，ccd eed）。诗体为亚历山大体——六音步抑扬格，第6音节后有固定中间停顿（Zäsur），行末阴阳韵交替。本页是全站亚历山大体的样本之一，与本站《致自己》（编号32，斯多亚自持）、《祖国之泪》（编号31，战争虚空）同体，但主题是肉身之美——三首同体而异题。可与《致自己》末两行的格言式收束对照（同为亚历山大体十四行的对句收束）。"},
+    {"title": "17世纪正字法总表（全站汇总，散在各巴洛克页的零散说明归于此）",
+     "quote": "原刊（Neukirch 1695）vs 现代通行文本的系统性差异",
+     "body": "本页把散在本站《一切都是虚空》（编号30）、《祖国之泪》（编号31）、《致自己》（编号32）三页的零散正字法说明汇总为一张表，供巴洛克文本阅读参照：(1) ey/ei：原刊 ey（frey/sey/allein），现代 ei（frei/sei/allein）；(2) th/t：原刊 th（thun/That），现代 t（tun/Tat）；(3) ß/ss：原刊 ß 通用（muß/laß），现代按音长分（muß/lass）；(4) Virgel（/）代逗号：原刊用斜线表诗行内停顿，现代改逗号；(5) 名词大写尚未定型：原刊名词多小写（tod/hand/zeit），现代一律大写；(6) umb/um、itzt/jetzt：原刊 umb/itzt/itzund，现代 um/jetzt/jetztund。本页与上述三页构成巴洛克正字法参照系，建议互链。"},
+    {"title": "巴洛克的形容词堆叠与同义反复（Häufung）",
+     "quote": "bleiche Tod … kalten Hand … liebliche Korall … warmer Schnee … süßer Blitz …",
+     "body": "华丽风格（Schwulst / galante Dichtung）爱用密集的形容词与同义反复制造铺陈感：每一器官都配一个华丽的修饰语（苍白的死、冰冷的手、可爱的珊瑚、温暖的雪、甜美的闪电）。与本站《一切都是虚空》（编号30）的抽象罗列构成方法论对照：格吕菲乌斯用抽象范畴罗列虚空（城池/草地/青铜/大理石），霍夫曼斯瓦尔道用身体器官的具体铺陈虚空——两种 vanitas 路径。"}
+  ],
+  "cultural_notes": "克里斯蒂安·霍夫曼·冯·霍夫曼斯瓦尔道（1616—1679）是德语巴洛克\"第二西里西亚派\"的代表，与格吕菲乌斯（本站编号30、31）齐名。但二人路数相反：格吕菲乌斯写战争与虚空的严肃宗教诗，霍夫曼斯瓦尔道写\"华丽风格\"（galante Dichtung / Schwulst）——肉体的、修辞铺陈的、近乎情色的诗。\n\n《美之易逝》是他的代表作。它生前未刊，1695年由其侄 Benjamin Neukirch 编入《霍夫曼斯瓦尔道及其他德语诗人诗选》第一卷。这首十四行把 vanitas（虚空）的抽象命题\"逐器官具体化\"：死会抚摸乳房、唇（珊瑚）会褪色、肩（雪）会变沙、眼（闪电）、手、发（金）、足、举止——每一项身体之美都被给一个\"由美到丑\"的转化。末两行反转：唯独心（Herz）是钻石做的，能万古长存。\n\n本诗与本站《一切都是虚空》（编号30）是巴洛克 vanitas 的两极：一首抽象罗列（城/草/铜/石），一首肉身铺陈（乳/唇/肩/眼）——没有后者，巴洛克的图像是残缺的。它也是全站亚历山大体十四行的第三个样本（《致自己》《祖国之泪》之外），三首同体而异题。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文采用现代化正字法通行文本，原刊（Neukirch 1695）小写名词 + Virgel（/）代逗号的形态在17世纪正字法表与校对记录中完整给出；(2) \"逐器官具体化\"的修辞译文保留（双乳/唇之珊瑚/肩之雪/眼之闪电）；(3) 末两行的格言式收束（\"唯独心是钻石做的\"）译文保留其反转语气。本诗与本站《一切都是虚空》（编号30）是巴洛克 vanitas 的两极，建议对照。",
+  "image_prompt": {"imagery": "一位无名贵妇的半身像逐渐石化/沙化：肌肤如雪融化成沙、嘴唇的珊瑚色褪去、金发失去光泽；唯独胸口处一颗钻石般的心脏仍在发光", "mood": "华美中的衰败；肉身之美正在瓦解，唯独心不变", "elements": "半身肖像（无面部，仅肩颈胸手）、肌肤化为沙的局部、褪色的唇、失光的发、胸口发光的钻石心脏、深暗背景", "era": "17世纪巴洛克宫廷肖像，服饰与珠宝为该时代样式", "taboos": "不得出现完整可辨的面孔；不得出现骷髅/沙漏/蜡烛等标准 vanitas 静物符号（本诗未用）；不得裸露；不得出现文字水印", "style": "巴洛克宫廷肖像—虚空画融合，明暗对比强烈，色调金棕渐变为灰沙，唯独心脏处钻石白光"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "Zeno.org — Hoffmannswaldau: Vergänglichkeit der schönheit（Neukirch-Anthologie Bd.1, Niemeyer 1961 Nachdruck, S.46–47）", "url": "http://www.zeno.org/Literatur/M/Hoffmannswaldau,+Christian+Hoffmann+von/Gedichte/Gedichte+aus+Neukirchs+Anthologie,+Bd.+1/Galante+Gedichte/Verg%C3%A4nglichkeit+der+sch%C3%B6nheit", "tier": 1, "citation": "Herrn von Hoffmannswaldau und anderer Deutschen auserlesener … Gedichte Erster Theil (= Neukirchs Anthologie), reprogr. Nachdruck Niemeyer/Metten, Tübingen 1961, S. 46–47（原刊1695/97）", "note": "一级来源（Neukirch 选集1961年影印再版，标注页码）。给出原刊正字法（小写名词、Virgel / 代逗号、umb/itzund/th 等旧拼法），本页正文据此现代化。"},
+    {"name": "deutschelyrik.de — „Vergänglichkeit der Schönheit“", "url": "https://www.deutschelyrik.de/vergaenglichkeit-der-schoenheit-14537.html", "tier": 2, "citation": "现代部分保留的巴洛克-混合文本（Aufnahme 2001）", "note": "二级来源。给出部分保留旧拼法的混合文本（与 gedichte7 的全现代化有别）。"},
+    {"name": "gedichte7.de — Vergänglichkeit der Schönheit", "url": "https://www.gedichte7.de/vergaenglichkeit-der-schoenheit.html", "tier": 3, "citation": "现代通行文本（全现代化）", "note": "三级来源（possel 组）。给出全现代化读法，用于确定本页的现代化通行文本。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "an-sich", "needle": "亚历山大体", "context": "《致自己》"},
+    {"target_slug": "traenen-des-vaterlandes", "needle": "亚历山大体", "context": "《祖国之泪》"},
+    {"target_slug": "es-ist-alles-eitel", "needle": "正字法", "context": "《一切都是虚空》"}
+  ],
+  "verification_notes": "【正字法与版本处理原则】本站正文采用现代化正字法的通行文本（面向学习者）；原刊（Neukirch 1695）的小写名词 + Virgel（/）+ 旧拼法形态在17世纪正字法表与本记录中完整给出。\n\n【三源核对】原刊正字法以 Zeno.org 转写的 Neukirch 选集1961年影印再版（S.46–47）为一级来源（本页的现代化正文以 gedichte7 的全现代化读法为底本，原刊形态据 Zeno）。另两个独立来源：deutschelyrik.de（二级，部分保留旧拼法的混合文本）、gedichte7.de（三级，全现代化）。14 行、分节 4/4/3/3、韵式 abba abba ccd eed——一致；差异仅在现代化程度（deutschelyrik 部分保留 / gedichte7 全现代 / Zeno 原刊）。\n\n【原刊 vs 现代 系统性差异】(1) 名词大小写：原刊小写（tod/hand/zeit/corall/lippen/sand/augen/haar/glanz/tag/jahr/band/fuß/staub/gottheit/pracht/hertze/natur/diamant），现代大写。(2) 拼写：umb→um、corall→Korall、kräffte→Kräfte、itzund→itzund（保留，lexical）、glantz→Glanz、süsser→süßer、theils→teils、Diß→Dies、hertze→Herz、kan→kann、diamant→Diamant。(3) 标点：原刊用 Virgel（/）代诗行内停顿（streichen/、blitz/ die kräffte、fällt/ die werden、Das haar/ das itzund、fuß/ die lieblichen、staub/ theils nichts），现代改逗号。(4) 题名：原刊\"Sonnet. Vergänglichkeit der schönheit\"（含 Sonnet 标签、小写 s），现代\"Vergänglichkeit der Schönheit\"（大写 S、去 Sonnet 标签）。\n\n【待进一步核实】(1) 系年（约17世纪中期作，具体年份与首刊情境待核）；(2) Neukirch 1695 选集的编纂细节；(3) 1695年原版的逐字排印（本次据1961 Niemeyer 影印再版 + 三个现代转写，未直接核1695原版）；(4) 本诗的中译情况。\n\n【公版】Hoffmannswaldau 1679年卒，公版起始年 = 1679 + 71 = 1750。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik / possel）、D（含一级来源：Zeno Neukirch 影印本 S.46–47）。",
+  "checklist": [
+    {"label": "确认作者：Hoffmann von Hoffmannswaldau", "done": true},
+    {"label": "确认出处：Neukirch 1695 / 1961 Niemeyer 影印 S.46–47", "done": true},
+    {"label": "核对十四行 4/4/3/3、韵式 abba abba ccd eed、亚历山大体", "done": true},
+    {"label": "正文现代化 + 原刊形态完整记录", "done": true},
+    {"label": "★17世纪正字法总表（汇总各巴洛克页）", "done": true},
+    {"label": "逐器官 vanitas 与《一切都是虚空》抽象罗列对照", "done": true},
+    {"label": "verwesen/der Verweser 同形异义说明", "done": true},
+    {"label": "亚历山大体三样本互链（an-sich / traenen）", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1679 + 71 = 1750", "done": true},
+    {"label": "撰写 image brief", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "核实系年与 Neukirch 编纂细节", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议巴洛克/华丽风格专业人士复核）", "done": false}
+  ]
+}

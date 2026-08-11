@@ -1,0 +1,29 @@
+{
+  "id": "52",
+  "slug": "der-radwechsel",
+  "published": false,
+  "release_date": "2027-01-01",
+  "author": "Bertolt Brecht",
+  "author_zh": "贝托尔特·布莱希特",
+  "title_de": "Der Radwechsel",
+  "title_zh": "换轮胎",
+  "year": "1953年；具体写作与首刊信息待公版后回核",
+  "period": "20世纪政治诗 / 流亡后期",
+  "difficulty": "A2–B1（预估；短不等于易）",
+  "public_domain": {
+    "death_year": 1956,
+    "public_domain_year": 2027,
+    "status": "pending"
+  },
+  "german_text": [],
+  "annotation_plan": [
+    "锁定正文后核对极短诗的说话位置、否定与时间关系",
+    "把注释密度与 CEFR 分开评估，不因篇幅短标为简单",
+    "正文进入仓库前逐行核验分节、标点与是否存在异文"
+  ],
+  "source_plan": [
+    "查 Brecht 纸质校勘全集的卷次与页码，作为一级来源",
+    "另找两个独立运营方的公版数字文本逐行核对",
+    "2027-01-01 后运行 snapshot；在此之前不得录入德文正文"
+  ]
+}

@@ -77,7 +77,7 @@
     },
     {
       "de": "Die meisten Menschen haben einen Schnupfen.",
-      "zh": "全诗的落点，也是德语现代诗里最著名的一次反高潮（Antiklimax）。在洪水、风暴、坠亡之间，突然插进一句关于感冒的陈述，语法完全正规、语调完全平静。评论家米夏埃尔·布劳恩指出：\"大多数人\"得的是\"感冒\"，这实在算不上世界末日的确凿证据。"
+      "zh": "全诗的落点，也是德语现代诗里最著名的反高潮（第7行，Antiklimax）。在洪水、风暴、坠亡之间，突然插进一句关于感冒的陈述，语法完全正规、语调完全平静。评论家米夏埃尔·布劳恩指出：\"大多数人\"得的是\"感冒\"，这实在算不上世界末日的确凿证据。"
     },
     {
       "de": "Die Eisenbahnen fallen von den Brücken.",
@@ -333,6 +333,18 @@
     {
       "label": "最终人工复核说明（AI 辅助完成，建议人工语言学者复核一次）",
       "done": false
+    }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "der-roemische-brunnen",
+      "needle": "die Flut",
+      "context": "《罗马的喷泉》"
+    },
+    {
+      "target_slug": "bitte",
+      "needle": "Nimm mir diese Welt von hinnen",
+      "context": "《祈求》"
     }
   ]
 }

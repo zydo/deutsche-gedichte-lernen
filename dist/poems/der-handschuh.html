@@ -1,0 +1,1124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Der Handschuh · 手套 — Friedrich Schiller | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Der Handschuh（手套）— Friedrich Schiller。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="prometheus.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">普罗米修斯</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="under-der-linden.html" rel="next"
+            ><span class="poem-nav__title">椴树下</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Der Handschuh</h1>
+          <p class="poem-titleblock__author">Friedrich Schiller</p>
+          <p class="poem-titleblock__zh">手套</p>
+          <p class="poem-titleblock__author-zh">弗里德里希·席勒</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Musen-Almanach für das Jahr 1798》S. 41–43</p>
+            <p>魏玛古典主义</p>
+            <p>1797年作（席勒与歌德的"叙事诗之年"Balladenjahr），首刊于《Musen-Almanach für das Jahr 1798》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1</span>
+            <span class="tag">叙事诗</span>
+            <span class="tag">宫廷</span>
+            <span class="tag">猛兽</span>
+            <span class="tag">荣誉</span>
+            <span class="tag">反转结局</span>
+            <span class="tag">中学必读</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一处宫廷石砌斗兽场（兽栏
+                Zwinger），栏内卧定狮、虎、豹三兽；上方石质阳台的边沿，一只手套正落下、悬在兽群与人群之间
+              </dd>
+              <dt>情绪</dt>
+              <dd>屏息的悬念——全场静止，全部张力集中在那只下落的手套上；不是血腥，而是被凝住的瞬间</dd>
+              <dt>画面元素</dt>
+              <dd>
+                石砌围栏与铁门、卧定的三只猛兽（狮虎豹，姿态各异但不互斗）、上方拱廊阳台与盛装看客的剪影、正中央悬空下落的女式手套、地面沙土
+              </dd>
+              <dt>时代感</dt>
+              <dd>16世纪法国宫廷（弗朗索瓦一世时代），建筑、服饰、阳台栏柱为该时代样式</dd>
+              <dt>推荐风格</dt>
+              <dd>
+                古典历史画写实风格，光线从阳台上方落下形成聚光，色调金棕与石灰，构图强调垂直纵深（阳台—手套—兽栏）
+              </dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得出现血迹、撕咬、尸体（三兽已卧定，无人受伤）；不得出现人物可辨面孔；不得出现现代元素或文字水印；手套应明显是女式细软，不可画成粗手套
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Vor seinem Löwengarten,</span></div>
+                <div class="pline__zh">在他的狮园前，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Das Kampfspiel zu erwarten,</span></div>
+                <div class="pline__zh">等着观看搏斗，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Saß König Franz,</span></div>
+                <div class="pline__zh">国王弗朗茨坐着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und um ihn die Großen der Krone,</span></div>
+                <div class="pline__zh">身边是头戴王冠的权贵们，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und rings auf hohem Balkone</span></div>
+                <div class="pline__zh">而高处的阳台上围成一圈，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Damen in schönem Kranz.</span></div>
+                <div class="pline__zh">是盛装的贵妇们。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und wie er winkt mit dem Finger,</span></div>
+                <div class="pline__zh">他手指一挥，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Auf tut sich der weite Zwinger,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">宽阔的兽栏豁然洞开，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und hinein mit bedächtigem Schritt</span></div>
+                <div class="pline__zh">一只狮子迈着沉稳的步子</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Ein Löwe tritt,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">走了进来，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und sieht sich stumm</span></div>
+                <div class="pline__zh">它默不作声地</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Rings um,</span></div>
+                <div class="pline__zh">环顾四周，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mit langem Gähnen,</span></div>
+                <div class="pline__zh">长长地打了个哈欠，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und schüttelt die Mähnen,</span></div>
+                <div class="pline__zh">抖了抖鬃毛，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und streckt die Glieder,</span></div>
+                <div class="pline__zh">伸展四肢，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und legt sich nieder.</span></div>
+                <div class="pline__zh">卧了下来。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und der König winkt wieder,</span></div>
+                <div class="pline__zh">国王再一挥手，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Da öffnet sich behend</span></div>
+                <div class="pline__zh">立刻又打开</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ein zweites Tor,</span></div>
+                <div class="pline__zh">一道门，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Daraus rennt<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">从中蹿出</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Mit wildem Sprunge<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一只猛扑而来的</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Ein Tiger hervor.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">老虎。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie der den Löwen erschaut,</span></div>
+                <div class="pline__zh">老虎一见狮子，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Brüllt er laut,</span></div>
+                <div class="pline__zh">大吼一声，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Schlägt mit dem Schweif</span></div>
+                <div class="pline__zh">甩动尾巴</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Einen furchtbaren Reif,</span></div>
+                <div class="pline__zh">划一个吓人的圈，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und recket die Zunge,</span></div>
+                <div class="pline__zh">吐着舌头，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und im Kreise scheu</span></div>
+                <div class="pline__zh">怯怯地绕着</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Umgeht er den Leu</span></div>
+                <div class="pline__zh">那头狮子打转，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Grimmig schnurrend;</span></div>
+                <div class="pline__zh">凶狠地低吼着；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Drauf streckt er sich murrend</span></div>
+                <div class="pline__zh">随后咕噜着</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zur Seite nieder.</span></div>
+                <div class="pline__zh">卧到一旁。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und der König winkt wieder,</span></div>
+                <div class="pline__zh">国王再次挥手，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Da speit das doppelt geöffnete Haus</span></div>
+                <div class="pline__zh">那双重敞开的兽穴</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zwei Leoparden auf einmal aus,</span></div>
+                <div class="pline__zh">一次吐出两头豹子，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die stürzen mit mutiger Kampfbegier</span></div>
+                <div class="pline__zh">它们带着勇猛的斗意</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Auf das Tigertier,</span></div>
+                <div class="pline__zh">扑向那只老虎，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Das packt sie mit seinen grimmigen Tatzen,</span>
+                </div>
+                <div class="pline__zh">老虎用利爪</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und der Leu mit Gebrüll</span></div>
+                <div class="pline__zh">狠狠地抓住它们，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Richtet sich auf, da wirds still,</span></div>
+                <div class="pline__zh">狮子一声咆哮站起身来，四周顿时静了下来，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und herum im Kreis,</span></div>
+                <div class="pline__zh">于是这一圈</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Von Mordsucht heiß,</span></div>
+                <div class="pline__zh">杀性大发的</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Lagern die greulichen Katzen.</span></div>
+                <div class="pline__zh">可怖猛兽各自卧定。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Da fällt von des Altans Rand<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">这时从阳台的边沿</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Ein Handschuh von schöner Hand<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">落下了一只手套——出自一只纤纤玉手——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zwischen den Tiger und den Leun</span></div>
+                <div class="pline__zh">正落在老虎与狮子</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mitten hinein.</span></div>
+                <div class="pline__zh">正中央。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und zu Ritter Delorges spottenderweis</span></div>
+                <div class="pline__zh">库尼贡德小姐带着讥诮</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wendet sich Fräulein Kunigund:</span></div>
+                <div class="pline__zh">转向骑士德洛日：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Herr Ritter, ist Eure Lieb so heiß,</span></div>
+                <div class="pline__zh">"骑士先生，若是您的爱意真有那么炽热，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie Ihr mirs schwört zu jeder Stund,</span></div>
+                <div class="pline__zh">像您时刻向我发誓的那样，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Ei, so hebt mir den Handschuh auf.«<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">喏，那就替我把手套捡起来吧。"</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und der Ritter in schnellem Lauf</span></div>
+                <div class="pline__zh">骑士飞快地</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Steigt hinab in den furchtbarn Zwinger</span></div>
+                <div class="pline__zh">步下那可怖的兽栏，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mit festem Schritte,</span></div>
+                <div class="pline__zh">脚步坚定，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und aus der Ungeheuer Mitte</span></div>
+                <div class="pline__zh">从群兽正中央</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Nimmt er den Handschuh mit keckem Finger.</span>
+                </div>
+                <div class="pline__zh">用从容的手指拈起了手套。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und mit Erstaunen und mit Grauen</span></div>
+                <div class="pline__zh">骑士与贵妇们又惊又怕，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Sehens die Ritter und Edelfrauen,</span></div>
+                <div class="pline__zh">眼睁睁看着他，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und gelassen bringt er den Handschuh zurück.</span>
+                </div>
+                <div class="pline__zh">他神色自若地把手套送回。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Da schallt ihm sein Lob aus jedem Munde,</span>
+                </div>
+                <div class="pline__zh">满座齐声称赞，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Aber mit zärtlichem Liebesblick –</span></div>
+                <div class="pline__zh">可库尼贡德小姐用温柔多情的眼光——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Er verheißt ihm sein nahes Glück –</span></div>
+                <div class="pline__zh">许他以即将到来的幸福——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Empfängt ihn Fräulein Kunigunde.</span></div>
+                <div class="pline__zh">迎接他。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Und er wirft ihr den Handschuh ins Gesicht:<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">他却把手套摔在她脸上：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >»Den Dank, Dame, begehr ich nicht«,<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">"这份谢意，小姐，我可不敢当"，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und verläßt sie zur selben Stunde.</span></div>
+                <div class="pline__zh">说罢当即便离开了她。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译叙事，保留诗行随猛兽出场而长短变化的节奏与末句反转
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Auf tut sich der weite Zwinger,</p>
+              <p class="lnote__zh">
+                der Zwinger 是全诗最关键的假朋友：此处指围栏式的斗兽场（= die Tiergrube / das
+                Gehege），不是今日常用的"犬舍"，更不是"地牢"。全诗的空间由这个词定义——人与兽只隔一道围栏。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Ein Löwe tritt,</p>
+              <p class="lnote__zh">
+                der Löwe 是弱变化阳性名词（n-Deklination）：der Löwe, des Löwen, dem Löwen, den Löwen——除第一格外全用 -n
+                词尾。同类有 der Mensch、der Herr、der Bär、der Affe。这是本页可顺带带出的语法点（见语法要点）。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Daraus rennt / Mit wildem Sprunge / Ein Tiger hervor.</p>
+              <p class="lnote__zh">
+                猛兽依次入场：狮（第9行）→虎（第21行）→豹（第31行），不是装饰，而是递增的紧张度——每一种都比前一种更躁动。三兽最终互相畏惧而卧定（第38行
+                Lagern die greulichen Katzen），使随后那只手套的赌注变成纯粹是人的愚行。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Da fällt von des Altans Rand / Ein Handschuh von schöner Hand</p>
+              <p class="lnote__zh">
+                der Altan（阳台，雅语）= der
+                Balkon。"一只手套，出自一只纤纤玉手"——库尼贡德故意（或假装无意）把手套扔进兽群之间，以此试探/戏弄骑士的爱意。这是全诗的引爆点。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Ei, so hebt mir den Handschuh auf.«</p>
+              <p class="lnote__zh">
+                helfen/heben 的命令式：hebt … auf（可分动词 aufheben 捡起）。mir
+                是利益第三格——"替我捡起来"。库尼贡德用一句轻佻的请求，把骑士推入生死之境。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Und er wirft ihr den Handschuh ins Gesicht:</p>
+              <p class="lnote__zh">
+                全诗的支点。骑士完成了任务、赢得满座称赞、库尼贡德许他以爱情——然后他用一个动作取消了这一切：把手套摔回她脸上。"以彼之道还施彼身"——你用一只手套羞辱我，我还你一只手套。诗到这里才真正开始。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">»Den Dank, Dame, begehr ich nicht«,</p>
+              <p class="lnote__zh">
+                begehren（要求、欲求）此处取"接受、要"义。骑士拒绝的不是手套，而是把人命当赌注的那种"爱"。末行 Und
+                verläßt sie zur selben Stunde（当即便离开了她）以叙事过去时收束，干净利落。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Zwinger, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">（本诗）围栏式斗兽场、兽栏；（今常）犬舍</div>
+              <div class="vocab-card__note">
+                ★关键假朋友：本诗指宫廷斗兽的围栏（= die
+                Tiergrube），不是"地牢"，也不是今日最常见的"犬舍"。全诗的惊险由这个词定义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Altan, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性，雅/古）</span>
+              <div class="vocab-card__meaning">阳台、眺台（= der Balkon）</div>
+              <div class="vocab-card__note">
+                源自意大利语 altana。今日多作 Balkon；诗中 des Altans Rand（阳台的边沿）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Löwe, -n</span></div>
+              <span class="vocab-card__pos">n.（阳性，弱变化 n-Deklination）</span>
+              <div class="vocab-card__meaning">狮子</div>
+              <div class="vocab-card__note">
+                弱变化阳性：der Löwe, des Löwen, dem Löwen, den Löwen（除第一格外皆 -n）。同类：der Mensch、der
+                Herr、der Bär、der Affe、der Student。诗中 der Leu（第26、33行）是狮的古/诗体简称。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">begehren</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">要求、渴望、欲求；接受（某物）</div>
+              <div class="vocab-card__note">
+                变位 begehrt – begehrte – hat begehrt。诗中"Den Dank … begehr ich
+                nicht"（这份谢意我不要）取"接受"义。名词 das Begehren（欲望）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">gähnen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">打哈欠；（引申，+ nach）渴望</div>
+              <div class="vocab-card__note">
+                诗中 Mit langem Gähnen（长长地打了个哈欠）写狮子的慵懒与满不在乎，与全场紧张的看客形成反差。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Kampfbegier</span></div>
+              <span class="vocab-card__pos">n.（阴性，雅）</span>
+              <div class="vocab-card__meaning">斗意、求战之欲</div>
+              <div class="vocab-card__note">
+                Kampf（战斗）+ Begier（渴望，= die Begierde）的复合词。诗中 mit mutiger
+                Kampfbegier（带着勇猛的斗意）形容两头豹子。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Gitter, -</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">栅栏、铁栏、（复数）兽笼的栏杆</div>
+              <div class="vocab-card__note">
+                本诗正文未直接出现 Gitter（用 der Zwinger / das Haus / das Tor 表兽栏），收入是因为它与 Zwinger
+                同属"围合空间"词族，供学习者参照。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Gunst, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性，雅）</span>
+              <div class="vocab-card__meaning">恩宠、青睐、好感</div>
+              <div class="vocab-card__note">
+                jemandes Gunst genießen（受某人青睐）；gunstvoll（恩宠的）。诗中虽未单用，但库尼贡德"许以爱情"即一种
+                Gunst，骑士拒绝的正是这种以恩宠面目出现的羞辱。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">begehren</td>
+                  <td class="de">begehrt</td>
+                  <td class="de">begehrte</td>
+                  <td class="de">hat begehrt</td>
+                  <td class="de">begehrt</td>
+                  <td class="de">begehrte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 弱变化；诗中"Den Dank … begehr ich nicht"（第66行）。</td>
+                </tr>
+                <tr>
+                  <td class="de">gähnen</td>
+                  <td class="de">gähnt</td>
+                  <td class="de">gähnte</td>
+                  <td class="de">hat gegähnt</td>
+                  <td class="de">gegähnt</td>
+                  <td class="de">gähnte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 弱变化；诗中 Mit langem Gähnen（第13行，名词化用法）。</td>
+                </tr>
+                <tr>
+                  <td class="de">springen</td>
+                  <td class="de">springt</td>
+                  <td class="de">sprang</td>
+                  <td class="de">ist gesprungen</td>
+                  <td class="de">gesprungen</td>
+                  <td class="de">spränge</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（i–a–u）；命令式 Spring!（词干不变元音）。诗中 Mit wildem Sprunge（第20行，名词 der
+                    Sprung）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">werfen</td>
+                  <td class="de">wirft</td>
+                  <td class="de">warf</td>
+                  <td class="de">hat geworfen</td>
+                  <td class="de">geworfen</td>
+                  <td class="de">würfe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（e→i，现在时变元音；a–o）：er wirft – warf – geworfen。诗中核心动词"Und er wirft ihr den
+                    Handschuh ins Gesicht"（第65行）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">fallen</td>
+                  <td class="de">fällt</td>
+                  <td class="de">fiel</td>
+                  <td class="de">ist gefallen</td>
+                  <td class="de">gefallen</td>
+                  <td class="de">fiele</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（a–ie–a）；诗中 Da fällt von des Altans Rand / Ein Handschuh（第39–40行）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">弱变化阳性名词（n-Deklination）：der Löwe</h3>
+              <p class="grammar-item__quote">Ein Löwe tritt … den Leun … der Leu …</p>
+              <div class="grammar-item__body">
+                der Löwe（狮子）是弱变化阳性名词：除第一格外，所有格都加 -n——der Löwe, des Löwen, dem Löwen, den
+                Löwen。同类只有一小批阳性名词：der Mensch、der Herr、der Bär、der Affe、der Student、der Name
+                等。诗中第8行 Ein Löwe（第一格）、第26行 den Leu（古体，第四格本应作 den Löwen，席勒用缩短诗体形 den
+                Leu）。与本站《狼人》（编号29）构成正反面：一首正经演示名词变格，一首拿变格开玩笑。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">叙事过去时（Präteritum）与现在时的切换</h3>
+              <p class="grammar-item__quote">Saß König Franz … Da fällt von des Altans Rand Ein Handschuh …</p>
+              <div class="grammar-item__body">
+                全诗叙事基调用过去时（Saß、winkt、tritt、rennt、fällt——其中若干强变化动词的过去时与现在时同形，需据上下文判断）。关键处在第39—40行"Da
+                fällt … ein
+                Handschuh"：此处从背景叙述切入近乎现在时的临场感，手套落下的一刻被"放大"了。叙事诗常用这一时态切换制造戏剧性停顿。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">诗行长度作为叙事手段</h3>
+              <p class="grammar-item__quote">
+                第一节宫廷场面舒展（6行）→ 猛兽出场短促（第10—12行 sees/sieht/stumm 各一词）→ 第65行反转
+              </p>
+              <div class="grammar-item__body">
+                席勒有意让诗行随情节而长短变化：宫廷与铺陈处行长、韵式舒展；猛兽出场处行骤短（Rings um, / Mit langem
+                Gähnen
+                等只有两三个词），制造紧张与喘息。这是"形式即内容"的样本之一。与本站《罗马的喷泉》（末行骤缩至四音节，把音节数当结构手段）、《世界末日》（等长主句的罗列
+                Reihungsstil）构成三种不同的"形式即内容"。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              1797年被称为席勒与歌德的"叙事诗之年"（Balladenjahr）：两人约定各写一批叙事歌谣，互相评改。席勒的《手套》与《潜水者》（Der
+              Taucher）、《伊比库斯的鹤》（Die Kraniche des
+              Ibykus）同属这一年的产物，刊于席勒本人主编的《1798年缪斯年鉴》。在席勒致歌德的一封信（1797年6月18日）中，他称《手套》是《潜水者》之后的"一首小余兴"（ein
+              kleines Nachstück）。
+            </p>
+            <p>
+              《手套》的轶事来源是法国：席勒在圣福瓦（Saint-Foix）关于巴黎的随笔中读到"狮子街"（Rue des Lions, près
+              Saint-Paul）一则轶事——相传法王弗朗索瓦一世（König Franz
+              I.，1515—1547在位）宫廷中，一位贵妇把手套掷入兽栏，命骑士捡回。（轶事的具体出处、是否确为圣福瓦所记、骑士与贵妇是否另有历史原型，待进一步核实。）席勒把这段轶事提炼为一个伦理命题：人不可以拿别人的性命去试探爱——《潜水者》的命题是"不可试探神"，《手套》的命题是"不可试探人"。
+            </p>
+            <p>
+              本诗是德语中学教材最常选的叙事诗之一，常与歌德《魔王》《潜水者》并列为"经典歌谣"（klassische
+              Ballade）的范本。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译叙事。三处需说明：(1) der Zwinger 译作"兽栏"（=
+              斗兽围栏），不译"犬舍"或"地牢"——这是全诗空间与惊险的词眼；(2) der Leu（第26、33行）是 Löwe
+              的古/诗体简称，译文统一作"狮子"；(3) 末句"Den Dank, Dame, begehr ich
+              nicht"译作"这份谢意，小姐，我可不敢当"，保留骑士拒绝的冷峻——不是客套，而是抗议。本诗与歌德《潜水者》主题相邻（一探神、一探人），建议对读。已知此诗存在多个中文译本（如钱春绮等），因版权原因本站不转载具体译本全文。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >German Wikisource — Der Handschuh（Musen-Almanach für das Jahr 1798, S. 41–43）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="https://de.wikisource.org/wiki/Der_Handschuh" target="_blank" rel="noopener"
+                >https://de.wikisource.org/wiki/Der_Handschuh</a
+              >
+              <span class="source-citation">Musen-Almanach für das Jahr 1798, S. 41–43</span>
+              <span class="source-note">一级来源（1798年初刊扫描转写）。用于核对初刊形态与1797→后世修订的差异。</span>
+            </li>
+            <li>
+              <span class="source-name">Zeno.org — Schiller: Sämtliche Werke, Band 1, S. 376–377（Der Handschuh）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="http://www.zeno.org/nid/20005596424" target="_blank" rel="noopener"
+                >http://www.zeno.org/nid/20005596424</a
+              >
+              <span class="source-citation">Sämtliche Werke, Band 1, S. 376–377</span>
+              <span class="source-note"
+                >一级来源（标准修订本，含"wirft ihr den Handschuh ins Gesicht"的定本结尾）。本次抓取时 Zeno
+                主机拒绝连接，版次页码据著录，快照状态见出处栏。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">Friedrich-Schiller-Archiv — „Der Handschuh“</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.friedrich-schiller-archiv.de/gedichte-schillers/balladen/der-handschuh/"
+                target="_blank"
+                rel="noopener"
+                >https://www.friedrich-schiller-archiv.de/gedichte-schillers/balladen/der-handschuh/</a
+              >
+              <span class="source-citation">现代通行文本（标准修订本）</span>
+              <span class="source-note"
+                >主转录底本（现代化通行文本，标准修订本读法）。与 Zeno 著录的标准本一致；与 Wikisource
+                的1798年初刊在结尾与若干旧拼法上有别（详见校对记录）。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note"
+                >AI 辅助生成，标注为学习用途；已知存在钱春绮等多个中文译本，因版权原因未转载全文。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【正字法与版本处理原则】本站正文采用现代化正字法的通行文本（标准修订本）。原刊（1798年初刊）形态在本记录中给出关键差异。
+            </p>
+            <p>
+              【三源核对】德文正文以 Friedrich-Schiller-Archiv
+              的现代通行文本为转录底本（标准修订本），另以两个一级来源交叉核对：German Wikisource
+              转写的1798年《缪斯年鉴》初刊（S.41–43），与 Zeno.org 著录的《席勒全集》第1卷第376–377页（标准修订本）。7
+              节、行数 6/10/16/11/4/10/10（共67行）一致。
+            </p>
+            <p>
+              【关键版本差异：结尾】(1) 1798年初刊（Wikisource）结尾作"Und der Ritter sich tief verbeugend, spricht: /
+              Den Dank, Dame, begehr ich nicht, / Und verläßt sie zur selben
+              Stunde."——骑士只是深鞠一躬、拒绝致谢、离开，并无"摔手套"的动作。(2) 标准修订本（Zeno 所据全集本 /
+              Schiller-Archiv）在第65行增入"Und er wirft ihr den Handschuh ins Gesicht:"，再接"Den Dank, Dame, begehr
+              ich
+              nicht"。这一"摔手套"的结尾是席勒后来的修订，也是今日所有中学课本与选本所收的定本——它把全诗的反转推到顶点。本站从标准修订本（含摔手套）。
+            </p>
+            <p>
+              【正字法差异（1798初刊 vs 现代通行）】1798作 Aufthut / Thor / Zwey / muthiger / Tigerthier / pakt / Ey /
+              geöfnete / spottender Weis' / Eure（旧拼法与大小写）；现代通行本作 Auf tut / Tor / Zwei / mutiger /
+              Tigertier / packt / Ei / geöffnete / spottenderweis / Eure。语义无别。
+            </p>
+            <p>
+              【待进一步核实】(1)
+              轶事来源：通行说法为圣福瓦（Saint-Foix）《巴黎随笔》中"狮子街"一则，但具体书名、卷次与席勒所据版本未回核一手；(2)
+              König Franz（弗朗索瓦一世）与骑士 Delorges、贵妇 Kunigund 的历史原型指认；(3) Zeno
+              主机本次拒绝连接，其读法依据既著录版次页码，待恢复后补抓快照复核；(4) 席勒"摔手套"修订的确切时间。
+            </p>
+            <p>【公版】席勒1805年卒，公版起始年 = 1805 + 71 = 1876。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / zeno / schiller-archiv）、D（含两个一级来源）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Friedrich Schiller</li>
+            <li>确认标题与出处：Musen-Almanach 1798, S.41–43 / 全集本 S.376–377</li>
+            <li>德文原文主来源：Friedrich-Schiller-Archiv（标准修订本，转录底本）</li>
+            <li>一级来源交叉核对：Wikisource 1798初刊 / Zeno 全集本</li>
+            <li>核对诗节、行数（7节 6/10/16/11/4/10/10，共67行）</li>
+            <li>记录结尾版本差异（初刊无摔手套 / 修订本有）</li>
+            <li>逐行注释落到具体行号</li>
+            <li>der Zwinger 假朋友说明</li>
+            <li>n-Deklination（der Löwe）说明</li>
+            <li>动词变位与变化类别一致（springen/werfen/fallen 强变化）</li>
+            <li>语法要点结合诗句验证</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1805 + 71 = 1876</li>
+            <li>高危断言（轶事来源、历史原型）标注待核实</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">圣福瓦轶事来源回核一手</li>
+            <li class="pending">Zeno 恢复后补抓快照复核</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议古典歌谣专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

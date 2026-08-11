@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Die Gedanken sind frei · 思想是自由的 — 匿名（Volkslied） | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Die Gedanken sind frei（思想是自由的）— 匿名（Volkslied）。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="ein-alter-tibetteppich.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">一条古旧的西藏地毯</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="wuenschelrute.html" rel="next"
+            ><span class="poem-nav__title">占卜杖</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Die Gedanken sind frei</h1>
+          <p class="poem-titleblock__author">匿名（Volkslied）</p>
+          <p class="poem-titleblock__zh">思想是自由的</p>
+          <p class="poem-titleblock__author-zh">匿名（民歌）</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Schlesische Volkslieder mit Melodien》（1842）S. 307, Nr. 262（据 Neukirch bei Schönau 口传）</p>
+            <p>德语民歌 / 前三月革命时期（Vormärz）抵抗歌曲</p>
+            <p>
+              文本约1780年见于传单（Flugblätter）；通行曲调与文本1842年由 Hoffmann von Fallersleben 收入《Schlesische
+              Volkslieder》定型
+            </p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2</span>
+            <span class="tag">民歌</span>
+            <span class="tag">匿名</span>
+            <span class="tag">思想自由</span>
+            <span class="tag">审查</span>
+            <span class="tag">异文丰富</span>
+            <span class="tag">入门推荐</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一间石砌的黑暗牢房，铁栅窗外透入一缕月光；牢房内部空无一物，唯有月光照在石墙上，墙上隐约出现一只飞鸟（思想）正从石缝间穿出
+              </dd>
+              <dt>情绪</dt>
+              <dd>克制中的自由；不是越狱的暴力，而是"思想穿透石墙"的无声胜利</dd>
+              <dt>画面元素</dt>
+              <dd>
+                厚重的石墙与铁栅小窗、透入的月光、一只正穿过石缝/栅栏飞出的鸟（思想的象征，半透明）、空荡的牢房地面
+              </dd>
+              <dt>时代感</dt>
+              <dd>无明确时代（民歌意象），器物为石墙、铁栅、木门</dd>
+              <dt>推荐风格</dt>
+              <dd>
+                象征主义版画/水墨质感，强对比的明暗（月光 vs 石墙暗影），冷蓝月色与暖石灰为主，构图强调"穿透"的瞬间
+              </dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                ★不得出现索菲·朔尔或任何具体历史人物（来源薄弱，不据以作画）；不得出现可辨识的现代元素；不得出现血腥或刑具；不得出现文字水印；鸟应半透明、象征化，不可画成写实猛禽
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Die Gedanken sind frei,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">思想是自由的，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >wer kann sie erraten?<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">谁能猜透它们？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Sie fliegen vorbei</span></div>
+                <div class="pline__zh">它们飞掠而过，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">wie nächtliche Schatten.</span></div>
+                <div class="pline__zh">像夜里的影子。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Kein Mensch kann sie wissen,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">没有人能知晓它们，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >kein Jäger sie schießen.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">没有猎人能射中它们。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Es bleibet dabei:</span></div>
+                <div class="pline__zh">事情就是这样：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Gedanken sind frei.</span></div>
+                <div class="pline__zh">思想是自由的。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich denke, was ich will,</span></div>
+                <div class="pline__zh">我想我所愿，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">und was mich beglücket,</span></div>
+                <div class="pline__zh">想使我快乐的事，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">doch alles in der Stille</span></div>
+                <div class="pline__zh">但一切都悄悄地，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">und wie es sich schicket.</span></div>
+                <div class="pline__zh">顺其自然地进行。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mein Wunsch und Begehren</span></div>
+                <div class="pline__zh">我的愿望与欲求，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">kann niemand verwehren.</span></div>
+                <div class="pline__zh">没有人能阻止。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Es bleibet dabei:</span></div>
+                <div class="pline__zh">事情就是这样：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Gedanken sind frei.</span></div>
+                <div class="pline__zh">思想是自由的。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Sperrt man mich gleich ein<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">即便把我关起来，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >im finsteren Kerker,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">关进黑暗的牢房，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">so sind es doch nur</span></div>
+                <div class="pline__zh">那也只不过是</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">vergebliche Werke;</span></div>
+                <div class="pline__zh">白费力气；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">denn meine Gedanken</span></div>
+                <div class="pline__zh">因为我的思想</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">zerreißen die Schranken</span></div>
+                <div class="pline__zh">会扯断枷锁，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >und Mauern entzwei:<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">把墙壁撕成两半：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Gedanken sind frei.</span></div>
+                <div class="pline__zh">思想是自由的。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Jetzt will ich auf immer</span></div>
+                <div class="pline__zh">现在我要永远地</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">der Liebe entsagen</span></div>
+                <div class="pline__zh">弃绝爱情，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">und will mich nicht mehr</span></div>
+                <div class="pline__zh">不再用那些痴念</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >mit Grillen so plagen.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">折磨自己。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Man kann ja im Herzen</span></div>
+                <div class="pline__zh">人在心里</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">stets lachen und scherzen</span></div>
+                <div class="pline__zh">总可以欢笑打趣，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">und denken dabei:</span></div>
+                <div class="pline__zh">同时想着：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Gedanken sind frei.</span></div>
+                <div class="pline__zh">思想是自由的。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich liebe den Wein,</span></div>
+                <div class="pline__zh">我爱葡萄酒，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">mein Mädchen vor allen,</span></div>
+                <div class="pline__zh">更爱我的姑娘胜过一切，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">die tut mir allein</span></div>
+                <div class="pline__zh">只有她一个人</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">am besten gefallen.</span></div>
+                <div class="pline__zh">最合我的意。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich bin nicht alleine</span></div>
+                <div class="pline__zh">我并非孤身一人</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">bei meinem Glas Weine,</span></div>
+                <div class="pline__zh">守着我那杯酒，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">mein Mädchen dabei:</span></div>
+                <div class="pline__zh">还有我的姑娘在身旁：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Gedanken sind frei.</span></div>
+                <div class="pline__zh">思想是自由的。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留民歌的平行句式与叠句</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Die Gedanken sind frei,</p>
+              <p class="lnote__zh">
+                标题句即全曲的论点，也是德语中被引用最多的短句之一。叠句"思想是自由的"在每节末（第8、16、24、32、40行）重复，是全曲的锚。注意
+                Gedanken 是复数（单数 der Gedanke）。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">wer kann sie erraten?</p>
+              <p class="lnote__zh">
+                erraten（猜中、猜出）是强变化动词（a→ä）：ich errate, du errätst, er
+                errät。思想被比作"猜不透的东西"——无人能猜中。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Kein Mensch kann sie wissen, / kein Jäger sie schießen.</p>
+              <p class="lnote__zh">
+                猎人意象——思想被比作猎物，而猎手无从下手："没有人能知晓它们，没有猎人能射中它们"。在审查制度语境下，这一比喻的具体所指是：权力可以禁言、可以关人，但无法猎取人头脑中的思想。第5、6行是民歌"平行否定句"的典型，是记忆装置而非修辞贫乏。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Sperrt man mich gleich ein / im finsteren Kerker,</p>
+              <p class="lnote__zh">
+                der Kerker（牢房）= das
+                Gefängnis（古/雅）。第3节直接写入牢狱——这首民歌之所以成为三月前期与20世纪抵抗运动的歌，正因为它把"思想自由"落到实处：即使被关进黑牢，思想仍能扯断枷锁（第21—22行
+                zerreißen die Schranken / und Mauern entzwei）。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">und Mauern entzwei:</p>
+              <p class="lnote__zh">
+                entzwei（成两半、碎裂）是副词，常用"etwas (in) entzwei
+                reißen/brechen"（把某物撕/折成两半）。思想"把墙撕成两半"——把抽象的自由写成有破坏力的动作。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">mit Grillen so plagen.</p>
+              <p class="lnote__zh">
+                die Grille, -n 本义"蟋蟀"，转义（多用复数 Grillen）"痴念、怪念头、莫名的忧闷"。"sich mit Grillen plagen"
+                = 为一些莫名的念头所苦。第4节是民歌常见的"弃绝爱情"母题，但随即翻转：心里仍可欢笑。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Gedanke, -ns, -n</span></div>
+              <span class="vocab-card__pos">n.（阳性，★混合变化）</span>
+              <div class="vocab-card__meaning">思想、念头</div>
+              <div class="vocab-card__note">
+                ★全站首次系统讲解混合变化名词（n-Deklination + 第二格 -ns）：der Gedanke, des Gedankens, dem Gedanken,
+                den Gedanken——除第一格外全用 -n，且第二格特加 -ns。同类极少：der Name, der Wille, der Glaube, der
+                Friede, das Herz（中性）。本站《春天的信念》（编号22）的 Herze/Herz 即同族（das Herz: des Herzens, dem
+                Herzen）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">erraten</span></div>
+              <span class="vocab-card__pos">v.（强变化，a→ä）</span>
+              <div class="vocab-card__meaning">猜中、猜出</div>
+              <div class="vocab-card__note">
+                变位 ich errate, du errätst, er errät – erriet – hat erraten。前缀 er- 表"成功做到"（= durch Raten
+                herausfinden）。诗中 wer kann sie erraten?（第2行）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Jäger, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">猎人</div>
+              <div class="vocab-card__note">
+                弱变化阳性（n-Deklination）：den Jäger, des Jägers。动词 jagen（打猎、追逐）。诗中 kein Jäger sie
+                schießen（第6行，无猎人能射中它们）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">erjagen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">猎取、捕获</div>
+              <div class="vocab-card__note">
+                er- + jagen；诗中虽未单用 erjagen（用 schießen），但"思想如猎物"的意象属 erjagen 词族。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Pulver / das Blei</span></div>
+              <span class="vocab-card__pos">n.（中性，不可数）</span>
+              <div class="vocab-card__meaning">火药 / 铅（子弹的材料）</div>
+              <div class="vocab-card__note">
+                现代版本有"kein Pulver und Blei"的异文（见校对记录的异文表），代指猎人的武器——即权力的暴力对思想无效。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Mauer, -n / die Wand, Wände</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">（外墙/承重）墙 / （室内隔）墙</div>
+              <div class="vocab-card__note">
+                Mauer 多指砖石外墙、承重墙、城墙；Wand 指室内隔墙。诗中 Mauern entzwei（第22行，把墙撕成两半）用
+                Mauer，强调牢狱的厚墙。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Kerker, -</span></div>
+              <span class="vocab-card__pos">n.（阳性，古/雅）</span>
+              <div class="vocab-card__meaning">牢房、监牢（= das Gefängnis）</div>
+              <div class="vocab-card__note">
+                今日多作 Gefängnis；Kerker 存于诗歌与历史语境。诗中 im finsteren Kerker（第18行）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Grille, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">①蟋蟀；②（复数）痴念、怪念头、莫名的忧闷</div>
+              <div class="vocab-card__note">
+                诗中 mit Grillen so plagen（第24行）取第②义："为一些莫名的念头所苦"。"Grillen haben" = 心情郁闷。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">erraten</td>
+                  <td class="de">errät</td>
+                  <td class="de">erriet</td>
+                  <td class="de">hat erraten</td>
+                  <td class="de">erraten</td>
+                  <td class="de">erriete</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（a→ie→a），现在时单数变元音 a→ä：ich errate, du errätst, er errät。诗中第2行 wer kann sie
+                    erraten?（与不定式同形）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">erjagen</td>
+                  <td class="de">erjagt</td>
+                  <td class="de">erjagte</td>
+                  <td class="de">hat erjagt</td>
+                  <td class="de">erjagt</td>
+                  <td class="de">erjagte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 弱变化；诗中虽用 schießen 而非 erjagen，收入"猎取"词族供参照。</td>
+                </tr>
+                <tr>
+                  <td class="de">schießen</td>
+                  <td class="de">schießt</td>
+                  <td class="de">schoss</td>
+                  <td class="de">hat geschossen</td>
+                  <td class="de">geschossen</td>
+                  <td class="de">schösse</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（ie–o–o）；诗中 kein Jäger sie schießen（第6行，不定式）。注意第二分词
+                    geschossen（开车）与可分"auf jemanden schießen"（向某人开枪）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">bleiben</td>
+                  <td class="de">bleibt</td>
+                  <td class="de">blieb</td>
+                  <td class="de">ist geblieben</td>
+                  <td class="de">geblieben</td>
+                  <td class="de">bliebe</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（ei–ie–ie）；诗中叠句 Es bleibet dabei（第7、15、23、31、39行）为古体第三人称单数 -et
+                    形式（今 bleibt）。与本站《晚歌》的 schweiget/steiget 同类。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">混合变化名词：der Gedanke（n-Deklination + 第二格 -ns）</h3>
+              <p class="grammar-item__quote">Die Gedanken sind frei（Gedanken = 复数第一格）</p>
+              <div class="grammar-item__body">
+                der Gedanke 是德语极少数"混合变化"名词之一：除第一格外，单数各格加 -n（dem/den Gedanken），且第二格特加
+                -ns（des Gedankens）。同类只有：der Name、der Wille、der Glaube、der Friede、der Funke、das
+                Herz（中性，des Herzens）。本站《春天的信念》（编号22）的 Herze/Herz
+                即此族的中性成员——两页构成"混合变化名词"的对照。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">情态动词的省略（民歌常见）</h3>
+              <p class="grammar-item__quote">Kein Jäger sie schießen.（= kein Jäger kann sie schießen）</p>
+              <div class="grammar-item__body">
+                民歌与口语中常见省略情态动词："Kein Jäger sie schießen" 完整应为"Kein Jäger kann sie
+                schießen"（没有猎人能射中它们）。这种省略使句行更短、更易传唱。与本站《纺纱女的夜歌》（编号21）"从句中助动词省略"（daß
+                du von mir gefahren [bist]）属同一族——一首省情态动词、一首省助动词，都是民歌/诗歌为节奏而做的句法裁剪。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">异文与"民歌无定本"</h3>
+              <p class="grammar-item__quote">本站采1842年5节本（Neukirch 传）；流通版本有4/5/6节多种</p>
+              <div class="grammar-item__body">
+                民歌没有作者定本，异文不是错误而是它的存在方式。本曲流通版本有4节、5节、6节多种，节序与措辞各异（如"fliegen/fliehen"、"dabei/mit
+                Pulver und Blei"、第4节"Liebe/Sorgen"）。本站采用1842年 Hoffmann von
+                Fallersleben《西里西亚民歌》所录的5节本（据 Neukirch bei Schönau
+                口传），并在校对记录中并列主要异文，不裁定孰优孰劣——这是民歌页面与其他"作者定本"页面的根本差异。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              《思想是自由的》是德语世界最著名的民歌之一。文本约1780年已见于传单（Flugblätter），作者不明；今日通行的曲调与文本经奥古斯特·海因里希·霍夫曼·冯·法勒斯莱本（Hoffmann
+              von Fallersleben）1842年收入《西里西亚民歌》（Schlesische Volkslieder mit Melodien，据 Neukirch bei
+              Schönau 的口传）而定型。
+            </p>
+            <p>
+              这首歌的生命力在于它被反复政治化：在三月前期（Vormärz）的审查制度下、在1848年革命前后、在20世纪的极权统治下，它一再被作为抵抗之歌传唱。其论点极其简单——权力可以囚禁身体，却无法猎取思想——而正是这种简明，使它能穿透一切审查。
+            </p>
+            <p>
+              ★关于索菲·朔尔（Sophie
+              Scholl，白玫瑰成员）在狱墙外吹奏此曲的说法流传极广，但来源薄弱；本站无法回核到一手材料，故整条删除，不以"据说"形式保留——这是本页在背景叙述上最容易出错的一处。
+            </p>
+            <p>
+              民歌的传播史通行说法多而互相冲突（首刊年份、节数、曲调起源皆有数说）；本页以抓到的1842年来源为准，凡不能回核的传播史细节一律标"待进一步核实"。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 叠句"Die Gedanken sind
+              frei"统一译"思想是自由的"；(2) Grillen 取"痴念/怪念头"义（第24行），不译"蟋蟀"；(3) 民歌的平行否定句（Kein
+              Mensch … / kein Jäger …）译文保留平行；(4)
+              本页校对采用"民歌无定本"原则（异文并列、不裁定），与本站其他页面的"作者定本"原则有别，已在语法要点与校对记录中显式说明。本曲存在多个中文译本，因民歌公版，译文差异主要在节序与措辞。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >German Wikisource — Die Gedanken sind frei（Schlesische Volkslieder, 1842, S. 307, Nr. 262）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/Die_Gedanken_sind_frei"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/Die_Gedanken_sind_frei</a
+              >
+              <span class="source-citation"
+                >Hoffmann von Fallersleben u. E. H. L. Richter: Schlesische Volkslieder mit Melodien. Leipzig: Breitkopf
+                &amp; Härtel 1842, S. 307, Nr. 262（据 Neukirch bei Schönau 口传）</span
+              >
+              <span class="source-note">主来源（一级）：1842年印刷本扫描转写，5 节本，本站采此版本。</span>
+            </li>
+            <li>
+              <span class="source-name">Deutsches Textarchiv (DTA/BBAW) — Des Knaben Wunderhorn 3 (1808), S. 38–40</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschestextarchiv.de/book/view/arnim_wunderhorn03_1808/?p=48"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschestextarchiv.de/book/view/arnim_wunderhorn03_1808/?p=48</a
+              >
+              <span class="source-citation"
+                >Des Knaben Wunderhorn III, 1808, S. 38–40（"Nach Schweizerliedern"，囚徒—少女对唱变体，前4节）</span
+              >
+              <span class="source-note"
+                >一级来源（独立运营方）：1808年《少年的魔术号角》所收的对唱变体，用于核对民歌的早期流传形态与异文。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Die Gedanken sind frei（1842曲调与文本）</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/die-gedanken-sind-frei.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/die-gedanken-sind-frei.html</a
+              >
+              <span class="source-citation">现代通行文本（1842定本读法）</span>
+              <span class="source-note">三级来源（辅助）：用于确认1842定本的现代化拼写形态。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。民歌公版，无外部译文版权问题。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【正字法与版本处理原则：民歌无定本】本页校对原则与本站其他"作者定本"页面根本不同：民歌没有作者定本，异文不是错误而是它的存在方式。故本页不裁定孰优孰劣，而是并列记录主要异文。正文采用1842年
+              Hoffmann von Fallersleben《西里西亚民歌》5节本（据 Neukirch bei Schönau
+              口传），拼写轻度现代化（errathen→erraten、Still→Stille、thut→tut），原刊形态在本记录备案。
+            </p>
+            <p>
+              【三源核对】正文以 German Wikisource 转写的1842年印刷本（S.307,
+              Nr.262）为底本，另以两个独立来源核对：Deutsches Textarchiv
+              所收1808年《少年的魔术号角》第3卷第38–40页（对唱变体）、gedichte7.de（三级，现代通行文本）。5 节 × 8
+              行（共40行）一致（1842本）。
+            </p>
+            <p>
+              【主要异文（并列记录，不裁定）】(1) 节数：流通版本有4节、5节、6节多种；本站采1842年的5节本。(2)
+              节序：现代通行本常把"葡萄酒"节移至第3、"牢狱"节移至第4，并把第4节 Liebe（爱情）改为
+              Sorgen（忧愁）；1842本的节序为：自由/思想/牢狱/弃爱/葡萄酒。(3) 措辞：第4行 fliegen（飞）流通本作
+              fliehen（逃）；第6行"kein Jäger sie schießen"有的版本作"mit Pulver und Blei"。(4)
+              1808《魔术号角》本把前4节改为囚徒—少女的对唱（Zweigesang），标注"Nach
+              Schweizerliedern"，乃编者（阿尔尼姆/布伦塔诺）的文学加工，非民间原貌。
+            </p>
+            <p>
+              【待进一步核实】(1) 约1780年传单（Flugblätter）的具体首刊——说法多而冲突，本页只写"18世纪末已流传"；(2)
+              曲调起源（通行说法约1810年，伯尔尼），未回核一手；(3)"索菲·朔尔吹奏此曲"之说来源薄弱，本页整条删除，不以"据说"保留。
+            </p>
+            <p>【公版】匿名民歌，文本约1780年已流传，公版无争议。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / DTA-BBAW /
+              possel）、D（含两个一级来源：1842印刷本扫描、1808 Wunderhorn 印刷本）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认匿名民歌身份（author_type: anonymous）</li>
+            <li>确认底本：Schlesische Volkslieder 1842, S.307, Nr.262</li>
+            <li>主来源：Wikisource 1842印刷本扫描（转录底本）</li>
+            <li>一级来源交叉核对：DTA 1808 Wunderhorn 印刷本</li>
+            <li>核对节数（5节×8行，共40行）与叠句</li>
+            <li>并列记录主要异文（节数/节序/fliegen-fliehen/Pulver und Blei）</li>
+            <li>显式说明"民歌无定本"原则（区别于作者定本页）</li>
+            <li>der Gedanke 混合变化（n+gen-s）说明</li>
+            <li>情态动词省略说明</li>
+            <li>删除"索菲·朔尔吹奏"无据之说</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版说明（匿名民歌，无争议）</li>
+            <li>高危断言（首刊、曲调起源）标注待核</li>
+            <li>撰写 image brief（含禁忌：无具体历史人物）</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核1780年传单首刊</li>
+            <li class="pending">回核曲调起源</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议民歌学/历史语言学专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

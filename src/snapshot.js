@@ -14,10 +14,11 @@
 // 站点只发布由正本渲染出的**纯文本**存档页（见 templates.js），不转发第三方页面
 // 自身的脚本与版式：存档的用途是核对诗歌正文，不是镜像别人的网站。
 // ==========================================================================
-import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import path from "node:path";
+import { loadPoemRecords } from "./poem-data.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -47,10 +48,8 @@ export function snapshotId(url) {
 
 function collectSources() {
   const byUrl = new Map();
-  for (const f of readdirSync(DATA_DIR)
-    .filter((n) => n.endsWith(".json"))
-    .sort()) {
-    const poem = JSON.parse(readFileSync(path.join(DATA_DIR, f), "utf-8"));
+  const { poems } = loadPoemRecords(DATA_DIR);
+  for (const poem of poems) {
     for (const s of poem.german_sources || []) {
       if (!s.url) continue;
       if (!byUrl.has(s.url)) byUrl.set(s.url, { url: s.url, name: s.name || "", poems: [] });

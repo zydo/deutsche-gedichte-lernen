@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Ein alter Tibetteppich · 一条古旧的西藏地毯 — Else Lasker-Schüler | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Ein alter Tibetteppich（一条古旧的西藏地毯）— Else Lasker-Schüler。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="der-gott-der-stadt.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">城市之神</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="die-gedanken-sind-frei.html" rel="next"
+            ><span class="poem-nav__title">思想是自由的</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Ein alter Tibetteppich</h1>
+          <p class="poem-titleblock__author">Else Lasker-Schüler</p>
+          <p class="poem-titleblock__zh">一条古旧的西藏地毯</p>
+          <p class="poem-titleblock__author-zh">埃尔泽·拉斯克-许勒</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Meine Wunder》（1911）· 表现主义 / 现代主义</p>
+            <p>表现主义</p>
+            <p>1910年12月8日刊于《Der Sturm》；1911年收入诗集《Meine Wunder》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2</span>
+            <span class="tag">表现主义</span>
+            <span class="tag">地毯</span>
+            <span class="tag">交织</span>
+            <span class="tag">新造词</span>
+            <span class="tag">女性作者</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一条铺展开的古旧西藏地毯的俯视局部：经纬交织的网眼中，颜色与微光彼此缠绕，隐约浮现星辰与一朵麝香植物的花；两只脚（无腿）轻轻搁在地毯边缘
+              </dd>
+              <dt>情绪</dt>
+              <dd>私密的、被织入的、东方化的幻梦；不是写实静物，而是"灵魂被编进织物"的隐喻具象</dd>
+              <dt>画面元素</dt>
+              <dd>
+                地毯的经纬纹理与网眼（Maschen）、缠绕的色光丝缕、隐约的星辰与麝香植物花纹、地毯边缘的两只脚（仅局部，无人物全身）
+              </dd>
+              <dt>时代感</dt>
+              <dd>无明确时代；意象取自西藏/东方地毯传统与表现主义色彩的融合</dd>
+              <dt>推荐风格</dt>
+              <dd>表现主义—装饰画质感，俯视构图，色彩饱和而交织（金、绛、靛蓝），纹理细腻但整体如梦</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得出现可辨识的人物面部或全身（人仅以脚或手暗示）；不得出现情色；不得出现文字水印；不得把地毯画成现代工业织物
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Deine Seele, die die meine liebet,</span></div>
+                <div class="pline__zh">你的灵魂，那爱着我的灵魂，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Ist verwirkt mit ihr im Teppichtibet.<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">与它一同被织进了"地毯西藏"。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Strahl in Strahl, verliebte Farben,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一缕光交着一缕光，恋爱中的颜色，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Sterne, die sich himmellang umwarben.</span></div>
+                <div class="pline__zh">星辰们，彼此追逐了整整一个天长。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Unsere Füße ruhen auf der Kostbarkeit,</span></div>
+                <div class="pline__zh">我们的脚搁在这件珍宝上，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Maschentausendabertausendweit.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">网眼千万又千万地铺展开去。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Süßer Lamasohn auf Moschuspflanzenthron,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">更甜美的喇嘛之子，端坐麝香植物的王座，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Wie lange küsst dein Mund den meinen wohl</span>
+                </div>
+                <div class="pline__zh">你的嘴还要吻我的嘴多久，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Und Wang die Wange buntgeknüpfte Zeiten schon?<sup class="refmark"
+                      ><a href="#note-5">5</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">而颊挨着颊，已编结出多少缤纷的时光？</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留新造词 Teppichtibet 的倒装感与 verwirkt 的双关
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Ist verwirkt mit ihr im Teppichtibet.</p>
+              <p class="lnote__zh">
+                ★Teppichtibet 是全诗的核心手法：把标题
+                Tibetteppich（西藏地毯）的成分倒置而成的新造词（Neologismus）。这类"复合词成分倒置"在标准德语中不合法，正因不合法才成为诗——词本身也被"织"了一遍。verwirkt
+                是 verwirken 的过去分词，兼两义：①（本诗）织入、编进（与 wirken 织、Weberei
+                同源）；②（法律）丧失、被没收（如 die Ehre verwirken
+                丧尽名誉）。本诗取①义而②义始终在场：灵魂"被织入"，也仿佛"被 forfeited"于地毯。这是全诗最难译的一处。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Strahl in Strahl, verliebte Farben,</p>
+              <p class="lnote__zh">
+                der Strahl 在此取"一缕（颜色/光线/丝缕）"义——在编织地毯的语境里，Strahl
+                既是一缕光，也接近"一根丝缕"。这是本页加入本站 der Strahl
+                多义簇的第三种用法：《秋景》（编号24）取"光线"义、《罗马的喷泉》（编号26）取"水柱"义、本页取"交织的光缕/丝缕"义。verliebte
+                Farben（恋爱中的颜色）把颜色拟人化。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Maschentausendabertausendweit.</p>
+              <p class="lnote__zh">
+                又一个新造复合词：Masche（网眼，地毯的编织单位）+ tausendaber（tausend und abertausend，成千上万）+
+                weit（宽广）。把数量词焊进一个词，模仿地毯网眼的无尽铺展。须与幽默语言游戏（如本站《狼人》《美学的鼬鼠》）区分：拉斯克-许勒不是制造笑点，而是造一种听起来像另一种语言的德语。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Süßer Lamasohn auf Moschuspflanzenthron,</p>
+              <p class="lnote__zh">
+                Lamasohn（喇嘛之子）——诗人把她钟爱的人（她自我神话为"底比斯王子
+                Jussuf"）置于东方化的意象中。Moschuspflanzenthron（麝香植物的王座）是又一层叠复合词。整个画面是诗人自我神话化的东方想象。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Und Wang die Wange buntgeknüpfte Zeiten schon?</p>
+              <p class="lnote__zh">
+                Wang die Wange（颊挨着颊）——Wang 是 die
+                Wange（面颊）的旧/诗体形。buntgeknüpft（缤纷地编结出的）Zeiten（时光）——把抽象的"时光"也编进地毯的织物里。全诗以此问句收束：吻与编结，还要持续多久？
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">verwirken</span></div>
+              <span class="vocab-card__pos">v.（弱变化，★重点：两义）</span>
+              <div class="vocab-card__meaning">①织入、编进（诗/古，与 wirken 织同源）；②（法律）丧失、被没收</div>
+              <div class="vocab-card__note">
+                变位 verwirkt – verwirkte – hat verwirkt。诗中 Ist verwirkt mit ihr im
+                Teppichtibet（第2行）取①义，而②义（如 das Leben verwirken 丧命、die Ehre verwirken
+                丧尽名誉）始终在场，构成全诗最难译的双关。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Strahl, -en</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">①光线、一缕光；②（液体）一股、一柱；③（本诗）一缕（颜色/丝缕）</div>
+              <div class="vocab-card__note">
+                ★本站 der Strahl 多义簇的第三义：本页 Strahl in
+                Strahl（第3行）在地毯编织语境里既是一缕光、也接近一根丝缕。对照《秋景》（编号24，光线义）、《罗马的喷泉》（编号26，水柱义）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Masche, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">（编织/针织的）网眼、线圈；计策（俗）</div>
+              <div class="vocab-card__note">
+                诗中 Maschentausendabertausendweit（第6行，复合）。die Maschen des Strickzeugs（针织物的线圈）；"eine
+                Masche nach der anderen" 一针一针。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">sich verlieben</span></div>
+              <span class="vocab-card__pos">v.（弱变化，反身）</span>
+              <div class="vocab-card__meaning">恋爱、爱上（sich in jemanden verlieben）</div>
+              <div class="vocab-card__note">
+                变位 verliebt sich – verliebte sich – hat sich verliebt。诗中 verliebte
+                Farben（第3行，恋爱的颜色）为形容词化用法（非反身）。das Verliebte（恋爱中的人/状态）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">süß</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">甜的；可爱的、甜蜜的</div>
+              <div class="vocab-card__note">
+                诗中 Süßer Lamasohn（第7行，更甜美的喇嘛之子）为比较级。比照本站《普罗米修斯》（编号34）的 Süßer
+                Friede（更甜美的安宁，同形比较级用法）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Kostbarkeit, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">珍贵之物、珍宝</div>
+              <div class="vocab-card__note">
+                kostbar（珍贵的）的名词化。诗中 Unsere Füße ruhen auf der Kostbarkeit（第5行，我们的脚搁在珍宝上）。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">sich verlieben</td>
+                  <td class="de">verliebt sich</td>
+                  <td class="de">verliebte sich</td>
+                  <td class="de">hat sich verliebt</td>
+                  <td class="de">verliebt</td>
+                  <td class="de">verliebte sich</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 弱变化，反身；诗中 verliebte Farben（第3行）为过去分词作形容词（恋爱的），非反身用法。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">verwirken</td>
+                  <td class="de">verwirkt</td>
+                  <td class="de">verwirkte</td>
+                  <td class="de">hat verwirkt</td>
+                  <td class="de">verwirkt</td>
+                  <td class="de">verwirkte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 弱变化；诗中 Ist verwirkt（第2行）为状态被动（sein + Partizip II）："被织入"。两义见词汇表。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">umwerben</td>
+                  <td class="de">umwirbt</td>
+                  <td class="de">umwarb</td>
+                  <td class="de">hat umworben</td>
+                  <td class="de">umworben</td>
+                  <td class="de">umwürbe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（不可分，e→i），支配第四格：追求、向……献殷勤。诗中 Sterne, die sich himmellang
+                    umwarben（第4行，彼此追逐了一整个天长的星辰，反身）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">复合词的成分倒置与临时造词（Augenblickskompositum）</h3>
+              <p class="grammar-item__quote">Teppichtibet（第2行）—— 标题 Tibetteppich 的倒置</p>
+              <div class="grammar-item__body">
+                德语复合词的高产性允许临时把词根焊接成新词（Augenblickskompositum，瞬间复合词）。本站《晚歌》（Luftgespinst，空气织成的网）与《纺纱女的夜歌》（spinnen
+                / Gespinst
+                的同源反复）都属于"纺织"意象的复合构词；本页把这一手法推到极限：不仅造新词，还倒置成分（Teppichtibet）、把数量词焊进词里（Maschentausendabertausendweit）。这是本页加入全站"纺织意象与复合构词"簇的接点。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">ver- 前缀的多义性</h3>
+              <p class="grammar-item__quote">verwirkt（织入 / 丧失）… verliebte …</p>
+              <div class="grammar-item__body">
+                ver- 是德语最多义的前缀，按语义可分四组：(1) 离去/转换义（verreisen 出行、verlieren 失去）；(2)
+                错误义（sich irren → sich verirren 迷路、verwechseln 混淆）；(3) 完成义（verblühen 凋谢、verarbeiten
+                加工）；(4) 加强/使役义。诗中 verwirken 兼"织入"（完成义，与 wirken 织相关）与"丧失"（离去义）两义，是
+                ver- 多义性的浓缩样本。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">der Strahl 的多义（全站第三义）</h3>
+              <p class="grammar-item__quote">Strahl in Strahl, verliebte Farben（第3行）</p>
+              <div class="grammar-item__body">
+                der Strahl
+                在本站已收两义：《秋景》（编号24）的"光线"、《罗马的喷泉》（编号26）的"水柱"。本页在地毯编织的语境里给出第三种用法——"一缕（颜色/丝缕）"，光缕与丝缕在编织中合一。三页构成
+                der Strahl 的多义对照组。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              埃尔泽·拉斯克-许勒（1869—1945）是德语表现主义最重要的女诗人。她与《Der
+              Sturm》（暴风雨）杂志圈子关系密切——本诗1910年12月8日即刊于该刊创刊年。她一生自我神话化，自称"底比斯王子
+              Jussuf von Theben"，常以东方化的笔名与形象出入柏林的表现主义沙龙；她的诗与生平共同构成一件"诗化的自我"。
+            </p>
+            <p>
+              本诗的核心是"织"：标题是地毯，第2行把 Tibetteppich 倒装成 Teppichtibet（词被织了一遍），verwirkt
+              兼"织入"与"丧失"，颜色与星辰"彼此追逐"（umwarben）如同经纬交织，连"时光"也被"编结"（buntgeknüpfte
+              Zeiten）。两个灵魂被织进同一条地毯——爱与诗、东方与西方、词与物，全部被编结在一起。
+            </p>
+            <p>
+              1933年她被迫流亡，先至瑞士，1939年起定居耶路撒冷，1945年1月22日卒于该地。她是本站继德罗斯特-徽尔斯霍夫（编号18）之后的第二位女性作者。
+            </p>
+            <p>
+              （卡尔·克劳斯据称对本诗给予极高评价并在《Die
+              Fackel》转载——此说必须回核一手后再引；本诗的确切写作月份、与《Meine
+              Wunder》1911年版对照的细节，待进一步核实。）
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) Teppichtibet
+              译"地毯西藏"，保留其倒装感，并在注释中说明它不合法、正是因此成诗；(2) verwirkt
+              译"被织进了"，并标注其"丧失"的潜在义；(3) Maschentausendabertausendweit
+              译"网眼千万又千万地铺展开去"，保留数量词堆叠；(4)
+              Süßer（比较级）译"更甜美的"。本页是全站第二位女性作者的第一首作品。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">UB Heidelberg — Der Sturm 1.41 (8.12.1910), S. 328（初刊扫描）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://digi.ub.uni-heidelberg.de/diglit/sturm1910_1911/0334"
+                target="_blank"
+                rel="noopener"
+                >https://digi.ub.uni-heidelberg.de/diglit/sturm1910_1911/0334</a
+              >
+              <span class="source-citation">Der Sturm 1 (1910/11), Heft 41, S. 328</span>
+              <span class="source-note"
+                >一级来源（1910年初刊原件扫描）。用于核对初刊形态（无标点、Füsse、Süsser 等早期读法）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name"
+                >K. J. Skrodzki — kritische Notizen / Text 004（《Meine Wunder》1911 异文校勘）</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.kj-skrodzki.de/Dokumente/Text_004.htm"
+                target="_blank"
+                rel="noopener"
+                >https://www.kj-skrodzki.de/Dokumente/Text_004.htm</a
+              >
+              <span class="source-citation">Skrodzki 编异文校勘（对照1910初刊与1911《Meine Wunder》）</span>
+              <span class="source-note"
+                >二级来源（独立校勘）。用于核对1910→1911版本差异（标点、Füsse→Füße、Süsser→Süßer、问号等）；1911《Meine
+                Wunder》影像本次抓取被屏蔽，读法经此校勘确认。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Ein alter Tibetteppich – Lasker-Schüler“</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/ein-alter-tibetteppich.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/ein-alter-tibetteppich.html</a
+              >
+              <span class="source-citation">现代通行文本（采用1911《Meine Wunder》定本读法）</span>
+              <span class="source-note"
+                >主转录底本（现代化通行文本，采用1911年定本读法：Füße、Süßer、-thron、问号）。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】德文正文以 deutschelyrik.de 的现代通行文本（采用1911《Meine
+              Wunder》定本读法）为转录底本，另以两个独立来源核对：海德堡大学图书馆《Der
+              Sturm》1910年初刊扫描（S.328）、K. J. Skrodzki 的异文校勘。9 行、分节 2/2/2/3——三源一致。
+            </p>
+            <p>
+              【1910初刊 vs 1911《Meine Wunder》异文】(1) 标点：1910初刊第1–2行行末无标点，1911定本加逗号、句号。(2)
+              拼写：1910作 Füsse / Süsser / küsst / Moschuspflanzentron；1911定本作 Füße / Süßer / küßt / -thron。(3)
+              末行：1910以句号收，1911定本以问号收。本站从1911定本（问号收束、Füße、Süßer），即成为后世选本的基础文本；1910初刊形态据海德堡扫描备案。
+            </p>
+            <p>
+              【待进一步核实】(1) 卡尔·克劳斯对本诗的评价及是否在《Die Fackel》转载——此说流传广但本站未回核《Die
+              Fackel》一手，故不写入正文背景，仅在此标注待核；(2) 本诗的确切写作月份（仅知1910年12月8日刊于《Der
+              Sturm》）；(3) 1911《Meine Wunder》该页影像本次抓取被屏蔽，其读法经 Skrodzki 校勘间接确认。
+            </p>
+            <p>【公版】拉斯克-许勒1945年卒，公版起始年 = 1945 + 71 = 2016。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：海德堡UB / skrodzki /
+              deutschelyrik）、D（含一级来源：海德堡UB 初刊扫描）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Else Lasker-Schüler（本站第二位女性作者）</li>
+            <li>确认标题与出处：Der Sturm 1910 / Meine Wunder 1911</li>
+            <li>德文原文主来源：deutschelyrik（1911定本，转录底本）</li>
+            <li>一级来源交叉核对：海德堡UB Der Sturm 1910初刊扫描</li>
+            <li>核对行数（9行，分节2/2/2/3）</li>
+            <li>记录1910→1911异文（标点、Füße、问号等）</li>
+            <li>Teppichtibet 新造词说明</li>
+            <li>verwirken 双义说明</li>
+            <li>der Strahl 第三义说明</li>
+            <li>ver- 前缀多义表</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1945 + 71 = 2016</li>
+            <li>高危断言（克劳斯评价）标注待核且不写入正文</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核《Die Fackel》是否转载本诗</li>
+            <li class="pending">1911《Meine Wunder》影像直接核对</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义/现代主义专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

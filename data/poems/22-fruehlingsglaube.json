@@ -360,5 +360,12 @@
       "label": "补入一个独立来源以满足《来源独立性规范》（SOURCES.md 规则 B/D）",
       "done": true
     }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "der-spinnerin-nachtlied",
+      "needle": "dein denken",
+      "context": "《纺纱女的夜歌》"
+    }
   ]
 }

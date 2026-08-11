@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Wünschelrute · 占卜杖 — Joseph von Eichendorff | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Wünschelrute（占卜杖）— Joseph von Eichendorff。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="die-gedanken-sind-frei.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">思想是自由的</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="nachtgedanken.html" rel="next"
+            ><span class="poem-nav__title">夜思</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Wünschelrute</h1>
+          <p class="poem-titleblock__author">Joseph von Eichendorff</p>
+          <p class="poem-titleblock__zh">占卜杖</p>
+          <p class="poem-titleblock__author-zh">约瑟夫·冯·艾兴多夫</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Gedichte》· 浪漫派四行纲领诗</p>
+            <p>浪漫主义（Spätromantik）</p>
+            <p>1835年作；1838年首刊于《Deutscher Musenalmanach》（原题"Wünschelruthe"）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--a">A2–B1</span>
+            <span class="tag">四行诗</span>
+            <span class="tag">浪漫派纲领</span>
+            <span class="tag">魔法词</span>
+            <span class="tag">极短诗</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一片森林清晨，一只手举起分叉的榛树枝（占卜杖），树枝的尖端微微发光；周围万物（树叶、溪水、石头）隐约散发出音符般的光丝
+              </dd>
+              <dt>情绪</dt>
+              <dd>魔法般宁静的启示瞬间；不是奇幻，而是"万物正在苏醒、等待被唤醒"的灵性</dd>
+              <dt>画面元素</dt>
+              <dd>分叉的榛树枝（Wünschelrute）、举起它的手（无全身人物）、森林晨光、万物间隐约的光丝/音符、露水</dd>
+              <dt>时代感</dt>
+              <dd>无明确时代，浪漫主义森林意象</dd>
+              <dt>推荐风格</dt>
+              <dd>浪漫主义风景画质感，晨光透过树冠的丁达尔光，绿色与金色为主，笔触抒情柔和</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>不得出现具体人物面孔；不得出现现代元素；不得出现巫师帽、水晶球等流行奇幻俗套；不得出现文字水印</dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Schläft ein Lied in allen Dingen,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">有一支歌沉睡在万物之中，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Die da träumen fort und fort,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">它们不停地做着梦，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Und die Welt hebt an zu singen,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">于是世界便开始歌唱，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Triffst du nur das Zauberwort.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">只要你击中那一个魔法词。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留扬抑格节奏与省略连词的条件句结构</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Schläft ein Lied in allen Dingen,</p>
+              <p class="lnote__zh">
+                全诗是一句话：一个省略了连词 wenn 的条件句。"Schläft ein Lied" 是动词置首（= Wenn ein Lied
+                schläft）。浪漫派的纲领被压缩进四行：万物之中沉睡着歌，等待被唤醒。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Die da träumen fort und fort,</p>
+              <p class="lnote__zh">
+                da 是关系副词"在那里"（die da träumen = 那些在其中做梦的万物）。fort und fort
+                是古老的叠词副词短语，意为"不断地、绵绵不绝"——与本站《祈求》（编号23）、《那座城》（编号25）的 für und
+                für 是同族的古老重复式副词（介词 + und + 介词/副词），构词模式相同。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Und die Welt hebt an zu singen,</p>
+              <p class="lnote__zh">
+                anheben（开始，雅语/古语，可分动词）→ hebt an。现代德语作
+                beginnen。诗中"世界开始歌唱"是条件句的结果主句。注意可分性：anheben 的 an 落在 hebt 之后（hebt an zu
+                singen）。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Triffst du nur das Zauberwort.</p>
+              <p class="lnote__zh">
+                ★句法反转的核心：末行"只要你击中那一个魔法词"在语法上是前置的条件（= wenn du nur das Zauberwort
+                triffst），而非结果。全诗的机关在于：结果（世界歌唱）写在前面，条件（你找到魔法词）写在最后——读者读完才发现，一切取决于语言本身。das
+                Zauberwort（魔法词）即诗本身。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Wünschelrute, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">占卜杖、探矿杖（民间传说中寻水/寻矿的分叉杖）</div>
+              <div class="vocab-card__note">
+                民俗注：日耳曼民间传统中，占卜者手持分叉的榛树枝（Wünschelrute）探测地下水或矿脉。艾兴多夫以此喻"诗人之笔"——诗人是寻找万物中沉睡之歌的占卜者。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">anheben</span></div>
+              <span class="vocab-card__pos">v.（可分，弱/强混合，雅/古）</span>
+              <div class="vocab-card__meaning">开始（= beginnen）</div>
+              <div class="vocab-card__note">
+                变位 hebt an – hob an – hat angehoben（弱）或 hat angehoben（强混合）。今日多作 beginnen；诗中 die Welt
+                hebt an zu singen（第3行）。★可分动词：an 落在 hebt 之后。词条、变位、注释三处一致地标"可分"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Zauberwort, -e</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">魔法词、咒语；关键的那个词</div>
+              <div class="vocab-card__note">
+                zaubern（施魔法）、der Zauber（魔法）。诗中 Triffst du nur das
+                Zauberwort（第4行）——诗的终极信念：语言（词）有唤醒万物的力量。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">fort und fort</span></div>
+              <span class="vocab-card__pos">adv.（古老叠词短语）</span>
+              <div class="vocab-card__meaning">不断地、绵绵不绝</div>
+              <div class="vocab-card__note">
+                介词/副词 + und + 同一词的重复式，是德语古老的强调构词：fort und fort、nach und nach、Schritt für
+                Schritt。与本站《祈求》《那座城》的 für und für 同族。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">anheben</td>
+                  <td class="de">hebt an</td>
+                  <td class="de">hob an</td>
+                  <td class="de">hat angehoben</td>
+                  <td class="de">angehoben</td>
+                  <td class="de">höbe an</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ ★可分动词（强变化 hob/angehoben）；诗中 die Welt hebt an zu singen（第3行）。注意与弱变化同形动词
+                    anheben（举起，hebt an – hob an – angehoben，仅强变化一读）的区别存疑；本诗取"开始"义，属强变化。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">schlafen</td>
+                  <td class="de">schläft</td>
+                  <td class="de">schlief</td>
+                  <td class="de">hat geschlafen</td>
+                  <td class="de">geschlafen</td>
+                  <td class="de">schliefe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 强变化（a–ie–a），现在时变元音 a→ä；诗中 Schläft ein Lied（第1行，动词置首）。</td>
+                </tr>
+                <tr>
+                  <td class="de">treffen</td>
+                  <td class="de">trifft</td>
+                  <td class="de">traf</td>
+                  <td class="de">hat getroffen</td>
+                  <td class="de">getroffen</td>
+                  <td class="de">träfe</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（e→i，现在时变元音；a–o），支配第四格；诗中 Triffst du nur das
+                    Zauberwort（第4行，第二人称单数）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">扬抑格（Trochäus）—— 全站第一个扬抑格样本</h3>
+              <p class="grammar-item__quote">
+                Schläft ein | Lied in | al-len | Din-gen, / Die da | träu-men | fort und | fort
+              </p>
+              <div class="grammar-item__body">
+                本诗以四音步扬抑格（Trochäus，重—轻）写成，奇数行阴性收尾（8音节），偶数行阳性收尾（7音节，缺末音节）。注意：扬抑格（重—轻）与本站绝大多数诗的抑扬格（轻—重，如《罗马的喷泉》）相反——这是全站第一个扬抑格样本。读起来每行以重音起头，有"敲击"般的节奏。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">省略连词 wenn 的条件句（句法反转）</h3>
+              <p class="grammar-item__quote">
+                Schläft ein Lied … / … / Und die Welt hebt an zu singen, / Triffst du nur das Zauberwort.
+              </p>
+              <div class="grammar-item__body">
+                全诗是一个省略了 wenn
+                的条件句，且条件与结果的语序被反转：前3行是结果（世界歌唱），末行才是条件（只要你找到魔法词）。德语可省去连词
+                wenn，把变位动词提到句首标记从句。与本站《在塔上》（编号18，"Wär ich ein
+                Jäger…"）、《里贝克》（编号27，"Und kam die goldene
+                Herbsteszeit…"）属同一族的省连词从句，区别在语义（本诗是条件、那两首是条件/虚拟）。本诗是这一族中最短、最纯的样本。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              约瑟夫·冯·艾兴多夫（1788—1857）是德语晚期浪漫主义最重要的抒情诗人。他的诗短小、明朗、可歌，《月夜》（Mondnacht，本站编号7）是他最著名的作品。
+            </p>
+            <p>
+              《占卜杖》作于1835年，1838年首刊于《德意志缪斯年鉴》（原题"Wünschelruthe"）。这四行被视为浪漫派诗学的纲领：万物之中沉睡着歌，诗人（手持"占卜杖"的人）的任务是用语言（das
+              Zauberwort）把它唤醒。浪漫派的核心信念——自然是充满灵性的、语言有近乎魔法的力量——被压缩进了这四行。它与本站《月夜》（同作者）恰是一对：一首是纲领（万物中有歌），一首是实践（月夜中灵魂被"悄悄扩大"地飞翔）。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 全诗是一句省略 wenn
+              的条件句，译文以"只要……"在末行点出条件，保留原诗"结果在前、条件在后"的语序；(2) fort und fort
+              译"不停地"，并在注释中说明其与 für und für 的同族关系；(3) anheben 译"开始"，注明其为古/雅词（=
+              beginnen）。本诗短小（仅4行），但句法有反转，并非"简单"——属本批"短 ≠
+              易"的三首之一（另两首为《巡逻》《智天使漫游者》）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >German Wikisource — Wünschelrute（Eichendorff, Gesammelte Werke Bd.1, Aufbau 1962, S.90）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/W%C3%BCnschelrute"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/W%C3%BCnschelrute</a
+              >
+              <span class="source-citation"
+                >Joseph von Eichendorff, Gesammelte Werke, Bd. 1 (Gedichte, Nachlese, Die Feier), Aufbau Verlag Berlin
+                1962, S. 90</span
+              >
+              <span class="source-note"
+                >一级来源（数字化校勘全集，标注页码）。本站正文据此（行首大写读法：Die/Und/Triffst）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">Wikipedia (DE) — Wünschelrute (Eichendorff)</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://de.wikipedia.org/wiki/W%C3%BCnschelrute_(Eichendorff)"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikipedia.org/wiki/W%C3%BCnschelrute_(Eichendorff)</a
+              >
+              <span class="source-citation"
+                >条目记录：1835年作，1838年首刊于 Deutscher Musenalmanach，原题 Wünschelruthe</span
+              >
+              <span class="source-note"
+                >二级来源（独立运营方，wikimedia 组）。用于核对首刊载体、原题拼法与早期手稿异文。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Schläft ein Lied in allen Dingen“</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/schlaeft-ein-lied-in-allen-dingen.383.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/schlaeft-ein-lied-in-allen-dingen.383.html</a
+              >
+              <span class="source-citation">现代通行文本（Aufnahme 2001，行首小写读法）</span>
+              <span class="source-note"
+                >二级来源（独立运营方）。用于核对文本；其行首小写读法（die/und/triffst）与 Wikisource/Aufbau
+                的大写读法有别，本站从大写。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — „Schläft ein Lied in allen Dingen“</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a class="source-url" href="https://www.gedichte7.de/wuenschelrute.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/wuenschelrute.html</a
+              >
+              <span class="source-citation">现代通行文本（possel 组，1838 / 扬抑格 / 交叉韵）</span>
+              <span class="source-note"
+                >三级来源（possel 组，独立于 wikimedia 与 deutschelyrik）。文本与 Wikisource 一致，用于满足新版规则 B
+                的独立运营方数。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】德文正文以 German Wikisource 转写的《艾兴多夫集》（Aufbau
+              1962，第1卷第90页）为底本，另以两个独立来源核对：Wikipedia (DE)、deutschelyrik.de。1 节、行数
+              4（共4行）、交叉韵 abab——一致。
+            </p>
+            <p>
+              【行首大小写异文】Wikisource/Aufbau 1962 与 Wikipedia 作行首大写（Die da träumen / Und die Welt / Triffst
+              du）；deutschelyrik.de 作行首小写（die / und / triffst，把第2—4行视作第1行的续行）。语义无别；本站从
+              Wikisource/Aufbau 的大写读法。
+            </p>
+            <p>
+              【原题拼法】1838年首刊原题作"Wünschelruthe"（带 -th-）；现代通行本题"Wünschelrute"。本站标题从现代通行本。
+            </p>
+            <p>
+              【待进一步核实】(1) 未找到 Zeno/textlog 的本诗专页（试探 URL 返回 404），一级来源覆盖依赖
+              Wikisource（Aufbau 1962）加两个独立二级来源；(2) 年份惯例：1835年作 /
+              1838年首刊，文献依指创作或发表而采不同年份，本页两说并存。
+            </p>
+            <p>【公版】艾兴多夫1857年卒，公版起始年 = 1857 + 71 = 1928。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / wikimedia-百科同组 +
+              deutschelyrik——注：Wikisource 与 Wikipedia 同属 wikimedia 组，严格计独立运营方为 wikimedia + deutschelyrik
+              = 2 组，不满足新版≥3。待补一个非 wikimedia 的独立来源，如 textlog 或 Zeno 的艾兴多夫全集页）。
+            </p>
+            <p>
+              【待补】★本诗独立运营方目前为 wikimedia + deutschelyrik 两组，未达新版规则 B 的 ≥3。需补入一个非
+              wikimedia、非 deutschelyrik 的独立来源（优先 textlog.de 或 Zeno.org
+              的艾兴多夫全集），方可满足。此为发布前必须清零的项。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Joseph von Eichendorff</li>
+            <li>德文原文主来源：Wikisource Aufbau 1962 S.90</li>
+            <li>核对节数（1节4行）、交叉韵 abab、扬抑格</li>
+            <li>记录行首大小写异文与原题拼法</li>
+            <li>省略连词条件句说明（句法反转）</li>
+            <li>扬抑格说明（全站首个样本）</li>
+            <li>anheben 可分性与词条/变位一致</li>
+            <li>fort und fort 与 für und für 同族互链</li>
+            <li>公版年份复算：1857 + 71 = 1928</li>
+            <li>撰写 image brief</li>
+            <li class="pending">★补一个非 wikimedia/deutschelyrik 的独立来源（textlog/Zeno）以满足规则 B ≥3</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">核实首刊载体与年份（1835作/1838刊）</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议浪漫主义专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

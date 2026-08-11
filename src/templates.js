@@ -54,26 +54,38 @@ function makeNoteFinder(lineNotes) {
   };
 }
 
-// 德汉对照 + 逐行注释三列（德 | 中 | 注），逐行对齐；注释随诗行高度自适应，无注释的诗行不留空柱
-function renderParallel(deStanzas, zhStanzas, findNote) {
+// 德汉对照，或 Mhd. / Nhd. / 中文三栏对照；逐行对齐，注释标记始终锚定原诗行
+function renderParallel(deStanzas, zhStanzas, findNote, nhdStanzas = null) {
   const zS = zhStanzas || [];
-  const nStanzas = Math.max(deStanzas.length, zS.length);
+  const nS = nhdStanzas || [];
+  const trilingual = Array.isArray(nhdStanzas);
+  const nStanzas = Math.max(deStanzas.length, zS.length, trilingual ? nS.length : 0);
   const out = [];
   for (let s = 0; s < nStanzas; s++) {
     const de = deStanzas[s] || [];
     const zh = zS[s] || [];
-    const n = Math.max(de.length, zh.length);
+    const nhd = trilingual ? nS[s] || [] : [];
+    const n = Math.max(de.length, zh.length, trilingual ? nhd.length : 0);
     const rows = [];
     for (let i = 0; i < n; i++) {
       const deLine = de[i] || "";
       const zhLine = zh[i] || "";
+      const nhdLine = trilingual ? nhd[i] || "" : "";
       const noteN = deLine && findNote ? findNote(deLine) : 0;
       const mark = noteN ? `<sup class="refmark"><a href="#note-${noteN}">${noteN}</a></sup>` : "";
       const deAttr = noteN ? ` data-noteref="${noteN}"` : "";
-      rows.push(`        <div class="pline">
+      if (trilingual) {
+        rows.push(`        <div class="pline pline--trilingual">
+          <div class="pline__de pline__mhd vline"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
+          <div class="pline__nhd">${esc(nhdLine)}</div>
+          <div class="pline__zh">${esc(zhLine)}</div>
+        </div>`);
+      } else {
+        rows.push(`        <div class="pline">
           <div class="pline__de vline"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
           <div class="pline__zh">${esc(zhLine)}</div>
         </div>`);
+      }
     }
     out.push(`      <div class="pstanza">\n${rows.join("\n")}\n      </div>`);
   }
@@ -270,18 +282,51 @@ ${SITE_SCRIPT}
 
 // ---- 首页（诗集目录 Inhalt） ----
 
+function extractTimelineYear(value) {
+  const match = String(value || "").match(/(?:^|\D)(1[0-9]{3}|20[0-9]{2})(?:\D|$)/);
+  return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
+}
+
+function annotationDensity(poem) {
+  if (Number.isFinite(poem.annotation_density)) return poem.annotation_density;
+  const lines = (poem.german_text || []).reduce((sum, stanza) => sum + (stanza?.length || 0), 0);
+  return lines ? (poem.line_notes || []).length / lines : 0;
+}
+
+function annotationDensityTag(poem) {
+  const notes = (poem.line_notes || []).length;
+  const lines = (poem.german_text || []).reduce((sum, stanza) => sum + (stanza?.length || 0), 0);
+  const density = annotationDensity(poem).toFixed(2);
+  return `<span class="tag tag--density" title="逐行注释 ${notes} 条 ÷ 原诗 ${lines} 行">注释 ${density}</span>`;
+}
+
 function renderIndex(poems) {
   // 按作者分组，保留首次出现顺序
   const groups = [];
   const idx = new Map();
   for (const p of poems) {
     if (!idx.has(p.author)) {
-      const g = { author: p.author, author_zh: p.author_zh, items: [] };
+      const g = {
+        author: p.author,
+        author_zh: p.author_zh,
+        items: [],
+        timelineYear: Number.isFinite(Number(p.author_sort_year))
+          ? Number(p.author_sort_year)
+          : extractTimelineYear(p.year),
+        firstId: Number(p.id),
+      };
       idx.set(p.author, g);
       groups.push(g);
     }
-    idx.get(p.author).items.push(p);
+    const group = idx.get(p.author);
+    group.items.push(p);
+    const itemYear = Number.isFinite(Number(p.author_sort_year))
+      ? Number(p.author_sort_year)
+      : extractTimelineYear(p.year);
+    group.timelineYear = Math.min(group.timelineYear, itemYear);
+    group.firstId = Math.min(group.firstId, Number(p.id));
   }
+  groups.sort((a, b) => a.timelineYear - b.timelineYear || a.firstId - b.firstId || a.author.localeCompare(b.author));
 
   const groupHtml = groups
     .map((g) => {
@@ -294,6 +339,7 @@ function renderIndex(poems) {
           <span class="toc-meta">
             <span class="toc-period">${esc(periodShort)}</span>
             ${tag(p.difficulty, difficultyTagClass(p.difficulty))}
+            ${annotationDensityTag(p)}
           </span>
         </a>`;
         })
@@ -417,6 +463,10 @@ function renderSourceList(sources, snapshots = {}, root = "") {
 ${sources
   .map((s) => {
     const snap = s.url ? snapshots[s.url] : null;
+    const tierLabel = [1, 2, 3].includes(Number(s.tier))
+      ? `<span class="source-tier source-tier--${Number(s.tier)}">${["", "一级", "二级", "三级"][Number(s.tier)]}</span>`
+      : "";
+    const citation = s.citation ? `<span class="source-citation">${esc(s.citation)}</span>` : "";
     let snapLink = "";
     if (snap && snap.ok) {
       snapLink = `<a class="source-snap" href="${root}snapshots/${esc(snap.id)}.html" title="抓取于 ${esc(snap.fetched_at)} 的本地存档">快照（${esc(snapDate(snap))}）</a>`;
@@ -426,7 +476,8 @@ ${sources
       snapLink = `<span class="source-snap source-snap--failed" title="${esc(String(snap.attempted_at || "").slice(0, 10))} 抓取失败：${esc(why)}">快照（未能抓取）</span>`;
     }
     return `      <li>
-        <span class="source-name">${esc(s.name)}</span>${s.url ? `<a class="source-url" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>` : ""}${snapLink}
+        <span class="source-name">${esc(s.name)}</span>${tierLabel}${s.url ? `<a class="source-url" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>` : ""}${snapLink}
+        ${citation}
         ${s.note ? `<span class="source-note">${esc(s.note)}</span>` : ""}
       </li>`;
   })
@@ -673,8 +724,13 @@ ${poemNav}
       ${renderImageSlot(p.image_prompt, p.image_path, "../")}
     </header>`;
 
-  const parallelBlock = `      <div class="parallel">
-${renderParallel(p.german_text, p.translation_zh.text, findNote)}
+  const trilingual = Array.isArray(p.text_nhd);
+  const parallelLabels = trilingual
+    ? `        <div class="parallel__bar parallel__bar--trilingual" aria-hidden="true"><span>Mhd. · 原文</span><span>Nhd. · 现代转写</span><span>中文 · 学习译文</span></div>`
+    : "";
+  const parallelBlock = `      <div class="parallel${trilingual ? " parallel--trilingual" : ""}">
+${parallelLabels}
+${renderParallel(p.german_text, p.translation_zh.text, findNote, trilingual ? p.text_nhd : null)}
         <p class="translation-meta">${esc(p.translation_zh.translator)}</p>
       </div>`;
 
@@ -744,7 +800,27 @@ ${renderSections(secs)}
 
 // ---- 关于页 ----
 
-function renderAbout(poemsCount) {
+function renderAbout(poems) {
+  const poemList = Array.isArray(poems) ? poems : [];
+  const poemsCount = Array.isArray(poems) ? poems.length : Number(poems) || 0;
+  const namedAuthors = new Set(
+    poemList
+      .filter((p) => p.author_type !== "anonymous")
+      .map((p) => p.author)
+      .filter(Boolean),
+  );
+  const anonymousGroups = new Set(
+    poemList
+      .filter((p) => p.author_type === "anonymous")
+      .map((p) => p.author)
+      .filter(Boolean),
+  );
+  const womenAuthors = new Set(poemList.filter((p) => p.author_gender === "female").map((p) => p.author));
+  const years = poemList.map((p) => extractTimelineYear(p.year)).filter(Number.isFinite);
+  const firstYear = years.length ? Math.min(...years) : null;
+  const lastYear = years.length ? Math.max(...years) : null;
+  const illustrated = poemList.filter((p) => p.image_path).length;
+
   const titleBlock = `
     <header class="poem-titleblock reveal">
       <p class="poem-titleblock__eyebrow">Vorwort · 编者前言</p>
@@ -752,44 +828,53 @@ function renderAbout(poemsCount) {
       <div class="poem-titleblock__ornament">${ORNAMENT}</div>
     </header>`;
 
+  const spanText = firstYear && lastYear ? `约 ${firstYear}—${lastYear} 年` : "多个文学时期";
+  const authorText = namedAuthors.size
+    ? `${namedAuthors.size} 位具名作者${anonymousGroups.size ? `，另有 ${anonymousGroups.size} 个匿名传统组` : ""}`
+    : "多位作者";
+  const womenText = womenAuthors.size ? `${womenAuthors.size} 位女性作者` : "女性作者信息尚待结构化标注";
+
   const secs = [
     {
       zh: "项目定位",
       de: "Profil",
       html: renderProse(
-        "本站是面向德语学习者与文学爱好者的诗歌学习资料库，目前收录 " +
-          poemsCount +
-          " 首德语经典诗歌（第一批）。每首诗提供德文原诗（含出处）、本站学习中译（AI 辅助）、逐行注释、重点词汇、动词变位、语法要点、文学背景与完整的校对记录，目标是成为“可信的文学学习资料”，而不是“看起来像真的 AI 内容”。",
+        `本站是面向德语学习者与文学爱好者的诗歌学习资料库，目前收录 ${poemsCount} 首德语经典诗歌。每首诗提供德文原诗（含出处）、本站学习中译（AI 辅助）、逐行注释、重点词汇、动词变位、语法要点、文学背景与完整的校对记录，目标是成为“可信的文学学习资料”，而不是“看起来像真的 AI 内容”。`,
+      ),
+    },
+    {
+      zh: "语料结构",
+      de: "Korpus",
+      html: renderProse(
+        `当前语料时间跨度为 ${spanText}，包括 ${authorText}，其中明确标注 ${womenText}。匿名作品不会被强行归给某位作者：民歌的异文与传播过程本身就是文本的一部分。目录除 CEFR 外同时显示“注释密度”（逐行注释条数 ÷ 原诗行数）；选读难度以真正需要多少解释为准，而不只看生词多少。`,
       ),
     },
     {
       zh: "德文原文的校对原则",
       de: "Korrekturprinzip",
       html: renderProse(
-        "每首诗的德文原文均来自公开、可核实的文本来源（如 deutschelyrik.de、textlog.de、Zeno.org、维基百科所引权威版本等），并至少用两个独立来源交叉核对诗节、行数、标点与新旧拼法差异。凡两来源之间存在异文（例如 Goethe《Heidenröslein》1789 年 Göschen 版与 1827 年 Ausgabe letzter Hand 版的代词/动词差异），均在该诗页面的“校对记录”中说明，不擅自取舍或改写。少数诗仅取得单一直接来源核对、尚待第二独立来源复核的，会在“校对记录”中明确标注“待进一步核实”。",
+        "每首诗的德文原文均来自公开、可核实的文本来源。01—33 的既有语料至少用两个独立运营方交叉核对；从 34 起的新录入采用更严格规则：至少三个独立运营方，其中至少一个一级来源，并记录其纸质校勘版出处与页码。凡来源之间存在异文，均在该诗页面的“校对记录”中说明，不擅自取舍或改写。民歌没有作者定本，异文不被当作录入错误，而是并列记录。",
       ),
     },
     {
       zh: "中文 / 英文译文策略",
       de: "Übersetzungsweise",
       html: renderProse(
-        "已出版的现代译本（如钱春绮、冯至、杨武能等译者的中译）大多仍在版权保护期内，本站不会未经授权大段复制其译文全文；页面中仅以文字提及这些译本的存在，供读者自行查阅，不作为可核实的书目引用。\n\n本站展示的中文译文为“本站学习译文（AI 辅助）”：在人工核对德文原意的基础上，由本站编写/AI 辅助生成，以贴近原文结构、便于学习者对照单词与语法为首要目标，不追求诗意的独立文学价值，页面中均以徽标明确标注。\n\n英文译文：本站当前不提供英译。若今后采用英译，将优先选用已确认进入公有领域的 19 世纪译本（如 Edgar Alfred Bowring 译 Goethe，1853）并标注出处与公版状态；在未采用前，不会声称使用了任何英译本。",
+        "已出版的现代译本大多仍在版权保护期内，本站不会未经授权大段复制其译文全文；页面中仅以文字提及这些译本的存在，供读者自行查阅。\n\n本站展示的中文译文为“本站学习译文（AI 辅助）”：在人工核对德文原意的基础上编写，以贴近原文结构、便于学习者逐行对照为首要目标。英文译文当前不提供。",
       ),
     },
     {
       zh: "图片说明",
       de: "Bildnachweis",
       html: renderProse(
-        "本批每首诗均已配 AI 生成插图（4:3 横版），图下统一标注“AI-generated illustration inspired by the poem”。插图依据各诗页面撰写的 image brief（意象、情绪、画面元素、时代感、推荐风格、禁忌内容）生成，并经人工检查确认无文字、水印、肢体错误或明显违和的现代元素。少数若暂缺配图（image_path 为 null）的诗，会原位展示完整的 image brief 作为占位，待接入图像生成工具后按简报补充。",
+        `当前 ${poemsCount} 首中已有 ${illustrated} 首配图。已生成的插图统一标注为 AI 生成，并保留 image brief；尚无配图的诗以完整 brief 占位，不会用与文本典故不符的通用图片填空。`,
       ),
     },
     {
       zh: "局限性与后续工作",
       de: "Grenzen",
       html: renderProse(
-        "本项目为第一批内容（" +
-          poemsCount +
-          " 首），后续会按照 README 中“如何添加一首新诗”的流程持续扩充。所有标注为“待核实”的信息，欢迎读者对照来源自行验证；如发现错误，请以 README 中的方式反馈或直接修改对应的诗歌 JSON 数据文件。",
+        "项目仍需德语文学、历史语言学与版本学背景的人工专家复核。所有未能回到一手材料的生平、首刊、引语、谱曲与接受史断言均保留“待进一步核实”标记；正文来源、跨页断言、计数与行号、逐行对齐会在构建时接受机器校验。具体新增与验收流程见仓库中的编辑工作规范。",
       ),
     },
   ];
@@ -802,7 +887,7 @@ ${renderSections(secs)}
 
   return renderLayout({
     title: "关于本站 / 校对说明 | 德语诗歌学习画册",
-    description: "关于本站的资料来源、校对原则、译文版权策略与配图说明。",
+    description: "关于本站的语料结构、资料来源、校对原则、译文版权策略与配图说明。",
     bodyHtml: body,
   });
 }

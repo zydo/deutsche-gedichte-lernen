@@ -1,0 +1,29 @@
+{
+  "id": "53",
+  "slug": "kleine-aster",
+  "published": false,
+  "release_date": "2027-01-01",
+  "author": "Gottfried Benn",
+  "author_zh": "戈特弗里德·贝恩",
+  "title_de": "Kleine Aster",
+  "title_zh": "小紫菀",
+  "year": "1912年；收入《Morgue und andere Gedichte》的具体版次待公版后回核",
+  "period": "表现主义",
+  "difficulty": "B2（预估）",
+  "public_domain": {
+    "death_year": 1956,
+    "public_domain_year": 2027,
+    "status": "pending"
+  },
+  "german_text": [],
+  "annotation_plan": [
+    "锁定正文后逐行处理医学语域与花的意象冲突",
+    "高风险内容使用克制、非猎奇的学习注释与 image brief",
+    "核对表现主义名词化、句法与版本标点"
+  ],
+  "source_plan": [
+    "查 Benn 纸质校勘全集的卷次与页码，作为一级来源",
+    "另找两个独立运营方的公版数字文本逐行核对",
+    "2027-01-01 后运行 snapshot；在此之前不得录入德文正文"
+  ]
+}

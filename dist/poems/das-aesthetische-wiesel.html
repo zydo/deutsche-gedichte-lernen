@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Das ästhetische Wiesel · 美学的鼬 — Christian Morgenstern | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Das ästhetische Wiesel（美学的鼬）— Christian Morgenstern。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="die-brueck-am-tay.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">泰河桥</span></a
+          >
+          <span class="poem-nav__spacer" aria-hidden="true"></span>
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Das ästhetische Wiesel</h1>
+          <p class="poem-titleblock__author">Christian Morgenstern</p>
+          <p class="poem-titleblock__zh">美学的鼬</p>
+          <p class="poem-titleblock__author-zh">克里斯蒂安·摩根施特恩</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Galgenlieder》（1905）· 语言游戏</p>
+            <p>世纪末 / 幽默诗（Nonsense-Lyrik）</p>
+            <p>1905年收入《Galgenlieder》（Bruno Cassirer, Berlin 1905, S.36）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1</span>
+            <span class="tag">语言游戏</span>
+            <span class="tag">韵脚</span>
+            <span class="tag">无厘头</span>
+            <span class="tag">幽默</span>
+            <span class="tag">极短</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>一只小鼬端坐在溪水中一块卵石上，姿态一本正经；溪水淙淙环绕；画面带轻微的荒诞感（鼬像在摆姿势）</dd>
+              <dt>情绪</dt>
+              <dd>一本正经的荒诞；幽默但不滑稽，像一幅"为押韵而摆拍"的肖像</dd>
+              <dt>画面元素</dt>
+              <dd>一只坐姿端正的鼬、一块溪中卵石、淙淙溪水、森林溪岸、隐约的月光（暗示月牛）</dd>
+              <dt>时代感</dt>
+              <dd>无明确时代，森林溪流意象</dd>
+              <dt>推荐风格</dt>
+              <dd>新艺术运动（Jugendstil）插画风，线条优雅、色调柔和，带轻微装饰性</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>不得把鼬拟人化（穿衣/表情夸张）；不得出现文字水印；不得出现现代元素；保持插画风而非写实摄影感</dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Ein Wiesel<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一只鼬</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >saß auf einem Kiesel<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">坐在一块卵石上</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >inmitten Bachgeriesel.<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在淙淙的溪水中央。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wißt ihr,</span></div>
+                <div class="pline__zh">你们可知道，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">weshalb?</span></div>
+                <div class="pline__zh">为什么？</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Das Mondkalb</span></div>
+                <div class="pline__zh">月牛</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">verriet es mir</span></div>
+                <div class="pline__zh">悄悄告诉了我</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">im Stillen:</span></div>
+                <div class="pline__zh">在静默之中：</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Das raffinier-<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">这只狡-</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >te Tier<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">黠的动物</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >tat's um des Reimes willen.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">是为了押韵才这么做的。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留 -iesel 三叠韵与 raffinier-/Tier 的跨行押韵机关
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Ein Wiesel / saß auf einem Kiesel / inmitten Bachgeriesel.</p>
+              <p class="lnote__zh">
+                前三行是一个三叠韵（-iesel）：Wiesel（鼬）/ Kiesel（卵石）/
+                Bachgeriesel（淙淙溪水）。鼬坐在卵石上、卵石在溪水中——三个词都以 -iesel 收尾，层层套叠。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Das raffinier- / te Tier</p>
+              <p class="lnote__zh">
+                ★全诗的机关：raffinierte（狡黠的）一词被强行拆到两行（raffinier- / te Tier），使得 raffinier- 与 Tier
+                押韵（-ier）。词被拆开，不为别的，只为押韵——这正是全诗的笑点。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">tat's um des Reimes willen.</p>
+              <p class="lnote__zh">
+                um des Reimes willen =
+                "为了押韵的缘故"。鼬之所以坐在那块石头上，不是出于任何现实理由，而是"为了押韵"——诗把自己的形式条件（押韵）写进了内容。这是"元诗"（诗关于诗本身）的幽默样本。um
+                … willen + 第二格（des Reimes）。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Wiesel, -</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">鼬、黄鼠狼</div>
+              <div class="vocab-card__note">
+                小型食肉哺乳动物。诗中 Ein Wiesel（一只鼬）——它与 Kiesel、Bachgeriesel 押三叠韵 -iesel。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Kiesel, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">卵石、燧石</div>
+              <div class="vocab-card__note">der Kieselstein（卵石）。诗中 saß auf einem Kiesel（坐在一块卵石上）。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">ästhetisch</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">美学的、审美的</div>
+              <div class="vocab-card__note">
+                die
+                Ästhetik（美学）。诗题"美学的鼬"是反讽：鼬的"美学"行为（坐在石头上）其实只为押韵，是对"为艺术而艺术"的戏仿。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Reim, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">韵、韵脚</div>
+              <div class="vocab-card__note">
+                sich reimen（押韵）、reimlos（无韵的）。诗中 um des Reimes willen（为了押韵，第11行）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">um … willen</span></div>
+              <span class="vocab-card__pos">框式介词结构（+ 第二格）</span>
+              <div class="vocab-card__meaning">为了……的缘故</div>
+              <div class="vocab-card__note">
+                框式：um + 第二格 + willen。诗中 um des Reimes willen（为押韵之故）。与本站《致自己》（编号32）的 um
+                seiner selbst willen（为其自身之故）直接对接——一首为韵脚、一首为自身。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">raffiniert</span></div>
+              <span class="vocab-card__pos">adj.（来自法语）</span>
+              <div class="vocab-card__meaning">狡黠的、精明的、精巧的</div>
+              <div class="vocab-card__note">
+                诗中 das raffinierte Tier 被拆为 raffinier- / te Tier 以押韵（第8—9行）。das Raffinement（精巧）。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <p class="prose">本诗中未标注需要特别说明的不规则动词变位。</p>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">语言游戏：韵脚作为笑点（与《狼人》的变格游戏对照）</h3>
+              <p class="grammar-item__quote">
+                Ein Wiesel / saß auf einem Kiesel / inmitten Bachgeriesel. … Das raffinier- / te Tier / tat's um des
+                Reimes willen.
+              </p>
+              <div class="grammar-item__body">
+                本诗与本站《狼人》（编号29）同作者、同书（《绞刑架之歌》），但笑点机制不同：《狼人》拿"变格"（der
+                Werwolf → des Weswolfs → dem Wemwolf → den
+                Wenwolf）开玩笑，本诗拿"押韵"开玩笑——鼬坐在石头上"为了押韵"，raffinierte 被拆成 raffinier-/te
+                Tier"为了押韵"。两首都把德语的形式规则（变格/押韵）写成荒诞的内容，是"诗关于诗本身"的幽默样本。两页必须互链并说明这个区别。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">um … willen + 第二格（框式介词结构）</h3>
+              <p class="grammar-item__quote">um des Reimes willen（第11行）</p>
+              <div class="grammar-item__body">
+                um … willen 是德语的框式介词结构：um 放在前面，willen 放在最后，中间夹第二格名词。um des Reimes willen =
+                "为了押韵的缘故"。同类：um Gottes willen（看在上帝份上）、um der Liebe
+                willen（为了爱）。本站《致自己》（编号32）"反身代词的第二格"一节举的正是 um seiner selbst
+                willen（为其自身之故）——本页与之直接对接。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              克里斯蒂安·摩根施特恩（1871—1914）是德语幽默诗与无厘头诗（Nonsense-Lyrik）的代表。他的《绞刑架之歌》（Galgenlieder,
+              1905）创造了一个荒诞的"绞刑架世界"：其中的事物（鼬、卵石、月牛）都按语言自身的逻辑（押韵、构词、谐音）而非现实逻辑行动。
+            </p>
+            <p>
+              《美学的鼬》是其中最常被引用的一首。它的笑点完全形式化：鼬坐在卵石上，不是出于任何自然理由，而是"为了押韵"——因为
+              Wiesel、Kiesel、Bachgeriesel
+              押韵，所以鼬"必须"坐在那块石头上。诗把押韵这一形式规则反转为内容的起因，是对"为艺术而艺术"（l'art pour
+              l'art）的温和戏仿（故题"美学的"）。
+            </p>
+            <p>
+              本诗与本站《狼人》（编号29）是《绞刑架之歌》的一对：《狼人》戏仿变格，《鼬》戏仿押韵——两首都把德语语法/诗学的形式规则写成荒诞剧。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) -iesel
+              三叠韵（Wiesel/Kiesel/Bachgeriesel）在中文无法复制，译文据义直译；(2) raffinier-/te Tier
+              的跨行押韵机关：译文作"狡-/黠的动物"，以破折号近似传达"词被拆开以押韵"，但中文无法真正复制 raffinier/Tier
+              的 -ier 韵；(3) um des Reimes willen
+              译"为了押韵"，并在注释中说明其框式结构。本诗短小（11行），但笑点全在形式，属"短 ≠ 易"。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >German Wikisource — Das aesthetische Wiesel（Galgenlieder, 1932 Cassirer / Diogenes 1981 Nachdruck,
+                S.36）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/Das_aesthetische_Wiesel"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/Das_aesthetische_Wiesel</a
+              >
+              <span class="source-citation"
+                >Christian Morgenstern: Galgenlieder, S. 36 (fotomechan. Nachdruck der Ausg. Bruno Cassirer, Berlin
+                1932; Diogenes, Zürich 1981)</span
+              >
+              <span class="source-note"
+                >一级来源（1932年Cassirer版的影印再版，标注页码）。题作 Das aesthetische Wiesel（ae
+                拼法），正文据此（raffinier-/te Tier 跨行、im Stillen 大写、tat's 带撇）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name"
+                >planetlyrik.de / Frankfurter Anthologie — Zu Morgensterns ‚Das aesthetische Wiesel‘</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.planetlyrik.de/juergen-stenzel-zu-christian-morgensterns-gedicht-das-aesthetische-wiesel/2023/05/"
+                target="_blank"
+                rel="noopener"
+                >https://www.planetlyrik.de/juergen-stenzel-zu-christian-morgensterns-gedicht-das-aesthetische-wiesel/2023/05/</a
+              >
+              <span class="source-citation">Jürgen Stenzel, in: Frankfurter Anthologie, Bd. 6 (Insel 1982)</span>
+              <span class="source-note"
+                >二级来源（学术注解）。题作现代 ästhetische；正文用词与 Wikisource 一致，差异仅在正字法（tats 无撇、im
+                stillen 小写）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">zgedichte.de — Das ästhetische Wiesel</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.zgedichte.de/christian-morgenstern/das-aesthetische-wiesel.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.zgedichte.de/christian-morgenstern/das-aesthetische-wiesel.html</a
+              >
+              <span class="source-citation">现代通行文本（题作 ästhetische，变音符）</span>
+              <span class="source-note"
+                >三级来源（possel 组）。与 Wikisource 用词一致，差异仅在题名拼法（ästhetische）与撇号字形。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【标题拼法】历史印刷题作"Das aesthetische Wiesel"（ae 连写/有时作 æ 合字，1905/1932 Cassirer
+              版）；现代通行本作"Das ästhetische Wiesel"（变音符）。本站标题从现代拼法 ästhetische（与 slug 一致），历史
+              ae 形态在此备案。
+            </p>
+            <p>
+              【三源核对】正文以 German Wikisource 转写的1932年 Cassirer 版影印再版（Diogenes
+              1981，S.36）为底本，另以两个独立来源核对：planetlyrik（Frankfurter Anthologie 注解）、zgedichte.de。4
+              块、行数 3/2/3/3（共11行）——用词一致，差异仅在正字法（ae/ä、Wißt/Wisst、im Stillen/im
+              stillen、tat's/tat′s/tats）。
+            </p>
+            <p>
+              【正字法差异】(1) 题名：aesthetische（Wikisource 1932）vs ästhetische（现代）。(2) Wißt ihr（1932，ß）vs
+              Wisst ihr（1996年后）。(3) im Stillen（大写，Wikisource/zgedichte）vs im stillen（小写，planetlyrik）。(4)
+              tat's（直撇，Wikisource）vs tat′s（曲撇，zgedichte）vs tats（无撇，planetlyrik）。本站从1932 Cassirer
+              读法（Wißt、im Stillen、tat's），题名用现代 ästhetische。
+            </p>
+            <p>
+              【待进一步核实】(1) 1905年初版的逐页形态（本次直接核到的是1932 Cassirer / 1981 Diogenes
+              影印本，非1905初版）；(2) 跨行 raffinier-/te Tier 的确切排印（连字符位置）。
+            </p>
+            <p>【公版】摩根施特恩1914年卒，公版起始年 = 1914 + 71 = 1985。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / planetlyrik / possel）、D（含一级来源：1932
+              Cassirer 影印本扫描）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Christian Morgenstern</li>
+            <li>确认出处：Galgenlieder 1905/1932, S.36</li>
+            <li>核对行数（4块 3/2/3/3，共11行）</li>
+            <li>记录题名 ae/ä 与正字法差异</li>
+            <li>韵脚笑点说明（与《狼人》变格游戏对照）</li>
+            <li>um … willen 框式结构说明（与《致自己》对接）</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1914 + 71 = 1985</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">核实1905年初版排印形态</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议幽默诗/Nonsense 专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

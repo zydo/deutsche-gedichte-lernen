@@ -1,0 +1,240 @@
+{
+  "id": "38",
+  "slug": "ein-alter-tibetteppich",
+  "author": "Else Lasker-Schüler",
+  "author_zh": "埃尔泽·拉斯克-许勒",
+  "author_gender": "female",
+  "title_de": "Ein alter Tibetteppich",
+  "title_zh": "一条古旧的西藏地毯",
+  "author_sort_year": 1910,
+  "year": "1910年12月8日刊于《Der Sturm》；1911年收入诗集《Meine Wunder》",
+  "collection": "《Meine Wunder》（1911）· 表现主义 / 现代主义",
+  "period": "表现主义",
+  "difficulty": "B2",
+  "tags": ["表现主义", "地毯", "交织", "新造词", "女性作者"],
+  "public_domain": {
+    "death_year": 1945,
+    "public_domain_year": 2016,
+    "basis": "拉斯克-许勒1945年1月22日卒于耶路撒冷；按德国70年 p.m.a.，2016年起公版"
+  },
+  "german_text": [
+    [
+      "Deine Seele, die die meine liebet,",
+      "Ist verwirkt mit ihr im Teppichtibet."
+    ],
+    [
+      "Strahl in Strahl, verliebte Farben,",
+      "Sterne, die sich himmellang umwarben."
+    ],
+    [
+      "Unsere Füße ruhen auf der Kostbarkeit,",
+      "Maschentausendabertausendweit."
+    ],
+    [
+      "Süßer Lamasohn auf Moschuspflanzenthron,",
+      "Wie lange küsst dein Mund den meinen wohl",
+      "Und Wang die Wange buntgeknüpfte Zeiten schon?"
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留新造词 Teppichtibet 的倒装感与 verwirkt 的双关",
+    "text": [
+      [
+        "你的灵魂，那爱着我的灵魂，",
+        "与它一同被织进了\"地毯西藏\"。"
+      ],
+      [
+        "一缕光交着一缕光，恋爱中的颜色，",
+        "星辰们，彼此追逐了整整一个天长。"
+      ],
+      [
+        "我们的脚搁在这件珍宝上，",
+        "网眼千万又千万地铺展开去。"
+      ],
+      [
+        "更甜美的喇嘛之子，端坐麝香植物的王座，",
+        "你的嘴还要吻我的嘴多久，",
+        "而颊挨着颊，已编结出多少缤纷的时光？"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Ist verwirkt mit ihr im Teppichtibet.",
+      "zh": "★Teppichtibet 是全诗的核心手法：把标题 Tibetteppich（西藏地毯）的成分倒置而成的新造词（Neologismus）。这类\"复合词成分倒置\"在标准德语中不合法，正因不合法才成为诗——词本身也被\"织\"了一遍。verwirkt 是 verwirken 的过去分词，兼两义：①（本诗）织入、编进（与 wirken 织、Weberei 同源）；②（法律）丧失、被没收（如 die Ehre verwirken 丧尽名誉）。本诗取①义而②义始终在场：灵魂\"被织入\"，也仿佛\"被 forfeited\"于地毯。这是全诗最难译的一处。"
+    },
+    {
+      "de": "Strahl in Strahl, verliebte Farben,",
+      "zh": "der Strahl 在此取\"一缕（颜色/光线/丝缕）\"义——在编织地毯的语境里，Strahl 既是一缕光，也接近\"一根丝缕\"。这是本页加入本站 der Strahl 多义簇的第三种用法：《秋景》（编号24）取\"光线\"义、《罗马的喷泉》（编号26）取\"水柱\"义、本页取\"交织的光缕/丝缕\"义。verliebte Farben（恋爱中的颜色）把颜色拟人化。"
+    },
+    {
+      "de": "Maschentausendabertausendweit.",
+      "zh": "又一个新造复合词：Masche（网眼，地毯的编织单位）+ tausendaber（tausend und abertausend，成千上万）+ weit（宽广）。把数量词焊进一个词，模仿地毯网眼的无尽铺展。须与幽默语言游戏（如本站《狼人》《美学的鼬鼠》）区分：拉斯克-许勒不是制造笑点，而是造一种听起来像另一种语言的德语。"
+    },
+    {
+      "de": "Süßer Lamasohn auf Moschuspflanzenthron,",
+      "zh": "Lamasohn（喇嘛之子）——诗人把她钟爱的人（她自我神话为\"底比斯王子 Jussuf\"）置于东方化的意象中。Moschuspflanzenthron（麝香植物的王座）是又一层叠复合词。整个画面是诗人自我神话化的东方想象。"
+    },
+    {
+      "de": "Und Wang die Wange buntgeknüpfte Zeiten schon?",
+      "zh": "Wang die Wange（颊挨着颊）——Wang 是 die Wange（面颊）的旧/诗体形。buntgeknüpft（缤纷地编结出的）Zeiten（时光）——把抽象的\"时光\"也编进地毯的织物里。全诗以此问句收束：吻与编结，还要持续多久？"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "verwirken",
+      "pos": "v.（弱变化，★重点：两义）",
+      "meaning": "①织入、编进（诗/古，与 wirken 织同源）；②（法律）丧失、被没收",
+      "note": "变位 verwirkt – verwirkte – hat verwirkt。诗中 Ist verwirkt mit ihr im Teppichtibet（第2行）取①义，而②义（如 das Leben verwirken 丧命、die Ehre verwirken 丧尽名誉）始终在场，构成全诗最难译的双关。"
+    },
+    {
+      "term": "der Strahl, -en",
+      "pos": "n.（阳性）",
+      "meaning": "①光线、一缕光；②（液体）一股、一柱；③（本诗）一缕（颜色/丝缕）",
+      "note": "★本站 der Strahl 多义簇的第三义：本页 Strahl in Strahl（第3行）在地毯编织语境里既是一缕光、也接近一根丝缕。对照《秋景》（编号24，光线义）、《罗马的喷泉》（编号26，水柱义）。"
+    },
+    {
+      "term": "die Masche, -n",
+      "pos": "n.（阴性）",
+      "meaning": "（编织/针织的）网眼、线圈；计策（俗）",
+      "note": "诗中 Maschentausendabertausendweit（第6行，复合）。die Maschen des Strickzeugs（针织物的线圈）；\"eine Masche nach der anderen\" 一针一针。"
+    },
+    {
+      "term": "sich verlieben",
+      "pos": "v.（弱变化，反身）",
+      "meaning": "恋爱、爱上（sich in jemanden verlieben）",
+      "note": "变位 verliebt sich – verliebte sich – hat sich verliebt。诗中 verliebte Farben（第3行，恋爱的颜色）为形容词化用法（非反身）。das Verliebte（恋爱中的人/状态）。"
+    },
+    {
+      "term": "süß",
+      "pos": "adj.",
+      "meaning": "甜的；可爱的、甜蜜的",
+      "note": "诗中 Süßer Lamasohn（第7行，更甜美的喇嘛之子）为比较级。比照本站《普罗米修斯》（编号34）的 Süßer Friede（更甜美的安宁，同形比较级用法）。"
+    },
+    {
+      "term": "die Kostbarkeit, -en",
+      "pos": "n.（阴性）",
+      "meaning": "珍贵之物、珍宝",
+      "note": "kostbar（珍贵的）的名词化。诗中 Unsere Füße ruhen auf der Kostbarkeit（第5行，我们的脚搁在珍宝上）。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "sich verlieben",
+      "present_3sg": "verliebt sich",
+      "preterite": "verliebte sich",
+      "perfect": "hat sich verliebt",
+      "participle_ii": "verliebt",
+      "subjunctive_ii": "verliebte sich",
+      "auxiliary": "haben",
+      "note": "弱变化，反身；诗中 verliebte Farben（第3行）为过去分词作形容词（恋爱的），非反身用法。"
+    },
+    {
+      "infinitive": "verwirken",
+      "present_3sg": "verwirkt",
+      "preterite": "verwirkte",
+      "perfect": "hat verwirkt",
+      "participle_ii": "verwirkt",
+      "subjunctive_ii": "verwirkte",
+      "auxiliary": "haben",
+      "note": "弱变化；诗中 Ist verwirkt（第2行）为状态被动（sein + Partizip II）：\"被织入\"。两义见词汇表。"
+    },
+    {
+      "infinitive": "umwerben",
+      "present_3sg": "umwirbt",
+      "preterite": "umwarb",
+      "perfect": "hat umworben",
+      "participle_ii": "umworben",
+      "subjunctive_ii": "umwürbe",
+      "auxiliary": "haben",
+      "note": "强变化（不可分，e→i），支配第四格：追求、向……献殷勤。诗中 Sterne, die sich himmellang umwarben（第4行，彼此追逐了一整个天长的星辰，反身）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "复合词的成分倒置与临时造词（Augenblickskompositum）",
+      "quote": "Teppichtibet（第2行）—— 标题 Tibetteppich 的倒置",
+      "body": "德语复合词的高产性允许临时把词根焊接成新词（Augenblickskompositum，瞬间复合词）。本站《晚歌》（Luftgespinst，空气织成的网）与《纺纱女的夜歌》（spinnen / Gespinst 的同源反复）都属于\"纺织\"意象的复合构词；本页把这一手法推到极限：不仅造新词，还倒置成分（Teppichtibet）、把数量词焊进词里（Maschentausendabertausendweit）。这是本页加入全站\"纺织意象与复合构词\"簇的接点。"
+    },
+    {
+      "title": "ver- 前缀的多义性",
+      "quote": "verwirkt（织入 / 丧失）… verliebte …",
+      "body": "ver- 是德语最多义的前缀，按语义可分四组：(1) 离去/转换义（verreisen 出行、verlieren 失去）；(2) 错误义（sich irren → sich verirren 迷路、verwechseln 混淆）；(3) 完成义（verblühen 凋谢、verarbeiten 加工）；(4) 加强/使役义。诗中 verwirken 兼\"织入\"（完成义，与 wirken 织相关）与\"丧失\"（离去义）两义，是 ver- 多义性的浓缩样本。"
+    },
+    {
+      "title": "der Strahl 的多义（全站第三义）",
+      "quote": "Strahl in Strahl, verliebte Farben（第3行）",
+      "body": "der Strahl 在本站已收两义：《秋景》（编号24）的\"光线\"、《罗马的喷泉》（编号26）的\"水柱\"。本页在地毯编织的语境里给出第三种用法——\"一缕（颜色/丝缕）\"，光缕与丝缕在编织中合一。三页构成 der Strahl 的多义对照组。"
+    }
+  ],
+  "cultural_notes": "埃尔泽·拉斯克-许勒（1869—1945）是德语表现主义最重要的女诗人。她与《Der Sturm》（暴风雨）杂志圈子关系密切——本诗1910年12月8日即刊于该刊创刊年。她一生自我神话化，自称\"底比斯王子 Jussuf von Theben\"，常以东方化的笔名与形象出入柏林的表现主义沙龙；她的诗与生平共同构成一件\"诗化的自我\"。\n\n本诗的核心是\"织\"：标题是地毯，第2行把 Tibetteppich 倒装成 Teppichtibet（词被织了一遍），verwirkt 兼\"织入\"与\"丧失\"，颜色与星辰\"彼此追逐\"（umwarben）如同经纬交织，连\"时光\"也被\"编结\"（buntgeknüpfte Zeiten）。两个灵魂被织进同一条地毯——爱与诗、东方与西方、词与物，全部被编结在一起。\n\n1933年她被迫流亡，先至瑞士，1939年起定居耶路撒冷，1945年1月22日卒于该地。她是本站继德罗斯特-徽尔斯霍夫（编号18）之后的第二位女性作者。\n\n（卡尔·克劳斯据称对本诗给予极高评价并在《Die Fackel》转载——此说必须回核一手后再引；本诗的确切写作月份、与《Meine Wunder》1911年版对照的细节，待进一步核实。）",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) Teppichtibet 译\"地毯西藏\"，保留其倒装感，并在注释中说明它不合法、正是因此成诗；(2) verwirkt 译\"被织进了\"，并标注其\"丧失\"的潜在义；(3) Maschentausendabertausendweit 译\"网眼千万又千万地铺展开去\"，保留数量词堆叠；(4) Süßer（比较级）译\"更甜美的\"。本页是全站第二位女性作者的第一首作品。",
+  "image_prompt": {
+    "imagery": "一条铺展开的古旧西藏地毯的俯视局部：经纬交织的网眼中，颜色与微光彼此缠绕，隐约浮现星辰与一朵麝香植物的花；两只脚（无腿）轻轻搁在地毯边缘",
+    "mood": "私密的、被织入的、东方化的幻梦；不是写实静物，而是\"灵魂被编进织物\"的隐喻具象",
+    "elements": "地毯的经纬纹理与网眼（Maschen）、缠绕的色光丝缕、隐约的星辰与麝香植物花纹、地毯边缘的两只脚（仅局部，无人物全身）",
+    "era": "无明确时代；意象取自西藏/东方地毯传统与表现主义色彩的融合",
+    "taboos": "不得出现可辨识的人物面部或全身（人仅以脚或手暗示）；不得出现情色；不得出现文字水印；不得把地毯画成现代工业织物",
+    "style": "表现主义—装饰画质感，俯视构图，色彩饱和而交织（金、绛、靛蓝），纹理细腻但整体如梦"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "UB Heidelberg — Der Sturm 1.41 (8.12.1910), S. 328（初刊扫描）",
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/sturm1910_1911/0334",
+      "tier": 1,
+      "citation": "Der Sturm 1 (1910/11), Heft 41, S. 328",
+      "note": "一级来源（1910年初刊原件扫描）。用于核对初刊形态（无标点、Füsse、Süsser 等早期读法）。"
+    },
+    {
+      "name": "K. J. Skrodzki — kritische Notizen / Text 004（《Meine Wunder》1911 异文校勘）",
+      "url": "https://www.kj-skrodzki.de/Dokumente/Text_004.htm",
+      "tier": 2,
+      "citation": "Skrodzki 编异文校勘（对照1910初刊与1911《Meine Wunder》）",
+      "note": "二级来源（独立校勘）。用于核对1910→1911版本差异（标点、Füsse→Füße、Süsser→Süßer、问号等）；1911《Meine Wunder》影像本次抓取被屏蔽，读法经此校勘确认。"
+    },
+    {
+      "name": "deutschelyrik.de — „Ein alter Tibetteppich – Lasker-Schüler“",
+      "url": "https://www.deutschelyrik.de/ein-alter-tibetteppich.html",
+      "tier": 2,
+      "citation": "现代通行文本（采用1911《Meine Wunder》定本读法）",
+      "note": "主转录底本（现代化通行文本，采用1911年定本读法：Füße、Süßer、-thron、问号）。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途。"
+    }
+  ],
+  "cross_references": [
+    {"target_slug": "herbstbild", "needle": "der Strahl", "context": "《秋景》"},
+    {"target_slug": "der-roemische-brunnen", "needle": "der Strahl", "context": "《罗马的喷泉》"},
+    {"target_slug": "abendlied", "needle": "Luftgespinst", "context": "《晚歌》"},
+    {"target_slug": "der-spinnerin-nachtlied", "needle": "spinnen", "context": "《纺纱女的夜歌》"}
+  ],
+  "verification_notes": "【三源核对】德文正文以 deutschelyrik.de 的现代通行文本（采用1911《Meine Wunder》定本读法）为转录底本，另以两个独立来源核对：海德堡大学图书馆《Der Sturm》1910年初刊扫描（S.328）、K. J. Skrodzki 的异文校勘。9 行、分节 2/2/2/3——三源一致。\n\n【1910初刊 vs 1911《Meine Wunder》异文】(1) 标点：1910初刊第1–2行行末无标点，1911定本加逗号、句号。(2) 拼写：1910作 Füsse / Süsser / küsst / Moschuspflanzentron；1911定本作 Füße / Süßer / küßt / -thron。(3) 末行：1910以句号收，1911定本以问号收。本站从1911定本（问号收束、Füße、Süßer），即成为后世选本的基础文本；1910初刊形态据海德堡扫描备案。\n\n【待进一步核实】(1) 卡尔·克劳斯对本诗的评价及是否在《Die Fackel》转载——此说流传广但本站未回核《Die Fackel》一手，故不写入正文背景，仅在此标注待核；(2) 本诗的确切写作月份（仅知1910年12月8日刊于《Der Sturm》）；(3) 1911《Meine Wunder》该页影像本次抓取被屏蔽，其读法经 Skrodzki 校勘间接确认。\n\n【公版】拉斯克-许勒1945年卒，公版起始年 = 1945 + 71 = 2016。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：海德堡UB / skrodzki / deutschelyrik）、D（含一级来源：海德堡UB 初刊扫描）。",
+  "checklist": [
+    {"label": "确认作者：Else Lasker-Schüler（本站第二位女性作者）", "done": true},
+    {"label": "确认标题与出处：Der Sturm 1910 / Meine Wunder 1911", "done": true},
+    {"label": "德文原文主来源：deutschelyrik（1911定本，转录底本）", "done": true},
+    {"label": "一级来源交叉核对：海德堡UB Der Sturm 1910初刊扫描", "done": true},
+    {"label": "核对行数（9行，分节2/2/2/3）", "done": true},
+    {"label": "记录1910→1911异文（标点、Füße、问号等）", "done": true},
+    {"label": "Teppichtibet 新造词说明", "done": true},
+    {"label": "verwirken 双义说明", "done": true},
+    {"label": "der Strahl 第三义说明", "done": true},
+    {"label": "ver- 前缀多义表", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1945 + 71 = 2016", "done": true},
+    {"label": "高危断言（克劳斯评价）标注待核且不写入正文", "done": true},
+    {"label": "撰写 image brief", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "回核《Die Fackel》是否转载本诗", "done": false},
+    {"label": "1911《Meine Wunder》影像直接核对", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议表现主义/现代主义专业人士复核）", "done": false}
+  ]
+}

@@ -1,0 +1,896 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Der Gott der Stadt · 城市之神 — Georg Heym | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Der Gott der Stadt（城市之神）— Georg Heym。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="under-der-linden.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">椴树下</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="ein-alter-tibetteppich.html" rel="next"
+            ><span class="poem-nav__title">一条古旧的西藏地毯</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Der Gott der Stadt</h1>
+          <p class="poem-titleblock__author">Georg Heym</p>
+          <p class="poem-titleblock__zh">城市之神</p>
+          <p class="poem-titleblock__author-zh">格奥尔格·海姆</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Der ewige Tag》（1911）· 表现主义都市诗</p>
+            <p>表现主义（Frühexpressionismus）</p>
+            <p>1910年作；1911年收入诗集《Der ewige Tag》（Rowohlt, Leipzig）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2</span>
+            <span class="tag">表现主义</span>
+            <span class="tag">都市</span>
+            <span class="tag">巴力</span>
+            <span class="tag">神话化</span>
+            <span class="tag">交叉韵</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一座庞大的近代城市上空，一个由烟、火光与乌云凝聚成的巨大模糊神祇轮廓端坐于街区之上；其额头被黑风环绕，肚腹被夕阳映红，一只巨拳伸向下方一条正被火海吞没的街道
+              </dd>
+              <dt>情绪</dt>
+              <dd>末日式、压迫性的宏伟；不是恐怖怪物，而是"神圣"与"屠戮"并存的亵渎感</dd>
+              <dt>画面元素</dt>
+              <dd>
+                密集的城市屋顶与烟囱、升向天空的烟柱与工厂云、凝成神形的乌云、神腹部的红光、下方一条街道的火光、教堂钟楼剪影
+              </dd>
+              <dt>时代感</dt>
+              <dd>约1910年柏林/工业城市的近代都市，建筑为公寓楼、烟囱、教堂尖塔</dd>
+              <dt>推荐风格</dt>
+              <dd>表现主义版画/油画质感，强烈对比、扭曲透视、红黑蓝为主色，笔触粗厉、轮廓激荡</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得画出可辨识的具体神祇面孔（神只能由烟云火暗示）；不得出现十字架等明确基督教符号被亵渎的画面（钟楼仅作剪影）；不得出现人物；不得出现现代汽车等明显错时代元素；不得出现文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Auf einem Häuserblocke sitzt er breit.<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">他宽宽地坐在一整片街区的上方。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Die Winde lagern schwarz um seine Stirn.</span>
+                </div>
+                <div class="pline__zh">黑色的风群驻扎在他的额头四周。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Er schaut voll Wut, wo fern in Einsamkeit</span>
+                </div>
+                <div class="pline__zh">他满含怒火地望向远方那片孤寂——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die letzten Häuser in das Land verirrn.</span></div>
+                <div class="pline__zh">那里，最后几座房屋消失在旷野里。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Vom Abend glänzt der rote Bauch dem Baal,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">巴力的肚腹被夕照映得通红，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die großen Städte knieen um ihn her.</span></div>
+                <div class="pline__zh">一座座大城市在他四周屈膝。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Der Kirchenglocken ungeheure Zahl<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">教堂钟声那庞大无算的数目，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Wogt auf zu ihm aus schwarzer Türme Meer.</span>
+                </div>
+                <div class="pline__zh">从黑色塔楼的海洋里向他涌去。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie Korybanten-Tanz dröhnt die Musik</span></div>
+                <div class="pline__zh">像科律班忒斯的狂舞，那百万人的</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Der Millionen durch die Straßen laut.</span></div>
+                <div class="pline__zh">喧响轰鸣着穿过一条条街道。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Der Schlote Rauch, die Wolken der Fabrik</span>
+                </div>
+                <div class="pline__zh">烟囱的烟、工厂的云，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Ziehn auf zu ihm, wie Duft von Weihrauch blaut.</span>
+                </div>
+                <div class="pline__zh">像乳香的气息般泛着蓝，向他升去。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Das Wetter schwält in seinen Augenbrauen.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">暴风雨在他的眉宇间鼓胀。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Der dunkle Abend wird in Nacht betäubt.</span></div>
+                <div class="pline__zh">昏暗的傍晚被震成一片黑夜。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Die Stürme flattern, die wie Geier schauen</span>
+                </div>
+                <div class="pline__zh">风暴们扑扇着——它们像秃鹫一般</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Von seinem Haupthaar, das im Zorne sträubt.<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">从他怒竖的头发上张望。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Er streckt ins Dunkel seine Fleischerfaust.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">他把一只屠夫的拳头伸进黑暗。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Er schüttelt sie. Ein Meer von Feuer jagt</span>
+                </div>
+                <div class="pline__zh">他摇晃着它。一片火海</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Durch eine Straße. Und der Glutqualm braust</span>
+                </div>
+                <div class="pline__zh">穿过一条街道奔涌。而炽热的烟雾咆哮着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Und frißt sie auf, bis spät der Morgen tagt.<sup class="refmark"
+                      ><a href="#note-7">7</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">把它吞吃净尽，直到很晚清晨才破晓。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留交叉韵所承载的"规整格律装狂暴内容"的张力</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Auf einem Häuserblocke sitzt er breit.</p>
+              <p class="lnote__zh">
+                全诗第一行即给出尺度错位：城市之神"宽宽地坐在一整片街区上"——他与建筑同量级。这种"神与城等大"的尺度，是表现主义都市诗的标准手法：城市不是无神的，而是有一个吃人的、巨大的神。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Vom Abend glänzt der rote Bauch dem Baal,</p>
+              <p class="lnote__zh">
+                城市之神被指认为
+                Baal（巴力）——旧约中的异教神，与摩洛（Moloch）的火祭意象相连。这是全诗的解读枢纽：现代都市供奉着一个要求献祭的古老神祇。夕阳把神的肚腹映红，预告末节的火。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Der Kirchenglocken ungeheure Zahl</p>
+              <p class="lnote__zh">
+                前置第二格 + 表现主义"第二格隐喻"（Genitivmetapher）：Der Kirchenglocken ungeheure Zahl = die ungeheure
+                Zahl der
+                Kirchenglocken。第二格前置在表现主义里不止是语序，更是把两个不同语义域的名词强行焊接（钟声/数目）。同类见本节"schwarzer
+                Türme Meer"（黑色塔楼的海洋）、第3节"Der Schlote Rauch"（烟囱的烟）。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Das Wetter schwält in seinen Augenbrauen.</p>
+              <p class="lnote__zh">
+                schwällt（鼓胀、酝酿）来自弱变化动词
+                schwällen（使膨胀、使酝酿）。暴风雨在神的眉宇间"酝酿"——把自然现象内化为神的面部表情。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">die wie Geier schauen / Von seinem Haupthaar, das im Zorne sträubt.</p>
+              <p class="lnote__zh">
+                风暴被比作从神怒竖的头发上张望的秃鹫。Haupthaar（头发，雅语）sträubt
+                sich（竖立、怒发）。全诗的意象从静态的"端坐"（第1节）逐步升级到末节的"火海"。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Er streckt ins Dunkel seine Fleischerfaust.</p>
+              <p class="lnote__zh">
+                die
+                Fleischerfaust（屠夫的拳头）——把神降格为屠夫：他不是俯视众生的主宰，而是动手宰杀的屠户。这是表现主义对"神圣"的彻底亵渎式还原。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Und der Glutqualm braust / Und frißt sie auf, bis spät der Morgen tagt.</p>
+              <p class="lnote__zh">
+                brausen（咆哮、轰鸣）是本页与本站《那座城》（编号25）共有的动词——两页的 brausen
+                变位表须一致（见变位表）。frißt（fressen
+                的第三人称单数）用于火"吞吃"街道，把火写成野兽。结尾"直到很晚清晨才破晓"：火光烧穿了整夜。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Baal</span></div>
+              <span class="vocab-card__pos">n.（阳性，专名）</span>
+              <div class="vocab-card__meaning">巴力（旧约中的异教主神）</div>
+              <div class="vocab-card__note">
+                宗教史注：巴力是迦南人的丰产与风暴之神，旧约先知予以激烈抨击；常与摩洛（Moloch，要求儿童火祭的神）的意象交织。海姆借此把现代都市命名为"要求献祭的异教神之城"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Gewölk</span></div>
+              <span class="vocab-card__pos">n.（中性，集合名词）</span>
+              <div class="vocab-card__meaning">云层、云团（= eine Menge Wolken）</div>
+              <div class="vocab-card__note">
+                ★构词点：Ge- + 词干 + -e 的集合名词——das Gewölk（云团）、das Gebirge（山脉）、das Gebäude（建筑）、das
+                Geäst（树枝丛）。Ge- 前缀把复数事物"打包"成一个集合名词（中性）。本诗正文用 die Wolken（第11行），但
+                Gewölk 是同类构词的标准样本。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Faust, Fäuste</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">拳头</div>
+              <div class="vocab-card__note">
+                诗中 die Fleischerfaust（屠夫的拳头）为复合词。auf die Faust nehmen（ informal，小费）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">der Schlot, -e / der Schornstein, -e</span>
+              </div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">（工厂）烟囱</div>
+              <div class="vocab-card__note">
+                der Schlot 多指工厂大烟囱（诗中 der Schlote Rauch，第9行）；der Schornstein 指一般烟囱（含家用）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">glühen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">炽热地发光、灼热</div>
+              <div class="vocab-card__note">
+                变位 glüht – glühte – hat geglüht。名词 die Glut（炽热，参见本站《普罗米修斯》编号34）。诗中 der
+                Glutqualm（炽热的烟雾，第19行）为复合。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">brausen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">轰鸣、咆哮（风/水/火）；（头）嗡嗡作响</div>
+              <div class="vocab-card__note">
+                变位 braust – brauste – hat gebraust。诗中 Und der Glutqualm
+                braust（第19行）。★与本站《那座城》（编号25）的 brausen 同一 lemma，两页变位表须一致（见变位表）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Korybant, -en</span></div>
+              <span class="vocab-card__pos">n.（阳性，历史/宗教）</span>
+              <div class="vocab-card__meaning">科律班忒斯（古希腊弗里吉亚女神西布莉的祭司）</div>
+              <div class="vocab-card__note">
+                诗中 Wie Korybanten-Tanz（第9行）：科律班忒斯祭司以喧闹的鼓乐狂舞著称，海姆借此比喻城市的轰鸣。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">glühen</td>
+                  <td class="de">glüht</td>
+                  <td class="de">glühte</td>
+                  <td class="de">hat geglüht</td>
+                  <td class="de">geglüht</td>
+                  <td class="de">glühte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 弱变化；诗中 der Glut（第34号《普罗米修斯》）同源。</td>
+                </tr>
+                <tr>
+                  <td class="de">brausen</td>
+                  <td class="de">braust</td>
+                  <td class="de">brauste</td>
+                  <td class="de">hat gebraust</td>
+                  <td class="de">gebraust</td>
+                  <td class="de">brauste</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 弱变化；★与本站《那座城》（编号25）的 brausen 变位表逐列一致。诗中 Und der Glutqualm
+                    braust（第19行）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">schwällen</td>
+                  <td class="de">schwällt</td>
+                  <td class="de">schwällte</td>
+                  <td class="de">hat geschwällt</td>
+                  <td class="de">geschwällt</td>
+                  <td class="de">schwällte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ ★强/弱区分：诗中 Das Wetter schwällt（第13行）属弱变化及物/使役动词
+                    schwällen（使膨胀、使酝酿）。须与强变化不及物 schwellen（schwillt – schwoll – ist
+                    geschwollen，"肿胀、上涨"）区分——两者词形相近而变化类别不同。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">betäuben</td>
+                  <td class="de">betäubt</td>
+                  <td class="de">betäubte</td>
+                  <td class="de">hat betäubt</td>
+                  <td class="de">betäubt</td>
+                  <td class="de">betäubte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 弱变化，不可分；及物"使震聋、使麻木"。诗中 Der dunkle Abend wird in Nacht
+                    betäubt（第14行，被动）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">交叉韵（Kreuzreim）+ 五音步抑扬格：用最规整的格律装最狂暴的内容</h3>
+              <p class="grammar-item__quote">全诗 5×4 行，韵式 abab cdcd efef ghgh ijkl（交叉韵贯穿）</p>
+              <div class="grammar-item__body">
+                本诗每一节都用交叉韵
+                abab，行以五音步抑扬格为主，是表现主义都市诗中"最古典"的形式选择。形式越规整，内容越骇人——这种反差正是
+                Heym 的手法。与本站《世界末日》（编号33，van Hoddis
+                1911年）构成强烈对照：两首都作于1910/11年的表现主义早期、同写都市末日，但 van Hoddis
+                用最平的陈述句装末日（Reihungsstil，等长主句罗列），Heym
+                用最严的古典格律装末日。一首拆解句法、一首收紧格律，是表现主义的两条路径。这是本页存在的主要理由。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">第二格隐喻（Genitivmetapher）——表现主义的标志性修辞</h3>
+              <p class="grammar-item__quote">
+                Der Schlote Rauch … schwarzer Türme Meer … Der Kirchenglocken ungeheure Zahl（第9、12、7行）
+              </p>
+              <div class="grammar-item__body">
+                表现主义爱用"X 的 Y"，其中 X 与 Y
+                属不同语义域，强行焊接产生震撼：烟囱的烟（机械）被写成升向神的供香（宗教）；塔楼的海洋（建筑→自然）；钟声的庞然数目（声音→可见的量）。这是第二格前置的修辞升级——不只是语序，而是语义的暴力嫁接。可反向链接本站《祖国之泪
+                · 1636年》（编号31）：巴洛克的 Der frechen Völker Schar（狂蛮部族的群）是同一修辞在三百年前的样本。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">集合名词前缀 Ge-</h3>
+              <p class="grammar-item__quote">die Wolken der Fabrik（第11行）—— 其集合形式为 das Gewölk</p>
+              <div class="grammar-item__body">
+                德语的高产构词模式：Ge- + 词干 + -e 把复数事物打包成一个集合名词（中性）。die Wolke → das
+                Gewölk（云团）、der Berg → das Gebirge（山脉）、der Ast → das Geäst（树枝丛）、das Wort → das
+                Gebäude（建筑，由 bauen）。诗中虽用 die Wolken（复数），但 Ge- 集合名词是同义更雅的形式，值得单列学习。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              格奥尔格·海姆（1887—1912）是德语早期表现主义的核心诗人之一。他 belongs to "新俱乐部"（Der Neue
+              Club）与"新艺术沙龙"（Neopathetisches
+              Cabaret）——与雅各布·范·霍迪斯（本站编号33《世界末日》）同属一个圈子。1910年起，这些年轻诗人在柏林的沙龙朗诵中发出了一种全新的、都市的、末日式的声音。
+            </p>
+            <p>
+              《城市之神》1910年作，收入他生前唯一出版的诗集《永恒之日》（Der ewige Tag, Rowohlt
+              1911）。诗中现代都市被命名为巴力之城——一个要求火祭的古老神祇端坐在街区之上，教堂的钟声成了献给他的供品，末节他伸出"屠夫的拳头"，火海吞掉一条街。海姆的都市不是无神的现代空间，而是异教神复辟的祭坛。
+            </p>
+            <p>
+              海姆1912年1月16日在哈弗尔河冰上滑冰时坠水溺亡，年仅24岁。他与范·霍迪斯、格奥尔格·特拉克尔、恩斯特·施塔德勒同属表现主义早期夭折的一代。
+            </p>
+            <p>
+              （海姆与范·霍迪斯的具体交往细节、"表现主义都市诗开创者"之类的最高级表述，本站未回到一手材料核实，标注为待进一步核实。）
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) Baal 译"巴力"并加宗教史注；(2) Genitivmetapher（如
+              schwarzer Türme Meer）译文保留"黑色塔楼的海洋"的焊接感，不平滑化；(3) Fleischerfaust
+              译"屠夫的拳头"，保留其对"神"的亵渎式降格；(4) 交叉韵 abab
+              与五音步抑扬格无法在中文复制，译文以整齐的行拍近似传达其"规整"。本诗与《世界末日》（编号33）同为1910/11年表现主义都市诗，建议对照阅读（一首收紧格律、一首拆解句法）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">German Wikisource — Der Gott der Stadt（《Der ewige Tag》, 1911, S.13）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/Der_Gott_der_Stadt"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/Der_Gott_der_Stadt</a
+              >
+              <span class="source-citation">Georg Heym: Der ewige Tag. Leipzig: Rowohlt 1911, S. 13</span>
+              <span class="source-note">主来源（一级）：1911年初版诗集扫描转写，本站正文据此。</span>
+            </li>
+            <li>
+              <span class="source-name">Zeno.org — Heym: Dichtungen und Schriften, Band 1, S. 190–193</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="http://www.zeno.org/nid/20005057736" target="_blank" rel="noopener"
+                >http://www.zeno.org/nid/20005057736</a
+              >
+              <span class="source-citation">Dichtungen und Schriften, Band 1, S. 190–193</span>
+              <span class="source-note"
+                >一级来源（全集本）。用于核对正文；与初刊的差异为正字法规范化（Zeno 作 knien/schwelt，初刊作
+                knieen/schwält）。本次抓取 Zeno 主机拒绝连接，版次页码据著录。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Der Gott der Stadt – Heym“</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/der-gott-der-stadt-1323.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/der-gott-der-stadt-1323.html</a
+              >
+              <span class="source-citation">现代通行文本（与1911年初刊一致）</span>
+              <span class="source-note">辅助来源（二级）：用于确认初刊读法 knieen/schwält 与分行。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】德文正文以 German Wikisource 转写的1911年《Der ewige
+              Tag》初版（S.13）为底本，另以两个独立来源核对：Zeno.org《海姆著作与文集》第1卷第190–193页（全集本）、deutschelyrik.de（二级）。5
+              节、行数 4/4/4/4/4（共20行）、交叉韵 abab 贯穿——三源一致。
+            </p>
+            <p>
+              【正字法差异（初刊 vs 全集本）】1911年初刊（Wikisource / deutschelyrik）作
+              knieen（第6行，复数动词）、schwält（第13行，schwällen 的3单）；Zeno 全集本规范化为
+              knien、schwelt。语义无别，本站从初刊读法（knieen、schwält），差异备案。
+            </p>
+            <p>
+              【待进一步核实】(1) 海姆与范·霍迪斯的具体交往与朗诵活动细节；(2)
+              "表现主义都市诗开创者"之类最高级表述的一手依据；(3) Zeno
+              主机本次拒绝连接，读法据既著录版次页码，待恢复后补抓快照复核；(4)
+              海姆溺亡的具体日期（通行说法为1912年1月16日，页面已采，未回核一手）。
+            </p>
+            <p>【公版】海姆1912年卒，公版起始年 = 1912 + 71 = 1983。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / zeno / deutschelyrik）、D（含两个一级来源）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Georg Heym</li>
+            <li>确认标题与出处：《Der ewige Tag》1911, S.13</li>
+            <li>德文原文主来源：Wikisource 1911初版（转录底本）</li>
+            <li>一级来源交叉核对：Zeno 全集本 / deutschelyrik</li>
+            <li>核对诗节、行数（5×4，共20行）、交叉韵 abab</li>
+            <li>记录 knieen/schwält vs knien/schwelt 正字法差异</li>
+            <li>Baal 宗教史注</li>
+            <li>Genitivmetapher 说明（含行号实例）</li>
+            <li>Ge- 集合名词说明</li>
+            <li>brausen 变位与《那座城》一致</li>
+            <li>schwallen/schwellen 强弱区分</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1912 + 71 = 1983</li>
+            <li>高危断言（交往、最高级、溺亡日期）标注待核实</li>
+            <li>撰写 image brief（含禁忌：无具体神面）</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">Zeno 恢复后补抓快照复核</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

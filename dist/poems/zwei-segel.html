@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Zwei Segel · 两片帆 — Conrad Ferdinand Meyer | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Zwei Segel（两片帆）— Conrad Ferdinand Meyer。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="die-nachtigall.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">夜莺</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="gingo-biloba.html" rel="next"
+            ><span class="poem-nav__title">银杏</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Zwei Segel</h1>
+          <p class="poem-titleblock__author">Conrad Ferdinand Meyer</p>
+          <p class="poem-titleblock__zh">两片帆</p>
+          <p class="poem-titleblock__author-zh">康拉德·费迪南德·迈耶</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Gedichte》（1882）· 极短物诗（Dinggedicht）</p>
+            <p>诗意现实主义（Poetischer Realismus）</p>
+            <p>1882年定稿；收入《Gedichte》（H. Haessel, Leipzig 1882, S.150）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1</span>
+            <span class="tag">极短物诗</span>
+            <span class="tag">两者呼应</span>
+            <span class="tag">无定动词句</span>
+            <span class="tag">交叉韵</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>一个宁静的深蓝海湾，两片白帆并排鼓满风、彼此靠近地航行；阳光照在帆面上使其发亮</dd>
+              <dt>情绪</dt>
+              <dd>宁静的、彼此感应的和谐；两片帆像两个有默契的存在</dd>
+              <dt>画面元素</dt>
+              <dd>深蓝海湾、两片鼓满的白帆、帆面上的阳光、远处平静的海平线</dd>
+              <dt>时代感</dt>
+              <dd>无明确时代，海景</dd>
+              <dt>推荐风格</dt>
+              <dd>印象派—写实海景画质感，蓝白主色，光线明亮柔和</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>不得出现人物；不得出现现代船只/马达；不得出现文字水印</dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Zwei Segel erhellend<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">两片帆，照亮着</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Die tiefblaue Bucht!<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">那深蓝的海湾！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Zwei Segel sich schwellend<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">两片帆，鼓胀着</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Zu ruhiger Flucht!<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">驶向宁静的逃逸！</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Wie eins in den Winden<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">当一片在风中</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Sich wölbt und bewegt,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">鼓起并摆动，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Wird auch das Empfinden<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">另一片的感受</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Des andern erregt.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">也随之被触动。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Begehrt eins zu hasten,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">若一片急于疾驰，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Das andre geht schnell,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">另一片便也加快，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Verlangt eins zu rasten,</span></div>
+                <div class="pline__zh">若一片渴望停歇，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ruht auch sein Gesell.</span></div>
+                <div class="pline__zh">它的伙伴也安息。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留交叉韵 abab 与几乎无变位动词的名词句风格</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Zwei Segel erhellend / Die tiefblaue Bucht!</p>
+              <p class="lnote__zh">
+                全诗第一节几乎是一个无定动词的名词句（verbloser
+                Satz）：erhellend（照亮）是现在分词，不是变位动词，整节没有主谓结构，靠名词与分词悬浮成句。两片帆照亮深蓝海湾——帆被写成了发光体。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Zwei Segel sich schwellend / Zu ruhiger Flucht!</p>
+              <p class="lnote__zh">
+                sich schwellen（鼓胀，反身，弱/强两可）→ sich schwellend（现在分词）。die
+                Flucht（逃逸、航行）在此非"逃跑"的贬义，而是"远航"的诗意说法。两片帆"驶向宁静的逃逸"。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">
+                Wie eins in den Winden / Sich wölbt und bewegt, / Wird auch das Empfinden / Des andern erregt.
+              </p>
+              <p class="lnote__zh">
+                第二节才出现变位动词（wölbt, bewegt, wird
+                erregt）。核心比喻：两片帆像两个有感受的人，一片动，另一片的"感受"（das
+                Empfinden）也被触动。这是"两者相互回应"的结构。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Begehrt eins zu hasten, / Das andre geht schnell,</p>
+              <p class="lnote__zh">
+                第三节用三个平行的"若一片……另一片便……"完成两帆的呼应：疾驰/加快、停歇/安息。sein Gesell（它的伙伴）= der
+                Gefährte（古/雅）。两片帆被写成彼此感应的一对。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Segel, -</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">帆</div>
+              <div class="vocab-card__note">
+                segeln（航行）、die Segel setzen（启航）。诗中 Zwei Segel（两片帆）即标题。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">sich schwellen</span></div>
+              <span class="vocab-card__pos">v.（弱/强两可，反身）</span>
+              <div class="vocab-card__meaning">鼓胀、张满（帆）</div>
+              <div class="vocab-card__note">
+                诗中 sich schwellend（第3行，现在分词）。注意与及物 schwällen（使膨胀，参见《城市之神》编号37）区分。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Flucht, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">①（本诗）远航、逃逸；②逃跑；③（建筑）纵深、一排</div>
+              <div class="vocab-card__note">
+                zu ruhiger Flucht（驶向宁静的逃逸，第4行）取诗意义。die Flucht ergreifen（逃跑）、die Flucht der
+                Räume（空间的纵深）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head">
+                <span class="vocab-card__term">der Gesell, -en / der Gefährte, -n</span>
+              </div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">伙伴、同伴（古/雅）</div>
+              <div class="vocab-card__note">
+                诗中 Ruht auch sein Gesell（第12行，它的伙伴也安息）。der Geselle（学徒、伙计）的雅体。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">rasten</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">休息、歇脚</div>
+              <div class="vocab-card__note">
+                die Rast（休息）。诗中 Verlangt eins zu rasten（第11行，若一片渴望停歇）。与 hasten（疾驰）相对。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">schwellen (sich)</td>
+                  <td class="de">schwillt sich / schwellt sich</td>
+                  <td class="de">schwoll sich / schwellte sich</td>
+                  <td class="de">ist sich geschwollen / hat sich geschwellt</td>
+                  <td class="de">geschwollen / geschwellt</td>
+                  <td class="de">schwölle sich / schwellte sich</td>
+                  <td>sein</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强变化（不及物，i-a-o：schwillt/schwoll/geschwollen，反身"鼓胀"）与弱变化（及物/使役
+                    schwällen/schwellen"使膨胀"）两读。诗中 sich
+                    schwellend（帆鼓胀）取强变化不及物反身义。注意与《城市之神》（编号37）schwallen（schwällt，弱变化使役）区分。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">begehren</td>
+                  <td class="de">begehrt</td>
+                  <td class="de">begehrte</td>
+                  <td class="de">hat begehrt</td>
+                  <td class="de">begehrt</td>
+                  <td class="de">begehrte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 弱变化；诗中 Begehrt eins zu hasten（第9行）。与《手套》（编号35）同 lemma。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">无定动词的名词句（verblose Sätze）</h3>
+              <p class="grammar-item__quote">
+                Zwei Segel erhellend / Die tiefblaue Bucht! / Zwei Segel sich schwellend / Zu ruhiger Flucht!（第1—4行）
+              </p>
+              <div class="grammar-item__body">
+                全诗第一节没有一个变位动词：erhellend、sich schwellend 都是现在分词，整节是一个"名词 +
+                分词"悬浮的名词句。德语诗歌常用这种"无动词句"制造静态、画面感。与本站《祈求》（编号23）第3—4行的纯形容词行（"后置的长呼语与悬置的中心词"）同属"悬置"手法——一首靠分词、一首靠形容词，都不给主谓骨干。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">迈耶的极短物诗（Dinggedicht）—— 两物相互回应</h3>
+              <p class="grammar-item__quote">全诗 3 节 × 4 行（共12行），交叉韵 abab 贯穿</p>
+              <div class="grammar-item__body">
+                本诗与本站《罗马的喷泉》（编号26）同为迈耶的极短物诗，同样写"两者相互回应"的结构：《罗马的喷泉》是三只盘之间水的接收—给予，本诗是两片帆之间感受的感应。两页对读价值极高。物诗（Dinggedicht）的特点是：凝视一个物（帆/喷泉），从中读出一种普遍的相互关系。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              康拉德·费迪南德·迈耶（1825—1898）是瑞士德语诗人，诗意现实主义的代表。他以历史叙事诗（如《Huttens letzte
+              Tage》）与极短抒情诗（物诗）闻名。
+            </p>
+            <p>
+              《两片帆》1882年定稿，收入其《诗集》（Haessel, Leipzig 1882,
+              S.150）。全诗12行，写两片同行的帆如何彼此感应——一片动，另一片随之；一片急，另一片加快。这是迈耶物诗的典型：从凝视一个具体之物（两片帆）读出一种普遍的关系（两者之间的感应）。读者常把这首诗读作爱情或友情的隐喻，但诗本身始终停留在"两片帆"的字面——这正是物诗的节制。
+            </p>
+            <p>
+              本诗与本站《罗马的喷泉》（编号26）是迈耶物诗的一对：一首写水的盘间回应，一首写帆的感受感应，结构同源。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 第一节的无定动词名词句（erhellend / sich schwellend
+              为现在分词）译文以"照亮着/鼓胀着"近似传达其悬浮感；(2) die Flucht 取"远航/逃逸"诗意义，不译"逃跑"；(3)
+              交叉韵 abab
+              与几乎无变位动词的风格无法在中文完全复制，译文以整齐的行拍近似。本诗与《罗马的喷泉》（编号26）建议对读。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">German Wikisource — Zwei Segel（Meyer, Gedichte, Haessel 1882, S.150）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="https://de.wikisource.org/wiki/Zwei_Segel" target="_blank" rel="noopener"
+                >https://de.wikisource.org/wiki/Zwei_Segel</a
+              >
+              <span class="source-citation"
+                >Conrad Ferdinand Meyer, Gedichte, Verlag von H. Haessel, Leipzig 1882, S. 150</span
+              >
+              <span class="source-note"
+                >一级来源（1882年印刷本扫描，标注页码）。本站正文据此。三源逐字一致，零异文。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Zwei Segel (1882)“</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/zwei-segel-1882.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/zwei-segel-1882.html</a
+              >
+              <span class="source-citation">现代通行文本（Aufnahme 2018）</span>
+              <span class="source-note">三级来源（独立运营方）。与 Wikisource 逐字一致。</span>
+            </li>
+            <li>
+              <span class="source-name">lyrik.antikoerperchen.de — Zwei Segel</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://lyrik.antikoerperchen.de/conrad-ferdinand-meyer-zwei-segel,textbearbeitung,243.html"
+                target="_blank"
+                rel="noopener"
+                >https://lyrik.antikoerperchen.de/conrad-ferdinand-meyer-zwei-segel,textbearbeitung,243.html</a
+              >
+              <span class="source-citation">现代通行文本</span>
+              <span class="source-note"
+                >三级来源（独立运营方）。与 Wikisource、deutschelyrik 逐字一致，确认零异文。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文以 German Wikisource 转写的1882年《诗集》（Haessel, Leipzig,
+              S.150）为底本，另以两个独立来源核对：deutschelyrik.de、lyrik.antikoerperchen.de。3 节、行数
+              4/4/4（共12行）、交叉韵 abab——三源逐字一致，零异文。
+            </p>
+            <p>【公版】迈耶1898年卒，公版起始年 = 1898 + 71 = 1969。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / deutschelyrik /
+              antikoerperchen）、D（含一级来源：1882印刷本扫描）。无待核实项。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Conrad Ferdinand Meyer</li>
+            <li>确认出处：Gedichte 1882, S.150</li>
+            <li>核对节数（3×4，共12行）、交叉韵 abab、零异文</li>
+            <li>无定动词名词句说明</li>
+            <li>物诗与《罗马的喷泉》对读</li>
+            <li>schwellen 强/弱区分（与37号对照）</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1898 + 71 = 1969</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议诗意现实主义专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

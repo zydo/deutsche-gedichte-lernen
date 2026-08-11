@@ -1,0 +1,289 @@
+{
+  "id": "37",
+  "slug": "der-gott-der-stadt",
+  "author": "Georg Heym",
+  "author_zh": "格奥尔格·海姆",
+  "author_gender": "male",
+  "title_de": "Der Gott der Stadt",
+  "title_zh": "城市之神",
+  "author_sort_year": 1910,
+  "year": "1910年作；1911年收入诗集《Der ewige Tag》（Rowohlt, Leipzig）",
+  "collection": "《Der ewige Tag》（1911）· 表现主义都市诗",
+  "period": "表现主义（Frühexpressionismus）",
+  "difficulty": "B2",
+  "tags": ["表现主义", "都市", "巴力", "神话化", "交叉韵"],
+  "public_domain": {
+    "death_year": 1912,
+    "public_domain_year": 1983,
+    "basis": "海姆1912年1月16日卒；按德国70年 p.m.a.，1983年起公版"
+  },
+  "german_text": [
+    [
+      "Auf einem Häuserblocke sitzt er breit.",
+      "Die Winde lagern schwarz um seine Stirn.",
+      "Er schaut voll Wut, wo fern in Einsamkeit",
+      "Die letzten Häuser in das Land verirrn."
+    ],
+    [
+      "Vom Abend glänzt der rote Bauch dem Baal,",
+      "Die großen Städte knieen um ihn her.",
+      "Der Kirchenglocken ungeheure Zahl",
+      "Wogt auf zu ihm aus schwarzer Türme Meer."
+    ],
+    [
+      "Wie Korybanten-Tanz dröhnt die Musik",
+      "Der Millionen durch die Straßen laut.",
+      "Der Schlote Rauch, die Wolken der Fabrik",
+      "Ziehn auf zu ihm, wie Duft von Weihrauch blaut."
+    ],
+    [
+      "Das Wetter schwält in seinen Augenbrauen.",
+      "Der dunkle Abend wird in Nacht betäubt.",
+      "Die Stürme flattern, die wie Geier schauen",
+      "Von seinem Haupthaar, das im Zorne sträubt."
+    ],
+    [
+      "Er streckt ins Dunkel seine Fleischerfaust.",
+      "Er schüttelt sie. Ein Meer von Feuer jagt",
+      "Durch eine Straße. Und der Glutqualm braust",
+      "Und frißt sie auf, bis spät der Morgen tagt."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留交叉韵所承载的\"规整格律装狂暴内容\"的张力",
+    "text": [
+      [
+        "他宽宽地坐在一整片街区的上方。",
+        "黑色的风群驻扎在他的额头四周。",
+        "他满含怒火地望向远方那片孤寂——",
+        "那里，最后几座房屋消失在旷野里。"
+      ],
+      [
+        "巴力的肚腹被夕照映得通红，",
+        "一座座大城市在他四周屈膝。",
+        "教堂钟声那庞大无算的数目，",
+        "从黑色塔楼的海洋里向他涌去。"
+      ],
+      [
+        "像科律班忒斯的狂舞，那百万人的",
+        "喧响轰鸣着穿过一条条街道。",
+        "烟囱的烟、工厂的云，",
+        "像乳香的气息般泛着蓝，向他升去。"
+      ],
+      [
+        "暴风雨在他的眉宇间鼓胀。",
+        "昏暗的傍晚被震成一片黑夜。",
+        "风暴们扑扇着——它们像秃鹫一般",
+        "从他怒竖的头发上张望。"
+      ],
+      [
+        "他把一只屠夫的拳头伸进黑暗。",
+        "他摇晃着它。一片火海",
+        "穿过一条街道奔涌。而炽热的烟雾咆哮着，",
+        "把它吞吃净尽，直到很晚清晨才破晓。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Auf einem Häuserblocke sitzt er breit.",
+      "zh": "全诗第一行即给出尺度错位：城市之神\"宽宽地坐在一整片街区上\"——他与建筑同量级。这种\"神与城等大\"的尺度，是表现主义都市诗的标准手法：城市不是无神的，而是有一个吃人的、巨大的神。"
+    },
+    {
+      "de": "Vom Abend glänzt der rote Bauch dem Baal,",
+      "zh": "城市之神被指认为 Baal（巴力）——旧约中的异教神，与摩洛（Moloch）的火祭意象相连。这是全诗的解读枢纽：现代都市供奉着一个要求献祭的古老神祇。夕阳把神的肚腹映红，预告末节的火。"
+    },
+    {
+      "de": "Der Kirchenglocken ungeheure Zahl",
+      "zh": "前置第二格 + 表现主义\"第二格隐喻\"（Genitivmetapher）：Der Kirchenglocken ungeheure Zahl = die ungeheure Zahl der Kirchenglocken。第二格前置在表现主义里不止是语序，更是把两个不同语义域的名词强行焊接（钟声/数目）。同类见本节\"schwarzer Türme Meer\"（黑色塔楼的海洋）、第3节\"Der Schlote Rauch\"（烟囱的烟）。"
+    },
+    {
+      "de": "Das Wetter schwält in seinen Augenbrauen.",
+      "zh": "schwällt（鼓胀、酝酿）来自弱变化动词 schwällen（使膨胀、使酝酿）。暴风雨在神的眉宇间\"酝酿\"——把自然现象内化为神的面部表情。"
+    },
+    {
+      "de": "die wie Geier schauen / Von seinem Haupthaar, das im Zorne sträubt.",
+      "zh": "风暴被比作从神怒竖的头发上张望的秃鹫。Haupthaar（头发，雅语）sträubt sich（竖立、怒发）。全诗的意象从静态的\"端坐\"（第1节）逐步升级到末节的\"火海\"。"
+    },
+    {
+      "de": "Er streckt ins Dunkel seine Fleischerfaust.",
+      "zh": "die Fleischerfaust（屠夫的拳头）——把神降格为屠夫：他不是俯视众生的主宰，而是动手宰杀的屠户。这是表现主义对\"神圣\"的彻底亵渎式还原。"
+    },
+    {
+      "de": "Und der Glutqualm braust / Und frißt sie auf, bis spät der Morgen tagt.",
+      "zh": "brausen（咆哮、轰鸣）是本页与本站《那座城》（编号25）共有的动词——两页的 brausen 变位表须一致（见变位表）。frißt（fressen 的第三人称单数）用于火\"吞吃\"街道，把火写成野兽。结尾\"直到很晚清晨才破晓\"：火光烧穿了整夜。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "der Baal",
+      "pos": "n.（阳性，专名）",
+      "meaning": "巴力（旧约中的异教主神）",
+      "note": "宗教史注：巴力是迦南人的丰产与风暴之神，旧约先知予以激烈抨击；常与摩洛（Moloch，要求儿童火祭的神）的意象交织。海姆借此把现代都市命名为\"要求献祭的异教神之城\"。"
+    },
+    {
+      "term": "das Gewölk",
+      "pos": "n.（中性，集合名词）",
+      "meaning": "云层、云团（= eine Menge Wolken）",
+      "note": "★构词点：Ge- + 词干 + -e 的集合名词——das Gewölk（云团）、das Gebirge（山脉）、das Gebäude（建筑）、das Geäst（树枝丛）。Ge- 前缀把复数事物\"打包\"成一个集合名词（中性）。本诗正文用 die Wolken（第11行），但 Gewölk 是同类构词的标准样本。"
+    },
+    {
+      "term": "die Faust, Fäuste",
+      "pos": "n.（阴性）",
+      "meaning": "拳头",
+      "note": "诗中 die Fleischerfaust（屠夫的拳头）为复合词。auf die Faust nehmen（ informal，小费）。"
+    },
+    {
+      "term": "der Schlot, -e / der Schornstein, -e",
+      "pos": "n.（阳性）",
+      "meaning": "（工厂）烟囱",
+      "note": "der Schlot 多指工厂大烟囱（诗中 der Schlote Rauch，第9行）；der Schornstein 指一般烟囱（含家用）。"
+    },
+    {
+      "term": "glühen",
+      "pos": "v.（弱变化）",
+      "meaning": "炽热地发光、灼热",
+      "note": "变位 glüht – glühte – hat geglüht。名词 die Glut（炽热，参见本站《普罗米修斯》编号34）。诗中 der Glutqualm（炽热的烟雾，第19行）为复合。"
+    },
+    {
+      "term": "brausen",
+      "pos": "v.（弱变化）",
+      "meaning": "轰鸣、咆哮（风/水/火）；（头）嗡嗡作响",
+      "note": "变位 braust – brauste – hat gebraust。诗中 Und der Glutqualm braust（第19行）。★与本站《那座城》（编号25）的 brausen 同一 lemma，两页变位表须一致（见变位表）。"
+    },
+    {
+      "term": "der Korybant, -en",
+      "pos": "n.（阳性，历史/宗教）",
+      "meaning": "科律班忒斯（古希腊弗里吉亚女神西布莉的祭司）",
+      "note": "诗中 Wie Korybanten-Tanz（第9行）：科律班忒斯祭司以喧闹的鼓乐狂舞著称，海姆借此比喻城市的轰鸣。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "glühen",
+      "present_3sg": "glüht",
+      "preterite": "glühte",
+      "perfect": "hat geglüht",
+      "participle_ii": "geglüht",
+      "subjunctive_ii": "glühte",
+      "auxiliary": "haben",
+      "note": "弱变化；诗中 der Glut（第34号《普罗米修斯》）同源。"
+    },
+    {
+      "infinitive": "brausen",
+      "present_3sg": "braust",
+      "preterite": "brauste",
+      "perfect": "hat gebraust",
+      "participle_ii": "gebraust",
+      "subjunctive_ii": "brauste",
+      "auxiliary": "haben",
+      "note": "弱变化；★与本站《那座城》（编号25）的 brausen 变位表逐列一致。诗中 Und der Glutqualm braust（第19行）。"
+    },
+    {
+      "infinitive": "schwällen",
+      "present_3sg": "schwällt",
+      "preterite": "schwällte",
+      "perfect": "hat geschwällt",
+      "participle_ii": "geschwällt",
+      "subjunctive_ii": "schwällte",
+      "auxiliary": "haben",
+      "note": "★强/弱区分：诗中 Das Wetter schwällt（第13行）属弱变化及物/使役动词 schwällen（使膨胀、使酝酿）。须与强变化不及物 schwellen（schwillt – schwoll – ist geschwollen，\"肿胀、上涨\"）区分——两者词形相近而变化类别不同。"
+    },
+    {
+      "infinitive": "betäuben",
+      "present_3sg": "betäubt",
+      "preterite": "betäubte",
+      "perfect": "hat betäubt",
+      "participle_ii": "betäubt",
+      "subjunctive_ii": "betäubte",
+      "auxiliary": "haben",
+      "note": "弱变化，不可分；及物\"使震聋、使麻木\"。诗中 Der dunkle Abend wird in Nacht betäubt（第14行，被动）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "交叉韵（Kreuzreim）+ 五音步抑扬格：用最规整的格律装最狂暴的内容",
+      "quote": "全诗 5×4 行，韵式 abab cdcd efef ghgh ijkl（交叉韵贯穿）",
+      "body": "本诗每一节都用交叉韵 abab，行以五音步抑扬格为主，是表现主义都市诗中\"最古典\"的形式选择。形式越规整，内容越骇人——这种反差正是 Heym 的手法。与本站《世界末日》（编号33，van Hoddis 1911年）构成强烈对照：两首都作于1910/11年的表现主义早期、同写都市末日，但 van Hoddis 用最平的陈述句装末日（Reihungsstil，等长主句罗列），Heym 用最严的古典格律装末日。一首拆解句法、一首收紧格律，是表现主义的两条路径。这是本页存在的主要理由。"
+    },
+    {
+      "title": "第二格隐喻（Genitivmetapher）——表现主义的标志性修辞",
+      "quote": "Der Schlote Rauch … schwarzer Türme Meer … Der Kirchenglocken ungeheure Zahl（第9、12、7行）",
+      "body": "表现主义爱用\"X 的 Y\"，其中 X 与 Y 属不同语义域，强行焊接产生震撼：烟囱的烟（机械）被写成升向神的供香（宗教）；塔楼的海洋（建筑→自然）；钟声的庞然数目（声音→可见的量）。这是第二格前置的修辞升级——不只是语序，而是语义的暴力嫁接。可反向链接本站《祖国之泪 · 1636年》（编号31）：巴洛克的 Der frechen Völker Schar（狂蛮部族的群）是同一修辞在三百年前的样本。"
+    },
+    {
+      "title": "集合名词前缀 Ge-",
+      "quote": "die Wolken der Fabrik（第11行）—— 其集合形式为 das Gewölk",
+      "body": "德语的高产构词模式：Ge- + 词干 + -e 把复数事物打包成一个集合名词（中性）。die Wolke → das Gewölk（云团）、der Berg → das Gebirge（山脉）、der Ast → das Geäst（树枝丛）、das Wort → das Gebäude（建筑，由 bauen）。诗中虽用 die Wolken（复数），但 Ge- 集合名词是同义更雅的形式，值得单列学习。"
+    }
+  ],
+  "cultural_notes": "格奥尔格·海姆（1887—1912）是德语早期表现主义的核心诗人之一。他 belongs to \"新俱乐部\"（Der Neue Club）与\"新艺术沙龙\"（Neopathetisches Cabaret）——与雅各布·范·霍迪斯（本站编号33《世界末日》）同属一个圈子。1910年起，这些年轻诗人在柏林的沙龙朗诵中发出了一种全新的、都市的、末日式的声音。\n\n《城市之神》1910年作，收入他生前唯一出版的诗集《永恒之日》（Der ewige Tag, Rowohlt 1911）。诗中现代都市被命名为巴力之城——一个要求火祭的古老神祇端坐在街区之上，教堂的钟声成了献给他的供品，末节他伸出\"屠夫的拳头\"，火海吞掉一条街。海姆的都市不是无神的现代空间，而是异教神复辟的祭坛。\n\n海姆1912年1月16日在哈弗尔河冰上滑冰时坠水溺亡，年仅24岁。他与范·霍迪斯、格奥尔格·特拉克尔、恩斯特·施塔德勒同属表现主义早期夭折的一代。\n\n（海姆与范·霍迪斯的具体交往细节、\"表现主义都市诗开创者\"之类的最高级表述，本站未回到一手材料核实，标注为待进一步核实。）",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) Baal 译\"巴力\"并加宗教史注；(2) Genitivmetapher（如 schwarzer Türme Meer）译文保留\"黑色塔楼的海洋\"的焊接感，不平滑化；(3) Fleischerfaust 译\"屠夫的拳头\"，保留其对\"神\"的亵渎式降格；(4) 交叉韵 abab 与五音步抑扬格无法在中文复制，译文以整齐的行拍近似传达其\"规整\"。本诗与《世界末日》（编号33）同为1910/11年表现主义都市诗，建议对照阅读（一首收紧格律、一首拆解句法）。",
+  "image_prompt": {
+    "imagery": "一座庞大的近代城市上空，一个由烟、火光与乌云凝聚成的巨大模糊神祇轮廓端坐于街区之上；其额头被黑风环绕，肚腹被夕阳映红，一只巨拳伸向下方一条正被火海吞没的街道",
+    "mood": "末日式、压迫性的宏伟；不是恐怖怪物，而是\"神圣\"与\"屠戮\"并存的亵渎感",
+    "elements": "密集的城市屋顶与烟囱、升向天空的烟柱与工厂云、凝成神形的乌云、神腹部的红光、下方一条街道的火光、教堂钟楼剪影",
+    "era": "约1910年柏林/工业城市的近代都市，建筑为公寓楼、烟囱、教堂尖塔",
+    "taboos": "不得画出可辨识的具体神祇面孔（神只能由烟云火暗示）；不得出现十字架等明确基督教符号被亵渎的画面（钟楼仅作剪影）；不得出现人物；不得出现现代汽车等明显错时代元素；不得出现文字水印",
+    "style": "表现主义版画/油画质感，强烈对比、扭曲透视、红黑蓝为主色，笔触粗厉、轮廓激荡"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "German Wikisource — Der Gott der Stadt（《Der ewige Tag》, 1911, S.13）",
+      "url": "https://de.wikisource.org/wiki/Der_Gott_der_Stadt",
+      "tier": 1,
+      "citation": "Georg Heym: Der ewige Tag. Leipzig: Rowohlt 1911, S. 13",
+      "note": "主来源（一级）：1911年初版诗集扫描转写，本站正文据此。"
+    },
+    {
+      "name": "Zeno.org — Heym: Dichtungen und Schriften, Band 1, S. 190–193",
+      "url": "http://www.zeno.org/nid/20005057736",
+      "tier": 1,
+      "citation": "Dichtungen und Schriften, Band 1, S. 190–193",
+      "note": "一级来源（全集本）。用于核对正文；与初刊的差异为正字法规范化（Zeno 作 knien/schwelt，初刊作 knieen/schwält）。本次抓取 Zeno 主机拒绝连接，版次页码据著录。"
+    },
+    {
+      "name": "deutschelyrik.de — „Der Gott der Stadt – Heym“",
+      "url": "https://www.deutschelyrik.de/der-gott-der-stadt-1323.html",
+      "tier": 2,
+      "citation": "现代通行文本（与1911年初刊一致）",
+      "note": "辅助来源（二级）：用于确认初刊读法 knieen/schwält 与分行。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途。"
+    }
+  ],
+  "cross_references": [
+    {"target_slug": "die-stadt", "needle": "brausen", "context": "《那座城》"},
+    {"target_slug": "weltende", "needle": "Reihungsstil", "context": "《世界末日》"},
+    {"target_slug": "traenen-des-vaterlandes", "needle": "前置第二格", "context": "《祖国之泪 · 1636年》"}
+  ],
+  "verification_notes": "【三源核对】德文正文以 German Wikisource 转写的1911年《Der ewige Tag》初版（S.13）为底本，另以两个独立来源核对：Zeno.org《海姆著作与文集》第1卷第190–193页（全集本）、deutschelyrik.de（二级）。5 节、行数 4/4/4/4/4（共20行）、交叉韵 abab 贯穿——三源一致。\n\n【正字法差异（初刊 vs 全集本）】1911年初刊（Wikisource / deutschelyrik）作 knieen（第6行，复数动词）、schwält（第13行，schwällen 的3单）；Zeno 全集本规范化为 knien、schwelt。语义无别，本站从初刊读法（knieen、schwält），差异备案。\n\n【待进一步核实】(1) 海姆与范·霍迪斯的具体交往与朗诵活动细节；(2) \"表现主义都市诗开创者\"之类最高级表述的一手依据；(3) Zeno 主机本次拒绝连接，读法据既著录版次页码，待恢复后补抓快照复核；(4) 海姆溺亡的具体日期（通行说法为1912年1月16日，页面已采，未回核一手）。\n\n【公版】海姆1912年卒，公版起始年 = 1912 + 71 = 1983。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / zeno / deutschelyrik）、D（含两个一级来源）。",
+  "checklist": [
+    {"label": "确认作者：Georg Heym", "done": true},
+    {"label": "确认标题与出处：《Der ewige Tag》1911, S.13", "done": true},
+    {"label": "德文原文主来源：Wikisource 1911初版（转录底本）", "done": true},
+    {"label": "一级来源交叉核对：Zeno 全集本 / deutschelyrik", "done": true},
+    {"label": "核对诗节、行数（5×4，共20行）、交叉韵 abab", "done": true},
+    {"label": "记录 knieen/schwält vs knien/schwelt 正字法差异", "done": true},
+    {"label": "Baal 宗教史注", "done": true},
+    {"label": "Genitivmetapher 说明（含行号实例）", "done": true},
+    {"label": "Ge- 集合名词说明", "done": true},
+    {"label": "brausen 变位与《那座城》一致", "done": true},
+    {"label": "schwallen/schwellen 强弱区分", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1912 + 71 = 1983", "done": true},
+    {"label": "高危断言（交往、最高级、溺亡日期）标注待核实", "done": true},
+    {"label": "撰写 image brief（含禁忌：无具体神面）", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "Zeno 恢复后补抓快照复核", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）", "done": false}
+  ]
+}

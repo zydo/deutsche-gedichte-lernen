@@ -1,0 +1,284 @@
+{
+  "id": "36",
+  "slug": "under-der-linden",
+  "author": "Walther von der Vogelweide",
+  "author_zh": "瓦尔特·冯·德尔·福格尔魏德",
+  "author_gender": "male",
+  "title_de": "Under der linden",
+  "title_zh": "椴树下",
+  "author_sort_year": 1200,
+  "year": "约1200年作；通行编号 L 39,11（Lachmann 编号，待进一步核实）",
+  "collection": "中古高地德语宫廷抒情诗（Minnesang）·「少女之歌」（Mädchenlied）类型",
+  "period": "中古高地德语（Minnesang，约1200）",
+  "difficulty": "C1（仅表示阅读门槛；CEFR 量表针对现代德语，对 Mhd. 文本不适用）",
+  "tags": ["中古高地德语", "Minnesang", "女声视角", "叠句", "语言史"],
+  "public_domain": {
+    "death_year": null,
+    "public_domain_year": null,
+    "basis": "作者约卒于1230年，作品抄本传世已逾七百年，公版无争议"
+  },
+  "german_text": [
+    [
+      "Under der linden",
+      "an der heide,",
+      "dâ unser zweier bette was,",
+      "dâ mugent ir vinden",
+      "schône beide",
+      "gebrochen bluomen unde gras.",
+      "vor dem walde in einem tal,",
+      "tandaradei,",
+      "schône sanc diu nahtegal."
+    ],
+    [
+      "Ich kam gegangen",
+      "zuo der ouwe:",
+      "dô was mîn friedel komen ê.",
+      "dâ wart ich enpfangen",
+      "(hêre frouwe!)",
+      "daz ich bin sælic iemer mê.",
+      "kuster mich? wol tûsentstunt:",
+      "tandaradei,",
+      "seht wie rôt mir ist der munt."
+    ],
+    [
+      "Dô hete er gemachet",
+      "alsô rîche",
+      "von bluomen eine bettestat.",
+      "des wirt noch gelachet",
+      "inneclîche,",
+      "kumt iemen an daz selbe pfat.",
+      "bî den rôsen er wol mac,",
+      "tandaradei,",
+      "merken wâ mir'z houbet lac."
+    ],
+    [
+      "Daz er bî mir læge,",
+      "wessez iemen",
+      "(nu enwelle got!), sô schamt ich mich.",
+      "wes er mit mir pflæge,",
+      "niemer niemen",
+      "bevinde daz, wan er unt ich,",
+      "und ein kleinez vogellîn:",
+      "tandaradei,",
+      "daz mac wol getriuwe sîn."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），据 Lachmann 编 Mhd. 原文逐行直译；保留叠句 tandaradei 与女声第一人称回忆的语态",
+    "text": [
+      [
+        "在椴树下，",
+        "在那片荒原上，",
+        "我们俩的床铺曾在那里——",
+        "在那儿你能够",
+        "漂亮地一并",
+        "找到被压碎的花和草。",
+        "在树林前面的一道山谷里，",
+        "坦达拉戴，",
+        "夜莺唱得多好听。"
+      ],
+      [
+        "我走来",
+        "到了那河边草地：",
+        "我的心上人已经先到了。",
+        "在那儿我受到了",
+        "（贵妇一般的！）",
+        "迎接，从此我永远幸福。",
+        "他吻了我吗？足有上千次：",
+        "坦达拉戴，",
+        "看我的嘴有多红。"
+      ],
+      [
+        "他已经在那儿",
+        "用花",
+        "铺了一张华丽的床。",
+        "谁日后若走到",
+        "那条同一的小径，",
+        "心里定会暗暗发笑。",
+        "凭那些玫瑰他准能——",
+        "坦达拉戴，",
+        "认出我的头曾枕在何处。"
+      ],
+      [
+        "至于他曾躺在我身旁，",
+        "若是有人知道——",
+        "（但愿老天不许！）——我会羞愧。",
+        "他与我做了什么，",
+        "永远没有任何人",
+        "能发觉，除了他和我，",
+        "还有一只小鸟：",
+        "坦达拉戴，",
+        "它必定会守口如瓶。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Under der linden / an der heide,",
+      "zh": "Under（= nhd. unter）、linden（椴树，= die Linde）、heide（荒原/野地草地）。场景在野外的椴树下，不在宫廷——这在 Minnesang 中是\"低级之爱\"（niedere Minne / 乡村情歌）的典型场景，与贵妇崇拜的\"高级之爱\"（hohe Minne）相对。"
+    },
+    {
+      "de": "dâ unser zweier bette was,",
+      "zh": "unser zweier（我们俩的）= nhd. unser beider。bette（床、卧处）。被压碎的花草（gebrochen bluomen，第6行）是私密相会的痕迹——全诗即由这种\"坦然的私密\"构成。"
+    },
+    {
+      "de": "tandaradei,",
+      "zh": "拟声叠句，摹夜莺鸣声，不表意。它在每节第8行重复，是全诗唯一的\"证人\"——除了夜莺没有人看见（见第4节末），叠句因此承担了叙事功能：它是这个秘密的守护者。"
+    },
+    {
+      "de": "dô was mîn friedel komen ê.",
+      "zh": "friedel = nhd. Geliebter（心上人，古词）；komen ê = 先到。注意全诗为女性视角的第一人称回忆——在以男性仰望贵妇为主流的 Minnesang 传统中，这属于\"少女之歌\"（Mädchenlied）类型，与\"高级之爱\"相反。这是本诗在文学史上的位置。"
+    },
+    {
+      "de": "(hêre frouwe!)",
+      "zh": "hêre（崇高的，= nhd. hehr）+ frouwe（贵妇、女子，= Frau，但当时语义更尊）。女子回忆自己被像贵妇一样迎接。frouwe → nhd. Frau 是\"语义窄化\"的标准样本（见语法要点）。"
+    },
+    {
+      "de": "kuster mich? wol tûsentstunt:",
+      "zh": "kuster = kuste er（他吻了），-er 是动词第三人称后附代词。tûsentstunt = tausendmal（上千次）。括号里的反问是女子的回忆与回味，是全诗最直率的一处。"
+    },
+    {
+      "de": "und ein kleinez vogellîn: … daz mac wol getriuwe sîn.",
+      "zh": "vogellîn（小鸟）是 Vogel 的指小形式（-lîn 后缀）。getriuwe = treu（忠诚、守口）。全诗的私密性由此收束：唯一的目击者是一只鸟，而鸟不会告密。叠句 tandaradei 正是这只鸟的声音。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "under (mhd.)",
+      "pos": "介词",
+      "meaning": "= nhd. unter（在……下面）",
+      "note": "中古高地德语词形。本页核心价值之一即展示 mhd.→nhd. 的音变，见语法要点对照表。"
+    },
+    {
+      "term": "die Linde, -n",
+      "pos": "n.（阴性）",
+      "meaning": "椴树",
+      "note": "mhd. linden。与本站《春天的信念》（编号22）中 lind（温和的、柔软的）同源——树名椴树与形容词\"柔和\"共享词根，因椴木柔软。这是已验证的跨页接点。"
+    },
+    {
+      "term": "die Heide, -n",
+      "pos": "n.（阴性）",
+      "meaning": "荒原、野地（长石楠花的沙地）；异教徒（der Heide）",
+      "note": "mhd. heide。诗中指野外草地。注意与 der Heide（异教徒）同形异义。"
+    },
+    {
+      "term": "frouwe (mhd.)",
+      "pos": "n.（阴性）",
+      "meaning": "= nhd. Frau，但当时特指\"贵妇\"，语义比今日尊",
+      "note": "★语义窄化样本：mhd. frouwe 指有身份的贵妇，nhd. Frau 已泛化为\"女人/妻子/女士\"。同类见 wîp→Weib（贬义化）、hêre→hehr。这是学习者最易踩的历史语义陷阱。"
+    },
+    {
+      "term": "wol (mhd.)",
+      "pos": "adv.",
+      "meaning": "= nhd. wohl（想必、确实；好）",
+      "note": "诗中 wol tûsentstunt（足有上千次）、schône beide（漂亮地一并）中的 wol 表强调。"
+    },
+    {
+      "term": "guot (mhd.)",
+      "pos": "adj.",
+      "meaning": "= nhd. gut（好）",
+      "note": "展示 mhd. 单元音化：uo → u（guot → gut）。本诗正文以 getriuwe、rîche 等为主，guot 词族见同源说明。"
+    },
+    {
+      "term": "hêre (mhd.)",
+      "pos": "adj.",
+      "meaning": "= nhd. hehr（崇高的、可敬的）",
+      "note": "今日仅存于诗歌与 hehr 一词；诗中 hêre frouwe（崇高的夫人）。"
+    },
+    {
+      "term": "der friedel (mhd.)",
+      "pos": "n.（阳性，古）",
+      "meaning": "心上人、恋人（= nhd. Geliebter）",
+      "note": "古词，今日已废弃。mîn friedel = 我的心上人。"
+    }
+  ],
+  "verb_forms": [],
+  "grammar_notes": [
+    {
+      "title": "中古高地德语 → 新高地德语的三大音变（本页核心价值）",
+      "quote": "实例取自本诗：mîn / dâ / guot / liep 型词",
+      "body": "本诗是全站唯一的 Mhd. 文本，正可作\"音变之前\"的参照。三大音变各举本诗实例：(1) 新二合元音化（nhd. ei/au/eu）：mhd. mîn → nhd. mein（本诗第11行 mîn）、î → ei；mhd. hûs → Haus（û → au）。(2) 单元音化（nhd. i/u/ü）：mhd. guot → gut（uo → u）、mhd. liep → lieb（ie → i）、mhd. müede → müde（üe → ü）。(3) 词尾 -e 的完整保留：mhd. 保留了后世 Apokope（词尾脱落）之前的 -e——本页每一行都满布 -e（linden、heide、bluomen、vinden）。这正是本页对全站的最大贡献：站上《晚歌》（Herze）、《春天的信念》（Herze/Herz 交替）、《致自己》（zurücke）、《祈求》（Weil' 省音）都在讲词尾 -e 的脱落，却从未有过\"脱落之前\"的参照——本页就是那个参照。"
+    },
+    {
+      "title": "语义窄化与贬义化（Bedeutungsverengung）",
+      "quote": "hêre frouwe … wîp … hêre",
+      "body": "mhd. frouwe → nhd. Frau：从\"贵妇\"窄化为\"女人/妻子\"。mhd. wîp → nhd. Weib：从\"女子\"（中性）贬义化为\"婆娘/老婆\"（带贬义）。mhd. hêre → nhd. hehr：从常用形容词\"崇高的\"缩窄为今日仅存的诗歌词。读 Mhd. 时必须按当时语义理解，不可套今日义。"
+    },
+    {
+      "title": "叠句（Refrain）作为结构手段",
+      "quote": "tandaradei（每节第8行）",
+      "body": "每节末以拟声叠句 tandaradei 收束，紧接着是夜莺的一行。叠句既是音乐性的（此诗配有旋律），也是叙事性的——它是唯一\"看见\"的目击者（夜莺）。与本站《春天的信念》（叠句 Nun muß sich alles, alles wenden）、《那座城》（句式回环）构成\"叠句/复现\"主题簇。"
+    }
+  ],
+  "cultural_notes": "瓦尔特·冯·德尔·福格尔魏德（约1170—约1230）是中古高地德语最重要的宫廷抒情诗人（Minnesänger）。他出身较低（自述\"我领地狭小\"von der Vogelweide），却辗转服务于多位奥地利、图林根、勃兰登堡宫廷，被同时代人称为\"歌者中的大师\"。\n\nMinnesang（宫廷情歌）按题材分为\"高级之爱\"（hohe Minne：骑士仰望高不可攀的贵妇）与\"低级之爱\"（niedere Minne / 乡村情歌：与可亲近女子的相爱）。本诗属于后者，且采用了罕见的\"女声第一人称\"——女子回忆与恋人在野外椴树下的相会。这种\"少女之歌\"（Mädchenlied）类型在 Minnesang 中是一股反主流的清流：它坦率、私密、不带骑士崇拜的苦闷。\n\n本诗的传世依赖两部抄本：B（魏恩加滕歌曲集，Stuttgart HB XIII 1）与 C（海德堡《马内塞抄本》Codex Manesse, cpg848）。两本文字极相近，仅有零星差异（如 C 作 Ich kan gegangen、er kuste mich wol tusent stunt；Lachmann 据此校定为通行本）。Lachmann 编号 L 39,11 是卡尔·拉赫曼1825/1843年开创的、按页-行的编号体系（待进一步核实其卷次页码），至今仍是瓦尔特研究的标准引用方式。本诗是否留存旋律（Melodie），学界有争议，待核实。\n\nCEFR 量表是为现代德语设计的，对 Mhd. 文本并不适用；本页标 C1 仅表示\"阅读门槛\"，而非\"现代德语水平\"。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），据 Lachmann 编 Mhd. 原文逐行直译。说明：(1) 本页只做 Mhd. + 中文两栏，未设\"现代德语转写\"栏——研究未找到独立来源提供的中性（非诗体译）现代德语转写：Simrock 的转写是押韵的文学改写，不宜充作\"现代德语原文\"。现代德语对应关系放在逐行注释与语法要点的音变表中给出。(2) tandaradei 为拟声叠句，不译义，保留原形。(3) 抄本 B 与 C 的零星差异（Ich kam / Ich kan gegangen；kuster mich / er kuste mich wol tusent stunt）按 Lachmann 校本统一，差异在校对记录备案。本诗存在多个中文译本（如钱春绮等），因版权原因本站不转载具体译本全文。",
+  "image_prompt": {
+    "imagery": "一片野外荒原草地，中央一棵椴树；树下草地上有一处被压倒的花草凹痕，散落几朵折断的小花；远处树丛中暗示（不画出）一只夜莺的所在",
+    "mood": "私密的、回忆的、宁静的喜悦；不是情色，而是\"事后回望\"的温柔与坦然",
+    "elements": "一棵椴树（心形叶）、树下草地上的凹痕与散落的折花、远处的树林边缘、一抹暗示鸟鸣的留白（不见鸟本身）、柔和的散射日光",
+    "era": "约1200年中欧野外风景，无建筑、无器物",
+    "taboos": "★不得出现任何人物（人仅由花草凹痕暗示其在场）；不得出现任何情色或身体暗示；不得出现中世纪骑士铠甲、城堡、宫廷器物（本诗场景是野外而非宫廷）；不得出现文字水印",
+    "style": "前拉斐尔派—自然主义风景画质感，柔焦、绿色与白色为主、光线漫散，构图中心是树下的凹痕而非任何人物"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "German Wikisource — Under der linden (Lachmann)",
+      "url": "https://de.wikisource.org/wiki/Under_der_linden_(Lachmann)",
+      "tier": 1,
+      "citation": "Die Gedichte Walthers von der Vogelweide, hrsg. v. Karl Lachmann, Berlin 1843, S. 39–40（L 39,11）",
+      "note": "主来源（一级）：Lachmann 校本的 Mhd. 原文转写，本站正文据此。"
+    },
+    {
+      "name": "Lied-Digital (LDM) / Stuttgart-Erlangen — Walther L 39,11（抄本 B 与 C 对照）",
+      "url": "https://www.ldm-digital.de/show.php?au=Wa&hs=C&lid=4058",
+      "tier": 1,
+      "citation": "Lied-Digital.de 抄本数据库：Codex Manesse (C, cpg848 fol.130va–b) 与 Weingartner Liederhandschrift (B)",
+      "note": "一级来源（独立运营方）：给出两份传世抄本 B 与 C 的逐字对照，用于核对 Lachmann 校择（如 Ich kam vs Ich kan gegangen）。"
+    },
+    {
+      "name": "UB Heidelberg — Codex Manesse cpg848, fol.130va–b（抄本原件数字化）",
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/cpg848/0256",
+      "tier": 1,
+      "citation": "Universitätsbibliothek Heidelberg, cpg848 (Codex Manesse), fol.130va–b",
+      "note": "一级来源（抄本原件影印）。用于核对抄本 C 的原始形态。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，据 Lachmann 编 Mhd. 原文逐行直译；标注为学习用途。已知存在钱春绮等多个中文译本，因版权原因未转载全文。"
+    }
+  ],
+  "cross_references": [
+    {"target_slug": "abendlied", "needle": "词尾", "context": "《晚歌》"},
+    {"target_slug": "fruehlingsglaube", "needle": "Herze", "context": "《春天的信念》"},
+    {"target_slug": "an-sich", "needle": "zurücke", "context": "《致自己》"},
+    {"target_slug": "bitte", "needle": "Weil'", "context": "《祈求》"},
+    {"target_slug": "fruehlingsglaube", "needle": "lind", "context": "《春天的信念》"}
+  ],
+  "verification_notes": "【三栏说明】本页只做 Mhd. 原文 + 中文两栏，未设\"现代德语转写（Nhd.）\"栏。原因：研究未找到独立来源提供的中性、非诗体的现代德语转写——Simrock（Die zehnte Muse, 1904）的转写是押韵的文学改写，不能充作\"现代德语原文\"。按本站规则，不得自行把 Mhd. 改写为 Nhd. 充作正文栏；故采用两栏方案，现代德语对应关系在逐行注释与语法要点（音变对照表）中给出。若日后找到独立来源的中性 Nhd. 转写，可启用 text_nhd 字段补第三栏。\n\n【三源核对】Mhd. 原文以 German Wikisource 转写的 Lachmann 校本（1843, S.39–40, L 39,11）为底本，另以两个一级来源交叉核对：Lied-Digital (LDM) 抄本数据库（B 与 C 两本对照）、海德堡大学图书馆 Codex Manesse (cpg848) 影印本。4 节 × 9 行（共36行）一致。\n\n【抄本 B 与 C 的差异（Lachmann 校择）】C（马内塞抄本）作：Ich kan gegangen / er kuste mich wol tusent stunt / Do hat er / mirs；B（魏恩加滕本）作：Ich kam gegangen / kuster mich? wol tûsentstunt / dô hete er / mirz。Lachmann 据两本互校，通行本多从 B 的读法（kuster mich = kuste er mich 的缩合形）。本站从 Lachmann 通行本，差异在此备案。\n\n【第2节第5行】Lachmann 通行本作\"hêre frouwe\"；个别本（含本站底本）因句法将其置于括号，作为女子回忆时对自己被迎如贵妇的惊叹。本站从之并加括号。\n\n【待进一步核实】(1) Lachmann 编号 L 39,11 的卷次页码（据 Wikisource 著录为1843年版 S.39–40，未直接核对纸质本）；(2) 本诗旋律（Melodie）是否留存——学界有争议，未回核一手；(3) 瓦尔特生卒年（历来只有推定值，约1170—约1230，页面已写\"约\"）；(4) 抄本归属与两本先后的判定。\n\n【公版】作者约卒于1230年，作品抄本传世逾七百年，公版无争议（无确定卒年，无法按 +71 复算，已在 public_domain.basis 说明）。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / ldm / 海德堡UB）、D（三个一级来源）。",
+  "checklist": [
+    {"label": "确认作者：Walther von der Vogelweide", "done": true},
+    {"label": "确认标题与编号：L 39,11（Lachmann）", "done": true},
+    {"label": "Mhd. 主来源：Wikisource Lachmann 校本（转录底本）", "done": true},
+    {"label": "一级来源交叉核对：LDM 抄本数据库 / 海德堡 UB 马内塞抄本影印", "done": true},
+    {"label": "核对诗节、行数（4节×9行，共36行）、叠句 tandaradei", "done": true},
+    {"label": "记录抄本 B 与 C 差异及 Lachmann 校择", "done": true},
+    {"label": "三栏说明（无中性 Nhd. 转写 → 两栏）", "done": true},
+    {"label": "三大音变对照表（取自本诗实例）", "done": true},
+    {"label": "词尾 -e 脱落参照：反向链接 abendlied/fruehlingsglaube/an-sich/bitte", "done": true},
+    {"label": "语义窄化说明（frouwe→Frau 等）", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "CEFR 不适用 Mhd. 的说明", "done": true},
+    {"label": "高危断言（Lachmann 编号、旋律、生卒）标注待核实", "done": true},
+    {"label": "撰写 image brief（含禁忌：无人物、无铠甲）", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查（两栏 Mhd.+中文）", "done": false},
+    {"label": "回核 Lachmann 1843 版纸质页码", "done": false},
+    {"label": "核实旋律是否留存", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议历史语言学/Mhd. 专业人士复核）", "done": false}
+  ]
+}

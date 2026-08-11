@@ -1,0 +1,29 @@
+{
+  "id": "51",
+  "slug": "erinnerung-an-die-marie-a",
+  "published": false,
+  "release_date": "2027-01-01",
+  "author": "Bertolt Brecht",
+  "author_zh": "贝托尔特·布莱希特",
+  "title_de": "Erinnerung an die Marie A.",
+  "title_zh": "忆玛丽·A.",
+  "year": "1920年作；具体首刊与结集信息待公版后回核",
+  "period": "新即物主义 / 20世纪现代诗",
+  "difficulty": "B1–B2（预估）",
+  "public_domain": {
+    "death_year": 1956,
+    "public_domain_year": 2027,
+    "status": "pending"
+  },
+  "german_text": [],
+  "annotation_plan": [
+    "锁定作者定本后逐行处理时间层次与回忆结构",
+    "核对自然意象与私人记忆之间的语法转换",
+    "正文进入仓库前重新计算韵式、行数与注释密度"
+  ],
+  "source_plan": [
+    "查 Brecht 纸质校勘全集的卷次与页码，作为一级来源",
+    "另找两个独立运营方的公版数字文本逐行核对",
+    "2027-01-01 后运行 snapshot；在此之前不得录入德文正文"
+  ]
+}

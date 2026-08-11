@@ -240,7 +240,7 @@
     {
       "title": "前置第二格",
       "quote": "Der hohen Taten Ruhm muß wie ein Traum vergehn.",
-      "body": "= der Ruhm der hohen Taten。第二格前置在巴洛克诗歌中是常态而非例外，本站在荷尔德林、里尔克、特拉克尔、施托姆诸诗中标注过的同一结构，其源头正在这里。阅读窍门不变：看到 der/des + 名词后紧跟另一个名词，先把前者读作后者的修饰语。"
+      "body": "= der Ruhm der hohen Taten。第二格前置在巴洛克诗歌中是常态而非例外；本站《晚歌》《古风的阿波罗躯干残像》《来自异乡的少女》《罗马的喷泉》《狼人》《那座城》《一个冬夜》《迷娘》《祖国之泪 · 1636年》诸页中都标注过同一结构，其源头正在这里。阅读窍门不变：看到 der/des + 名词后紧跟另一个名词，先把前者读作后者的修饰语。"
     },
     {
       "title": "巴洛克拼写与省音",
@@ -371,6 +371,53 @@
     {
       "label": "最终人工复核说明（AI 辅助完成，建议巴洛克文学专业人士复核一次）",
       "done": false
+    }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "abendlied",
+      "needle": "前置第二格",
+      "context": "《晚歌》"
+    },
+    {
+      "target_slug": "archaischer-torso-apollos",
+      "needle": "前置第二格",
+      "context": "《古风的阿波罗躯干残像》"
+    },
+    {
+      "target_slug": "das-maedchen-aus-der-fremde",
+      "needle": "前置第二格",
+      "context": "《来自异乡的少女》"
+    },
+    {
+      "target_slug": "der-roemische-brunnen",
+      "needle": "前置第二格",
+      "context": "《罗马的喷泉》"
+    },
+    {
+      "target_slug": "der-werwolf",
+      "needle": "前置第二格",
+      "context": "《狼人》"
+    },
+    {
+      "target_slug": "die-stadt",
+      "needle": "前置第二格",
+      "context": "《那座城》"
+    },
+    {
+      "target_slug": "ein-winterabend",
+      "needle": "前置第二格",
+      "context": "《一个冬夜》"
+    },
+    {
+      "target_slug": "mignon",
+      "needle": "前置第二格",
+      "context": "《迷娘》"
+    },
+    {
+      "target_slug": "traenen-des-vaterlandes",
+      "needle": "前置第二格",
+      "context": "《祖国之泪 · 1636年》"
     }
   ]
 }

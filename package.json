@@ -8,7 +8,8 @@
     "build": "node src/build.js",
     "serve": "node src/serve.js",
     "dev": "node src/build.js && node src/serve.js",
-    "check": "node src/validate-sources.js",
+    "check": "node src/validate-sources.js && node src/validate-content.js",
+    "test": "node --test",
     "snapshot": "node src/snapshot.js",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

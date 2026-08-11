@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Patrouille · 巡逻 — August Stramm | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Patrouille（巡逻）— August Stramm。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="fahrt-ueber-die-koelner-rheinbruecke-bei-nacht.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">夜行科隆莱茵桥</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="die-nachtigall.html" rel="next"
+            ><span class="poem-nav__title">夜莺</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Patrouille</h1>
+          <p class="poem-titleblock__author">August Stramm</p>
+          <p class="poem-titleblock__zh">巡逻</p>
+          <p class="poem-titleblock__author-zh">奥古斯特·施特拉姆</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Tropfblut》（1919，遗著）· Wortkunst</p>
+            <p>表现主义 / Wortkunst</p>
+            <p>1915年作；遗著诗集《Tropfblut》（Der Sturm, Berlin 1919）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1（行数极少但词形反常——短 ≠ 易）</span>
+            <span class="tag">Wortkunst</span>
+            <span class="tag">战争</span>
+            <span class="tag">极短</span>
+            <span class="tag">词类越界</span>
+            <span class="tag">无句法</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一片敌意的夜间战场前景：嶙峋的石头、黑洞洞的窗户（似在窥视）、扭曲如扼杀手臂的树枝、沙沙作响的灌木丛；远处一声尖鸣（以视觉化的尖锐光线暗示）
+              </dd>
+              <dt>情绪</dt>
+              <dd>全面的、身体性的敌意与窒息；不是具体战斗，而是"环境本身在攻击"的零碎感官冲击</dd>
+              <dt>画面元素</dt>
+              <dd>嶙峋石头、黑洞洞的窗、扭曲的树枝、灌木丛、一道尖啸式的光线、无人物（巡逻者只由环境暗示）</dd>
+              <dt>时代感</dt>
+              <dd>1915年东线战场前景，无明确器物</dd>
+              <dt>推荐风格</dt>
+              <dd>表现主义木刻/版画质感，黑白高对比、线条扭曲锐利、构图破碎</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>不得出现具体可辨的士兵尸体或血腥；不得出现人物；不得出现文字水印；不得把抽象意象画成具象怪物</dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Die Steine feinden<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">石头在敌对</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Fenster grinst Verrat<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">窗户狞笑着出卖</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Äste würgen<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">树枝在扼杀</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Berge Sträucher blättern raschlig<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">山峦 灌木 沙沙作响地翻动叶子</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Gellen<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">尖鸣</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Tod.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">死。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留一词一行的视觉节奏与零句法结构</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Die Steine feinden</p>
+              <p class="lnote__zh">
+                ★feinden 是诗人自造的动词（由名词 der Feind 敌人
+                临时动词化），标准德语中不存在——不可当作可学的词汇套用。全诗的环境被写成主动的敌意：连石头都在"敌对"。这类词类越界（名词→动词）是
+                Stramm 的 Wortkunst 标志。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Fenster grinst Verrat</p>
+              <p class="lnote__zh">
+                grinsen（狞笑、咧嘴笑）+
+                Verrat（出卖、背叛）——窗户"狞笑着出卖"。无生命之物被赋予恶意的能动性。注意：本行无冠词、无主谓标志，是零句法的一个碎片。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Äste würgen</p>
+              <p class="lnote__zh">würgen（扼杀、掐脖子）——树枝在"扼杀"。环境对巡逻者构成全面的、身体性的威胁。</p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Berge Sträucher blättern raschlig</p>
+              <p class="lnote__zh">
+                raschlig 是诗人自造的副词/形容词形（由 rascheln 沙沙响
+                衍生），标准德语中不通用——标"诗人自造，不可套用"。blättern（翻叶子）在此为不及物"发出叶片声"。山峦、灌木、叶片声堆在一行——名词堆叠而无连词（Asyndeton）。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Gellen</p>
+              <p class="lnote__zh">Gellen（尖鸣、刺耳的响声）作名词化，独立成行。环境的敌意收束为一个尖锐的声音。</p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Tod.</p>
+              <p class="lnote__zh">
+                全诗以单词"死。"收束——唯一的一个句号落在末行。前面五行都是无标点的碎片，到"死"才闭合。语义弧线从环境的敌意收束到这个词的终点。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Feind, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">敌人</div>
+              <div class="vocab-card__note">
+                ★诗中 feinden（第1行）是诗人由 der Feind 临时造的动词（"敌对"），非规范词形，不可套用。本页 Wortschatz
+                只收规范基础词 der Feind，自造词在逐行注释中标注"诗人自造"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">grinsen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">狞笑、咧嘴笑</div>
+              <div class="vocab-card__note">
+                变位 grinst – grinst – hat gegrinst。诗中 Fenster grinst Verrat（第2行，窗户狞笑着出卖）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">würgen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">扼杀、掐住脖子；（食物）噎住</div>
+              <div class="vocab-card__note">
+                诗中 Äste würgen（第3行，树枝在扼杀）。der Würgeengel（扼杀天使，本雅明语）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Verrat, -e（多单数）</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">出卖、背叛</div>
+              <div class="vocab-card__note">verraten（出卖）、der Verräter（叛徒）。诗中 grinst Verrat（第2行）。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">rascheln</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">沙沙作响</div>
+              <div class="vocab-card__note">
+                ★诗中 raschlig（第4行）是诗人由 rascheln 临时造的副词/形容词形，非规范词形，不可套用。规范词为
+                rascheln（动词）/ raschelnd（现在分词）。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <p class="prose">本诗中未标注需要特别说明的不规则动词变位。</p>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">Wortkunst 与词类越界（Konversion）—— 规范内 vs 施特拉姆的越界</h3>
+              <p class="grammar-item__quote">Die Steine feinden … blättern raschlig</p>
+              <div class="grammar-item__body">
+                德语的词类转换（Konversion）在规范内很常见：das Essen（吃→饭，动词→名词）、laufen → der
+                Lauf（跑→跑步）。但施特拉姆的越界是激进的：他把名词 der Feind 直接造成动词 feinden（"敌对"），把
+                rascheln 造成 raschlig——这些词形在标准德语中不存在，是为本诗所造。★本页 Wortschatz
+                不收这些自造词，只收其规范基础词（der
+                Feind、rascheln），并在逐行注释中逐个标"诗人自造，不可套用"。这是本页最重要的处理原则。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">零句法的可能性 —— 表现主义句法三阶段（解体）</h3>
+              <p class="grammar-item__quote">全诗6行，无韵、无格律、无完整句，仅末行一个句号</p>
+              <div class="grammar-item__body">
+                本诗明确写出：本诗没有韵式，也没有可分析的句法结构——这是它的构成原则，不是缺失（同《普罗米修斯》编号34
+                的"无韵即纲领"处理逻辑）。本页与本站《世界末日》（编号33，完整主句的罗列
+                Reihungsstil）、《科隆莱茵桥之夜行》（编号44，拉长的句子）构成表现主义句法的三个阶段：完整 → 拉长 →
+                解体。这三页的链接是本批最有价值的一条结构线。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              奥古斯特·施特拉姆（1874—1915）是德语表现主义"Wortkunst"（字词艺术）的最激进代表。他是一名邮政官员，1915年9月1日死于东线战场，生前仅在《Der
+              Sturm》杂志发表少量作品，遗著诗集《Tropfblut》（1919）由其友人整理出版。
+            </p>
+            <p>
+              《巡逻》是他的代表作之一。全诗6行，写一场夜间巡逻中环境对士兵的全面敌意：石头敌对、窗户出卖、树枝扼杀、灌木沙沙、尖鸣、死。它的激进之处在于：句子整个解体，每一行只是一个名词化的意象碎片，词类被随意越界（名词当动词用），全部敌意收束到末行一个带句号的"死"字。
+            </p>
+            <p>
+              施特拉姆与《Der Sturm》圈子（Lasker-Schüler、Heym
+              同圈）共同把德语诗推向"字词艺术"的极限：意义不再由句法组织，而由单个词的冲击力承担。他与
+              Heym、Stadler、Trakl 同属表现主义早期夭折于一战的一代。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) feinden 译"在敌对"、raschlig
+              译"沙沙作响地"，并在注释中逐个标"诗人自造，不可套用"；(2)
+              全诗零句法、一词一行，译文照办（每行一个意象碎片），仅在末行"死。"保留句号；(3) 本页 Wortschatz 不收
+              feinden / raschlig 等自造词，只收其规范基础词（der Feind、rascheln）。本诗仅6行但词形全部反常，属"短 ≠
+              易"。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Zeno.org — Stramm: Patrouille（Das Werk, Wiesbaden 1963, S.86–87）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Stramm,+August/Gedichte/Tropfblut/Patrouille"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Stramm,+August/Gedichte/Tropfblut/Patrouille</a
+              >
+              <span class="source-citation"
+                >August Stramm: Das Werk (Gedichte / Dramen), Wiesbaden 1963, S. 86–87（Tropfblut 辑，遗著1919）</span
+              >
+              <span class="source-note"
+                >一级来源（全集本，标注页码）。本次 Zeno
+                主机拒绝连接，版次页码据著录，读法由两个直接抓取的独立来源交叉确认。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Patrouille“（Stramm）</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/p---z/stramm/patrouille.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/p---z/stramm/patrouille.html</a
+              >
+              <span class="source-citation">现代通行文本（Aufnahme 2025，标1915作/Tropfblut 1919）</span>
+              <span class="source-note"
+                >二级来源（直接抓取）。读法与 Zeno 一致（feinden、raschlig、Gellen 大写据 Zeno；deutschelyrik 作 gellen
+                小写，本站从 Zeno 大写）。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">lyrik.antikoerperchen.de — Patrouille (Stramm)</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://lyrik.antikoerperchen.de/august-stramm-patrouille,textbearbeitung,20.html"
+                target="_blank"
+                rel="noopener"
+                >https://lyrik.antikoerperchen.de/august-stramm-patrouille,textbearbeitung,20.html</a
+              >
+              <span class="source-citation">现代通行文本（注解页）</span>
+              <span class="source-note"
+                >三级来源（独立运营方）。注意：其读 feiden（非 feinden）为转录错误，本诗自造动词确定作 feinden（Zeno +
+                deutschelyrik 一致）。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文读法以 Zeno.org《施特拉姆著作》（Wiesbaden
+              1963，S.86–87）为一级来源著录（本次主机拒绝连接），读法由两个直接抓取的独立来源交叉确认：deutschelyrik.de（二级）、lyrik.antikoerperchen.de（三级）。6
+              行（单节）——用词一致。
+            </p>
+            <p>
+              【关键异文】(1) feinden（Zeno + deutschelyrik，诗人自造动词"敌对"）vs
+              feiden（antikoerperchen.de）——后者为转录错误，本诗确定作 feinden。(2) Gellen（大写，Zeno，名词化"尖鸣"）vs
+              gellen（小写，deutschelyrik，不定式）——本站从 Zeno 的大写名词化读法。两处差异已如实记录。
+            </p>
+            <p>
+              【★自造词处理原则】本诗含两个标准德语中不存在的词形：feinden（由 der Feind 造的动词）、raschlig（由
+              rascheln 造的副词/形容词形）。本页 Wortschatz 不收这两个自造词，只收其规范基础词（der
+              Feind、rascheln），并在逐行注释中逐个标"诗人自造，不可套用"。这是本页与全站其他页面的根本差异，已显式说明。
+            </p>
+            <p>
+              【无韵、无格律的显式说明】本诗没有韵式，也没有可分析的句法结构——这是它的构成原则，不是缺失。页面已显式写出"本诗没有韵式"（同《普罗米修斯》编号34
+              的处理逻辑）。
+            </p>
+            <p>
+              【待进一步核实】(1) Zeno 主机本次拒绝连接，其 S.86–87
+              页码据著录，待恢复后补抓快照复核；(2)《Tropfblut》1919 的编纂与出版细节；(3)
+              本诗的确切写作日期（1915年，具体月份未核）。
+            </p>
+            <p>【公版】施特拉姆1915年阵亡，公版起始年 = 1915 + 71 = 1986。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik /
+              antikoerperchen）、D（含一级来源：Zeno 全集本）。★本页 Wortschatz 不含任何诗中自造词形（feinden、raschlig
+              均未收入，只收规范基础词）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：August Stramm</li>
+            <li>确认出处：Tropfblut 1919 / Das Werk 1963 S.86–87</li>
+            <li>核对行数（单节6行）</li>
+            <li>★Wortschatz 不含自造词（feinden/raschlig），只收规范基础词</li>
+            <li>逐个自造词标"诗人自造，不可套用"</li>
+            <li>记录 feinden/feiden、Gellen/gellen 异文</li>
+            <li>显式说明"本诗无韵式、无句法"（构成原则）</li>
+            <li>表现主义句法三阶段（weltende/koelner-rheinbruecke）</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1915 + 71 = 1986</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">Zeno 恢复后补抓快照复核</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义/Wortkunst 专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

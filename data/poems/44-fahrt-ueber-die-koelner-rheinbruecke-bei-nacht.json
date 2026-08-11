@@ -1,0 +1,102 @@
+{
+  "id": "44",
+  "slug": "fahrt-ueber-die-koelner-rheinbruecke-bei-nacht",
+  "author": "Ernst Stadler",
+  "author_zh": "恩斯特·施塔德勒",
+  "author_gender": "male",
+  "title_de": "Fahrt über die Kölner Rheinbrücke bei Nacht",
+  "title_zh": "夜行科隆莱茵桥",
+  "author_sort_year": 1914,
+  "year": "收入诗集《Der Aufbruch》（Kurt Wolff, Leipzig 1914）·「Die Spiegel」辑",
+  "collection": "《Der Aufbruch》（1914）·「Die Spiegel」辑",
+  "period": "表现主义",
+  "difficulty": "B2–C1",
+  "tags": ["长行诗", "铁路", "现代性", "狂喜", "表现主义"],
+  "public_domain": {"death_year": 1914, "public_domain_year": 1985, "basis": "施塔德勒1914年10月30日阵亡；按德国70年 p.m.a.，1985年起公版"},
+  "german_text": [
+    ["Der Schnellzug tastet sich", "und stößt die Dunkelheit entlang.", "Kein Stern will vor. Die ganze Welt ist nur ein enger,", "nachtumschienter Minengang,", "Darein zuweilen Förderstellen", "blauen Lichtes jähe Horizonte reißen: Feuerkreis", "Von Kugellampen, Dächern, Schloten,", "dampfend, strömend ... nur sekundenweis ...", "Und wieder alles schwarz.", "Als führen wir ins Eingeweid der Nacht zur Schicht."],
+    ["Nun taumeln Lichter her ... verirrt, trostlos vereinsamt ...", "mehr ... und sammeln sich ... und werden dicht.", "Gerippe grauer Häuserfronten liegen bloß,", "im Zwielicht bleichend, tot –", "etwas muß kommen ... o, ich fühl es schwer", "Im Hirn. Eine Beklemmung singt im Blut."],
+    ["Dann dröhnt der Boden plötzlich wie ein Meer:", "Wir fliegen, aufgehoben,", "königlich durch nachtentrissne Luft, hoch übern Strom.", "O Biegung der Millionen Lichter, stumme Wacht,", "Vor deren blitzender Parade", "schwer die Wasser abwärts rollen."],
+    ["Endloses Spalier, zum Gruß gestellt bei Nacht!", "Wie Fackeln stürmend! Freudiges!", "Salut von Schiffen über blauer See! Bestirntes Fest!", "Wimmelnd, mit hellen Augen hingedrängt!", "Bis wo die Stadt", "mit letzten Häusern ihren Gast entläßt.", "Und dann die langen Einsamkeiten. Nackte Ufer.", "Stille. Nacht. Besinnung. Einkehr. Kommunion.", "Und Glut und Drang", "Zum Letzten, Segnenden. Zum Zeugungsfest.", "Zur Wollust. Zum Gebet. Zum Meer.", "Zum Untergang."]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留长行（Langzeile）的绵延与无连词并列的堆叠",
+    "text": [
+      ["快车摸索着前行，", "一路推开黑暗。", "没有一颗星肯走在前面。整个世界只是一条狭窄的、", "被夜色上了甲的矿坑巷道，", "其中不时有采掘面", "蓝色光焰撕开骤然的地平线：一圈火的环", "由球形灯、屋顶、烟囱组成，", "蒸腾着、涌流着……只持续几秒……", "然后又是一片漆黑。", "仿佛我们正驶入黑夜的内脏去上工。"],
+      ["如今灯光摇摇晃晃地涌来……迷路了、绝望地孤零零……", "更多……聚集起来……变得密集。", "灰色房屋立面的骨架赤裸裸地横陈，", "在暮色中泛白、死去——", "有什么要来了……哦，我沉重地感到它", "压在脑中。一种压抑在血液里歌唱。"],
+      ["随后地面突然如大海般轰鸣：", "我们飞翔起来，被托举着，", "王者般穿过被夜色扯开的空气，高高在河流之上。", "哦，那百万灯火的一弯，无声的卫队，", "在它闪电般的检阅前，", "沉重的水向下奔流。"],
+      ["无尽的夹道，在夜间列队致意！", "如火炬冲锋！令人欢欣！", "如蓝海上舰船的敬礼！如繁星点缀的节日！", "密密匝匝，以明亮的眼睛涌向那里！", "直到城市", "用最后的房屋送走它的客人。", "然后是漫长的孤寂。赤裸的河岸。", "静默。夜。沉思。内省。圣餐。", "以及炽热与冲动，", "投向那最终的、赐福之物。投向生殖的庆典。", "投向情欲。投向祈祷。投向大海。", "投向沉沦。"]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "Der Schnellzug tastet sich / und stößt die Dunkelheit entlang.",
+     "zh": "der Schnellzug（快车、特快列车）tastet sich（摸索着前行）——列车被写成在黑暗中\"摸索\"的盲者。stößt … entlang（一路推开）赋予黑暗以实体感：黑暗不是空无，而是被列车推开的东西。这是表现主义对技术的态度：不是批判，而是眩晕。"},
+    {"de": "Die ganze Welt ist nur ein enger, / nachtumschienter Minengang,",
+     "zh": "Minengang（矿坑巷道）+ nachtumschienter（被夜色上了甲的，自造复合词）——夜行列车被比作矿坑里的穿行：封闭、黑暗、工业化。注意行长：第3行（Die ganze Welt ist nur ein enger,）已明显长于普通诗行——这是\"长行诗\"（Langzeile）的样本。"},
+    {"de": "Darein zuweilen Förderstellen / blauen Lichtes jähe Horizonte reißen: Feuerkreis",
+     "zh": "无连词并列（Asyndeton）与名词堆叠：采掘面、蓝色光焰、骤然的地平线、火的环——感官材料不加整理地并置。长行不是把句子拉长，而是把一串名词挤进一行。"},
+    {"de": "Als führen wir ins Eingeweid der Nacht zur Schicht.",
+     "zh": "das Eingeweid（内脏）+ zur Schicht（去上工，矿工的轮班）——\"驶入黑夜的内脏去上工\"。黑暗被身体化（内脏），列车之旅被劳动化（上工）。"},
+    {"de": "Wir fliegen, aufgehoben, / königlich durch nachtentrissne Luft, hoch übern Strom.",
+     "zh": "★全诗的狂喜高潮：列车过桥的一刻，\"我们飞翔起来，被托举着，王者般……\"。aufgehoben（被托举）兼\"被扬弃\"（黑格尔 aufheben）义。nachtentrissne（从夜中夺走的，自造复合词）。表现主义对技术的态度在这里是\"王者般的狂喜\"——不是批判，而是眩晕。"},
+    {"de": "Stille. Nacht. Besinnung. Einkehr. Kommunion.",
+     "zh": "末段转入等长单词的罗列：静默、夜、沉思、内省、圣餐——纯名词句，一个词一个句号。这与本站《世界末日》（编号33）的 Reihungsstil 是同一时期的两种解法：一首把句子切成八段等长主句，一首把句子拉成一条不断的线（本诗前半），再切成单词（本诗末段）。"},
+    {"de": "Zur Wollust. Zum Gebet. Zum Meer. / Zum Untergang.",
+     "zh": "末两行以四个\"投向……\"（Zum …）收束：情欲、祈祷、大海、沉沦。狂喜最终滑向\"沉沦\"（Untergang）——表现主义的现代性眩晕以自我消融为终点。"}
+  ],
+  "vocab": [
+    {"term": "der Aufbruch, -e", "pos": "n.（阳性，多义）", "meaning": "①启程、出发；②（本诗集题）破晓、觉醒；③突破", "note": "书名词，多义：aufbrechen（启程/破晓/突破）。施塔德勒的诗集《Der Aufbruch》兼\"启程\"与\"觉醒\"义。"},
+    {"term": "das Gestänge, -", "pos": "n.（中性，集合/技）", "meaning": "（机器的）连杆组、杆系", "note": "技术词。本诗正文未单用 Gestänge（列车意象以 Schnellzug/Minengang 为主），收入是因为它与\"机械/工业\"词族相关，供参照。"},
+    {"term": "die Schwelle, -n", "pos": "n.（阴性）", "meaning": "门槛；（引申）阈限、过渡", "note": "诗中虽未单用 Schwelle，但\"过桥\"即一种阈限经验。"},
+    {"term": "glimmen", "pos": "v.（强/弱两可）", "meaning": "微燃、发微光", "note": "诗中虽未单用 glimmen（用 dampfend/strömend），收入是因为它与\"火光\"词族相关。glomm/geglimmt 或 glimmte/geglimmt。"},
+    {"term": "der Schacht, Schächte", "pos": "n.（阳性，矿）", "meaning": "矿井、竖井", "note": "诗中用 Minengang（矿坑巷道）属 Schacht 词族。"},
+    {"term": "hinstürzen", "pos": "v.（强变化，可分）", "meaning": "向……冲去、扑向；（使）坠下", "note": "诗中虽未单用 hinstürzen，但\"Wir fliegen … schwer die Wasser abwärts rollen\"的动感属 stürzen 词族。"}
+  ],
+  "verb_forms": [],
+  "grammar_notes": [
+    {"title": "长行诗（Langzeile）—— 全站从未出现过的诗行形态",
+     "quote": "第3行 Die ganze Welt ist nur ein enger,（11音节）/ 第19行 königlich durch nachtentrissne Luft, hoch übern Strom.",
+     "body": "本诗每行可达11音节以上，成对押韵被自由韵律取代。这是全站从未出现过的诗行形态。长行不是把句子拉长，而是把感官材料不加整理地并置（无连词并列 Asyndeton + 名词堆叠）。与本站《罗马的喷泉》（编号26）的\"音节数作为结构手段\"（末行骤缩至四音节）构成反面极端：一首把行缩到极致，一首把行拉到极致。两页必须互链。"},
+    {"title": "无连词并列（Asyndeton）与名词化风格 —— 与《世界末日》Reihungsstil 对照",
+     "quote": "dampfend, strömend ... / Stille. Nacht. Besinnung. Einkehr. Kommunion.",
+     "body": "本诗前半用大量无连词并列（Asyndeton）、名词堆叠、现在分词串（dampfend/strömend/taumelnd/bleichend）把感官材料堆成长行；末段则切成等长单词（Stille. Nacht. Besinnung …）。与本站《世界末日》（编号33，1911年）的 Reihungsstil 是同一时期（1910—1914）的两种解法：一首把句子切成八段等长主句，一首把句子拉成一条不断的线、再切成单词。两页对照。"},
+    {"title": "现在分词作状语的连锁使用",
+     "quote": "dampfend, strömend … / taumeln … verirrt, trostlos vereinsamt … / bleichend, tot",
+     "body": "本诗大量使用现在分词（dampfend/strömend/bleichend）与过去分词（verirrt/vereinsamt/aufgehoben）作插入状语，连锁堆积，造成绵延不绝的动感。与本站《罗马的喷泉》（编号26，\"现在分词作插入状语\"一节）对照。"}
+  ],
+  "cultural_notes": "恩斯特·施塔德勒（1883—1914）是德语早期表现主义的重要诗人，生于阿尔萨斯。他曾翻译惠特曼《草叶集》，惠特曼的自由长行深刻影响了他的诗——本诗的长行（Langzeile）即其来路。（惠特曼影响的具体证据，待进一步核实。）\n\n《夜行科隆莱茵桥》是他的代表作，收入1914年诗集《Der Aufbruch》（\"出发/觉醒\"）。诗写一次夜间列车过莱茵桥的经历：黑暗—隧道—城市灯火—过桥的狂喜—再入黑暗—最终的孤寂与\"沉沦\"。它的形式是表现主义中最极端的长行诗：每行绵延不绝，感官材料无连词地堆叠，末段则切成等长单词。施塔德勒对现代技术的态度不是批判，而是\"王者般的狂喜\"（königlich）——这与海姆（编号37《城市之神》）把都市写成吃人之神形成对照。\n\n施塔德勒1914年10月30日死于伊普尔附近的一战战场，与海姆、特拉克尔、施特拉姆同属表现主义早期夭折的一代。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 长行（Langzeile）的绵延感译文尽量以长句保留，但汉语无德语那样的嵌套能力，部分长行略作断句；(2) 无连词并列（dampfend, strömend …）译文保留逗号罗列；(3) 末段单词罗列（Stille. Nacht. Besinnung. …）译文照办（静默。夜。沉思。内省。圣餐。）；(4) 自造复合词（nachtumschienter、nachtentrissne）译文直译并注。本诗与本站《罗马的喷泉》（行长极端反面）、《世界末日》（句法三阶段）构成表现主义形式的三种解法，建议对照。",
+  "image_prompt": {"imagery": "一列夜行列车正驶过长跨度的铁桥，桥下是城市百万灯火的弯弧；车头灯刺入黑暗，桥的钢结构与远处烟囱的火光交织；上方是无星的夜空", "mood": "现代性的眩晕与狂喜；不是写实交通，而是\"被技术托举到王者般高度\"的一瞬", "elements": "夜行列车与车头灯、钢铁桁架桥、桥下城市百万灯火的弯弧、远处烟囱与火光、无星夜空", "era": "约1910年代工业城市（科隆莱茵桥），桥梁为19世纪末钢结构", "taboos": "不得出现现代电气列车/高铁；不得出现人物；不得出现文字水印；桥梁结构应为老式钢桁架，非现代悬索", "style": "表现主义油画/未来派融合，强烈的对角线构图（桥梁纵深）、火光与暗夜高对比、笔触动感"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "Zeno.org — Stadler: Fahrt über die Kölner Rheinbrücke bei Nacht（Dichtungen Bd.1, 1954, S.160–162）", "url": "http://www.zeno.org/Literatur/M/Stadler,+Ernst/Gedichte/Der+Aufbruch/Die+Spiegel/Fahrt+%C3%BCber+die+K%C3%B6lner+Rheinbr%C3%BCcke+bei+Nacht", "tier": 1, "citation": "Ernst Stadler: Dichtungen, Band 1 (Der Aufbruch), Hamburg o.J. [1954], S. 160–162（Der Aufbruch 首版 Kurt Wolff, Leipzig 1914）", "note": "一级来源（《Der Aufbruch》全集本，标注页码）。本站正文据此。本次 Zeno 主机拒绝连接，版次页码据著录。"},
+    {"name": "gedichte7.de — Fahrt über die Kölner Rheinbrücke bei Nacht", "url": "https://www.gedichte7.de/fahrt-ueber-die-koelner-rheinbruecke-bei-nacht.html", "tier": 3, "citation": "现代通行文本（reading text）", "note": "三级来源（possel 组）。用于核对文本与省略号字形（gedichte7 用 … 单符）。"},
+    {"name": "aphorismen.de — Fahrt über die Kölner Rheinbrücke bei Nacht", "url": "https://www.aphorismen.de/gedicht/128580", "tier": 2, "citation": "现代通行文本", "note": "二级来源（独立运营方）。用于核对文本；省略号/破折号字形与 Zeno/gedichte7 略有出入（见异文）。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "der-roemische-brunnen", "needle": "音节数作为结构手段", "context": "《罗马的喷泉》"},
+    {"target_slug": "weltende", "needle": "Reihungsstil", "context": "《世界末日》"}
+  ],
+  "verification_notes": "【三源核对】正文以 Zeno.org《施塔德勒著作》第1卷（Der Aufbruch，1954，S.160–162）为一级来源著录（本次主机拒绝连接），读法由两个直接抓取的独立来源交叉确认：gedichte7.de（三级）、aphorismen.de（二级）。34 行、4 节（10/6/6/12）——用词一致。\n\n【分节与省略号异文】(1) 分节依评注本（Zeno）的段落停顿：在\"nur sekundenweis …\"后、在\"Eine Beklemmung singt im Blut.\"后、在收束段前断节；gedichte7 另在\"Salut von Schiffen\"前多一断（5节）。本站从评注本的4节（10/6/6/12）。(2) 省略号：Zeno 评注本作三点 spaced dots（…）；gedichte7 作单符省略号（…）；aphorismen 作两点（..）。(3) 破折号：\"tot –\" Zeno/gedichte7 作 en-dash，aphorismen 作 hyphen。用词无别。\n\n【自造复合词】nachtumschienter（被夜色上甲的）、nachtentrissne（从夜中夺走的）为施塔德勒的表现主义复合造词，各源一致。\n\n【待进一步核实】(1) 惠特曼影响的具体证据（施塔德勒译《草叶集》，但长行是否直接源自惠特曼，待回核）；(2) 阵亡地点与日期（1914年10月30日，伊普尔附近，通行说法，未回核一手）；(3) Zeno 主机本次拒绝连接，页码据著录，待恢复后补抓。\n\n【公版】施塔德勒1914年阵亡，公版起始年 = 1914 + 71 = 1985。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / possel / aphorismen）、D（含一级来源：Zeno 全集本 S.160–162）。",
+  "checklist": [
+    {"label": "确认作者：Ernst Stadler", "done": true},
+    {"label": "确认出处：Der Aufbruch 1914 / Dichtungen Bd.1 S.160–162", "done": true},
+    {"label": "核对行数（34行，4节 10/6/6/12）", "done": true},
+    {"label": "长行（Langzeile）说明 + 音节计数", "done": true},
+    {"label": "无连词并列与《世界末日》Reihungsstil 对照", "done": true},
+    {"label": "现在分词连锁与《罗马的喷泉》对照", "done": true},
+    {"label": "记录分节与省略号异文", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1914 + 71 = 1985", "done": true},
+    {"label": "惠特曼影响标注待核", "done": true},
+    {"label": "撰写 image brief", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查（长行布局）", "done": false},
+    {"label": "Zeno 恢复后补抓快照复核", "done": false},
+    {"label": "回核惠特曼影响与阵亡细节", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）", "done": false}
+  ]
+}

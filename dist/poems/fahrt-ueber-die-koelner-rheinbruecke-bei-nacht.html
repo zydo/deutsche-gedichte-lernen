@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Fahrt über die Kölner Rheinbrücke bei Nacht · 夜行科隆莱茵桥 — Ernst Stadler | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Fahrt über die Kölner Rheinbrücke bei Nacht（夜行科隆莱茵桥）— Ernst Stadler。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="cherubinischer-wandersmann.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">智天使漫游者（选 3 则）</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="patrouille.html" rel="next"
+            ><span class="poem-nav__title">巡逻</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de poem-titleblock__de--long">Fahrt über die Kölner Rheinbrücke bei Nacht</h1>
+          <p class="poem-titleblock__author">Ernst Stadler</p>
+          <p class="poem-titleblock__zh">夜行科隆莱茵桥</p>
+          <p class="poem-titleblock__author-zh">恩斯特·施塔德勒</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Der Aufbruch》（1914）·「Die Spiegel」辑</p>
+            <p>表现主义</p>
+            <p>收入诗集《Der Aufbruch》（Kurt Wolff, Leipzig 1914）·「Die Spiegel」辑</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2–C1</span>
+            <span class="tag">长行诗</span>
+            <span class="tag">铁路</span>
+            <span class="tag">现代性</span>
+            <span class="tag">狂喜</span>
+            <span class="tag">表现主义</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一列夜行列车正驶过长跨度的铁桥，桥下是城市百万灯火的弯弧；车头灯刺入黑暗，桥的钢结构与远处烟囱的火光交织；上方是无星的夜空
+              </dd>
+              <dt>情绪</dt>
+              <dd>现代性的眩晕与狂喜；不是写实交通，而是"被技术托举到王者般高度"的一瞬</dd>
+              <dt>画面元素</dt>
+              <dd>夜行列车与车头灯、钢铁桁架桥、桥下城市百万灯火的弯弧、远处烟囱与火光、无星夜空</dd>
+              <dt>时代感</dt>
+              <dd>约1910年代工业城市（科隆莱茵桥），桥梁为19世纪末钢结构</dd>
+              <dt>推荐风格</dt>
+              <dd>表现主义油画/未来派融合，强烈的对角线构图（桥梁纵深）、火光与暗夜高对比、笔触动感</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>不得出现现代电气列车/高铁；不得出现人物；不得出现文字水印；桥梁结构应为老式钢桁架，非现代悬索</dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Der Schnellzug tastet sich<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">快车摸索着前行，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >und stößt die Dunkelheit entlang.<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一路推开黑暗。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Kein Stern will vor. Die ganze Welt ist nur ein enger,</span>
+                </div>
+                <div class="pline__zh">没有一颗星肯走在前面。整个世界只是一条狭窄的、</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >nachtumschienter Minengang,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">被夜色上了甲的矿坑巷道，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Darein zuweilen Förderstellen<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">其中不时有采掘面</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >blauen Lichtes jähe Horizonte reißen: Feuerkreis<sup class="refmark"
+                      ><a href="#note-3">3</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">蓝色光焰撕开骤然的地平线：一圈火的环</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Von Kugellampen, Dächern, Schloten,</span></div>
+                <div class="pline__zh">由球形灯、屋顶、烟囱组成，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">dampfend, strömend ... nur sekundenweis ...</span>
+                </div>
+                <div class="pline__zh">蒸腾着、涌流着……只持续几秒……</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und wieder alles schwarz.</span></div>
+                <div class="pline__zh">然后又是一片漆黑。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Als führen wir ins Eingeweid der Nacht zur Schicht.<sup class="refmark"
+                      ><a href="#note-4">4</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">仿佛我们正驶入黑夜的内脏去上工。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Nun taumeln Lichter her ... verirrt, trostlos vereinsamt ...</span>
+                </div>
+                <div class="pline__zh">如今灯光摇摇晃晃地涌来……迷路了、绝望地孤零零……</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">mehr ... und sammeln sich ... und werden dicht.</span>
+                </div>
+                <div class="pline__zh">更多……聚集起来……变得密集。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Gerippe grauer Häuserfronten liegen bloß,</span>
+                </div>
+                <div class="pline__zh">灰色房屋立面的骨架赤裸裸地横陈，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">im Zwielicht bleichend, tot –</span></div>
+                <div class="pline__zh">在暮色中泛白、死去——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">etwas muß kommen ... o, ich fühl es schwer</span>
+                </div>
+                <div class="pline__zh">有什么要来了……哦，我沉重地感到它</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Im Hirn. Eine Beklemmung singt im Blut.</span></div>
+                <div class="pline__zh">压在脑中。一种压抑在血液里歌唱。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Dann dröhnt der Boden plötzlich wie ein Meer:</span>
+                </div>
+                <div class="pline__zh">随后地面突然如大海般轰鸣：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Wir fliegen, aufgehoben,<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我们飞翔起来，被托举着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >königlich durch nachtentrissne Luft, hoch übern Strom.<sup class="refmark"
+                      ><a href="#note-5">5</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">王者般穿过被夜色扯开的空气，高高在河流之上。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">O Biegung der Millionen Lichter, stumme Wacht,</span>
+                </div>
+                <div class="pline__zh">哦，那百万灯火的一弯，无声的卫队，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Vor deren blitzender Parade</span></div>
+                <div class="pline__zh">在它闪电般的检阅前，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">schwer die Wasser abwärts rollen.</span></div>
+                <div class="pline__zh">沉重的水向下奔流。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Endloses Spalier, zum Gruß gestellt bei Nacht!</span>
+                </div>
+                <div class="pline__zh">无尽的夹道，在夜间列队致意！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie Fackeln stürmend! Freudiges!</span></div>
+                <div class="pline__zh">如火炬冲锋！令人欢欣！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Salut von Schiffen über blauer See! Bestirntes Fest!</span>
+                </div>
+                <div class="pline__zh">如蓝海上舰船的敬礼！如繁星点缀的节日！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wimmelnd, mit hellen Augen hingedrängt!</span></div>
+                <div class="pline__zh">密密匝匝，以明亮的眼睛涌向那里！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Bis wo die Stadt</span></div>
+                <div class="pline__zh">直到城市</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">mit letzten Häusern ihren Gast entläßt.</span></div>
+                <div class="pline__zh">用最后的房屋送走它的客人。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Und dann die langen Einsamkeiten. Nackte Ufer.</span>
+                </div>
+                <div class="pline__zh">然后是漫长的孤寂。赤裸的河岸。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Stille. Nacht. Besinnung. Einkehr. Kommunion.<sup class="refmark"
+                      ><a href="#note-6">6</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">静默。夜。沉思。内省。圣餐。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und Glut und Drang</span></div>
+                <div class="pline__zh">以及炽热与冲动，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Zum Letzten, Segnenden. Zum Zeugungsfest.</span>
+                </div>
+                <div class="pline__zh">投向那最终的、赐福之物。投向生殖的庆典。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Zur Wollust. Zum Gebet. Zum Meer.<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">投向情欲。投向祈祷。投向大海。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Zum Untergang.<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">投向沉沦。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留长行（Langzeile）的绵延与无连词并列的堆叠</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Der Schnellzug tastet sich / und stößt die Dunkelheit entlang.</p>
+              <p class="lnote__zh">
+                der Schnellzug（快车、特快列车）tastet sich（摸索着前行）——列车被写成在黑暗中"摸索"的盲者。stößt …
+                entlang（一路推开）赋予黑暗以实体感：黑暗不是空无，而是被列车推开的东西。这是表现主义对技术的态度：不是批判，而是眩晕。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Die ganze Welt ist nur ein enger, / nachtumschienter Minengang,</p>
+              <p class="lnote__zh">
+                Minengang（矿坑巷道）+
+                nachtumschienter（被夜色上了甲的，自造复合词）——夜行列车被比作矿坑里的穿行：封闭、黑暗、工业化。注意行长：第3行（Die
+                ganze Welt ist nur ein enger,）已明显长于普通诗行——这是"长行诗"（Langzeile）的样本。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Darein zuweilen Förderstellen / blauen Lichtes jähe Horizonte reißen: Feuerkreis</p>
+              <p class="lnote__zh">
+                无连词并列（Asyndeton）与名词堆叠：采掘面、蓝色光焰、骤然的地平线、火的环——感官材料不加整理地并置。长行不是把句子拉长，而是把一串名词挤进一行。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Als führen wir ins Eingeweid der Nacht zur Schicht.</p>
+              <p class="lnote__zh">
+                das Eingeweid（内脏）+ zur
+                Schicht（去上工，矿工的轮班）——"驶入黑夜的内脏去上工"。黑暗被身体化（内脏），列车之旅被劳动化（上工）。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Wir fliegen, aufgehoben, / königlich durch nachtentrissne Luft, hoch übern Strom.</p>
+              <p class="lnote__zh">
+                ★全诗的狂喜高潮：列车过桥的一刻，"我们飞翔起来，被托举着，王者般……"。aufgehoben（被托举）兼"被扬弃"（黑格尔
+                aufheben）义。nachtentrissne（从夜中夺走的，自造复合词）。表现主义对技术的态度在这里是"王者般的狂喜"——不是批判，而是眩晕。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Stille. Nacht. Besinnung. Einkehr. Kommunion.</p>
+              <p class="lnote__zh">
+                末段转入等长单词的罗列：静默、夜、沉思、内省、圣餐——纯名词句，一个词一个句号。这与本站《世界末日》（编号33）的
+                Reihungsstil
+                是同一时期的两种解法：一首把句子切成八段等长主句，一首把句子拉成一条不断的线（本诗前半），再切成单词（本诗末段）。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Zur Wollust. Zum Gebet. Zum Meer. / Zum Untergang.</p>
+              <p class="lnote__zh">
+                末两行以四个"投向……"（Zum
+                …）收束：情欲、祈祷、大海、沉沦。狂喜最终滑向"沉沦"（Untergang）——表现主义的现代性眩晕以自我消融为终点。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Aufbruch, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性，多义）</span>
+              <div class="vocab-card__meaning">①启程、出发；②（本诗集题）破晓、觉醒；③突破</div>
+              <div class="vocab-card__note">
+                书名词，多义：aufbrechen（启程/破晓/突破）。施塔德勒的诗集《Der Aufbruch》兼"启程"与"觉醒"义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Gestänge, -</span></div>
+              <span class="vocab-card__pos">n.（中性，集合/技）</span>
+              <div class="vocab-card__meaning">（机器的）连杆组、杆系</div>
+              <div class="vocab-card__note">
+                技术词。本诗正文未单用 Gestänge（列车意象以 Schnellzug/Minengang
+                为主），收入是因为它与"机械/工业"词族相关，供参照。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Schwelle, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">门槛；（引申）阈限、过渡</div>
+              <div class="vocab-card__note">诗中虽未单用 Schwelle，但"过桥"即一种阈限经验。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">glimmen</span></div>
+              <span class="vocab-card__pos">v.（强/弱两可）</span>
+              <div class="vocab-card__meaning">微燃、发微光</div>
+              <div class="vocab-card__note">
+                诗中虽未单用 glimmen（用 dampfend/strömend），收入是因为它与"火光"词族相关。glomm/geglimmt 或
+                glimmte/geglimmt。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Schacht, Schächte</span></div>
+              <span class="vocab-card__pos">n.（阳性，矿）</span>
+              <div class="vocab-card__meaning">矿井、竖井</div>
+              <div class="vocab-card__note">诗中用 Minengang（矿坑巷道）属 Schacht 词族。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hinstürzen</span></div>
+              <span class="vocab-card__pos">v.（强变化，可分）</span>
+              <div class="vocab-card__meaning">向……冲去、扑向；（使）坠下</div>
+              <div class="vocab-card__note">
+                诗中虽未单用 hinstürzen，但"Wir fliegen … schwer die Wasser abwärts rollen"的动感属 stürzen 词族。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <p class="prose">本诗中未标注需要特别说明的不规则动词变位。</p>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">长行诗（Langzeile）—— 全站从未出现过的诗行形态</h3>
+              <p class="grammar-item__quote">
+                第3行 Die ganze Welt ist nur ein enger,（11音节）/ 第19行 königlich durch nachtentrissne Luft, hoch
+                übern Strom.
+              </p>
+              <div class="grammar-item__body">
+                本诗每行可达11音节以上，成对押韵被自由韵律取代。这是全站从未出现过的诗行形态。长行不是把句子拉长，而是把感官材料不加整理地并置（无连词并列
+                Asyndeton +
+                名词堆叠）。与本站《罗马的喷泉》（编号26）的"音节数作为结构手段"（末行骤缩至四音节）构成反面极端：一首把行缩到极致，一首把行拉到极致。两页必须互链。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">
+                无连词并列（Asyndeton）与名词化风格 —— 与《世界末日》Reihungsstil 对照
+              </h3>
+              <p class="grammar-item__quote">dampfend, strömend ... / Stille. Nacht. Besinnung. Einkehr. Kommunion.</p>
+              <div class="grammar-item__body">
+                本诗前半用大量无连词并列（Asyndeton）、名词堆叠、现在分词串（dampfend/strömend/taumelnd/bleichend）把感官材料堆成长行；末段则切成等长单词（Stille.
+                Nacht. Besinnung …）。与本站《世界末日》（编号33，1911年）的 Reihungsstil
+                是同一时期（1910—1914）的两种解法：一首把句子切成八段等长主句，一首把句子拉成一条不断的线、再切成单词。两页对照。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">现在分词作状语的连锁使用</h3>
+              <p class="grammar-item__quote">
+                dampfend, strömend … / taumeln … verirrt, trostlos vereinsamt … / bleichend, tot
+              </p>
+              <div class="grammar-item__body">
+                本诗大量使用现在分词（dampfend/strömend/bleichend）与过去分词（verirrt/vereinsamt/aufgehoben）作插入状语，连锁堆积，造成绵延不绝的动感。与本站《罗马的喷泉》（编号26，"现在分词作插入状语"一节）对照。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              恩斯特·施塔德勒（1883—1914）是德语早期表现主义的重要诗人，生于阿尔萨斯。他曾翻译惠特曼《草叶集》，惠特曼的自由长行深刻影响了他的诗——本诗的长行（Langzeile）即其来路。（惠特曼影响的具体证据，待进一步核实。）
+            </p>
+            <p>
+              《夜行科隆莱茵桥》是他的代表作，收入1914年诗集《Der
+              Aufbruch》（"出发/觉醒"）。诗写一次夜间列车过莱茵桥的经历：黑暗—隧道—城市灯火—过桥的狂喜—再入黑暗—最终的孤寂与"沉沦"。它的形式是表现主义中最极端的长行诗：每行绵延不绝，感官材料无连词地堆叠，末段则切成等长单词。施塔德勒对现代技术的态度不是批判，而是"王者般的狂喜"（königlich）——这与海姆（编号37《城市之神》）把都市写成吃人之神形成对照。
+            </p>
+            <p>
+              施塔德勒1914年10月30日死于伊普尔附近的一战战场，与海姆、特拉克尔、施特拉姆同属表现主义早期夭折的一代。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1)
+              长行（Langzeile）的绵延感译文尽量以长句保留，但汉语无德语那样的嵌套能力，部分长行略作断句；(2)
+              无连词并列（dampfend, strömend …）译文保留逗号罗列；(3) 末段单词罗列（Stille. Nacht. Besinnung.
+              …）译文照办（静默。夜。沉思。内省。圣餐。）；(4)
+              自造复合词（nachtumschienter、nachtentrissne）译文直译并注。本诗与本站《罗马的喷泉》（行长极端反面）、《世界末日》（句法三阶段）构成表现主义形式的三种解法，建议对照。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Zeno.org — Stadler: Fahrt über die Kölner Rheinbrücke bei Nacht（Dichtungen Bd.1, 1954,
+                S.160–162）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Stadler,+Ernst/Gedichte/Der+Aufbruch/Die+Spiegel/Fahrt+%C3%BCber+die+K%C3%B6lner+Rheinbr%C3%BCcke+bei+Nacht"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Stadler,+Ernst/Gedichte/Der+Aufbruch/Die+Spiegel/Fahrt+%C3%BCber+die+K%C3%B6lner+Rheinbr%C3%BCcke+bei+Nacht</a
+              >
+              <span class="source-citation"
+                >Ernst Stadler: Dichtungen, Band 1 (Der Aufbruch), Hamburg o.J. [1954], S. 160–162（Der Aufbruch 首版
+                Kurt Wolff, Leipzig 1914）</span
+              >
+              <span class="source-note"
+                >一级来源（《Der Aufbruch》全集本，标注页码）。本站正文据此。本次 Zeno
+                主机拒绝连接，版次页码据著录。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Fahrt über die Kölner Rheinbrücke bei Nacht</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/fahrt-ueber-die-koelner-rheinbruecke-bei-nacht.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/fahrt-ueber-die-koelner-rheinbruecke-bei-nacht.html</a
+              >
+              <span class="source-citation">现代通行文本（reading text）</span>
+              <span class="source-note">三级来源（possel 组）。用于核对文本与省略号字形（gedichte7 用 … 单符）。</span>
+            </li>
+            <li>
+              <span class="source-name">aphorismen.de — Fahrt über die Kölner Rheinbrücke bei Nacht</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a class="source-url" href="https://www.aphorismen.de/gedicht/128580" target="_blank" rel="noopener"
+                >https://www.aphorismen.de/gedicht/128580</a
+              >
+              <span class="source-citation">现代通行文本</span>
+              <span class="source-note"
+                >二级来源（独立运营方）。用于核对文本；省略号/破折号字形与 Zeno/gedichte7 略有出入（见异文）。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文以 Zeno.org《施塔德勒著作》第1卷（Der
+              Aufbruch，1954，S.160–162）为一级来源著录（本次主机拒绝连接），读法由两个直接抓取的独立来源交叉确认：gedichte7.de（三级）、aphorismen.de（二级）。34
+              行、4 节（10/6/6/12）——用词一致。
+            </p>
+            <p>
+              【分节与省略号异文】(1) 分节依评注本（Zeno）的段落停顿：在"nur sekundenweis …"后、在"Eine Beklemmung singt
+              im Blut."后、在收束段前断节；gedichte7 另在"Salut von
+              Schiffen"前多一断（5节）。本站从评注本的4节（10/6/6/12）。(2) 省略号：Zeno 评注本作三点 spaced
+              dots（…）；gedichte7 作单符省略号（…）；aphorismen 作两点（..）。(3) 破折号："tot –" Zeno/gedichte7 作
+              en-dash，aphorismen 作 hyphen。用词无别。
+            </p>
+            <p>
+              【自造复合词】nachtumschienter（被夜色上甲的）、nachtentrissne（从夜中夺走的）为施塔德勒的表现主义复合造词，各源一致。
+            </p>
+            <p>
+              【待进一步核实】(1) 惠特曼影响的具体证据（施塔德勒译《草叶集》，但长行是否直接源自惠特曼，待回核）；(2)
+              阵亡地点与日期（1914年10月30日，伊普尔附近，通行说法，未回核一手）；(3) Zeno
+              主机本次拒绝连接，页码据著录，待恢复后补抓。
+            </p>
+            <p>【公版】施塔德勒1914年阵亡，公版起始年 = 1914 + 71 = 1985。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / possel / aphorismen）、D（含一级来源：Zeno 全集本
+              S.160–162）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Ernst Stadler</li>
+            <li>确认出处：Der Aufbruch 1914 / Dichtungen Bd.1 S.160–162</li>
+            <li>核对行数（34行，4节 10/6/6/12）</li>
+            <li>长行（Langzeile）说明 + 音节计数</li>
+            <li>无连词并列与《世界末日》Reihungsstil 对照</li>
+            <li>现在分词连锁与《罗马的喷泉》对照</li>
+            <li>记录分节与省略号异文</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1914 + 71 = 1985</li>
+            <li>惠特曼影响标注待核</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查（长行布局）</li>
+            <li class="pending">Zeno 恢复后补抓快照复核</li>
+            <li class="pending">回核惠特曼影响与阵亡细节</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

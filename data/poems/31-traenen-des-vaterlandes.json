@@ -251,7 +251,7 @@
     {
       "title": "17世纪的比较词 denn（= als）",
       "quote": "ja mehr denn ganz verheeret … Was grimmer denn die Pest",
-      "body": "在早期新高地德语中，denn 与 als 都可用于比较（\"größer denn ich\"）。18世纪以后分工固定：als 用于比较，denn 用于因果连词（\"因为\"）与语气词。今日 denn 表比较只残存于 \"mehr denn je\"（甚于以往）这一固定表达中。本诗两次使用比较义的 denn，若误读成\"因为\"，句子会完全不通。"
+      "body": "在早期新高地德语中，denn 与 als 都可用于比较（\"größer denn ich\"）。18世纪以后分工固定：als 用于比较，denn 用于因果连词（\"因为\"）与语气词。今日 denn 表比较只残存于 \"mehr denn je\"（甚于以往）这一固定表达中。本诗两次使用比较义的 denn（第1、13行），若误读成\"因为\"，句子会完全不通。"
     },
     {
       "title": "省略助动词的被动从句",
@@ -387,6 +387,13 @@
     {
       "label": "为1663年最后手定版再找一个独立的一级来源（现仅 Wikipedia 一家转录）",
       "done": true
+    }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "die-beiden",
+      "needle": "Ihr Kinn und Mund glich seinem Rand",
+      "context": "《他们两个》"
     }
   ]
 }

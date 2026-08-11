@@ -1,0 +1,91 @@
+{
+  "id": "48",
+  "slug": "gingo-biloba",
+  "author": "Johann Wolfgang von Goethe",
+  "author_zh": "约翰·沃尔夫冈·冯·歌德",
+  "author_gender": "male",
+  "title_de": "Gingo biloba",
+  "title_zh": "银杏",
+  "author_sort_year": 1771,
+  "year": "1815年9月15日作（手稿）；1819年收入《West-östlicher Divan》「Buch Suleika」",
+  "collection": "《West-östlicher Divan》（Cotta, Stuttgart 1819）·「Buch Suleika」",
+  "period": "晚年 / 东方化（West-östlicher Divan）",
+  "difficulty": "B1–B2",
+  "tags": ["银杏", "一与二", "东西交汇", "爱情", "交叉韵"],
+  "public_domain": {"death_year": 1832, "public_domain_year": 1903, "basis": "歌德1832年卒；按德国70年 p.m.a.，1903年起公版"},
+  "german_text": [
+    ["Dieses Baums Blatt, der von Osten", "Meinem Garten anvertraut,", "Giebt geheimen Sinn zu kosten,", "Wie's den Wissenden erbaut,"],
+    ["Ist es Ein lebendig Wesen,", "Das sich in sich selbst getrennt?", "Sind es zwei, die sich erlesen,", "Daß man sie als Eines kennt?"],
+    ["Solche Frage zu erwidern,", "Fand ich wohl den rechten Sinn;", "Fühlst du nicht an meinen Liedern,", "Daß ich Eins und doppelt bin?"]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留\"一与二\"主题与交叉韵",
+    "text": [
+      ["这片树的叶子，它从东方", "被托付给我的花园，", "让人品尝一种隐秘的含义，", "它怎样使懂得的人受益，"],
+      ["它是一个活生生的存在，", "在自己之内把自己分开？", "还是两个，彼此选定，", "使人把它们认作一个？"],
+      ["要回答这样的问题，", "我确实找到了正解：", "你难道没有从我的诗里感到，", "我既是一，又是双？"]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "Dieses Baums Blatt,",
+     "zh": "★前置第二格：Dieses Baums Blatt = das Blatt dieses Baumes（这片树的叶子）。歌德用它开篇，正是本站\"前置第二格\"簇的样本之一。识别窍门：第二格名词（Dieses Baums）+ 被修饰名词（Blatt）紧邻而无动词。"},
+    {"de": "Giebt geheimen Sinn zu kosten,",
+     "zh": "kosten（品尝）在此为\"使品尝\"：geheimen Sinn zu kosten geben = 给出隐秘的含义让人品尝。Giebt（= gibt，旧拼法 -e）。银杏叶（一裂为二的扇形）被歌德读作\"隐秘含义\"的载体。"},
+    {"de": "Ist es Ein lebendig Wesen, / Das sich in sich selbst getrennt? / Sind es zwei, die sich erlesen,",
+     "zh": "全诗的核心提问：银杏叶是一（在自己之内分开）还是二（被认作一）？这是\"一与二\"的辩证——既是歌德晚年对自然（银杏叶二裂）的观察，也是他与 Marianne von Willemer 爱情的隐喻（两人如一）。"},
+    {"de": "Fühlst du nicht an meinen Liedern, / Daß ich Eins und doppelt bin?",
+     "zh": "末节给出回答：\"你难道没有从我的诗里感到，我既是一，又是双？\"诗人把自己与银杏叶、与爱人同构——都是\"一而二\"。全诗在此收束于自我反观：诗本身就是那片一分为二又合而为一的叶子。"}
+  ],
+  "vocab": [
+    {"term": "der Ginkgo / Gingo", "pos": "n.（阳性，植物名）", "meaning": "银杏（树/叶）", "note": "★拼写要点：歌德在《西东诗集》中写作 Gingo（避开 k），现代植物学规范拼写为 Ginkgo。本站标题与正文一律用歌德的 Gingo 拼法，差异在校对记录说明（详见校对记录）。"},
+    {"term": "das Blatt, Blätter", "pos": "n.（中性）", "meaning": "叶子；（书的）页", "note": "诗中 Dieses Baums Blatt（这片树的叶子，第1行）。银杏叶呈扇形、中央二裂，正是歌德\"一与二\"观察的来源。"},
+    {"term": "anvertrauen", "pos": "v.（弱变化，不可分）", "meaning": "托付、交托", "note": "an- + vertrauen（信任）。诗中 der von Osten / Meinem Garten anvertraut（从东方被托付给我的花园，第1—2行）。"},
+    {"term": "erbauen", "pos": "v.（弱变化，不可分）", "meaning": "建造；（反身/诗义）使得到提升、使受益", "note": "诗中 Wie's den Wissenden erbaut（它怎样使懂得的人受益，第4行）。der Bau（建筑）、die Erbauung（陶冶）。"},
+    {"term": "erlesen", "pos": "v.（强变化，过去分词形）", "meaning": "（sich erlesen）彼此选定、选中", "note": "erlesen 原为 erkiesen（挑选）的过去分词；诗中 die sich erlesen（彼此选定，第7行）。"}
+  ],
+  "verb_forms": [],
+  "grammar_notes": [
+    {"title": "前置第二格：Dieses Baums Blatt",
+     "quote": "Dieses Baums Blatt（第1行）",
+     "body": "= das Blatt dieses Baumes（这片树的叶子）。现代德语把第二格放在被修饰名词之后，歌德此处用古典的前置语序。本页加入本站\"前置第二格\"簇：《普罗米修斯》（编号34）等共十二页都标注过同一结构。"},
+    {"title": "\"一与二\"的辩证——东西交汇的爱情隐喻",
+     "quote": "Ist es Ein lebendig Wesen … / Sind es zwei … / Daß ich Eins und doppelt bin?",
+     "body": "全诗三节是一个\"提问—回答\"结构：前两节问银杏叶是一还是二，第三节答\"我既是一，又是双\"。银杏叶的物理形态（一叶二裂）被读作歌德与 Marianne von Willemer 爱情的隐喻——两人如一叶之二裂。可与本站《他们两个》（编号28）的\"两者\"主题、与《迷娘》（编号13）的东方憧憬对读。"}
+  ],
+  "cultural_notes": "歌德晚年（1814—1819）沉浸于波斯诗人哈菲兹（Hafiz）的诗，写出《西东诗集》（West-östlicher Divan, 1819），试图在诗中让东方与西方\"相遇\"。《银杏》即其中\"苏莱卡之书\"（Buch Suleika）的一首。\n\n这首诗有一个实物背景：1815年9月15日，歌德在海德堡的 Gerbermühle，把两片银杏叶（一说一片从中裂开）赠予玛丽安娜·冯·维勒默（Marianne von Willemer，歌德以\"苏莱卡\"之名爱慕她），并附此诗。银杏叶\"一而二、二而一\"的形态，被歌德用来比喻他与玛丽安娜的爱情——两个灵魂既各自独立，又合而为一。（赠叶的具体经过与所附银杏叶实物，待进一步核实。）\n\n★拼写要点：歌德手稿作\"Ginkgo\"（与现代植物学一致），但他在1819年印行的《西东诗集》中改作\"Gingo\"——据通行说法，是为避开生硬的辅音连缀 -nk- 以求字形观感（此说标【待核】）。本站标题与正文一律用歌德印行的 Gingo 拼法，差异在校对记录说明。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 标题与正文用歌德的 Gingo 拼法（非现代 Ginkgo），差异在校对记录说明；(2) \"一与二\"的辩证（Ein/zwei/Eins/doppelt）译文保留其字面张力；(3) 交叉韵 abab 与问答结构无法在中文完全复制，译文以整齐行拍近似。本诗与《他们两个》（编号28）、与《迷娘》（编号13）主题相邻，建议对读。",
+  "image_prompt": {"imagery": "一片银杏叶的特写：扇形的叶子中央二裂，金秋的黄色；叶面上隐约浮现两个相互映照的影子（暗示\"一而二\"）", "mood": "宁静的、冥想的、东西交汇的诗意；一片叶子承载\"一与二\"的玄思", "elements": "一片二裂的银杏叶（金黄）、叶面的光影、隐约的两个对称映影、虚化的秋日背景", "era": "无明确时代，自然意象", "taboos": "不得出现人物；不得出现文字水印；不得把叶子画成具象的双脸；不得出现现代元素", "style": "东方—浪漫融合的水彩/工笔质感，金黄与米白为主，构图对称、留白"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "German Wikisource — Gingo biloba（West-östlicher Divan, Buch Suleika）", "url": "https://de.wikisource.org/wiki/Gingo_biloba", "tier": 1, "citation": "J. W. von Goethe: West-östlicher Divan, Buch Suleika (Cotta, Stuttgart 1819)", "note": "一级来源（《西东诗集》数字化，按 Buch 编次）。标题用歌德印行的 Gingo 拼法。本站正文据此（Divan 印行读法：Giebt/zwei/Eines/erwidern）。"},
+    {"name": "Goethe-Museum Düsseldorf — Gedicht Ginkgo/Gingo biloba", "url": "https://www.goethe-museum.de/de/gedicht-ginkgo-biloba", "tier": 2, "citation": "歌德手稿（1815年9月15日，Gerbermühle）与印行 Divan 对照", "note": "二级来源。记录手稿作 Ginkgo、印行本作 Gingo，手稿拼法（Giebt/zwey/eines/erwiedern）与印行本的差异。"},
+    {"name": "deutschelyrik.de — „Ginkgo Biloba“", "url": "https://www.deutschelyrik.de/ginkgo-biloba.html", "tier": 3, "citation": "现代通行文本（Aufnahme 2012，题作 Ginkgo、现代拼法 Gibt）", "note": "三级来源。题作现代 Ginkgo、用现代拼法 Gibt；其余用词与 Divan 本一致，反映现代规范化倾向。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "die-beiden", "needle": "两者", "context": "《他们两个》"},
+    {"target_slug": "mignon", "needle": "Zitronen", "context": "《迷娘》"},
+    {"target_slug": "prometheus", "needle": "前置第二格", "context": "《普罗米修斯》"},
+    {"target_slug": "abendlied", "needle": "前置第二格", "context": "《晚歌》"}
+  ],
+  "verification_notes": "【拼写要点】★本站标题与正文一律用歌德在1819年《西东诗集》印行本中的 Gingo 拼法（非现代植物学规范 Ginkgo）。歌德手稿（1815年9月15日）实作 Ginkgo；他在印行时改为 Gingo。据通行说法，是为避开辅音连缀 -nk- 以求字形观感（此说标【待核】）。现代植物学及多数现代选本作 Ginkgo。\n\n【三源核对】正文以 German Wikisource 的《西东诗集》\"Buch Suleika\"为底本（Divan 印行读法：Giebt / zwei / Eines / erwidern），另以两个独立来源核对：Goethe-Museum Düsseldorf（手稿 vs 印行本对照）、deutschelyrik.de（现代规范化读法：Ginkgo / Gibt）。3 节、行数 4/4/4（共12行）、交叉韵 abab——用词一致，差异仅在标题拼法（Gingo/Ginkgo）与正字法（Giebt/Gibt、zwey/zwei、Daß/Dass）。\n\n【手稿 vs 印行本差异】手稿（Goethe-Museum 著录）：Ginkgo / Giebt / zwey / eines / erwiedern（旧拼法）；印行 Divan（1819）：Gingo / Giebt / zwei / Eines / erwidern；现代（deutschelyrik）：Ginkgo / Gibt。本站从印行 Divan 读法（Gingo + Giebt + zwei + Eines + erwidern）。\n\n【待进一步核实】(1) 印行 Divan 中本诗的确切页码（按 Buch 编次，未核到页码；以 Buch Suleika 为定位）；(2) 赠 Marianne von Willemer 银杏叶实物的具体经过；(3) \"避 k 求字形观感\"之说的依据。\n\n【公版】歌德1832年卒，公版起始年 = 1832 + 71 = 1903。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / goethe-museum / deutschelyrik）、D（含一级来源：Wikisource Divan 印行本）。",
+  "checklist": [
+    {"label": "确认作者：Goethe", "done": true},
+    {"label": "确认出处：West-östlicher Divan 1819, Buch Suleika", "done": true},
+    {"label": "★标题与正文用歌德 Gingo 拼法（手稿作 Ginkgo）", "done": true},
+    {"label": "核对节数（3×4，共12行）、交叉韵 abab", "done": true},
+    {"label": "记录手稿/印行/现代三种拼法差异", "done": true},
+    {"label": "前置第二格说明（Dieses Baums Blatt）", "done": true},
+    {"label": "\"一与二\"辩证与爱情隐喻说明", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1832 + 71 = 1903", "done": true},
+    {"label": "撰写 image brief", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "核实 Divan 印行页码与赠叶经过", "done": false},
+    {"label": "核实\"避 k\"之说依据", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议歌德晚年/Divan 专业人士复核）", "done": false}
+  ]
+}

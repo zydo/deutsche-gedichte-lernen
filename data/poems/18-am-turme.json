@@ -3,6 +3,7 @@
   "slug": "am-turme",
   "author": "Annette von Droste-Hülshoff",
   "author_zh": "安内特·冯·德罗斯特-徽尔斯霍夫",
+  "author_gender": "female",
   "title_de": "Am Turme",
   "title_zh": "在塔上",
   "year": "1841/42年冬春间作于梅尔斯堡，1842年8月25日首刊于《为受教育读者的晨报》（Morgenblatt für gebildete Leser）",
@@ -298,7 +299,7 @@
     {
       "title": "不带 wenn 的虚拟条件句",
       "quote": "Wär ich ein Jäger auf freier Flur, … Wär ich ein Mann doch mindestens nur, / So würde der Himmel mir raten;",
-      "body": "德语条件从句可以省去连词 wenn，把变位动词提到句首：\"Wäre ich ein Mann, so würde …\" = \"Wenn ich ein Mann wäre, würde …\"。这种倒装条件句语体较正式、也更有力度，主句常以 so 或 dann 引导。本诗第四节连用两次，构成全诗情感的转折点。"
+      "body": "德语条件从句可以省去连词 wenn，把变位动词提到句首：\"Wäre ich ein Mann, so würde …\" = \"Wenn ich ein Mann wäre, würde …\"。这种倒装条件句语体较正式、也更有力度，主句常以 so 或 dann 引导。本诗第四节连用两次（第25、27行），构成全诗情感的转折点。"
     },
     {
       "title": "使役动词 lassen + 不带 zu 的不定式",

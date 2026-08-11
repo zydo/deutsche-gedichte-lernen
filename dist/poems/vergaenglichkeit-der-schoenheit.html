@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Vergänglichkeit der Schönheit · 美之易逝 — Christian Hoffmann von Hoffmannswaldau | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Vergänglichkeit der Schönheit（美之易逝）— Christian Hoffmann von Hoffmannswaldau。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="nachtgedanken.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">夜思</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="cherubinischer-wandersmann.html" rel="next"
+            ><span class="poem-nav__title">智天使漫游者（选 3 则）</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de poem-titleblock__de--long">Vergänglichkeit der Schönheit</h1>
+          <p class="poem-titleblock__author">Christian Hoffmann von Hoffmannswaldau</p>
+          <p class="poem-titleblock__zh">美之易逝</p>
+          <p class="poem-titleblock__author-zh">克里斯蒂安·霍夫曼·冯·霍夫曼斯瓦尔道</p>
+          <div class="poem-titleblock__biblio">
+            <p>
+              《Herrn von Hoffmannswaldau und andrer Deutschen auserlesener … Gedichte Erster Theil》（Neukirch, 1695）·
+              第二西里西亚派 / 华丽风格
+            </p>
+            <p>巴洛克（第二西里西亚派 / galante Dichtung）</p>
+            <p>
+              约17世纪中期作；生前未刊，1695年由 Benjamin Neukirch 编入《Herrn von Hoffmannswaldau und andrer Deutschen
+              … Gedichte》第一卷（系年待核）
+            </p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2–C1</span>
+            <span class="tag">十四行诗</span>
+            <span class="tag">亚历山大体</span>
+            <span class="tag">vanitas</span>
+            <span class="tag">肉身</span>
+            <span class="tag">华丽风格</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一位无名贵妇的半身像逐渐石化/沙化：肌肤如雪融化成沙、嘴唇的珊瑚色褪去、金发失去光泽；唯独胸口处一颗钻石般的心脏仍在发光
+              </dd>
+              <dt>情绪</dt>
+              <dd>华美中的衰败；肉身之美正在瓦解，唯独心不变</dd>
+              <dt>画面元素</dt>
+              <dd>
+                半身肖像（无面部，仅肩颈胸手）、肌肤化为沙的局部、褪色的唇、失光的发、胸口发光的钻石心脏、深暗背景
+              </dd>
+              <dt>时代感</dt>
+              <dd>17世纪巴洛克宫廷肖像，服饰与珠宝为该时代样式</dd>
+              <dt>推荐风格</dt>
+              <dd>巴洛克宫廷肖像—虚空画融合，明暗对比强烈，色调金棕渐变为灰沙，唯独心脏处钻石白光</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得出现完整可辨的面孔；不得出现骷髅/沙漏/蜡烛等标准 vanitas
+                静物符号（本诗未用）；不得裸露；不得出现文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Es wird der bleiche Tod mit seiner kalten Hand<sup class="refmark"
+                      ><a href="#note-1">1</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">苍白的死神终会用他冰冷的手</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Dir endlich mit der Zeit um deine Brüste streichen,<sup class="refmark"
+                      ><a href="#note-1">1</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">最终随着时间抚摸你的双乳，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Der liebliche Korall der Lippen wird verbleichen;<sup class="refmark"
+                      ><a href="#note-2">2</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">嘴唇那可爱的珊瑚将会褪色；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Der Schultern warmer Schnee wird werden kalter Sand,<sup class="refmark"
+                      ><a href="#note-3">3</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">双肩那温暖的雪将会变成冰冷的沙，</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Der Augen süßer Blitz, die Kräfte deiner Hand,</span>
+                </div>
+                <div class="pline__zh">双眼那甜美的闪电、你双手的力量，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Für welchen solches fällt, die werden zeitlich weichen,</span>
+                </div>
+                <div class="pline__zh">——这一切若坍塌，它们都会随时间消退，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Das Haar, das itzund kann des Goldes Glanz erreichen,<sup class="refmark"
+                      ><a href="#note-4">4</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">那此刻能匹及黄金光泽的头发，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Tilgt endlich Tag und Jahr als ein gemeines Band.</span>
+                </div>
+                <div class="pline__zh">终将被日与年像抹去一道平常束带那样抹去。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Der wohlgesetzte Fuß, die lieblichen Gebärden,</span>
+                </div>
+                <div class="pline__zh">那姿态优美的脚、那可爱的举止，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Die werden teils zu Staub, teils nichts und nichtig werden,</span>
+                </div>
+                <div class="pline__zh">它们一部分将化为尘土，一部分化为虚无，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Denn opfert keiner mehr der Gottheit deiner Pracht.<sup class="refmark"
+                      ><a href="#note-5">5</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">于是再没有人向你的华美的神灵献祭。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">Dies und noch mehr als dies muss endlich untergehen,</span>
+                </div>
+                <div class="pline__zh">这一切以及比这更多的，终归要消逝，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Dein Herz kann allein zu aller Zeit bestehen,<sup class="refmark"
+                      ><a href="#note-6">6</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">唯独你的心能够万古长存，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Dieweil es die Natur aus Diamant gemacht.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">因为自然用钻石造了它。</div>
+              </div>
+            </div>
+            <p class="translation-meta">
+              本站学习译文（AI 辅助），直译，保留亚历山大体 abba abba ccd eed 的十四行结构与逐器官具体化的修辞
+            </p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">
+                Es wird der bleiche Tod mit seiner kalten Hand / Dir endlich mit der Zeit um deine Brüste streichen,
+              </p>
+              <p class="lnote__zh">
+                全诗的策略：把
+                vanitas（虚空）的抽象命题"逐器官具体化"。开篇即"苍白的死神终会抚摸你的双乳"——不是泛泛说"美会消逝"，而是一一列举身体的部位（乳房、唇、肩、眼、手、发、足、举止）。这种肉身的、近乎情色的铺陈，是"华丽风格"（Schwulst）的特征。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Der liebliche Korall der Lippen wird verbleichen;</p>
+              <p class="lnote__zh">
+                verbleichen（变苍白、褪色）——嘴唇被比作珊瑚（Korall），珊瑚的红色将褪。注意与
+                verwesen（腐烂）的区分：verbleichen 指颜色褪去，verwesen 指有机体腐败（参见词汇表 verwesen/der Verweser
+                同形异义）。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Der Schultern warmer Schnee wird werden kalter Sand,</p>
+              <p class="lnote__zh">
+                双肩的"温暖的雪"将变成"冰冷的沙"——雪（白皙肌肤）变沙（粗糙）。每组器官都给一个"由美到丑"的转化。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Das Haar, das itzund kann des Goldes Glanz erreichen,</p>
+              <p class="lnote__zh">
+                itzund（此刻、如今）是 itzt 的巴洛克扩展形（=
+                jetzt，见17世纪正字法表）。头发此刻能匹及黄金的光泽，终将被时间抹去。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Denn opfert keiner mehr der Gottheit deiner Pracht.</p>
+              <p class="lnote__zh">
+                转折（Volta）前的逻辑：一旦美消逝，再没有人向"你的华美的神灵"（der Gottheit deiner
+                Pracht，即把美人的美貌比作值得献祭的神）献祭。美即神圣——而它会衰败。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">
+                Dein Herz kann allein zu aller Zeit bestehen, / Dieweil es die Natur aus Diamant gemacht.
+              </p>
+              <p class="lnote__zh">
+                末两行格言式收束（与《致自己》编号32
+                末两行同类手法）：唯独心能万古长存，因为自然用钻石造了它。整首十四行的肉身铺陈在此被一个反转收束——美会消逝，但"心"（内在的、不可见的）是钻石做的。这是巴洛克"虚空"中留出的唯一救赎。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Vergänglichkeit</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">易逝性、无常</div>
+              <div class="vocab-card__note">
+                vergehen（消逝）的名词化，巴洛克核心概念。诗题即此。与
+                vanitas（虚空）同义、与《一切都是虚空》（编号30）的 Eitelkeit 同族。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">bleich</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">苍白的</div>
+              <div class="vocab-card__note">动词 erbleichen（变苍白）。诗中 der bleiche Tod（苍白的死神，第1行）。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Zunder, -</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">引火物、火绒</div>
+              <div class="vocab-card__note">
+                易燃的引火物；比喻"易引燃之物"。与本诗 vanitas 主题相邻（肉体之美的"易燃"）。诗中虽未单用
+                Zunder，收入是因为其"易逝/易燃"义与 erbleichen/vergehen 词族相关。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">erbleichen</span></div>
+              <span class="vocab-card__pos">v.（强变化）</span>
+              <div class="vocab-card__meaning">变苍白、褪色</div>
+              <div class="vocab-card__note">
+                变位 erbleicht – erblich – ist erblichen。诗中 wird verbleichen（第3行，弱变化同义
+                verbleichen）。注意强变化 erbleichen（i–a–i）与弱变化 verbleichen 的区分。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Zier, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性，雅/古）</span>
+              <div class="vocab-card__meaning">装饰、华美</div>
+              <div class="vocab-card__note">
+                schmücken（装饰）的雅词。与 die Zierde（装饰）同源。诗中虽未单用 Zier，但"der Gottheit deiner
+                Pracht"即一种 Zier。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">verwesen vs der Verweser</span></div>
+              <span class="vocab-card__pos">——</span>
+              <div class="vocab-card__meaning">verwesen（腐烂）/ der Verweser（代理人）——同形异义</div>
+              <div class="vocab-card__note">
+                ★同形异义：verwesen（腐烂，强变化 verwirkt/verwest，ist verwesen）的第三人称单数 verwest 与 der
+                Verweser（代理人、临时代管）形近。诗中虽用 verbleichen 不用 verwesen，收入以提醒这一经典混淆。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">itzund</span></div>
+              <span class="vocab-card__pos">adv.（巴洛克）</span>
+              <div class="vocab-card__meaning">此刻、如今（= jetzt）</div>
+              <div class="vocab-card__note">
+                = jetzt 的巴洛克扩展形（itz/itzt/itzund/itztund）。诗中 das itzund kann（第7行）。详见17世纪正字法表。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <p class="prose">本诗中未标注需要特别说明的不规则动词变位。</p>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">亚历山大体与十四行结构（接《致自己》《祖国之泪》）</h3>
+              <p class="grammar-item__quote">
+                全诗 4+4+3+3 行，韵式 abba abba ccd eed，亚历山大体（六音步抑扬格 + 第6音节后 Zäsur）
+              </p>
+              <div class="grammar-item__body">
+                本诗是彼特拉克式十四行：两个四行诗节（Quartett，抱韵 abba）+ 两个三行诗节（Terzett，ccd
+                eed）。诗体为亚历山大体——六音步抑扬格，第6音节后有固定中间停顿（Zäsur），行末阴阳韵交替。本页是全站亚历山大体的样本之一，与本站《致自己》（编号32，斯多亚自持）、《祖国之泪》（编号31，战争虚空）同体，但主题是肉身之美——三首同体而异题。可与《致自己》末两行的格言式收束对照（同为亚历山大体十四行的对句收束）。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">17世纪正字法总表（全站汇总，散在各巴洛克页的零散说明归于此）</h3>
+              <p class="grammar-item__quote">原刊（Neukirch 1695）vs 现代通行文本的系统性差异</p>
+              <div class="grammar-item__body">
+                本页把散在本站《一切都是虚空》（编号30）、《祖国之泪》（编号31）、《致自己》（编号32）三页的零散正字法说明汇总为一张表，供巴洛克文本阅读参照：(1)
+                ey/ei：原刊 ey（frey/sey/allein），现代 ei（frei/sei/allein）；(2) th/t：原刊 th（thun/That），现代
+                t（tun/Tat）；(3) ß/ss：原刊 ß 通用（muß/laß），现代按音长分（muß/lass）；(4)
+                Virgel（/）代逗号：原刊用斜线表诗行内停顿，现代改逗号；(5)
+                名词大写尚未定型：原刊名词多小写（tod/hand/zeit），现代一律大写；(6) umb/um、itzt/jetzt：原刊
+                umb/itzt/itzund，现代 um/jetzt/jetztund。本页与上述三页构成巴洛克正字法参照系，建议互链。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">巴洛克的形容词堆叠与同义反复（Häufung）</h3>
+              <p class="grammar-item__quote">
+                bleiche Tod … kalten Hand … liebliche Korall … warmer Schnee … süßer Blitz …
+              </p>
+              <div class="grammar-item__body">
+                华丽风格（Schwulst / galante
+                Dichtung）爱用密集的形容词与同义反复制造铺陈感：每一器官都配一个华丽的修饰语（苍白的死、冰冷的手、可爱的珊瑚、温暖的雪、甜美的闪电）。与本站《一切都是虚空》（编号30）的抽象罗列构成方法论对照：格吕菲乌斯用抽象范畴罗列虚空（城池/草地/青铜/大理石），霍夫曼斯瓦尔道用身体器官的具体铺陈虚空——两种
+                vanitas 路径。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              克里斯蒂安·霍夫曼·冯·霍夫曼斯瓦尔道（1616—1679）是德语巴洛克"第二西里西亚派"的代表，与格吕菲乌斯（本站编号30、31）齐名。但二人路数相反：格吕菲乌斯写战争与虚空的严肃宗教诗，霍夫曼斯瓦尔道写"华丽风格"（galante
+              Dichtung / Schwulst）——肉体的、修辞铺陈的、近乎情色的诗。
+            </p>
+            <p>
+              《美之易逝》是他的代表作。它生前未刊，1695年由其侄 Benjamin Neukirch
+              编入《霍夫曼斯瓦尔道及其他德语诗人诗选》第一卷。这首十四行把
+              vanitas（虚空）的抽象命题"逐器官具体化"：死会抚摸乳房、唇（珊瑚）会褪色、肩（雪）会变沙、眼（闪电）、手、发（金）、足、举止——每一项身体之美都被给一个"由美到丑"的转化。末两行反转：唯独心（Herz）是钻石做的，能万古长存。
+            </p>
+            <p>
+              本诗与本站《一切都是虚空》（编号30）是巴洛克 vanitas
+              的两极：一首抽象罗列（城/草/铜/石），一首肉身铺陈（乳/唇/肩/眼）——没有后者，巴洛克的图像是残缺的。它也是全站亚历山大体十四行的第三个样本（《致自己》《祖国之泪》之外），三首同体而异题。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文采用现代化正字法通行文本，原刊（Neukirch
+              1695）小写名词 + Virgel（/）代逗号的形态在17世纪正字法表与校对记录中完整给出；(2)
+              "逐器官具体化"的修辞译文保留（双乳/唇之珊瑚/肩之雪/眼之闪电）；(3)
+              末两行的格言式收束（"唯独心是钻石做的"）译文保留其反转语气。本诗与本站《一切都是虚空》（编号30）是巴洛克
+              vanitas 的两极，建议对照。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Zeno.org — Hoffmannswaldau: Vergänglichkeit der schönheit（Neukirch-Anthologie Bd.1, Niemeyer 1961
+                Nachdruck, S.46–47）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Hoffmannswaldau,+Christian+Hoffmann+von/Gedichte/Gedichte+aus+Neukirchs+Anthologie,+Bd.+1/Galante+Gedichte/Verg%C3%A4nglichkeit+der+sch%C3%B6nheit"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Hoffmannswaldau,+Christian+Hoffmann+von/Gedichte/Gedichte+aus+Neukirchs+Anthologie,+Bd.+1/Galante+Gedichte/Verg%C3%A4nglichkeit+der+sch%C3%B6nheit</a
+              >
+              <span class="source-citation"
+                >Herrn von Hoffmannswaldau und anderer Deutschen auserlesener … Gedichte Erster Theil (= Neukirchs
+                Anthologie), reprogr. Nachdruck Niemeyer/Metten, Tübingen 1961, S. 46–47（原刊1695/97）</span
+              >
+              <span class="source-note"
+                >一级来源（Neukirch 选集1961年影印再版，标注页码）。给出原刊正字法（小写名词、Virgel /
+                代逗号、umb/itzund/th 等旧拼法），本页正文据此现代化。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Vergänglichkeit der Schönheit“</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/vergaenglichkeit-der-schoenheit-14537.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/vergaenglichkeit-der-schoenheit-14537.html</a
+              >
+              <span class="source-citation">现代部分保留的巴洛克-混合文本（Aufnahme 2001）</span>
+              <span class="source-note">二级来源。给出部分保留旧拼法的混合文本（与 gedichte7 的全现代化有别）。</span>
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Vergänglichkeit der Schönheit</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/vergaenglichkeit-der-schoenheit.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/vergaenglichkeit-der-schoenheit.html</a
+              >
+              <span class="source-citation">现代通行文本（全现代化）</span>
+              <span class="source-note">三级来源（possel 组）。给出全现代化读法，用于确定本页的现代化通行文本。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【正字法与版本处理原则】本站正文采用现代化正字法的通行文本（面向学习者）；原刊（Neukirch 1695）的小写名词
+              + Virgel（/）+ 旧拼法形态在17世纪正字法表与本记录中完整给出。
+            </p>
+            <p>
+              【三源核对】原刊正字法以 Zeno.org 转写的 Neukirch
+              选集1961年影印再版（S.46–47）为一级来源（本页的现代化正文以 gedichte7 的全现代化读法为底本，原刊形态据
+              Zeno）。另两个独立来源：deutschelyrik.de（二级，部分保留旧拼法的混合文本）、gedichte7.de（三级，全现代化）。14
+              行、分节 4/4/3/3、韵式 abba abba ccd eed——一致；差异仅在现代化程度（deutschelyrik 部分保留 / gedichte7
+              全现代 / Zeno 原刊）。
+            </p>
+            <p>
+              【原刊 vs 现代 系统性差异】(1)
+              名词大小写：原刊小写（tod/hand/zeit/corall/lippen/sand/augen/haar/glanz/tag/jahr/band/fuß/staub/gottheit/pracht/hertze/natur/diamant），现代大写。(2)
+              拼写：umb→um、corall→Korall、kräffte→Kräfte、itzund→itzund（保留，lexical）、glantz→Glanz、süsser→süßer、theils→teils、Diß→Dies、hertze→Herz、kan→kann、diamant→Diamant。(3)
+              标点：原刊用 Virgel（/）代诗行内停顿（streichen/、blitz/ die kräffte、fällt/ die werden、Das haar/ das
+              itzund、fuß/ die lieblichen、staub/ theils nichts），现代改逗号。(4) 题名：原刊"Sonnet. Vergänglichkeit
+              der schönheit"（含 Sonnet 标签、小写 s），现代"Vergänglichkeit der Schönheit"（大写 S、去 Sonnet 标签）。
+            </p>
+            <p>
+              【待进一步核实】(1) 系年（约17世纪中期作，具体年份与首刊情境待核）；(2) Neukirch 1695 选集的编纂细节；(3)
+              1695年原版的逐字排印（本次据1961 Niemeyer 影印再版 + 三个现代转写，未直接核1695原版）；(4)
+              本诗的中译情况。
+            </p>
+            <p>【公版】Hoffmannswaldau 1679年卒，公版起始年 = 1679 + 71 = 1750。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik / possel）、D（含一级来源：Zeno
+              Neukirch 影印本 S.46–47）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Hoffmann von Hoffmannswaldau</li>
+            <li>确认出处：Neukirch 1695 / 1961 Niemeyer 影印 S.46–47</li>
+            <li>核对十四行 4/4/3/3、韵式 abba abba ccd eed、亚历山大体</li>
+            <li>正文现代化 + 原刊形态完整记录</li>
+            <li>★17世纪正字法总表（汇总各巴洛克页）</li>
+            <li>逐器官 vanitas 与《一切都是虚空》抽象罗列对照</li>
+            <li>verwesen/der Verweser 同形异义说明</li>
+            <li>亚历山大体三样本互链（an-sich / traenen）</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1679 + 71 = 1750</li>
+            <li>撰写 image brief</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">核实系年与 Neukirch 编纂细节</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议巴洛克/华丽风格专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

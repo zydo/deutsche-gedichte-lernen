@@ -516,6 +516,13 @@ main {
   color: var(--korrektur);
 }
 
+.tag--density {
+  border-color: var(--rule);
+  color: var(--ink-4);
+  text-transform: none;
+  font-variant-numeric: tabular-nums;
+}
+
 /* ======================= 诗歌详情页 ======================= */
 
 .poem-shell {
@@ -1433,6 +1440,32 @@ body.modal-open {
   display: block;
 }
 
+.source-tier {
+  display: inline-block;
+  margin-top: 0.32rem;
+  margin-right: 0.55rem;
+  padding: 0.08rem 0.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  color: var(--ink-3);
+}
+
+.source-tier--1 {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.source-citation {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--mono);
+  font-size: 0.73rem;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+
 .source-url {
   font-family: var(--mono);
   font-size: 0.76rem;
@@ -1717,6 +1750,16 @@ body.modal-open {
   padding-left: 1.6rem;
 }
 
+.parallel__bar--trilingual {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1.08fr) minmax(0, 1fr);
+  column-gap: 1.2rem;
+}
+
+.parallel__bar--trilingual span:nth-child(n + 2) {
+  border-left: 1px solid var(--rule-soft);
+  padding-left: 1.2rem;
+}
+
 .parallel .badge {
   margin-bottom: 1.4rem;
 }
@@ -1754,6 +1797,25 @@ body.modal-open {
   color: var(--ink-2);
   border-left: 1px solid var(--rule-soft);
   padding-left: 1.6rem;
+}
+
+.pline--trilingual {
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1.08fr) minmax(0, 1fr);
+  column-gap: 1.2rem;
+  align-items: start;
+}
+
+.pline__nhd {
+  font-family: var(--de);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+  border-left: 1px solid var(--rule-soft);
+  padding-left: 1.2rem;
+}
+
+.pline--trilingual .pline__zh {
+  padding-left: 1.2rem;
 }
 
 .parallel .translation-meta {

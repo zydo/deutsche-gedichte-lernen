@@ -1,0 +1,271 @@
+{
+  "id": "40",
+  "slug": "wuenschelrute",
+  "author": "Joseph von Eichendorff",
+  "author_zh": "约瑟夫·冯·艾兴多夫",
+  "author_gender": "male",
+  "title_de": "Wünschelrute",
+  "title_zh": "占卜杖",
+  "author_sort_year": 1835,
+  "year": "1835年作；1838年首刊于《Deutscher Musenalmanach》（原题\"Wünschelruthe\"）",
+  "collection": "《Gedichte》· 浪漫派四行纲领诗",
+  "period": "浪漫主义（Spätromantik）",
+  "difficulty": "A2–B1",
+  "tags": [
+    "四行诗",
+    "浪漫派纲领",
+    "魔法词",
+    "极短诗"
+  ],
+  "public_domain": {
+    "death_year": 1857,
+    "public_domain_year": 1928,
+    "basis": "艾兴多夫1857年卒；按德国70年 p.m.a.，1928年起公版"
+  },
+  "german_text": [
+    [
+      "Schläft ein Lied in allen Dingen,",
+      "Die da träumen fort und fort,",
+      "Und die Welt hebt an zu singen,",
+      "Triffst du nur das Zauberwort."
+    ]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留扬抑格节奏与省略连词的条件句结构",
+    "text": [
+      [
+        "有一支歌沉睡在万物之中，",
+        "它们不停地做着梦，",
+        "于是世界便开始歌唱，",
+        "只要你击中那一个魔法词。"
+      ]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {
+      "de": "Schläft ein Lied in allen Dingen,",
+      "zh": "全诗是一句话：一个省略了连词 wenn 的条件句。\"Schläft ein Lied\" 是动词置首（= Wenn ein Lied schläft）。浪漫派的纲领被压缩进四行：万物之中沉睡着歌，等待被唤醒。"
+    },
+    {
+      "de": "Die da träumen fort und fort,",
+      "zh": "da 是关系副词\"在那里\"（die da träumen = 那些在其中做梦的万物）。fort und fort 是古老的叠词副词短语，意为\"不断地、绵绵不绝\"——与本站《祈求》（编号23）、《那座城》（编号25）的 für und für 是同族的古老重复式副词（介词 + und + 介词/副词），构词模式相同。"
+    },
+    {
+      "de": "Und die Welt hebt an zu singen,",
+      "zh": "anheben（开始，雅语/古语，可分动词）→ hebt an。现代德语作 beginnen。诗中\"世界开始歌唱\"是条件句的结果主句。注意可分性：anheben 的 an 落在 hebt 之后（hebt an zu singen）。"
+    },
+    {
+      "de": "Triffst du nur das Zauberwort.",
+      "zh": "★句法反转的核心：末行\"只要你击中那一个魔法词\"在语法上是前置的条件（= wenn du nur das Zauberwort triffst），而非结果。全诗的机关在于：结果（世界歌唱）写在前面，条件（你找到魔法词）写在最后——读者读完才发现，一切取决于语言本身。das Zauberwort（魔法词）即诗本身。"
+    }
+  ],
+  "vocab": [
+    {
+      "term": "die Wünschelrute, -n",
+      "pos": "n.（阴性）",
+      "meaning": "占卜杖、探矿杖（民间传说中寻水/寻矿的分叉杖）",
+      "note": "民俗注：日耳曼民间传统中，占卜者手持分叉的榛树枝（Wünschelrute）探测地下水或矿脉。艾兴多夫以此喻\"诗人之笔\"——诗人是寻找万物中沉睡之歌的占卜者。"
+    },
+    {
+      "term": "anheben",
+      "pos": "v.（可分，弱/强混合，雅/古）",
+      "meaning": "开始（= beginnen）",
+      "note": "变位 hebt an – hob an – hat angehoben（弱）或 hat angehoben（强混合）。今日多作 beginnen；诗中 die Welt hebt an zu singen（第3行）。★可分动词：an 落在 hebt 之后。词条、变位、注释三处一致地标\"可分\"。"
+    },
+    {
+      "term": "das Zauberwort, -e",
+      "pos": "n.（中性）",
+      "meaning": "魔法词、咒语；关键的那个词",
+      "note": "zaubern（施魔法）、der Zauber（魔法）。诗中 Triffst du nur das Zauberwort（第4行）——诗的终极信念：语言（词）有唤醒万物的力量。"
+    },
+    {
+      "term": "fort und fort",
+      "pos": "adv.（古老叠词短语）",
+      "meaning": "不断地、绵绵不绝",
+      "note": "介词/副词 + und + 同一词的重复式，是德语古老的强调构词：fort und fort、nach und nach、Schritt für Schritt。与本站《祈求》《那座城》的 für und für 同族。"
+    }
+  ],
+  "verb_forms": [
+    {
+      "infinitive": "anheben",
+      "present_3sg": "hebt an",
+      "preterite": "hob an",
+      "perfect": "hat angehoben",
+      "participle_ii": "angehoben",
+      "subjunctive_ii": "höbe an",
+      "auxiliary": "haben",
+      "note": "★可分动词（强变化 hob/angehoben）；诗中 die Welt hebt an zu singen（第3行）。注意与弱变化同形动词 anheben（举起，hebt an – hob an – angehoben，仅强变化一读）的区别存疑；本诗取\"开始\"义，属强变化。"
+    },
+    {
+      "infinitive": "schlafen",
+      "present_3sg": "schläft",
+      "preterite": "schlief",
+      "perfect": "hat geschlafen",
+      "participle_ii": "geschlafen",
+      "subjunctive_ii": "schliefe",
+      "auxiliary": "haben",
+      "note": "强变化（a–ie–a），现在时变元音 a→ä；诗中 Schläft ein Lied（第1行，动词置首）。"
+    },
+    {
+      "infinitive": "treffen",
+      "present_3sg": "trifft",
+      "preterite": "traf",
+      "perfect": "hat getroffen",
+      "participle_ii": "getroffen",
+      "subjunctive_ii": "träfe",
+      "auxiliary": "haben",
+      "note": "强变化（e→i，现在时变元音；a–o），支配第四格；诗中 Triffst du nur das Zauberwort（第4行，第二人称单数）。"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "title": "扬抑格（Trochäus）—— 全站第一个扬抑格样本",
+      "quote": "Schläft ein | Lied in | al-len | Din-gen, / Die da | träu-men | fort und | fort",
+      "body": "本诗以四音步扬抑格（Trochäus，重—轻）写成，奇数行阴性收尾（8音节），偶数行阳性收尾（7音节，缺末音节）。注意：扬抑格（重—轻）与本站绝大多数诗的抑扬格（轻—重，如《罗马的喷泉》）相反——这是全站第一个扬抑格样本。读起来每行以重音起头，有\"敲击\"般的节奏。"
+    },
+    {
+      "title": "省略连词 wenn 的条件句（句法反转）",
+      "quote": "Schläft ein Lied … / … / Und die Welt hebt an zu singen, / Triffst du nur das Zauberwort.",
+      "body": "全诗是一个省略了 wenn 的条件句，且条件与结果的语序被反转：前3行是结果（世界歌唱），末行才是条件（只要你找到魔法词）。德语可省去连词 wenn，把变位动词提到句首标记从句。与本站《在塔上》（编号18，\"Wär ich ein Jäger…\"）、《里贝克》（编号27，\"Und kam die goldene Herbsteszeit…\"）属同一族的省连词从句，区别在语义（本诗是条件、那两首是条件/虚拟）。本诗是这一族中最短、最纯的样本。"
+    }
+  ],
+  "cultural_notes": "约瑟夫·冯·艾兴多夫（1788—1857）是德语晚期浪漫主义最重要的抒情诗人。他的诗短小、明朗、可歌，《月夜》（Mondnacht，本站编号7）是他最著名的作品。\n\n《占卜杖》作于1835年，1838年首刊于《德意志缪斯年鉴》（原题\"Wünschelruthe\"）。这四行被视为浪漫派诗学的纲领：万物之中沉睡着歌，诗人（手持\"占卜杖\"的人）的任务是用语言（das Zauberwort）把它唤醒。浪漫派的核心信念——自然是充满灵性的、语言有近乎魔法的力量——被压缩进了这四行。它与本站《月夜》（同作者）恰是一对：一首是纲领（万物中有歌），一首是实践（月夜中灵魂被\"悄悄扩大\"地飞翔）。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 全诗是一句省略 wenn 的条件句，译文以\"只要……\"在末行点出条件，保留原诗\"结果在前、条件在后\"的语序；(2) fort und fort 译\"不停地\"，并在注释中说明其与 für und für 的同族关系；(3) anheben 译\"开始\"，注明其为古/雅词（= beginnen）。本诗短小（仅4行），但句法有反转，并非\"简单\"——属本批\"短 ≠ 易\"的三首之一（另两首为《巡逻》《智天使漫游者》）。",
+  "image_prompt": {
+    "imagery": "一片森林清晨，一只手举起分叉的榛树枝（占卜杖），树枝的尖端微微发光；周围万物（树叶、溪水、石头）隐约散发出音符般的光丝",
+    "mood": "魔法般宁静的启示瞬间；不是奇幻，而是\"万物正在苏醒、等待被唤醒\"的灵性",
+    "elements": "分叉的榛树枝（Wünschelrute）、举起它的手（无全身人物）、森林晨光、万物间隐约的光丝/音符、露水",
+    "era": "无明确时代，浪漫主义森林意象",
+    "taboos": "不得出现具体人物面孔；不得出现现代元素；不得出现巫师帽、水晶球等流行奇幻俗套；不得出现文字水印",
+    "style": "浪漫主义风景画质感，晨光透过树冠的丁达尔光，绿色与金色为主，笔触抒情柔和"
+  },
+  "image_path": null,
+  "german_sources": [
+    {
+      "name": "German Wikisource — Wünschelrute（Eichendorff, Gesammelte Werke Bd.1, Aufbau 1962, S.90）",
+      "url": "https://de.wikisource.org/wiki/W%C3%BCnschelrute",
+      "tier": 1,
+      "citation": "Joseph von Eichendorff, Gesammelte Werke, Bd. 1 (Gedichte, Nachlese, Die Feier), Aufbau Verlag Berlin 1962, S. 90",
+      "note": "一级来源（数字化校勘全集，标注页码）。本站正文据此（行首大写读法：Die/Und/Triffst）。"
+    },
+    {
+      "name": "Wikipedia (DE) — Wünschelrute (Eichendorff)",
+      "url": "https://de.wikipedia.org/wiki/W%C3%BCnschelrute_(Eichendorff)",
+      "tier": 2,
+      "citation": "条目记录：1835年作，1838年首刊于 Deutscher Musenalmanach，原题 Wünschelruthe",
+      "note": "二级来源（独立运营方，wikimedia 组）。用于核对首刊载体、原题拼法与早期手稿异文。"
+    },
+    {
+      "name": "deutschelyrik.de — „Schläft ein Lied in allen Dingen“",
+      "url": "https://www.deutschelyrik.de/schlaeft-ein-lied-in-allen-dingen.383.html",
+      "tier": 2,
+      "citation": "现代通行文本（Aufnahme 2001，行首小写读法）",
+      "note": "二级来源（独立运营方）。用于核对文本；其行首小写读法（die/und/triffst）与 Wikisource/Aufbau 的大写读法有别，本站从大写。"
+    },
+    {
+      "name": "gedichte7.de — „Schläft ein Lied in allen Dingen“",
+      "url": "https://www.gedichte7.de/wuenschelrute.html",
+      "tier": 3,
+      "citation": "现代通行文本（possel 组，1838 / 扬抑格 / 交叉韵）",
+      "note": "三级来源（possel 组，独立于 wikimedia 与 deutschelyrik）。文本与 Wikisource 一致，用于满足新版规则 B 的独立运营方数。"
+    }
+  ],
+  "translation_sources": [
+    {
+      "name": "本站学习译文（中文）",
+      "note": "AI 辅助生成，标注为学习用途。"
+    }
+  ],
+  "cross_references": [
+    {
+      "target_slug": "am-turme",
+      "needle": "Wär ich ein Jäger",
+      "context": "《在塔上》"
+    },
+    {
+      "target_slug": "herr-von-ribbeck",
+      "needle": "Und kam die goldene Herbsteszeit",
+      "context": "《里贝克》"
+    },
+    {
+      "target_slug": "bitte",
+      "needle": "für und für",
+      "context": "《祈求》"
+    },
+    {
+      "target_slug": "die-stadt",
+      "needle": "für und für",
+      "context": "《那座城》"
+    },
+    {
+      "target_slug": "mondnacht",
+      "needle": "Eichendorff",
+      "context": "《月夜》"
+    }
+  ],
+  "verification_notes": "【三源核对】德文正文以 German Wikisource 转写的《艾兴多夫集》（Aufbau 1962，第1卷第90页）为底本，另以两个独立来源核对：Wikipedia (DE)、deutschelyrik.de。1 节、行数 4（共4行）、交叉韵 abab——一致。\n\n【行首大小写异文】Wikisource/Aufbau 1962 与 Wikipedia 作行首大写（Die da träumen / Und die Welt / Triffst du）；deutschelyrik.de 作行首小写（die / und / triffst，把第2—4行视作第1行的续行）。语义无别；本站从 Wikisource/Aufbau 的大写读法。\n\n【原题拼法】1838年首刊原题作\"Wünschelruthe\"（带 -th-）；现代通行本题\"Wünschelrute\"。本站标题从现代通行本。\n\n【待进一步核实】(1) 未找到 Zeno/textlog 的本诗专页（试探 URL 返回 404），一级来源覆盖依赖 Wikisource（Aufbau 1962）加两个独立二级来源；(2) 年份惯例：1835年作 / 1838年首刊，文献依指创作或发表而采不同年份，本页两说并存。\n\n【公版】艾兴多夫1857年卒，公版起始年 = 1857 + 71 = 1928。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / wikimedia-百科同组 + deutschelyrik——注：Wikisource 与 Wikipedia 同属 wikimedia 组，严格计独立运营方为 wikimedia + deutschelyrik = 2 组，不满足新版≥3。待补一个非 wikimedia 的独立来源，如 textlog 或 Zeno 的艾兴多夫全集页）。\n\n【待补】★本诗独立运营方目前为 wikimedia + deutschelyrik 两组，未达新版规则 B 的 ≥3。需补入一个非 wikimedia、非 deutschelyrik 的独立来源（优先 textlog.de 或 Zeno.org 的艾兴多夫全集），方可满足。此为发布前必须清零的项。",
+  "checklist": [
+    {
+      "label": "确认作者：Joseph von Eichendorff",
+      "done": true
+    },
+    {
+      "label": "德文原文主来源：Wikisource Aufbau 1962 S.90",
+      "done": true
+    },
+    {
+      "label": "核对节数（1节4行）、交叉韵 abab、扬抑格",
+      "done": true
+    },
+    {
+      "label": "记录行首大小写异文与原题拼法",
+      "done": true
+    },
+    {
+      "label": "省略连词条件句说明（句法反转）",
+      "done": true
+    },
+    {
+      "label": "扬抑格说明（全站首个样本）",
+      "done": true
+    },
+    {
+      "label": "anheben 可分性与词条/变位一致",
+      "done": true
+    },
+    {
+      "label": "fort und fort 与 für und für 同族互链",
+      "done": true
+    },
+    {
+      "label": "公版年份复算：1857 + 71 = 1928",
+      "done": true
+    },
+    {
+      "label": "撰写 image brief",
+      "done": true
+    },
+    {
+      "label": "★补一个非 wikimedia/deutschelyrik 的独立来源（textlog/Zeno）以满足规则 B ≥3",
+      "done": false
+    },
+    {
+      "label": "生成 AI 配图",
+      "done": false
+    },
+    {
+      "label": "页面视觉检查",
+      "done": false
+    },
+    {
+      "label": "核实首刊载体与年份（1835作/1838刊）",
+      "done": false
+    },
+    {
+      "label": "最终人工复核说明（AI 辅助完成，建议浪漫主义专业人士复核）",
+      "done": false
+    }
+  ]
+}

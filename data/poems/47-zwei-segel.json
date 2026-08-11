@@ -1,0 +1,89 @@
+{
+  "id": "47",
+  "slug": "zwei-segel",
+  "author": "Conrad Ferdinand Meyer",
+  "author_zh": "康拉德·费迪南德·迈耶",
+  "author_gender": "male",
+  "title_de": "Zwei Segel",
+  "title_zh": "两片帆",
+  "author_sort_year": 1882,
+  "year": "1882年定稿；收入《Gedichte》（H. Haessel, Leipzig 1882, S.150）",
+  "collection": "《Gedichte》（1882）· 极短物诗（Dinggedicht）",
+  "period": "诗意现实主义（Poetischer Realismus）",
+  "difficulty": "B1",
+  "tags": ["极短物诗", "两者呼应", "无定动词句", "交叉韵"],
+  "public_domain": {"death_year": 1898, "public_domain_year": 1969, "basis": "迈耶1898年卒；按德国70年 p.m.a.，1969年起公版"},
+  "german_text": [
+    ["Zwei Segel erhellend", "Die tiefblaue Bucht!", "Zwei Segel sich schwellend", "Zu ruhiger Flucht!"],
+    ["Wie eins in den Winden", "Sich wölbt und bewegt,", "Wird auch das Empfinden", "Des andern erregt."],
+    ["Begehrt eins zu hasten,", "Das andre geht schnell,", "Verlangt eins zu rasten,", "Ruht auch sein Gesell."]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留交叉韵 abab 与几乎无变位动词的名词句风格",
+    "text": [
+      ["两片帆，照亮着", "那深蓝的海湾！", "两片帆，鼓胀着", "驶向宁静的逃逸！"],
+      ["当一片在风中", "鼓起并摆动，", "另一片的感受", "也随之被触动。"],
+      ["若一片急于疾驰，", "另一片便也加快，", "若一片渴望停歇，", "它的伙伴也安息。"]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "Zwei Segel erhellend / Die tiefblaue Bucht!", "zh": "全诗第一节几乎是一个无定动词的名词句（verbloser Satz）：erhellend（照亮）是现在分词，不是变位动词，整节没有主谓结构，靠名词与分词悬浮成句。两片帆照亮深蓝海湾——帆被写成了发光体。"},
+    {"de": "Zwei Segel sich schwellend / Zu ruhiger Flucht!", "zh": "sich schwellen（鼓胀，反身，弱/强两可）→ sich schwellend（现在分词）。die Flucht（逃逸、航行）在此非\"逃跑\"的贬义，而是\"远航\"的诗意说法。两片帆\"驶向宁静的逃逸\"。"},
+    {"de": "Wie eins in den Winden / Sich wölbt und bewegt, / Wird auch das Empfinden / Des andern erregt.",
+     "zh": "第二节才出现变位动词（wölbt, bewegt, wird erregt）。核心比喻：两片帆像两个有感受的人，一片动，另一片的\"感受\"（das Empfinden）也被触动。这是\"两者相互回应\"的结构。"},
+    {"de": "Begehrt eins zu hasten, / Das andre geht schnell,",
+     "zh": "第三节用三个平行的\"若一片……另一片便……\"完成两帆的呼应：疾驰/加快、停歇/安息。sein Gesell（它的伙伴）= der Gefährte（古/雅）。两片帆被写成彼此感应的一对。"}
+  ],
+  "vocab": [
+    {"term": "das Segel, -", "pos": "n.（中性）", "meaning": "帆", "note": "segeln（航行）、die Segel setzen（启航）。诗中 Zwei Segel（两片帆）即标题。"},
+    {"term": "sich schwellen", "pos": "v.（弱/强两可，反身）", "meaning": "鼓胀、张满（帆）", "note": "诗中 sich schwellend（第3行，现在分词）。注意与及物 schwällen（使膨胀，参见《城市之神》编号37）区分。"},
+    {"term": "die Flucht, -en", "pos": "n.（阴性）", "meaning": "①（本诗）远航、逃逸；②逃跑；③（建筑）纵深、一排", "note": "zu ruhiger Flucht（驶向宁静的逃逸，第4行）取诗意义。die Flucht ergreifen（逃跑）、die Flucht der Räume（空间的纵深）。"},
+    {"term": "der Gesell, -en / der Gefährte, -n", "pos": "n.（阳性）", "meaning": "伙伴、同伴（古/雅）", "note": "诗中 Ruht auch sein Gesell（第12行，它的伙伴也安息）。der Geselle（学徒、伙计）的雅体。"},
+    {"term": "rasten", "pos": "v.（弱变化）", "meaning": "休息、歇脚", "note": "die Rast（休息）。诗中 Verlangt eins zu rasten（第11行，若一片渴望停歇）。与 hasten（疾驰）相对。"}
+  ],
+  "verb_forms": [
+    {"infinitive": "schwellen (sich)", "present_3sg": "schwillt sich / schwellt sich", "preterite": "schwoll sich / schwellte sich", "perfect": "ist sich geschwollen / hat sich geschwellt", "participle_ii": "geschwollen / geschwellt", "subjunctive_ii": "schwölle sich / schwellte sich", "auxiliary": "sein",
+     "note": "强变化（不及物，i-a-o：schwillt/schwoll/geschwollen，反身\"鼓胀\"）与弱变化（及物/使役 schwällen/schwellen\"使膨胀\"）两读。诗中 sich schwellend（帆鼓胀）取强变化不及物反身义。注意与《城市之神》（编号37）schwallen（schwällt，弱变化使役）区分。"},
+    {"infinitive": "begehren", "present_3sg": "begehrt", "preterite": "begehrte", "perfect": "hat begehrt", "participle_ii": "begehrt", "subjunctive_ii": "begehrte", "auxiliary": "haben",
+     "note": "弱变化；诗中 Begehrt eins zu hasten（第9行）。与《手套》（编号35）同 lemma。"}
+  ],
+  "grammar_notes": [
+    {"title": "无定动词的名词句（verblose Sätze）",
+     "quote": "Zwei Segel erhellend / Die tiefblaue Bucht! / Zwei Segel sich schwellend / Zu ruhiger Flucht!（第1—4行）",
+     "body": "全诗第一节没有一个变位动词：erhellend、sich schwellend 都是现在分词，整节是一个\"名词 + 分词\"悬浮的名词句。德语诗歌常用这种\"无动词句\"制造静态、画面感。与本站《祈求》（编号23）第3—4行的纯形容词行（\"后置的长呼语与悬置的中心词\"）同属\"悬置\"手法——一首靠分词、一首靠形容词，都不给主谓骨干。"},
+    {"title": "迈耶的极短物诗（Dinggedicht）—— 两物相互回应",
+     "quote": "全诗 3 节 × 4 行（共12行），交叉韵 abab 贯穿",
+     "body": "本诗与本站《罗马的喷泉》（编号26）同为迈耶的极短物诗，同样写\"两者相互回应\"的结构：《罗马的喷泉》是三只盘之间水的接收—给予，本诗是两片帆之间感受的感应。两页对读价值极高。物诗（Dinggedicht）的特点是：凝视一个物（帆/喷泉），从中读出一种普遍的相互关系。"}
+  ],
+  "cultural_notes": "康拉德·费迪南德·迈耶（1825—1898）是瑞士德语诗人，诗意现实主义的代表。他以历史叙事诗（如《Huttens letzte Tage》）与极短抒情诗（物诗）闻名。\n\n《两片帆》1882年定稿，收入其《诗集》（Haessel, Leipzig 1882, S.150）。全诗12行，写两片同行的帆如何彼此感应——一片动，另一片随之；一片急，另一片加快。这是迈耶物诗的典型：从凝视一个具体之物（两片帆）读出一种普遍的关系（两者之间的感应）。读者常把这首诗读作爱情或友情的隐喻，但诗本身始终停留在\"两片帆\"的字面——这正是物诗的节制。\n\n本诗与本站《罗马的喷泉》（编号26）是迈耶物诗的一对：一首写水的盘间回应，一首写帆的感受感应，结构同源。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 第一节的无定动词名词句（erhellend / sich schwellend 为现在分词）译文以\"照亮着/鼓胀着\"近似传达其悬浮感；(2) die Flucht 取\"远航/逃逸\"诗意义，不译\"逃跑\"；(3) 交叉韵 abab 与几乎无变位动词的风格无法在中文完全复制，译文以整齐的行拍近似。本诗与《罗马的喷泉》（编号26）建议对读。",
+  "image_prompt": {"imagery": "一个宁静的深蓝海湾，两片白帆并排鼓满风、彼此靠近地航行；阳光照在帆面上使其发亮", "mood": "宁静的、彼此感应的和谐；两片帆像两个有默契的存在", "elements": "深蓝海湾、两片鼓满的白帆、帆面上的阳光、远处平静的海平线", "era": "无明确时代，海景", "taboos": "不得出现人物；不得出现现代船只/马达；不得出现文字水印", "style": "印象派—写实海景画质感，蓝白主色，光线明亮柔和"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "German Wikisource — Zwei Segel（Meyer, Gedichte, Haessel 1882, S.150）", "url": "https://de.wikisource.org/wiki/Zwei_Segel", "tier": 1, "citation": "Conrad Ferdinand Meyer, Gedichte, Verlag von H. Haessel, Leipzig 1882, S. 150", "note": "一级来源（1882年印刷本扫描，标注页码）。本站正文据此。三源逐字一致，零异文。"},
+    {"name": "deutschelyrik.de — „Zwei Segel (1882)“", "url": "https://www.deutschelyrik.de/zwei-segel-1882.html", "tier": 3, "citation": "现代通行文本（Aufnahme 2018）", "note": "三级来源（独立运营方）。与 Wikisource 逐字一致。"},
+    {"name": "lyrik.antikoerperchen.de — Zwei Segel", "url": "https://lyrik.antikoerperchen.de/conrad-ferdinand-meyer-zwei-segel,textbearbeitung,243.html", "tier": 3, "citation": "现代通行文本", "note": "三级来源（独立运营方）。与 Wikisource、deutschelyrik 逐字一致，确认零异文。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "der-roemische-brunnen", "needle": "音节数作为结构手段", "context": "《罗马的喷泉》"},
+    {"target_slug": "bitte", "needle": "悬置的中心词", "context": "《祈求》"}
+  ],
+  "verification_notes": "【三源核对】正文以 German Wikisource 转写的1882年《诗集》（Haessel, Leipzig, S.150）为底本，另以两个独立来源核对：deutschelyrik.de、lyrik.antikoerperchen.de。3 节、行数 4/4/4（共12行）、交叉韵 abab——三源逐字一致，零异文。\n\n【公版】迈耶1898年卒，公版起始年 = 1898 + 71 = 1969。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / deutschelyrik / antikoerperchen）、D（含一级来源：1882印刷本扫描）。无待核实项。",
+  "checklist": [
+    {"label": "确认作者：Conrad Ferdinand Meyer", "done": true},
+    {"label": "确认出处：Gedichte 1882, S.150", "done": true},
+    {"label": "核对节数（3×4，共12行）、交叉韵 abab、零异文", "done": true},
+    {"label": "无定动词名词句说明", "done": true},
+    {"label": "物诗与《罗马的喷泉》对读", "done": true},
+    {"label": "schwellen 强/弱区分（与37号对照）", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1898 + 71 = 1969", "done": true},
+    {"label": "撰写 image brief", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议诗意现实主义专业人士复核）", "done": false}
+  ]
+}

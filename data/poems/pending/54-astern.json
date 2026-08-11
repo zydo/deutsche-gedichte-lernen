@@ -1,0 +1,29 @@
+{
+  "id": "54",
+  "slug": "astern",
+  "published": false,
+  "release_date": "2027-01-01",
+  "author": "Gottfried Benn",
+  "author_zh": "戈特弗里德·贝恩",
+  "title_de": "Astern",
+  "title_zh": "紫菀",
+  "year": "1936年；具体首刊与结集信息待公版后回核",
+  "period": "20世纪现代诗",
+  "difficulty": "B1–B2（预估）",
+  "public_domain": {
+    "death_year": 1956,
+    "public_domain_year": 2027,
+    "status": "pending"
+  },
+  "german_text": [],
+  "annotation_plan": [
+    "锁定正文后核对花名、季节词与命令/呼语结构",
+    "与《Kleine Aster》只作经页面术语验证的同作者对照",
+    "正文进入仓库前重做韵脚、行号、译文与注释密度审计"
+  ],
+  "source_plan": [
+    "查 Benn 纸质校勘全集的卷次与页码，作为一级来源",
+    "另找两个独立运营方的公版数字文本逐行核对",
+    "2027-01-01 后运行 snapshot；在此之前不得录入德文正文"
+  ]
+}

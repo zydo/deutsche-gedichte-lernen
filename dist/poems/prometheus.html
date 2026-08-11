@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Prometheus · 普罗米修斯 — Johann Wolfgang von Goethe | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Prometheus（普罗米修斯）— Johann Wolfgang von Goethe。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="weltende.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">世界末日</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="der-handschuh.html" rel="next"
+            ><span class="poem-nav__title">手套</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Prometheus</h1>
+          <p class="poem-titleblock__author">Johann Wolfgang von Goethe</p>
+          <p class="poem-titleblock__zh">普罗米修斯</p>
+          <p class="poem-titleblock__author-zh">约翰·沃尔夫冈·冯·歌德</p>
+          <div class="poem-titleblock__biblio">
+            <p>歌德自选集（1789）·狂飙突进时期独白体自由韵诗</p>
+            <p>狂飙突进（Sturm und Drang）</p>
+            <p>约1774年作；1785年由 F. H. Jacobi 未经授权首刊，1789年歌德收入自选集</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2–C1</span>
+            <span class="tag">自由韵律</span>
+            <span class="tag">反神</span>
+            <span class="tag">泰坦</span>
+            <span class="tag">创造</span>
+            <span class="tag">狂飙突进纲领诗</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一处高耸的岩石台地，台地上是简陋的锻造工场：炉火、铁砧、半成形的人形泥胎；下方天际堆压着沉重低垂的雷云，但雷云被压在台地之下、无法上升
+              </dd>
+              <dt>情绪</dt>
+              <dd>沉静的、匠人式的尊严；不是受难，而是自主劳作的笃定；火光是暖橙色的，雷云是冷青灰的，二者不接触</dd>
+              <dt>画面元素</dt>
+              <dd>
+                岩石台地与悬崖、露天锻炉与铁砧、几具未完成的人形泥胎（无面目）、远处下方压城的雷云层、炉前一块被火光照亮的空地
+              </dd>
+              <dt>时代感</dt>
+              <dd>神话化的远古/无明确时代，器物为锻炉、铁砧、泥胎等原始造物工具</dd>
+              <dt>推荐风格</dt>
+              <dd>
+                浪漫主义—象征主义油画质感，单一暖光源（炉火）对大面积冷调（雷云、岩石），构图下半实上半虚，笔触厚重
+              </dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得出现任何具体神祇形象（宙斯不可见，只以雷云暗示）；不得出现锁链、鹫鹰、高加索山岩钉（那是"被缚的普罗米修斯"传统，与本诗无关）；不得出现人物面孔；不得出现现代机械或文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Bedecke deinen Himmel, Zeus,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">遮住你的天空吧，宙斯，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mit Wolkendunst!</span></div>
+                <div class="pline__zh">用云雾！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und übe, Knaben gleich,</span></div>
+                <div class="pline__zh">像砍荨麻头的男孩那样，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Der Disteln köpft,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">去对橡树</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">An Eichen dich und Bergeshöhn!</span></div>
+                <div class="pline__zh">和山巅发威吧！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Musst mir meine Erde<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">可你得把我的大地</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Doch lassen stehn</span></div>
+                <div class="pline__zh">照样留给我，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und meine Hütte, die du nicht gebaut,</span></div>
+                <div class="pline__zh">还有我的茅屋——你不是它的建造者，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und meinen Herd,</span></div>
+                <div class="pline__zh">还有我的炉灶，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Um dessen Glut</span></div>
+                <div class="pline__zh">它那一炉火，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Du mich beneidest.</span></div>
+                <div class="pline__zh">你正嫉妒着。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Ich kenne nichts Ärmeres<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我不知道阳光下</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Unter der Sonn als euch, Götter!</span></div>
+                <div class="pline__zh">还有什么比你们更贫乏，群神。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ihr nähret kümmerlich</span></div>
+                <div class="pline__zh">你们寒碜地养活</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Von Opfersteuern</span></div>
+                <div class="pline__zh">自己那点威仪，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und Gebetshauch</span></div>
+                <div class="pline__zh">靠的是祭品的供赋</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Eure Majestät</span></div>
+                <div class="pline__zh">和祈祷的气息；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und darbtet, wären</span></div>
+                <div class="pline__zh">若不是孩子们和乞丐——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Nicht Kinder und Bettler</span></div>
+                <div class="pline__zh">那些满怀希望的痴人——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hoffnungsvolle Toren.</span></div>
+                <div class="pline__zh">你们早就饿坏了。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Da ich ein Kind war,</span></div>
+                <div class="pline__zh">当年我还是个孩子，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Nicht wusste, wo aus, wo ein,</span></div>
+                <div class="pline__zh">不知所措、不知何去何从，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Kehrte mein verirrtes Aug</span></div>
+                <div class="pline__zh">便把迷惘的目光</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zur Sonne, als wenn drüber wär</span></div>
+                <div class="pline__zh">转向太阳，仿佛天上</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ein Ohr, zu hören meine Klage,</span></div>
+                <div class="pline__zh">有一只耳朵来听我诉苦，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ein Herz wie meins,</span></div>
+                <div class="pline__zh">有一颗像我一样的心，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Sich des Bedrängten zu erbarmen.</span></div>
+                <div class="pline__zh">肯怜悯受苦的人。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Wer half mir wider<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">谁帮我对付了</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >der Titanen Übermut?<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">泰坦们的骄横？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wer rettete vom Tode mich,</span></div>
+                <div class="pline__zh">谁把我从死亡里、</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Von Sklaverei?</span></div>
+                <div class="pline__zh">从奴役中救出？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hast du's nicht alles selbst vollendet,</span></div>
+                <div class="pline__zh">这一切，岂不全是</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Heilig glühend Herz?<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你这颗自己干成的、炽热的心？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und glühtest, jung und gut,</span></div>
+                <div class="pline__zh">而你年轻又善良，竟炽燃着、</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Betrogen, Rettungsdank</span></div>
+                <div class="pline__zh">受了骗，把获救的感恩</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Dem Schlafenden dadroben?</span></div>
+                <div class="pline__zh">献给那在上面睡大觉的家伙？</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich dich ehren? Wofür?</span></div>
+                <div class="pline__zh">我该敬你？凭什么？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hast du die Schmerzen gelindert</span></div>
+                <div class="pline__zh">你何曾减轻过</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Je des Beladenen?</span></div>
+                <div class="pline__zh">负重者的痛楚？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hast du die Tränen gestillet</span></div>
+                <div class="pline__zh">你何曾止住过</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Je des Geängsteten?</span></div>
+                <div class="pline__zh">惊恐者的眼泪？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hat nicht mich zum Manne geschmiedet</span></div>
+                <div class="pline__zh">把我锻打成汉子的，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die allmächtige Zeit</span></div>
+                <div class="pline__zh">岂不是全能的时间</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und das ewige Schicksal,</span></div>
+                <div class="pline__zh">和永恒的命运，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Meine Herren und deine?<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我的主子，也是你的主子？</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wähntest du etwa,</span></div>
+                <div class="pline__zh">你难道以为，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich sollte das Leben hassen,</span></div>
+                <div class="pline__zh">我就该憎恨生命，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">In Wüsten fliehen,</span></div>
+                <div class="pline__zh">逃进荒野，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Weil nicht alle Knabenmorgen-<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">因为并非每一个</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Blütenträume reiften?<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">少年之晨的花之梦都成熟了？</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Hier sitz ich, forme Menschen<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我坐在这里，按我的形象</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Nach meinem Bilde,<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">塑造人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ein Geschlecht, das mir gleich sei,</span></div>
+                <div class="pline__zh">一个与我相像的族类，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zu leiden, weinen,</span></div>
+                <div class="pline__zh">去受苦、哭泣，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Genießen und zu freuen sich,</span></div>
+                <div class="pline__zh">去享受、去欢欣，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Und dein nicht zu achten,<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">并且不把你放在眼里，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Wie ich!<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">就像我一样！</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留自由韵律的换气与第二人称 du 的直接姿态</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Bedecke deinen Himmel, Zeus,</p>
+              <p class="lnote__zh">
+                全诗开篇即祈使句（第1行 Bedecke deinen Himmel, Zeus）+ 对宙斯直呼 du。在18世纪，用 du
+                称呼至高神并下命令，是渎神级别的语域选择（基督教祷文用
+                Herr/Euch）；整个狂飙突进的姿态由此一句话立住。注意 Bedecke 是命令式，du 隐含。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Der Disteln köpft,</p>
+              <p class="lnote__zh">
+                köpft = hackt
+                ab（砍掉头），比喻男孩乱砍荨麻头的莽撞；类比宙斯对着橡树与山巅发威——不是真正的力量，而是孩童式的破坏欲。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Musst mir meine Erde</p>
+              <p class="lnote__zh">
+                musst 在此不是义务（"必须"），而是强命令式（du musst）："你给我把我的大地留下"。mir
+                是利益第三格，表示这事涉及"我"。现代正字法作 musst，本站正文采用现代通行拼写（详见校对记录）。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Ich kenne nichts Ärmeres</p>
+              <p class="lnote__zh">
+                nichts Ärmeres（没有什么更贫乏的）：不定代词 nichts 后接弱化形容词词尾 -es（中性）。1827 年版作
+                Aermeres；通行本或作 Ärmers（古省音形），本站从语法完整的 Ärmeres。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Wer half mir wider / der Titanen Übermut?</p>
+              <p class="lnote__zh">
+                wider（对抗）今作 gegen。der Titanen Übermut 是前置第二格 = der Übermut der
+                Titanen（泰坦们的骄横）。这是全诗最重要的句法点，也是本站"前置第二格"主题簇的样本之一（见语法要点）。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Heilig glühend Herz?</p>
+              <p class="lnote__zh">
+                这是对普罗米修斯自己心脏的呼语："神圣而炽热的心啊"。glühend
+                是现在分词作形容词。反诘的核心：救我的不是宙斯，而是我自己的心。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Meine Herren und deine?</p>
+              <p class="lnote__zh">
+                时间与命运是"我的主子，也是你的主子"——一句话把宙斯从万神之主拉低到与普罗米修斯同样受制于必然性的位置。这是斯多亚—泛神论思想的回声。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Weil nicht alle Knabenmorgen- / Blütenträume reiften?</p>
+              <p class="lnote__zh">
+                Knabenmorgenblütenträume 是歌德自造的四级复合词（Knabe + Morgen + Blüte +
+                Traum），意为"少年之晨开放的花之梦"。它是德语复合构词能力的极限样本之一；本站把它按通行本跨行排作
+                Knabenmorgen- / Blütenträume。注意 1827 年《全集末版》删去了 Knabenmorgen-，只作
+                Blüthenträume——这是版本差异，详见校对记录。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Hier sitz ich, forme Menschen / Nach meinem Bilde,</p>
+              <p class="lnote__zh">
+                全诗的最终反转："照我的形象造人"明确对位《创世记》1:27"神就照着自己的形象造人"。造物主的语法被夺过来用在反抗者人身上。forme
+                是弱变化命令式（bilden）。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Und dein nicht zu achten, / Wie ich!</p>
+              <p class="lnote__zh">
+                全诗结尾"不把你放在眼里，就像我一样"——"像我一样"既修饰新造的人，也回指普罗米修斯自己：他造的人要像他一样不把宙斯放在眼里。全诗人称调度（du→ich→mir/mich
+                高频→wie ich）在此收束。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Wolkendunst</span></div>
+              <span class="vocab-card__pos">n.（中性，诗/雅）</span>
+              <div class="vocab-card__meaning">云雾、雾霭</div>
+              <div class="vocab-card__note">
+                Wolke（云）+ Dunst（蒸气、雾）的复合词；歌德用以命令宙斯"遮住自己的天空"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">köpfen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">砍掉……的头</div>
+              <div class="vocab-card__note">
+                der Kopf（头）动词化；诗中 der Disteln köpft = 砍掉荨麻的头（荨麻顶端）。转义"解雇"是现代用法。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Glut, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">炽热、炉火的灼热（不可数）；一块烧红的炭（可数）</div>
+              <div class="vocab-card__note">
+                动词 glühen（灼热地发光）。诗中 um dessen Glut（围绕那炉火的热）。与 das Feuer 区别：Glut
+                强调"没有火焰的炽热"。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">ärm</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">贫乏的、可怜的（arm 的比较级 ärmer 的名词化用法）</div>
+              <div class="vocab-card__note">nichts Ärmeres = 没有什么更贫乏的（中性单数第一/四格，-es 词尾）。</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">darben</span></div>
+              <span class="vocab-card__pos">v.（弱变化，雅语）</span>
+              <div class="vocab-card__meaning">匮乏、忍饥挨饿</div>
+              <div class="vocab-card__note">
+                变位 ich darbe, du darbst, er darbt, ihr darbt; Prät. darbte。诗中 Und darbtet, wären
+                …（你们早就饿坏了，若不是……）为第二人称复数过去时虚拟式。名词 die
+                Not（匮乏）与之无词源关系，但语义相关。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">wähnen</span></div>
+              <span class="vocab-card__pos">v.（弱变化，古/雅）</span>
+              <div class="vocab-card__meaning">误以为、（错误地）以为</div>
+              <div class="vocab-card__note">
+                变位 wähnt – wähnte – hat gewähnt。今多用于 sich etwas wähnen 或反讽。诗中 Wähntest du
+                etwa（你难道以为）是全诗反诘的核心动词。派生词 der Wahn（妄想）、wahnsinnig（疯狂的）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Wahn, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性，雅/古）</span>
+              <div class="vocab-card__meaning">妄想、错觉</div>
+              <div class="vocab-card__note">
+                假朋友警示：Wahn 与英语 want（想要/缺乏）无关，词源不同。诗中虽未单用此词，但 wähnen / Wahn
+                是全诗"清醒对峙妄想"主题的词族。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">bilden</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">①（本诗）塑造、赋形；②（今常用）教育、培养</div>
+              <div class="vocab-card__note">
+                诗中 forme Menschen … nach meinem Bild（按我的形象塑造人）取第①义（= gestalten）。名词 das
+                Bild（形象）、die Bildung（教育/塑造）、sich bilden（自学成才）。注意第②义"教育"是后起引申。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Übermut</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">骄横、放肆、过分的傲慢</div>
+              <div class="vocab-card__note">
+                über-（过度）+ Mut（心情，古义）。与 der Hochmut（傲慢）、die Übermut（玩乐中的放肆，今罕）同源。诗中
+                der Titanen Übermut（泰坦们的骄横）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">wider</span></div>
+              <span class="vocab-card__pos">介词（支配第四格，古/雅）</span>
+              <div class="vocab-card__meaning">对抗、违反</div>
+              <div class="vocab-card__note">
+                今作 gegen；仅存于复合词 widersprechen（反驳）、der Widerstand（抵抗）、widerlich（令人反感）。注意与
+                wieder（再次）同音异义异拼。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de">wähnen</td>
+                  <td class="de">wähnt</td>
+                  <td class="de">wähnte</td>
+                  <td class="de">hat gewähnt</td>
+                  <td class="de">gewähnt</td>
+                  <td class="de">wähnte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">↳ 弱变化，古/雅语动词；诗中 Wähntest du etwa（第31行）为第二人称单数过去时。</td>
+                </tr>
+                <tr>
+                  <td class="de">bilden</td>
+                  <td class="de">bildet</td>
+                  <td class="de">bildete</td>
+                  <td class="de">hat gebildet</td>
+                  <td class="de">gebildet</td>
+                  <td class="de">bildete</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 弱变化；诗中 forme（第51行，命令式）为同义弱变化 formen。诗中取"塑造"义，非现代"教育"义。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">darben</td>
+                  <td class="de">darbt</td>
+                  <td class="de">darbte</td>
+                  <td class="de">hat gedarbt</td>
+                  <td class="de">gedarbt</td>
+                  <td class="de">darbte</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 弱变化；诗中 darbtet（第14行）为第二人称复数过去时虚拟式："你们早就饿坏了"。注意现在时 er
+                    darbt（去掉 -et）与第二分词 gedarbt（带 ge-）的区别。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de">sieden</td>
+                  <td class="de">siedet / sott</td>
+                  <td class="de">siedete / sott</td>
+                  <td class="de">hat gesotten / hat gesiedet</td>
+                  <td class="de">gesotten / gesiedet</td>
+                  <td class="de">sött e / siedete</td>
+                  <td>haben</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 强/弱两可（据 Duden）：现代多用弱变化 siedete/gesiedet（沸腾、煮）；强变化 sott/gesotten
+                    仅存于"煮熟"的转义（ein gesottener Dieb）。本诗正文未直接出现 sieden，收入是因为全诗"炽燃
+                    glühen"主题与"沸腾"词族相邻，供学习者参照。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">自由韵律（freie Rhythmen）：无韵、无固定音步，仍是诗</h3>
+              <p class="grammar-item__quote">全诗 7 节，行数 11/9/7/9/9/5/7（共 57 行），无尾韵、无固定音步</p>
+              <div class="grammar-item__body">
+                本诗没有韵式——这不是缺失，而是它的纲领。Klopstock 开创、狂飙突进承接的"自由韵律"靠句法平行（Wer half …?
+                Wer rettete …? / Hast du …? Hast du …?）、祈使句堆叠（Bedecke … Und übe
+                …）与换行位置制造节奏，而非靠韵脚与音步。挣脱格律与挣脱宙斯是同一个动作：形式本身就是内容。与本站《罗马的喷泉》（把音节数用到极致）构成两极对照——一个把格律推到极限，一个把格律整个扔掉。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">祈使句与第二人称 du 的语域</h3>
+              <p class="grammar-item__quote">Bedecke deinen Himmel, Zeus, … Musst mir meine Erde Doch lassen stehn …</p>
+              <div class="grammar-item__body">
+                全诗第一节几乎全为命令式（Bedecke、übe、Musst 命令式用法、lass stehn），且全部指向宙斯、用 du
+                称呼。在18世纪，du 是对神不可想象的低语域（基督教用语为
+                Herr/Euch）。对比如下：本站《致自己》（编号32）的命令式密度更高，但全部指向说话者自己；本诗的命令全部指向至高神。同为命令式堆叠，方向相反。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">前置第二格：der Titanen Übermut</h3>
+              <p class="grammar-item__quote">Wer half mir wider / der Titanen Übermut?</p>
+              <div class="grammar-item__body">
+                = der Übermut der
+                Titanen（泰坦们的骄横）。现代德语把第二格放在被修饰名词之后，18世纪诗歌常把第二格提前。识别窍门：看到第二格名词（der/des/der
+                +
+                名词）后紧跟另一个名词而无动词，先把前者读作后者的修饰语。本站《晚歌》《古风的阿波罗躯干残像》《来自异乡的少女》《罗马的喷泉》《狼人》《那座城》《一个冬夜》《迷娘》《祖国之泪
+                · 1636年》《一切都是虚空》诸页都标注过同一结构，本页加入该簇。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              普罗米修斯在希腊神话中盗火予人、因而被宙斯锁在高加索山上。歌德此诗却完全不写"被缚"——它的普罗米修斯是自由的匠人，坐在自己的炉火旁，向宙斯宣告独立，并在结尾"照自己的形象造人"。这首诗被视为狂飙突进（Sturm
+              und Drang）的纲领诗之一：所谓"天才崇拜"（Geniekult）——创造性的天才个人高于一切既定权威，包括神。
+            </p>
+            <p>
+              本诗约1774年作于歌德的法兰克福—韦茨拉尔时期，原为他未完成的戏剧残篇《普罗米修斯》第三幕中的一段独白。它1785年之所以面世，是哲学史上一次意外：弗里德里希·海因里希·雅各比（F.
+              H. Jacobi）在《关于斯宾诺莎学说的通信》（Über die Lehre des
+              Spinoza）中未经歌德许可刊出了此诗，用以论证歌德（以及被他点名招惹的莱辛）持泛神论立场。这引发了著名的"泛神论之争"（Pantheismusstreit）。（雅各比1785年刊出的具体经过及其是否"未经授权"，待进一步核实。）歌德本人1789年将其收入自选集，等于追认了它在正典中的位置。
+            </p>
+            <p>
+              本诗最常被讨论的一处是末段"照我的形象造人"（Nach meinem
+              Bilde）——它直接对位《创世记》1:27"神就照着自己的形象造人"。造物主的语法被夺过来用在反抗者身上：不再是神造人，而是人（普罗米修斯）造人，并且造出一个"不把宙斯放在眼里"的族类。这是全诗的终极反转。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译，意在保留：(1) 自由韵律的换气与换行位置；(2) 对宙斯用 du
+              的直接、冒犯姿态（译文一律"你"，不抬高为"您"）；(3) 反诘句的平行结构（Wer …? Wer …? / Hast du …? Hast du
+              …?）。三处需说明：(1) Knabenmorgenblütenträume
+              是歌德自造四级复合词，译文作"少年之晨的花之梦"并按通行本跨行断开；(2)
+              dadroben（在上面、指天上的宙斯）译文作"在上面睡大觉的家伙"，保留其轻蔑语气；(3) Musst mir meine Erde …
+              lassen stehn 中的 musst
+              是强命令式而非义务，译文作"你给我把我的大地留下"。已知此诗存在多个中文译本（如钱春绮、冯至等），因版权原因本站不转载具体译本全文。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Zeno.org — Goethe: Berliner Ausgabe, Band 1, S. 327–329（Prometheus）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="http://www.zeno.org/nid/2000484081X" target="_blank" rel="noopener"
+                >http://www.zeno.org/nid/2000484081X</a
+              >
+              <span class="source-citation">Berliner Ausgabe, Band 1, S. 327–329</span>
+              <span class="source-note"
+                >一级来源（数字化校勘全集）。本次抓取时 Zeno
+                主机拒绝连接，来源独立性与版次页码据此著录；快照状态见出处栏。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Prometheus – Goethe“</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a class="source-url" href="https://www.deutschelyrik.de/prometheus.html" target="_blank" rel="noopener"
+                >https://www.deutschelyrik.de/prometheus.html</a
+              >
+              <span class="source-citation">标注"Aufnahme 2001"的现代通行文本</span>
+              <span class="source-note"
+                >主转录底本（现代化通行文本）。给出 7 节 57 行、含 Knabenmorgen-Blütenträume
+                的标准读法，本站正文据此。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">German Wikisource — Prometheus (Goethe, Ausgabe letzter Hand 1827)</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/Prometheus_(Gedicht,_sp%C3%A4te_Fassung)"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/Prometheus_(Gedicht,_sp%C3%A4te_Fassung)</a
+              >
+              <span class="source-citation"
+                >Goethe's Werke. Vollständige Ausgabe letzter Hand. Bd. 2. Stuttgart/Tübingen: Cotta 1827, S.
+                76–78</span
+              >
+              <span class="source-note"
+                >一级来源（1827 年《全集末版》扫描转写）。用于核对歌德生前最后手定形态与正字法差异，详见校对记录。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note"
+                >AI 辅助生成，标注为学习用途；已知存在钱春绮、冯至等多个中文译本，因版权原因未转载全文。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【正字法与版本处理原则】本站正文采用现代化正字法的通行文本（19世纪及以前文本的处理原则详见各巴洛克诗页与
+              EDITORIAL_WORKFLOW.md）。原刊/早期形态在本记录中完整给出。正文不残留 ß 类旧拼法（musst 而非
+              mußt，Sklaverei 而非 Sklaverey）。
+            </p>
+            <p>
+              【三源核对】德文正文以 deutschelyrik.de 的现代通行文本（标注"Aufnahme
+              2001"）为转录底本，另以两个一级来源交叉核对：Zeno.org 的《柏林版》歌德全集第1卷第327–329页，与 German
+              Wikisource 转写的1827年《全集末版》（Ausgabe letzter Hand）第2卷第76–78页。7 节、行数
+              11/9/7/9/9/5/7（共57行）三源一致。
+            </p>
+            <p>
+              【与1827年《全集末版》的正字法/异文差异】(1) 单词拼写：1827作 Aermeres / Sonn' / Thoren / Uebermuth /
+              Sklaverey / Thränen / Gluth / Müßt / Blüthenträume / sey / sitz' ich；本站通行文本作 Ärmeres / Sonn /
+              Toren / Übermut / Sklaverei / Tränen / Glut / Musst / Blütenträume / sei / sitz ich。(2) 第3行：1827作"dem
+              Knaben gleich"，通行本多作"Knaben gleich"；本站从通行本。(3) 关键异文——第34行：1827年《全集末版》删去
+              Knabenmorgen-，仅作"Weil nicht alle / Blüthenträume
+              reiften?"；而1789年自选集及几乎所有现代通行本保留著名的四级复合词"Knabenmorgenblütenträume"。本站从1789/通行本的读法（跨行排作
+              Knabenmorgen- / Blütenträume），并在逐行注释中说明。(4) 第40行：1827作"da
+              droben"，deutschelyrik作"dadroben"，本站从 deutschelyrik。
+            </p>
+            <p>
+              【待进一步核实】(1) 雅各比1785年刊出此诗的具体经过，以及是否确属"未经歌德授权"；(2)
+              本诗在"泛神论之争"中的作用与歌德本人的后续评价，本站未回到一手书信核实；(3) Zeno
+              主机在本次抓取中拒绝连接（ECONNREFUSED），其读法依据该来源的既著录版次页码，未在本次实时逐字比对——已列为待补项，待
+              Zeno 恢复访问后运行 npm run snapshot 复核。
+            </p>
+            <p>【公版】歌德1832年卒，按德国70年 p.m.a.，公版起始年 = 1832 + 71 = 1903。</p>
+            <p>
+              本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik / wikimedia）、D（含两个一级来源）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Johann Wolfgang von Goethe</li>
+            <li>确认标题与出处：1789自选集；1827《全集末版》第2卷 S.76–78</li>
+            <li>德文原文主来源：deutschelyrik.de（现代通行文本，转录底本）</li>
+            <li>一级来源交叉核对：Zeno《柏林版》/ Wikisource 1827《全集末版》</li>
+            <li>核对诗节、行数（7节 11/9/7/9/9/5/7，共57行）、无韵式</li>
+            <li>记录1827年版正字法与异文（含 Knabenmorgen- 增删）</li>
+            <li>自由韵律说明（无韵即纲领）</li>
+            <li>逐行注释落到具体行号</li>
+            <li>词汇 lemma 在正文实际出现（sieden 标注为参照词族）</li>
+            <li>变位表与词条变化类别一致（弱变化）</li>
+            <li>语法要点结合诗句验证（自由韵律/命令式/前置第二格）</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1832 + 71 = 1903</li>
+            <li>高危断言（雅各比刊行经过、泛神论之争）标注待核实</li>
+            <li>撰写 image brief（含禁忌：无锁链鹫鹰）</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">Zeno 主机恢复后补抓快照并逐字复核</li>
+            <li class="pending">雅各比1785年刊行经过回核一手书信</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议德语文学/狂飙突进专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

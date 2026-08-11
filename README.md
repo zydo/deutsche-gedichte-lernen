@@ -6,12 +6,17 @@
 
 视觉风格：纸张质感米白背景 + 优雅衬线字体（德文用 Cormorant/EB Garamond，中文用 Noto Serif SC）+ 暗金/灰蓝点缀，目标是"打开一本文学画册，旁边有位德语老师做精炼注释"的阅读体验。
 
-> **当前状态：共 33 首诗，分四批录入。**
+> **当前状态：共 50 首诗，分五批录入。**
 >
 > - **第一批（11 首）**：Goethe ×3、Heine ×3、Eichendorff、Mörike、Hölderlin、Rilke ×2 — 已配图。
 > - **第二批（9 首）**：Goethe ×2（_Wandrers Nachtlied I_、_Mignon_）、Heine（_Der Tod, das ist die kühle Nacht_）、Rilke（_Archaïscher Torso Apollos_）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 已配图。
 > - **第三批（9 首）**：Brentano、Uhland、Lenau、Hebbel、Storm、C. F. Meyer、Fontane、Hofmannsthal、Morgenstern — 已配图。
-> - **第四批（4 首，进行中）**：Gryphius ×2、Fleming、van Hoddis — 填补巴洛克与表现主义两个时代缺口的第一部分 — 已配图。这一批原计划 12 首，目前完成 4 首，未完成部分见[已知局限](#已知局限--后续工作)。
+> - **第四批（4 首）**：Gryphius ×2、Fleming、van Hoddis — 已配图。
+> - **第五批（17 首，编号 34–50，正文已录入，配图待生成）**：补三个硬缺口——时间轴断层（Walther《Under der linden》约1200、表现主义至1915）、流派与形式（狂飙突进纲领诗 _Prometheus_、民歌 _Die Gedanken sind frei_、政治诗 _Nachtgedanken_、长行诗 _Fahrt über die Kölner Rheinbrücke_、Wortkunst _Patrouille_、亚历山大体十四行 _Vergänglichkeit der Schönheit_、格言对句 _Cherubinischer Wandersmann_）、作者结构（第二位女性作者 Lasker-Schüler、首部匿名民歌）。新增目录作者组按文学时间线排序，Walther 居首。
+>
+> 收录诗人现共 30 位具名作者 + 1 个匿名民歌组（共 31 个目录组），其中 2 位女性作者（Droste-Hülshoff、Lasker-Schüler），时间跨度自约 1200 年的 Walther 至 1915 年的 Stramm。
+>
+> ★ **编辑工作规范**：从候选诗到可发布页面的端到端流程（选诗、来源矩阵、正文锁定、逐行审计、形式自验、跨页接线、构建门槛）见新增的 **[EDITORIAL_WORKFLOW.md](EDITORIAL_WORKFLOW.md)**。第五批起的新增诗（编号 ≥34）采用更严格的来源规则：至少 3 个独立运营方 + 至少 1 个一级来源（每条来源显式标 tier，一级来源写纸本版次/页码），由 `npm run check` 机器校验。
 >
 > 收录诗人现共 23 位，时间跨度自 17 世纪的 Gryphius、Fleming 至 20 世纪的 van Hoddis。技术架构支持持续扩充，见下方"如何添加一首新诗"。
 >
