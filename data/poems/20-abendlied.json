@@ -149,11 +149,11 @@
     },
     {
       "de": "Der Wald steht schwarz und schweiget,",
-      "zh": "schweigen（沉默）用于森林是拟人。schweiget 为第三人称单数古体词尾 -et 形式（诗歌延长形式，今 schweigt）。此行与下一行的 steiget 押韵，是全诗最常被引用的句子之一（2012年德国《犯罪现场》有一集即以此为剧名）。"
+      "zh": "schweigen（沉默）用于森林是拟人。schweiget 为第三人称单数古体词尾 -et 形式（诗歌延长形式，今 schweigt）。此行与下一行的 steiget 押韵，是全诗最常被引用的句子之一（据称2012年德国《犯罪现场》有一集以此为剧名，待进一步核实）。"
     },
     {
       "de": "Und aus den Wiesen steiget / Der weiße Nebel wunderbar.",
-      "zh": "语序为状语—动词—主语（Der weiße Nebel 在动词之后）。wunderbar 在此为副词，修饰 steiget（\"奇异地升起\"），而非定语。德国作家阿克塞尔·哈克曾以某个孩子把这两行听成 \"der weiße Neger Wumbaba\"（白人黑人翁巴巴）为题写成一本关于听错歌词的书，可见此句在德语文化中的普及程度。"
+      "zh": "语序为状语—动词—主语（Der weiße Nebel 在动词之后）。wunderbar 在此为副词，修饰 steiget（\"奇异地升起\"），而非定语。据称德国作家阿克塞尔·哈克（Axel Hacke）曾以孩子把此句听错为 \"der weiße Neger Wumbaba\" 为题写书（出处待进一步核实）。"
     },
     {
       "de": "Und in der Dämmrung Hülle",
@@ -173,7 +173,7 @@
     },
     {
       "de": "Sind eitel arme Sünder,",
-      "zh": "eitel 在此不是常见的\"虚荣的\"，而是另一个古义\"纯然、不过是\"（＝ lauter，同本站海涅《死亡，那是清凉的夜》中的 lauter）。注意：路德译《传道书》中 \"es ist alles eitel\"（凡事都是虚空）的 vanitas 义是另一回事，两义不要混淆。整句意为\"无非是可怜的罪人\"。这是全诗最容易误读的一个词。"
+      "zh": "`eitel` 在此取古义「纯然、不过是」（＝ lauter / nichts als），同本站海涅《死亡，那是清凉的夜》中的 `lauter`。注意区分：路德语言中 `eitel` 另有 `leer / nichtig`（虚空，vanitas）一义，如 *es ist alles ganz eitel*，**本诗不取该义**。整句意为「无非是可怜的罪人」。这是全诗最容易误读的一个词。"
     },
     {
       "de": "Wir spinnen Luftgespinnste",
@@ -189,11 +189,11 @@
     },
     {
       "de": "Wollst endlich sonder Grämen",
-      "zh": "Wollst 是 wollen 的第一虚拟式（Konjunktiv I）第二人称单数，用于表达祈愿（\"愿你……\"），今已仅存于祷词与固定表达中。sonder 是古老的介词，意为\"没有、免于\"（同英语 without、法语 sans），支配第四格；今仅存于 sonderbar、sondern 等派生词中。das Grämen 为动词 sich grämen（忧伤）的名词化。"
+      "zh": "Wollst 是 wollen 的第一虚拟式（Konjunktiv I）第二人称单数，用于表达祈愿（\"愿你……\"），今已仅存于祷词与固定表达中。sonder 是古老的介词，意为\"没有、免于\"（同英语 without、法语 sans），支配第四格；今仅存于 sonderbar、sondern 等派生词中。das Grämen 为动词 sich grämen（忧伤）的名词化。 `Wollst` 是 `wollest`（wollen 的虚拟式一式第二人称单数）的词内省音（Synkope）形式。"
     },
     {
       "de": "Laß uns im Himmel kommen,",
-      "zh": "1783年版此处作 \"im Himmel\"（第三格），从现代语法看应为 \"in den Himmel\"（第四格，表方向）——1779年《缪斯年鉴》版正作 \"in Himmel\"。这属于18世纪的用法波动，也可能是排印之误，本站保留1783年版原样并在此说明。"
+      "zh": "1783年版此处作 \"im Himmel\"（第三格），从现代语法看应为 \"in den Himmel\"（第四格，表方向）——1779年版作 \"in Himmel\"。这属于18世纪的用法波动，也可能是排印之误，本站保留1783年版原样并在此说明。"
     },
     {
       "de": "So legt euch denn, ihr Brüder,",
@@ -250,8 +250,8 @@
     {
       "term": "eitel",
       "pos": "adj.",
-      "meaning": "①（古义，不变格）纯然、不过是；②（今义）虚荣的、空虚的",
-      "note": "本诗第4节取古义（\"eitel arme Sünder\" 无非是可怜的罪人），第5节的名词 Eitelkeit 则取今义（虚荣）。同一首诗中两义并存，是阅读18世纪文本时的典型陷阱。"
+      "meaning": "①a（古义，不变格）纯然、不过是（＝ lauter / nichts als）——本诗第4节；①b（古义）虚空的、无实质的（＝ leer / nichtig，vanitas）——见本站《一切都是虚空》《致自己》；②（今义）虚荣的——本诗第5节 Eitelkeit",
+      "note": "本诗第4节 `eitel arme Sünder` 取 ①a 义（无非是可怜的罪人），第5节名词 `Eitelkeit` 取 ② 义（虚荣）。①a 与 ①b 是两个不同的古义，不可混为一谈：前者＝lauter，后者＝leer/nichtig。同一首诗中两义并存，是阅读18世纪文本时的典型陷阱。"
     },
     {
       "term": "das Gespinst, -e",
@@ -275,7 +275,7 @@
       "term": "der Abendhauch",
       "pos": "n.（阳性，复合词）",
       "meaning": "晚风、夜晚的气息",
-      "note": "der Hauch 指极轻微的气息或一丝（ein Hauch von …）；英格丽·诺尔1996年的犯罪小说即以 \"Kalt ist der Abendhauch\" 为题。"
+      "note": "der Hauch 指极轻微的气息或一丝（ein Hauch von …）；据称英格丽·诺尔（Ingrid Noll）1996年（出处待进一步核实）的犯罪小说即以 \"Kalt ist der Abendhauch\" 为题。"
     }
   ],
   "verb_forms": [
@@ -362,7 +362,7 @@
   ],
   "grammar_notes": [
     {
-      "title": "前置第二格（三例）",
+      "title": "前置第二格（两例）",
       "quote": "in der Dämmrung Hülle / des Tages Jammer",
       "body": "现代德语把第二格放在被修饰名词之后（die Hülle der Dämmerung、der Jammer des Tages），18世纪诗歌则常用前置语序。识别方法：看到两个连续的名词而前一个带第二格冠词（der/des）时，先把它读作后一个名词的修饰语。这一结构在本站收录的荷尔德林、里尔克、特拉克尔诸诗中反复出现，值得作为固定的阅读技能训练。"
     },
@@ -378,11 +378,11 @@
     },
     {
       "title": "命令式的诸种形式",
-      "quote": "Seht ihr den Mond …? / Laß uns einfältig werden / So legt euch denn, ihr Brüder, / Verschon’ uns, Gott!",
-      "body": "本诗几乎用齐了德语命令式的全部形式：第二人称复数 seht / legt（与陈述式同形，但不加主语 ihr）、第二人称单数 Laß / Verschon’（省去词尾 -e，是诗歌与口语的常见做法）、以及 \"Laß uns + 不定式\" 这一相当于英语 let us 的劝诱结构。请注意区分第二节 \"Seht ihr den Mond dort stehen?\"——它带主语 ihr 且句末为问号，是疑问句而非命令句。"
+      "quote": "Laß uns einfältig werden / So legt euch denn, ihr Brüder, / Verschon' uns, Gott!",
+      "body": "本诗使用了德语命令式的多种形式：第二人称复数 `Seht`（第三节，与陈述式同形但不加主语 ihr）／`legt`（第七节）、第二人称单数 `Laß`（`lassen` 命令式的常规形式，今作 lass!，并非省音）／`Verschon'`（`verschone` 的词末省音 Apokope，以省字符标出），以及 \"Laß uns + 不定式\" 这一相当于英语 let us 的劝勉句型（第四、五、六节）。注意：第三节首行 `Seht ihr den Mond …?` 形似命令式，实为疑问句（动词在前是因为 du/ihr 疑问句的语序），不属命令式。"
     }
   ],
-  "cultural_notes": "《晚歌》1778年首刊于约翰·海因里希·福斯主编的《缪斯年鉴 1779》，此后几乎没有一部德语诗选会漏掉它。1783年克劳迪乌斯本人把它收入《万茨贝克信使全集》第四部，并修改了第六节的最后一行。它的蓝本是保罗·格哈特1647年的圣诗《Nun ruhen alle Wälder》——克劳迪乌斯本打算让自己的诗按同一旋律演唱，因此两首在格律与韵式上完全一致（六行诗节，尾韵 aabccb，第三、六行构成\"尾韵包\" Schweifreim）。1790年约翰·亚伯拉罕·彼得·舒尔茨在《以民歌风格演唱的歌曲》中为它谱写的旋律，使它进入德语歌唱曲目的核心，今天新教《福音赞美诗集》（EG 482）与2013年起的天主教《赞美上帝》（Gotteslob 93）都以此曲收录。全部谱曲版本超过70种，舒伯特1816年11月也写过一首（D 499）。\n\n这首诗长期在评价上存有争议：一些读者只看到\"孩童式的虔敬\"，因其所谓的天真与浅白而拒斥它；恩斯特·维歇特则赞赏它质朴而在手艺上极为高明，认为简单本身正是一种风格手段。文学学者温弗里德·弗罗因德指出，它与其说是一首田园诗，不如说是一首死亡之诗——只不过是在一个信者的救恩期待背景之下写成的。最广为传唱的通常只有第一、二、三与最后一节，中间几节谈罪、谈死、谈天国的部分反而常被略去；赫尔德早在收录此诗进《民歌集》时就已删去最后两节。\n\n它在德语文化中的地位可由几个细节看出：赫尔穆特·施密特生前指定在自己2015年的追思礼拜上唱这首歌；安塞尔姆·基弗1971年画过一幅题为《月亮已经升起》的作品；2020年新冠疫情初期，德国福音教会曾邀请所有人每晚19点在阳台合唱此曲。也正因如此，它被戏拟的次数同样惊人，其中最著名的是彼得·吕姆科夫1962年的《对马蒂亚斯·克劳迪乌斯〈晚歌〉的变奏》。",
+  "cultural_notes": "《晚歌》1778年首刊于约翰·海因里希·福斯主编的《缪斯年鉴 1779》，此后几乎没有一部德语诗选会漏掉它。1783年克劳迪乌斯本人把它收入《万茨贝克信使全集》第四部，并修改了第六节的最后一行。它的蓝本是保罗·格哈特1647年的圣诗《Nun ruhen alle Wälder》——克劳迪乌斯本打算让自己的诗按同一旋律演唱，因此两首在格律与韵式上完全一致（每节为 Schweifreim，韵式 aabccb，第三、六行相押）。1790年约翰·亚伯拉罕·彼得·舒尔茨在《以民歌风格演唱的歌曲》中为它谱写的旋律，使它进入德语歌唱曲目的核心，今天新教《福音赞美诗集》（EG 482）与2013年起的天主教《赞美上帝》（Gotteslob 93）都以此曲收录。据称全部谱曲版本超过70种（出处待进一步核实），舒伯特1816年11月也写过一首（D 499）。\n\n这首诗长期在评价上存有争议：一些读者只看到\"孩童式的虔敬\"，因其所谓的天真与浅白而拒斥它；恩斯特·维歇特则赞赏它质朴而在手艺上极为高明，认为简单本身正是一种风格手段。文学学者温弗里德·弗罗因德指出，它与其说是一首田园诗，不如说是一首死亡之诗——只不过是在一个信者的救恩期待背景之下写成的。最广为传唱的通常只有第一、二、三与最后一节，中间几节谈罪、谈死、谈天国的部分反而常被略去；赫尔德早在收录此诗进《民歌集》时就已删去最后两节。\n\n它在德语文化中的地位可由几个细节看出：赫尔穆特·施密特生前指定在自己2015年的追思礼拜上唱这首歌；安塞尔姆·基弗1971年画过一幅题为《月亮已经升起》的作品；2020年新冠疫情初期，德国福音教会曾邀请所有人每晚19点在阳台合唱此曲。也正因如此，它被戏拟的次数同样惊人，其中最著名的是彼得·吕姆科夫1962年的《对马蒂亚斯·克劳迪乌斯〈晚歌〉的变奏》。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。需要特别说明的是第四节 \"Sind eitel arme Sünder\" 中的 eitel：此处并非今义的\"虚荣\"，而是路德《圣经》语言中的\"纯然、不过是\"，译文作\"无非是可怜的罪人\"；而第五节的名词 Eitelkeit 则取今义\"虚荣\"，译文作\"虚荣\"——同一词根在同一首诗中两义并用，是本诗翻译中最需要留心之处。此外，译文保留了第七节末行由宏大祈祷突然收缩到\"生病的邻人\"这一落差，未作任何铺垫或修饰。本诗因作者1815年逝世，德文原文早已进入公有领域；已知存在多个中文译本，因版权原因本站不转载具体译本全文。",
   "image_prompt": {
     "imagery": "夏末或初秋的乡村夜景：一轮升起不久的月亮悬在天边，天空缀满细密星点，远处森林呈黑色剪影，近处草地上白雾正缓缓升起",
@@ -402,12 +402,12 @@
     {
       "name": "gedichte7.de — „Der Mond ist aufgegangen (Abendlied) – Claudius“",
       "url": "https://www.gedichte7.de/abendlied-claudius.html",
-      "note": "辅助来源。七节四十二行，用词与1783年版一致（含 \"Du unser Herr und unser Gott!\"），采用现代化正字法（laß→laß/lass、seyn→sein、Luftgespinnste→Luftgespinste、im Himmel→in Himmel 处作 in Himmel 的现代化改写），用于独立交叉核对。"
+      "note": "辅助来源（三级）。七节四十二行，用词与1783年版一致（含 \"Du unser Herr und unser Gott!\"），采用现代化正字法（seyn→sein、Luftgespinnste→Luftgespinste 等）。第35行作 \"in Himmel\"（与 Zeno 一级来源一致），与本站正文 \"im Himmel\" 不同，详见校对记录。"
     },
     {
       "name": "Zeno.org — Matthias Claudius: Werke in einem Band. München [1976], S. 217–218（Asmus omnia sua secum portans · Vierter Teil）",
       "url": "http://www.zeno.org/Literatur/M/Claudius,+Matthias/Gedichte+und+Prosa/Asmus+omnia+sua+secum+portans/Vierter+Teil/Abendlied",
-      "note": "一级来源，标注纸质版出处与页码。42 行、分节 6×7 与本站一致；另确认本诗收于《万茨贝克信使》文集第四部（1783 年）。第 35 行作 in Himmel（非 im Himmel），第 25 行 dein 用斜体强调，均与本站不同，见校对记录。"
+      "note": "一级来源，标注纸质版出处与页码。42 行、分节 7×6 与本站一致；另确认本诗收于《万茨贝克信使》文集第四部（1783 年）。第 35 行作 in Himmel（非 im Himmel），第 25 行 dein 用斜体强调，均与本站不同，见校对记录。"
     }
   ],
   "translation_sources": [
@@ -416,7 +416,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在多个中文译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "德文正文通过两个独立来源核对：German Wikipedia 同时转录了1779年《缪斯年鉴》版与1783年《万茨贝克信使全集》第四部版，gedichte7.de 提供了一个现代化排印的通行本。七节各六行的结构在所有版本中一致。已核实的版本差异如下：(1) 作者本人的修订：1779年版第六节末行作 \"Du lieber treuer frommer Gott!\"，1783年版改为 \"Du unser Herr und unser Gott!\"；Wikipedia 注释明确指出克劳迪乌斯1783年收入全集时修改了第六节第六行。本站从1783年作者手定版。(2) 标点与分行细节：1779年版第3行末为冒号、第13行末无破折号、第15行末为句号，1783年版分别作句号、破折号、感叹号；本站从1783年版。(3) 正字法：1783年版保留 seyn（今 sein）、Luftgespinnste（1779年版作 Luftgespinste）、laß（今 lass）等旧拼法，本站予以保留。(4) 一处语法疑点：1783年版第六节第五行作 \"Laß uns im Himmel kommen\"（第三格），而1779年版作 \"Laß uns in Himmel kommen\"；按现代语法表方向应为 \"in den Himmel\"。本站保留1783年版原样并在逐行注释中标明，但此处究竟是18世纪的用法波动还是排印之误，本站未能确定，属待核实项。(5) 另需说明：新教《福音赞美诗集》（1993）将第五节首行改作 \"Gott, laß dein Heil uns schauen\"，天主教《赞美上帝》（2013）作 \"Gott, lass uns dein Heil schauen\"，两者均标注为\"教会合一\"版本；本站采用克劳迪乌斯原诗的语序，不采教会歌本的改动。本站未直接查阅1778年《缪斯年鉴》与1783年全集的影印件，上述采择依据 Wikipedia 的转录（该词条已给出两版的 Google Books 数字化链接），建议有条件的读者对照原书核实。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 依 SOURCES.md 第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。 【2026-08 补验证】依 SOURCES.md 规则 D 补入一级来源 Zeno.org（Claudius《作品单卷本》München 1976，S.217–218），运营方独立于原有的 Wikimedia 与 gedichte7.de。42 行、分节 6×7 完全一致，无增删诗行。共查出 7 处差异，分三类：　【甲｜实词差异，须留意】第 35 行：本站作 Laß uns im Himmel kommen，Zeno 一级来源作 Laß uns in Himmel kommen。这不是拼写问题——in Himmel（无冠词、方向义「进天国里去」）是 18 世纪的用法，im Himmel（处所义「在天国中」）是后世赞美诗集常见的改动。按校勘学的「较难读法优先」原则，Zeno 的 in Himmel 更可能是原貌。**但本站暂不改动正文**：目前三来源为二比一（Wikimedia 与 gedichte7.de 均作 im），且尚未查阅 1779 年《Musenalmanach》初刊或 1783 年《Asmus》第四部原刊影印件。此项列为待核实。　【乙｜拼写差异】第 22 行：本站作 Luftgespinnste（双 n），Zeno 作 Luftgespinste（单 n）。第 30 行：本站作 seyn（18 世纪正字法），Zeno 作 sein（现代化）。第 40 行：本站作 Verschon’（带省字符），Zeno 作 Verschon。　【丙｜标点差异】第 1 行行末本站有逗号、Zeno 无；第 3 行行末本站作句号、Zeno 作分号；第 21 行行末本站作句号、Zeno 作分号；第 22 行行末 Zeno 有逗号、本站无。Zeno 用分号把每节的前后半连成一个长句，本站从通行读本切分为两句。以上均不影响语义。　【附】Zeno 把第 25 行的 dein 排为斜体（Gott, laß uns *dein* Heil schauen），是原刊的强调标记；本站正文暂未复现该强调，已在此备案。　【待核实项】(1) 第 35 行 in / im Himmel，需 1779 年初刊或 1783 年原刊影印件定夺；(2) 本站正文在正字法上不完全自洽（保留 seyn 却用现代的 im），补验证后宜整体统一到某一个底本。",
+  "verification_notes": "德文正文通过两个独立来源核对：German Wikipedia 同时转录了1779年《缪斯年鉴》版与1783年《万茨贝克信使全集》第四部版，gedichte7.de 提供了一个现代化排印的通行本。七节各六行的结构在所有版本中一致。已核实的版本差异如下：(1) 作者本人的修订：1779年版第六节末行作 \"Du lieber treuer frommer Gott!\"，1783年版改为 \"Du unser Herr und unser Gott!\"；Wikipedia 注释明确指出克劳迪乌斯1783年收入全集时修改了第六节第六行。本站从1783年作者手定版。(2) 标点与分行细节：1779年版第3行末为冒号、第13行末无破折号、第15行末为句号，1783年版分别作句号、破折号、感叹号；本站从1783年版。(3) 正字法：1783年版保留 seyn（今 sein）、Luftgespinnste（1779年版作 Luftgespinste）、laß（今 lass）等旧拼法，本站予以保留。(4) 一处语法疑点：1783年版第六节第五行作 \"Laß uns im Himmel kommen\"（第三格），而1779年版作 \"Laß uns in Himmel kommen\"；按现代语法表方向应为 \"in den Himmel\"。本站保留1783年版原样并在逐行注释中标明，但此处究竟是18世纪的用法波动还是排印之误，本站未能确定，属待核实项。(5) 另需说明：新教《福音赞美诗集》（1993）将第五节首行改作 \"Gott, laß dein Heil uns schauen\"，天主教《赞美上帝》（2013）作 \"Gott, lass uns dein Heil schauen\"，两者均标注为\"教会合一\"版本；本站采用克劳迪乌斯原诗的语序，不采教会歌本的改动。本站未直接查阅1778年《缪斯年鉴》与1783年全集的影印件，上述采择依据 Wikipedia 的转录（该词条已给出两版的 Google Books 数字化链接），建议有条件的读者对照原书核实。\n\n【来源独立性复核（2026年8月）】本站在第四批录入时发现并确认：本诗所引 gedichte7.de 依 SOURCES.md 第 4 节属三级来源；去掉三级来源后，本诗仅剩 1 个独立来源组（wikimedia）。需要说明的是，本诗的德文正文此前**并非只有单一来源**——上列各来源之间的逐词比对确已完成，比对结果如上文所载，本站不撤回任何已记录的比对结论。但按本项目现行的《来源独立性规范》（见仓库根目录 SOURCES.md），本诗的来源配置尚未达标，**补入一个额外的独立来源属未完成事项**，已列入下方 checklist。在补齐之前，请读者将本诗的文本可信度视为低于本站其他已达标条目。 【2026-08 补验证】依 SOURCES.md 规则 D 补入一级来源 Zeno.org（Claudius《作品单卷本》München 1976，S.217–218），运营方独立于原有的 Wikimedia 与 gedichte7.de。42 行、分节 7×6 完全一致，无增删诗行。共查出 7 处差异，分三类：　【甲｜实词差异，须留意】第 35 行：本站作 Laß uns im Himmel kommen，Zeno 一级来源作 Laß uns in Himmel kommen。这不是拼写问题——in Himmel（无冠词、方向义「进天国里去」）是 18 世纪的用法，im Himmel（处所义「在天国中」）是后世赞美诗集常见的改动。按校勘学的「较难读法优先」原则，Zeno 的 in Himmel 更可能是原貌。**但本站暂不改动正文**：目前三来源的读法为：Wikimedia（依1783年版）作 im Himmel，gedichte7.de 与 Zeno 一级来源均作 in Himmel——即二比一支持 in Himmel，且尚未查阅 1779 年《Musenalmanach》初刊或 1783 年《Asmus》第四部原刊影印件。此项列为待核实。　【乙｜拼写差异】第 22 行：本站作 Luftgespinnste（双 n），Zeno 作 Luftgespinste（单 n）。第 30 行：本站作 seyn（18 世纪正字法），Zeno 作 sein（现代化）。第 40 行：本站作 Verschon’（带省字符），Zeno 作 Verschon。　【丙｜标点差异】第 1 行行末本站有逗号、Zeno 无；第 3 行行末本站作句号、Zeno 作分号；第 21 行行末本站作句号、Zeno 作分号；第 22 行行末 Zeno 有逗号、本站无。Zeno 用分号把每节的前后半连成一个长句，本站从通行读本切分为两句。以上均不影响语义。　【附】Zeno 把第 25 行的 dein 排为斜体（Gott, laß uns *dein* Heil schauen），是原刊的强调标记；本站正文暂未复现该强调，已在此备案。　【待核实项】(1) 第 35 行 in / im Himmel，需 1779 年初刊或 1783 年原刊影印件定夺；(2) 本站正文在正字法上不完全自洽（保留 seyn 却用现代的 im），补验证后宜整体统一到某一个底本。",
   "checklist": [
     {
       "label": "确认作者：Matthias Claudius",
