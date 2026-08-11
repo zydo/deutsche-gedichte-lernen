@@ -254,7 +254,7 @@
     {
       "title": "前置第二格",
       "quote": "Der Jugend Zauber für und für",
-      "body": "= der Zauber der Jugend（青春的魔力）。第二格前置在19世纪诗歌中很常见，今日只保留在专有名词（Goethes Werke）与少数固定表达中。识别窍门：若一行以 der/des/die + 名词开头、后面紧跟另一个名词而没有动词，多半就是前置第二格。本站在荷尔德林、里尔克、特拉克尔、克劳迪乌斯诸诗中都标注过这一结构，可对照复习。"
+      "body": "= der Zauber der Jugend（青春的魔力）。第二格前置在19世纪诗歌中很常见，今日只保留在专有名词（Goethes Werke）与少数固定表达中。识别窍门：若一行以 der/des/die + 名词开头、后面紧跟另一个名词而没有动词，多半就是前置第二格。本站在里尔克《古风的阿波罗躯干残像》、特拉克尔《一个冬夜》、克劳迪乌斯《晚歌》、迈耶《罗马的喷泉》诸页中都标注过这一结构。"
     },
     {
       "title": "语气词 doch 的两种功能",
@@ -282,7 +282,7 @@
     {
       "name": "gedichte7.de — „Am grauen Strand, am grauen Meer (Die Stadt) – Storm“",
       "url": "https://www.gedichte7.de/die-stadt.html",
-      "note": "辅助来源。三节十五行与主来源逐词一致，唯第7行作完整形式 \"ohne Unterlaß\"、第9行行末加逗号，用于交叉核对用词与标点。"
+      "note": "辅助来源（三级）。三节十五行与主来源逐词一致，唯第7行作完整形式 \"ohne Unterlaß\"、第9行行末加逗号，用于交叉核对用词与标点。"
     },
     {
       "name": "Zeno.org — Theodor Storm: Sämtliche Werke in vier Bänden. Band 1, Berlin und Weimar ⁴1978, S. 112（Gedichte, Ausgabe 1885 · Erstes Buch）",
@@ -307,11 +307,11 @@
       "done": true
     },
     {
-      "label": "德文原文主来源：textlog.de",
+      "label": "德文原文主来源（二级）：textlog.de",
       "done": true
     },
     {
-      "label": "德文原文辅助来源：gedichte7.de / Zeno.org（一级来源）",
+      "label": "德文原文辅助来源：gedichte7.de（三级）/ Zeno.org（一级来源）",
       "done": true
     },
     {
