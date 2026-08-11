@@ -315,7 +315,7 @@
     {
       "name": "deutschelyrik.de — 「Das Mädchen aus der Fremde (1797)」（Fritz Stavenhagen 朗诵与文本站）",
       "url": "https://www.deutschelyrik.de/das-maedchen-aus-der-fremde.html",
-      "note": "第三来源（二级），运营方独立于 Zeno.org 与 gedichte7.de。24 行、分节 4×6，逐字逐标点与本站正文完全一致，包括旧正字法 wußte 与比较级 glücklichern、andern 的无 -e- 形式。"
+      "note": "第三来源（二级），运营方独立于 Zeno.org 与 gedichte7.de。24 行、分节 6×4，逐字逐标点与本站正文完全一致，包括旧正字法 wußte 与比较级 glücklichern、andern 的无 -e- 形式。"
     }
   ],
   "translation_sources": [
@@ -324,7 +324,7 @@
       "note": "AI 辅助生成，标注为学习用途；已知存在钱春绮、张玉书等译者的中译本，因版权原因未转载全文。"
     }
   ],
-  "verification_notes": "【当前状态】德文正文由三个独立运营方互证：Zeno.org 转录的 Hanser 版《席勒全集》第1卷（一级来源）、deutschelyrik.de（二级来源）、gedichte7.de（三级来源，依 SOURCES.md 第 4 节仅作参考）。三方逐字逐标点比对：24 行、分节 4×6，未发现任何异文——包括三处易被现代编辑改动的细节：第 6 行作 wußte（1996 年改革前拼写，本站保留，变位表给出现代形式 wusste）；第 14、16 行的 andern／glücklichern 保留无 -e- 的诗歌缩略形；第 20 行末为句号。来源配置符合规则 A–D。关于创作与发表年代（1796 年作、刊于《缪斯年鉴 1797》），本站依据通行的席勒研究结论，未直接查阅《缪斯年鉴》影印件，属待进一步核实项。\n\n【沿革】初版以 Zeno.org 与 gedichte7.de 两来源逐词逐标点核对；2026 年 8 月来源独立性复核发现 gedichte7.de 依 SOURCES.md 属三级来源、扣除后独立来源不足，遂补入独立的二级来源 deutschelyrik.de，此后由三个运营方互证并含一个一级来源，符合规则 A–D。",
+  "verification_notes": "【当前状态】德文正文由三个独立运营方互证：Zeno.org 转录的 Hanser 版《席勒全集》第1卷（一级来源）、deutschelyrik.de（二级来源）、gedichte7.de（三级来源，依 SOURCES.md 第 4 节仅作参考）。三方逐字逐标点比对：24 行、分节 6×4，未发现任何异文——包括三处易被现代编辑改动的细节：第 6 行作 wußte（1996 年改革前拼写，本站保留，变位表给出现代形式 wusste）；第 14、16 行的 andern／glücklichern 保留无 -e- 的诗歌缩略形；第 20 行末为句号。来源配置符合规则 A–D。关于创作与发表年代（1796 年作、刊于《缪斯年鉴 1797》），本站依据通行的席勒研究结论，未直接查阅《缪斯年鉴》影印件，属待进一步核实项。\n\n【沿革】初版以 Zeno.org 与 gedichte7.de 两来源逐词逐标点核对；2026 年 8 月来源独立性复核发现 gedichte7.de 依 SOURCES.md 属三级来源、扣除后独立来源不足，遂补入独立的二级来源 deutschelyrik.de，此后由三个运营方互证并含一个一级来源，符合规则 A–D。",
   "checklist": [
     {
       "label": "确认作者：Friedrich Schiller",
