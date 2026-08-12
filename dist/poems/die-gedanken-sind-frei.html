@@ -124,39 +124,63 @@
             <span class="tag">异文丰富</span>
             <span class="tag">入门推荐</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/die-gedanken-sind-frei.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一间石砌的黑暗牢房，铁栅窗外透入一缕月光；牢房内部空无一物，唯有月光照在石墙上，墙上隐约出现一只飞鸟（思想）正从石缝间穿出
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>克制中的自由；不是越狱的暴力，而是"思想穿透石墙"的无声胜利</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    厚重的石墙与铁栅小窗、透入的月光、一只正穿过石缝/栅栏飞出的鸟（思想的象征，半透明）、空荡的牢房地面
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>无明确时代（民歌意象），器物为石墙、铁栅、木门</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    象征主义版画/水墨质感，强对比的明暗（月光 vs 石墙暗影），冷蓝月色与暖石灰为主，构图强调"穿透"的瞬间
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    ★不得出现索菲·朔尔或任何具体历史人物（来源薄弱，不据以作画）；不得出现可辨识的现代元素；不得出现血腥或刑具；不得出现文字水印；鸟应半透明、象征化，不可画成写实猛禽
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一间石砌的黑暗牢房，铁栅窗外透入一缕月光；牢房内部空无一物，唯有月光照在石墙上，墙上隐约出现一只飞鸟（思想）正从石缝间穿出
-              </dd>
-              <dt>情绪</dt>
-              <dd>克制中的自由；不是越狱的暴力，而是"思想穿透石墙"的无声胜利</dd>
-              <dt>画面元素</dt>
-              <dd>
-                厚重的石墙与铁栅小窗、透入的月光、一只正穿过石缝/栅栏飞出的鸟（思想的象征，半透明）、空荡的牢房地面
-              </dd>
-              <dt>时代感</dt>
-              <dd>无明确时代（民歌意象），器物为石墙、铁栅、木门</dd>
-              <dt>推荐风格</dt>
-              <dd>
-                象征主义版画/水墨质感，强对比的明暗（月光 vs 石墙暗影），冷蓝月色与暖石灰为主，构图强调"穿透"的瞬间
-              </dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                ★不得出现索菲·朔尔或任何具体历史人物（来源薄弱，不据以作画）；不得出现可辨识的现代元素；不得出现血腥或刑具；不得出现文字水印；鸟应半透明、象征化，不可画成写实猛禽
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

@@ -119,35 +119,59 @@
             <span class="tag">首末重复</span>
             <span class="tag">诗意现实主义</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/die-nachtigall.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一个夏日清晨的花园，玫瑰丛上有几朵刚刚绽开的玫瑰；远处枝头隐约一只夜莺（不突出）；近处一位少女手执草帽、神色出神地站在花旁
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>清晨的、初醒的、因爱情而微微失措的宁静；不是热烈的，而是"被什么触动后的怔忡"</dd>
+                  <dt>画面元素</dt>
+                  <dd>带露的玫瑰丛（几朵初绽）、少女与手中的夏草帽、远处暗示的夜莺（不画清）、柔和晨光、花园绿意</dd>
+                  <dt>时代感</dt>
+                  <dd>19世纪中欧中产花园，服饰为该时代夏装</dd>
+                  <dt>推荐风格</dt>
+                  <dd>诗意现实主义—自然主义水彩/油画质感，柔光、粉绿与玫瑰红为主，笔触细腻克制</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得把夜莺画得过于突出或写实巨大（它是远景暗示）；不得出现现代元素；不得出现文字水印；少女不应有明显表情夸张
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一个夏日清晨的花园，玫瑰丛上有几朵刚刚绽开的玫瑰；远处枝头隐约一只夜莺（不突出）；近处一位少女手执草帽、神色出神地站在花旁
-              </dd>
-              <dt>情绪</dt>
-              <dd>清晨的、初醒的、因爱情而微微失措的宁静；不是热烈的，而是"被什么触动后的怔忡"</dd>
-              <dt>画面元素</dt>
-              <dd>带露的玫瑰丛（几朵初绽）、少女与手中的夏草帽、远处暗示的夜莺（不画清）、柔和晨光、花园绿意</dd>
-              <dt>时代感</dt>
-              <dd>19世纪中欧中产花园，服饰为该时代夏装</dd>
-              <dt>推荐风格</dt>
-              <dd>诗意现实主义—自然主义水彩/油画质感，柔光、粉绿与玫瑰红为主，笔触细腻克制</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得把夜莺画得过于突出或写实巨大（它是远景暗示）；不得出现现代元素；不得出现文字水印；少女不应有明显表情夸张
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

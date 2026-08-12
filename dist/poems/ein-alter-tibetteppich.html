@@ -120,37 +120,61 @@
             <span class="tag">新造词</span>
             <span class="tag">女性作者</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/ein-alter-tibetteppich.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一条铺展开的古旧西藏地毯的俯视局部：经纬交织的网眼中，颜色与微光彼此缠绕，隐约浮现星辰与一朵麝香植物的花；两只脚（无腿）轻轻搁在地毯边缘
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>私密的、被织入的、东方化的幻梦；不是写实静物，而是"灵魂被编进织物"的隐喻具象</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    地毯的经纬纹理与网眼（Maschen）、缠绕的色光丝缕、隐约的星辰与麝香植物花纹、地毯边缘的两只脚（仅局部，无人物全身）
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>无明确时代；意象取自西藏/东方地毯传统与表现主义色彩的融合</dd>
+                  <dt>推荐风格</dt>
+                  <dd>表现主义—装饰画质感，俯视构图，色彩饱和而交织（金、绛、靛蓝），纹理细腻但整体如梦</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现可辨识的人物面部或全身（人仅以脚或手暗示）；不得出现情色；不得出现文字水印；不得把地毯画成现代工业织物
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一条铺展开的古旧西藏地毯的俯视局部：经纬交织的网眼中，颜色与微光彼此缠绕，隐约浮现星辰与一朵麝香植物的花；两只脚（无腿）轻轻搁在地毯边缘
-              </dd>
-              <dt>情绪</dt>
-              <dd>私密的、被织入的、东方化的幻梦；不是写实静物，而是"灵魂被编进织物"的隐喻具象</dd>
-              <dt>画面元素</dt>
-              <dd>
-                地毯的经纬纹理与网眼（Maschen）、缠绕的色光丝缕、隐约的星辰与麝香植物花纹、地毯边缘的两只脚（仅局部，无人物全身）
-              </dd>
-              <dt>时代感</dt>
-              <dd>无明确时代；意象取自西藏/东方地毯传统与表现主义色彩的融合</dd>
-              <dt>推荐风格</dt>
-              <dd>表现主义—装饰画质感，俯视构图，色彩饱和而交织（金、绛、靛蓝），纹理细腻但整体如梦</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现可辨识的人物面部或全身（人仅以脚或手暗示）；不得出现情色；不得出现文字水印；不得把地毯画成现代工业织物
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

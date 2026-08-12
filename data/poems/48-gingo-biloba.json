@@ -57,7 +57,7 @@
   "cultural_notes": "歌德晚年（1814—1819）沉浸于波斯诗人哈菲兹（Hafiz）的诗，写出《西东诗集》（West-östlicher Divan, 1819），试图在诗中让东方与西方\"相遇\"。《银杏》即其中\"苏莱卡之书\"（Buch Suleika）的一首。\n\n这首诗有一个实物背景：1815年9月15日，歌德在海德堡的 Gerbermühle，把两片银杏叶（一说一片从中裂开）赠予玛丽安娜·冯·维勒默（Marianne von Willemer，歌德以\"苏莱卡\"之名爱慕她），并附此诗。银杏叶\"一而二、二而一\"的形态，被歌德用来比喻他与玛丽安娜的爱情——两个灵魂既各自独立，又合而为一。（赠叶的具体经过与所附银杏叶实物，待进一步核实。）\n\n★拼写要点：歌德手稿作\"Ginkgo\"（与现代植物学一致），但他在1819年印行的《西东诗集》中改作\"Gingo\"——据通行说法，是为避开生硬的辅音连缀 -nk- 以求字形观感（此说标【待核】）。本站标题与正文一律用歌德印行的 Gingo 拼法，差异在校对记录说明。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 标题与正文用歌德的 Gingo 拼法（非现代 Ginkgo），差异在校对记录说明；(2) \"一与二\"的辩证（Ein/zwei/Eins/doppelt）译文保留其字面张力；(3) 交叉韵 abab 与问答结构无法在中文完全复制，译文以整齐行拍近似。本诗与《他们两个》（编号28）、与《迷娘》（编号13）主题相邻，建议对读。",
   "image_prompt": {"imagery": "一片银杏叶的特写：扇形的叶子中央二裂，金秋的黄色；叶面上隐约浮现两个相互映照的影子（暗示\"一而二\"）", "mood": "宁静的、冥想的、东西交汇的诗意；一片叶子承载\"一与二\"的玄思", "elements": "一片二裂的银杏叶（金黄）、叶面的光影、隐约的两个对称映影、虚化的秋日背景", "era": "无明确时代，自然意象", "taboos": "不得出现人物；不得出现文字水印；不得把叶子画成具象的双脸；不得出现现代元素", "style": "东方—浪漫融合的水彩/工笔质感，金黄与米白为主，构图对称、留白"},
-  "image_path": null,
+  "image_path": "/images/gingo-biloba.png",
   "german_sources": [
     {"name": "German Wikisource — Gingo biloba（West-östlicher Divan, Buch Suleika）", "url": "https://de.wikisource.org/wiki/Gingo_biloba", "tier": 1, "citation": "J. W. von Goethe: West-östlicher Divan, Buch Suleika (Cotta, Stuttgart 1819)", "note": "一级来源（《西东诗集》数字化，按 Buch 编次）。标题用歌德印行的 Gingo 拼法。本站正文据此（Divan 印行读法：Giebt/zwei/Eines/erwidern）。"},
     {"name": "Goethe-Museum Düsseldorf — Gedicht Ginkgo/Gingo biloba", "url": "https://www.goethe-museum.de/de/gedicht-ginkgo-biloba", "tier": 2, "citation": "歌德手稿（1815年9月15日，Gerbermühle）与印行 Divan 对照", "note": "二级来源。记录手稿作 Ginkgo、印行本作 Gingo，手稿拼法（Giebt/zwey/eines/erwiedern）与印行本的差异。"},

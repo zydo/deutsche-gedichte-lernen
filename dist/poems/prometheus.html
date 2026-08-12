@@ -119,39 +119,65 @@
             <span class="tag">创造</span>
             <span class="tag">狂飙突进纲领诗</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/prometheus.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一处高耸的岩石台地，台地上是简陋的锻造工场：炉火、铁砧、半成形的人形泥胎；下方天际堆压着沉重低垂的雷云，但雷云被压在台地之下、无法上升
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>
+                    沉静的、匠人式的尊严；不是受难，而是自主劳作的笃定；火光是暖橙色的，雷云是冷青灰的，二者不接触
+                  </dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    岩石台地与悬崖、露天锻炉与铁砧、几具未完成的人形泥胎（无面目）、远处下方压城的雷云层、炉前一块被火光照亮的空地
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>神话化的远古/无明确时代，器物为锻炉、铁砧、泥胎等原始造物工具</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    浪漫主义—象征主义油画质感，单一暖光源（炉火）对大面积冷调（雷云、岩石），构图下半实上半虚，笔触厚重
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现任何具体神祇形象（宙斯不可见，只以雷云暗示）；不得出现锁链、鹫鹰、高加索山岩钉（那是"被缚的普罗米修斯"传统，与本诗无关）；不得出现人物面孔；不得出现现代机械或文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一处高耸的岩石台地，台地上是简陋的锻造工场：炉火、铁砧、半成形的人形泥胎；下方天际堆压着沉重低垂的雷云，但雷云被压在台地之下、无法上升
-              </dd>
-              <dt>情绪</dt>
-              <dd>沉静的、匠人式的尊严；不是受难，而是自主劳作的笃定；火光是暖橙色的，雷云是冷青灰的，二者不接触</dd>
-              <dt>画面元素</dt>
-              <dd>
-                岩石台地与悬崖、露天锻炉与铁砧、几具未完成的人形泥胎（无面目）、远处下方压城的雷云层、炉前一块被火光照亮的空地
-              </dd>
-              <dt>时代感</dt>
-              <dd>神话化的远古/无明确时代，器物为锻炉、铁砧、泥胎等原始造物工具</dd>
-              <dt>推荐风格</dt>
-              <dd>
-                浪漫主义—象征主义油画质感，单一暖光源（炉火）对大面积冷调（雷云、岩石），构图下半实上半虚，笔触厚重
-              </dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现任何具体神祇形象（宙斯不可见，只以雷云暗示）；不得出现锁链、鹫鹰、高加索山岩钉（那是"被缚的普罗米修斯"传统，与本诗无关）；不得出现人物面孔；不得出现现代机械或文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

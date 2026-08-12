@@ -120,40 +120,64 @@
             <span class="tag">反转结局</span>
             <span class="tag">中学必读</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/der-handschuh.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一处宫廷石砌斗兽场（兽栏
+                    Zwinger），栏内卧定狮、虎、豹三兽；上方石质阳台的边沿，一只手套正落下、悬在兽群与人群之间
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>屏息的悬念——全场静止，全部张力集中在那只下落的手套上；不是血腥，而是被凝住的瞬间</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    石砌围栏与铁门、卧定的三只猛兽（狮虎豹，姿态各异但不互斗）、上方拱廊阳台与盛装看客的剪影、正中央悬空下落的女式手套、地面沙土
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>16世纪法国宫廷（弗朗索瓦一世时代），建筑、服饰、阳台栏柱为该时代样式</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    古典历史画写实风格，光线从阳台上方落下形成聚光，色调金棕与石灰，构图强调垂直纵深（阳台—手套—兽栏）
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现血迹、撕咬、尸体（三兽已卧定，无人受伤）；不得出现人物可辨面孔；不得出现现代元素或文字水印；手套应明显是女式细软，不可画成粗手套
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一处宫廷石砌斗兽场（兽栏
-                Zwinger），栏内卧定狮、虎、豹三兽；上方石质阳台的边沿，一只手套正落下、悬在兽群与人群之间
-              </dd>
-              <dt>情绪</dt>
-              <dd>屏息的悬念——全场静止，全部张力集中在那只下落的手套上；不是血腥，而是被凝住的瞬间</dd>
-              <dt>画面元素</dt>
-              <dd>
-                石砌围栏与铁门、卧定的三只猛兽（狮虎豹，姿态各异但不互斗）、上方拱廊阳台与盛装看客的剪影、正中央悬空下落的女式手套、地面沙土
-              </dd>
-              <dt>时代感</dt>
-              <dd>16世纪法国宫廷（弗朗索瓦一世时代），建筑、服饰、阳台栏柱为该时代样式</dd>
-              <dt>推荐风格</dt>
-              <dd>
-                古典历史画写实风格，光线从阳台上方落下形成聚光，色调金棕与石灰，构图强调垂直纵深（阳台—手套—兽栏）
-              </dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现血迹、撕咬、尸体（三兽已卧定，无人受伤）；不得出现人物可辨面孔；不得出现现代元素或文字水印；手套应明显是女式细软，不可画成粗手套
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

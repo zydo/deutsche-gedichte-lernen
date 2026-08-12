@@ -119,37 +119,61 @@
             <span class="tag">叠句</span>
             <span class="tag">框形结构</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/die-brueck-am-tay.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一座19世纪钢桁架铁路桥在风暴夜中，一列车头灯正驶入桥中段；桥下是汹涌的河口黑水；桥的远端上空隐约三个女巫的剪影（不清晰，只作暗示）
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>宿命的、即将降临的毁灭；不是事故现场，而是"毁灭已被预言"的压抑瞬间</dd>
+                  <dt>画面元素</dt>
+                  <dd>19世纪钢桁架长桥、风暴与浪涌、驶入桥中的列车车头灯、河口黑水、远端天空隐约的三女巫剪影</dd>
+                  <dt>时代感</dt>
+                  <dd>1879年苏格兰，桥梁为维多利亚时代钢桁架结构</dd>
+                  <dt>推荐风格</dt>
+                  <dd>
+                    维多利亚浪漫—写实风景画质感，风暴夜景，色调墨蓝与暖黄（车灯）对比，构图强调桥的纵深与上方天空的宿命感
+                  </dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得画出坠毁/血腥/尸体（本诗以光暗示，不正面写）；女巫只作远景暗示，不可画成流行奇幻女巫（尖帽/绿皮）；不得出现现代元素；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一座19世纪钢桁架铁路桥在风暴夜中，一列车头灯正驶入桥中段；桥下是汹涌的河口黑水；桥的远端上空隐约三个女巫的剪影（不清晰，只作暗示）
-              </dd>
-              <dt>情绪</dt>
-              <dd>宿命的、即将降临的毁灭；不是事故现场，而是"毁灭已被预言"的压抑瞬间</dd>
-              <dt>画面元素</dt>
-              <dd>19世纪钢桁架长桥、风暴与浪涌、驶入桥中的列车车头灯、河口黑水、远端天空隐约的三女巫剪影</dd>
-              <dt>时代感</dt>
-              <dd>1879年苏格兰，桥梁为维多利亚时代钢桁架结构</dd>
-              <dt>推荐风格</dt>
-              <dd>
-                维多利亚浪漫—写实风景画质感，风暴夜景，色调墨蓝与暖黄（车灯）对比，构图强调桥的纵深与上方天空的宿命感
-              </dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得画出坠毁/血腥/尸体（本诗以光暗示，不正面写）；女巫只作远景暗示，不可画成流行奇幻女巫（尖帽/绿皮）；不得出现现代元素；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

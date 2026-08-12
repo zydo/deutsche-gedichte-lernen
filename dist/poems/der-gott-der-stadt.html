@@ -120,37 +120,61 @@
             <span class="tag">神话化</span>
             <span class="tag">交叉韵</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/der-gott-der-stadt.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一座庞大的近代城市上空，一个由烟、火光与乌云凝聚成的巨大模糊神祇轮廓端坐于街区之上；其额头被黑风环绕，肚腹被夕阳映红，一只巨拳伸向下方一条正被火海吞没的街道
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>末日式、压迫性的宏伟；不是恐怖怪物，而是"神圣"与"屠戮"并存的亵渎感</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    密集的城市屋顶与烟囱、升向天空的烟柱与工厂云、凝成神形的乌云、神腹部的红光、下方一条街道的火光、教堂钟楼剪影
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>约1910年柏林/工业城市的近代都市，建筑为公寓楼、烟囱、教堂尖塔</dd>
+                  <dt>推荐风格</dt>
+                  <dd>表现主义版画/油画质感，强烈对比、扭曲透视、红黑蓝为主色，笔触粗厉、轮廓激荡</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得画出可辨识的具体神祇面孔（神只能由烟云火暗示）；不得出现十字架等明确基督教符号被亵渎的画面（钟楼仅作剪影）；不得出现人物；不得出现现代汽车等明显错时代元素；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一座庞大的近代城市上空，一个由烟、火光与乌云凝聚成的巨大模糊神祇轮廓端坐于街区之上；其额头被黑风环绕，肚腹被夕阳映红，一只巨拳伸向下方一条正被火海吞没的街道
-              </dd>
-              <dt>情绪</dt>
-              <dd>末日式、压迫性的宏伟；不是恐怖怪物，而是"神圣"与"屠戮"并存的亵渎感</dd>
-              <dt>画面元素</dt>
-              <dd>
-                密集的城市屋顶与烟囱、升向天空的烟柱与工厂云、凝成神形的乌云、神腹部的红光、下方一条街道的火光、教堂钟楼剪影
-              </dd>
-              <dt>时代感</dt>
-              <dd>约1910年柏林/工业城市的近代都市，建筑为公寓楼、烟囱、教堂尖塔</dd>
-              <dt>推荐风格</dt>
-              <dd>表现主义版画/油画质感，强烈对比、扭曲透视、红黑蓝为主色，笔触粗厉、轮廓激荡</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得画出可辨识的具体神祇面孔（神只能由烟云火暗示）；不得出现十字架等明确基督教符号被亵渎的画面（钟楼仅作剪影）；不得出现人物；不得出现现代汽车等明显错时代元素；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

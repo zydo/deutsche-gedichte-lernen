@@ -119,37 +119,61 @@
             <span class="tag">失眠</span>
             <span class="tag">三月前期</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/nachtgedanken.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一间巴黎公寓的卧室深夜：窗前一人独坐失眠，窗外是夜色；桌上摊着一封母亲的旧信，字迹颤抖；远处窗外将破晓时透入一丝法式日光
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>失眠的、思乡的、私密的苦痛；不是政治集会，而是"一个人在夜里被两个祖国（母亲与德国）同时拉扯"</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    夜色中的卧室与床、桌上摊开的旧信（颤抖字迹）、独坐者的剪影（无面部）、窗外的夜、远处一抹将破晓的微光
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>1840年代巴黎公寓，家具与窗棂为该时代样式</dd>
+                  <dt>推荐风格</dt>
+                  <dd>19世纪写实—室内画质感，夜色蓝调与烛光暖黄对比，笔触克制内敛</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现纳粹符号、卐字、20世纪政治元素（本诗作于1844，与纳粹无关）；不得出现可辨识人物面孔；不得出现现代元素；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一间巴黎公寓的卧室深夜：窗前一人独坐失眠，窗外是夜色；桌上摊着一封母亲的旧信，字迹颤抖；远处窗外将破晓时透入一丝法式日光
-              </dd>
-              <dt>情绪</dt>
-              <dd>失眠的、思乡的、私密的苦痛；不是政治集会，而是"一个人在夜里被两个祖国（母亲与德国）同时拉扯"</dd>
-              <dt>画面元素</dt>
-              <dd>
-                夜色中的卧室与床、桌上摊开的旧信（颤抖字迹）、独坐者的剪影（无面部）、窗外的夜、远处一抹将破晓的微光
-              </dd>
-              <dt>时代感</dt>
-              <dd>1840年代巴黎公寓，家具与窗棂为该时代样式</dd>
-              <dt>推荐风格</dt>
-              <dd>19世纪写实—室内画质感，夜色蓝调与烛光暖黄对比，笔触克制内敛</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现纳粹符号、卐字、20世纪政治元素（本诗作于1844，与纳粹无关）；不得出现可辨识人物面孔；不得出现现代元素；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

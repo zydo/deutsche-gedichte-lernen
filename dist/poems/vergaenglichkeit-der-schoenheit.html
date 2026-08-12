@@ -126,38 +126,62 @@
             <span class="tag">肉身</span>
             <span class="tag">华丽风格</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/vergaenglichkeit-der-schoenheit.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一位无名贵妇的半身像逐渐石化/沙化：肌肤如雪融化成沙、嘴唇的珊瑚色褪去、金发失去光泽；唯独胸口处一颗钻石般的心脏仍在发光
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>华美中的衰败；肉身之美正在瓦解，唯独心不变</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    半身肖像（无面部，仅肩颈胸手）、肌肤化为沙的局部、褪色的唇、失光的发、胸口发光的钻石心脏、深暗背景
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>17世纪巴洛克宫廷肖像，服饰与珠宝为该时代样式</dd>
+                  <dt>推荐风格</dt>
+                  <dd>巴洛克宫廷肖像—虚空画融合，明暗对比强烈，色调金棕渐变为灰沙，唯独心脏处钻石白光</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现完整可辨的面孔；不得出现骷髅/沙漏/蜡烛等标准 vanitas
+                    静物符号（本诗未用）；不得裸露；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一位无名贵妇的半身像逐渐石化/沙化：肌肤如雪融化成沙、嘴唇的珊瑚色褪去、金发失去光泽；唯独胸口处一颗钻石般的心脏仍在发光
-              </dd>
-              <dt>情绪</dt>
-              <dd>华美中的衰败；肉身之美正在瓦解，唯独心不变</dd>
-              <dt>画面元素</dt>
-              <dd>
-                半身肖像（无面部，仅肩颈胸手）、肌肤化为沙的局部、褪色的唇、失光的发、胸口发光的钻石心脏、深暗背景
-              </dd>
-              <dt>时代感</dt>
-              <dd>17世纪巴洛克宫廷肖像，服饰与珠宝为该时代样式</dd>
-              <dt>推荐风格</dt>
-              <dd>巴洛克宫廷肖像—虚空画融合，明暗对比强烈，色调金棕渐变为灰沙，唯独心脏处钻石白光</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现完整可辨的面孔；不得出现骷髅/沙漏/蜡烛等标准 vanitas
-                静物符号（本诗未用）；不得裸露；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

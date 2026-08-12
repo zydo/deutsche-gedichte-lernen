@@ -119,33 +119,59 @@
             <span class="tag">魔法词</span>
             <span class="tag">极短诗</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/wuenschelrute.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一片森林清晨，一只手举起分叉的榛树枝（占卜杖），树枝的尖端微微发光；周围万物（树叶、溪水、石头）隐约散发出音符般的光丝
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>魔法般宁静的启示瞬间；不是奇幻，而是"万物正在苏醒、等待被唤醒"的灵性</dd>
+                  <dt>画面元素</dt>
+                  <dd>分叉的榛树枝（Wünschelrute）、举起它的手（无全身人物）、森林晨光、万物间隐约的光丝/音符、露水</dd>
+                  <dt>时代感</dt>
+                  <dd>无明确时代，浪漫主义森林意象</dd>
+                  <dt>推荐风格</dt>
+                  <dd>浪漫主义风景画质感，晨光透过树冠的丁达尔光，绿色与金色为主，笔触抒情柔和</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现具体人物面孔；不得出现现代元素；不得出现巫师帽、水晶球等流行奇幻俗套；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一片森林清晨，一只手举起分叉的榛树枝（占卜杖），树枝的尖端微微发光；周围万物（树叶、溪水、石头）隐约散发出音符般的光丝
-              </dd>
-              <dt>情绪</dt>
-              <dd>魔法般宁静的启示瞬间；不是奇幻，而是"万物正在苏醒、等待被唤醒"的灵性</dd>
-              <dt>画面元素</dt>
-              <dd>分叉的榛树枝（Wünschelrute）、举起它的手（无全身人物）、森林晨光、万物间隐约的光丝/音符、露水</dd>
-              <dt>时代感</dt>
-              <dd>无明确时代，浪漫主义森林意象</dd>
-              <dt>推荐风格</dt>
-              <dd>浪漫主义风景画质感，晨光透过树冠的丁达尔光，绿色与金色为主，笔触抒情柔和</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>不得出现具体人物面孔；不得出现现代元素；不得出现巫师帽、水晶球等流行奇幻俗套；不得出现文字水印</dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

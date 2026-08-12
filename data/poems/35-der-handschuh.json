@@ -353,7 +353,7 @@
     "taboos": "不得出现血迹、撕咬、尸体（三兽已卧定，无人受伤）；不得出现人物可辨面孔；不得出现现代元素或文字水印；手套应明显是女式细软，不可画成粗手套",
     "style": "古典历史画写实风格，光线从阳台上方落下形成聚光，色调金棕与石灰，构图强调垂直纵深（阳台—手套—兽栏）"
   },
-  "image_path": null,
+  "image_path": "/images/der-handschuh.png",
   "german_sources": [
     {
       "name": "German Wikisource — Der Handschuh（Musen-Almanach für das Jahr 1798, S. 41–43）",

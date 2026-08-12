@@ -120,33 +120,57 @@
             <span class="tag">词类越界</span>
             <span class="tag">无句法</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/patrouille.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一片敌意的夜间战场前景：嶙峋的石头、黑洞洞的窗户（似在窥视）、扭曲如扼杀手臂的树枝、沙沙作响的灌木丛；远处一声尖鸣（以视觉化的尖锐光线暗示）
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>全面的、身体性的敌意与窒息；不是具体战斗，而是"环境本身在攻击"的零碎感官冲击</dd>
+                  <dt>画面元素</dt>
+                  <dd>嶙峋石头、黑洞洞的窗、扭曲的树枝、灌木丛、一道尖啸式的光线、无人物（巡逻者只由环境暗示）</dd>
+                  <dt>时代感</dt>
+                  <dd>1915年东线战场前景，无明确器物</dd>
+                  <dt>推荐风格</dt>
+                  <dd>表现主义木刻/版画质感，黑白高对比、线条扭曲锐利、构图破碎</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>不得出现具体可辨的士兵尸体或血腥；不得出现人物；不得出现文字水印；不得把抽象意象画成具象怪物</dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一片敌意的夜间战场前景：嶙峋的石头、黑洞洞的窗户（似在窥视）、扭曲如扼杀手臂的树枝、沙沙作响的灌木丛；远处一声尖鸣（以视觉化的尖锐光线暗示）
-              </dd>
-              <dt>情绪</dt>
-              <dd>全面的、身体性的敌意与窒息；不是具体战斗，而是"环境本身在攻击"的零碎感官冲击</dd>
-              <dt>画面元素</dt>
-              <dd>嶙峋石头、黑洞洞的窗、扭曲的树枝、灌木丛、一道尖啸式的光线、无人物（巡逻者只由环境暗示）</dd>
-              <dt>时代感</dt>
-              <dd>1915年东线战场前景，无明确器物</dd>
-              <dt>推荐风格</dt>
-              <dd>表现主义木刻/版画质感，黑白高对比、线条扭曲锐利、构图破碎</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>不得出现具体可辨的士兵尸体或血腥；不得出现人物；不得出现文字水印；不得把抽象意象画成具象怪物</dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

@@ -341,7 +341,7 @@
     "taboos": "不得出现任何具体神祇形象（宙斯不可见，只以雷云暗示）；不得出现锁链、鹫鹰、高加索山岩钉（那是\"被缚的普罗米修斯\"传统，与本诗无关）；不得出现人物面孔；不得出现现代机械或文字水印",
     "style": "浪漫主义—象征主义油画质感，单一暖光源（炉火）对大面积冷调（雷云、岩石），构图下半实上半虚，笔触厚重"
   },
-  "image_path": null,
+  "image_path": "/images/prometheus.png",
   "german_sources": [
     {
       "name": "Zeno.org — Goethe: Berliner Ausgabe, Band 1, S. 327–329（Prometheus）",

@@ -124,33 +124,57 @@
             <span class="tag">选段</span>
             <span class="tag">极短</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/cherubinischer-wandersmann.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>一朵单独的玫瑰悬浮在虚空的光中，背景是暗示永恒的金色无垠；玫瑰处于"正在绽放"的瞬间，无根无土</dd>
+                  <dt>情绪</dt>
+                  <dd>冥想的、超越的、静穆的；一朵玫瑰即一个形而上的命题</dd>
+                  <dt>画面元素</dt>
+                  <dd>一朵半开的玫瑰（无根、悬浮）、金色的虚空背景、柔和的发光、无任何地面或花瓶</dd>
+                  <dt>时代感</dt>
+                  <dd>无时代，形而上意象</dd>
+                  <dt>推荐风格</dt>
+                  <dd>巴洛克静物—形而上绘画融合，深金与玫红，光线柔和超然</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现十字架等明确宗教符号（神秘主义非教义化）；不得出现人物；不得出现文字水印；玫瑰不可带刺或凋零
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>一朵单独的玫瑰悬浮在虚空的光中，背景是暗示永恒的金色无垠；玫瑰处于"正在绽放"的瞬间，无根无土</dd>
-              <dt>情绪</dt>
-              <dd>冥想的、超越的、静穆的；一朵玫瑰即一个形而上的命题</dd>
-              <dt>画面元素</dt>
-              <dd>一朵半开的玫瑰（无根、悬浮）、金色的虚空背景、柔和的发光、无任何地面或花瓶</dd>
-              <dt>时代感</dt>
-              <dd>无时代，形而上意象</dd>
-              <dt>推荐风格</dt>
-              <dd>巴洛克静物—形而上绘画融合，深金与玫红，光线柔和超然</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现十字架等明确宗教符号（神秘主义非教义化）；不得出现人物；不得出现文字水印；玫瑰不可带刺或凋零
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">

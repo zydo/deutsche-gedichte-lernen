@@ -56,7 +56,7 @@
   "cultural_notes": "奥古斯特·施特拉姆（1874—1915）是德语表现主义\"Wortkunst\"（字词艺术）的最激进代表。他是一名邮政官员，1915年9月1日死于东线战场，生前仅在《Der Sturm》杂志发表少量作品，遗著诗集《Tropfblut》（1919）由其友人整理出版。\n\n《巡逻》是他的代表作之一。全诗6行，写一场夜间巡逻中环境对士兵的全面敌意：石头敌对、窗户出卖、树枝扼杀、灌木沙沙、尖鸣、死。它的激进之处在于：句子整个解体，每一行只是一个名词化的意象碎片，词类被随意越界（名词当动词用），全部敌意收束到末行一个带句号的\"死\"字。\n\n施特拉姆与《Der Sturm》圈子（Lasker-Schüler、Heym 同圈）共同把德语诗推向\"字词艺术\"的极限：意义不再由句法组织，而由单个词的冲击力承担。他与 Heym、Stadler、Trakl 同属表现主义早期夭折于一战的一代。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) feinden 译\"在敌对\"、raschlig 译\"沙沙作响地\"，并在注释中逐个标\"诗人自造，不可套用\"；(2) 全诗零句法、一词一行，译文照办（每行一个意象碎片），仅在末行\"死。\"保留句号；(3) 本页 Wortschatz 不收 feinden / raschlig 等自造词，只收其规范基础词（der Feind、rascheln）。本诗仅6行但词形全部反常，属\"短 ≠ 易\"。",
   "image_prompt": {"imagery": "一片敌意的夜间战场前景：嶙峋的石头、黑洞洞的窗户（似在窥视）、扭曲如扼杀手臂的树枝、沙沙作响的灌木丛；远处一声尖鸣（以视觉化的尖锐光线暗示）", "mood": "全面的、身体性的敌意与窒息；不是具体战斗，而是\"环境本身在攻击\"的零碎感官冲击", "elements": "嶙峋石头、黑洞洞的窗、扭曲的树枝、灌木丛、一道尖啸式的光线、无人物（巡逻者只由环境暗示）", "era": "1915年东线战场前景，无明确器物", "taboos": "不得出现具体可辨的士兵尸体或血腥；不得出现人物；不得出现文字水印；不得把抽象意象画成具象怪物", "style": "表现主义木刻/版画质感，黑白高对比、线条扭曲锐利、构图破碎"},
-  "image_path": null,
+  "image_path": "/images/patrouille.png",
   "german_sources": [
     {"name": "Zeno.org — Stramm: Patrouille（Das Werk, Wiesbaden 1963, S.86–87）", "url": "http://www.zeno.org/Literatur/M/Stramm,+August/Gedichte/Tropfblut/Patrouille", "tier": 1, "citation": "August Stramm: Das Werk (Gedichte / Dramen), Wiesbaden 1963, S. 86–87（Tropfblut 辑，遗著1919）", "note": "一级来源（全集本，标注页码）。本次 Zeno 主机拒绝连接，版次页码据著录，读法由两个直接抓取的独立来源交叉确认。"},
     {"name": "deutschelyrik.de — „Patrouille“（Stramm）", "url": "https://www.deutschelyrik.de/p---z/stramm/patrouille.html", "tier": 2, "citation": "现代通行文本（Aufnahme 2025，标1915作/Tropfblut 1919）", "note": "二级来源（直接抓取）。读法与 Zeno 一致（feinden、raschlig、Gellen 大写据 Zeno；deutschelyrik 作 gellen 小写，本站从 Zeno 大写）。"},
