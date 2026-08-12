@@ -136,6 +136,101 @@ function difficultyRank(difficulty) {
   return rank === -1 ? Number.POSITIVE_INFINITY : rank;
 }
 
+// 文学时期在旧数据中混用了纯中文、中德并列和括号补译。这里以旧值为
+// 稳定键，统一提供首页中文标签与详情页德文对译；未登记值直接中断构建，
+// 避免新条目再次悄悄漏掉其中一种语言。
+const PERIOD_LABELS = Object.freeze({
+  "狂飙突进 Sturm und Drang": ["狂飙突进", "Sturm und Drang"],
+  "古典主义 Weimarer Klassik（近狂飙突进末期）": [
+    "古典主义（近狂飙突进末期）",
+    "Weimarer Klassik (gegen Ende des Sturm und Drang)",
+  ],
+  "浪漫主义 Romantik（晚期）": ["浪漫主义（晚期）", "Spätromantik"],
+  "晚期浪漫主义 Spätromantik": ["晚期浪漫主义", "Spätromantik"],
+  "毕德麦耶 Biedermeier": ["毕德麦耶", "Biedermeier"],
+  "浪漫主义晚期 / 古典—浪漫过渡（近晚期风格 Spätstil）": [
+    "浪漫主义晚期 / 古典—浪漫过渡（近晚期风格）",
+    "Spätromantik / Übergang zwischen Klassik und Romantik (Spätstil)",
+  ],
+  "象征主义 / 世纪末（Fin de Siècle）过渡至现代主义早期": [
+    "象征主义 / 世纪末，过渡至现代主义早期",
+    "Symbolismus / Fin de Siècle, Übergang zur frühen Moderne",
+  ],
+  "象征主义 / 事物诗（Dinggedicht）": ["象征主义 / 事物诗", "Symbolismus / Dinggedicht"],
+  "魏玛早期（前古典时期，介于狂飙突进与古典之间）": [
+    "魏玛早期（前古典时期，介于狂飙突进与古典之间）",
+    "frühe Weimarer Zeit (Vorklassik, zwischen Sturm und Drang und Klassik)",
+  ],
+  魏玛古典主义前期: ["魏玛古典主义前期", "frühe Weimarer Klassik"],
+  "浪漫主义晚期 / 前三月革命时期（Vormärz）": ["浪漫主义晚期 / 前三月革命时期", "Spätromantik / Vormärz"],
+  '现代主义早期 / 里尔克"物诗"（Dinggedicht）时期': [
+    "现代主义早期 / 里尔克‘物诗’时期",
+    "frühe Moderne / Rilkes Dinggedicht-Periode",
+  ],
+  魏玛古典主义: ["魏玛古典主义", "Weimarer Klassik"],
+  "早期浪漫主义（耶拿浪漫派）": ["早期浪漫主义（耶拿浪漫派）", "Frühromantik (Jenaer Romantik)"],
+  "毕德麦耶／复辟时期（今学界多不作断代归类）": [
+    "毕德麦耶 / 复辟时期（今学界多不作断代归类）",
+    "Biedermeier / Restaurationszeit (heute meist keiner Epoche eindeutig zugeordnet)",
+  ],
+  表现主义早期: ["表现主义早期", "Frühexpressionismus"],
+  "感伤主义（Empfindsamkeit）／启蒙晚期": ["感伤主义 / 启蒙晚期", "Empfindsamkeit / Spätaufklärung"],
+  "早期浪漫主义（海德堡浪漫派）": ["早期浪漫主义（海德堡浪漫派）", "Frühromantik (Heidelberger Romantik)"],
+  "浪漫主义（施瓦本诗派）": ["浪漫主义（施瓦本诗派）", "Romantik (Schwäbische Dichterschule)"],
+  "浪漫主义晚期 / 毕德麦耶": ["浪漫主义晚期 / 毕德麦耶", "Spätromantik / Biedermeier"],
+  "现实主义 / 毕德麦耶晚期": ["现实主义 / 毕德麦耶晚期", "Realismus / später Biedermeier"],
+  "现实主义（诗意现实主义 / Poetischer Realismus）": ["现实主义（诗意现实主义）", "Realismus (Poetischer Realismus)"],
+  "现实主义 / 象征主义前奏": ["现实主义 / 象征主义前奏", "Realismus / Vorstufe des Symbolismus"],
+  现实主义: ["现实主义", "Realismus"],
+  "维也纳现代派 / 世纪末（Fin de Siècle）": ["维也纳现代派 / 世纪末", "Wiener Moderne / Fin de Siècle"],
+  "世纪之交 / 语言游戏诗（荒诞诗先声）": [
+    "世纪之交 / 语言游戏诗（荒诞诗先声）",
+    "Jahrhundertwende / Sprachspielgedicht (Vorläufer der Nonsenslyrik)",
+  ],
+  "巴洛克（三十年战争时期）": ["巴洛克（三十年战争时期）", "Barock (Dreißigjähriger Krieg)"],
+  "巴洛克（三十年战争时期）· 新斯多亚主义": [
+    "巴洛克（三十年战争时期）· 新斯多亚主义",
+    "Barock (Dreißigjähriger Krieg) · Neustoizismus",
+  ],
+  "表现主义（开端之作）": ["表现主义（开端之作）", "Expressionismus (Auftaktwerk)"],
+  "狂飙突进（Sturm und Drang）": ["狂飙突进", "Sturm und Drang"],
+  "中古高地德语（Minnesang，约1200）": ["中古高地德语（约1200）", "Mittelhochdeutsch (Minnesang, um 1200)"],
+  "表现主义（Frühexpressionismus）": ["表现主义（早期）", "Frühexpressionismus"],
+  表现主义: ["表现主义", "Expressionismus"],
+  "德语民歌 / 前三月革命时期（Vormärz）抵抗歌曲": [
+    "德语民歌 / 前三月革命时期抵抗歌曲",
+    "deutsches Volkslied / Widerstandslied des Vormärz",
+  ],
+  "浪漫主义（Spätromantik）": ["浪漫主义（晚期）", "Spätromantik"],
+  "三月前期（Vormärz）/ 政治诗": ["三月前期 / 政治诗", "Vormärz / politische Lyrik"],
+  "巴洛克（第二西里西亚派 / galante Dichtung）": [
+    "巴洛克（第二西里西亚派 / 华丽诗风）",
+    "Barock (Zweite Schlesische Schule / galante Dichtung)",
+  ],
+  "巴洛克 / 神秘主义": ["巴洛克 / 神秘主义", "Barock / Mystik"],
+  "表现主义 / Wortkunst": ["表现主义 / 词语艺术", "Expressionismus / Wortkunst"],
+  "诗意现实主义（Poetischer Realismus）": ["诗意现实主义", "Poetischer Realismus"],
+  "晚年 / 东方化（West-östlicher Divan）": [
+    "晚年 / 东方化（《西东诗集》时期）",
+    "Spätwerk / orientalische Prägung (West-östlicher Divan)",
+  ],
+  诗意现实主义: ["诗意现实主义", "Poetischer Realismus"],
+  "世纪末 / 幽默诗（Nonsense-Lyrik）": ["世纪末 / 荒诞幽默诗", "Jahrhundertwende / Nonsenslyrik"],
+  "早期浪漫派（Frühromantik）": ["早期浪漫派", "Frühromantik"],
+  "新浪漫派 / 世纪之交": ["新浪漫派 / 世纪之交", "Neuromantik / Jahrhundertwende"],
+  表现主义前期: ["表现主义前期", "Frühexpressionismus"],
+  "启蒙时期（Aufklärung）": ["启蒙时期", "Aufklärung"],
+  "狂飙突进 / 艺术谣曲（Kunstballade）": ["狂飙突进 / 艺术谣曲", "Sturm und Drang / Kunstballade"],
+  "感伤主义 / 前古典（Empfindsamkeit）": ["感伤主义 / 前古典", "Empfindsamkeit / Vorklassik"],
+  "后浪漫派 / 形式主义": ["后浪漫派 / 形式主义", "Nachromantik / Formalismus"],
+});
+
+function periodLabels(period) {
+  const labels = PERIOD_LABELS[period];
+  if (!labels) throw new Error(`未登记的文学时期标签：${period || "（空）"}`);
+  return { zh: labels[0], de: labels[1] };
+}
+
 // ---- 页面骨架 ----
 
 const SITE_SCRIPT = `<script>
@@ -372,12 +467,12 @@ function renderIndex(poems) {
       const rows = [...g.items]
         .sort((a, b) => difficultyRank(a.difficulty) - difficultyRank(b.difficulty) || Number(a.id) - Number(b.id))
         .map((p) => {
-          const periodShort = (p.period || "").split("（", 1)[0].trim();
+          const period = periodLabels(p.period);
           return `        <a class="toc-row" href="poems/${p.slug}.html">
           <span class="toc-title">${esc(p.title_de)}<span class="toc-title-zh">${esc(p.title_zh)}</span></span>
           <span class="toc-leader" aria-hidden="true"></span>
           <span class="toc-meta">
-            <span class="toc-period">${esc(periodShort)}</span>
+            <span class="toc-period" lang="zh-CN">${esc(period.zh)}</span>
             ${tag(p.difficulty, difficultyTagClass(p.difficulty))}
           </span>
         </a>`;
@@ -732,6 +827,7 @@ function renderSections(secs) {
 function renderPoemPage(p, prev, next, snapshots = {}) {
   warnMissingTemplateFields(p);
   const findNote = makeNoteFinder(p.line_notes);
+  const period = periodLabels(p.period);
 
   // 上一首 / 下一首导航（仅显示中文译名；首/末首对应一侧隐藏）
   const prevLink = prev
@@ -754,7 +850,7 @@ ${poemNav}
       <p class="poem-titleblock__author-zh">${esc(p.author_zh)}</p>
       <div class="poem-titleblock__biblio">
         <p>${esc(p.collection)}</p>
-        <p>${esc(p.period)}</p>
+        <p><span lang="zh-CN">${esc(period.zh)}</span> · <span lang="de">${esc(period.de)}</span></p>
         <p>${esc(p.year)}</p>
       </div>
       <div class="poem-titleblock__meta">
