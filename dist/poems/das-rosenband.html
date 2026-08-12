@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Das Rosenband · 玫瑰带 — Friedrich Gottlieb Klopstock | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Das Rosenband（玫瑰带）— Friedrich Gottlieb Klopstock。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="lenore.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">蕾诺勒（节选 7 节 / 全诗 32 节）</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="tristan.html" rel="next"
+            ><span class="poem-nav__title">特里斯坦</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Das Rosenband</h1>
+          <p class="poem-titleblock__author">Friedrich Gottlieb Klopstock</p>
+          <p class="poem-titleblock__zh">玫瑰带</p>
+          <p class="poem-titleblock__author-zh">弗里德里希·戈特利布·克洛普施托克</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Oden》第1卷（Leipzig 1798）· 排在《An Cidli》之后、《An sie》之前</p>
+            <p>感伤主义 / 前古典（Empfindsamkeit）</p>
+            <p>1753年作；收入《Oden》第1卷（Leipzig 1798），S. 122–123</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1–B2（词汇不难，但无韵、多省音，且 Sie 的大写用法需要说明）</span>
+            <span class="tag">无韵</span>
+            <span class="tag">感伤主义</span>
+            <span class="tag">爱情</span>
+            <span class="tag">瞬间</span>
+            <span class="tag">省音</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                春天的树荫下，光斑透过新叶落在地面；一条细细的玫瑰花带松松地缠在一段静止的衣袖或手腕上；画面停在「尚未醒来」的那一刻，空气几乎不动
+              </dd>
+              <dt>情绪</dt>
+              <dd>极静、极轻、屏息；是一个被拉长的瞬间，不是一个场景的叙述</dd>
+              <dt>画面元素</dt>
+              <dd>新叶与光斑、一条玫瑰花编成的细带、一截衣袖或手腕（不画人物全身）、地面的落花、柔和的侧逆光</dd>
+              <dt>时代感</dt>
+              <dd>18世纪中叶德意志，衣料朴素</dd>
+              <dt>推荐风格</dt>
+              <dd>18世纪田园画质感，淡绿与玫瑰粉，高调柔光，笔触极轻</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得画出可辨识的人脸；不得出现捆绑的暴力感（诗中的缚是游戏性的，带子是花编的）；不得出现文字水印；不得画成情色场景
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Im Frühlingsschatten fand ich Sie;<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在春天的树荫里我找到了她；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Da band ich Sie mit Rosenbändern:<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">于是我用玫瑰带把她缚住：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Sie fühlt' es nicht, und schlummerte.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">她没有察觉，仍在睡着。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Ich sah Sie an; mein Leben hing<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我望着她；我的生命</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Mit diesem Blick' an Ihrem Leben:<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">随着这一瞥系在了她的生命上：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Ich fühlt' es wohl, und wusst' es nicht.<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我分明感觉到了，却并不知道。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Doch lispelt' ich Ihr sprachlos zu,<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">可我无声地对她低语，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Und rauschte mit den Rosenbändern:<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">并让玫瑰带沙沙作响：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Da wachte Sie vom Schlummer auf.<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">于是她从睡梦中醒来。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Sie sah mich an; Ihr Leben hing<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">她望着我；她的生命</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="11">
+                  <span class="linetext"
+                    >Mit diesem Blick' an meinem Leben,<sup class="refmark"><a href="#note-11">11</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">随着这一瞥系在了我的生命上，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="12">
+                  <span class="linetext"
+                    >Und um uns ward's Elysium.<sup class="refmark"><a href="#note-12">12</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">而我们周围便成了极乐之境。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留四节三行的分节与四个动作的推进顺序</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Im Frühlingsschatten fand ich Sie;</p>
+              <p class="lnote__zh">
+                四个动作中的第一个：**找到**（第1行）。★大写的 Sie
+                在此不是敬称「您」，而是第三人称「她」的大写形式——18世纪印刷中常以大写标示被爱者，全诗的 Sie / Ihrem /
+                Ihr 都属此例，读时一律作「她」。der Frühlingsschatten 是复合词（Frühling + Schatten），春天的树荫。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Da band ich Sie mit Rosenbändern:</p>
+              <p class="lnote__zh">
+                第二个动作：**缚住**（第2行）。binden（缚、系）的过去式 band，强变化 i–a–u。mit Rosenbändern
+                是第三格复数——★注意这里用的是复数 die Bänder（带子，具体物），而不是 die Bande（纽带，抽象），详见
+                Wortschatz 与语法条。整个动作是游戏性的，不是暴力。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Sie fühlt' es nicht, und schlummerte.</p>
+              <p class="lnote__zh">
+                本节的落点：她毫无察觉。fühlt' 是 fühlte 的省音形（Apokope），为凑音节。schlummern（安睡、假寐）比
+                schlafen 更轻、更雅。★三行走完一个完整的小情节：找到—缚住—未觉。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Ich sah Sie an; mein Leben hing</p>
+              <p class="lnote__zh">
+                第三个动作：**注视**（第4行）。ansehen 是可分动词，此处 sah … an。★本行与下一行是一个跨行句：主语 mein
+                Leben 与谓语 hing
+                在本行末，介词短语要到下一行才补足——句子被刻意悬在行末，与「悬挂」（hing）的字面义正好同构。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Mit diesem Blick' an Ihrem Leben:</p>
+              <p class="lnote__zh">
+                承上行：hängen an + 第三格（系于、依附于）。Blick' 是 Blicke（第三格加 -e
+                的旧式形）的省音。整句：我的生命随这一瞥系在了她的生命上。这是全诗的核心命题——生命的联结就发生在这一瞥里，不在言语里。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Ich fühlt' es wohl, und wusst' es nicht.</p>
+              <p class="lnote__zh">
+                ★全诗最有名的一行，也是感伤主义（Empfindsamkeit）的纲领句：**感觉到了，却并不知道**。fühlt' 与 wusst'
+                都是省音形。wohl
+                在此不是「大概」，而是加强语气的「分明、确实」。这一行把「感受」放在「认知」之上——正是这一代人对启蒙理性主义的修正。本站《恳求》（编号23）的
+                Weil'、《致自己》（编号32）的 zurücke、《在菩提树下》（编号36）的词尾 -e 与本行的省音同属一族，可对照。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Doch lispelt' ich Ihr sprachlos zu,</p>
+              <p class="lnote__zh">
+                zulispeln（低语、耳语）是可分动词，此处 lispelt' … zu，且前缀落在行末。★sprachlos zulispeln
+                是一个刻意的矛盾修辞（Oxymoron）：「无言地低语」——既然感觉先于知道，那么传达也就先于语言。Ihr
+                是第三格「对她」（不是敬称）。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Und rauschte mit den Rosenbändern:</p>
+              <p class="lnote__zh">
+                既然说不出话，就让玫瑰带发出声响。rauschen（沙沙作响）在此为及物用法的变体 mit etwas
+                rauschen（弄出沙沙声）。玫瑰带在第2行是束缚的工具，在此变成了发声的工具——同一件东西的功能被翻转。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Da wachte Sie vom Schlummer auf.</p>
+              <p class="lnote__zh">
+                第四个动作：**醒来**（第9行）。aufwachen 可分，wachte … auf。与第3行的 schlummerte
+                首尾对应：她睡着—她醒来，中间隔着两节。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Sie sah mich an; Ihr Leben hing</p>
+              <p class="lnote__zh">
+                ★本行与第4行几乎逐字对称，只把主语与宾语对调：Ich sah Sie an → Sie sah mich an；mein Leben hing → Ihr
+                Leben hing。这一镜像结构就是全诗的全部「情节」：单方面的注视变成了相互的注视。
+              </p>
+            </article>
+            <article class="lnote" id="note-11" data-noteref="11">
+              <span class="lnote__mark">11</span>
+              <p class="lnote__de">Mit diesem Blick' an meinem Leben,</p>
+              <p class="lnote__zh">
+                同样与第5行镜像对称：an Ihrem Leben → an meinem Leben。两节之间只换了物主代词，联结却由单向变成双向。
+              </p>
+            </article>
+            <article class="lnote" id="note-12" data-noteref="12">
+              <span class="lnote__mark">12</span>
+              <p class="lnote__de">Und um uns ward's Elysium.</p>
+              <p class="lnote__zh">
+                末行。ward 是 werden 的旧式过去式（今作 wurde），ward's = ward es。Elysium
+                是希腊神话中的极乐净土。★注意全诗到此为止没有任何一句直接的情感陈述——没有「我爱她」，没有「我很幸福」；只有找到、缚住、注视、醒来四个动作，和最后这一个地名。感伤主义的强度恰恰来自这种不说。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Band</span></div>
+              <span class="vocab-card__pos">n.（中性）</span>
+              <div class="vocab-card__meaning">
+                ★两个复数分义：die Bänder（带子、丝带，具体物）／die Bande（纽带、羁绊，抽象）
+              </div>
+              <div class="vocab-card__note">
+                ★本页重点词条。同一个单数 das Band 有两个复数，各管一义：die Bänder 指可以拿在手里的带子（Haarbänder
+                发带、Rosenbänder 玫瑰带）；die Bande 指抽象的联结（die Bande der Freundschaft 友谊的纽带、familiäre
+                Bande 亲缘关系）。诗中第2、8行作
+                Rosenbändern，是具体物的复数第三格。★这正是本诗的双关所在：字面缚住她的是 Bänder，实际结成的是 Bande。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">binden</span></div>
+              <span class="vocab-card__pos">v.（强变化 i–a–u）</span>
+              <div class="vocab-card__meaning">缚、系、捆</div>
+              <div class="vocab-card__note">
+                变位 bindet – band – hat gebunden。诗中第2行作过去式 band。与
+                finden（fand/gefunden，第1行）、schwinden、trinken 同属 i–a–u 一类。派生：das Bündnis（同盟）、die
+                Bindung（联结）、verbindlich（有约束力的）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">schlummern</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">安睡、假寐、打盹</div>
+              <div class="vocab-card__note">
+                比 schlafen 轻、更雅，多用于诗体。诗中第3行作过去式 schlummerte，第9行作名词 der Schlummer（vom
+                Schlummer auf）。派生：einschlummern（睡去，也婉指去世）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">lispeln</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">①低语、耳语；②（今常用）咬舌、发音不清</div>
+              <div class="vocab-card__note">
+                ★语义已转移：诗中第7行的可分动词 zulispeln 取18世纪的「低语」义；今日 lispeln 的常用义是发 s
+                音时咬舌的语音缺陷。读古诗时不可套用今义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Blick, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">一瞥、目光、眼神</div>
+              <div class="vocab-card__note">
+                诗中第5、11行作第三格 Blick'（旧式 Blicke 的省音）。blicken（看）、der
+                Augenblick（瞬间，字面「一眼之间」）。搭配 auf den ersten Blick（一见之下）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hängen an + 第三格</span></div>
+              <span class="vocab-card__pos">v.（强变化 ä–i–a）+ 介词</span>
+              <div class="vocab-card__meaning">系于、依附于；眷恋</div>
+              <div class="vocab-card__note">
+                不及物的 hängen 作强变化：hängt – hing – hat gehangen；及物的「挂上」作弱变化：hängt – hängte – hat
+                gehängt。诗中第4、10行作 hing（不及物，强变化）。an etwas/jemandem hängen
+                另有「眷恋某人」的引申义，本诗两义兼取。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Elysium</span></div>
+              <span class="vocab-card__pos">n.（中性，专名）</span>
+              <div class="vocab-card__meaning">极乐净土（希腊神话中英雄死后的乐土）</div>
+              <div class="vocab-card__note">
+                诗中末行。18世纪德语诗中常作「至福之境」的代称。席勒《欢乐颂》中的 Tochter aus
+                Elysium（来自极乐净土的女儿）是同一用法。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第2行作过去式 band。与 finden（第1行
+                    fand）同一变化类：i–a–u。本站已在多页标注这一强变化组，本页与之保持一致。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第1行作过去式 fand。与 binden 同类，两个词在同一节的头两行相邻出现，正好对照记忆。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ ★一词两套变化，靠及物与否区分：Das Bild hing an der Wand（画挂在墙上，不及物、强变化）vs Ich
+                    hängte das Bild an die Wand（我把画挂到墙上，及物、弱变化）。诗中第4、10行 hing 为不及物强变化形。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中末行作旧式过去式 ward（ward's = ward es）。ward 是 wurde
+                    的古形，18—19世纪诗中常见，今日已废弃，★不建议套用。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">★本诗没有韵式 —— 无韵（reimlos）而非无格律</h3>
+              <p class="grammar-item__quote">全诗12行，无一处押韵；但每节的音节数严格为 8 / 9 / 8</p>
+              <div class="grammar-item__body">
+                ★本诗没有韵式：十二行里没有任何一对韵脚，这是它的构成原则，不是缺失（处理逻辑同本站《普罗米修斯》编号34
+                与《巡逻》编号45
+                的「无韵即纲领」）。**但无韵不等于无格律**，这一点必须分清。逐行数音节可见，四节的音节数完全一致，都是 8
+                / 9 /
+                8：第1行「Im-Früh-lings-schat-ten-fand-ich-Sie」共8个音节，四音步抑扬格、阳性收尾；第2行「Da-band-ich-Sie-mit-Ro-sen-bän-dern」共9个音节，同样四音步、阴性收尾；第3行「Sie-fühlt-es-nicht-und-schlum-mer-te」共8个音节。第4—12行逐节重复同一
+                8/9/8
+                的框架，四节全同。所以本诗是一首**格律严整的无韵诗**：克洛普施托克拿掉的是韵，不是拍子。★这一点也是本页与《普罗米修斯》的关键差别：歌德那首的行长参差不齐（真正的自由韵律），本诗的行长则以音节计精确重复。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">克洛普施托克的无韵诗与狂飙突进的自由韵律 —— 一条需要分两步说的谱系</h3>
+              <p class="grammar-item__quote">Das Rosenband（1753，无韵而格律严整）→ 自由韵律</p>
+              <div class="grammar-item__body">
+                德语诗摆脱尾韵的过程分两步，本页是第一步的样本。**第一步**是拿掉韵：克洛普施托克自1740年代起大量写作无韵的颂歌，本诗（1753）即其一——韵没有了，但诗节形态与音节数仍严格固定。**第二步**才是拿掉固定的行长与诗节，即真正的自由韵律（freie
+                Rhythmen）；克洛普施托克本人在《Die
+                Frühlingsfeier》（1759）等颂歌中走出了这一步，狂飙突进一代（本站《普罗米修斯》编号34）则把它变成常规。★本页只能为第一步作证：读者若想在本站看到克洛普施托克的自由韵律本身，目前尚无样本——《Die
+                Frühlingsfeier》未收入本站，这一点已如实写明，不含糊过去。把本诗直接称作「自由韵律」是不准确的，本页不采用该说法。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">省音（Apokope / Elision）—— 本站省音簇的又一样本</h3>
+              <p class="grammar-item__quote">fühlt' … wusst' … lispelt' … Blick' … ward's</p>
+              <div class="grammar-item__body">
+                本诗为凑足音节而大量省音，共 5 处（第3、6、7、11、12行），形如 fühlt'（= fühlte）、wusst'（=
+                wusste）、lispelt'（= lispelte）、Blick'（= Blicke，旧式第三格加 -e）、ward's（= ward
+                es）。撇号标出被省去的音。★这类现象在本站已有一族样本可对照：《恳求》（编号23）的 Weil'（词尾 -e
+                脱落）、《致自己》（编号32）的 zurücke（反向的加音，为凑音节而**加**一个
+                -e）、《在菩提树下》（编号36）的中古高地德语词尾
+                -e。同一个动机——音节数——在不同世纪分别导致了脱落与增添两种相反的操作。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              弗里德里希·戈特利布·克洛普施托克（1724—1803）是18世纪德语诗最有影响的革新者。他的宗教史诗《救世主》（Der
+              Messias，1748年起分卷刊行）曾被同代人当作德语终于产生了自己的弥尔顿的证明；而对后世更重要的，是他把德语诗从法国式的规整格律与强制押韵中解放出来的一系列尝试。青年歌德一代几乎都是读着他长大的——《少年维特的烦恼》里维特与绿蒂只说了一个词「克洛普施托克！」就彼此会意，是文学史上最著名的用典之一。
+            </p>
+            <p>
+              《玫瑰带》作于1753年。全诗只有十二行，写一个瞬间：他在春荫里发现熟睡的她，用玫瑰带把她缚住；她没有察觉；他望着她，生命随之系上；他说不出话，就摇响玫瑰带；她醒来，回望；周围成了极乐净土。没有一句直接的抒情，全部由四个动作（找到—缚住—注视—醒来）推进。
+            </p>
+            <p>
+              ★感伤主义（Empfindsamkeit）的纲领句就在第6行：「Ich fühlt' es wohl, und wusst' es
+              nicht」——我分明感觉到了，却并不知道。感受先于并高于认知，这是这一代人对启蒙理性主义的修正。把本页与《从自然见神的荣耀》（编号58）并读，可以看见同一个十八世纪的两副面孔：一副要人「听懂」「观看」「认识」，另一副说最要紧的事恰恰不经过「知道」。
+            </p>
+            <p>
+              ★关于本诗与 Meta
+              Moller（1754年成为克洛普施托克之妻，1758年去世）的关系：通行说法把本诗与她相联系，但本次未回核到可靠的一手出处；且本诗作于1753年，早于两人成婚。故本页不作此断言，相关细节标注待进一步核实。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文照录 Zeno.org 所据《Oden》第1卷（Leipzig
+              1798，S.122–123）的读法，包括全部省音撇号与旧式过去式 ward，不作现代化改写；(2) ★诗中大写的 Sie / Ihrem /
+              Ihr 是18世纪印刷中标示被爱者的第三人称「她」，不是敬称「您」，译文一律作「她」，并在首行注中说明；(3)
+              全诗无韵，译文亦不强求押韵，但保留四节三行的分节与两组镜像对称的行（第4—5行 ↔ 第10—11行）；(4) 末行
+              Elysium 保留为「极乐之境」，不套用中文既有译名。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Zeno.org — Klopstock: Das Rosenband（Oden, Band 1）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Klopstock,+Friedrich+Gottlieb/Gedichte/Oden.+Erster+Band/Das+Rosenband"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Klopstock,+Friedrich+Gottlieb/Gedichte/Oden.+Erster+Band/Das+Rosenband</a
+              >
+              <span class="source-citation">Friedrich Gottlieb Klopstock: Oden, Band 1, Leipzig 1798, S. 122–123</span>
+              <span class="source-note"
+                >一级来源（作者生前的定本《颂歌集》，标注卷次与页码），本次直接抓取成功。本站正文以此为准。该卷中本诗排在《An
+                Cidli》之后、《An sie》之前。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Das Rosenband“（Klopstock）</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.deutschelyrik.de/das-rosenband.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.deutschelyrik.de/das-rosenband.html</a
+              >
+              <span class="source-citation">现代通行文本（附朗读）</span>
+              <span class="source-note">二级来源（独立运营方，直接抓取）。读法与一级来源一致，四节三行。</span>
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Das Rosenband（Klopstock）</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a class="source-url" href="https://www.gedichte7.de/das-rosenband.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/das-rosenband.html</a
+              >
+              <span class="source-citation">现代通行文本</span>
+              <span class="source-note">三级来源（Possel 运营方）。用于核对现代通行读法与分节。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文以 Zeno.org 所据《Oden》第1卷（Leipzig 1798，S.122–123）为一级来源，本次直接抓取成功；另有
+              deutschelyrik.de（二级）与 gedichte7.de（三级，Possel 运营方）。三源一致。
+            </p>
+            <p>
+              【★分节数已更正】本诗为 **4 节 × 3 行 = 12 行**，不是 3 节 × 4
+              行。三个来源的分节完全一致，均作四节三行。原批次说明中的「3 节，每节 4 行」与来源不符，已按来源更正，tags
+              中亦未采用「三节」一说。
+            </p>
+            <p>
+              【★形式：无韵，但格律严整——原批次的「自由韵律」定性不成立】(1)
+              无韵：十二行无任何一对韵脚，页面已显式写出「本诗没有韵式」（同《普罗米修斯》编号34、《巡逻》编号45
+              的处理逻辑）。(2) **但本诗不是自由韵律**：逐行数音节可见四节完全一致，均为 8 / 9 /
+              8——第1行8音节（四音步抑扬格，阳性收尾）、第2行9音节（四音步，阴性收尾）、第3行8音节；第4—12行逐节重复该框架，无一例外。行长以音节计精确重复的诗，不能称作自由韵律。故本页：tags
+              不含「自由韵律」；语法条明确区分「无韵」与「无格律」；并说明德语诗摆脱尾韵分两步——克洛普施托克在本诗中完成的是第一步（去韵），真正的自由韵律见于他的《Die
+              Frühlingsfeier》（1759）等颂歌，该诗**未收入本站**，页面已如实写明，未含糊带过。
+            </p>
+            <p>
+              【格律（§0.E
+              音节切分）】已给出三行的音节切分：第1行「Im-Früh-lings-schat-ten-fand-ich-Sie」8音节；第2行「Da-band-ich-Sie-mit-Ro-sen-bän-dern」9音节；第3行「Sie-fühlt-es-nicht-und-schlum-mer-te」8音节。四节均为
+              8/9/8。
+            </p>
+            <p>
+              【计数（附行号）】省音共 5 处（第3、6、7、11、12行；第6行含 fühlt' 与 wusst' 两处，第5、11行各含 Blick'
+              一处）；四个动作依次为找到（第1行）、缚住（第2行）、注视（第4行）、醒来（第9行）。镜像对称行为第4—5行与第10—11行。
+            </p>
+            <p>
+              【大写 Sie 的读法】诗中 Sie / Ihrem / Ihr
+              全部为18世纪印刷中标示被爱者的第三人称「她」，非敬称「您」。已在首行注与译文说明中写明，避免读者误读为敬语。
+            </p>
+            <p>
+              【★待进一步核实】(1) 本诗与 Meta Moller
+              的关系——通行说法如此，但未回核到一手出处，且本诗作于1753年、早于1754年成婚，故页面不作此断言；(2)
+              1753年的具体成诗背景；(3) 本诗首刊载体（1798年《Oden》第1卷为本站所据版本，更早的刊载情况未核）。
+            </p>
+            <p>【公版】克洛普施托克1803年卒，公版起始年 = 1803 + 71 = 1874。</p>
+            <p>
+              本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik /
+              possel）、D（含一级来源：1798年《Oden》第1卷，标注卷次与页码）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Friedrich Gottlieb Klopstock</li>
+            <li>确认出处：Oden, Band 1, Leipzig 1798, S.122–123</li>
+            <li>★分节数按来源更正为 4 节 × 3 行 = 12 行</li>
+            <li>★显式写出「本诗没有韵式」</li>
+            <li>★更正「自由韵律」定性：本诗无韵但格律严整（8/9/8）</li>
+            <li>★写明真正的自由韵律见于《Die Frühlingsfeier》，该诗未收入本站</li>
+            <li>格律给出三行音节切分，并核对四节一致</li>
+            <li>das Band 复数分义（Bänder / Bande）单列词条</li>
+            <li>省音 5 处附行号，接入本站省音簇</li>
+            <li>大写 Sie 非敬称的说明</li>
+            <li>★Meta Moller 一说回核不到，未写入断言</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1803 + 71 = 1874</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核 Meta Moller 一说与首刊载体</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议18世纪德语诗律专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

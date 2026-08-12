@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Der Kuß im Traume · 梦中之吻 — Karoline von Günderrode | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Der Kuß im Traume（梦中之吻）— Karoline von Günderrode。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="das-aesthetische-wiesel.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">美学的鼬</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="wo-hast-du-all-die-schoenheit-hergenommen.html" rel="next"
+            ><span class="poem-nav__title">你从哪里取来这一身的美</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Der Kuß im Traume</h1>
+          <p class="poem-titleblock__author">Karoline von Günderrode</p>
+          <p class="poem-titleblock__zh">梦中之吻</p>
+          <p class="poem-titleblock__author-zh">卡罗琳娜·冯·京德罗德</p>
+          <div class="poem-titleblock__biblio">
+            <p>
+              《Karoline von Günderrode: Gesammelte Werke》第1卷「Poetische Fragmente」（Berlin-Wilmersdorf 1920–1922）
+            </p>
+            <p>早期浪漫派（Frühromantik）</p>
+            <p>作于1804年前后；来源本作《Der Kuß im Traume, aus einem ungedruckten Romane》（「选自一部未刊小说」）</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2（十四行，词序倒装多，抽象名词密集）</span>
+            <span class="tag">十四行诗</span>
+            <span class="tag">梦</span>
+            <span class="tag">吻</span>
+            <span class="tag">女性作者</span>
+            <span class="tag">早期浪漫派</span>
+            <span class="tag">夜</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一间夜里的房间，窗外只有极微弱的将明未明的光；床帷与阴影占据画面大部；一只手垂在被沿，暗示一个仍未醒来的睡者；黎明的光被窗帘挡在外面
+              </dd>
+              <dt>情绪</dt>
+              <dd>静谧、封闭、自愿的沉溺；不是噩梦，而是「不愿醒来」的安适与拒绝</dd>
+              <dt>画面元素</dt>
+              <dd>深色床帷、被挡住的窗、一线冷白的将明之光、垂落的手（不露脸）、空气中浮尘的微光</dd>
+              <dt>时代感</dt>
+              <dd>1800年前后德意志市民／贵族室内，家具简朴</dd>
+              <dt>推荐风格</dt>
+              <dd>早期浪漫派室内画质感，深褐与暗蓝为主，单一冷光源，笔触柔和</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                ★不得出现任何指向作者死亡的意象：不得出现河流、水岸、刀具、血、墓碑；不得画出可辨识的人脸；不得出现文字水印；不得画成情色场景（诗中的吻发生在梦里，不是身体场景）
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Es hat ein Kuß mir Leben eingehaucht,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">一个吻曾把生命吹进我体内，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Gestillet meines Busens tiefstes Schmachten,<sup class="refmark"
+                      ><a href="#note-2">2</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">平息了我胸中最深的渴慕，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Komm, Dunkelheit! mich traulich zu umnachten<sup class="refmark"
+                      ><a href="#note-3">3</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">来吧，黑暗！亲切地把我笼进夜色</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Daß neue Wonne meine Lippe saugt.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">好让新的极乐被我的唇吮吸。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >In Träume war solch Leben eingetaucht,<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">这样的生命曾浸没在梦里，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Drum leb' ich, ewig Träume zu betrachten,<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">所以我活着，只为永远凝视梦，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Kann aller andern Freuden Glanz verachten,<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">能够蔑视其他一切欢愉的光彩，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Weil nur die Nacht so süßen Balsam haucht.<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">因为唯有夜才呼出这样甘美的香膏。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Der Tag ist karg an liebesüßen Wonnen,<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">白昼吝于给出爱之甘美的极乐，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Es schmerzt mich seines Lichtes eitles Prangen<sup class="refmark"
+                      ><a href="#note-10">10</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">它的光那虚浮的炫耀刺痛我，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="11">
+                  <span class="linetext"
+                    >Und mich verzehren seiner Sonne Gluthen.<sup class="refmark"><a href="#note-11">11</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">它太阳的炽热把我烧尽。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="12">
+                  <span class="linetext"
+                    >Drum birg dich Aug' dem Glanze irr'dscher Sonnen!<sup class="refmark"
+                      ><a href="#note-12">12</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">所以，眼睛啊，躲开尘世太阳的光辉吧！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="13">
+                  <span class="linetext"
+                    >Hüll' dich in Nacht, sie stillet dein Verlangen<sup class="refmark"
+                      ><a href="#note-13">13</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">把自己裹进夜里，夜平息你的渴求，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="14">
+                  <span class="linetext"
+                    >Und heilt den Schmerz, wie Lethes kühle Fluthen.<sup class="refmark"
+                      ><a href="#note-14">14</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">并治愈痛楚，如同勒忒河清凉的水流。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留十四行的四四三三分节与句子的倒装语序</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Es hat ein Kuß mir Leben eingehaucht,</p>
+              <p class="lnote__zh">
+                开篇即是全诗的悖论：吻发生在梦里，却是它「把生命吹进」说话人体内（einhauchen
+                吹入、注入气息，宗教语域——《创世记》中神把生命的气息吹入亚当）。用完成时（hat …
+                eingehaucht）意味着这件事已经完成、不可撤销。★注意：Kuß
+                一词全诗只在本行出现一次（第1行），此后再未复现——被反复呼唤的是「夜」与「梦」，不是吻本身。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Gestillet meines Busens tiefstes Schmachten,</p>
+              <p class="lnote__zh">
+                Gestillet 是 gestillt 的旧式全写形（多一个 -e-，为音节数服务）。meines Busens tiefstes Schmachten
+                是前置第二格：第二格 meines Busens（我胸中的）放在被修饰的 Schmachten（渴慕）之前，是雅体语序，今日多作
+                das tiefste Schmachten meines Busens。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Komm, Dunkelheit! mich traulich zu umnachten</p>
+              <p class="lnote__zh">
+                第一个祈使句（第3行），呼语的对象是「黑暗」这一无生命的抽象物。umnachten
+                是罕见动词，字面「以夜围拢」（um- + Nacht + -en）；今日几乎只存于 umnachtet（神志昏乱的）一语。traulich
+                = 亲密而令人安心的——夜在此不是恐怖，而是庇护。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Daß neue Wonne meine Lippe saugt.</p>
+              <p class="lnote__zh">
+                daß 引导目的从句，动词 saugt 落在句末（从句框架结构）。saugen 在此为「吮吸」，主语是 meine
+                Lippe。★本行的韵脚 saugt 与第1、5、8行的 -aucht 只是近韵（unreiner Reim：saugt /-aukt/ vs haucht
+                /-auxt/），并非纯韵——本站韵式校验中已用 rhyme_groups 显式声明这一组，说明是诗人有意当作一个韵来用。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">In Träume war solch Leben eingetaucht,</p>
+              <p class="lnote__zh">
+                Träume 出现的第一处（第5行）。eintauchen（浸入）与第1行的
+                einhauchen（吹入）构成同前缀、近音的一对：生命先被「吹入」，又被说成早已「浸没」在梦里。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Drum leb' ich, ewig Träume zu betrachten,</p>
+              <p class="lnote__zh">
+                drum = darum（所以）的口语缩略。Träume 出现的第二处（第6行）。zu +
+                不定式表目的：活着的唯一目的是「凝视梦」。省音形式 leb'（= lebe）——本站《恳求》（编号23）的
+                Weil'、《致自己》（编号32）的 zurücke 是同一族的省音/加音现象，可对照。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Kann aller andern Freuden Glanz verachten,</p>
+              <p class="lnote__zh">
+                又一个前置第二格：aller andern Freuden（其他一切欢愉的）置于 Glanz（光彩）之前。整行省略了主语
+                ich（承前省），是诗体常见的紧缩。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Weil nur die Nacht so süßen Balsam haucht.</p>
+              <p class="lnote__zh">
+                Nacht 出现的第一处（第8行）。weil 引导原因从句，动词 haucht
+                落句末。Balsam（香膏）是圣经与巴洛克诗歌的疗愈意象；haucht 回扣第1行的
+                eingehaucht——夜做的事，和那个吻做的事，是同一件。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Der Tag ist karg an liebesüßen Wonnen,</p>
+              <p class="lnote__zh">
+                第三节转折：从夜转到昼。karg an + 三格 =
+                「在……方面吝啬」。liebesüß（爱之甘美的）是诗人临时组合的复合形容词。全诗的价值判断在此完全颠倒：白昼＝匮乏，夜＝丰盈。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Es schmerzt mich seines Lichtes eitles Prangen</p>
+              <p class="lnote__zh">
+                第三个前置第二格：seines Lichtes（它的光的）在 Prangen（炫耀、招摇）之前。eitel
+                在此取古义「虚浮的、空洞的」，与本站《一切皆虚空》（编号30）标题中的 eitel 是同一个词义，可对照。es
+                schmerzt mich = 非人称结构「这使我痛」。
+              </p>
+            </article>
+            <article class="lnote" id="note-11" data-noteref="11">
+              <span class="lnote__mark">11</span>
+              <p class="lnote__de">Und mich verzehren seiner Sonne Gluthen.</p>
+              <p class="lnote__zh">
+                第四个前置第二格：seiner Sonne（它太阳的）在 Gluthen（炽热）之前。Gluthen 是 Gluten
+                的旧拼法（-th-，19世纪前常见），本站按来源版本照录，不改。verzehren = 烧尽、耗尽。
+              </p>
+            </article>
+            <article class="lnote" id="note-12" data-noteref="12">
+              <span class="lnote__mark">12</span>
+              <p class="lnote__de">Drum birg dich Aug' dem Glanze irr'dscher Sonnen!</p>
+              <p class="lnote__zh">
+                第二个祈使句（第12行）：birg 是强变化动词 bergen（藏匿）的单数命令式（e→i 换音）。呼语对象是 Aug'（=
+                Auge，省音）——说话人对自己的眼睛说话。irr'dscher = irdischer（尘世的）的省音形。
+              </p>
+            </article>
+            <article class="lnote" id="note-13" data-noteref="13">
+              <span class="lnote__mark">13</span>
+              <p class="lnote__de">Hüll' dich in Nacht, sie stillet dein Verlangen</p>
+              <p class="lnote__zh">
+                第三个祈使句（第13行）：Hüll' dich（把自己裹起来）。Nacht 出现的第二处（第13行）。stillet
+                又是旧式全写形，回应第2行的 Gestillet——第2行是吻平息了渴慕，此处是夜平息渴求，动词刻意重复。
+              </p>
+            </article>
+            <article class="lnote" id="note-14" data-noteref="14">
+              <span class="lnote__mark">14</span>
+              <p class="lnote__de">Und heilt den Schmerz, wie Lethes kühle Fluthen.</p>
+              <p class="lnote__zh">
+                末行以希腊神话的忘川（Lethe）收束：饮其水者忘尽前事。Lethes kühle Fluthen
+                是第五个前置第二格（专名第二格前置）。Fluthen = Fluten
+                的旧拼法。★全诗的落点不是「醒来」而是「不要醒来」：夜／梦被要求做的最后一件事，是抹去记忆本身。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Kuss, Küsse</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">吻</div>
+              <div class="vocab-card__note">
+                ★正字法：词条按现代规范作 der Kuss；诗中（第1行）依来源版本作旧拼法
+                Kuß。küssen（吻，动词）。本站《世界之终》（编号57）第8行的 küssen 是同一词族。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Wonne, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">极乐、至福的欢愉</div>
+              <div class="vocab-card__note">
+                比 Freude（喜悦）程度高得多的雅词，多用于宗教与爱情语域。诗中出现于第4行（neue
+                Wonne）与第9行（liebesüßen Wonnen）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">schmachten</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">渴慕、憔悴地思念；（因饥渴）煎熬</div>
+              <div class="vocab-card__note">
+                诗中作名词化的 das Schmachten（第2行，渴慕）。变位 schmachtet – schmachtete – hat geschmachtet。常见搭配
+                nach etwas schmachten（渴慕某物）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">bergen</span></div>
+              <span class="vocab-card__pos">v.（强变化 e–a–o）</span>
+              <div class="vocab-card__meaning">藏匿、隐藏；抢救（遇难者）</div>
+              <div class="vocab-card__note">
+                ★强变化且命令式换音：birg! – barg – hat geborgen。诗中 birg dich（第12行，把你自己藏起来）。名词 die
+                Bergung（打捞、抢救）、形容词 geborgen（有安全感的）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hüllen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">包裹、裹进</div>
+              <div class="vocab-card__note">
+                诗中 Hüll' dich in Nacht（第13行，把自己裹进夜里）。die
+                Hülle（外壳、包被）、enthüllen（揭开）、verhüllen（遮蔽）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Nacht, Nächte</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">夜</div>
+              <div class="vocab-card__note">
+                本诗的核心词，出现于第8行与第13行。本站多页收有此词；《月夜》（编号7）中的夜是人与世界的和解，本页的夜是对白昼的拒绝——同一个词，两种价值方向。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">eitel</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">①（古/本诗）虚浮的、空洞的；②（今常用）虚荣的</div>
+              <div class="vocab-card__note">
+                ★假朋友风险：诗中 eitles Prangen（第10行）取古义「虚浮的炫耀」。本站《一切皆虚空》（编号30）标题中的
+                eitel 也是这一古义（「全是虚空」），可对照。今日日常义则是「虚荣的」。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第12行作命令式 birg dich。与 helfen（hilf!）、nehmen（nimm!）同属命令式 e→i 换音的一类。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第4行作现在时 saugt。强变化 sog/gesogen 属较雅的用法；技术语境（吸尘）多用弱变化
+                    saugte/gesaugt。两套并存，本页不判优劣。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第11行 mich verzehren … Gluthen（炽热把我烧尽）。日常义另有「吃掉、消费」（Speisen
+                    verzehren）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">十四行诗（Sonett）与彼特拉克式韵式 —— 本站十四行簇的第五个样本</h3>
+              <p class="grammar-item__quote">Es hat ein Kuß mir Leben eingehaucht … wie Lethes kühle Fluthen.</p>
+              <div class="grammar-item__body">
+                本诗为十四行，分节作 4/4/3/3（两个四行节 Quartette + 两个三行节 Terzette），韵式 abba abba cde
+                cde——即彼特拉克式（意大利式）而非莎士比亚式（后者作 abab cdcd efef
+                gg，以对句收尾）。两个四行节用抱韵（umarmender Reim），且两节共用同一对韵脚（-aucht /
+                -achten），这是意大利式十四行最严格的写法。格律为五音步抑扬格：第1行「Es-hat-ein-Kuß-mir-Le-ben-ein-ge-haucht」共10个音节，阳性收尾；第2行「Ge-stil-let-mei-nes-Bu-sens-tief-stes-Schmach-ten」共11个音节，阴性收尾。本页是本站十四行诗的第五个样本，与《致自己》（编号32）、《二人》（编号28）、《美之无常》（编号42）、《古风的阿波罗躯干残像》（编号15）构成同一族。★第4行的
+                saugt 与 -aucht 组只是近韵，已在数据中显式声明。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">
+                对无生命者的祈使呼语（Imperativ + Apostrophe）—— 与本站两处 Konjunktiv 祈愿的对照
+              </h3>
+              <p class="grammar-item__quote">Komm, Dunkelheit! … birg dich Aug' … Hüll' dich in Nacht</p>
+              <div class="grammar-item__body">
+                全诗的愿望不是用虚拟式表达的，而是用命令式：共 3
+                个命令式（第3、12、13行），呼语对象依次是黑暗、说话人自己的眼睛、以及（隐含的）自己。其中 birg
+                是强变化动词 bergen 的命令式换音形（e→i）。★这一点值得与本站另外两处对照：《晚歌》（编号20）的 Wollst
+                与《恳求》（编号23）的 schwebest 都是 Konjunktiv I
+                的祈愿式，祈求的对象是神；本诗则用命令式，命令的对象是夜。同样是「愿……」，一个走虚拟式并把自己交出去，一个走命令式并直接下令——语气的落差正是早期浪漫派把夜抬到神的位置上的语法证据。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">前置第二格（vorangestellter Genitiv）—— 一首诗里的五个样本</h3>
+              <p class="grammar-item__quote">meines Busens tiefstes Schmachten … Lethes kühle Fluthen</p>
+              <div class="grammar-item__body">
+                德语的第二格定语通常后置（das Schmachten meines Busens），但雅体／诗体允许前置。本诗密集使用这一语序，共
+                5 例（第2、7、10、11、14行）：meines Busens tiefstes Schmachten、aller andern Freuden Glanz、seines
+                Lichtes eitles Prangen、seiner Sonne Gluthen、Lethes kühle
+                Fluthen。注意前置时被修饰的名词不再带冠词（不说 *meines Busens das
+                Schmachten）。专名的第二格（Lethes）在现代德语中仍可自然前置（Goethes
+                Faust），其余几种今日已属书面雅体。本站已在多页标注过这一现象，本页是样本最密集的一首。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              卡罗琳娜·冯·京德罗德（1780—1806）是德语早期浪漫派中最特别的声音之一。她出身没落贵族，自1797年起住在法兰克福的一所贵族女子修道院（Damenstift）——这是当时未婚贵族女性少数体面的去处之一。她与克莱门斯·布伦塔诺（本站《纺纱女的夜歌》编号21
+              的作者）及其妹贝蒂娜·冯·阿尔尼姆有密切交往。
+            </p>
+            <p>
+              ★她生前发表作品时署男性笔名
+              Tian。这件事本身就是19世纪初女性作者处境的直接证据：一个女性要让作品被当作作品而非「女士的消遣」来读，最省事的办法是不署自己的名字。本站现收有四位女性作者（另三位见
+              about 页统计），京德罗德是其中最早的一位。
+            </p>
+            <p>
+              1806年7月26日，她在宾根附近的莱茵河畔自杀，年26岁。★关于她与海德堡神话学家弗里德里希·克罗伊策（Friedrich
+              Creuzer）的关系、以及自杀的具体经过，通行叙述大多可回溯到贝蒂娜·冯·阿尔尼姆的《Die
+              Günderode》（1840）——但该书是书信体的文学加工，不是传记材料，其中的信件经过改写与虚构。本页不据该书叙述任何传记事实，相关细节一律标注待进一步核实。
+            </p>
+            <p>
+              本诗的处理方式也应据此把握：这是一首诗，不是遗书。诗中的「夜」是早期浪漫派「夜／梦高于昼／现实」这一命题的极端表述（诺瓦利斯《夜颂》是同一命题的另一端），把它读成作者死亡的预告，是把生平硬套进文本。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文严格照录来源版本（Zeno.org
+              所据《全集》第1卷）的读法，包括旧拼法 Gluthen / Fluthen / irr'dscher 与旧式全写形 Gestillet /
+              stillet，不作现代化改写；(2) Wortschatz 词条按现代规范立目（der Kuss），诗中的旧拼法 Kuß
+              在词条注中说明；(3)
+              五处前置第二格在译文中按中文语序还原为「……的……」，语序信息在逐行注释与语法条中说明；(4)
+              标题在来源中作《Der Kuß im Traume, aus einem ungedruckten
+              Romane》（「选自一部未刊小说」），本站页眉取主标题，副标题在校对记录中著录。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Zeno.org — Günderrode: Der Kuß im Traume, aus einem ungedruckten Romane</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/G%C3%BCnderrode,+Karoline+von/Gedichte/Poetische+Fragmente/Der+Ku%C3%9F+im+Traume"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/G%C3%BCnderrode,+Karoline+von/Gedichte/Poetische+Fragmente/Der+Ku%C3%9F+im+Traume</a
+              >
+              <span class="source-citation"
+                >Karoline von Günderrode: Gesammelte Werke. Band 1–3, Band 1, Berlin-Wilmersdorf 1920–1922, S.
+                119–120</span
+              >
+              <span class="source-note"
+                >一级来源（全集本，标注卷次与页码），本次直接抓取成功。正文读法以此为准，含旧拼法 Gluthen / Fluthen /
+                irr'dscher。该本把本诗编入「Poetische Fragmente」一辑，紧接《Die Pilger》之后。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">planetlyrik.de — Karoline von Günderrode</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a class="source-url" href="https://www.planetlyrik.de/?s=G%C3%BCnderrode" target="_blank" rel="noopener"
+                >https://www.planetlyrik.de/?s=G%C3%BCnderrode</a
+              >
+              <span class="source-citation">现代评介与转录（Lyrikkalender 条目）</span>
+              <span class="source-note">二级来源（独立运营方）。用于核对现代通行读法与作者生平梗概。</span>
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Der Kuss im Traume（Günderrode）</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a
+                class="source-url"
+                href="https://www.gedichte7.de/der-kuss-im-traume.html"
+                target="_blank"
+                rel="noopener"
+                >https://www.gedichte7.de/der-kuss-im-traume.html</a
+              >
+              <span class="source-citation">现代通行文本（标题作现代拼法 Kuss）</span>
+              <span class="source-note"
+                >三级来源（Possel 运营方）。其标题与正文按1996年后正字法改写（Kuss / Gluten /
+                Fluten），与本站所据的1920–22全集本读法不同——差异已在校对记录中记录。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文以 Zeno.org 所据《京德罗德全集》第1卷（Berlin-Wilmersdorf
+              1920–1922，S.119–120）为一级来源，本次直接抓取成功。另有 planetlyrik.de（二级）与
+              gedichte7.de（三级，Possel 运营方）两个独立运营方。14 行、分节 4/4/3/3——三源一致。
+            </p>
+            <p>
+              【韵式逐行数出】abba abba cde cde（彼特拉克式）。逐行末词：1 eingehaucht／2 Schmachten／3 umnachten／4
+              saugt／5 eingetaucht／6 betrachten／7 verachten／8 haucht／9 Wonnen／10 Prangen／11 Gluthen／12 Sonnen／13
+              Verlangen／14 Fluthen。两个四行节共用同一对韵脚。★第4行 saugt 与 -aucht 组是近韵（unreiner Reim：/-aukt/
+              vs /-auxt/），拼写与读音都不同音，自动聚类会把它单独分出，故已用 rhyme_groups [[1,4,5,8]]
+              显式声明为一组。韵式校验通过，无孤字母 WARN。
+            </p>
+            <p>【格律】五音步抑扬格。已给出两行的音节切分：第1行10音节（阳性收尾）、第2行11音节（阴性收尾）。</p>
+            <p>
+              【★对「虚拟式表愿望」的更正】本诗的愿望不是用虚拟式表达的，而是用命令式（第3、12、13行共 3
+              个）。本页据此把语法条写成「对无生命者的祈使呼语」，并与《晚歌》的 Wollst、《恳求》的 schwebest 两处
+              Konjunktiv I 祈愿作对照说明。两处 Konjunktiv 标注已 grep 确认存在于对方页面，并经 cross_references 校验。
+            </p>
+            <p>
+              【关键异文与正字法】(1) 本站照录1920–22全集本读法：Gluthen / Fluthen（旧 -th-）、irr'dscher、Gestillet /
+              stillet（旧式全写形）；(2) gedichte7.de 按1996年后正字法改写为 Kuss / Gluten /
+              Fluten，与本站不同，已如实记录；(3) Wortschatz 词条按现代规范立目 der Kuss，与诗中 Kuß
+              的差异在词条注中说明。
+            </p>
+            <p>
+              【关键词频（附行号）】Kuß 全诗只出现 1 次（第1行）；Nacht 出现 2 次（第8、13行）；Träume 出现 2
+              次（第5、6行）。三项均已在逐行注释中标注行号。
+            </p>
+            <p>
+              【★待进一步核实】(1) 首刊出处：常见说法称本诗收入1804年《Gedichte und Phantasien》（署笔名
+              Tian），但本次所据的一级来源把它编入「Poetische Fragmente」一辑，并附副标题「aus einem ungedruckten
+              Romane」，未能证实1804年结集这一说法——首刊载体与年份待回核，页眉的年份系据通行说法著录；(2) 与 Friedrich
+              Creuzer 关系的具体经过；(3) 自杀的具体经过。★(2)(3) 的通行叙述大多可回溯到贝蒂娜·冯·阿尔尼姆《Die
+              Günderode》（1840），该书是书信体文学加工而非传记材料，本页不据其叙述任何事实，页面已写明这一点。
+            </p>
+            <p>【公版】京德罗德1806年卒，公版起始年 = 1806 + 71 = 1877。</p>
+            <p>
+              本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / planetlyrik / possel）、D（含一级来源：Zeno
+              全集本，标注卷次与页码）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Karoline von Günderrode</li>
+            <li>确认出处：Gesammelte Werke Bd.1, 1920–22, S.119–120</li>
+            <li>核对行数与分节（14 行，4/4/3/3）</li>
+            <li>韵式逐行数出：abba abba cde cde（彼特拉克式）</li>
+            <li>近韵 saugt/-aucht 已用 rhyme_groups 显式声明</li>
+            <li>格律给出两行音节切分（10 / 11 音节）</li>
+            <li>★更正「虚拟式表愿望」为命令式，并与 abendlied/bitte 的 Konjunktiv 对照</li>
+            <li>前置第二格 5 例附行号</li>
+            <li>关键词频 Kuß/Nacht/Träume 附行号</li>
+            <li>笔名 Tian 与女性作者处境写入 cultural_notes</li>
+            <li>★Bettina von Arnim《Die Günderode》标明为文学加工，不作传记引用</li>
+            <li>image brief 禁忌含「不得出现任何指向作者死亡的意象」</li>
+            <li>十四行簇五页互链（an-sich / die-beiden / vergaenglichkeit / torso）</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1806 + 71 = 1877</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核首刊出处（Gedichte und Phantasien 1804 / 笔名 Tian）</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议早期浪漫派专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

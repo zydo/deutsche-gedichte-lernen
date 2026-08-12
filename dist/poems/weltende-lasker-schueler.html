@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Weltende · 世界之终 — Else Lasker-Schüler | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Weltende（世界之终）— Else Lasker-Schüler。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="wo-hast-du-all-die-schoenheit-hergenommen.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">你从哪里取来这一身的美</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="die-ehre-gottes-aus-der-natur.html" rel="next"
+            ><span class="poem-nav__title">从自然见神的荣耀</span
+            ><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Weltende</h1>
+          <p class="poem-titleblock__author">Else Lasker-Schüler</p>
+          <p class="poem-titleblock__zh">世界之终</p>
+          <p class="poem-titleblock__author-zh">埃尔莎·拉斯克-许勒</p>
+          <div class="poem-titleblock__biblio">
+            <p>
+              《Gesammelte Gedichte》（1917）· 1917年版在标题下附题献「(H. W. Wilhelm von Kevlaar zur Erinnerung an
+              viele Jahre)」
+            </p>
+            <p>表现主义前期</p>
+            <p>
+              所据版本为《Gesammelte Gedichte》（Verlag der Weißen Bücher, Leipzig 1917），S.
+              100；成诗与首刊年份见校对记录
+            </p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1（十行，词汇不难，但 als ob + 虚拟式与关系从句的层层嵌套需要留意）</span>
+            <span class="tag">表现主义</span>
+            <span class="tag">世界末日</span>
+            <span class="tag">哀恸</span>
+            <span class="tag">同名诗</span>
+            <span class="tag">女性作者</span>
+            <span class="tag">虚拟式</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一片没有具体地点的暗色空间，一道铅灰色的巨大阴影自上方缓缓压下；下方隐约可见许多并排的、棺材形状的暗块，暗示「心里」也就是「棺中」；两个极小的人形轮廓靠在一起，几乎被阴影吞没
+              </dd>
+              <dt>情绪</dt>
+              <dd>内向的、宗教式的哀恸；沉重、静止、无事件发生——不是灾难现场，是灾难之后的寂静</dd>
+              <dt>画面元素</dt>
+              <dd>自上压下的铅灰阴影、下方排列的暗色棺形块面、两个相依的极小人形（不露脸）、无城市、无火焰</dd>
+              <dt>时代感</dt>
+              <dd>无明确时代，1900年前后的抽象空间</dd>
+              <dt>推荐风格</dt>
+              <dd>表现主义绘画质感，铅灰与深蓝为主，大块面、低对比、边缘柔化</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                ★不得画成范·霍迪斯《世界末日》那类具体的都市灾难场景（不得出现帽子、屋顶工、火车、桥）——两首诗必须在视觉上一眼可分；不得出现十字架等明确宗教符号；不得画出可辨识的人脸；不得出现文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Es ist ein Weinen in der Welt,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">世界上有一阵哭声，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Als ob der liebe Gott gestorben wär,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">仿佛亲爱的上帝已经死了，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Und der bleierne Schatten, der niederfällt,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">而那降落下来的铅灰色阴影，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Lastet grabeschwer.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">沉重如墓。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Komm, wir wollen uns näher verbergen …<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">来吧，我们把彼此藏得更近些……</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Das Leben liegt in aller Herzen<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">生命躺在所有人的心里，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Wie in Särgen.<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">像躺在棺材里。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Du! wir wollen uns tief küssen –<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你啊！我们要深深地亲吻——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Es pocht eine Sehnsucht an die Welt,<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">有一种渴望在叩击这世界，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >An der wir sterben müssen.<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我们必将死于它。</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留三节 4/3/3 的分节与句子的悬垂感</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Es ist ein Weinen in der Welt,</p>
+              <p class="lnote__zh">
+                ★首行即与本站另一首同名诗分道：雅各布·范·霍迪斯《世界末日》（编号33）开篇是「市民尖顶脑袋上的帽子飞走了」——具体、可笑、外在；本诗开篇是一阵没有主体的哭声——抽象、内在、无从定位。Es
+                ist …
+                是无人称结构，哭的人是谁不说；「哭泣」是全诗四个动作中的第一个（第1行）。⚠本站另收有雅各布·范·霍迪斯的同名诗《世界末日》（编号33），那是另一位作者的另一首作品，不是本诗的异文。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Als ob der liebe Gott gestorben wär,</p>
+              <p class="lnote__zh">
+                ★本页最重要的语法点：als ob 引导非真实比较从句，从句动词必须用虚拟式——gestorben wär(e)
+                是第二虚拟式的完成形。用 wär 而非 wäre 是省音（Apokope），为凑音节与韵脚。der liebe Gott
+                是口语中带亲昵意味的说法（「亲爱的上帝」），与「死了」并置，落差极大：不是神学命题（上帝已死），而是一个孩子式的说法被用来说一件无法承受的事。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Und der bleierne Schatten, der niederfällt,</p>
+              <p class="lnote__zh">
+                der bleierne Schatten（铅灰色的／铅一般沉重的阴影）后面跟一个关系从句 der
+                niederfällt（它降落下来），关系代词 der
+                与先行词同为阳性单数第一格。注意本行只是主语部分，谓语要到下一行才出现——句子被刻意悬在这里。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Lastet grabeschwer.</p>
+              <p class="lnote__zh">
+                谓语 Lastet（压着、沉甸甸地压下来）迟到一行才落地，这一延迟本身就是「压」的语感。grabeschwer
+                是诗人自造的复合词（Grab 墓 + schwer
+                重），标准词典中查不到——★不可当作可套用的词汇。它同时也是本节的韵脚：与第2行的 wär 押韵，但 wär /-ɛːɐ̯/
+                与 -schwer /-eːɐ̯/ 元音长短与音质都不完全相同，属不纯韵，本站已用 rhyme_groups 显式声明这一组。
+                ★本诗整体押韵不规则：三节分别为 abab（第1—4行）／aba（第5—7行）／aba（第8—10行），无统一韵式。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Komm, wir wollen uns näher verbergen …</p>
+              <p class="lnote__zh">
+                四个动作中的第二个：「藏起来」（第5行）。Komm 是命令式；wir wollen +
+                不定式在此不是「我们想要」，而是劝诱式（「让我们……吧」），相当于英语
+                let's。verbergen（藏匿）是强变化动词，与本站《梦中之吻》（编号55）第12行的 birg dich
+                同词根，可对照。省略号是原版所有，表示话没有说完。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Das Leben liegt in aller Herzen</p>
+              <p class="lnote__zh">
+                aller Herzen 是第三格复数（in + 三格）：「在所有人的心里」。★本行的 Herzen
+                是全诗唯一不入韵的一行——韵式校验会就此发出「孤字母」提示，本站已逐条确认：这不是漏数，它确实是一个孤韵行（Waise），夹在
+                verbergen / Särgen 这一对韵之间。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Wie in Särgen.</p>
+              <p class="lnote__zh">
+                补足上一行的比喻：生命躺在心里，像躺在棺材里。der Sarg（棺材）复数 die Särge，此处第三格复数
+                Särgen。整节由「藏起来」推进到「棺材」——藏身之处与埋葬之处成了同一个地方。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Du! wir wollen uns tief küssen –</p>
+              <p class="lnote__zh">
+                四个动作中的第三个：「亲吻」（第8行）。单独一个 Du!
+                作呼语，是拉斯克-许勒的标志性写法——不给名字，只给一个第二人称。wir wollen
+                又一次是劝诱式。破折号与上一节的省略号一样，把话留在半空。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Es pocht eine Sehnsucht an die Welt,</p>
+              <p class="lnote__zh">
+                pochen an + 四格 =
+                「叩击、敲打（门等）」。渴望（Sehnsucht）被写成一个在门外敲门的东西，而被敲的门是「世界」。Es
+                在此是形式主语，真主语是 eine Sehnsucht——与第1行的 Es ist ein Weinen 是同一种句式，首尾呼应。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">An der wir sterben müssen.</p>
+              <p class="lnote__zh">
+                四个动作中的第四个，也是终点：「死」（第10行）。An der 是介词 + 关系代词，先行词是上一行的 eine
+                Sehnsucht（阴性），介词 an 由 sterben an
+                etwas（死于某物）这一搭配决定。★全诗的动作序列由此完成：哭泣（第1行）→ 藏起来（第5行）→ 亲吻（第8行）→
+                死（第10行）。让人死的不是灾难，是渴望本身。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Weinen</span></div>
+              <span class="vocab-card__pos">n.（中性，动词名词化）</span>
+              <div class="vocab-card__meaning">哭泣</div>
+              <div class="vocab-card__note">
+                由动词 weinen（哭）直接名词化，一律为中性。诗中第1行 ein Weinen in der Welt。同类构词：das Leben（←
+                leben）、das Essen（← essen）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">verbergen</span></div>
+              <span class="vocab-card__pos">v.（强变化 e–a–o）</span>
+              <div class="vocab-card__meaning">藏匿、隐藏</div>
+              <div class="vocab-card__note">
+                变位 verbirgt – verbarg – hat verborgen。诗中第5行作反身用法 sich
+                verbergen（把自己藏起来）。与本站《梦中之吻》（编号55）第12行的 birg dich 同词根（bergen），前缀 ver-
+                不可分。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Sarg, Särge</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">棺材</div>
+              <div class="vocab-card__note">
+                复数变元音 a→ä。诗中第7行作第三格复数 Särgen（in Särgen）。第三格复数一律加 -n，故 Särge → Särgen。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Sehnsucht, -süchte</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">渴望、思慕</div>
+              <div class="vocab-card__note">
+                sehnen（渴望）+ Sucht（瘾、癖）——构词上就是「渴望成瘾」。诗中第9行。搭配 Sehnsucht nach etwas
+                haben。这是德语浪漫派以来最核心的情感词之一。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">pochen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">叩击、敲；（心）怦怦跳</div>
+              <div class="vocab-card__note">
+                变位 pocht – pochte – hat gepocht。诗中第9行 pocht an die Welt（叩击世界），支配 an + 四格。另有引申义
+                auf etwas pochen（坚持要求某事）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">bleiern</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">铅制的；铅灰色的；沉重得像铅一样</div>
+              <div class="vocab-card__note">
+                das Blei（铅）+ -ern（表材质的形容词后缀）。诗中第3行 der bleierne Schatten
+                取比喻义「沉重如铅」。同类构词：hölzern（木制的）、gläsern（玻璃的）、silbern（银的）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">küssen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">亲吻</div>
+              <div class="vocab-card__note">
+                变位 küsst – küsste – hat geküsst。诗中第8行 uns tief küssen（互相深深亲吻），uns
+                在此是相互代词（彼此）。名词 der Kuss——本站《梦中之吻》（编号55）以此为题。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第5行作不定式。现在时单数第二、三人称换音 e→i：du verbirgst, er verbirgt。前缀 ver-
+                    不可分，故第二分词不加 ge-：verborgen（不是 *geverborgen）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第2行作第二虚拟式完成形 gestorben wär(e)，第10行作不定式（sterben müssen）。搭配 an etwas
+                    sterben（死于某物）——第10行的介词 an 由此而来。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第2行 gestorben wär 是省音形（wäre → wär）。als ob 从句必须用虚拟式，这是本页最该记住的一条。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">★同名诗消歧：本站收有两首《Weltende》，是两位作者的两首不同作品</h3>
+              <p class="grammar-item__quote">
+                Es ist ein Weinen in der Welt …（本诗） / Dem Bürger fliegt vom spitzen Kopf der Hut …（编号33）
+              </p>
+              <div class="grammar-item__body">
+                ⚠请先看清这一条：本站另收有雅各布·范·霍迪斯的同名诗《世界末日》（编号33，1911年1月11日发表于《Der
+                Demokrat》），与本诗《世界之终》（拉斯克-许勒）是**不同作者的不同作品，不是同一首诗的异文，也不是重复收录**。为便于区分，本站固定用《世界末日》指范·霍迪斯那一首、用《世界之终》指本诗，全站互指一律使用这一对称呼。两首诗的差别不止于作者：范·霍迪斯写的是市民世界在一连串滑稽事故中散架（帽子飞走、屋顶工坠落、火车从桥上掉下去），语气是反讽的；本诗写的是一场没有事件的、近乎宗教哀恸的世界之终，语气是内向的。两首都属表现主义早期，都以「世界末日」为题——这恰恰说明「表现主义」不是一种写法，而是一个时间段里彼此差异极大的一群写法。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">als ob + 第二虚拟式：非真实比较从句 —— 兼与范·霍迪斯的罗列式句法对照</h3>
+              <p class="grammar-item__quote">Als ob der liebe Gott gestorben wär</p>
+              <div class="grammar-item__body">
+                德语表达「仿佛……（其实不然）」用 als ob 引导从句，从句动词必须是虚拟式，且动词落在句末：Als ob der liebe
+                Gott gestorben **wär(e)**。用第二虚拟式（Konjunktiv II）表明说话人明确知道这是非真实的比较。诗中 wär 是
+                wäre
+                的省音形（Apokope），为音节与韵脚服务。★句法上的对照才是本页的要害：本诗**不是**罗列式句法（Reihungsstil）。范·霍迪斯《世界末日》（编号33）由一串彼此无关的完整主句并列而成，句与句之间不作任何连接；本诗恰恰相反，十行里嵌套着
+                als ob 从句（第2行）、关系从句（第3行 der niederfällt）、以及介词 + 关系代词从句（第10行 An der
+                …），是层层从属的复合句（Hypotaxe），而且主语与谓语被刻意拆到两行（第3—4行）。把「表现主义」等同于罗列式句法，本诗就是反例。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">wir wollen + 不定式：劝诱式（Kohortativ）</h3>
+              <p class="grammar-item__quote">wir wollen uns näher verbergen … wir wollen uns tief küssen</p>
+              <div class="grammar-item__body">
+                wollen 的第一人称复数加不定式，在德语中常常不表「我们想要」，而是发出邀约，相当于英语的
+                let's、中文的「我们……吧」。本诗两次使用（第5、8行），都紧跟在一个呼语之后（Komm … / Du!
+                …）。要与真正的意愿表达区别开：Wir wollen nach Hause（我们想回家，陈述意愿）vs Wir wollen
+                singen!（我们唱歌吧，发出邀约）——靠语境和语调区分。诗中两处都是邀约，且邀约的内容步步加码：先是「藏起来」，再是「亲吻」，而下一行就是「死」。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              埃尔莎·拉斯克-许勒（1869—1945）是德语表现主义最重要的女性诗人。她活跃于柏林的《Der
+              Sturm》圈子——该刊由她的第二任丈夫赫尔瓦特·瓦尔登创办，刊名据说也出自她的建议（此说待进一步核实）。本站另收有她的《一条古老的西藏地毯》（编号38）。1933年后她流亡瑞士，1939年起定居耶路撒冷，1945年1月在那里去世。
+            </p>
+            <p>
+              ⚠本页最需要注意的一件事：本站收有**两首**题为《Weltende》的诗——本诗（拉斯克-许勒）与编号33的范·霍迪斯《世界末日》。两者是不同作者的不同作品，不是异文，也不是重复收录。本站固定以《世界之终》指本诗、以《世界末日》指编号33，两页的页眉、注释与目录均按这一对称呼书写。
+            </p>
+            <p>
+              德语诗中同名作品极多（《Herbst》《Abendlied》《An die
+              Nacht》都有大量同名之作），本站已把「同名作品的处理规范」写入编辑流程文档，本页是该规范的第一个适用对象。
+            </p>
+            <p>
+              本诗的语气与范·霍迪斯那首几乎相反。范·霍迪斯用一串滑稽的事故拼出末日，读者会笑；本诗则把末日写成一场内向的哀恸——世界上有一阵没有主体的哭声，生命像躺在棺材里，说话人对一个不具名的「你」两度发出邀约，而终点是死。它更接近哀歌（Klage）而非讽刺，宗教语汇（der
+              liebe Gott、Sarg、Sehnsucht）贯穿始终，却没有任何教义内容。
+            </p>
+            <p>
+              ★关于本诗的成诗与首刊年份：常见说法称它收入1905年的诗集《Der siebente
+              Tag》。本次核查所能确证的只有1917年《Gesammelte Gedichte》（Verlag der Weißen Bücher, Leipzig）S.100
+              这一版。因此本页**不就本诗与范·霍迪斯同名诗（1911年1月）的先后作任何断言**——两页都不作此断言，待回核到可靠的首刊出处后再补。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 标题固定译作《世界之终》，以与本站编号33
+              范·霍迪斯《世界末日》相区别，全站互指一律使用这一对称呼；(2) 正文照录1917年《Gesammelte Gedichte》S.100
+              的读法，包括省音形 wär 与自造复合词 grabeschwer，不作规范化改写；(3) grabeschwer
+              在逐行注释中标「诗人自造，不可套用」，Wortschatz 不收该词；(4) 1917年版在标题下另有题献「(H. W. Wilhelm
+              von Kevlaar zur Erinnerung an viele Jahre)」，本站正文不含该行，已在 collection 与校对记录中著录；(5)
+              第5、8行的 wir wollen 译作「我们……吧」以体现劝诱式，不译成「我们想要」。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Wikisource — Else Lasker-Schüler: Weltende（Gesammelte Gedichte 1917）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="https://de.wikisource.org/wiki/Weltende" target="_blank" rel="noopener"
+                >https://de.wikisource.org/wiki/Weltende</a
+              >
+              <span class="source-citation"
+                >Else Lasker-Schüler: Gesammelte Gedichte. Verlag der Weißen Bücher, Leipzig 1917, S.
+                100（校对状态「fertig」，附原书扫描页 Index S. 98）</span
+              >
+              <span class="source-note"
+                >一级来源（经校对的原书扫描转录，标注页码）。本站正文以此为准。该页同时著录了标题下的题献行「(H. W.
+                Wilhelm von Kevlaar zur Erinnerung an viele Jahre)」。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Weltende“（Lasker-Schüler）</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a class="source-url" href="https://www.deutschelyrik.de/weltende.html" target="_blank" rel="noopener"
+                >https://www.deutschelyrik.de/weltende.html</a
+              >
+              <span class="source-citation">现代通行文本（Aufnahme，附朗读）</span>
+              <span class="source-note">二级来源（独立运营方，直接抓取）。读法与一级来源一致。</span>
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Weltende（Else Lasker-Schüler）</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a class="source-url" href="https://www.gedichte7.de/weltende.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/weltende.html</a
+              >
+              <span class="source-citation">现代通行文本</span>
+              <span class="source-note"
+                >三级来源（Possel
+                运营方）。注意：该站另有范·霍迪斯同名诗的独立页面，两者不可混引——本站已分别核对，确认本条对应的是拉斯克-许勒的一首。</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【★同名诗消歧（本页最高优先事项）】本站收有两首题为《Weltende》的诗：本诗（Else Lasker-Schüler，slug
+              weltende-lasker-schueler，编号57）与雅各布·范·霍迪斯的同名诗（slug weltende，编号33，1911年1月11日《Der
+              Demokrat》）。二者是不同作者的不同作品，非异文、非重复收录。已执行的四项措施：(1) 本页 slug 为
+              weltende-lasker-schueler，既有的 weltende 未被占用或改动；(2)
+              两页的页眉／首条逐行注释／grammar_notes／cultural_notes 均写有显式消歧说明，并经 cross_references
+              双向声明；(3) title_zh 作区分——编号33
+              维持《世界末日》，本页作《世界之终》，全站互指统一使用这一对称呼；(4)
+              目录页与站内搜索的可见性已作浏览器实测，结果见交付说明。
+            </p>
+            <p>
+              【三源核对】正文以 Wikisource 所据《Gesammelte Gedichte》（Verlag der Weißen Bücher, Leipzig 1917）S.100
+              为一级来源（校对状态 fertig，附原书扫描）。另有 deutschelyrik.de（二级）与 gedichte7.de（三级，Possel
+              运营方）。10 行，分节 4/3/3——三源一致。
+            </p>
+            <p>
+              【韵式逐行数出】abab cdc eae（全诗连续编号）。逐行末词：1 Welt／2 wär／3 niederfällt／4 grabeschwer／5
+              verbergen／6 Herzen／7 Särgen／8 küssen／9 Welt／10 müssen。注意第9行的 Welt 与第1行同词同韵，故仍标 a。
+            </p>
+            <p>
+              【★孤字母 WARN 已逐条确认】韵式校验就字母 d 发出「只出现一次」的提示。已回核：第6行 Herzen
+              确实不与任何一行押韵，是一个孤韵行（Waise），夹在
+              verbergen（第5行）／Särgen（第7行）这一对韵之间。非漏数、非误报，确认放行，并已在该行的逐行注释中写明。
+            </p>
+            <p>
+              【不纯韵已显式声明】第2行 wär 与第4行 grabeschwer 押韵，但二者元音长短与音质不同（/-ɛːɐ̯/ vs
+              /-eːɐ̯/），且自动聚类会把重读的 -schwer 误判为弱读词尾，故已用 rhyme_groups [[2,4]] 显式声明为一组。
+            </p>
+            <p>
+              【★不作时间先后断言】常见说法称本诗收入1905年诗集《Der siebente
+              Tag》，本次未能证实；所能确证的只有1917年《Gesammelte Gedichte》S.100。因此本页与编号33
+              页面**均不就两首同名诗的先后作任何断言**，author_sort_year 取可证实的1917年。首刊出处待回核。
+            </p>
+            <p>
+              【句法要点】本诗不是罗列式句法（Reihungsstil）。十行中含 als ob
+              从句（第2行）、关系从句（第3行）、介词+关系代词从句（第10行），是层层从属的复合句，且主语与谓语被拆到第3—4两行。这一差异已在
+              grammar_notes 中与编号33 的罗列式句法逐点对照，避免读者把「表现主义」等同于单一句法。
+            </p>
+            <p>
+              【自造词处理】grabeschwer（第4行）为诗人自造复合词，Wortschatz
+              不收，已在逐行注释中标「诗人自造，不可套用」（同《巡逻》编号45 对 feinden / raschlig 的处理原则）。
+            </p>
+            <p>
+              【动作序列（附行号）】哭泣（第1行）→ 藏起来（第5行）→ 亲吻（第8行）→
+              死（第10行），已在逐行注释中逐个标注。
+            </p>
+            <p>
+              【题献行】1917年版标题下有「(H. W. Wilhelm von Kevlaar zur Erinnerung an viele
+              Jahre)」一行。本站正文不含该行（它不是诗行），已在 collection
+              与本记录中著录。该题献对象的身份待进一步核实。
+            </p>
+            <p>
+              【待进一步核实】(1) 本诗的成诗与首刊年份（《Der siebente Tag》1905 一说）；(2) 题献对象「H. W. Wilhelm von
+              Kevlaar」的身份；(3)《Der Sturm》刊名出自拉斯克-许勒建议一说的出处。
+            </p>
+            <p>【公版】拉斯克-许勒1945年卒，公版起始年 = 1945 + 71 = 2016。</p>
+            <p>
+              本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：wikimedia / deutschelyrik /
+              possel）、D（含一级来源：1917年版扫描转录，标注页码 S.100）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Else Lasker-Schüler</li>
+            <li>★slug 为 weltende-lasker-schueler，未占用既有 weltende</li>
+            <li>★页眉／注释／cultural_notes 三处均有显式消歧说明</li>
+            <li>★title_zh 作区分：本页《世界之终》／编号33《世界末日》</li>
+            <li>★与编号33 双向 cross_references 已声明</li>
+            <li>确认出处：Gesammelte Gedichte 1917, S.100</li>
+            <li>核对行数与分节（10 行，4/3/3）</li>
+            <li>韵式逐行数出：abab cdc eae</li>
+            <li>★孤字母 d 的 WARN 已回核确认为 Waise（非误报）</li>
+            <li>不纯韵 wär/grabeschwer 已用 rhyme_groups 声明</li>
+            <li>★写明本诗不是 Reihungsstil，并与编号33 逐点对照</li>
+            <li>自造词 grabeschwer 标注「不可套用」，Wortschatz 未收</li>
+            <li>动作序列（哭泣/藏/吻/死）附行号</li>
+            <li>★两页均不作与编号33 的时间先后断言</li>
+            <li>题献行已著录、未混入正文</li>
+            <li>公版年份复算：1945 + 71 = 2016</li>
+            <li>image brief 禁忌含「不得画成编号33 的都市灾难场景」</li>
+            <li>目录页两首同名诗均可见（浏览器实测）</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核首刊出处与题献对象身份</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

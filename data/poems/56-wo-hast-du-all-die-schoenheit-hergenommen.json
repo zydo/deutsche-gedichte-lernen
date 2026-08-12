@@ -1,0 +1,110 @@
+{
+  "id": "56",
+  "slug": "wo-hast-du-all-die-schoenheit-hergenommen",
+  "author": "Ricarda Huch",
+  "author_zh": "里卡尔达·胡赫",
+  "author_gender": "female",
+  "title_de": "Wo hast du all die Schönheit hergenommen",
+  "title_zh": "你从哪里取来这一身的美",
+  "author_sort_year": 1907,
+  "year": "收入《Liebesgedichte》（Insel-Verlag, Leipzig 1907），S. 5；本诗无标题，按德语诗惯例以首行代题",
+  "collection": "《Liebesgedichte》（Insel-Verlag, Leipzig 1907）",
+  "period": "新浪漫派 / 世纪之交",
+  "difficulty": "B1（词汇不难，但八行里有五个 weil 从句，正好用来练从句语序）",
+  "tags": ["美", "爱情诗", "女性作者", "新浪漫派", "从句语序", "交叉韵"],
+  "public_domain": {"death_year": 1947, "public_domain_year": 2018, "basis": "胡赫1947年11月17日卒；按德国70年 p.m.a.，2018年起公版"},
+  "german_text": [
+    ["Wo hast du all die Schönheit hergenommen,", "Du Liebesangesicht, du Wohlgestalt!", "Um dich ist alle Welt zu kurz gekommen.", "Weil du die Jugend hast, wird alles alt,", "Weil du das Leben hast, muß alles sterben,", "Weil du die Kraft hast, ist die Welt kein Hort,", "Weil du vollkommen bist, ist sie ein Scherben,", "Weil du der Himmel bist, gibt's keinen dort!"]
+  ],
+  "translation_zh": {
+    "type": "site",
+    "translator": "本站学习译文（AI 辅助），直译，保留后五行「因为你……，所以……」的排比结构",
+    "text": [
+      ["你从哪里取来这一身的美，", "你这爱之容颜，你这好模样！", "全世界都因你而显得不够。", "因为你有青春，一切就都老了，", "因为你有生命，一切就都得死，", "因为你有力量，世界就不再是庇护，", "因为你是完满的，它就成了一块碎片，", "因为你是天堂，那上头就没有天堂了！"]
+    ]
+  },
+  "translation_en": null,
+  "line_notes": [
+    {"de": "Wo hast du all die Schönheit hergenommen,",
+     "zh": "以疑问句开篇，但这不是真问句——它不期待回答，是惊叹的一种形式（修辞问句）。hernehmen（从某处取来、弄来）是可分动词，现在完成时把可分前缀 her- 与 ge- 一起写进分词：her-ge-nommen。日常口语中 Wo hast du das hergenommen? 就是「你从哪儿弄来的？」"},
+    {"de": "Du Liebesangesicht, du Wohlgestalt!",
+     "zh": "两个呼语并列，都是把人整个儿等同于一个抽象品质：不说「你有一张可爱的脸」，而说「你（就是）爱之容颜」。das Angesicht 是 das Gesicht（脸）的雅体形式，多用于宗教语域。die Wohlgestalt（好体态、匀称的形体）今日几乎不再使用，是世纪之交的雅词。"},
+    {"de": "Um dich ist alle Welt zu kurz gekommen.",
+     "zh": "zu kurz kommen 是固定搭配，意为「吃亏、分得太少」。um dich = 「在你身上／因你之故」。整句：世界为了成全你，把自己的份额都赔进去了。这一行是全诗的枢纽——它先给出结论，后五行才逐条给出理由。"},
+    {"de": "Weil du die Jugend hast, wird alles alt,",
+     "zh": "五个平行的 weil 从句的第一个（第4行）。★句法要点：weil 引导的从句里动词 hast 落在末尾；从句整体占据了主句的第一位，所以主句必须倒装——变位动词 wird 紧跟逗号之后，主语 alles 退到动词之后。这是德语「从句提前→主句倒装」规则最干净的样本。"},
+    {"de": "Weil du das Leben hast, muß alles sterben,",
+     "zh": "第二个 weil 从句（第5行），结构与上一行完全相同：从句动词 hast 在末，主句以情态动词 muß 开头、主语 alles 在后。muß 依1907年版本作旧拼法，本站照录。语义上的悖论继续加码：你占有生命，于是别人只剩死。"},
+    {"de": "Weil du die Kraft hast, ist die Welt kein Hort,",
+     "zh": "第三个 weil 从句（第6行）。der Hort 是古雅词，兼指「宝藏」与「庇护所」，今日主要活在 Kinderhort（学童托管所）一词里。否定用 kein 而非 nicht，因为否定的是一个带不定冠词性质的名词（ist ein Hort → ist kein Hort）。"},
+    {"de": "Weil du vollkommen bist, ist sie ein Scherben,",
+     "zh": "第四个 weil 从句（第7行）。前三个从句用 haben，从这一行起改用 sein + 表语（vollkommen bist / der Himmel bist），排比内部发生了一次变奏。★der Scherben 是阳性形，今日规范德语作 die Scherbe（阴性，碎片）；阳性的 der Scherben 是较古的、南德／奥地利仍可见的形式，本站照录版本读法并在词条中说明。"},
+    {"de": "Weil du der Himmel bist, gibt's keinen dort!",
+     "zh": "第五个 weil 从句（第8行），也是收束。gibt's = gibt es 的口语省音。dort（在那上头）指天上——如果你就是天堂，天上便不再有天堂了。★这一行把前面四行的逻辑推到尽头：被爱者的完满不是对世界的补充，而是对世界的掏空。全诗的赞美因此同时是一句控诉。"}
+  ],
+  "vocab": [
+    {"term": "die Schönheit, -en", "pos": "n.（阴性）", "meaning": "美、美貌",
+     "note": "schön（美的）+ -heit（构成抽象名词的后缀）。本站《特里斯坦》（编号61）首行 Wer die Schönheit angeschaut mit Augen 用的是同一个词——两首诗对「美」的判断正好相反，可对照。"},
+    {"term": "hernehmen", "pos": "v.（可分，强变化 e–a–o）", "meaning": "从某处取来、弄来",
+     "note": "her- 是可分前缀。变位 nimmt her – nahm her – hat hergenommen。诗中第1行 Wo hast du … hergenommen。注意分词把 ge- 夹在可分前缀与词干之间：her-ge-nommen。"},
+    {"term": "der Hort, -e", "pos": "n.（阳性）", "meaning": "①庇护所、依靠；②（古）宝藏",
+     "note": "古雅词，今日日常用法几乎只剩 der Kinderhort（学童托管所）。诗中第6行取「庇护」义。《尼伯龙根之歌》中的 Nibelungenhort 则取「宝藏」义。"},
+    {"term": "die Scherbe, -n", "pos": "n.（阴性）", "meaning": "碎片（尤指陶瓷、玻璃的）",
+     "note": "★词条按现代规范立目 die Scherbe；诗中第7行作阳性的 ein Scherben，是较古的、南德／奥地利仍存的形式，本站照录版本读法。搭配 in Scherben gehen（碎掉、破灭）。"},
+    {"term": "die Wohlgestalt", "pos": "n.（阴性）", "meaning": "匀称的体态、好模样",
+     "note": "wohl（好）+ Gestalt（形体）。世纪之交的雅词，今日已基本不用。诗中第2行作呼语。形容词 wohlgestaltet（体态匀称的）尚可见。"},
+    {"term": "vollkommen", "pos": "adj. / adv.", "meaning": "①完满的、完美的；②（作副词）完全地",
+     "note": "诗中第7行取「完满的」义（du vollkommen bist）。作副词时义为「完全地」（vollkommen richtig 完全正确）——同形不同用法，需靠位置区分。die Vollkommenheit（完满）。"}
+  ],
+  "verb_forms": [
+    {"verb": "hernehmen", "type": "可分 + 强变化（e–a–o）", "forms": "nimmt her / nahm her / hat hergenommen", "note": "诗中第1行作现在完成时。可分动词的第二分词把 ge- 插在前缀与词干之间（hergenommen），与不可分的 übernehmen → übernommen（无 ge-）正好相反。"},
+    {"verb": "sterben", "type": "强变化（e–a–o），助动词 sein", "forms": "stirbt / starb / ist gestorben", "note": "诗中第5行作不定式（muß … sterben）。现在时单数第二、三人称换音 e→i：du stirbst, er stirbt。助动词用 sein，不用 haben。"},
+    {"verb": "haben", "type": "不规则", "forms": "hat / hatte / hat gehabt", "note": "诗中第4、5、6行的三个 weil 从句都以 hast 收尾——从句语序把变位动词推到句末，是本页最该记住的位置信息。"}
+  ],
+  "grammar_notes": [
+    {"title": "weil 从句的句末动词 + 从句提前引发的主句倒装 —— 八行里的五个样本",
+     "quote": "Weil du die Jugend hast, wird alles alt …",
+     "body": "德语从句（Nebensatz）的变位动词必须落在句末：Weil du die Jugend **hast**。而当整个从句占据主句的第一位时，主句就必须倒装——变位动词紧跟在逗号之后，主语退到动词之后：…, **wird** alles alt（不是 *alles wird alt）。本诗后五行连用 5 个这样的结构（第4、5、6、7、8行），是全站密度最高的一处样本：weil-从句动词后置 + 主句动词前置，一行之内正反两种语序各出现一次。★第4—6行的从句用 haben（hast），第7—8行改用 sein + 表语（bist），排比在收尾处换了结构，避免了机械重复。"},
+    {"title": "交叉韵与五音步抑扬格 —— 八行单节里的两组交叉韵",
+     "quote": "hergenommen / Wohlgestalt / gekommen / alt … sterben / Hort / Scherben / dort",
+     "body": "本诗为单节八行，韵式 abab cdcd（交叉韵，Kreuzreim）：hergenommen–gekommen（a）／Wohlgestalt–alt（b）／sterben–Scherben（c）／Hort–dort（d）。阴性韵（a、c，双音节收尾）与阳性韵（b、d，单音节收尾）严格交替。格律为五音步抑扬格：第1行「Wo-hast-du-all-die-Schön-heit-her-ge-nom-men」共11个音节、阴性收尾；第2行「Du-Lie-bes-an-ge-sicht-du-Wohl-ge-stalt」共10个音节、阳性收尾。11/10 的交替与阴阳韵的交替完全同步。"},
+    {"title": "-heit / -keit：抽象名词的构词",
+     "quote": "die Schönheit … die Vollkommenheit",
+     "body": "德语用后缀 -heit / -keit 把形容词变成抽象名词，所得名词一律为阴性：schön → die Schönheit（美），vollkommen → die Vollkommenheit（完满），frei → die Freiheit（自由）。规律：多数形容词用 -heit；以 -ig / -lich / -bar 收尾的用 -keit（fröhlich → die Fröhlichkeit）。本诗第1行的 die Schönheit 与第7行的 vollkommen 正好给出这一对的两端——一个已经名词化，一个还是形容词。本站《美之无常》（编号42）标题中的 die Schönheit 是同一构词。"}
+  ],
+  "cultural_notes": "里卡尔达·胡赫（1864—1947）在德语文学史上身份特殊：她既是小说家与诗人，又是受过正规训练的历史学家——1891年在苏黎世取得历史学博士学位（当时德国大学尚不接收女性正式注册，瑞士是少数选择之一）。她写过《浪漫派的盛期》《浪漫派的扩散与衰落》，也写过关于三十年战争、关于斯泰因、关于华伦斯坦的大部头历史著作。\n\n1926年，她成为普鲁士艺术科学院文学部的第一位女性院士。1933年纳粹上台、科学院开始清洗作家名单时，她主动退出以示抗议——这是她生平中最常被引用的一件事，也是有据可查的一件事。她在战后的1947年去世。\n\n★本页原计划收录的是她1944年诗集《Herbstfeuer》（Insel, Leipzig）的同名标题诗，但核查后未能证实该诗集中存在一首题为《Herbstfeuer》的诗——「Herbstfeuer」是诗集名而非诗名；且该诗集至今没有可用的数字化本，无法配齐本站要求的来源。故改选本诗，理由与被放弃的候选已在校对记录中写明。\n\n本诗出自《Liebesgedichte》（1907），是她中期爱情诗的代表。它填补的是本站1900年前后女性作者的空白：在此之前，本站的女性作者只有德罗斯特-徽尔斯霍夫（19世纪中）与拉斯克-许勒（表现主义），世纪之交这一段是空的。\n\n★关于托马斯·曼称她为「德国第一夫人」一类的评价：这一说法流传极广，但本次未能回核到可靠出处，故不写入本页（同本站《思想是自由的》编号39 对索菲·朔尔一说的处理方式）。",
+  "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文照录《Liebesgedichte》（Insel, Leipzig 1907）S.5 的读法，包括旧拼法 muß 与阳性的 ein Scherben，不作现代化改写；(2) 后五行的 weil-排比在译文中一律译作「因为你……，……就……」，以便与德文的从句—主句倒装结构逐行对齐；(3) Wortschatz 词条按现代规范立目（die Scherbe），诗中的阳性形 der Scherben 在词条注中说明；(4) 本诗在原版中排作不分节的八行，本站照此处理，未按语义切成 3+5。",
+  "image_prompt": {"imagery": "一个被强光照亮的人形轮廓占据画面中心，周围的一切（房屋、树、器物）都因这道光而显得褪色、变旧、失去分量；不画五官，只画光与被夺走颜色的世界", "mood": "赞美之中含着掏空感——被爱者越完满，世界越贫瘠；不是甜美的爱情画面", "elements": "中心的高光人形（无五官）、四周褪色发灰的静物与建筑轮廓、光线从中心向外扩散、边缘出现细小的裂纹质感", "era": "1900年前后，室内或庭院，器物简洁", "taboos": "不得画出可辨识的人脸；不得出现文字水印；不得画成宗教圣像（诗中的「天堂」是比喻，不是神学命题）；不得出现秋景或落叶（本页不是秋天题材）", "style": "世纪之交象征主义绘画质感，米金与灰蓝，中心高光、边缘低饱和"},
+  "image_path": null,
+  "german_sources": [
+    {"name": "Project Gutenberg — Ricarda Huch: Liebesgedichte（eBook #31658）", "url": "https://www.gutenberg.org/ebooks/31658", "tier": 1, "citation": "Ricarda Huch: Liebesgedichte. Im Insel-Verlag zu Leipzig [1907], S. 5（校对转录本，Distributed Proofreaders 制作）", "note": "一级来源（经志愿者逐字校对的数字化本，转录说明称保留原书拼写与标点，仅改正明显印刷错误）。本站正文以此为准。"},
+    {"name": "Internet Archive — Liebesgedichte（Insel-Verlag, Leipzig 1907）扫描本", "url": "https://archive.org/details/liebesgedichte00huchiala", "tier": 1, "citation": "Ricarda Huch: Liebesgedichte. Leipzig: Insel-Verlag 1907, S. 5（原书扫描，卷末「Die Anfänge der Gedichte」目录标本诗页码为 5）", "note": "一级来源（原书扫描，独立运营方 archive.org）。用于核实版本、出版社与页码：卷末首行索引确认本诗在 S. 5。"},
+    {"name": "planetlyrik.de — Ricarda Huchs Gedicht „Wo hast du all die Schönheit hergenommen“", "url": "https://www.planetlyrik.de/lyrikkalender/ricarda-huchs-gedicht-wo-hast-du-all-die-schoenheit-hergenommen/", "tier": 2, "citation": "现代评介与转录（Lyrikkalender 条目，标注1907年首次发表）", "note": "二级来源（独立运营方）。读法与两个一级来源一致。"}
+  ],
+  "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
+  "cross_references": [
+    {"target_slug": "tristan", "needle": "Schönheit", "context": "《特里斯坦》"},
+    {"target_slug": "vergaenglichkeit-der-schoenheit", "needle": "十四行", "context": "《美之无常》"},
+    {"target_slug": "die-gedanken-sind-frei", "needle": "索菲", "context": "《思想是自由的》"}
+  ],
+  "verification_notes": "【★换诗说明：本页不是原定的《Herbstfeuer》】原批次计划收录里卡尔达·胡赫1944年诗集《Herbstfeuer》（Insel, Leipzig）的同名标题诗。核查结果：(1)「Herbstfeuer」是诗集名，未能证实集中存在一首题为《Herbstfeuer》的诗；(2) 该诗集至今无可用数字化本——de.wikisource 的胡赫著作目录中，1894年《Gedichte》、1907年《Neue Gedichte / Liebesgedichte》、1908年《Gedichte》均附有数字化链接，唯独1944年《Herbstfeuer》没有；(3) 胡赫2018年才进入公版，其晚期作品的数字化程度普遍很低，deutschelyrik.de 全站只收她一首诗（《Leben》）。因此无法为原定诗目配齐本站要求的三个独立来源与一级页码引用。\n\n被考察并放弃的候选：《Herbstfeuer》（无法证实其存在、无来源）；《Leben》（仅 deutschelyrik.de 一个来源，二级，无版本页码）；《Uralter Worte kundig kommt die Nacht》（来源同样可配齐，为十四行，但与本批已有的两首十四行重复度高）。改选本诗的理由：来源最扎实（两个一级来源 + 一个二级，且有确切页码 S.5），且八行内含五个 weil 从句，正好补上本站从句语序样本的不足；同时它与本批《特里斯坦》（编号61）同写「美」，构成一组同批次内的对照。原定的「秋」主题接线（herbsttag / herbstbild）因此不成立，本页未作该接线。\n\n【三源核对】正文以 Project Gutenberg 校对转录本（Liebesgedichte, Insel-Verlag, Leipzig 1907, S.5）为准，与 archive.org 所藏同版扫描本逐行比对一致；planetlyrik.de（二级）读法亦一致。8 行，原版排作不分节的单节，本站照此处理。页码 S.5 由扫描本卷末「Die Anfänge der Gedichte」首行索引确认。\n\n【韵式逐行数出】abab cdcd（交叉韵）。逐行末词：1 hergenommen／2 Wohlgestalt／3 gekommen／4 alt／5 sterben／6 Hort／7 Scherben／8 dort。阴性韵（a、c）与阳性韵（b、d）严格交替。韵式校验通过，无孤字母 WARN。\n\n【格律】五音步抑扬格。已给出两行的音节切分：第1行11音节（阴性收尾）、第2行10音节（阳性收尾）。\n\n【计数（附行号）】weil 从句共 5 个（第4、5、6、7、8行），已在逐行注释中逐条标注。\n\n【正字法】照录1907年版读法：muß（旧拼法）、ein Scherben（阳性形）。Wortschatz 词条按现代规范立目 die Scherbe，差异在词条注中说明。\n\n【★待进一步核实】(1) 托马斯·曼称胡赫为「德国第一夫人」一类的评价——流传极广但本次未回核到可靠出处，故整条未写入页面（同《思想是自由的》编号39 对索菲·朔尔一说的处理）；(2) 本诗的具体写作年份（1907年为结集出版年，成诗年份未核）；(3) 1926年入普鲁士艺术科学院、1933年退出两事的一手出处。\n\n【公版】胡赫1947年卒，公版起始年 = 1947 + 71 = 2018。本诗所据版本为1907年出版物，版式本身亦早已过保护期。\n\n本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：gutenberg / archive / planetlyrik）、D（含两个一级来源，均标注版次与页码 S.5）。",
+  "checklist": [
+    {"label": "★换诗理由与被放弃候选已写入校对记录", "done": true},
+    {"label": "确认作者：Ricarda Huch", "done": true},
+    {"label": "确认出处：Liebesgedichte, Insel-Verlag, Leipzig 1907, S.5", "done": true},
+    {"label": "页码 S.5 经扫描本卷末首行索引核实", "done": true},
+    {"label": "核对行数（单节8行，原版不分节）", "done": true},
+    {"label": "韵式逐行数出：abab cdcd（交叉韵）", "done": true},
+    {"label": "格律给出两行音节切分（11 / 10 音节）", "done": true},
+    {"label": "weil 从句 5 例附行号", "done": true},
+    {"label": "der Scherben 阳性形与现代 die Scherbe 的差异已说明", "done": true},
+    {"label": "★托马斯·曼评价一条回核不到，整条删除未写入", "done": true},
+    {"label": "与《特里斯坦》（编号61）的「美」对照已接线", "done": true},
+    {"label": "跨页断言经结构化 cross_references 验证", "done": true},
+    {"label": "公版年份复算：1947 + 71 = 2018", "done": true},
+    {"label": "生成 AI 配图", "done": false},
+    {"label": "页面视觉检查", "done": false},
+    {"label": "回核成诗年份与科学院进退两事的一手出处", "done": false},
+    {"label": "最终人工复核说明（AI 辅助完成，建议世纪之交德语文学专业人士复核）", "done": false}
+  ]
+}

@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Wo hast du all die Schönheit hergenommen · 你从哪里取来这一身的美 — Ricarda Huch | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Wo hast du all die Schönheit hergenommen（你从哪里取来这一身的美）— Ricarda Huch。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="der-kuss-im-traume.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">梦中之吻</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="weltende-lasker-schueler.html" rel="next"
+            ><span class="poem-nav__title">世界之终</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de poem-titleblock__de--long">Wo hast du all die Schönheit hergenommen</h1>
+          <p class="poem-titleblock__author">Ricarda Huch</p>
+          <p class="poem-titleblock__zh">你从哪里取来这一身的美</p>
+          <p class="poem-titleblock__author-zh">里卡尔达·胡赫</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Liebesgedichte》（Insel-Verlag, Leipzig 1907）</p>
+            <p>新浪漫派 / 世纪之交</p>
+            <p>收入《Liebesgedichte》（Insel-Verlag, Leipzig 1907），S. 5；本诗无标题，按德语诗惯例以首行代题</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B1（词汇不难，但八行里有五个 weil 从句，正好用来练从句语序）</span>
+            <span class="tag">美</span>
+            <span class="tag">爱情诗</span>
+            <span class="tag">女性作者</span>
+            <span class="tag">新浪漫派</span>
+            <span class="tag">从句语序</span>
+            <span class="tag">交叉韵</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一个被强光照亮的人形轮廓占据画面中心，周围的一切（房屋、树、器物）都因这道光而显得褪色、变旧、失去分量；不画五官，只画光与被夺走颜色的世界
+              </dd>
+              <dt>情绪</dt>
+              <dd>赞美之中含着掏空感——被爱者越完满，世界越贫瘠；不是甜美的爱情画面</dd>
+              <dt>画面元素</dt>
+              <dd>
+                中心的高光人形（无五官）、四周褪色发灰的静物与建筑轮廓、光线从中心向外扩散、边缘出现细小的裂纹质感
+              </dd>
+              <dt>时代感</dt>
+              <dd>1900年前后，室内或庭院，器物简洁</dd>
+              <dt>推荐风格</dt>
+              <dd>世纪之交象征主义绘画质感，米金与灰蓝，中心高光、边缘低饱和</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得画出可辨识的人脸；不得出现文字水印；不得画成宗教圣像（诗中的「天堂」是比喻，不是神学命题）；不得出现秋景或落叶（本页不是秋天题材）
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Wo hast du all die Schönheit hergenommen,<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你从哪里取来这一身的美，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Du Liebesangesicht, du Wohlgestalt!<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">你这爱之容颜，你这好模样！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Um dich ist alle Welt zu kurz gekommen.<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">全世界都因你而显得不够。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Weil du die Jugend hast, wird alles alt,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">因为你有青春，一切就都老了，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Weil du das Leben hast, muß alles sterben,<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">因为你有生命，一切就都得死，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Weil du die Kraft hast, ist die Welt kein Hort,<sup class="refmark"
+                      ><a href="#note-6">6</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">因为你有力量，世界就不再是庇护，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Weil du vollkommen bist, ist sie ein Scherben,<sup class="refmark"
+                      ><a href="#note-7">7</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">因为你是完满的，它就成了一块碎片，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Weil du der Himmel bist, gibt's keinen dort!<sup class="refmark"
+                      ><a href="#note-8">8</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">因为你是天堂，那上头就没有天堂了！</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留后五行「因为你……，所以……」的排比结构</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Wo hast du all die Schönheit hergenommen,</p>
+              <p class="lnote__zh">
+                以疑问句开篇，但这不是真问句——它不期待回答，是惊叹的一种形式（修辞问句）。hernehmen（从某处取来、弄来）是可分动词，现在完成时把可分前缀
+                her- 与 ge- 一起写进分词：her-ge-nommen。日常口语中 Wo hast du das hergenommen? 就是「你从哪儿弄来的？」
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Du Liebesangesicht, du Wohlgestalt!</p>
+              <p class="lnote__zh">
+                两个呼语并列，都是把人整个儿等同于一个抽象品质：不说「你有一张可爱的脸」，而说「你（就是）爱之容颜」。das
+                Angesicht 是 das Gesicht（脸）的雅体形式，多用于宗教语域。die
+                Wohlgestalt（好体态、匀称的形体）今日几乎不再使用，是世纪之交的雅词。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Um dich ist alle Welt zu kurz gekommen.</p>
+              <p class="lnote__zh">
+                zu kurz kommen 是固定搭配，意为「吃亏、分得太少」。um dich =
+                「在你身上／因你之故」。整句：世界为了成全你，把自己的份额都赔进去了。这一行是全诗的枢纽——它先给出结论，后五行才逐条给出理由。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Weil du die Jugend hast, wird alles alt,</p>
+              <p class="lnote__zh">
+                五个平行的 weil 从句的第一个（第4行）。★句法要点：weil 引导的从句里动词 hast
+                落在末尾；从句整体占据了主句的第一位，所以主句必须倒装——变位动词 wird 紧跟逗号之后，主语 alles
+                退到动词之后。这是德语「从句提前→主句倒装」规则最干净的样本。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Weil du das Leben hast, muß alles sterben,</p>
+              <p class="lnote__zh">
+                第二个 weil 从句（第5行），结构与上一行完全相同：从句动词 hast 在末，主句以情态动词 muß 开头、主语 alles
+                在后。muß 依1907年版本作旧拼法，本站照录。语义上的悖论继续加码：你占有生命，于是别人只剩死。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Weil du die Kraft hast, ist die Welt kein Hort,</p>
+              <p class="lnote__zh">
+                第三个 weil 从句（第6行）。der Hort 是古雅词，兼指「宝藏」与「庇护所」，今日主要活在
+                Kinderhort（学童托管所）一词里。否定用 kein 而非 nicht，因为否定的是一个带不定冠词性质的名词（ist ein
+                Hort → ist kein Hort）。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Weil du vollkommen bist, ist sie ein Scherben,</p>
+              <p class="lnote__zh">
+                第四个 weil 从句（第7行）。前三个从句用 haben，从这一行起改用 sein + 表语（vollkommen bist / der Himmel
+                bist），排比内部发生了一次变奏。★der Scherben 是阳性形，今日规范德语作 die Scherbe（阴性，碎片）；阳性的
+                der Scherben 是较古的、南德／奥地利仍可见的形式，本站照录版本读法并在词条中说明。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Weil du der Himmel bist, gibt's keinen dort!</p>
+              <p class="lnote__zh">
+                第五个 weil 从句（第8行），也是收束。gibt's = gibt es
+                的口语省音。dort（在那上头）指天上——如果你就是天堂，天上便不再有天堂了。★这一行把前面四行的逻辑推到尽头：被爱者的完满不是对世界的补充，而是对世界的掏空。全诗的赞美因此同时是一句控诉。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Schönheit, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">美、美貌</div>
+              <div class="vocab-card__note">
+                schön（美的）+ -heit（构成抽象名词的后缀）。本站《特里斯坦》（编号61）首行 Wer die Schönheit angeschaut
+                mit Augen 用的是同一个词——两首诗对「美」的判断正好相反，可对照。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">hernehmen</span></div>
+              <span class="vocab-card__pos">v.（可分，强变化 e–a–o）</span>
+              <div class="vocab-card__meaning">从某处取来、弄来</div>
+              <div class="vocab-card__note">
+                her- 是可分前缀。变位 nimmt her – nahm her – hat hergenommen。诗中第1行 Wo hast du …
+                hergenommen。注意分词把 ge- 夹在可分前缀与词干之间：her-ge-nommen。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Hort, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">①庇护所、依靠；②（古）宝藏</div>
+              <div class="vocab-card__note">
+                古雅词，今日日常用法几乎只剩 der Kinderhort（学童托管所）。诗中第6行取「庇护」义。《尼伯龙根之歌》中的
+                Nibelungenhort 则取「宝藏」义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Scherbe, -n</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">碎片（尤指陶瓷、玻璃的）</div>
+              <div class="vocab-card__note">
+                ★词条按现代规范立目 die Scherbe；诗中第7行作阳性的 ein
+                Scherben，是较古的、南德／奥地利仍存的形式，本站照录版本读法。搭配 in Scherben gehen（碎掉、破灭）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Wohlgestalt</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">匀称的体态、好模样</div>
+              <div class="vocab-card__note">
+                wohl（好）+ Gestalt（形体）。世纪之交的雅词，今日已基本不用。诗中第2行作呼语。形容词
+                wohlgestaltet（体态匀称的）尚可见。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">vollkommen</span></div>
+              <span class="vocab-card__pos">adj. / adv.</span>
+              <div class="vocab-card__meaning">①完满的、完美的；②（作副词）完全地</div>
+              <div class="vocab-card__note">
+                诗中第7行取「完满的」义（du vollkommen bist）。作副词时义为「完全地」（vollkommen richtig
+                完全正确）——同形不同用法，需靠位置区分。die Vollkommenheit（完满）。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第1行作现在完成时。可分动词的第二分词把 ge- 插在前缀与词干之间（hergenommen），与不可分的
+                    übernehmen → übernommen（无 ge-）正好相反。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第5行作不定式（muß … sterben）。现在时单数第二、三人称换音 e→i：du stirbst, er
+                    stirbt。助动词用 sein，不用 haben。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第4、5、6行的三个 weil 从句都以 hast
+                    收尾——从句语序把变位动词推到句末，是本页最该记住的位置信息。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">weil 从句的句末动词 + 从句提前引发的主句倒装 —— 八行里的五个样本</h3>
+              <p class="grammar-item__quote">Weil du die Jugend hast, wird alles alt …</p>
+              <div class="grammar-item__body">
+                德语从句（Nebensatz）的变位动词必须落在句末：Weil du die Jugend
+                **hast**。而当整个从句占据主句的第一位时，主句就必须倒装——变位动词紧跟在逗号之后，主语退到动词之后：…,
+                **wird** alles alt（不是 *alles wird alt）。本诗后五行连用 5
+                个这样的结构（第4、5、6、7、8行），是全站密度最高的一处样本：weil-从句动词后置 +
+                主句动词前置，一行之内正反两种语序各出现一次。★第4—6行的从句用 haben（hast），第7—8行改用 sein +
+                表语（bist），排比在收尾处换了结构，避免了机械重复。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">交叉韵与五音步抑扬格 —— 八行单节里的两组交叉韵</h3>
+              <p class="grammar-item__quote">
+                hergenommen / Wohlgestalt / gekommen / alt … sterben / Hort / Scherben / dort
+              </p>
+              <div class="grammar-item__body">
+                本诗为单节八行，韵式 abab
+                cdcd（交叉韵，Kreuzreim）：hergenommen–gekommen（a）／Wohlgestalt–alt（b）／sterben–Scherben（c）／Hort–dort（d）。阴性韵（a、c，双音节收尾）与阳性韵（b、d，单音节收尾）严格交替。格律为五音步抑扬格：第1行「Wo-hast-du-all-die-Schön-heit-her-ge-nom-men」共11个音节、阴性收尾；第2行「Du-Lie-bes-an-ge-sicht-du-Wohl-ge-stalt」共10个音节、阳性收尾。11/10
+                的交替与阴阳韵的交替完全同步。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">-heit / -keit：抽象名词的构词</h3>
+              <p class="grammar-item__quote">die Schönheit … die Vollkommenheit</p>
+              <div class="grammar-item__body">
+                德语用后缀 -heit / -keit 把形容词变成抽象名词，所得名词一律为阴性：schön → die
+                Schönheit（美），vollkommen → die Vollkommenheit（完满），frei → die
+                Freiheit（自由）。规律：多数形容词用 -heit；以 -ig / -lich / -bar 收尾的用 -keit（fröhlich → die
+                Fröhlichkeit）。本诗第1行的 die Schönheit 与第7行的 vollkommen
+                正好给出这一对的两端——一个已经名词化，一个还是形容词。本站《美之无常》（编号42）标题中的 die Schönheit
+                是同一构词。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              里卡尔达·胡赫（1864—1947）在德语文学史上身份特殊：她既是小说家与诗人，又是受过正规训练的历史学家——1891年在苏黎世取得历史学博士学位（当时德国大学尚不接收女性正式注册，瑞士是少数选择之一）。她写过《浪漫派的盛期》《浪漫派的扩散与衰落》，也写过关于三十年战争、关于斯泰因、关于华伦斯坦的大部头历史著作。
+            </p>
+            <p>
+              1926年，她成为普鲁士艺术科学院文学部的第一位女性院士。1933年纳粹上台、科学院开始清洗作家名单时，她主动退出以示抗议——这是她生平中最常被引用的一件事，也是有据可查的一件事。她在战后的1947年去世。
+            </p>
+            <p>
+              ★本页原计划收录的是她1944年诗集《Herbstfeuer》（Insel,
+              Leipzig）的同名标题诗，但核查后未能证实该诗集中存在一首题为《Herbstfeuer》的诗——「Herbstfeuer」是诗集名而非诗名；且该诗集至今没有可用的数字化本，无法配齐本站要求的来源。故改选本诗，理由与被放弃的候选已在校对记录中写明。
+            </p>
+            <p>
+              本诗出自《Liebesgedichte》（1907），是她中期爱情诗的代表。它填补的是本站1900年前后女性作者的空白：在此之前，本站的女性作者只有德罗斯特-徽尔斯霍夫（19世纪中）与拉斯克-许勒（表现主义），世纪之交这一段是空的。
+            </p>
+            <p>
+              ★关于托马斯·曼称她为「德国第一夫人」一类的评价：这一说法流传极广，但本次未能回核到可靠出处，故不写入本页（同本站《思想是自由的》编号39
+              对索菲·朔尔一说的处理方式）。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文照录《Liebesgedichte》（Insel, Leipzig
+              1907）S.5 的读法，包括旧拼法 muß 与阳性的 ein Scherben，不作现代化改写；(2) 后五行的
+              weil-排比在译文中一律译作「因为你……，……就……」，以便与德文的从句—主句倒装结构逐行对齐；(3) Wortschatz
+              词条按现代规范立目（die Scherbe），诗中的阳性形 der Scherben 在词条注中说明；(4)
+              本诗在原版中排作不分节的八行，本站照此处理，未按语义切成 3+5。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Project Gutenberg — Ricarda Huch: Liebesgedichte（eBook #31658）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a class="source-url" href="https://www.gutenberg.org/ebooks/31658" target="_blank" rel="noopener"
+                >https://www.gutenberg.org/ebooks/31658</a
+              >
+              <span class="source-citation"
+                >Ricarda Huch: Liebesgedichte. Im Insel-Verlag zu Leipzig [1907], S. 5（校对转录本，Distributed
+                Proofreaders 制作）</span
+              >
+              <span class="source-note"
+                >一级来源（经志愿者逐字校对的数字化本，转录说明称保留原书拼写与标点，仅改正明显印刷错误）。本站正文以此为准。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">Internet Archive — Liebesgedichte（Insel-Verlag, Leipzig 1907）扫描本</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://archive.org/details/liebesgedichte00huchiala"
+                target="_blank"
+                rel="noopener"
+                >https://archive.org/details/liebesgedichte00huchiala</a
+              >
+              <span class="source-citation"
+                >Ricarda Huch: Liebesgedichte. Leipzig: Insel-Verlag 1907, S. 5（原书扫描，卷末「Die Anfänge der
+                Gedichte」目录标本诗页码为 5）</span
+              >
+              <span class="source-note"
+                >一级来源（原书扫描，独立运营方 archive.org）。用于核实版本、出版社与页码：卷末首行索引确认本诗在 S.
+                5。</span
+              >
+            </li>
+            <li>
+              <span class="source-name"
+                >planetlyrik.de — Ricarda Huchs Gedicht „Wo hast du all die Schönheit hergenommen“</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a
+                class="source-url"
+                href="https://www.planetlyrik.de/lyrikkalender/ricarda-huchs-gedicht-wo-hast-du-all-die-schoenheit-hergenommen/"
+                target="_blank"
+                rel="noopener"
+                >https://www.planetlyrik.de/lyrikkalender/ricarda-huchs-gedicht-wo-hast-du-all-die-schoenheit-hergenommen/</a
+              >
+              <span class="source-citation">现代评介与转录（Lyrikkalender 条目，标注1907年首次发表）</span>
+              <span class="source-note">二级来源（独立运营方）。读法与两个一级来源一致。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【★换诗说明：本页不是原定的《Herbstfeuer》】原批次计划收录里卡尔达·胡赫1944年诗集《Herbstfeuer》（Insel,
+              Leipzig）的同名标题诗。核查结果：(1)「Herbstfeuer」是诗集名，未能证实集中存在一首题为《Herbstfeuer》的诗；(2)
+              该诗集至今无可用数字化本——de.wikisource 的胡赫著作目录中，1894年《Gedichte》、1907年《Neue Gedichte /
+              Liebesgedichte》、1908年《Gedichte》均附有数字化链接，唯独1944年《Herbstfeuer》没有；(3)
+              胡赫2018年才进入公版，其晚期作品的数字化程度普遍很低，deutschelyrik.de
+              全站只收她一首诗（《Leben》）。因此无法为原定诗目配齐本站要求的三个独立来源与一级页码引用。
+            </p>
+            <p>
+              被考察并放弃的候选：《Herbstfeuer》（无法证实其存在、无来源）；《Leben》（仅 deutschelyrik.de
+              一个来源，二级，无版本页码）；《Uralter Worte kundig kommt die
+              Nacht》（来源同样可配齐，为十四行，但与本批已有的两首十四行重复度高）。改选本诗的理由：来源最扎实（两个一级来源
+              + 一个二级，且有确切页码 S.5），且八行内含五个 weil
+              从句，正好补上本站从句语序样本的不足；同时它与本批《特里斯坦》（编号61）同写「美」，构成一组同批次内的对照。原定的「秋」主题接线（herbsttag
+              / herbstbild）因此不成立，本页未作该接线。
+            </p>
+            <p>
+              【三源核对】正文以 Project Gutenberg 校对转录本（Liebesgedichte, Insel-Verlag, Leipzig 1907, S.5）为准，与
+              archive.org 所藏同版扫描本逐行比对一致；planetlyrik.de（二级）读法亦一致。8
+              行，原版排作不分节的单节，本站照此处理。页码 S.5 由扫描本卷末「Die Anfänge der Gedichte」首行索引确认。
+            </p>
+            <p>
+              【韵式逐行数出】abab cdcd（交叉韵）。逐行末词：1 hergenommen／2 Wohlgestalt／3 gekommen／4 alt／5
+              sterben／6 Hort／7 Scherben／8 dort。阴性韵（a、c）与阳性韵（b、d）严格交替。韵式校验通过，无孤字母 WARN。
+            </p>
+            <p>【格律】五音步抑扬格。已给出两行的音节切分：第1行11音节（阴性收尾）、第2行10音节（阳性收尾）。</p>
+            <p>【计数（附行号）】weil 从句共 5 个（第4、5、6、7、8行），已在逐行注释中逐条标注。</p>
+            <p>
+              【正字法】照录1907年版读法：muß（旧拼法）、ein Scherben（阳性形）。Wortschatz 词条按现代规范立目 die
+              Scherbe，差异在词条注中说明。
+            </p>
+            <p>
+              【★待进一步核实】(1)
+              托马斯·曼称胡赫为「德国第一夫人」一类的评价——流传极广但本次未回核到可靠出处，故整条未写入页面（同《思想是自由的》编号39
+              对索菲·朔尔一说的处理）；(2) 本诗的具体写作年份（1907年为结集出版年，成诗年份未核）；(3)
+              1926年入普鲁士艺术科学院、1933年退出两事的一手出处。
+            </p>
+            <p>
+              【公版】胡赫1947年卒，公版起始年 = 1947 + 71 = 2018。本诗所据版本为1907年出版物，版式本身亦早已过保护期。
+            </p>
+            <p>
+              本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：gutenberg / archive /
+              planetlyrik）、D（含两个一级来源，均标注版次与页码 S.5）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>★换诗理由与被放弃候选已写入校对记录</li>
+            <li>确认作者：Ricarda Huch</li>
+            <li>确认出处：Liebesgedichte, Insel-Verlag, Leipzig 1907, S.5</li>
+            <li>页码 S.5 经扫描本卷末首行索引核实</li>
+            <li>核对行数（单节8行，原版不分节）</li>
+            <li>韵式逐行数出：abab cdcd（交叉韵）</li>
+            <li>格律给出两行音节切分（11 / 10 音节）</li>
+            <li>weil 从句 5 例附行号</li>
+            <li>der Scherben 阳性形与现代 die Scherbe 的差异已说明</li>
+            <li>★托马斯·曼评价一条回核不到，整条删除未写入</li>
+            <li>与《特里斯坦》（编号61）的「美」对照已接线</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1947 + 71 = 2018</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核成诗年份与科学院进退两事的一手出处</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议世纪之交德语文学专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

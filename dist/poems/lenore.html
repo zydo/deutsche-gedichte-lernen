@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>
+      Lenore（节选 7 节 / 全诗 32 节） · 蕾诺勒（节选 7 节 / 全诗 32 节） — Gottfried August Bürger | 德语诗歌学习画册
+    </title>
+    <meta
+      name="description"
+      content="Lenore（节选 7 节 / 全诗 32 节）（蕾诺勒（节选 7 节 / 全诗 32 节））— Gottfried August Bürger。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="die-ehre-gottes-aus-der-natur.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span
+            ><span class="poem-nav__title">从自然见神的荣耀</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="das-rosenband.html" rel="next"
+            ><span class="poem-nav__title">玫瑰带</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de poem-titleblock__de--long">Lenore（节选 7 节 / 全诗 32 节）</h1>
+          <p class="poem-titleblock__author">Gottfried August Bürger</p>
+          <p class="poem-titleblock__zh">蕾诺勒（节选 7 节 / 全诗 32 节）</p>
+          <p class="poem-titleblock__author-zh">戈特弗里德·奥古斯特·毕尔格</p>
+          <div class="poem-titleblock__biblio">
+            <p>
+              ★本页为节选：选自全诗32节中的第 1、3、17、20、26、31、32 节，共 7 节 56 行。正文所据为《Gedichte 1789》版
+            </p>
+            <p>狂飙突进 / 艺术谣曲（Kunstballade）</p>
+            <p>1773年冬作（初版标题下即注「Im Winter 1773」）；首刊于《Göttinger Musenalmanach für 1774》</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2（叙事推进快，含大量18世纪口语、拟声词与呼语）</span>
+            <span class="tag">叙事诗</span>
+            <span class="tag">谣曲</span>
+            <span class="tag">恐怖</span>
+            <span class="tag">亡灵新郎</span>
+            <span class="tag">节选</span>
+            <span class="tag">狂飙突进</span>
+            <span class="tag">叠句</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                月夜的荒原，远处一骑正在疾驰，只见扬起的尘土与被踏碎的月光；地平线上是一片墓地的低矮轮廓与铁栅门；风把枯枝吹得倾向一侧
+              </dd>
+              <dt>情绪</dt>
+              <dd>被速度支配的恐惧——不是看见了什么可怕的东西，而是停不下来；冷、快、空旷</dd>
+              <dt>画面元素</dt>
+              <dd>
+                满月与冷白月光、荒原与枯草、远处极小的一骑（人马轮廓不清）、扬尘、墓地围栏与铁门的剪影、被风压倒的枯枝
+              </dd>
+              <dt>时代感</dt>
+              <dd>18世纪中叶德意志乡野</dd>
+              <dt>推荐风格</dt>
+              <dd>18世纪末墨色版画质感，冷灰与银白，大量留白，笔触强调运动方向</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                ★不得出现骷髅、腐尸、血、镰刀、沙漏；不得出现可辨识的人脸；不得画成现代恐怖片风格（本诗的恐怖是节奏性的，不是视觉性的）；不得出现文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Lenore fuhr um's Morgenrot<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">蕾诺勒在天将破晓时惊起，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="1">
+                  <span class="linetext"
+                    >Empor aus schweren Träumen:<sup class="refmark"><a href="#note-1">1</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">从沉重的梦中直坐起来：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">»Bist untreu, Wilhelm, oder tot?</span></div>
+                <div class="pline__zh">「威廉，你是变了心，还是死了？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie lange willst du säumen?« –</span></div>
+                <div class="pline__zh">你还要耽搁多久？」——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Er war mit König Friedrichs Macht</span></div>
+                <div class="pline__zh">他随着腓特烈国王的军队</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Gezogen in die Prager Schlacht,</span></div>
+                <div class="pline__zh">开拔去了布拉格的战场，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und hatte nicht geschrieben:</span></div>
+                <div class="pline__zh">此后再没有写过信：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ob er gesund geblieben.</span></div>
+                <div class="pline__zh">说他是否还平安。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Und überall all überall,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">到处，到处都是，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Auf Wegen und auf Stegen,</span></div>
+                <div class="pline__zh">在大路上，在小桥上，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Zog Alt und Jung dem Jubelschall</span></div>
+                <div class="pline__zh">老老少少迎着归来者的</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Der Kommenden entgegen.</span></div>
+                <div class="pline__zh">欢呼声涌上前去。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Gottlob! rief Kind und Gattin laut,</span></div>
+                <div class="pline__zh">感谢上帝！孩子和妻子高声喊；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Willkommen! manche frohe Braut.</span></div>
+                <div class="pline__zh">欢迎啊！许多欢喜的新娘喊。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ach! aber für Lenoren</span></div>
+                <div class="pline__zh">唉！可是对蕾诺勒来说，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >War Gruß und Kuß verloren.<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">问候与亲吻都落了空。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >»Ach! wolltest hundert Meilen noch<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">「唉！你还想把我</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Mich heut in's Brautbett' tragen?<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">今天就送出一百里去入洞房？</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und horch! es brummt die Glocke noch,</span></div>
+                <div class="pline__zh">你听！钟声还在嗡嗡响，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die elf schon angeschlagen.« –</span></div>
+                <div class="pline__zh">刚刚敲过十一下。」——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >»Sieh hin, sieh her! der Mond scheint hell.<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">「你往这儿看，往那儿看！月亮多亮。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Wir und die Toten reiten schnell.<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">我们和死人骑得飞快。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ich bringe dich, zur Wette,</span></div>
+                <div class="pline__zh">我跟你打赌，今天就把你</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Noch heut ins Hochzeitbette.« –</span></div>
+                <div class="pline__zh">送进新婚的床。」——</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Zur rechten und zur linken Hand,<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">右手边，左手边，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Vorbei vor ihren Blicken,</span></div>
+                <div class="pline__zh">从她眼前一闪而过，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie flogen Anger, Heid' und Land!</span></div>
+                <div class="pline__zh">草场、荒原和田野飞得多快！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie donnerten die Brücken! –</span></div>
+                <div class="pline__zh">桥梁轰响得多厉害！——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >»Graut Liebchen auch? – – Der Mond scheint hell!<sup class="refmark"
+                      ><a href="#note-7">7</a></sup
+                    ></span
+                  >
+                </div>
+                <div class="pline__zh">「心肝儿也害怕吗？——月亮多亮！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Hurra! die Toten reiten schnell!</span></div>
+                <div class="pline__zh">呼啦！死人骑得飞快！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Graut Liebchen auch vor Toten?« –</span></div>
+                <div class="pline__zh">心肝儿也怕死人吗？」——</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >»Ach nein! – – Doch laß die Toten!« –<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">「啊不！——可别提死人了！」——</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Und das Gesindel husch husch husch!<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">于是那群鬼东西，唰唰唰！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Kam hinten nachgeprasselt,</span></div>
+                <div class="pline__zh">在后头噼啪地追上来，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Wie Wirbelwind am Haselbusch</span></div>
+                <div class="pline__zh">像旋风掠过榛树丛</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Durch dürre Blätter rasselt.</span></div>
+                <div class="pline__zh">在枯叶间沙沙作响。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und weiter, weiter, hop hop hop!</span></div>
+                <div class="pline__zh">又往前，往前，哒哒哒！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Ging's fort in sausendem Galopp,</span></div>
+                <div class="pline__zh">在呼啸的疾驰中奔去，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Daß Roß und Reiter schnoben,</span></div>
+                <div class="pline__zh">马与骑手都喷着粗气，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Und Kies und Funken stoben.<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">碎石与火星四下飞溅。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Hoch bäumte sich, wild schnob der Rapp',<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">黑马高高扬起，狂野地喷着鼻息，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und sprühte Feuerfunken;</span></div>
+                <div class="pline__zh">溅出一串火星；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und hui! war's unter ihr hinab</span></div>
+                <div class="pline__zh">呼地一声——它在她身下</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Verschwunden und versunken.</span></div>
+                <div class="pline__zh">消失了，沉没了。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Geheul! Geheul aus hoher Luft,</span></div>
+                <div class="pline__zh">嚎叫！嚎叫从高空传来，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Gewinsel kam aus tiefer Gruft.</span></div>
+                <div class="pline__zh">呜咽从深深的墓穴中传出。</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Lenorens Herz, mit Beben,</span></div>
+                <div class="pline__zh">蕾诺勒的心，颤抖着，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Rang zwischen Tod und Leben.<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">在生与死之间挣扎。</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Nun tanzten wohl bei Mondenglanz,<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">于是在月光中，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Rund um herum im Kreise,</span></div>
+                <div class="pline__zh">团团围成一个圈，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Die Geister einen Kettentanz,</span></div>
+                <div class="pline__zh">幽灵们跳起了连环舞，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Und heulten diese Weise:</span></div>
+                <div class="pline__zh">并嚎出这样一支曲子：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline">
+                  <span class="linetext">»Geduld! Geduld! Wenn's Herz auch bricht!</span>
+                </div>
+                <div class="pline__zh">「忍耐！忍耐！哪怕心碎了！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Mit Gott im Himmel hadre nicht!</span></div>
+                <div class="pline__zh">不要与天上的神争辩！</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline"><span class="linetext">Des Leibes bist du ledig;</span></div>
+                <div class="pline__zh">你已经脱离了肉身；</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Gott sei der Seele gnädig!«<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">愿神怜悯你的灵魂！」</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留谣曲诗节的八行结构与叠句的重复</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">
+                【节选第1节 ＝ 全诗第1节】Lenore fuhr um's Morgenrot / Empor aus schweren Träumen: …
+              </p>
+              <p class="lnote__zh">
+                开篇：蕾诺勒从噩梦中惊坐而起。auffahren（惊起）被拆成 fuhr …
+                empor（可分动词的框形结构），中间隔着整个时间状语。她的第一句话就把两种可能并列：「变心还是死了」（untreu
+                … oder
+                tot）——全诗要用三十二节回答的，就是这个二选一。第5—8行交代背景：威廉随普鲁士腓特烈二世的军队去了布拉格会战（1757年，七年战争），此后音讯全无。★注意第7—8行的跨行：Und
+                hatte nicht geschrieben: / Ob er gesund geblieben——从句 ob … 被推到下一行，助动词 war 承前省略。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">【节选第2节 ＝ 全诗第3节】Und überall all überall, … / War Gruß und Kuß verloren.</p>
+              <p class="lnote__zh">
+                军队凯旋，全城迎接。überall all überall 是刻意的叠词，模拟人群的涌动（1778年初版此处作 überal al
+                überal，旧拼法）。Gottlob!（感谢上帝）与
+                Willkommen!（欢迎）是两句直接引语，未加引号——18世纪诗中常见。★末两行是全节的转折，也是全诗的引擎：所有人都等到了自己的人，只有蕾诺勒的「问候与亲吻」落了空（War
+                Gruß und Kuß verloren）。Lenoren 是人名的第三格旧变格形（für Lenoren = für Lenore）。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">
+                【节选第3节 ＝ 全诗第17节】»Ach! wolltest hundert Meilen noch / Mich heut in's Brautbett' tragen? …
+              </p>
+              <p class="lnote__zh">
+                此处已进入亡灵骑行段（省略部分的情节见下方梗概）。深夜里威廉骑马来到，要带她走一百里去「入洞房」。蕾诺勒指出钟刚敲过十一下——时间的提示在谣曲里通常是死亡的信号。★第22行是全诗最著名的一句的第一次出现：Wir
+                und die Toten reiten
+                schnell（我们和死人骑得飞快）。它在节选中出现于第22行与第30行；在全诗中另见于第20、24、27、28节。这一句后来经沃尔特·司各特的英译进入英语，并被布拉姆·斯托克《德古拉》引用（★该引用链条待进一步核实）。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">»Sieh hin, sieh her! der Mond scheint hell.</p>
+              <p class="lnote__zh">
+                两个并列的命令式 Sieh hin, sieh her（往这儿看，往那儿看），sehen 的命令式换音
+                e→ie。「月亮很亮」在本诗中反复出现，每次都紧挨着叠句——月光是这场骑行唯一的光源，也是恐怖的舞台照明。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Wir und die Toten reiten schnell.</p>
+              <p class="lnote__zh">
+                ★本诗的标志性叠句（第22行，第一次出现）。die Toten 是形容词名词化的复数（tot 死的 → die Toten
+                死者们）。★语法要点：reiten 的完成时助动词有分工——表位移用 sein（Er ist nach Prag geritten
+                他骑马去了布拉格），表活动本身用 haben（Er hat den ganzen Tag geritten
+                他骑了一整天马）。本行是现在时，两可性不显；但整首诗写的正是「骑向某处」这一位移，故其完成时当用 sein。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">
+                【节选第4节 ＝ 全诗第20节】Zur rechten und zur linken Hand, … / »Ach nein! – – Doch laß die Toten!« –
+              </p>
+              <p class="lnote__zh">
+                骑行的速度被写成景物的飞逝：草场、荒原、田野「飞」过去，桥梁「轰响」。两个 Wie … !
+                是感叹句而非疑问句。★第29—31行是叠句的完整形态（第二次出现，第30行）：Graut Liebchen auch? … Hurra! die
+                Toten reiten schnell! / Graut Liebchen auch vor Toten?
+                三行构成一个固定的问答单元，每次重复只换极少的词——这是谣曲用来制造恐怖节奏的核心装置：读者已经知道它还会再来。★第26、28行的
+                Blicken / Brücken 是不纯韵（i 与 ü 不同音），本站已用 rhyme_groups 显式声明为一组。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">»Graut Liebchen auch? – – Der Mond scheint hell!</p>
+              <p class="lnote__zh">
+                ★重点假朋友：grauen 在此不是「变灰」，而是无人称动词「感到毛骨悚然」——Graut Liebchen auch? =
+                「心肝儿也害怕吗？」（完整形式 Graut [es] Liebchen auch?，形式主语 es 省略）。它与
+                grau（灰色的）同源，但语义早已分家。名词 das Grauen（恐怖）、形容词
+                grauenhaft（可怕的）都属这一支。Liebchen 是 Liebe 的指小形（-chen），亲昵称呼。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">
+                【节选第5节 ＝ 全诗第26节】Und das Gesindel husch husch husch! … / Und Kies und Funken stoben.
+              </p>
+              <p class="lnote__zh">
+                ★本节是全诗拟声最密集的一节，也是「恐怖由节奏制造」这一说法的证据所在。第33行「Und-das-Ge-sin-del-husch-husch-husch」共8个音节，前5个音节是常规的抑扬交替，最后3个音节
+                husch husch husch
+                全部重读，连着砸下来；第37行「Und-wei-ter-wei-ter-hop-hop-hop」同样是8个音节，同样以3个连续重读的单音节收尾。八音节的框架没变，但行末的抑扬交替被打断——节奏本身在加速。★das
+                Gesindel（乌合之众、鬼东西）是 Ge- 前缀构成的集合名词，与第45、46行的 Geheul、Gewinsel
+                同属一类，也与本站《城市之神》（编号37）中的 das Gewölk 是同一构词。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">
+                【节选第6节 ＝ 全诗第31节】Hoch bäumte sich, wild schnob der Rapp', … / Rang zwischen Tod und Leben.
+              </p>
+              <p class="lnote__zh">
+                结局的开始：黑马在墓地里消失。der Rapp'（= der Rappe，黑马）省音。schnob 是
+                schnauben（喷鼻息）的强变化过去式（今日多作弱变化 schnaubte）。★第45—46行连用两个 Ge-
+                集合名词：Geheul（一片嚎叫）、Gewinsel（一片呜咽）——前缀 Ge-
+                把单次动作变成弥漫的、无法定位的整体声响，正是此处需要的效果。Gruft（墓穴）点出地点。末两行 Lenorens
+                Herz … Rang zwischen Tod und Leben：ringen（挣扎、搏斗）的过去式 rang。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">
+                【节选第7节 ＝ 全诗第32节】Nun tanzten wohl bei Mondenglanz, … / Gott sei der Seele gnädig!«
+              </p>
+              <p class="lnote__zh">
+                全诗的最后一节，也是唯一给出「教训」的一节：幽灵们跳着连环舞，唱出结论——忍耐；不要与神争辩；你已脱离肉身；愿神怜悯你的灵魂。★Gott
+                sei der Seele gnädig 是第一虚拟式的祈愿式（Konjunktiv I，sei），与本站《晚歌》（编号20）的
+                Wollst、《恳求》（编号23）的 schwebest 同类，可对照。hadre 是
+                hadern（争辩、抱怨）的命令式。★这一结局与本站《魔王》（编号3）的差别正在这里：《魔王》结尾只交出一具孩子的尸体，宇宙不作任何解释；本诗结尾却由幽灵之口宣布蕾诺勒受罚的理由——她与神争辩过。两首都是狂飙突进的死亡谣曲，一首里没有神，一首里神在场并且判罚。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">grauen</span></div>
+              <span class="vocab-card__pos">v.（弱变化，无人称）</span>
+              <div class="vocab-card__meaning">★感到毛骨悚然、害怕</div>
+              <div class="vocab-card__note">
+                ★重点假朋友：与 grau（灰色的）同源，但意思是「令人恐惧」而非「变灰」。用法为无人称：Mir graut vor
+                etwas（我怕某物）。诗中第29、31行 Graut Liebchen auch?（省略了形式主语 es）。名词 das
+                Grauen（恐怖）、形容词 grauenhaft。另有同形动词 grauen 表「天破晓」（der Morgen graut），须靠语境区分。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Traum, Träume</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">梦</div>
+              <div class="vocab-card__note">
+                复数变元音 au→äu。诗中第2行作第三格复数 Träumen（aus schweren
+                Träumen）。träumen（做梦）。本站《梦中之吻》（编号55）以梦为核心意象，可对照——那里的梦是庇护，这里的梦是凶兆。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Gesindel</span></div>
+              <span class="vocab-card__pos">n.（中性，集合名词）</span>
+              <div class="vocab-card__meaning">乌合之众、下三滥（贬义）</div>
+              <div class="vocab-card__note">
+                ★Ge- 前缀构成的集合名词，一律为中性且无复数。诗中第33行指跟在马后的一群鬼魂。同类构词见第45、46行的 das
+                Geheul（一片嚎叫）、das Gewinsel（一片呜咽），以及本站《城市之神》（编号37）中的 das
+                Gewölk（一片乌云）。Ge- 的作用是把个别的东西聚成一个弥漫的整体。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Gruft, Grüfte</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">墓穴、地下墓室</div>
+              <div class="vocab-card__note">
+                复数变元音 u→ü。诗中第46行 aus tiefer Gruft。比 das Grab（坟墓）更具体，指有顶盖的地下埋葬室。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Rappe, -n</span></div>
+              <span class="vocab-card__pos">n.（阳性，弱变化名词）</span>
+              <div class="vocab-card__meaning">黑马</div>
+              <div class="vocab-card__note">
+                弱变化名词：除第一格单数外一律加 -n（des Rappen, dem Rappen）。诗中第41行作省音形 der
+                Rapp'。与之相对的是 der Schimmel（白马）、der Fuchs（栗色马）——德语给马的毛色各有专名。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">ledig</span></div>
+              <span class="vocab-card__pos">adj.</span>
+              <div class="vocab-card__meaning">①（本诗）摆脱了……的、不再受……束缚的；②（今常用）未婚的</div>
+              <div class="vocab-card__note">
+                ★诗中第55行 Des Leibes bist du ledig（你已脱离了肉身）取古义，支配第二格（des Leibes ledig
+                sein）。今日的常用义是「未婚的」（ledig oder verheiratet）。另有 etwas erledigen（办妥某事）同源。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">säumen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">耽搁、迟延</div>
+              <div class="vocab-card__note">
+                诗中第4行 Wie lange willst du säumen?。今日多用 zögern 或 sich verspäten；säumen 只存于书面雅体，另有
+                unverzüglich（不耽搁地）等派生。注意同形的 säumen 还有「给……镶边」义（der Saum 衣边）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">das Brautbett, -en</span></div>
+              <span class="vocab-card__pos">n.（中性，复合词）</span>
+              <div class="vocab-card__meaning">新婚之床</div>
+              <div class="vocab-card__note">
+                die Braut（新娘）+ das Bett（床）。诗中第18行作省音形 Brautbett'，第24行另作同义的
+                Hochzeitbette（旧式第三格加 -e）。★本诗的恐怖正建立在这个词的双关上：新郎许诺的「婚床」，最后是墓穴。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ ★本页重点：reiten 的完成时助动词按语义分工——强调「骑到某处去」（位移）用 sein：Er ist nach Prag
+                    geritten；强调「骑马这件事本身」（活动）用 haben：Er hat den ganzen Tag geritten。同类两可动词还有
+                    fahren、schwimmen、fliegen。诗中第22、30行为现在时（reiten schnell），但全诗写的是骑向墓地这一位移。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第1行 fuhr … empor（可分动词 auffahren 的框形结构，「惊起」）。与 reiten
+                    同属助动词两可的一类：ist gefahren（去了某处）vs hat den Wagen gefahren（开了那辆车）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第6行 war … gezogen（开拔去，位移义，助动词 sein）、第11行 Zog …
+                    entgegen（迎上前去）、第16行（原文所在节未选入）同义。位移义用 sein，及物的「拉」义用
+                    haben——又一个按语义分工的样本。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第41行作旧强变化过去式 schnob，第39行作旧第二分词
+                    schnoben（此处为过去式复数）。今日规范作弱变化
+                    schnaubte/geschnaubt；强变化形只存于18—19世纪文本，本站照录版本读法并在此说明，★不建议套用。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第48行 Rang zwischen Tod und Leben（在生死之间挣扎）。与 singen、springen、trinken 同属 i–a–u
+                    一类。搭配 mit jemandem ringen（与某人搏斗）、um etwas ringen（为某事苦苦争取）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">谣曲诗节（Balladenstrophe）与叠句 —— 本站叙事诗簇的第五个样本</h3>
+              <p class="grammar-item__quote">Lenore fuhr um's Morgenrot / Empor aus schweren Träumen: …</p>
+              <div class="grammar-item__body">
+                本诗每节 8 行，韵式
+                ababccdd，各节同型：前四行交叉韵，后四行先一对随韵（cc）再一对随韵（dd）。这是德语艺术谣曲的标准诗节。格律为四音步与三音步交替：第1行「Le-no-re-fuhr-ums-Mor-gen-rot」共8个音节、4个重音、阳性收尾；第2行「Em-por-aus-schwe-ren-Träu-men」共7个音节、3个重音、阴性收尾。整节的重音数序列为
+                4/3/4/3/4/4/3/3。★叠句（Refrain）：Die Toten reiten schnell
+                在节选中出现于第22行与第30行，在全诗中另见于第20、24、27、28节；每次重复都嵌在一个近乎固定的三行问答单元里，只换极少的词。它的功能不是抒情，而是计时——读者一旦记住它，就会开始预期它，恐怖由此变成节奏问题。★本页与本站《魔王》（编号3）、《手套》（编号35）、《里贝克老爷》（编号27）、《泰河桥》（编号49）同属叙事诗簇，五页可互相参看。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">reiten 的助动词分工：ist geritten 还是 hat geritten</h3>
+              <p class="grammar-item__quote">Wir und die Toten reiten schnell.</p>
+              <div class="grammar-item__body">
+                德语里有一类动词，完成时的助动词按语义分工，reiten
+                是最典型的一个，本站此前未作说明，本页补上。规则：表示**位移**（从一处到另一处）时用 sein——Er **ist**
+                nach Prag geritten（他骑马去了布拉格）；表示**活动本身**（不涉及位移终点）时用 haben——Er **hat** den
+                ganzen Tag geritten（他骑了一整天马）。同类动词还有 fahren（ist gefahren 去了某处 / hat den Wagen
+                gefahren 开了车）、schwimmen、fliegen、tanzen。判断窍门：句中若有表示目的地的方向补语（nach …, in …
+                四格），几乎一定用 sein。本诗写的正是一场骑向墓地的位移，其完成时当用 sein。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">Ge- 集合名词与拟声词的节奏功能</h3>
+              <p class="grammar-item__quote">das Gesindel husch husch husch … Geheul! Geheul … Gewinsel</p>
+              <div class="grammar-item__body">
+                (1) **Ge- 集合名词**：前缀 Ge-
+                可以把个别的动作或物件聚成一个弥漫的整体，所得名词一律为中性、通常无复数。本诗节选中有 3
+                个（第33、45、46行）：das Gesindel（一群乌合之众）、das Geheul（一片嚎叫）、das
+                Gewinsel（一片呜咽）。本站《城市之神》（编号37）中的 das Gewölk（一片乌云）是同一构词，可对照。(2)
+                **拟声词与节奏**：第33行与第37行都以 3 个连续重读的单音节收尾（husch husch husch / hop hop
+                hop）。两行都是8个音节，与本诗常规的四音步行等长，但行末的抑扬交替被连续重音打断——句子的长度没变，密度变了。这就是本诗的恐怖被称作「节奏性的」而非「视觉性的」的具体依据：全诗几乎不描写任何可怕的形象，可怕的是拍子。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              ★本页为节选：选自全诗32节中的 7 节（第 1、3、17、20、26、31、32 节），共 56 行。全诗 32 节 × 8 行 = 256
+              行，是本站现有最长文本的数倍，故按完整诗节边界切分。节选范围的依据与所据版本页码见校对记录。
+            </p>
+            <p>
+              【省略部分的情节梗概】第 2 节：普鲁士与奥地利议和，两军班师。第 4—16
+              节：蕾诺勒遍寻归来的队伍而无威廉的消息，扑倒在地痛哭；母亲劝她祷告、忍耐，说「神所做的都是好的」，蕾诺勒断然拒绝，说祷告没有用、神不曾怜悯她——这场与神的争辩是全诗的关键，也是结尾判罚的理由。入夜后马蹄声到门前，威廉出现，要她立刻随他骑行一百里去成婚。第
+              18—19 节：她上马，两人在月下疾驰。第 21—25
+              节：一路上他们越过飞逝的原野，经过一支送葬的队伍（威廉喝令死者跟上），又经过绞刑架下半隐半现的鬼群。第
+              27—30
+              节：骑行越来越快，天将破晓，马停在一处墓地的铁门前；威廉的甲胄与皮肉纷纷剥落，露出手持镰刀与沙漏的骷髅——新郎就是死亡本身。
+            </p>
+            <p>
+              本诗1774年首刊于《Göttinger
+              Musenalmanach》，一出即轰动，是德语艺术谣曲（Kunstballade）的开创性作品之一，此后整个浪漫派的谣曲写作都以它为参照。
+            </p>
+            <p>
+              ★与本站《魔王》（编号3）的对读是本页的核心价值。两首都是狂飙突进的死亡谣曲，都以一场夜间骑行为骨架，都在结尾交出一具尸体。差别有两处：其一，《魔王》里是父亲抱着孩子**逃离**死亡，本诗里是新娘**主动骑向**死亡——方向相反；其二，《魔王》的宇宙里没有神，孩子的死不被解释，最后一行只是陈述；本诗的宇宙里神在场，结尾由幽灵之口宣布判罚的理由（她与神争辩过）。同一个体裁，两种形而上学。
+            </p>
+            <p>
+              ★「亡灵新郎」母题（Lenore-Stoff）此后在欧洲广泛传播。常被提到的链条包括：沃尔特·司各特的英译、埃德加·爱伦·坡的接受、以及布拉姆·斯托克《德古拉》对「死者骑得飞快」一句的引用。**这一影响链条的每一环都待进一步核实**，本页不罗列未经核实的作品名单。本诗与珀西《Reliques
+              of Ancient English Poetry》所收苏格兰民谣的关系，同样待核。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) ★本页为节选，页眉、collection、Quellen
+              与校对记录四处均标明「节选 7 节 / 全诗 32
+              节」，并逐节给出其在全诗中的原节次；省略部分另附中文情节梗概，处理口径与本站《智天使漫游者》（编号43，选 3
+              则）一致；(2) 正文所据为《Gedichte
+              1789》版（该版正字法已规范化），1778年初版的旧拼法差异在校对记录中著录；(3) 叠句 Die Toten reiten schnell
+              在译文中固定译作「死人骑得飞快」，每次出现不作变换，以保留其作为节奏装置的辨识度；(4) 拟声词 husch husch
+              husch / hop hop hop 译作三个单音节（唰唰唰／哒哒哒），以保留行末三连重读的节奏；(5) grauen
+              依古义译「害怕」并在词条中标为重点假朋友。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">Zeno.org — Bürger: Lenore（Gedichte 1789）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/B%C3%BCrger,+Gottfried+August/Gedichte/Gedichte+(Ausgabe+1789)/Zweites+Buch.+Episch-lyrische+Gedichte/Lenore"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/B%C3%BCrger,+Gottfried+August/Gedichte/Gedichte+(Ausgabe+1789)/Zweites+Buch.+Episch-lyrische+Gedichte/Lenore</a
+              >
+              <span class="source-citation"
+                >Bürgers Gedichte in zwei Teilen. Teil 1: Gedichte 1789. Berlin/Leipzig/Wien/Stuttgart, 2. Aufl. 1914,
+                S. 139–145</span
+              >
+              <span class="source-note"
+                >一级来源（1789年定本的校勘重印，标注页码），本次直接抓取成功。本站正文以此为准：该本正字法已规范化（tot
+                / willst / Sinn / Geschmückt / Gruß / Kuß / Geduld / sei）。全诗32节×8行=256行，逐节点数核对无误。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">Wikisource — Bürger: Lenore（1778年《Gedichte》初版扫描）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="https://de.wikisource.org/wiki/Lenore_(B%C3%BCrger)"
+                target="_blank"
+                rel="noopener"
+                >https://de.wikisource.org/wiki/Lenore_(B%C3%BCrger)</a
+              >
+              <span class="source-citation"
+                >Gottfried August Bürger: Gedichte. Johann Christian Dieterich, Göttingen 1778, S.
+                81–96（校对状态「fertig」，附原书扫描 PDF 第141–157页）</span
+              >
+              <span class="source-note"
+                >一级来源（初版逐页扫描转录，独立运营方 wikimedia）。用于核实节数、成诗年份（标题下注「Im Winter
+                1773」）与初版旧拼法：todt / wilst / Sin / Geschmükt / überal al überal / Grus und Kus / Gedult / sey /
+                Hurrah。该本同样为32节×8行=256行，节次编号与1789年版完全一致。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Lenore（Bürger）</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a class="source-url" href="https://www.gedichte7.de/lenore-buerger.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/lenore-buerger.html</a
+              >
+              <span class="source-citation">现代通行文本</span>
+              <span class="source-note">三级来源（Possel 运营方）。用于核对现代通行读法与节数。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【★节选说明（§0.D）】本页为节选：自全诗32节中选取第 1、3、17、20、26、31、32 节，共 7 节 56
+              行。页眉（title_de / title_zh）、collection、Quellen 与本记录四处均标明「节选 7 节 / 全诗 32
+              节」，逐节注释另标出其在全诗中的原节次，不冒充完整作品。省略部分已给出中文情节梗概（见
+              cultural_notes）。处理口径与本站《智天使漫游者》（编号43，选 3 则）一致。
+            </p>
+            <p>
+              【★节选范围的依据】本次未能查到可直接采用的德语教材／选本通行节选段落，故按§0.D
+              的第二条规则处理：一律以**完整诗节边界**切分，不在诗节内部截断。所选七节覆盖全诗的功能骨架：开篇（第1节，噩梦惊醒、威廉未归）→
+              凯旋而蕾诺勒落空（第3节，全诗的引擎）→ 叠句首次出现（第17节）→ 叠句的完整问答形态（第20节）→
+              拟声最密集的一节（第26节）→ 黑马消失、生死之间（第31节）→
+              幽灵宣布判罚的结尾（第32节）。所据版本为《Gedichte
+              1789》（Zeno.org，S.139–145），节次编号经1778年初版扫描本（Wikisource，S.81–96）交叉核对，两版均为32节×8行，节次完全一致。
+            </p>
+            <p>
+              【三源核对】正文以 Zeno.org 所据1789年定本（S.139–145）为一级来源；Wikisource
+              所据1778年初版逐页扫描（Dieterich, Göttingen 1778, S.81–96，校对状态
+              fertig）为第二个一级来源；gedichte7.de（三级，Possel
+              运营方）为第三个独立运营方。全诗行数经逐节点数：32节×8行=256行，两个一级来源一致。
+            </p>
+            <p>
+              【韵式逐行数出】各节同型
+              ababccdd（谣曲诗节），所选七节全部一致。逐行末词（节选第1节）：Morgenrot／Träumen／tot／säumen／Macht／Schlacht／geschrieben／geblieben。韵式校验通过，无孤字母
+              WARN。★第26、28行的 Blicken / Brücken 是不纯韵（i 与 ü 不同音），自动聚类会把两行分开，已用 rhyme_groups
+              [[26,28]] 显式声明为一组。
+            </p>
+            <p>
+              【格律与拟声（§0.E 音节切分）】四音步与三音步交替，重音序列
+              4/3/4/3/4/4/3/3。已给出四行的音节切分：第1行8音节／4重音（阳性收尾）；第2行7音节／3重音（阴性收尾）；第33行8音节，末3音节
+              husch husch husch 连续重读；第37行8音节，末3音节 hop hop hop
+              连续重读。行长不变而行末抑扬交替被打断——这是「本诗的恐怖是节奏性的」这一论断的量化依据。
+            </p>
+            <p>
+              【叠句行号】Die Toten reiten schnell
+              在节选中出现于第22行与第30行；在全诗中另见于第20、24、27、28节（节次，非节选行号）。已在逐行注释与语法条中标明。
+            </p>
+            <p>
+              【正字法】本站正文照录1789年定本读法。1778年初版的差异：todt／wilst／Sin／Geschmükt／überal al
+              überal／Grus und Kus／Gedult／sey／Hurrah／wol，均已在来源条目中著录。1789年定本已把这些规范化为
+              tot／willst／Sinn／Geschmückt／überall all überall／Gruß und
+              Kuß／Geduld／sei／Hurra／wohl。★注意本站不套用1996年正字法改革，Kuß／Roß／Daß 等按1789年定本照录。
+            </p>
+            <p>
+              【★待进一步核实】(1)
+              「亡灵新郎」母题的国际影响链条——沃尔特·司各特英译、爱伦·坡的接受、布拉姆·斯托克《德古拉》对叠句的引用，每一环均未回核到一手出处，页面已写明不罗列未经核实的作品名单；(2)
+              本诗与珀西《Reliques of Ancient English Poetry》所收苏格兰民谣的关系；(3) 歌德、席勒对本诗的评价；(4)
+              1774年《Göttinger Musenalmanach》首刊的具体页码（本次所据两个版本均为后出的诗集本，未见年鉴原刊）。
+            </p>
+            <p>【公版】毕尔格1794年卒，公版起始年 = 1794 + 71 = 1865。</p>
+            <p>
+              本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / wikimedia /
+              possel）、D（含两个一级来源，均标注版次与页码）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：Gottfried August Bürger</li>
+            <li>★页眉／collection／Quellen／校对记录四处均标明「节选 7 节 / 全诗 32 节」</li>
+            <li>★节选一律按完整诗节边界切分，未在节内截断</li>
+            <li>★节选范围的依据与所据版本页码已记录</li>
+            <li>★省略部分已给出中文情节梗概</li>
+            <li>与《智天使漫游者》（编号43）的节选口径保持一致</li>
+            <li>全诗行数逐节点数核对：32 节 × 8 行 = 256 行</li>
+            <li>两个一级来源的节次编号交叉核对一致</li>
+            <li>韵式逐行数出：各节同型 ababccdd</li>
+            <li>不纯韵 Blicken/Brücken 已用 rhyme_groups 声明</li>
+            <li>格律与拟声给出四行音节切分（8/7/8/8）</li>
+            <li>叠句出现位置附行号与节次</li>
+            <li>grauen 假朋友说明（不是「变灰」）</li>
+            <li>reiten 助动词 sein/haben 分工说明（本站首次）</li>
+            <li>Ge- 集合名词 3 例附行号，并与《城市之神》接线</li>
+            <li>与《魔王》的对读（逃离 vs 主动骑向；无神 vs 判罚）</li>
+            <li>叙事诗簇五页互链</li>
+            <li>★国际影响链条一律标注待核，未罗列未经核实的作品名单</li>
+            <li>1778 初版与 1789 定本的正字法差异已著录</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1794 + 71 = 1865</li>
+            <li>image brief 禁忌含「不得出现骷髅、腐尸、血」</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核国际影响链条与1774年年鉴首刊页码</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议狂飙突进／谣曲专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>

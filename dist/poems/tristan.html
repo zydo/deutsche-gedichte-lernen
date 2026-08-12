@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t !== "dark" && t !== "light") {
+            t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <title>Tristan · 特里斯坦 — August von Platen | 德语诗歌学习画册</title>
+    <meta
+      name="description"
+      content="Tristan（特里斯坦）— August von Platen。德文原诗、学习译文、词汇语法注释与出处校对。"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <span class="brand__de">Gedichte</span>
+        </a>
+        <div class="site-header__right">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="../index.html">诗歌总览</a>
+            <a href="../about.html">关于 · 校对</a>
+          </nav>
+          <a
+            class="header-icon"
+            href="https://github.com/zydo/deutsche-gedichte-lernen"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）"
+            title="GitHub 仓库"
+          >
+            <svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <button class="theme-toggle" type="button" aria-label="切换主题" title="切换 日 / 夜 主题">
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20.5 14.8A8.2 8.2 0 1 1 9.7 3.6 6.6 6.6 0 0 0 20.5 14.8z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="poem-shell">
+        <nav class="poem-nav" aria-label="诗歌导航">
+          <a class="poem-nav__link poem-nav__prev" href="das-rosenband.html" rel="prev"
+            ><span class="poem-nav__arrow" aria-hidden="true">←</span><span class="poem-nav__title">玫瑰带</span></a
+          >
+          <a class="poem-nav__link poem-nav__next" href="die-daemmerung.html" rel="next"
+            ><span class="poem-nav__title">黄昏</span><span class="poem-nav__arrow" aria-hidden="true">→</span></a
+          >
+        </nav>
+        <header class="poem-titleblock reveal">
+          <h1 class="poem-titleblock__de">Tristan</h1>
+          <p class="poem-titleblock__author">August von Platen</p>
+          <p class="poem-titleblock__zh">特里斯坦</p>
+          <p class="poem-titleblock__author-zh">奥古斯特·冯·普拉滕</p>
+          <div class="poem-titleblock__biblio">
+            <p>《Gedichte》（1834年版）·「Romanzen und Jugendlieder」Nr. 39</p>
+            <p>后浪漫派 / 形式主义</p>
+            <p>收入《Gedichte》（Ausgabe 1834）「Romanzen und Jugendlieder」第39首；成诗年份见校对记录</p>
+          </div>
+          <div class="poem-titleblock__meta">
+            <span class="tag tag--b">B2（句法为 Wer …, der … 相关句式，且含罕见的框式动词 anheimgeben）</span>
+            <span class="tag">诗论诗</span>
+            <span class="tag">美</span>
+            <span class="tag">死亡</span>
+            <span class="tag">叠句</span>
+            <span class="tag">形式完美</span>
+            <span class="tag">后浪漫派</span>
+          </div>
+          <div class="image-slot">
+            <div class="image-slot__label">
+              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+            </div>
+            <dl>
+              <dt>意象</dt>
+              <dd>
+                一间空旷的展厅或神庙内部，一束光落在一尊已被移走的雕像留下的空基座上；地面有一道长长的、指向观者的影子；空气中悬着极细的尘
+              </dd>
+              <dt>情绪</dt>
+              <dd>看过之后无法回头的空茫；不是悲伤，是被掏空后的清醒与倦怠</dd>
+              <dt>画面元素</dt>
+              <dd>空基座、一束定向光、地面的长影、悬浮的细尘、远处一扇看不清外面的门</dd>
+              <dt>时代感</dt>
+              <dd>无明确时代，古典建筑内部</dd>
+              <dt>推荐风格</dt>
+              <dd>新古典主义绘画质感，冷石灰与淡金，构图严格对称，边缘锐利</dd>
+              <dt>比例</dt>
+              <dd>4:3（横版）</dd>
+              <dt>禁忌</dt>
+              <dd>
+                不得画出可辨识的人脸或人体（诗中的「美」不指定对象）；不得出现骷髅、坟墓等死亡符号（本诗的死是命题，不是场景）；不得出现威尼斯的可辨识景观（《威尼斯之死》的关联属后世联想，未经核实）；不得出现文字水印
+              </dd>
+            </dl>
+            <p class="image-slot__caption">
+              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
+              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
+            </p>
+          </div>
+        </header>
+        <section class="section reveal section--parallel">
+          <header class="section__head">
+            <span class="section__zh">原诗 · 译文</span>
+            <span class="section__de">Gedicht · Übertragung</span>
+          </header>
+          <div class="parallel">
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="14">
+                  <span class="linetext"
+                    >Wer die Schönheit angeschaut mit Augen,<sup class="refmark"><a href="#note-14">14</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">凡曾用眼睛看过美的人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="2">
+                  <span class="linetext"
+                    >Ist dem Tode schon anheimgegeben,<sup class="refmark"><a href="#note-2">2</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">就已经被交付给了死亡，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="3">
+                  <span class="linetext"
+                    >Wird für keinen Dienst auf Erden taugen,<sup class="refmark"><a href="#note-3">3</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">将不再堪任人世间的任何职分，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="4">
+                  <span class="linetext"
+                    >Und doch wird er vor dem Tode beben,<sup class="refmark"><a href="#note-4">4</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">然而他仍将在死亡面前战栗，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="5">
+                  <span class="linetext"
+                    >Wer die Schönheit angeschaut mit Augen!<sup class="refmark"><a href="#note-5">5</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">凡曾用眼睛看过美的人！</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="6">
+                  <span class="linetext"
+                    >Ewig währt für ihn der Schmerz der Liebe,<sup class="refmark"><a href="#note-6">6</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">爱的痛苦对他将永远持续，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="7">
+                  <span class="linetext"
+                    >Denn ein Tor nur kann auf Erden hoffen,<sup class="refmark"><a href="#note-7">7</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">因为只有蠢人才能在世上指望</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="8">
+                  <span class="linetext"
+                    >Zu genügen einem solchen Triebe:<sup class="refmark"><a href="#note-8">8</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">去满足这样一种渴求：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="9">
+                  <span class="linetext"
+                    >Wen der Pfeil des Schönen je getroffen,<sup class="refmark"><a href="#note-9">9</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">凡被美之箭射中过的人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="10">
+                  <span class="linetext"
+                    >Ewig währt für ihn der Schmerz der Liebe!<sup class="refmark"><a href="#note-10">10</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">爱的痛苦对他将永远持续！</div>
+              </div>
+            </div>
+            <div class="pstanza">
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="11">
+                  <span class="linetext"
+                    >Ach, er möchte wie ein Quell versiechen,<sup class="refmark"><a href="#note-11">11</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">唉，他愿如一道泉水般干涸，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="12">
+                  <span class="linetext"
+                    >Jedem Hauch der Luft ein Gift entsaugen,<sup class="refmark"><a href="#note-12">12</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">从空气的每一次呼吸中吸出毒来，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="13">
+                  <span class="linetext"
+                    >Und den Tod aus jeder Blume riechen:<sup class="refmark"><a href="#note-13">13</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">并从每一朵花里嗅到死亡：</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="14">
+                  <span class="linetext"
+                    >Wer die Schönheit angeschaut mit Augen,<sup class="refmark"><a href="#note-14">14</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">凡曾用眼睛看过美的人，</div>
+              </div>
+              <div class="pline">
+                <div class="pline__de vline" data-noteref="15">
+                  <span class="linetext"
+                    >Ach, er möchte wie ein Quell versiechen!<sup class="refmark"><a href="#note-15">15</a></sup></span
+                  >
+                </div>
+                <div class="pline__zh">唉，他愿如一道泉水般干涸！</div>
+              </div>
+            </div>
+            <p class="translation-meta">本站学习译文（AI 辅助），直译，保留每节首尾同行的环抱结构与三节的推进</p>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">逐行注释</span>
+            <span class="section__de">Zeilenkommentar</span>
+          </header>
+          <div class="lnotes">
+            <article class="lnote" id="note-1" data-noteref="1">
+              <span class="lnote__mark">1</span>
+              <p class="lnote__de">Wer die Schönheit angeschaut mit Augen,</p>
+              <p class="lnote__zh">
+                ★德语中被引用最多的诗句之一，也是本诗的命题句。句法上它是 Wer …, der … 相关句式的前件（关系词
+                wer「凡……的人」），后件的 der 被省略，第2行直接以谓语 Ist 承接。angeschaut 是 anschauen
+                的第二分词，助动词 hat 被省略（诗体紧缩）。mit
+                Augen（用眼睛）看似多余——正是这个多余把「看见美」坐实为一件肉身的、发生过的事，而不是一个比喻。
+              </p>
+            </article>
+            <article class="lnote" id="note-2" data-noteref="2">
+              <span class="lnote__mark">2</span>
+              <p class="lnote__de">Ist dem Tode schon anheimgegeben,</p>
+              <p class="lnote__zh">
+                ★本行是全诗的判决。anheimgeben（把……交付给、听凭……处置）是罕见的可分动词：前缀 anheim-
+                可分，故第二分词把 ge- 夹在中间——an-heim-ge-geben。它支配第三格（dem Tode，旧式第三格加
+                -e）。★注意：这不是道德判断，不是说看美的人有罪；是说他已经被划归到死亡名下——所有权已经转移。
+              </p>
+            </article>
+            <article class="lnote" id="note-3" data-noteref="3">
+              <span class="lnote__mark">3</span>
+              <p class="lnote__de">Wird für keinen Dienst auf Erden taugen,</p>
+              <p class="lnote__zh">
+                taugen（堪用、中用）今日多用于否定：zu nichts taugen（一无是处）。der Dienst
+                在此取「职分、可供效力之事」的旧义。auf Erden 是旧式第三格复数形（今作 auf der
+                Erde），只存于雅体与宗教文体。整行：他从此不再适合人世间的任何用途。
+              </p>
+            </article>
+            <article class="lnote" id="note-4" data-noteref="4">
+              <span class="lnote__mark">4</span>
+              <p class="lnote__de">Und doch wird er vor dem Tode beben,</p>
+              <p class="lnote__zh">
+                ★全诗最尖锐的一行，也是它不肯落入唯美主义滥调的地方：他已被交给死亡，也不再适合活着——**然而他仍然怕死**。und
+                doch（然而）把前三行的逻辑扭了一下。如果他甘心赴死，这首诗就只是一句漂亮话；正因为他仍在战栗，命题才有分量。
+              </p>
+            </article>
+            <article class="lnote" id="note-5" data-noteref="5">
+              <span class="lnote__mark">5</span>
+              <p class="lnote__de">Wer die Schönheit angeschaut mit Augen!</p>
+              <p class="lnote__zh">
+                ★本节末行逐字重复首行，只把逗号换成惊叹号。三节皆如此：每节的第5行重复第1行，构成环抱式的框（Ringkomposition）。这一结构使每节都像一个封闭的咒语，读完回到起点——形式本身在演示「无法离开」。
+              </p>
+            </article>
+            <article class="lnote" id="note-6" data-noteref="6">
+              <span class="lnote__mark">6</span>
+              <p class="lnote__de">Ewig währt für ihn der Schmerz der Liebe,</p>
+              <p class="lnote__zh">
+                第二节的命题句。währen（持续）是雅词，今日多用 dauern。der Schmerz der Liebe
+                是后置第二格。ewig（永远）置于句首以示强调，主句因此倒装（währt … der Schmerz）。
+              </p>
+            </article>
+            <article class="lnote" id="note-7" data-noteref="7">
+              <span class="lnote__mark">7</span>
+              <p class="lnote__de">Denn ein Tor nur kann auf Erden hoffen,</p>
+              <p class="lnote__zh">
+                der Tor（弱变化名词，蠢人、愚人）——注意与 das Tor（大门，中性）同形不同性、不同义，靠冠词区分。nur
+                后置于 ein Tor，是强调语序（「只有蠢人」）。denn 引导原因，是并列连词，其后不倒装（denn ein Tor nur
+                **kann**，主语仍在动词前）。
+              </p>
+            </article>
+            <article class="lnote" id="note-8" data-noteref="8">
+              <span class="lnote__mark">8</span>
+              <p class="lnote__de">Zu genügen einem solchen Triebe:</p>
+              <p class="lnote__zh">
+                承上行的 hoffen，zu + 不定式。genügen 支配第三格（einem solchen Triebe，旧式第三格加 -e）。der Trieb
+                在此取「渴求、冲动」义。整句：只有蠢人才指望自己能满足这样一种渴求——美所激起的欲望在定义上无法被满足。
+              </p>
+            </article>
+            <article class="lnote" id="note-9" data-noteref="9">
+              <span class="lnote__mark">9</span>
+              <p class="lnote__de">Wen der Pfeil des Schönen je getroffen,</p>
+              <p class="lnote__zh">
+                ★句法与第1行平行，但关系词由 Wer（第一格）换成
+                Wen（第四格）——因为这一句里他是被射中的对象，不是行动者。这一格的转换正是语义的转换：从「主动去看」到「被动被击中」。des
+                Schönen 是形容词名词化的第二格（das Schöne 美之物 → des Schönen）。爱神之箭的意象在此被移到「美」名下。
+              </p>
+            </article>
+            <article class="lnote" id="note-10" data-noteref="10">
+              <span class="lnote__mark">10</span>
+              <p class="lnote__de">Ewig währt für ihn der Schmerz der Liebe!</p>
+              <p class="lnote__zh">第二节的环抱收束，逐字重复第6行。</p>
+            </article>
+            <article class="lnote" id="note-11" data-noteref="11">
+              <span class="lnote__mark">11</span>
+              <p class="lnote__de">Ach, er möchte wie ein Quell versiechen,</p>
+              <p class="lnote__zh">
+                第三节转入愿望。möchte 是 mögen 的第二虚拟式，表委婉的愿望（「他愿……」）。versiechen 是
+                versiegen（干涸）的旧式变体。★意象的方向在此翻转：前两节说他被交给死亡，这一节说他自己想要枯竭——被动变成了主动。
+              </p>
+            </article>
+            <article class="lnote" id="note-12" data-noteref="12">
+              <span class="lnote__mark">12</span>
+              <p class="lnote__de">Jedem Hauch der Luft ein Gift entsaugen,</p>
+              <p class="lnote__zh">
+                entsaugen（从……中吸出）支配第三格（jedem Hauch）+ 第四格（ein Gift）。der
+                Hauch（一口气、微风）。整行：从空气的每一次呼吸里吸出毒来——不是被下毒，是主动把呼吸变成毒。
+              </p>
+            </article>
+            <article class="lnote" id="note-13" data-noteref="13">
+              <span class="lnote__mark">13</span>
+              <p class="lnote__de">Und den Tod aus jeder Blume riechen:</p>
+              <p class="lnote__zh">
+                ★与上一行构成一对：世界上最无害的两样东西（空气、花）都被转成死亡。这不是外部世界变坏了，是那个看过美的人的感官变了——他从此只能嗅到死。
+              </p>
+            </article>
+            <article class="lnote" id="note-14" data-noteref="14">
+              <span class="lnote__mark">14</span>
+              <p class="lnote__de">Wer die Schönheit angeschaut mit Augen,</p>
+              <p class="lnote__zh">
+                ★第三节的第4行不是重复本节首行，而是重新引回**第1行**——全诗的命题句在此第三次出现（第1、5、14行）。三节的框由此扣成一个更大的框。
+              </p>
+            </article>
+            <article class="lnote" id="note-15" data-noteref="15">
+              <span class="lnote__mark">15</span>
+              <p class="lnote__de">Ach, er möchte wie ein Quell versiechen!</p>
+              <p class="lnote__zh">
+                末行重复第11行，完成第三节的环抱，也完成全诗。★全诗从头到尾没有提到特里斯坦这个人，也没有讲他的故事——标题只是把这一切放进「爱与死绑在一起」的那个传说框架里，见语法条与文化背景。
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">重点词汇</span>
+            <span class="section__de">Wortschatz</span>
+          </header>
+          <div class="vocab-list">
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">die Schönheit, -en</span></div>
+              <span class="vocab-card__pos">n.（阴性）</span>
+              <div class="vocab-card__meaning">美、美貌</div>
+              <div class="vocab-card__note">
+                诗中第1、5、14行。本站《你从哪里取来这一身的美》（编号56，胡赫）用的是同一个词，但判断相反：那首说美使世界贫瘠，本诗说看见美的人自己被交付给死亡。两页可对照。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">anheimgeben</span></div>
+              <span class="vocab-card__pos">v.（可分，强变化 e–a–e）</span>
+              <div class="vocab-card__meaning">把……交付给、听凭……处置</div>
+              <div class="vocab-card__note">
+                ★罕见的框式动词，本页重点。前缀 anheim- **可分**，故第二分词作 an-heim-ge-geben（ge-
+                夹在中间）；支配第三格。诗中第2行 ist dem Tode schon anheimgegeben。同族的
+                anheimfallen（归属于、落入……之手）更常见些，作不及物、助动词 sein。两词今日均属书面雅体。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">taugen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">堪用、中用、适合</div>
+              <div class="vocab-card__note">
+                变位 taugt – taugte – hat getaugt。今日多用于否定或疑问：Das taugt nichts（这没用）、zu nichts
+                taugen（一无是处）。诗中第3行 wird für keinen Dienst … taugen。派生
+                tauglich（合格的）、untauglich（不合格的）。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">währen</span></div>
+              <span class="vocab-card__pos">v.（弱变化）</span>
+              <div class="vocab-card__meaning">持续、延续</div>
+              <div class="vocab-card__note">
+                雅词，今日多用 dauern。诗中第6、10行 Ewig währt …。谚语 Alles hat ein Ende（万物有终）中的对应说法是 Was
+                lange währt, wird endlich gut。注意与 wehren（抵御）、währenddessen（在此期间）区分。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Tor, -en</span></div>
+              <span class="vocab-card__pos">n.（阳性，弱变化名词）</span>
+              <div class="vocab-card__meaning">蠢人、愚人</div>
+              <div class="vocab-card__note">
+                ★同形异性词：der Tor（阳性，蠢人，弱变化：des Toren, dem Toren）vs das Tor（中性，大门，des
+                Tor(e)s）。诗中第7行取阳性的「蠢人」义。die Torheit（愚蠢）。今日 der Tor 已属书面雅体。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Trieb, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性）</span>
+              <div class="vocab-card__meaning">渴求、冲动、本能</div>
+              <div class="vocab-card__note">
+                由 treiben（驱动）构成。诗中第8行 einem solchen Triebe（旧式第三格加 -e）。后世精神分析用它作术语（der
+                Todestrieb 死亡冲动），但本诗早于此，取的是一般的「渴求」义。
+              </div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-card__head"><span class="vocab-card__term">der Quell, -e</span></div>
+              <span class="vocab-card__pos">n.（阳性，雅体）</span>
+              <div class="vocab-card__meaning">泉、源泉</div>
+              <div class="vocab-card__note">
+                die Quelle（阴性）的雅体变体，多用于诗。诗中第11、15行 wie ein Quell versiechen。versiegen /
+                versiechen（干涸）与之搭配。
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section reveal section--wide">
+          <header class="section__head">
+            <span class="section__zh">动词变位</span>
+            <span class="section__de">Konjugation</span>
+          </header>
+          <div class="verb-table-wrap">
+            <table class="verb-table">
+              <thead>
+                <tr>
+                  <th>Infinitiv</th>
+                  <th>Präsens<br /><span class="th-sub">3. Sg.</span></th>
+                  <th>Präteritum</th>
+                  <th>Perfekt</th>
+                  <th>Partizip II</th>
+                  <th>Konjunktiv II</th>
+                  <th>Hilfsverb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ ★可分性的判定依据：第二分词作 anheim-ge-geben（ge-
+                    夹在前缀与词干之间），这正是可分动词的标记；不可分动词的第二分词不加 ge-（对比 übergeben →
+                    übergeben）。支配第三格。诗中第2行为被动的第二分词形式。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第1、5、14行作第二分词 angeschaut（助动词 hat 被省略）。同义的 ansehen 为强变化（sieht an /
+                    sah an / hat angesehen）——两词并存，anschauen 略偏南德与雅体。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第9行作第二分词 getroffen（助动词省略）。现在时单数第二、三人称换音 e→i。本诗取「击中」义（der
+                    Pfeil trifft 箭射中）；日常更常见的是「遇见」义（jemanden treffen）。
+                  </td>
+                </tr>
+                <tr>
+                  <td class="de"></td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td class="de">—</td>
+                  <td>—</td>
+                </tr>
+                <tr class="verb-note">
+                  <td colspan="7">
+                    ↳ 诗中第11、15行作 möchte，表委婉的愿望。★注意 möchte 不是 mögen 的过去式（过去式是
+                    mochte，无变元音）——möchte 是第二虚拟式，今日已基本独立为一个表「想要」的常用形式。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">语法要点</span>
+            <span class="section__de">Grammatik</span>
+          </header>
+          <div class="grammar-list">
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">Wer …, der … 相关句式与格的转换 —— 教材覆盖不足的一个高频结构</h3>
+              <p class="grammar-item__quote">
+                Wer die Schönheit angeschaut mit Augen, / Ist dem Tode schon anheimgegeben … Wen der Pfeil des Schönen
+                je getroffen
+              </p>
+              <div class="grammar-item__body">
+                德语用 wer / wen / wem 引导「凡……的人」这类无先行词的关系从句，主句则以对应的 der / den / dem 承接：Wer
+                nicht fragt, **der** bleibt dumm（不问的人就一直笨）。口语与诗体中主句的 der
+                常被省略——本诗第1—2行即如此，从句 Wer … 之后直接是谓语
+                Ist。★关键在于关系词的格由**从句内部**的角色决定，与主句无关：第1行 **Wer**
+                是从句的主语（他去看美），故用第一格；第9行 **Wen**
+                是从句的宾语（美之箭射中他），故用第四格。同一个人，在两句里的格不同——这一点是该句式最常出错的地方。本站此前未系统说明这一结构，本页补上。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">五音步扬抑格与三节环抱结构 —— Platen 的形式主义在句法层面的证据</h3>
+              <p class="grammar-item__quote">
+                Wer die Schönheit angeschaut mit Augen … / Ist dem Tode schon anheimgegeben
+              </p>
+              <div class="grammar-item__body">
+                本诗三节，每节 5 行，韵式 ababa（各节同型：第1、3、5行押一韵，第2、4行押另一韵）：Augen–taugen–Augen /
+                anheimgegeben–beben（第一节）。★格律为五音步扬抑格（fünfhebiger Trochäus），全诗每行 10
+                个音节、一律阴性收尾，十五行全同。逐音节验算：第1行「Wer-die-|Schön-heit-|an-ge-|schaut-mit-|Au-gen」共10个音节，重音落在第1、3、5、7、9音节；第2行「Ist-dem-|To-de-|schon-an-|heim-ge-|ge-ben」同样10个音节、同样的重音位置。扬抑格（重—轻）在德语诗中远少于抑扬格，用它写整首诗需要持续挑选以重音开头的词——普拉滕被称为德语诗史上最重视形式精确的诗人之一，这里给出的是可验算的依据，不是标签。★结构上，每节第5行逐字重复第1行（环抱式），而第三节第4行重新引回全诗第1行——命题句共出现
+                3 次（第1、5、14行），三个小框由此扣成一个大框。
+              </div>
+            </article>
+            <article class="grammar-item">
+              <h3 class="grammar-item__title">标题《Tristan》与诗中不出现的故事</h3>
+              <p class="grammar-item__quote">全诗15行，无一处提到特里斯坦、伊索尔德或任何情节</p>
+              <div class="grammar-item__body">
+                读这首诗最容易走的弯路，是到诗里去找特里斯坦的故事——诗里没有。全诗十五行没有出现任何人名、任何情节、任何中世纪场景。标题的作用是**框架**而非**内容**：它把「看见美→被交付给死亡」这个命题放进特里斯坦与伊索尔德传说所代表的那一类故事里，即爱与死被绑在一起、且无法解开的那一类。读者需要补的是这个框架，不是一段叙事。★这也是本诗被称作「诗论诗」的原因之一：它谈论的对象不是一个人的遭遇，而是美这件事本身对人做了什么。
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section reveal">
+          <header class="section__head">
+            <span class="section__zh">文学意象与文化背景</span>
+            <span class="section__de">Hintergrund</span>
+          </header>
+          <div class="prose">
+            <p>
+              奥古斯特·冯·普拉滕（1796—1835）在德语诗史上以形式的精确著称。他系统地把外来诗体移植进德语——波斯的
+              Ghasel、意大利的十四行与
+              Kanzone、古希腊的颂歌格律——并要求德语诗在音节与重音层面达到同样的严整。本诗虽收在《Gedichte》1834年版的「Romanzen
+              und Jugendlieder」一辑（第39首）而非十四行一辑，形式上却同样一丝不苟：三节各五行，行行十音节，通篇扬抑格。
+            </p>
+            <p>
+              首行「Wer die Schönheit angeschaut mit
+              Augen」是德语中被引用最多的诗句之一。它的命题——看见美的人已经被交付给死亡——不是道德判断，而是浪漫派「美与死同源」母题的最简表述。★与本站《死亡是清凉的夜》（编号14，海涅）对照可见两种截然不同的死亡：海涅的死是安眠，是白天的疲倦之后可以躺下的地方；普拉滕的死是代价，是看过美之后必须付的账。与《古风的阿波罗躯干残像》（编号15，里尔克）的对照则更深一层：两首诗都写「看见美之后无法回到原处」——里尔克那首以「你必须改变你的生活」结尾，是被要求改变；本诗则是被判定不再堪用（第3行）。同一个处境，一个通向改变，一个通向枯竭。
+            </p>
+            <p>
+              ★普拉滕与海涅之间有过一场著名的论战。这场争执中，海涅在《卢卡浴场》等文中对普拉滕的攻击直接指向他的同性恋倾向，普拉滕此前也曾以带有反犹色彩的言辞攻击海涅。本站在此如实记录这一史实，措辞从简：这是德语文学史上一次公开的人身攻击，双方都动用了对方无法回避的身份。★同时须说明：本站**不把作者的私人生活当作解诗的依据**。本诗写的是美与死的关系，不需要、也不应当被还原为作者的传记。
+            </p>
+            <p>
+              托马斯·曼《威尼斯之死》（1912）常被认为与本诗的命题直接相关——主人公在威尼斯因凝视美少年而走向死亡。★两者的具体呼应处待进一步核实，本页不作确定性断言。普拉滕本人1835年死于西西里的叙拉古，也常被与该小说的地理氛围相联系；这同样属于后世的联想，不是可考的因果。
+            </p>
+          </div>
+        </section>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文说明</span>
+            <span class="section__de">Anmerkung</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文照录 Zeno.org
+              所据《普拉滕两卷本著作集》第1卷（München 1982，S.69）的读法；(2)
+              每节第5行与第1行逐字相同，译文亦逐字相同，仅按原文把逗号改为惊叹号，以保留环抱结构的辨识度；(3)
+              第14行在原文中重复的是全诗第1行而非本节第1行，译文照办；(4) anheimgegeben
+              译作「被交付给」并在词条中说明其可分性；(5) 第9行的 Wen（第四格）与第1行的
+              Wer（第一格）在中文中无法用形态区分，故在译文中分别作「凡曾用眼睛看过美的人」与「凡被美之箭射中过的人」，以主动／被动的对比替代格的对比。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">德文原文出处</span>
+            <span class="section__de">Quellen</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name"
+                >Zeno.org — Platen: Tristan（Gedichte 1834, Romanzen und Jugendlieder Nr. 39）</span
+              ><span class="source-tier source-tier--1">一级</span
+              ><a
+                class="source-url"
+                href="http://www.zeno.org/Literatur/M/Platen,+August+von/Gedichte/Gedichte+(Ausgabe+1834)/Romanzen+und+Jugendlieder/39.+Tristan"
+                target="_blank"
+                rel="noopener"
+                >http://www.zeno.org/Literatur/M/Platen,+August+von/Gedichte/Gedichte+(Ausgabe+1834)/Romanzen+und+Jugendlieder/39.+Tristan</a
+              >
+              <span class="source-citation"
+                >August Graf von Platen: Werke in zwei Bänden. Band 1: Lyrik. München 1982, S. 69</span
+              >
+              <span class="source-note"
+                >一级来源（两卷本著作集，标注卷次与页码），本次直接抓取成功。本站正文以此为准。★该本把本诗编在《Gedichte》1834年版的「Romanzen
+                und
+                Jugendlieder」一辑第39首，**不在「Sonette」一辑**——本诗不是十四行，此点经该辑目录逐条核对确认。</span
+              >
+            </li>
+            <li>
+              <span class="source-name">deutschelyrik.de — „Tristan“（Platen）</span
+              ><span class="source-tier source-tier--2">二级</span
+              ><a class="source-url" href="https://www.deutschelyrik.de/tristan.html" target="_blank" rel="noopener"
+                >https://www.deutschelyrik.de/tristan.html</a
+              >
+              <span class="source-citation">现代通行文本（附朗读）</span>
+              <span class="source-note">二级来源（独立运营方，直接抓取）。读法与一级来源一致，三节各五行。</span>
+            </li>
+            <li>
+              <span class="source-name">gedichte7.de — Tristan（Platen）</span
+              ><span class="source-tier source-tier--3">三级</span
+              ><a class="source-url" href="https://www.gedichte7.de/tristan.html" target="_blank" rel="noopener"
+                >https://www.gedichte7.de/tristan.html</a
+              >
+              <span class="source-citation">现代通行文本</span>
+              <span class="source-note">三级来源（Possel 运营方）。用于核对现代通行读法与分节。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">译文出处 · 版权</span>
+            <span class="section__de">Übersetzungsnachweis</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="source-list">
+            <li>
+              <span class="source-name">本站学习译文（中文）</span>
+
+              <span class="source-note">AI 辅助生成，标注为学习用途。</span>
+            </li>
+          </ul>
+        </details>
+        <details class="section reveal section--fold">
+          <summary class="section__head">
+            <span class="section__zh">校对记录</span>
+            <span class="section__de">Korrektorat</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <div class="prose">
+            <p>
+              【三源核对】正文以 Zeno.org 所据《普拉滕两卷本著作集》第1卷「抒情诗」（München
+              1982，S.69）为一级来源，本次直接抓取成功；另有 deutschelyrik.de（二级）与 gedichte7.de（三级，Possel
+              运营方）。3 节 × 5 行 = 15 行——三源一致。
+            </p>
+            <p>
+              【★体裁归属已核实更正】本诗**不是十四行诗**。经逐条核对《Gedichte》1834年版的「Sonette」一辑目录（该辑自
+              Nr.1 至 Nr.62 逐首列出），其中并无题为 Tristan 的作品；本诗实收于「Romanzen und Jugendlieder」一辑，编号
+              Nr. 39。原批次说明未就体裁作断言，本页据来源确定为三节五行的定型诗节，非十四行。
+            </p>
+            <p>
+              【韵式逐行数出】各节同型
+              **ababa**，三节一致。逐行末词（第一节）：Augen／anheimgegeben／taugen／beben／Augen。第二节：Liebe／hoffen／Triebe／getroffen／Liebe。第三节：versiechen／entsaugen／riechen／Augen／versiechen。韵式校验通过，无孤字母
+              WARN。
+            </p>
+            <p>
+              【★格律逐音节验算（§0.E）】五音步扬抑格（fünfhebiger Trochäus），全诗15行每行均为 10
+              个音节、一律阴性收尾。已给出两行的音节切分：第1行「Wer-die-Schön-heit-an-ge-schaut-mit-Au-gen」10音节，重音在第1、3、5、7、9音节；第2行「Ist-dem-To-de-schon-an-heim-ge-ge-ben」10音节，重音位置相同。★本页对格律的描述均经逐音节验算，未只贴标签——普拉滕以形式精确著称，此处不能含糊。
+            </p>
+            <p>
+              【环抱结构（附行号）】每节第5行逐字重复本节第1行；第三节第4行重复的则是全诗第1行。命题句 Wer die Schönheit
+              angeschaut mit Augen 共出现 3 次（第1、5、14行）。
+            </p>
+            <p>
+              【关系词的格】第1行 Wer（第一格，从句主语）与第9行
+              Wen（第四格，从句宾语）指同一个人，格由从句内部角色决定。已在语法条中说明，这是 Wer …, der …
+              句式最常出错处。
+            </p>
+            <p>
+              【★普拉滕—海涅论战的措辞】该论战涉及海涅对普拉滕同性恋倾向的攻击，以及普拉滕此前对海涅带有反犹色彩的攻击。本页以中性、克制的措辞如实记录这一史实，不猎奇、不回避；同时明确写出**本站不把作者的私人生活当作解诗依据**。
+            </p>
+            <p>
+              【★待进一步核实】(1)
+              本诗的具体成诗年份（常见说法为1825年，本次未回核到一手出处；所据版本只给出1834年结集）；(2)
+              托马斯·曼《威尼斯之死》与本诗的具体呼应处——常被相提并论，但未回核，页面不作确定性断言；(3)
+              本诗的谱曲情况（未查到可靠著录，页面未列任何作曲家与作品号）；(4)
+              普拉滕—海涅论战中双方文本的具体出处与时间。
+            </p>
+            <p>【公版】普拉滕1835年卒，公版起始年 = 1835 + 71 = 1906。</p>
+            <p>
+              本诗满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik /
+              possel）、D（含一级来源：两卷本著作集，标注卷次与页码）。
+            </p>
+          </div>
+        </details>
+        <details class="section reveal section--wide section--fold">
+          <summary class="section__head">
+            <span class="section__zh">上线前质量 Checklist</span>
+            <span class="section__de">Prüfliste</span>
+            <span class="section__toggle" aria-hidden="true"
+              ><span class="section__toggle-text"></span><span class="section__caret"></span
+            ></span>
+          </summary>
+          <ul class="checklist">
+            <li>确认作者：August von Platen</li>
+            <li>确认出处：Werke Bd.1 Lyrik, München 1982, S.69；Gedichte 1834, Romanzen und Jugendlieder Nr.39</li>
+            <li>★核实本诗不在「Sonette」一辑，非十四行诗</li>
+            <li>核对行数与分节（15 行，3 节 × 5 行）</li>
+            <li>韵式逐行数出：各节同型 ababa</li>
+            <li>★格律经逐音节验算：五音步扬抑格，每行10音节、阴性收尾</li>
+            <li>环抱结构与命题句 3 次出现附行号（第1、5、14行）</li>
+            <li>anheimgeben 可分性判定依据已说明，且与变位表一致</li>
+            <li>Wer/Wen 的格转换说明（本站首次系统说明该句式）</li>
+            <li>★标题《Tristan》不含叙事一事已写明</li>
+            <li>★普拉滕—海涅论战以中性克制措辞记录，且不以私生活解诗</li>
+            <li>★《威尼斯之死》呼应处标注待核，未作确定性断言</li>
+            <li>谱曲情况未查到可靠著录，未列任何作品号</li>
+            <li>与海涅、里尔克两页的「美与死」对照已接线</li>
+            <li>跨页断言经结构化 cross_references 验证</li>
+            <li>公版年份复算：1835 + 71 = 1906</li>
+            <li class="pending">生成 AI 配图</li>
+            <li class="pending">页面视觉检查</li>
+            <li class="pending">回核成诗年份、《威尼斯之死》呼应处与论战文本出处</li>
+            <li class="pending">最终人工复核说明（AI 辅助完成，建议后浪漫派／格律学专业人士复核）</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
+      <p class="site-footer__meta">
+        详见 <a href="../about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch
+      </p>
+    </footer>
+    <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
+      <svg
+        viewBox="0 0 24 24"
+        width="18"
+        height="18"
+        aria-hidden="true"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V6M6 12l6-6 6 6" />
+      </svg>
+    </button>
+    <script>
+      (function () {
+        // 入场显现（尊重 prefers-reduced-motion，由 CSS 兜底关闭）
+        if ("IntersectionObserver" in window) {
+          var io = new IntersectionObserver(
+            function (es) {
+              es.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("is-in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            io.observe(el);
+          });
+        } else {
+          document.querySelectorAll(".reveal").forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        }
+        // 朱批旁注联动：诗行 ↔ 注释互相高亮
+        function highlight(id, on, source) {
+          var escId = window.CSS && CSS.escape ? CSS.escape(id) : id;
+          var sel = '[data-noteref="' + escId + '"]';
+          document.querySelectorAll(sel).forEach(function (p) {
+            if (p !== source) p.classList.toggle("is-linked", on);
+          });
+          if (source) source.classList.toggle("is-self", on);
+        }
+        // 鼠标：悬停诗行或注释
+        document.querySelectorAll(".vline[data-noteref], .lnote[data-noteref]").forEach(function (el) {
+          var id = el.getAttribute("data-noteref");
+          el.addEventListener("mouseenter", function () {
+            highlight(id, true, el);
+          });
+          el.addEventListener("mouseleave", function () {
+            highlight(id, false, el);
+          });
+        });
+        // 键盘：聚焦诗行内的引用标记链接（交互元素），高亮该行与其注释
+        document.querySelectorAll(".refmark a").forEach(function (a) {
+          var vline = a.closest(".vline[data-noteref]");
+          if (!vline) return;
+          var id = vline.getAttribute("data-noteref");
+          a.addEventListener("focus", function () {
+            highlight(id, true, vline);
+          });
+          a.addEventListener("blur", function () {
+            highlight(id, false, vline);
+          });
+        });
+        // 主题切换：日 / 夜，记忆到 localStorage（首次访问跟随系统）
+        var toggle = document.querySelector(".theme-toggle");
+        if (toggle) {
+          var syncToggle = function () {
+            var dark = document.documentElement.getAttribute("data-theme") === "dark";
+            toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+            toggle.setAttribute("aria-label", dark ? "切换到浅色主题" : "切换到深色主题");
+          };
+          syncToggle();
+          toggle.addEventListener("click", function () {
+            var cur = document.documentElement.getAttribute("data-theme") || "light";
+            var next = cur === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            try {
+              localStorage.setItem("theme", next);
+            } catch (e) {}
+            syncToggle();
+          });
+        }
+        // 配图提示词弹窗（原生 <dialog>，主题自适应；ESC / 点遮罩 / ✕ 关闭）
+        var modals = document.querySelectorAll("dialog.modal");
+        modals.forEach(function (modal) {
+          var closeBtn = modal.querySelector(".modal__close");
+          // ✕ 关闭
+          if (closeBtn)
+            closeBtn.addEventListener("click", function () {
+              modal.close();
+            });
+          // 点遮罩（dialog 自身区域）关闭
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.close();
+          });
+          // 关闭后恢复：解锁滚动、焦点归位、刷新 aria
+          modal.addEventListener("close", function () {
+            document.body.classList.remove("modal-open");
+            var t = modal._trigger;
+            if (t) {
+              t.setAttribute("aria-expanded", "false");
+              t.focus();
+              modal._trigger = null;
+            }
+          });
+        });
+        var triggers = document.querySelectorAll(".brief-trigger");
+        triggers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var id = btn.getAttribute("data-modal");
+            var modal = id && document.getElementById(id);
+            if (!modal || typeof modal.showModal !== "function") return;
+            if (modal.open) {
+              modal.close();
+              return;
+            }
+            modal._trigger = btn;
+            btn.setAttribute("aria-expanded", "true");
+            modal.showModal();
+            document.body.classList.add("modal-open");
+            var c = modal.querySelector(".modal__close");
+            if (c) c.focus();
+          });
+        });
+        // 回到顶部按钮：滚动一段距离后才显示
+        var toTop = document.querySelector(".to-top");
+        if (toTop) {
+          var prefersReduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+          var syncToTop = function () {
+            if (window.scrollY > 420) toTop.classList.add("is-visible");
+            else toTop.classList.remove("is-visible");
+          };
+          window.addEventListener("scroll", syncToTop, { passive: true });
+          syncToTop();
+          toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: prefersReduce ? "auto" : "smooth" });
+          });
+        }
+        // 打印时展开全部折叠章节（CSS 无法强制打开 <details>），打印完恢复原状
+        var folds = document.querySelectorAll("details.section--fold");
+        var reopened = [];
+        window.addEventListener("beforeprint", function () {
+          reopened = [];
+          folds.forEach(function (d) {
+            if (!d.open) {
+              d.open = true;
+              reopened.push(d);
+            }
+          });
+        });
+        window.addEventListener("afterprint", function () {
+          reopened.forEach(function (d) {
+            d.open = false;
+          });
+          reopened = [];
+        });
+      })();
+    </script>
+  </body>
+</html>
