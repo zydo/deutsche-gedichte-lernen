@@ -516,6 +516,14 @@ main {
   color: var(--korrektur);
 }
 
+.tag--a,
+.tag--b,
+.tag--c {
+  width: 5.4em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .tag--density {
   border-color: var(--rule);
   color: var(--ink-4);

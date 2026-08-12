@@ -128,6 +128,14 @@ function difficultyTagClass(difficulty) {
   return "tag--c";
 }
 
+const DIFFICULTY_ORDER = Object.freeze(["A1", "A1–A2", "A2", "A2–B1", "B1", "B1–B2", "B2", "B2–C1", "C1"]);
+
+function difficultyRank(difficulty) {
+  const normalized = String(difficulty || "").replaceAll("-", "–");
+  const rank = DIFFICULTY_ORDER.indexOf(normalized);
+  return rank === -1 ? Number.POSITIVE_INFINITY : rank;
+}
+
 // ---- 页面骨架 ----
 
 const SITE_SCRIPT = `<script>
@@ -305,7 +313,7 @@ ${SITE_SCRIPT}
 </html>`;
 }
 
-// ---- 首页（诗集目录 Inhalt） ----
+// ---- 首页（诗集目录 Inhalt）与详情页共享元信息 ----
 
 function extractTimelineYear(value) {
   const match = String(value || "").match(/(?:^|\D)(1[0-9]{3}|20[0-9]{2})(?:\D|$)/);
@@ -361,7 +369,8 @@ function renderIndex(poems) {
 
   const groupHtml = groups
     .map((g) => {
-      const rows = g.items
+      const rows = [...g.items]
+        .sort((a, b) => difficultyRank(a.difficulty) - difficultyRank(b.difficulty) || Number(a.id) - Number(b.id))
         .map((p) => {
           const periodShort = (p.period || "").split("（", 1)[0].trim();
           return `        <a class="toc-row" href="poems/${p.slug}.html">
@@ -370,7 +379,6 @@ function renderIndex(poems) {
           <span class="toc-meta">
             <span class="toc-period">${esc(periodShort)}</span>
             ${tag(p.difficulty, difficultyTagClass(p.difficulty))}
-            ${annotationDensityTag(p)}
           </span>
         </a>`;
         })
@@ -751,6 +759,7 @@ ${poemNav}
       </div>
       <div class="poem-titleblock__meta">
         ${tag(p.difficulty, difficultyTagClass(p.difficulty))}
+        ${annotationDensityTag(p)}
         ${(p.tags || []).map((t) => tag(t)).join("\n        ")}
       </div>
       ${renderImageSlot(p.image_prompt, p.image_path, "../")}
