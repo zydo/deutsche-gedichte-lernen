@@ -398,7 +398,7 @@ function renderLayout({ title, description = "", bodyHtml, active = "", root: ro
   </main>
   <footer class="site-footer">
     <p>本站为非商业性德语学习资料。德文原诗均标注出处；译文除注明出处外均为本站学习译文（AI 辅助）。</p>
-    <p class="site-footer__meta">详见 <a href="${root}about.html">关于本站 / 校对说明</a> 与项目 README　·　Ein Lernbuch</p>
+    <p class="site-footer__meta">详见 <a href="${root}about.html">关于本站 / 校对说明</a> 与<a href="https://github.com/zydo/deutsche-gedichte-lernen/blob/main/README.md" target="_blank" rel="noopener noreferrer">项目 README</a></p>
   </footer>
   <button class="to-top" type="button" aria-label="回到顶部" title="回到顶部">
     <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
@@ -493,11 +493,11 @@ ${rows}
     <header class="masthead reveal">
       <h1 class="masthead__title">Deutsche<span class="masthead__amp"> · </span>Gedichte</h1>
       <p class="masthead__zh">德　语　诗　歌　学　习　画　册</p>
+      <p class="masthead__lede">德文原诗 · 学习译文 · 逐行注释 · 词汇与变位 · 语法与文化背景</p>
       <figure class="epigraph">
         <p class="epigraph__text">Über allen Gipfeln<br>Ist Ruh’,</p>
         <figcaption class="epigraph__attr">Goethe · Wandrers Nachtlied</figcaption>
       </figure>
-      <p class="masthead__lede">德文原诗 · 学习译文 · 逐行注释 · 词汇与变位 · 语法与文化背景</p>
     </header>
 
     <section class="anthology" aria-label="诗歌目录">

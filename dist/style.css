@@ -344,7 +344,7 @@ main {
   font-size: 0.98rem;
   line-height: 1.95;
   max-width: 34rem;
-  margin: 0 auto;
+  margin: 1.6rem auto 0;
 }
 
 .masthead__count {
@@ -522,8 +522,8 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 6.4em;
-  flex: 0 0 6.4em;
+  width: calc(5ch + 1.6em + 2px);
+  flex: 0 0 calc(5ch + 1.6em + 2px);
   box-sizing: border-box;
 }
 
