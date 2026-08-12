@@ -519,9 +519,12 @@ main {
 .tag--a,
 .tag--b,
 .tag--c {
-  width: 5.4em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.4em;
+  flex: 0 0 6.4em;
   box-sizing: border-box;
-  text-align: center;
 }
 
 .tag--density {
