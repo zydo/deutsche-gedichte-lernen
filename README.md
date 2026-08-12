@@ -6,15 +6,16 @@
 
 视觉风格：纸张质感米白背景 + 优雅衬线字体（德文用 Cormorant/EB Garamond，中文用 Noto Serif SC）+ 暗金/灰蓝点缀，目标是"打开一本文学画册，旁边有位德语老师做精炼注释"的阅读体验。
 
-> **当前状态：共 50 首诗，分五批录入。**
+> **当前状态：共 58 首诗，分六批录入。**
 >
 > - **第一批（11 首）**：Goethe ×3、Heine ×3、Eichendorff、Mörike、Hölderlin、Rilke ×2 — 已配图。
-> - **第二批（9 首）**：Goethe ×2（_Wandrers Nachtlied I_、_Mignon_）、Heine（_Der Tod, das ist die kühle Nacht_）、Rilke（_Archaïscher Torso Apollos_）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 已配图。
+> - **第二批（9 首）**：Goethe ×2（_Wandrers Nachtlied I_、_Mignon_）、Heine（_Der Tod, das is die kühle Nacht_）、Rilke（_Archaïscher Torso Apollos_）、Schiller、Novalis、Droste-Hülshoff、Trakl、Claudius — 已配图。
 > - **第三批（9 首）**：Brentano、Uhland、Lenau、Hebbel、Storm、C. F. Meyer、Fontane、Hofmannsthal、Morgenstern — 已配图。
 > - **第四批（4 首）**：Gryphius ×2、Fleming、van Hoddis — 已配图。
-> - **第五批（17 首，编号 34–50，正文已录入，配图待生成）**：补三个硬缺口——时间轴断层（Walther《Under der linden》约1200、表现主义至1915）、流派与形式（狂飙突进纲领诗 _Prometheus_、民歌 _Die Gedanken sind frei_、政治诗 _Nachtgedanken_、长行诗 _Fahrt über die Kölner Rheinbrücke_、Wortkunst _Patrouille_、亚历山大体十四行 _Vergänglichkeit der Schönheit_、格言对句 _Cherubinischer Wandersmann_）、作者结构（第二位女性作者 Lasker-Schüler、首部匿名民歌）。新增目录作者组按文学时间线排序，Walther 居首。
+> - **第五批（17 首，编号 34–50）**：补三个硬缺口——时间轴断层（Walther《Under der linden》约1200、表现主义至1915）、流派与形式（狂飙突进纲领诗 _Prometheus_、民歌 _Die Gedanken sind frei_、政治诗 _Nachtgedanken_、长行诗 _Fahrt über die Kölner Rheinbrücke_、Wortkunst _Patrouille_、亚历山大体十四行 _Vergänglichkeit der Schönheit_、格言对句 _Cherubinischer Wandersmann_）、作者结构（第二位女性作者 Lasker-Schüler、首部匿名民歌）。正文已录入，配图已补齐（第五批的 17 张配图于 2026 年 8 月生成入库）。
+> - **第六批（8 首，编号 55–62）**：补三处结构性缺口——女性作者（Günderrode《Der Kuß im Traume》、Huch《Wo hast du all die Schönheit hergenommen》、Lasker-Schüler《Weltende》，女性作者由 2 位增至 4 位）、1650–1770 的 120 年空白（Gellert《Die Ehre Gottes aus der Natur》、Bürger《Lenore》节选）、体裁与形式（恐怖谣曲 _Lenore_、Klopstock 无韵颂歌 _Das Rosenband_、诗论诗 _Tristan_、表现主义 _Die Dämmerung_）。本批含一首与编号 33 同名不同作者的诗（Lasker-Schüler《Weltende》vs van Hoddis《Weltende》），已作双向消歧；配图待生成。
 >
-> 收录诗人现共 30 位具名作者 + 1 个匿名民歌组（共 31 个目录组），其中 2 位女性作者（Droste-Hülshoff、Lasker-Schüler），时间跨度自约 1200 年的 Walther 至 1915 年的 Stramm。
+> 收录诗人现共 37 位具名作者 + 1 个匿名民歌组（共 38 个目录组），其中 **4 位女性作者**（Droste-Hülshoff、Lasker-Schüler、Günderrode、Huch），时间跨度自约 1200 年的 Walther 至 1911 年的 Lichtenstein。
 >
 > ★ **编辑工作规范**：从候选诗到可发布页面的端到端流程（选诗、来源矩阵、正文锁定、逐行审计、形式自验、跨页接线、构建门槛）见新增的 **[EDITORIAL_WORKFLOW.md](EDITORIAL_WORKFLOW.md)**。第五批起的新增诗（编号 ≥34）采用更严格的来源规则：至少 3 个独立运营方 + 至少 1 个一级来源（每条来源显式标 tier，一级来源写纸本版次/页码），由 `npm run check` 机器校验。
 >
@@ -265,8 +266,9 @@ npm run build                 # 由存档生成 dist/snapshots/*.html
 
 ## 已知局限 / 后续工作
 
-- 当前共 **50 首、30 位具名诗人 + 1 个匿名民歌组**：Goethe ×7、Heine ×5、Rilke ×3，Eichendorff／Schiller／Storm／C. F. Meyer／Fontane／Morgenstern／Gryphius 各 ×2，其余 21 位各 1 首。
-- **第四批遗留清单：已由第五批基本结清**。第四批原计划巴洛克 ×6 + 表现主义 ×6，当时只完成 Gryphius ×2、Fleming、van Hoddis 共 4 首；第五批（编号 34–50）补入了当时清单上的 6 首——巴洛克：Hoffmannswaldau《Vergänglichkeit der Schönheit》（42）、Angelus Silesius《Cherubinischer Wandersmann》选段（43）；表现主义：Heym《Der Gott der Stadt》（37）、Stadler《Fahrt über die Kölner Rheinbrücke bei Nacht》（44）、Lasker-Schüler《Ein alter Tibetteppich》（38）、Stramm《Patrouille》（45）。**真正尚未收录的候选只剩 2 首**：Opitz《Ach Liebste, laß uns eilen》（巴洛克）与 Lichtenstein《Die Dämmerung》（表现主义），二者均已公版。
+- 当前共 **58 首、37 位具名诗人 + 1 个匿名民歌组**：Goethe ×7、Heine ×5、Rilke ×3，Eichendorff／Schiller／Storm／C. F. Meyer／Fontane／Morgenstern／Gryphius 各 ×2，Lasker-Schüler ×2，其余 28 位各 1 首。
+- **遗留清单结清情况**：第四批原计划巴洛克 ×6 + 表现主义 ×6，第五批（编号 34–50）补入其中 6 首；第六批（编号 55–62）又补入 Lichtenstein《Die Dämmerung》。**目前唯一仍未收录的历史候选只剩 1 首**：Opitz《Ach Liebste, laß uns eilen》（巴洛克，已公版）。其余历史候选均已录入。
+- **★ 配图状态（第六批后）**：前 50 首已全部配图（编号 01–50，`public/images/` 各一张 4:3 横版）；第六批 8 首（编号 55–62）正文已录入、配图待生成。配图优先于继续扩容，详见下方「语料方针」。
 - **未到公版日的作者**：Gottfried Benn 与 Bertolt Brecht 均逝于 1956 年，公版起始年为 2027 年。本站已在 `data/poems/pending/` 预置 4 条元数据骨架（`published: false`、`german_text` 为空），正文须待公版日后按 [SOURCES.md](SOURCES.md) 的来源规则抓取录入；`npm run check` 会强制校验：release_date 之前写入德文正文即报 ERROR。
 - **★ 来源独立性问题与全站审计（最重要的一项）**：`gedichte7.de` 与 `zgedichte.de` 由同一运营方维护（页面 metadata 中 `meta-author` / `meta-copyright` 均为 Heiko Possel），**不可互相充当"两个独立来源"**。发现后已做三件事：
   1. 制定强制性的 **[SOURCES.md](SOURCES.md)**（运营方分组表、来源三级分级、规则 A–E、新增诗歌的来源工作流）；
@@ -296,3 +298,10 @@ npm run build                 # 由存档生成 dist/snapshots/*.html
   - Fontane《Herr von Ribbeck》含约六行**低地德语（Plattdeutsch）**对白，词汇表中附有标准德语对照小词表；建议由低地德语使用者复核一次。
   - Morgenstern《Der Werwolf》的全部笑点建立在德语疑问代词 `wer` 的四格变化上，**在字面意义上不可译**。本站采取"直译叙事 + 括注构词机制"的策略，已在该诗"译文说明"中明确交代取舍。
 - 全部内容均由 AI 辅助完成一次系统性校对与撰写，但**尚未经过人工德语文学专家的最终复核**，这一点已在每首诗的 checklist 中如实标注（"最终人工复核说明"一项为未完成状态）。如果你是德语文学或语言学背景的读者，非常欢迎对照来源检查并指出错误。
+
+## 语料方针（第六批后）
+
+第六批之后，站上已无「一眼可见的结构性空白」。以下两条方针约束后续扩容：
+
+- **★ 配图优先于扩容**：一首有图的诗对学习者的价值，高于一首没图的诗。第五批 17 首 + 第六批 8 首共 25 首中，目前仍有 8 首（第六批）待配图。本站之后**语料扩容应让位于既有条目的深化**（配图、待核项落地、人工复核），直到待配图数量降到个位数为止。
+- **★ 选诗必须有不可替代的理由**：后续新增诗歌须在候选记录中回答「它补的是什么」。可接受的理由限于三类：(1) 补上某个语言现象在站内的唯一样本；(2) 与既有页面构成不可替代的对照组；(3) 落实某条已写在站内、却指向站外的断言（如第六批的 _Das Rosenband_ 落实《普罗米修斯》页「Klopstock 开创自由韵律」一说）。**不再按流派清单或 CEFR 分布补诗**——「这位诗人还没收」或「这个流派可以再多一首」不构成充分理由。
