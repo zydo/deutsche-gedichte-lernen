@@ -318,7 +318,7 @@
     {
       "title": "自由韵律（freie Rhythmen）：无韵、无固定音步，仍是诗",
       "quote": "全诗 7 节，行数 11/9/7/9/9/5/7（共 57 行），无尾韵、无固定音步",
-      "body": "本诗没有韵式——这不是缺失，而是它的纲领。Klopstock 开创、狂飙突进承接的\"自由韵律\"靠句法平行（Wer half …? Wer rettete …? / Hast du …? Hast du …?）、祈使句堆叠（Bedecke … Und übe …）与换行位置制造节奏，而非靠韵脚与音步。挣脱格律与挣脱宙斯是同一个动作：形式本身就是内容。与本站《罗马的喷泉》（把音节数用到极致）构成两极对照——一个把格律推到极限，一个把格律整个扔掉。"
+      "body": "本诗没有韵式——这不是缺失，而是它的纲领。Klopstock 开创、狂飙突进承接的\"自由韵律\"——德语诗摆脱尾韵分两步：第一步由 Klopstock 完成（去韵，但诗节形态与音节数仍固定，本站《玫瑰带》编号60 即其样本）；第二步才是本诗这类真正的自由韵律，连固定的行长与音步也一并拿掉，靠句法平行（Wer half …? Wer rettete …? / Hast du …? Hast du …?）、祈使句堆叠（Bedecke … Und übe …）与换行位置制造节奏，而非靠韵脚与音步。本页与本站《玫瑰带》（编号60）可对照：同一谱系的两个台阶，一首无韵而格律严整，一首无韵亦无固定音步。挣脱格律与挣脱宙斯是同一个动作：形式本身就是内容。与本站《罗马的喷泉》（把音节数用到极致）构成两极对照——一个把格律推到极限，一个把格律整个扔掉。"
     },
     {
       "title": "祈使句与第二人称 du 的语域",
@@ -372,6 +372,7 @@
     }
   ],
   "cross_references": [
+    {"target_slug": "das-rosenband", "needle": "自由韵律", "context": "《玫瑰带》"},
     {"target_slug": "abendlied", "needle": "前置第二格", "context": "《晚歌》"},
     {"target_slug": "archaischer-torso-apollos", "needle": "前置第二格", "context": "《古风的阿波罗躯干残像》"},
     {"target_slug": "das-maedchen-aus-der-fremde", "needle": "前置第二格", "context": "《来自异乡的少女》"},
