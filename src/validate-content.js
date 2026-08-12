@@ -230,9 +230,11 @@ function lintLineParity(poem) {
   return errors;
 }
 
+// 编号 34 起的新诗一律要求可复算的 public_domain 字段（批次 4 起的新版规则，
+// 与 validate-sources.js 的 usesV2 门槛一致）。上界随批次扩容而取消。
 function lintPublicDomain(poem) {
   const numericId = Number(poem.id);
-  if (!Number.isFinite(numericId) || numericId < 34 || numericId > 50) return [];
+  if (!Number.isFinite(numericId) || numericId < 34) return [];
   const info = poem.public_domain;
   if (!info) return [{ code: "public-domain", poem: poem.slug, message: "新诗缺少 public_domain 复算字段" }];
   if (Number.isInteger(info.death_year) && info.public_domain_year !== info.death_year + 71) {
@@ -586,12 +588,29 @@ function validateContent({ published, pending }, options = {}) {
     else byId.set(String(poem.id), poem);
   }
 
-  const numericIds = poems
+  // pending 骨架（如 51–54 的 2027 年预置条目）占着自己的编号：它们不出现在目录里，
+  // 但编号已被预留，因此连续性按「已发布 + pending」一起算，且不得被新诗顶掉。
+  const pendingPoems = pending.map(({ poem }) => poem);
+  const reservedIds = new Map(
+    pendingPoems.filter((poem) => poem.id !== undefined).map((poem) => [String(poem.id), poem]),
+  );
+  for (const poem of poems) {
+    const reserved = reservedIds.get(String(poem.id));
+    if (reserved) {
+      errors.push({
+        code: "id-reserved",
+        poem: poem.slug,
+        message: `编号 ${poem.id} 已被 pending 条目 ${reserved.slug || "?"} 预留，不得复用`,
+      });
+    }
+  }
+
+  const numericIds = [...poems, ...pendingPoems]
     .map((poem) => Number(poem.id))
     .filter(Number.isFinite)
     .sort((a, b) => a - b);
   numericIds.forEach((id, index) => {
-    if (index && id !== numericIds[index - 1] + 1) {
+    if (index && id !== numericIds[index - 1] && id !== numericIds[index - 1] + 1) {
       errors.push({ code: "id-gap", poem: String(id), message: `编号不连续：${numericIds[index - 1]} 后为 ${id}` });
     }
   });
