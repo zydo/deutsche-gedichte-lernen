@@ -73,10 +73,10 @@
      "note": "诗中末行。18世纪德语诗中常作「至福之境」的代称。席勒《欢乐颂》中的 Tochter aus Elysium（来自极乐净土的女儿）是同一用法。"}
   ],
   "verb_forms": [
-    {"verb": "binden", "type": "强变化（i–a–u）", "forms": "bindet / band / hat gebunden", "note": "诗中第2行作过去式 band。与 finden（第1行 fand）同一变化类：i–a–u。本站已在多页标注这一强变化组，本页与之保持一致。"},
-    {"verb": "finden", "type": "强变化（i–a–u）", "forms": "findet / fand / hat gefunden", "note": "诗中第1行作过去式 fand。与 binden 同类，两个词在同一节的头两行相邻出现，正好对照记忆。"},
-    {"verb": "hängen", "type": "不及物强变化（ä–i–a）／及物弱变化", "forms": "不及物 hängt – hing – hat gehangen；及物 hängt – hängte – hat gehängt", "note": "★一词两套变化，靠及物与否区分：Das Bild hing an der Wand（画挂在墙上，不及物、强变化）vs Ich hängte das Bild an die Wand（我把画挂到墙上，及物、弱变化）。诗中第4、10行 hing 为不及物强变化形。"},
-    {"verb": "werden", "type": "不规则；旧式过去式 ward", "forms": "wird / wurde（旧：ward） / ist geworden", "note": "诗中末行作旧式过去式 ward（ward's = ward es）。ward 是 wurde 的古形，18—19世纪诗中常见，今日已废弃，★不建议套用。"}
+    {"infinitive": "binden", "present_3sg": "bindet", "preterite": "band", "perfect": "hat gebunden", "participle_ii": "gebunden", "subjunctive_ii": "bände", "auxiliary": "haben", "note": "强变化（i–a–u）。诗中第2行作过去式 band。与 finden（第1行 fand）同一变化类：i–a–u。本站已在多页标注这一强变化组，本页与之保持一致。"},
+    {"infinitive": "finden", "present_3sg": "findet", "preterite": "fand", "perfect": "hat gefunden", "participle_ii": "gefunden", "subjunctive_ii": "fände", "auxiliary": "haben", "note": "强变化（i–a–u）。诗中第1行作过去式 fand。与 binden 同类，两个词在同一节的头两行相邻出现，正好对照记忆。"},
+    {"infinitive": "hängen", "present_3sg": "hängt", "preterite": "hing（不及物） / hängte（及物）", "perfect": "hat gehangen（不及物） / hat gehängt（及物）", "participle_ii": "gehangen（不及物） / gehängt（及物）", "subjunctive_ii": "hinge（不及物） / hängte（及物）", "auxiliary": "haben", "note": "不及物强变化（ä–i–a）／及物弱变化。★一词两套变化，靠及物与否区分：Das Bild hing an der Wand（画挂在墙上，不及物、强变化）vs Ich hängte das Bild an die Wand（我把画挂到墙上，及物、弱变化）。诗中第4、10行 hing 为不及物强变化形。"},
+    {"infinitive": "werden", "present_3sg": "wird", "preterite": "wurde（旧：ward）", "perfect": "ist geworden", "participle_ii": "geworden", "subjunctive_ii": "würde", "auxiliary": "sein", "note": "不规则；旧式过去式 ward。诗中末行作旧式过去式 ward（ward's = ward es）。ward 是 wurde 的古形，18—19世纪诗中常见，今日已废弃，★不建议套用。"}
   ],
   "grammar_notes": [
     {"title": "★本诗没有韵式 —— 无韵（reimlos）而非无格律",

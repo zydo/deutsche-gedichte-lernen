@@ -5,7 +5,13 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage } from "./templates.js";
+import {
+  renderIndex,
+  renderPoemPage,
+  renderAbout,
+  renderSnapshotPage,
+  warnMissingTemplateFields,
+} from "./templates.js";
 import { loadPoemRecords } from "./poem-data.js";
 import { formatContentErrors, validateContent } from "./validate-content.js";
 
@@ -97,6 +103,7 @@ function build() {
   const poems = records.poems;
   console.log(`读取到 ${poems.length} 首已发布诗歌数据、${records.pending.length} 个 pending 条目。`);
 
+  for (const poem of poems) warnMissingTemplateFields(poem);
   const contentErrors = validateContent(records);
   if (contentErrors.length) {
     throw new Error(`内容 lint 失败：\n${formatContentErrors(contentErrors)}`);

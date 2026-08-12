@@ -103,11 +103,11 @@
      "note": "诗中第22行。宗教语域核心词：der Heiland（救主）、heilig（神圣的）、heilen（治愈）同源。注意与 heil（完好无损的，形容词）区分。"}
   ],
   "verb_forms": [
-    {"verb": "vernehmen", "type": "强变化（e–a–o），不可分前缀", "forms": "vernimmt / vernahm / hat vernommen；命令式 vernimm!", "note": "诗中第4、9行作命令式。前缀 ver- 不可分，第二分词不加 ge-：vernommen。与 nehmen（nimm!）同一变化模式。"},
-    {"verb": "geben", "type": "强变化（e–a–e）", "forms": "gibt / gab / hat gegeben；命令式 gib!", "note": "诗中第15行作命令式 gib。★1757年初版作旧拼法 gieb，本站所据的1979年全集本作 gib，差异已在校对记录中著录。"},
-    {"verb": "preisen", "type": "强变化（ei–ie–ie）", "forms": "preist / pries / hat gepriesen", "note": "诗中第3行作现在时复数 preisen（赞美）。与 bleiben（blieb/geblieben）、scheinen（schien/geschienen）同属 ei–ie–ie 一类——本站已在多页标注过这一强变化组，本页与之保持一致。注意同形的 der Preis（价格、奖）与动词 preisen 语义已分家。"},
-    {"verb": "fortpflanzen", "type": "可分（fort-），弱变化", "forms": "pflanzt fort / pflanzte fort / hat fortgepflanzt", "note": "诗中第2行 pflanzt seinen Namen fort——可分前缀甩到句末。反身用法 sich fortpflanzen（繁殖）是今日更常见的义项。"},
-    {"verb": "teilnehmen", "type": "可分（teil-），强变化（e–a–o）", "forms": "nimmt teil / nahm teil / hat teilgenommen；命令式 nimm … teil!", "note": "诗中第24行作命令式，前缀落在句末。支配 an + 第三格：an etwas teilnehmen。"}
+    {"infinitive": "vernehmen", "present_3sg": "vernimmt", "preterite": "vernahm", "perfect": "hat vernommen", "participle_ii": "vernommen", "subjunctive_ii": "vernähme", "auxiliary": "haben", "note": "强变化（e–a–o），不可分前缀。命令式 vernimm!。诗中第4、9行作命令式。前缀 ver- 不可分，第二分词不加 ge-：vernommen。与 nehmen（nimm!）同一变化模式。"},
+    {"infinitive": "geben", "present_3sg": "gibt", "preterite": "gab", "perfect": "hat gegeben", "participle_ii": "gegeben", "subjunctive_ii": "gäbe", "auxiliary": "haben", "note": "强变化（e–a–e）。命令式 gib!。诗中第15行作命令式 gib。★1757年初版作旧拼法 gieb，本站所据的1979年全集本作 gib，差异已在校对记录中著录。"},
+    {"infinitive": "preisen", "present_3sg": "preist", "preterite": "pries", "perfect": "hat gepriesen", "participle_ii": "gepriesen", "subjunctive_ii": "priese", "auxiliary": "haben", "note": "强变化（ei–ie–ie）。诗中第3行作现在时复数 preisen（赞美）。与 bleiben（blieb/geblieben）、scheinen（schien/geschienen）同属 ei–ie–ie 一类——本站已在多页标注过这一强变化组，本页与之保持一致。注意同形的 der Preis（价格、奖）与动词 preisen 语义已分家。"},
+    {"infinitive": "fortpflanzen", "present_3sg": "pflanzt fort", "preterite": "pflanzte fort", "perfect": "hat fortgepflanzt", "participle_ii": "fortgepflanzt", "subjunctive_ii": "pflanzte fort", "auxiliary": "haben", "note": "可分（fort-），弱变化。诗中第2行 pflanzt seinen Namen fort——可分前缀甩到句末。反身用法 sich fortpflanzen（繁殖）是今日更常见的义项。"},
+    {"infinitive": "teilnehmen", "present_3sg": "nimmt teil", "preterite": "nahm teil", "perfect": "hat teilgenommen", "participle_ii": "teilgenommen", "subjunctive_ii": "nähme teil", "auxiliary": "haben", "note": "可分（teil-），强变化（e–a–o）。命令式 nimm … teil!。诗中第24行作命令式，前缀落在句末。支配 an + 第三格：an etwas teilnehmen。"}
   ],
   "grammar_notes": [
     {"title": "启蒙时期的句法：对称、完整、可一眼看穿 —— 与巴洛克的具体对照",

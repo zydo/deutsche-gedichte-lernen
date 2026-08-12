@@ -7,6 +7,8 @@
 //   色彩：旧纸 + 铁胆墨蓝(正文) + 档案蓝(链接) + 教师朱批红(注释标记/待办)
 // ==========================================================================
 
+import { ARRAY_ITEM_SCHEMAS } from "./validate-content.js";
+
 const FONT_LINK = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">`;
@@ -19,6 +21,29 @@ function esc(str) {
 // 允许受控的内联标记直接透传
 function raw(str) {
   return str === undefined || str === null ? "" : String(str);
+}
+
+function hasTemplateValue(item, field) {
+  if (!Object.hasOwn(item, field) || item[field] === null || item[field] === undefined) return false;
+  return typeof item[field] !== "string" || item[field].trim().length > 0;
+}
+
+// 内容 lint 会中断正式构建；模板仍独立预警，保证直接调用模板或调整构建
+// 顺序时，缺字段不会再次被空白或破折号掩盖。
+function warnMissingTemplateFields(poem) {
+  for (const [arrayName, schema] of Object.entries(ARRAY_ITEM_SCHEMAS)) {
+    const items = poem?.[arrayName];
+    if (!Array.isArray(items) || items.length === 0) continue;
+    items.forEach((item, index) => {
+      if (!item || typeof item !== "object" || Array.isArray(item)) return;
+      const missing = schema.required.filter((field) => !hasTemplateValue(item, field));
+      if (missing.length) {
+        console.warn(
+          `⚠️  [template-schema] [${poem.slug || "?"}] ${arrayName}[${index}] 缺少必填字段: ${missing.join(", ")}`,
+        );
+      }
+    });
+  }
 }
 
 // 印刷花纹（标题页装饰，朱批红）
@@ -383,7 +408,7 @@ ${groupHtml}
 function renderVocabCard(v) {
   return `      <div class="vocab-card">
         <div class="vocab-card__head"><span class="vocab-card__term">${esc(v.term)}</span></div>
-        <span class="vocab-card__pos">${esc(v.pos || "")}</span>
+        <span class="vocab-card__pos">${esc(v.pos)}</span>
         <div class="vocab-card__meaning">${esc(v.meaning)}</div>
         ${v.note ? `<div class="vocab-card__note">${esc(v.note)}</div>` : ""}
       </div>`;
@@ -401,12 +426,12 @@ function renderVerbTable(verbs) {
       }
       return `        <tr>
           <td class="de">${esc(v.infinitive)}</td>
-          <td class="de">${esc(v.present_3sg || "—")}</td>
-          <td class="de">${esc(v.preterite || "—")}</td>
-          <td class="de">${esc(v.perfect || "—")}</td>
-          <td class="de">${esc(v.participle_ii || "—")}</td>
-          <td class="de">${esc(v.subjunctive_ii || "—")}</td>
-          <td>${esc(v.auxiliary || "—")}</td>
+          <td class="de">${esc(v.present_3sg)}</td>
+          <td class="de">${esc(v.preterite)}</td>
+          <td class="de">${esc(v.perfect)}</td>
+          <td class="de">${esc(v.participle_ii)}</td>
+          <td class="de">${esc(v.subjunctive_ii)}</td>
+          <td>${esc(v.auxiliary)}</td>
         </tr>
 ${noteRow}`;
     })
@@ -691,6 +716,7 @@ function renderSections(secs) {
 // ---- 诗歌详情页 ----
 
 function renderPoemPage(p, prev, next, snapshots = {}) {
+  warnMissingTemplateFields(p);
   const findNote = makeNoteFinder(p.line_notes);
 
   // 上一首 / 下一首导航（仅显示中文译名；首/末首对应一侧隐藏）
@@ -892,4 +918,4 @@ ${renderSections(secs)}
   });
 }
 
-export { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage, htmlToText, esc };
+export { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage, htmlToText, esc, warnMissingTemplateFields };

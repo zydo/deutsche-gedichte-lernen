@@ -77,10 +77,10 @@
      "note": "die Quelle（阴性）的雅体变体，多用于诗。诗中第11、15行 wie ein Quell versiechen。versiegen / versiechen（干涸）与之搭配。"}
   ],
   "verb_forms": [
-    {"verb": "anheimgeben", "type": "可分（anheim-），强变化（e–a–e）", "forms": "gibt anheim / gab anheim / hat anheimgegeben", "note": "★可分性的判定依据：第二分词作 anheim-ge-geben（ge- 夹在前缀与词干之间），这正是可分动词的标记；不可分动词的第二分词不加 ge-（对比 übergeben → übergeben）。支配第三格。诗中第2行为被动的第二分词形式。"},
-    {"verb": "anschauen", "type": "可分（an-），弱变化", "forms": "schaut an / schaute an / hat angeschaut", "note": "诗中第1、5、14行作第二分词 angeschaut（助动词 hat 被省略）。同义的 ansehen 为强变化（sieht an / sah an / hat angesehen）——两词并存，anschauen 略偏南德与雅体。"},
-    {"verb": "treffen", "type": "强变化（e–a–o）", "forms": "trifft / traf / hat getroffen", "note": "诗中第9行作第二分词 getroffen（助动词省略）。现在时单数第二、三人称换音 e→i。本诗取「击中」义（der Pfeil trifft 箭射中）；日常更常见的是「遇见」义（jemanden treffen）。"},
-    {"verb": "mögen", "type": "情态动词；第二虚拟式 möchte", "forms": "mag / mochte / hat gemocht；Konj. II: möchte", "note": "诗中第11、15行作 möchte，表委婉的愿望。★注意 möchte 不是 mögen 的过去式（过去式是 mochte，无变元音）——möchte 是第二虚拟式，今日已基本独立为一个表「想要」的常用形式。"}
+    {"infinitive": "anheimgeben", "present_3sg": "gibt anheim", "preterite": "gab anheim", "perfect": "hat anheimgegeben", "participle_ii": "anheimgegeben", "subjunctive_ii": "gäbe anheim", "auxiliary": "haben", "note": "可分（anheim-），强变化（e–a–e）。★可分性的判定依据：第二分词作 anheim-ge-geben（ge- 夹在前缀与词干之间），这正是可分动词的标记；不可分动词的第二分词不加 ge-（对比 übergeben → übergeben）。支配第三格。诗中第2行为被动的第二分词形式。"},
+    {"infinitive": "anschauen", "present_3sg": "schaut an", "preterite": "schaute an", "perfect": "hat angeschaut", "participle_ii": "angeschaut", "subjunctive_ii": "schaute an", "auxiliary": "haben", "note": "可分（an-），弱变化。诗中第1、5、14行作第二分词 angeschaut（助动词 hat 被省略）。同义的 ansehen 为强变化（sieht an / sah an / hat angesehen）——两词并存，anschauen 略偏南德与雅体。"},
+    {"infinitive": "treffen", "present_3sg": "trifft", "preterite": "traf", "perfect": "hat getroffen", "participle_ii": "getroffen", "subjunctive_ii": "träfe", "auxiliary": "haben", "note": "强变化（e–a–o）。诗中第9行作第二分词 getroffen（助动词省略）。现在时单数第二、三人称换音 e→i。本诗取「击中」义（der Pfeil trifft 箭射中）；日常更常见的是「遇见」义（jemanden treffen）。"},
+    {"infinitive": "mögen", "present_3sg": "mag", "preterite": "mochte", "perfect": "hat gemocht", "participle_ii": "gemocht", "subjunctive_ii": "möchte", "auxiliary": "haben", "note": "情态动词；第二虚拟式 möchte。诗中第11、15行作 möchte，表委婉的愿望。★注意 möchte 不是 mögen 的过去式（过去式是 mochte，无变元音）——möchte 是第二虚拟式，今日已基本独立为一个表「想要」的常用形式。"}
   ],
   "grammar_notes": [
     {"title": "Wer …, der … 相关句式与格的转换 —— 教材覆盖不足的一个高频结构",

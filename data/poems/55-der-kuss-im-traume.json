@@ -78,9 +78,9 @@
      "note": "★假朋友风险：诗中 eitles Prangen（第10行）取古义「虚浮的炫耀」。本站《一切皆虚空》（编号30）标题中的 eitel 也是这一古义（「全是虚空」），可对照。今日日常义则是「虚荣的」。"}
   ],
   "verb_forms": [
-    {"verb": "bergen", "type": "强变化（e–a–o，命令式换音 birg）", "forms": "ich berge – du birgst – er birgt / barg / hat geborgen；命令式 birg!", "note": "诗中第12行作命令式 birg dich。与 helfen（hilf!）、nehmen（nimm!）同属命令式 e→i 换音的一类。"},
-    {"verb": "saugen", "type": "强/弱两可", "forms": "saugt / sog（或 saugte） / hat gesogen（或 gesaugt）", "note": "诗中第4行作现在时 saugt。强变化 sog/gesogen 属较雅的用法；技术语境（吸尘）多用弱变化 saugte/gesaugt。两套并存，本页不判优劣。"},
-    {"verb": "verzehren", "type": "弱变化", "forms": "verzehrt / verzehrte / hat verzehrt", "note": "诗中第11行 mich verzehren … Gluthen（炽热把我烧尽）。日常义另有「吃掉、消费」（Speisen verzehren）。"}
+    {"infinitive": "bergen", "present_3sg": "birgt", "preterite": "barg", "perfect": "hat geborgen", "participle_ii": "geborgen", "subjunctive_ii": "bärge", "auxiliary": "haben", "note": "强变化（e–a–o，命令式换音 birg）。补充形式：ich berge – du birgst – er birgt；命令式 birg!。诗中第12行作命令式 birg dich。与 helfen（hilf!）、nehmen（nimm!）同属命令式 e→i 换音的一类。"},
+    {"infinitive": "saugen", "present_3sg": "saugt", "preterite": "sog / saugte", "perfect": "hat gesogen / hat gesaugt", "participle_ii": "gesogen / gesaugt", "subjunctive_ii": "söge / saugte", "auxiliary": "haben", "note": "强/弱两可。诗中第4行作现在时 saugt。强变化 sog/gesogen 属较雅的用法；技术语境（吸尘）多用弱变化 saugte/gesaugt。两套并存，本页不判优劣。"},
+    {"infinitive": "verzehren", "present_3sg": "verzehrt", "preterite": "verzehrte", "perfect": "hat verzehrt", "participle_ii": "verzehrt", "subjunctive_ii": "verzehrte", "auxiliary": "haben", "note": "弱变化。诗中第11行 mich verzehren … Gluthen（炽热把我烧尽）。日常义另有「吃掉、消费」（Speisen verzehren）。"}
   ],
   "grammar_notes": [
     {"title": "十四行诗（Sonett）与彼特拉克式韵式 —— 本站十四行簇的第五个样本",

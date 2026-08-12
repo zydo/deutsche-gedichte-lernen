@@ -8,6 +8,117 @@ const COUNTABLE_NOUN_RE = /^(?:韵词|韵脚|命令式|祈使|实例|第二格|�
 const CROSS_TRIGGER_RE = /本站[^。！？\n]*(?:亦有|亦出现|中都标注过|可对照|对读|互为|同一族|同类|构成[^。！？\n]*对照)/;
 const GHOST_TOKEN_RE = /\b(?:dies|diese|dieser|dieses|diesem|diesen)\s+[a-zäöüß][a-zäöüß-]*\s*(?:为|是)/i;
 
+// 从编号 01–50 的实际数据合同归纳后写死。白名单不可从运行时数据动态
+// 扩张，否则第一条拼错的字段会反过来把错误合法化。
+const ARRAY_ITEM_SCHEMAS = Object.freeze({
+  verb_forms: Object.freeze({
+    allowed: Object.freeze([
+      "infinitive",
+      "present_3sg",
+      "preterite",
+      "perfect",
+      "participle_ii",
+      "subjunctive_ii",
+      "auxiliary",
+      "note",
+    ]),
+    required: Object.freeze([
+      "infinitive",
+      "present_3sg",
+      "preterite",
+      "perfect",
+      "participle_ii",
+      "subjunctive_ii",
+      "auxiliary",
+    ]),
+  }),
+  vocab: Object.freeze({
+    allowed: Object.freeze(["term", "pos", "meaning", "note"]),
+    required: Object.freeze(["term", "pos", "meaning"]),
+  }),
+  line_notes: Object.freeze({
+    allowed: Object.freeze(["de", "zh"]),
+    required: Object.freeze(["de", "zh"]),
+  }),
+  grammar_notes: Object.freeze({
+    allowed: Object.freeze(["title", "quote", "body"]),
+    required: Object.freeze(["title", "body"]),
+  }),
+  german_sources: Object.freeze({
+    allowed: Object.freeze(["name", "url", "tier", "citation", "note"]),
+    required: Object.freeze(["name", "url"]),
+  }),
+  cross_references: Object.freeze({
+    allowed: Object.freeze(["target_slug", "needle", "context"]),
+    required: Object.freeze(["target_slug", "needle"]),
+  }),
+  checklist: Object.freeze({
+    allowed: Object.freeze(["label", "done"]),
+    required: Object.freeze(["label", "done"]),
+  }),
+});
+
+function hasRequiredValue(item, field) {
+  if (!Object.hasOwn(item, field) || item[field] === null || item[field] === undefined) return false;
+  return typeof item[field] !== "string" || item[field].trim().length > 0;
+}
+
+function lintArrayItemSchemas(poem) {
+  const errors = [];
+
+  for (const [arrayName, schema] of Object.entries(ARRAY_ITEM_SCHEMAS)) {
+    const items = poem[arrayName];
+    if (items === undefined || items === null) continue;
+    if (!Array.isArray(items)) {
+      errors.push({
+        code: "schema-array",
+        poem: poem.slug,
+        path: arrayName,
+        message: `${arrayName} 应为数组，实际为 ${typeof items}`,
+      });
+      continue;
+    }
+
+    const expected = schema.allowed.join(" / ");
+    items.forEach((item, index) => {
+      const itemPath = `${arrayName}[${index}]`;
+      if (!item || typeof item !== "object" || Array.isArray(item)) {
+        errors.push({
+          code: "schema-item",
+          poem: poem.slug,
+          path: itemPath,
+          message: `${itemPath} 应为对象；期望字段集：${expected}`,
+        });
+        return;
+      }
+
+      for (const field of Object.keys(item)) {
+        if (!schema.allowed.includes(field)) {
+          errors.push({
+            code: "schema-unknown-field",
+            poem: poem.slug,
+            path: itemPath,
+            message: `诗 ${poem.slug} / 数组 ${arrayName} / 未知字段 ${field} / 期望字段集：${expected}`,
+          });
+        }
+      }
+
+      for (const field of schema.required) {
+        if (!hasRequiredValue(item, field)) {
+          errors.push({
+            code: "schema-missing-field",
+            poem: poem.slug,
+            path: itemPath,
+            message: `诗 ${poem.slug} / 数组 ${arrayName} / 缺少必填字段 ${field} / 期望字段集：${expected}`,
+          });
+        }
+      }
+    });
+  }
+
+  return errors;
+}
+
 function flattenText(value, path = "") {
   if (typeof value === "string") return [{ path, text: value }];
   if (Array.isArray(value)) return value.flatMap((item, index) => flattenText(item, `${path}[${index}]`));
@@ -618,6 +729,7 @@ function validateContent({ published, pending }, options = {}) {
   for (const poem of poems) {
     const lineCount = (poem.german_text || []).reduce((sum, stanza) => sum + stanza.length, 0);
     poem.annotation_density = lineCount ? (poem.line_notes || []).length / lineCount : 0;
+    errors.push(...lintArrayItemSchemas(poem));
     errors.push(...lintLineParity(poem));
     errors.push(...lintCountAssertions(poem));
     errors.push(...lintCrossReferences(poem, bySlug));
@@ -672,6 +784,7 @@ const isCli = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath
 if (isCli) runCli();
 
 export {
+  ARRAY_ITEM_SCHEMAS,
   chineseNumber,
   extractLineNumbers,
   flattenText,
@@ -679,6 +792,7 @@ export {
   lintCountAssertions,
   lintCrossReferences,
   lintLineParity,
+  lintArrayItemSchemas,
   lintPending,
   lintRhymeScheme,
   rhymeKey,

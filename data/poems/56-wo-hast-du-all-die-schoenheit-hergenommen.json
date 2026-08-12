@@ -57,9 +57,9 @@
      "note": "诗中第7行取「完满的」义（du vollkommen bist）。作副词时义为「完全地」（vollkommen richtig 完全正确）——同形不同用法，需靠位置区分。die Vollkommenheit（完满）。"}
   ],
   "verb_forms": [
-    {"verb": "hernehmen", "type": "可分 + 强变化（e–a–o）", "forms": "nimmt her / nahm her / hat hergenommen", "note": "诗中第1行作现在完成时。可分动词的第二分词把 ge- 插在前缀与词干之间（hergenommen），与不可分的 übernehmen → übernommen（无 ge-）正好相反。"},
-    {"verb": "sterben", "type": "强变化（e–a–o），助动词 sein", "forms": "stirbt / starb / ist gestorben", "note": "诗中第5行作不定式（muß … sterben）。现在时单数第二、三人称换音 e→i：du stirbst, er stirbt。助动词用 sein，不用 haben。"},
-    {"verb": "haben", "type": "不规则", "forms": "hat / hatte / hat gehabt", "note": "诗中第4、5、6行的三个 weil 从句都以 hast 收尾——从句语序把变位动词推到句末，是本页最该记住的位置信息。"}
+    {"infinitive": "hernehmen", "present_3sg": "nimmt her", "preterite": "nahm her", "perfect": "hat hergenommen", "participle_ii": "hergenommen", "subjunctive_ii": "nähme her", "auxiliary": "haben", "note": "可分 + 强变化（e–a–o）。诗中第1行作现在完成时。可分动词的第二分词把 ge- 插在前缀与词干之间（hergenommen），与不可分的 übernehmen → übernommen（无 ge-）正好相反。"},
+    {"infinitive": "sterben", "present_3sg": "stirbt", "preterite": "starb", "perfect": "ist gestorben", "participle_ii": "gestorben", "subjunctive_ii": "stürbe", "auxiliary": "sein", "note": "强变化（e–a–o），助动词 sein。诗中第5行作不定式（muß … sterben）。现在时单数第二、三人称换音 e→i：du stirbst, er stirbt。助动词用 sein，不用 haben。"},
+    {"infinitive": "haben", "present_3sg": "hat", "preterite": "hatte", "perfect": "hat gehabt", "participle_ii": "gehabt", "subjunctive_ii": "hätte", "auxiliary": "haben", "note": "不规则。诗中第4、5、6行的三个 weil 从句都以 hast 收尾——从句语序把变位动词推到句末，是本页最该记住的位置信息。"}
   ],
   "grammar_notes": [
     {"title": "weil 从句的句末动词 + 从句提前引发的主句倒装 —— 八行里的五个样本",

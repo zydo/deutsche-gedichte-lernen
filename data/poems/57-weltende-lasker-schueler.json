@@ -69,9 +69,9 @@
      "note": "变位 küsst – küsste – hat geküsst。诗中第8行 uns tief küssen（互相深深亲吻），uns 在此是相互代词（彼此）。名词 der Kuss——本站《梦中之吻》（编号55）以此为题。"}
   ],
   "verb_forms": [
-    {"verb": "verbergen", "type": "强变化（e–a–o），不可分前缀", "forms": "verbirgt / verbarg / hat verborgen", "note": "诗中第5行作不定式。现在时单数第二、三人称换音 e→i：du verbirgst, er verbirgt。前缀 ver- 不可分，故第二分词不加 ge-：verborgen（不是 *geverborgen）。"},
-    {"verb": "sterben", "type": "强变化（e–a–o），助动词 sein", "forms": "stirbt / starb / ist gestorben", "note": "诗中第2行作第二虚拟式完成形 gestorben wär(e)，第10行作不定式（sterben müssen）。搭配 an etwas sterben（死于某物）——第10行的介词 an 由此而来。"},
-    {"verb": "sein", "type": "不规则；第二虚拟式 wäre", "forms": "ist / war / ist gewesen；Konj. II: wäre", "note": "诗中第2行 gestorben wär 是省音形（wäre → wär）。als ob 从句必须用虚拟式，这是本页最该记住的一条。"}
+    {"infinitive": "verbergen", "present_3sg": "verbirgt", "preterite": "verbarg", "perfect": "hat verborgen", "participle_ii": "verborgen", "subjunctive_ii": "verbärge", "auxiliary": "haben", "note": "强变化（e–a–o），不可分前缀。诗中第5行作不定式。现在时单数第二、三人称换音 e→i：du verbirgst, er verbirgt。前缀 ver- 不可分，故第二分词不加 ge-：verborgen（不是 *geverborgen）。"},
+    {"infinitive": "sterben", "present_3sg": "stirbt", "preterite": "starb", "perfect": "ist gestorben", "participle_ii": "gestorben", "subjunctive_ii": "stürbe", "auxiliary": "sein", "note": "强变化（e–a–o），助动词 sein。诗中第2行作第二虚拟式完成形 gestorben wär(e)，第10行作不定式（sterben müssen）。搭配 an etwas sterben（死于某物）——第10行的介词 an 由此而来。"},
+    {"infinitive": "sein", "present_3sg": "ist", "preterite": "war", "perfect": "ist gewesen", "participle_ii": "gewesen", "subjunctive_ii": "wäre", "auxiliary": "sein", "note": "不规则；第二虚拟式 wäre。诗中第2行 gestorben wär 是省音形（wäre → wär）。als ob 从句必须用虚拟式，这是本页最该记住的一条。"}
   ],
   "grammar_notes": [
     {"title": "★同名诗消歧：本站收有两首《Weltende》，是两位作者的两首不同作品",
