@@ -380,7 +380,6 @@ function renderLayout({ title, description = "", bodyHtml, active = "", root: ro
       </a>
       <div class="site-header__right">
         <nav class="site-nav" aria-label="主导航">
-          <a href="${root}index.html">诗歌总览</a>
           <a href="${root}about.html">关于 · 校对</a>
         </nav>
         <a class="header-icon" href="https://github.com/zydo/deutsche-gedichte-lernen" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库（zydo/deutsche-gedichte-lernen）" title="GitHub 仓库">
