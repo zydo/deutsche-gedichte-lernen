@@ -8,7 +8,7 @@
   "year": "1780年9月6日夜作于伊尔默瑙基克尔汉山（Kickelhahn）；1815年首次收入歌德本人编订的诗集",
   "collection": "Goethe's Werke, Bd. I（1815）· 题作 \"Ein Gleiches\"，紧接1776年同题诗作之后",
   "period": "古典主义 Weimarer Klassik（近狂飙突进末期）",
-  "difficulty": "A2（仅词汇难度；句法倒装与古体词尾另计）",
+  "difficulty": "A2",
   "tags": [
     "自然",
     "夜晚",
@@ -156,6 +156,10 @@
     }
   ],
   "grammar_notes": [
+    {
+      "title": "阅读门槛：A2 仅指词汇层面",
+      "body": "本诗用词很少，词汇层面可按 A2 阅读；句法倒装、跨行结构与古体动词词尾仍需结合以下语法条理解。"
+    },
     {
       "title": "古典诗歌第二人称词尾 -est",
       "quote": "Spürest du … Ruhest du auch.",

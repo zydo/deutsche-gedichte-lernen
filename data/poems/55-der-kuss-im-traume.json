@@ -10,7 +10,7 @@
   "year": "作于1804年前后；来源本作《Der Kuß im Traume, aus einem ungedruckten Romane》（「选自一部未刊小说」）",
   "collection": "《Karoline von Günderrode: Gesammelte Werke》第1卷「Poetische Fragmente」（Berlin-Wilmersdorf 1920–1922）",
   "period": "早期浪漫派（Frühromantik）",
-  "difficulty": "B2（十四行，词序倒装多，抽象名词密集）",
+  "difficulty": "B2",
   "tags": ["十四行诗", "梦", "吻", "女性作者", "早期浪漫派", "夜"],
   "public_domain": {"death_year": 1806, "public_domain_year": 1877, "basis": "京德罗德1806年7月26日卒于宾根附近；按德国70年 p.m.a.，1877年起公版"},
   "rhyme_groups": [[1, 4, 5, 8]],
@@ -91,7 +91,9 @@
      "body": "全诗的愿望不是用虚拟式表达的，而是用命令式：共 3 个命令式（第3、12、13行），呼语对象依次是黑暗、说话人自己的眼睛、以及（隐含的）自己。其中 birg 是强变化动词 bergen 的命令式换音形（e→i）。★这一点值得与本站另外两处对照：《晚歌》（编号20）的 Wollst 与《恳求》（编号23）的 schwebest 都是 Konjunktiv I 的祈愿式，祈求的对象是神；本诗则用命令式，命令的对象是夜。同样是「愿……」，一个走虚拟式并把自己交出去，一个走命令式并直接下令——语气的落差正是早期浪漫派把夜抬到神的位置上的语法证据。"},
     {"title": "前置第二格（vorangestellter Genitiv）—— 一首诗里的五个样本",
      "quote": "meines Busens tiefstes Schmachten … Lethes kühle Fluthen",
-     "body": "德语的第二格定语通常后置（das Schmachten meines Busens），但雅体／诗体允许前置。本诗密集使用这一语序，共 5 例（第2、7、10、11、14行）：meines Busens tiefstes Schmachten、aller andern Freuden Glanz、seines Lichtes eitles Prangen、seiner Sonne Gluthen、Lethes kühle Fluthen。注意前置时被修饰的名词不再带冠词（不说 *meines Busens das Schmachten）。专名的第二格（Lethes）在现代德语中仍可自然前置（Goethes Faust），其余几种今日已属书面雅体。本站已在多页标注过这一现象，本页是样本最密集的一首。"}
+     "body": "德语的第二格定语通常后置（das Schmachten meines Busens），但雅体／诗体允许前置。本诗密集使用这一语序，共 5 例（第2、7、10、11、14行）：meines Busens tiefstes Schmachten、aller andern Freuden Glanz、seines Lichtes eitles Prangen、seiner Sonne Gluthen、Lethes kühle Fluthen。注意前置时被修饰的名词不再带冠词（不说 *meines Busens das Schmachten）。专名的第二格（Lethes）在现代德语中仍可自然前置（Goethes Faust），其余几种今日已属书面雅体。本站已在多页标注过这一现象，本页是样本最密集的一首。"},
+    {"title": "阅读提示：先拆开书面语结构",
+     "body": "本诗的 B2 门槛主要来自十四行诗中的频繁倒装、前置第二格与密集抽象名词；阅读时可先按上方语法条还原现代语序，再处理意象。"}
   ],
   "cultural_notes": "卡罗琳娜·冯·京德罗德（1780—1806）是德语早期浪漫派中最特别的声音之一。她出身没落贵族，自1797年起住在法兰克福的一所贵族女子修道院（Damenstift）——这是当时未婚贵族女性少数体面的去处之一。她与克莱门斯·布伦塔诺（本站《纺纱女的夜歌》编号21 的作者）及其妹贝蒂娜·冯·阿尔尼姆有密切交往。\n\n★她生前发表作品时署男性笔名 Tian。这件事本身就是19世纪初女性作者处境的直接证据：一个女性要让作品被当作作品而非「女士的消遣」来读，最省事的办法是不署自己的名字。本站现收有四位女性作者（另三位见 about 页统计），京德罗德是其中最早的一位。\n\n1806年7月26日，她在宾根附近的莱茵河畔自杀，年26岁。★关于她与海德堡神话学家弗里德里希·克罗伊策（Friedrich Creuzer）的关系、以及自杀的具体经过，通行叙述大多可回溯到贝蒂娜·冯·阿尔尼姆的《Die Günderode》（1840）——但该书是书信体的文学加工，不是传记材料，其中的信件经过改写与虚构。本页不据该书叙述任何传记事实，相关细节一律标注待进一步核实。\n\n本诗的处理方式也应据此把握：这是一首诗，不是遗书。诗中的「夜」是早期浪漫派「夜／梦高于昼／现实」这一命题的极端表述（诺瓦利斯《夜颂》是同一命题的另一端），把它读成作者死亡的预告，是把生平硬套进文本。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文严格照录来源版本（Zeno.org 所据《全集》第1卷）的读法，包括旧拼法 Gluthen / Fluthen / irr'dscher 与旧式全写形 Gestillet / stillet，不作现代化改写；(2) Wortschatz 词条按现代规范立目（der Kuss），诗中的旧拼法 Kuß 在词条注中说明；(3) 五处前置第二格在译文中按中文语序还原为「……的……」，语序信息在逐行注释与语法条中说明；(4) 标题在来源中作《Der Kuß im Traume, aus einem ungedruckten Romane》（「选自一部未刊小说」），本站页眉取主标题，副标题在校对记录中著录。",
