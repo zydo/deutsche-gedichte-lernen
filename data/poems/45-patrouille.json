@@ -49,9 +49,9 @@
     {"title": "Wortkunst 与词类越界（Konversion）—— 规范内 vs 施特拉姆的越界",
      "quote": "Die Steine feinden … blättern raschlig",
      "body": "德语的词类转换（Konversion）在规范内很常见：das Essen（吃→饭，动词→名词）、laufen → der Lauf（跑→跑步）。但施特拉姆的越界是激进的：他把名词 der Feind 直接造成动词 feinden（\"敌对\"），把 rascheln 造成 raschlig——这些词形在标准德语中不存在，是为本诗所造。★本页 Wortschatz 不收这些自造词，只收其规范基础词（der Feind、rascheln），并在逐行注释中逐个标\"诗人自造，不可套用\"。这是本页最重要的处理原则。"},
-    {"title": "零句法的可能性 —— 表现主义句法三阶段（解体）",
+    {"title": "零句法的可能性 —— 表现主义句法四阶段（解体）",
      "quote": "全诗6行，无韵、无格律、无完整句，仅末行一个句号",
-     "body": "本诗明确写出：本诗没有韵式，也没有可分析的句法结构——这是它的构成原则，不是缺失（同《普罗米修斯》编号34 的\"无韵即纲领\"处理逻辑）。本页与本站《世界末日》（编号33，完整主句的罗列 Reihungsstil）、《科隆莱茵桥之夜行》（编号44，拉长的句子）构成表现主义句法的三个阶段：完整 → 拉长 → 解体。这三页的链接是本批最有价值的一条结构线。"}
+     "body": "本诗明确写出：本诗没有韵式，也没有可分析的句法结构——这是它的构成原则，不是缺失（同《普罗米修斯》编号34 的\"无韵即纲领\"处理逻辑）。本站据此把表现主义句法的演变分成四段，本页是其终点（解体）：(1) 罗列——《世界末日》（编号33，完整主句的并置 Reihungsstil）；(2) 罗列的变体——《黄昏》（编号62，画面更荒诞、更降格）；(3) 拉长——《科隆莱茵桥之夜行》（编号44，句子被拉成一条不断的线）；(4) 解体——本页（句子整个碎掉，只剩词）。四页的链接是本站表现主义形式最有价值的一条结构线。"}
   ],
   "cultural_notes": "奥古斯特·施特拉姆（1874—1915）是德语表现主义\"Wortkunst\"（字词艺术）的最激进代表。他是一名邮政官员，1915年9月1日死于东线战场，生前仅在《Der Sturm》杂志发表少量作品，遗著诗集《Tropfblut》（1919）由其友人整理出版。\n\n《巡逻》是他的代表作之一。全诗6行，写一场夜间巡逻中环境对士兵的全面敌意：石头敌对、窗户出卖、树枝扼杀、灌木沙沙、尖鸣、死。它的激进之处在于：句子整个解体，每一行只是一个名词化的意象碎片，词类被随意越界（名词当动词用），全部敌意收束到末行一个带句号的\"死\"字。\n\n施特拉姆与《Der Sturm》圈子（Lasker-Schüler、Heym 同圈）共同把德语诗推向\"字词艺术\"的极限：意义不再由句法组织，而由单个词的冲击力承担。他与 Heym、Stadler、Trakl 同属表现主义早期夭折于一战的一代。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) feinden 译\"在敌对\"、raschlig 译\"沙沙作响地\"，并在注释中逐个标\"诗人自造，不可套用\"；(2) 全诗零句法、一词一行，译文照办（每行一个意象碎片），仅在末行\"死。\"保留句号；(3) 本页 Wortschatz 不收 feinden / raschlig 等自造词，只收其规范基础词（der Feind、rascheln）。本诗仅6行但词形全部反常，属\"短 ≠ 易\"。",
@@ -65,6 +65,8 @@
   "translation_sources": [{"name": "本站学习译文（中文）", "note": "AI 辅助生成，标注为学习用途。"}],
   "cross_references": [
     {"target_slug": "weltende", "needle": "Reihungsstil", "context": "《世界末日》"},
+    {"target_slug": "die-daemmerung", "needle": "Reihungsstil", "context": "《黄昏》"},
+    {"target_slug": "fahrt-ueber-die-koelner-rheinbruecke-bei-nacht", "needle": "Reihungsstil", "context": "《科隆莱茵桥之夜行》"},
     {"target_slug": "der-werwolf", "needle": "变格", "context": "《狼人》"}
   ],
   "verification_notes": "【三源核对】正文读法以 Zeno.org《施特拉姆著作》（Wiesbaden 1963，S.86–87）为一级来源著录（本次主机拒绝连接），读法由两个直接抓取的独立来源交叉确认：deutschelyrik.de（二级）、lyrik.antikoerperchen.de（三级）。6 行（单节）——用词一致。\n\n【关键异文】(1) feinden（Zeno + deutschelyrik，诗人自造动词\"敌对\"）vs feiden（antikoerperchen.de）——后者为转录错误，本诗确定作 feinden。(2) Gellen（大写，Zeno，名词化\"尖鸣\"）vs gellen（小写，deutschelyrik，不定式）——本站从 Zeno 的大写名词化读法。两处差异已如实记录。\n\n【★自造词处理原则】本诗含两个标准德语中不存在的词形：feinden（由 der Feind 造的动词）、raschlig（由 rascheln 造的副词/形容词形）。本页 Wortschatz 不收这两个自造词，只收其规范基础词（der Feind、rascheln），并在逐行注释中逐个标\"诗人自造，不可套用\"。这是本页与全站其他页面的根本差异，已显式说明。\n\n【无韵、无格律的显式说明】本诗没有韵式，也没有可分析的句法结构——这是它的构成原则，不是缺失。页面已显式写出\"本诗没有韵式\"（同《普罗米修斯》编号34 的处理逻辑）。\n\n【待进一步核实】(1) Zeno 主机本次拒绝连接，其 S.86–87 页码据著录，待恢复后补抓快照复核；(2)《Tropfblut》1919 的编纂与出版细节；(3) 本诗的确切写作日期（1915年，具体月份未核）。\n\n【公版】施特拉姆1915年阵亡，公版起始年 = 1915 + 71 = 1986。\n\n本诗现满足规则 A（≥3 来源）、B（≥3 独立运营方：zeno / deutschelyrik / antikoerperchen）、D（含一级来源：Zeno 全集本）。★本页 Wortschatz 不含任何诗中自造词形（feinden、raschlig 均未收入，只收规范基础词）。",
