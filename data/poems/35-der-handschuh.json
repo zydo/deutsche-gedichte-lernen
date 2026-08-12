@@ -405,7 +405,7 @@
     {"label": "公版年份复算：1805 + 71 = 1876", "done": true},
     {"label": "高危断言（轶事来源、历史原型）标注待核实", "done": true},
     {"label": "撰写 image brief", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "圣福瓦轶事来源回核一手", "done": false},
     {"label": "Zeno 恢复后补抓快照复核", "done": false},

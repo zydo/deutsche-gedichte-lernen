@@ -281,7 +281,7 @@
     {"label": "CEFR 不适用 Mhd. 的说明", "done": true},
     {"label": "高危断言（Lachmann 编号、旋律、生卒）标注待核实", "done": true},
     {"label": "撰写 image brief（含禁忌：无人物、无铠甲）", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查（两栏 Mhd.+中文）", "done": false},
     {"label": "回核 Lachmann 1843 版纸质页码", "done": false},
     {"label": "核实旋律是否留存", "done": false},

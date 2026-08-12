@@ -83,7 +83,7 @@
     {"label": "公版年份复算：1677 + 71 = 1748", "done": true},
     {"label": "海德格尔引用出处标注待核", "done": true},
     {"label": "撰写 image brief", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核海德格尔引用与改宗年份", "done": false},
     {"label": "Zeno 恢复后补抓快照复核", "done": false},

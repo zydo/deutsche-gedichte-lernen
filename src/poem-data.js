@@ -50,4 +50,4 @@ function loadPoemRecords(dataDir = DEFAULT_DATA_DIR) {
   };
 }
 
-export { DEFAULT_DATA_DIR, ROOT, collectJsonFiles, loadPoemRecords };
+export { loadPoemRecords };

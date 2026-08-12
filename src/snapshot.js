@@ -35,7 +35,7 @@ const DELAY_MS = 400; // 每次请求之间的礼貌间隔
 
 // ---- 工具 ----
 
-export function snapshotId(url) {
+function snapshotId(url) {
   let host = "unknown";
   try {
     host = new URL(url).hostname.replace(/^www\./, "");

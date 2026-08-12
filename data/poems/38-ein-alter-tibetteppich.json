@@ -231,7 +231,7 @@
     {"label": "公版年份复算：1945 + 71 = 2016", "done": true},
     {"label": "高危断言（克劳斯评价）标注待核且不写入正文", "done": true},
     {"label": "撰写 image brief", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核《Die Fackel》是否转载本诗", "done": false},
     {"label": "1911《Meine Wunder》影像直接核对", "done": false},

@@ -103,7 +103,7 @@
     {"label": "公版年份复算：1898 + 71 = 1969", "done": true},
     {"label": "伤亡数字与工程细节标注待核", "done": true},
     {"label": "撰写 image brief（含禁忌：无血腥、女巫远景）", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查（长叙事诗布局）", "done": false},
     {"label": "核实1879事故伤亡数字", "done": false},
     {"label": "逐行核对《麦克白》第一幕第一场互文", "done": false},

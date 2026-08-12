@@ -401,7 +401,7 @@
     {"label": "公版年份复算：1832 + 71 = 1903", "done": true},
     {"label": "高危断言（雅各比刊行经过、泛神论之争）标注待核实", "done": true},
     {"label": "撰写 image brief（含禁忌：无锁链鹫鹰）", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "Zeno 主机恢复后补抓快照并逐字复核", "done": false},
     {"label": "雅各比1785年刊行经过回核一手书信", "done": false},

@@ -97,7 +97,7 @@
     {"label": "公版年份复算：1914 + 71 = 1985", "done": true},
     {"label": "惠特曼影响标注待核", "done": true},
     {"label": "撰写 image brief", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查（长行布局）", "done": false},
     {"label": "Zeno 恢复后补抓快照复核", "done": false},
     {"label": "回核惠特曼影响与阵亡细节", "done": false},

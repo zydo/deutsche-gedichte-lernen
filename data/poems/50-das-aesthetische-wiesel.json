@@ -83,7 +83,7 @@
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1914 + 71 = 1985", "done": true},
     {"label": "撰写 image brief", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "核实1905年初版排印形态", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议幽默诗/Nonsense 专业人士复核）", "done": false}

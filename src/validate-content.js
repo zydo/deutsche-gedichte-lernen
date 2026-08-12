@@ -656,6 +656,33 @@ function lintGhostTokens(poem) {
   return errors;
 }
 
+function lintImageChecklist(poem) {
+  const errors = [];
+  const items = (poem.checklist || []).filter((item) => item?.label?.startsWith("生成 AI 配图"));
+  const hasImage = typeof poem.image_path === "string" && poem.image_path.trim().length > 0;
+
+  if (items.length !== 1) {
+    errors.push({
+      code: "image-checklist",
+      poem: poem.slug,
+      path: "checklist",
+      message: `应有且仅有一条“生成 AI 配图”状态，实际为 ${items.length} 条`,
+    });
+    return errors;
+  }
+
+  if (Boolean(items[0].done) !== hasImage) {
+    errors.push({
+      code: "image-checklist",
+      poem: poem.slug,
+      path: "checklist",
+      message: `配图状态与 image_path 不一致：image_path ${hasImage ? "已设置" : "为空"}，checklist 标记为 ${items[0].done ? "完成" : "未完成"}`,
+    });
+  }
+
+  return errors;
+}
+
 function lintPending(record, now = new Date()) {
   const poem = record.poem;
   const errors = [];
@@ -735,6 +762,7 @@ function validateContent({ published, pending }, options = {}) {
     errors.push(...lintCrossReferences(poem, bySlug));
     errors.push(...lintPublicDomain(poem));
     errors.push(...lintGhostTokens(poem));
+    errors.push(...lintImageChecklist(poem));
     const rhyme = lintRhymeScheme(poem);
     errors.push(...rhyme.errors);
     warnings.push(...rhyme.warnings);
@@ -791,6 +819,7 @@ export {
   formatContentErrors,
   lintCountAssertions,
   lintCrossReferences,
+  lintImageChecklist,
   lintLineParity,
   lintArrayItemSchemas,
   lintPending,

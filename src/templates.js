@@ -18,11 +18,6 @@ function esc(str) {
   return String(str).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 }
 
-// 允许受控的内联标记直接透传
-function raw(str) {
-  return str === undefined || str === null ? "" : String(str);
-}
-
 function hasTemplateValue(item, field) {
   if (!Object.hasOwn(item, field) || item[field] === null || item[field] === undefined) return false;
   return typeof item[field] !== "string" || item[field].trim().length > 0;
@@ -982,7 +977,7 @@ function renderAbout(poems) {
       zh: "语料结构",
       de: "Korpus",
       html: renderProse(
-        `当前语料时间跨度为 ${spanText}，包括 ${authorText}，其中明确标注 ${womenText}。匿名作品不会被强行归给某位作者：民歌的异文与传播过程本身就是文本的一部分。目录除 CEFR 外同时显示“注释密度”（逐行注释条数 ÷ 原诗行数）；选读难度以真正需要多少解释为准，而不只看生词多少。`,
+        `当前语料时间跨度为 ${spanText}，包括 ${authorText}，其中明确标注 ${womenText}。匿名作品不会被强行归给某位作者：民歌的异文与传播过程本身就是文本的一部分。首页目录显示 CEFR，各详情页另列“注释密度”（逐行注释条数 ÷ 原诗行数）；选读难度以真正需要多少解释为准，而不只看生词多少。`,
       ),
     },
     {
@@ -1028,4 +1023,4 @@ ${renderSections(secs)}
   });
 }
 
-export { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage, htmlToText, esc, warnMissingTemplateFields };
+export { renderIndex, renderPoemPage, renderAbout, renderSnapshotPage, warnMissingTemplateFields };

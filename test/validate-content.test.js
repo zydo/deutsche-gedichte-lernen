@@ -7,6 +7,7 @@ import {
   extractLineNumbers,
   lintCountAssertions,
   lintCrossReferences,
+  lintImageChecklist,
   lintLineParity,
   lintPending,
   lintRhymeScheme,
@@ -110,6 +111,24 @@ test("pending entries cannot contain protected text before release", () => {
   const errors = lintPending(record, new Date("2026-08-10T00:00:00Z"));
   assert.equal(errors.length, 1);
   assert.equal(errors[0].code, "pending-text");
+});
+
+test("image checklist agrees with an attached image", () => {
+  const fixture = poem({
+    image_path: "/images/fixture.png",
+    checklist: [{ label: "生成 AI 配图（已接入）", done: true }],
+  });
+  assert.deepEqual(lintImageChecklist(fixture), []);
+});
+
+test("image checklist rejects stale completion state", () => {
+  const fixture = poem({
+    image_path: "/images/fixture.png",
+    checklist: [{ label: "生成 AI 配图", done: false }],
+  });
+  const errors = lintImageChecklist(fixture);
+  assert.equal(errors.length, 1);
+  assert.equal(errors[0].code, "image-checklist");
 });
 
 test("published poem DOM stays bilingual unless text_nhd exists", () => {

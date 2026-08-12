@@ -281,7 +281,7 @@
     {"label": "公版年份复算：1912 + 71 = 1983", "done": true},
     {"label": "高危断言（交往、最高级、溺亡日期）标注待核实", "done": true},
     {"label": "撰写 image brief（含禁忌：无具体神面）", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "Zeno 恢复后补抓快照复核", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）", "done": false}

@@ -82,7 +82,7 @@
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1832 + 71 = 1903", "done": true},
     {"label": "撰写 image brief", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "核实 Divan 印行页码与赠叶经过", "done": false},
     {"label": "核实\"避 k\"之说依据", "done": false},

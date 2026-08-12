@@ -322,7 +322,7 @@
     {"label": "公版说明（匿名民歌，无争议）", "done": true},
     {"label": "高危断言（首刊、曲调起源）标注待核", "done": true},
     {"label": "撰写 image brief（含禁忌：无具体历史人物）", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图（已接入）", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核1780年传单首刊", "done": false},
     {"label": "回核曲调起源", "done": false},
