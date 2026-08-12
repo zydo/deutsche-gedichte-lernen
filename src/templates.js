@@ -326,7 +326,7 @@ function annotationDensityTag(poem) {
 }
 
 function renderIndex(poems) {
-  // 按作者分组，保留首次出现顺序
+  // 按作者分组；首页优先展示收录作品最多的作者，同数量时保持时间线顺序。
   const groups = [];
   const idx = new Map();
   for (const p of poems) {
@@ -351,7 +351,13 @@ function renderIndex(poems) {
     group.timelineYear = Math.min(group.timelineYear, itemYear);
     group.firstId = Math.min(group.firstId, Number(p.id));
   }
-  groups.sort((a, b) => a.timelineYear - b.timelineYear || a.firstId - b.firstId || a.author.localeCompare(b.author));
+  groups.sort(
+    (a, b) =>
+      b.items.length - a.items.length ||
+      a.timelineYear - b.timelineYear ||
+      a.firstId - b.firstId ||
+      a.author.localeCompare(b.author),
+  );
 
   const groupHtml = groups
     .map((g) => {
