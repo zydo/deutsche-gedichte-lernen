@@ -120,35 +120,59 @@
             <span class="tag">形式完美</span>
             <span class="tag">后浪漫派</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/tristan.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一间空旷的展厅或神庙内部，一束光落在一尊已被移走的雕像留下的空基座上；地面有一道长长的、指向观者的影子；空气中悬着极细的尘
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>看过之后无法回头的空茫；不是悲伤，是被掏空后的清醒与倦怠</dd>
+                  <dt>画面元素</dt>
+                  <dd>空基座、一束定向光、地面的长影、悬浮的细尘、远处一扇看不清外面的门</dd>
+                  <dt>时代感</dt>
+                  <dd>无明确时代，古典建筑内部</dd>
+                  <dt>推荐风格</dt>
+                  <dd>新古典主义绘画质感，冷石灰与淡金，构图严格对称，边缘锐利</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得画出可辨识的人脸或人体（诗中的「美」不指定对象）；不得出现骷髅、坟墓等死亡符号（本诗的死是命题，不是场景）；不得出现威尼斯的可辨识景观（《威尼斯之死》的关联属后世联想，未经核实）；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一间空旷的展厅或神庙内部，一束光落在一尊已被移走的雕像留下的空基座上；地面有一道长长的、指向观者的影子；空气中悬着极细的尘
-              </dd>
-              <dt>情绪</dt>
-              <dd>看过之后无法回头的空茫；不是悲伤，是被掏空后的清醒与倦怠</dd>
-              <dt>画面元素</dt>
-              <dd>空基座、一束定向光、地面的长影、悬浮的细尘、远处一扇看不清外面的门</dd>
-              <dt>时代感</dt>
-              <dd>无明确时代，古典建筑内部</dd>
-              <dt>推荐风格</dt>
-              <dd>新古典主义绘画质感，冷石灰与淡金，构图严格对称，边缘锐利</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得画出可辨识的人脸或人体（诗中的「美」不指定对象）；不得出现骷髅、坟墓等死亡符号（本诗的死是命题，不是场景）；不得出现威尼斯的可辨识景观（《威尼斯之死》的关联属后世联想，未经核实）；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">
@@ -798,7 +822,7 @@
             <li>与海涅、里尔克两页的「美与死」对照已接线</li>
             <li>跨页断言经结构化 cross_references 验证</li>
             <li>公版年份复算：1835 + 71 = 1906</li>
-            <li class="pending">生成 AI 配图</li>
+            <li>生成 AI 配图</li>
             <li class="pending">页面视觉检查</li>
             <li class="pending">回核成诗年份、《威尼斯之死》呼应处与论战文本出处</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议后浪漫派／格律学专业人士复核）</li>

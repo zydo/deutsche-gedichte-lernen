@@ -100,7 +100,7 @@
   "cultural_notes": "★本页为节选：选自全诗32节中的 7 节（第 1、3、17、20、26、31、32 节），共 56 行。全诗 32 节 × 8 行 = 256 行，是本站现有最长文本的数倍，故按完整诗节边界切分。节选范围的依据与所据版本页码见校对记录。\n\n【省略部分的情节梗概】第 2 节：普鲁士与奥地利议和，两军班师。第 4—16 节：蕾诺勒遍寻归来的队伍而无威廉的消息，扑倒在地痛哭；母亲劝她祷告、忍耐，说「神所做的都是好的」，蕾诺勒断然拒绝，说祷告没有用、神不曾怜悯她——这场与神的争辩是全诗的关键，也是结尾判罚的理由。入夜后马蹄声到门前，威廉出现，要她立刻随他骑行一百里去成婚。第 18—19 节：她上马，两人在月下疾驰。第 21—25 节：一路上他们越过飞逝的原野，经过一支送葬的队伍（威廉喝令死者跟上），又经过绞刑架下半隐半现的鬼群。第 27—30 节：骑行越来越快，天将破晓，马停在一处墓地的铁门前；威廉的甲胄与皮肉纷纷剥落，露出手持镰刀与沙漏的骷髅——新郎就是死亡本身。\n\n本诗1774年首刊于《Göttinger Musenalmanach》，一出即轰动，是德语艺术谣曲（Kunstballade）的开创性作品之一，此后整个浪漫派的谣曲写作都以它为参照。\n\n★与本站《魔王》（编号3）的对读是本页的核心价值。两首都是狂飙突进的死亡谣曲，都以一场夜间骑行为骨架，都在结尾交出一具尸体。差别有两处：其一，《魔王》里是父亲抱着孩子**逃离**死亡，本诗里是新娘**主动骑向**死亡——方向相反；其二，《魔王》的宇宙里没有神，孩子的死不被解释，最后一行只是陈述；本诗的宇宙里神在场，结尾由幽灵之口宣布判罚的理由（她与神争辩过）。同一个体裁，两种形而上学。\n\n★「亡灵新郎」母题（Lenore-Stoff）此后在欧洲广泛传播。常被提到的链条包括：沃尔特·司各特的英译、埃德加·爱伦·坡的接受、以及布拉姆·斯托克《德古拉》对「死者骑得飞快」一句的引用。**这一影响链条的每一环都待进一步核实**，本页不罗列未经核实的作品名单。本诗与珀西《Reliques of Ancient English Poetry》所收苏格兰民谣的关系，同样待核。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) ★本页为节选，页眉、collection、Quellen 与校对记录四处均标明「节选 7 节 / 全诗 32 节」，并逐节给出其在全诗中的原节次；省略部分另附中文情节梗概，处理口径与本站《智天使漫游者》（编号43，选 3 则）一致；(2) 正文所据为《Gedichte 1789》版（该版正字法已规范化），1778年初版的旧拼法差异在校对记录中著录；(3) 叠句 Die Toten reiten schnell 在译文中固定译作「死人骑得飞快」，每次出现不作变换，以保留其作为节奏装置的辨识度；(4) 拟声词 husch husch husch / hop hop hop 译作三个单音节（唰唰唰／哒哒哒），以保留行末三连重读的节奏；(5) grauen 依古义译「害怕」并在词条中标为重点假朋友。",
   "image_prompt": {"imagery": "月夜的荒原，远处一骑正在疾驰，只见扬起的尘土与被踏碎的月光；地平线上是一片墓地的低矮轮廓与铁栅门；风把枯枝吹得倾向一侧", "mood": "被速度支配的恐惧——不是看见了什么可怕的东西，而是停不下来；冷、快、空旷", "elements": "满月与冷白月光、荒原与枯草、远处极小的一骑（人马轮廓不清）、扬尘、墓地围栏与铁门的剪影、被风压倒的枯枝", "era": "18世纪中叶德意志乡野", "taboos": "★不得出现骷髅、腐尸、血、镰刀、沙漏；不得出现可辨识的人脸；不得画成现代恐怖片风格（本诗的恐怖是节奏性的，不是视觉性的）；不得出现文字水印", "style": "18世纪末墨色版画质感，冷灰与银白，大量留白，笔触强调运动方向"},
-  "image_path": null,
+  "image_path": "/images/lenore.png",
   "german_sources": [
     {"name": "Zeno.org — Bürger: Lenore（Gedichte 1789）", "url": "http://www.zeno.org/Literatur/M/B%C3%BCrger,+Gottfried+August/Gedichte/Gedichte+(Ausgabe+1789)/Zweites+Buch.+Episch-lyrische+Gedichte/Lenore", "tier": 1, "citation": "Bürgers Gedichte in zwei Teilen. Teil 1: Gedichte 1789. Berlin/Leipzig/Wien/Stuttgart, 2. Aufl. 1914, S. 139–145", "note": "一级来源（1789年定本的校勘重印，标注页码），本次直接抓取成功。本站正文以此为准：该本正字法已规范化（tot / willst / Sinn / Geschmückt / Gruß / Kuß / Geduld / sei）。全诗32节×8行=256行，逐节点数核对无误。"},
     {"name": "Wikisource — Bürger: Lenore（1778年《Gedichte》初版扫描）", "url": "https://de.wikisource.org/wiki/Lenore_(B%C3%BCrger)", "tier": 1, "citation": "Gottfried August Bürger: Gedichte. Johann Christian Dieterich, Göttingen 1778, S. 81–96（校对状态「fertig」，附原书扫描 PDF 第141–157页）", "note": "一级来源（初版逐页扫描转录，独立运营方 wikimedia）。用于核实节数、成诗年份（标题下注「Im Winter 1773」）与初版旧拼法：todt / wilst / Sin / Geschmükt / überal al überal / Grus und Kus / Gedult / sey / Hurrah。该本同样为32节×8行=256行，节次编号与1789年版完全一致。"},
@@ -142,7 +142,7 @@
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1794 + 71 = 1865", "done": true},
     {"label": "image brief 禁忌含「不得出现骷髅、腐尸、血」", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核国际影响链条与1774年年鉴首刊页码", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议狂飙突进／谣曲专业人士复核）", "done": false}

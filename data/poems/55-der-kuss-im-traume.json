@@ -98,7 +98,7 @@
   "cultural_notes": "卡罗琳娜·冯·京德罗德（1780—1806）是德语早期浪漫派中最特别的声音之一。她出身没落贵族，自1797年起住在法兰克福的一所贵族女子修道院（Damenstift）——这是当时未婚贵族女性少数体面的去处之一。她与克莱门斯·布伦塔诺（本站《纺纱女的夜歌》编号21 的作者）及其妹贝蒂娜·冯·阿尔尼姆有密切交往。\n\n★她生前发表作品时署男性笔名 Tian。这件事本身就是19世纪初女性作者处境的直接证据：一个女性要让作品被当作作品而非「女士的消遣」来读，最省事的办法是不署自己的名字。本站现收有四位女性作者（另三位见 about 页统计），京德罗德是其中最早的一位。\n\n1806年7月26日，她在宾根附近的莱茵河畔自杀，年26岁。★关于她与海德堡神话学家弗里德里希·克罗伊策（Friedrich Creuzer）的关系、以及自杀的具体经过，通行叙述大多可回溯到贝蒂娜·冯·阿尔尼姆的《Die Günderode》（1840）——但该书是书信体的文学加工，不是传记材料，其中的信件经过改写与虚构。本页不据该书叙述任何传记事实，相关细节一律标注待进一步核实。\n\n本诗的处理方式也应据此把握：这是一首诗，不是遗书。诗中的「夜」是早期浪漫派「夜／梦高于昼／现实」这一命题的极端表述（诺瓦利斯《夜颂》是同一命题的另一端），把它读成作者死亡的预告，是把生平硬套进文本。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文严格照录来源版本（Zeno.org 所据《全集》第1卷）的读法，包括旧拼法 Gluthen / Fluthen / irr'dscher 与旧式全写形 Gestillet / stillet，不作现代化改写；(2) Wortschatz 词条按现代规范立目（der Kuss），诗中的旧拼法 Kuß 在词条注中说明；(3) 五处前置第二格在译文中按中文语序还原为「……的……」，语序信息在逐行注释与语法条中说明；(4) 标题在来源中作《Der Kuß im Traume, aus einem ungedruckten Romane》（「选自一部未刊小说」），本站页眉取主标题，副标题在校对记录中著录。",
   "image_prompt": {"imagery": "一间夜里的房间，窗外只有极微弱的将明未明的光；床帷与阴影占据画面大部；一只手垂在被沿，暗示一个仍未醒来的睡者；黎明的光被窗帘挡在外面", "mood": "静谧、封闭、自愿的沉溺；不是噩梦，而是「不愿醒来」的安适与拒绝", "elements": "深色床帷、被挡住的窗、一线冷白的将明之光、垂落的手（不露脸）、空气中浮尘的微光", "era": "1800年前后德意志市民／贵族室内，家具简朴", "taboos": "★不得出现任何指向作者死亡的意象：不得出现河流、水岸、刀具、血、墓碑；不得画出可辨识的人脸；不得出现文字水印；不得画成情色场景（诗中的吻发生在梦里，不是身体场景）", "style": "早期浪漫派室内画质感，深褐与暗蓝为主，单一冷光源，笔触柔和"},
-  "image_path": null,
+  "image_path": "/images/der-kuss-im-traume.png",
   "german_sources": [
     {"name": "Zeno.org — Günderrode: Der Kuß im Traume, aus einem ungedruckten Romane", "url": "http://www.zeno.org/Literatur/M/G%C3%BCnderrode,+Karoline+von/Gedichte/Poetische+Fragmente/Der+Ku%C3%9F+im+Traume", "tier": 1, "citation": "Karoline von Günderrode: Gesammelte Werke. Band 1–3, Band 1, Berlin-Wilmersdorf 1920–1922, S. 119–120", "note": "一级来源（全集本，标注卷次与页码），本次直接抓取成功。正文读法以此为准，含旧拼法 Gluthen / Fluthen / irr'dscher。该本把本诗编入「Poetische Fragmente」一辑，紧接《Die Pilger》之后。"},
     {"name": "planetlyrik.de — Karoline von Günderrode", "url": "https://www.planetlyrik.de/?s=G%C3%BCnderrode", "tier": 2, "citation": "现代评介与转录（Lyrikkalender 条目）", "note": "二级来源（独立运营方）。用于核对现代通行读法与作者生平梗概。"},
@@ -136,7 +136,7 @@
     {"label": "十四行簇五页互链（an-sich / die-beiden / vergaenglichkeit / torso）", "done": true},
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1806 + 71 = 1877", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核首刊出处（Gedichte und Phantasien 1804 / 笔名 Tian）", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议早期浪漫派专业人士复核）", "done": false}

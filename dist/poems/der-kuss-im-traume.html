@@ -123,35 +123,59 @@
             <span class="tag">早期浪漫派</span>
             <span class="tag">夜</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/der-kuss-im-traume.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一间夜里的房间，窗外只有极微弱的将明未明的光；床帷与阴影占据画面大部；一只手垂在被沿，暗示一个仍未醒来的睡者；黎明的光被窗帘挡在外面
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>静谧、封闭、自愿的沉溺；不是噩梦，而是「不愿醒来」的安适与拒绝</dd>
+                  <dt>画面元素</dt>
+                  <dd>深色床帷、被挡住的窗、一线冷白的将明之光、垂落的手（不露脸）、空气中浮尘的微光</dd>
+                  <dt>时代感</dt>
+                  <dd>1800年前后德意志市民／贵族室内，家具简朴</dd>
+                  <dt>推荐风格</dt>
+                  <dd>早期浪漫派室内画质感，深褐与暗蓝为主，单一冷光源，笔触柔和</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    ★不得出现任何指向作者死亡的意象：不得出现河流、水岸、刀具、血、墓碑；不得画出可辨识的人脸；不得出现文字水印；不得画成情色场景（诗中的吻发生在梦里，不是身体场景）
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一间夜里的房间，窗外只有极微弱的将明未明的光；床帷与阴影占据画面大部；一只手垂在被沿，暗示一个仍未醒来的睡者；黎明的光被窗帘挡在外面
-              </dd>
-              <dt>情绪</dt>
-              <dd>静谧、封闭、自愿的沉溺；不是噩梦，而是「不愿醒来」的安适与拒绝</dd>
-              <dt>画面元素</dt>
-              <dd>深色床帷、被挡住的窗、一线冷白的将明之光、垂落的手（不露脸）、空气中浮尘的微光</dd>
-              <dt>时代感</dt>
-              <dd>1800年前后德意志市民／贵族室内，家具简朴</dd>
-              <dt>推荐风格</dt>
-              <dd>早期浪漫派室内画质感，深褐与暗蓝为主，单一冷光源，笔触柔和</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                ★不得出现任何指向作者死亡的意象：不得出现河流、水岸、刀具、血、墓碑；不得画出可辨识的人脸；不得出现文字水印；不得画成情色场景（诗中的吻发生在梦里，不是身体场景）
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">
@@ -804,7 +828,7 @@
             <li>十四行簇五页互链（an-sich / die-beiden / vergaenglichkeit / torso）</li>
             <li>跨页断言经结构化 cross_references 验证</li>
             <li>公版年份复算：1806 + 71 = 1877</li>
-            <li class="pending">生成 AI 配图</li>
+            <li>生成 AI 配图</li>
             <li class="pending">页面视觉检查</li>
             <li class="pending">回核首刊出处（Gedichte und Phantasien 1804 / 笔名 Tian）</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议早期浪漫派专业人士复核）</li>

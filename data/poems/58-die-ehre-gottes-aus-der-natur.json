@@ -123,7 +123,7 @@
   "cultural_notes": "克里斯蒂安·福希特戈特·盖勒特（1715—1769）是德语启蒙时期最受欢迎的作家，也是本站填补1650—1770这一百二十年空白的第一位作者。他在莱比锡大学讲授诗学与修辞学，讲坛影响极大；他的《寓言与故事》和《Geistliche Oden und Lieder》（1757）在18世纪下半叶几乎人手一册。歌德在莱比锡求学期间（1765—1768）听过他的课——★此事系通行说法，一手出处待进一步核实。\n\n本诗是他流传最广的作品。它的位置在本站的时代序列里很关键：语言上，它既没有巴洛克的繁复堆叠（对照《一切皆虚空》编号30、《美之无常》编号42），也还没有古典的极度凝练（对照《漫游者的夜歌》编号2）——句子完整、对称、不倒装、不省略，是一座结构上的桥。\n\n思想上，本诗是**自然神学**（Physikotheologie）的教科书式表述：认识神不通过启示或神迹，而通过观察自然的秩序。第18行「An meinen Werken kennst du mich」（你从我的作为中认识我）就是这一立场的定义句。★这与巴洛克的 vanitas 主题构成根本差别：巴洛克看世界，看见的是虚空与崩坏；启蒙看同一个世界，看见的是秩序与可理解性。本站《一切皆虚空》与本页放在一起读，这一百年的转向就一目了然。\n\n本诗进入新教教会歌本后产生了大量改写版本（诗节顺序、个别词句均有变动）。★本站严格区分1757年原刊与歌本改写版：正文所据为学术全集本，1757年初版的读法差异另行著录（处理方式同本站《晚歌》编号20 对教会改写的处理）。\n\n★关于谱曲：贝多芬《六首盖勒特歌曲》（Sechs Lieder von Gellert）作品号 op. 48 中收有一首题为 Die Ehre Gottes aus der Natur 的歌曲——**作品号与该曲在集中的次序均待回核**，本页不写具体曲序。此外 C.P.E. 巴赫等人亦为盖勒特的宗教颂歌谱过曲，具体篇目同样待核。本站在第五批曾在理查·施特劳斯的作品号上出过同类差错，故本页对作品号一律从严。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文所据为 Zeno.org 收录的《盖勒特著作集》第1卷（Frankfurt a.M. 1979，S.222–223），该本已把1757年初版的 seyn / gieb / Gemüthe / Theil 等旧拼法规范化，但保留了 kömmt 这一旧式换音形；本站照录该本读法，1757年初版的差异在校对记录中逐条著录；(2) 第五、六节由神直接说话，译文用「我」并保留插入语「主说」，以显出第16行的说话人交接；(3) 圣经化用处（《诗篇》19、《出埃及记》3:14、《申命记》6:5）在逐行注释中标出，译文不套用中文和合本措辞，仍按德文直译；(4) 前置第二格在译文中按中文语序还原，语序信息在语法条中说明。",
   "image_prompt": {"imagery": "夜空下辽阔而秩序井然的自然景象：可见银河与繁星按清晰的层次铺开，下方是平静的海面与起伏的地平线；一个极小的人影背对观者站在前景，仰头观看", "mood": "澄明、庄重、可理解的宏大——不是压迫性的崇高，而是「看得懂的秩序」；启蒙的乐观而非巴洛克的惊恐", "elements": "层次分明的星空、平静海面、清晰的地平线、极小的背影人物、无云或只有薄云", "era": "18世纪中叶，人物着朴素市民装束（只见背影轮廓）", "taboos": "不得出现十字架、教堂、天使等具体基督教图像（本诗的立场是自然神学，不走教义符号）；不得画出可辨识的人脸；不得出现文字水印；不得画成风暴、末日或压迫性的天象", "style": "18世纪风景画质感，深蓝与银白，构图对称、层次清晰、笔触克制"},
-  "image_path": null,
+  "image_path": "/images/die-ehre-gottes-aus-der-natur.png",
   "german_sources": [
     {"name": "Zeno.org — Gellert: Die Ehre Gottes aus der Natur", "url": "http://www.zeno.org/Literatur/M/Gellert,+Christian+F%C3%BCrchtegott/Gedichte/Geistliche+Oden+und+Lieder/Die+Ehre+Gottes+aus+der+Natur", "tier": 1, "citation": "Christian Fürchtegott Gellert: Werke, Band 1, Frankfurt a.M. 1979, S. 222–223", "note": "一级来源（学术全集本，标注卷次与页码），本次直接抓取成功。本站正文以此为准：该本已规范化 seyn/gieb/Gemüthe/Theil，但保留 kömmt。"},
     {"name": "Wikisource — Gellert: Die Ehre Gottes aus der Natur（1757年初版扫描）", "url": "https://de.wikisource.org/wiki/Die_Himmel_r%C3%BChmen_des_Ewigen_Ehre", "tier": 1, "citation": "Christian Fürchtegott Gellert: Geistliche Oden und Lieder. in der Weidmannischen Handlung, Leipzig 1757, S. 11–12（校对状态「fertig」，附原书扫描 djvu/35–36）", "note": "一级来源（初版扫描逐页转录，独立运营方 wikimedia）。用于核实首刊出处、页码与初版读法：kömmt / Vernimms / gieb / seyn / Gemüthe / Theil，以及第17行的异文（见校对记录）。"},
@@ -156,7 +156,7 @@
     {"label": "★贝多芬 op. 48 只写作品号、不写曲序，标注待核", "done": true},
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1769 + 71 = 1840", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核 op. 48 曲序、C.P.E. 巴赫谱曲、歌德听课出处", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议启蒙时期文学与教会音乐专业人士复核）", "done": false}

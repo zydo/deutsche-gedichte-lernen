@@ -92,7 +92,7 @@
   "cultural_notes": "弗里德里希·戈特利布·克洛普施托克（1724—1803）是18世纪德语诗最有影响的革新者。他的宗教史诗《救世主》（Der Messias，1748年起分卷刊行）曾被同代人当作德语终于产生了自己的弥尔顿的证明；而对后世更重要的，是他把德语诗从法国式的规整格律与强制押韵中解放出来的一系列尝试。青年歌德一代几乎都是读着他长大的——《少年维特的烦恼》里维特与绿蒂只说了一个词「克洛普施托克！」就彼此会意，是文学史上最著名的用典之一。\n\n《玫瑰带》作于1753年。全诗只有十二行，写一个瞬间：他在春荫里发现熟睡的她，用玫瑰带把她缚住；她没有察觉；他望着她，生命随之系上；他说不出话，就摇响玫瑰带；她醒来，回望；周围成了极乐净土。没有一句直接的抒情，全部由四个动作（找到—缚住—注视—醒来）推进。\n\n★感伤主义（Empfindsamkeit）的纲领句就在第6行：「Ich fühlt' es wohl, und wusst' es nicht」——我分明感觉到了，却并不知道。感受先于并高于认知，这是这一代人对启蒙理性主义的修正。把本页与《从自然见神的荣耀》（编号58）并读，可以看见同一个十八世纪的两副面孔：一副要人「听懂」「观看」「认识」，另一副说最要紧的事恰恰不经过「知道」。\n\n★关于本诗与 Meta Moller（1754年成为克洛普施托克之妻，1758年去世）的关系：通行说法把本诗与她相联系，但本次未回核到可靠的一手出处；且本诗作于1753年，早于两人成婚。故本页不作此断言，相关细节标注待进一步核实。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文照录 Zeno.org 所据《Oden》第1卷（Leipzig 1798，S.122–123）的读法，包括全部省音撇号与旧式过去式 ward，不作现代化改写；(2) ★诗中大写的 Sie / Ihrem / Ihr 是18世纪印刷中标示被爱者的第三人称「她」，不是敬称「您」，译文一律作「她」，并在首行注中说明；(3) 全诗无韵，译文亦不强求押韵，但保留四节三行的分节与两组镜像对称的行（第4—5行 ↔ 第10—11行）；(4) 末行 Elysium 保留为「极乐之境」，不套用中文既有译名。",
   "image_prompt": {"imagery": "春天的树荫下，光斑透过新叶落在地面；一条细细的玫瑰花带松松地缠在一段静止的衣袖或手腕上；画面停在「尚未醒来」的那一刻，空气几乎不动", "mood": "极静、极轻、屏息；是一个被拉长的瞬间，不是一个场景的叙述", "elements": "新叶与光斑、一条玫瑰花编成的细带、一截衣袖或手腕（不画人物全身）、地面的落花、柔和的侧逆光", "era": "18世纪中叶德意志，衣料朴素", "taboos": "不得画出可辨识的人脸；不得出现捆绑的暴力感（诗中的缚是游戏性的，带子是花编的）；不得出现文字水印；不得画成情色场景", "style": "18世纪田园画质感，淡绿与玫瑰粉，高调柔光，笔触极轻"},
-  "image_path": null,
+  "image_path": "/images/das-rosenband.png",
   "german_sources": [
     {"name": "Zeno.org — Klopstock: Das Rosenband（Oden, Band 1）", "url": "http://www.zeno.org/Literatur/M/Klopstock,+Friedrich+Gottlieb/Gedichte/Oden.+Erster+Band/Das+Rosenband", "tier": 1, "citation": "Friedrich Gottlieb Klopstock: Oden, Band 1, Leipzig 1798, S. 122–123", "note": "一级来源（作者生前的定本《颂歌集》，标注卷次与页码），本次直接抓取成功。本站正文以此为准。该卷中本诗排在《An Cidli》之后、《An sie》之前。"},
     {"name": "deutschelyrik.de — „Das Rosenband“（Klopstock）", "url": "https://www.deutschelyrik.de/das-rosenband.html", "tier": 2, "citation": "现代通行文本（附朗读）", "note": "二级来源（独立运营方，直接抓取）。读法与一级来源一致，四节三行。"},
@@ -123,7 +123,7 @@
     {"label": "★Meta Moller 一说回核不到，未写入断言", "done": true},
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1803 + 71 = 1874", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核 Meta Moller 一说与首刊载体", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议18世纪德语诗律专业人士复核）", "done": false}

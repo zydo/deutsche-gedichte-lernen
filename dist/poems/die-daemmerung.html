@@ -121,35 +121,61 @@
             <span class="tag">荒诞</span>
             <span class="tag">反义同词</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/die-daemmerung.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一座灰色城市的黄昏，光正在暗下去；前景是一组彼此无关的怪异剪影——一个胖男孩蹲在水边、一棵树被风扯歪、两个拄拐的人形、一匹小马、一扇贴着人影的窗；所有元素并置但不互相理睬
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>荒诞、错位、舞台感；不是恐怖，是万物各顾各的故障感</dd>
+                  <dt>画面元素</dt>
+                  <dd>
+                    渐暗的灰色天光、城市建筑的简笔轮廓、若干互不相干的怪异人形与动物剪影、一扇亮着灯的窗、远处的烟囱
+                  </dd>
+                  <dt>时代感</dt>
+                  <dd>1910年前后的德意志城市，简朴的公寓楼与街道</dd>
+                  <dt>推荐风格</dt>
+                  <dd>表现主义木刻／墨水速写质感，灰与土黄，线条简练夸张、构图碎片化</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得出现可辨识的人脸；不得出现血、尸体、战争场面；不得画成温馨的黄昏风景画（本诗的黄昏是错位的，不是美的）；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一座灰色城市的黄昏，光正在暗下去；前景是一组彼此无关的怪异剪影——一个胖男孩蹲在水边、一棵树被风扯歪、两个拄拐的人形、一匹小马、一扇贴着人影的窗；所有元素并置但不互相理睬
-              </dd>
-              <dt>情绪</dt>
-              <dd>荒诞、错位、舞台感；不是恐怖，是万物各顾各的故障感</dd>
-              <dt>画面元素</dt>
-              <dd>渐暗的灰色天光、城市建筑的简笔轮廓、若干互不相干的怪异人形与动物剪影、一扇亮着灯的窗、远处的烟囱</dd>
-              <dt>时代感</dt>
-              <dd>1910年前后的德意志城市，简朴的公寓楼与街道</dd>
-              <dt>推荐风格</dt>
-              <dd>表现主义木刻／墨水速写质感，灰与土黄，线条简练夸张、构图碎片化</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得出现可辨识的人脸；不得出现血、尸体、战争场面；不得画成温馨的黄昏风景画（本诗的黄昏是错位的，不是美的）；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">
@@ -814,7 +840,7 @@
             <li>与 die-beiden / traenen-des-vaterlandes 的并列主语接线</li>
             <li>跨页断言经结构化 cross_references 验证</li>
             <li>公版年份复算：1914 + 71 = 1985</li>
-            <li class="pending">生成 AI 配图</li>
+            <li>生成 AI 配图</li>
             <li class="pending">页面视觉检查</li>
             <li>补齐第三独立来源（Menschheitsdämmerung 选本，archive.org，S.11）</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）</li>

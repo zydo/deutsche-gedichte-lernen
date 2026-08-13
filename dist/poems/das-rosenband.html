@@ -120,35 +120,59 @@
             <span class="tag">瞬间</span>
             <span class="tag">省音</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/das-rosenband.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    春天的树荫下，光斑透过新叶落在地面；一条细细的玫瑰花带松松地缠在一段静止的衣袖或手腕上；画面停在「尚未醒来」的那一刻，空气几乎不动
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>极静、极轻、屏息；是一个被拉长的瞬间，不是一个场景的叙述</dd>
+                  <dt>画面元素</dt>
+                  <dd>新叶与光斑、一条玫瑰花编成的细带、一截衣袖或手腕（不画人物全身）、地面的落花、柔和的侧逆光</dd>
+                  <dt>时代感</dt>
+                  <dd>18世纪中叶德意志，衣料朴素</dd>
+                  <dt>推荐风格</dt>
+                  <dd>18世纪田园画质感，淡绿与玫瑰粉，高调柔光，笔触极轻</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    不得画出可辨识的人脸；不得出现捆绑的暴力感（诗中的缚是游戏性的，带子是花编的）；不得出现文字水印；不得画成情色场景
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                春天的树荫下，光斑透过新叶落在地面；一条细细的玫瑰花带松松地缠在一段静止的衣袖或手腕上；画面停在「尚未醒来」的那一刻，空气几乎不动
-              </dd>
-              <dt>情绪</dt>
-              <dd>极静、极轻、屏息；是一个被拉长的瞬间，不是一个场景的叙述</dd>
-              <dt>画面元素</dt>
-              <dd>新叶与光斑、一条玫瑰花编成的细带、一截衣袖或手腕（不画人物全身）、地面的落花、柔和的侧逆光</dd>
-              <dt>时代感</dt>
-              <dd>18世纪中叶德意志，衣料朴素</dd>
-              <dt>推荐风格</dt>
-              <dd>18世纪田园画质感，淡绿与玫瑰粉，高调柔光，笔触极轻</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                不得画出可辨识的人脸；不得出现捆绑的暴力感（诗中的缚是游戏性的，带子是花编的）；不得出现文字水印；不得画成情色场景
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">
@@ -755,7 +779,7 @@
             <li>★Meta Moller 一说回核不到，未写入断言</li>
             <li>跨页断言经结构化 cross_references 验证</li>
             <li>公版年份复算：1803 + 71 = 1874</li>
-            <li class="pending">生成 AI 配图</li>
+            <li>生成 AI 配图</li>
             <li class="pending">页面视觉检查</li>
             <li class="pending">回核 Meta Moller 一说与首刊载体</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议18世纪德语诗律专业人士复核）</li>

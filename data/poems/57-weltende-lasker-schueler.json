@@ -87,7 +87,7 @@
   "cultural_notes": "埃尔莎·拉斯克-许勒（1869—1945）是德语表现主义最重要的女性诗人。她活跃于柏林的《Der Sturm》圈子——该刊由她的第二任丈夫赫尔瓦特·瓦尔登创办，刊名据说也出自她的建议（此说待进一步核实）。本站另收有她的《一条古老的西藏地毯》（编号38）。1933年后她流亡瑞士，1939年起定居耶路撒冷，1945年1月在那里去世。\n\n⚠本页最需要注意的一件事：本站收有**两首**题为《Weltende》的诗——本诗（拉斯克-许勒）与编号33的范·霍迪斯《世界末日》。两者是不同作者的不同作品，不是异文，也不是重复收录。本站固定以《世界之终》指本诗、以《世界末日》指编号33，两页的页眉、注释与目录均按这一对称呼书写。\n\n德语诗中同名作品极多（《Herbst》《Abendlied》《An die Nacht》都有大量同名之作），本站已把「同名作品的处理规范」写入编辑流程文档，本页是该规范的第一个适用对象。\n\n本诗的语气与范·霍迪斯那首几乎相反。范·霍迪斯用一串滑稽的事故拼出末日，读者会笑；本诗则把末日写成一场内向的哀恸——世界上有一阵没有主体的哭声，生命像躺在棺材里，说话人对一个不具名的「你」两度发出邀约，而终点是死。它更接近哀歌（Klage）而非讽刺，宗教语汇（der liebe Gott、Sarg、Sehnsucht）贯穿始终，却没有任何教义内容。\n\n★关于本诗的成诗与首刊年份：常见说法称它收入1905年的诗集《Der siebente Tag》。本次核查所能确证的只有1917年《Gesammelte Gedichte》（Verlag der Weißen Bücher, Leipzig）S.100 这一版。因此本页**不就本诗与范·霍迪斯同名诗（1911年1月）的先后作任何断言**——两页都不作此断言，待回核到可靠的首刊出处后再补。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 标题固定译作《世界之终》，以与本站编号33 范·霍迪斯《世界末日》相区别，全站互指一律使用这一对称呼；(2) 正文照录1917年《Gesammelte Gedichte》S.100 的读法，包括省音形 wär 与自造复合词 grabeschwer，不作规范化改写；(3) grabeschwer 在逐行注释中标「诗人自造，不可套用」，Wortschatz 不收该词；(4) 1917年版在标题下另有题献「(H. W. Wilhelm von Kevlaar zur Erinnerung an viele Jahre)」，本站正文不含该行，已在 collection 与校对记录中著录；(5) 第5、8行的 wir wollen 译作「我们……吧」以体现劝诱式，不译成「我们想要」。",
   "image_prompt": {"imagery": "一片没有具体地点的暗色空间，一道铅灰色的巨大阴影自上方缓缓压下；下方隐约可见许多并排的、棺材形状的暗块，暗示「心里」也就是「棺中」；两个极小的人形轮廓靠在一起，几乎被阴影吞没", "mood": "内向的、宗教式的哀恸；沉重、静止、无事件发生——不是灾难现场，是灾难之后的寂静", "elements": "自上压下的铅灰阴影、下方排列的暗色棺形块面、两个相依的极小人形（不露脸）、无城市、无火焰", "era": "无明确时代，1900年前后的抽象空间", "taboos": "★不得画成范·霍迪斯《世界末日》那类具体的都市灾难场景（不得出现帽子、屋顶工、火车、桥）——两首诗必须在视觉上一眼可分；不得出现十字架等明确宗教符号；不得画出可辨识的人脸；不得出现文字水印", "style": "表现主义绘画质感，铅灰与深蓝为主，大块面、低对比、边缘柔化"},
-  "image_path": null,
+  "image_path": "/images/weltende-lasker-schueler.png",
   "german_sources": [
     {"name": "Wikisource — Else Lasker-Schüler: Weltende（Gesammelte Gedichte 1917）", "url": "https://de.wikisource.org/wiki/Weltende", "tier": 1, "citation": "Else Lasker-Schüler: Gesammelte Gedichte. Verlag der Weißen Bücher, Leipzig 1917, S. 100（校对状态「fertig」，附原书扫描页 Index S. 98）", "note": "一级来源（经校对的原书扫描转录，标注页码）。本站正文以此为准。该页同时著录了标题下的题献行「(H. W. Wilhelm von Kevlaar zur Erinnerung an viele Jahre)」。"},
     {"name": "deutschelyrik.de — „Weltende“（Lasker-Schüler）", "url": "https://www.deutschelyrik.de/weltende.html", "tier": 2, "citation": "现代通行文本（Aufnahme，附朗读）", "note": "二级来源（独立运营方，直接抓取）。读法与一级来源一致。"},
@@ -120,7 +120,7 @@
     {"label": "公版年份复算：1945 + 71 = 2016", "done": true},
     {"label": "image brief 禁忌含「不得画成编号33 的都市灾难场景」", "done": true},
     {"label": "目录页两首同名诗均可见（浏览器实测）", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核首刊出处与题献对象身份", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）", "done": false}

@@ -128,35 +128,59 @@
             <span class="tag">女性作者</span>
             <span class="tag">虚拟式</span>
           </div>
-          <div class="image-slot">
-            <div class="image-slot__label">
-              <span class="dot" aria-hidden="true"></span>Bildkonzept · 配图（ausstehend / 待生成）
+          <figure class="image-slot image-slot--filled">
+            <img
+              src="../images/weltende-lasker-schueler.png"
+              alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem"
+              loading="lazy"
+            />
+          </figure>
+          <p class="image-caption-line">
+            图片由 AI 生成　<button
+              class="brief-trigger"
+              type="button"
+              data-modal="brief-modal"
+              aria-haspopup="dialog"
+              aria-expanded="false"
+              aria-controls="brief-modal"
+            >
+              查看提示词
+            </button>
+          </p>
+          <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
+            <header class="modal__head">
+              <span class="modal__title" id="brief-modal-title">配图提示词 · Bildkonzept</span>
+              <button class="modal__close" type="button" aria-label="关闭弹窗">✕</button>
+            </header>
+            <div class="modal__body">
+              <div class="image-slot">
+                <dl>
+                  <dt>意象</dt>
+                  <dd>
+                    一片没有具体地点的暗色空间，一道铅灰色的巨大阴影自上方缓缓压下；下方隐约可见许多并排的、棺材形状的暗块，暗示「心里」也就是「棺中」；两个极小的人形轮廓靠在一起，几乎被阴影吞没
+                  </dd>
+                  <dt>情绪</dt>
+                  <dd>内向的、宗教式的哀恸；沉重、静止、无事件发生——不是灾难现场，是灾难之后的寂静</dd>
+                  <dt>画面元素</dt>
+                  <dd>自上压下的铅灰阴影、下方排列的暗色棺形块面、两个相依的极小人形（不露脸）、无城市、无火焰</dd>
+                  <dt>时代感</dt>
+                  <dd>无明确时代，1900年前后的抽象空间</dd>
+                  <dt>推荐风格</dt>
+                  <dd>表现主义绘画质感，铅灰与深蓝为主，大块面、低对比、边缘柔化</dd>
+                  <dt>比例</dt>
+                  <dd>4:3（横版）</dd>
+                  <dt>禁忌</dt>
+                  <dd>
+                    ★不得画成范·霍迪斯《世界末日》那类具体的都市灾难场景（不得出现帽子、屋顶工、火车、桥）——两首诗必须在视觉上一眼可分；不得出现十字架等明确宗教符号；不得画出可辨识的人脸；不得出现文字水印
+                  </dd>
+                </dl>
+                <p class="image-slot__caption">
+                  此为生成本配图所用的提示词（image brief）。生成时须遵循上方“禁忌”与“比例 4:3”约束；插图标注为“图片由
+                  AI 生成”。
+                </p>
+              </div>
             </div>
-            <dl>
-              <dt>意象</dt>
-              <dd>
-                一片没有具体地点的暗色空间，一道铅灰色的巨大阴影自上方缓缓压下；下方隐约可见许多并排的、棺材形状的暗块，暗示「心里」也就是「棺中」；两个极小的人形轮廓靠在一起，几乎被阴影吞没
-              </dd>
-              <dt>情绪</dt>
-              <dd>内向的、宗教式的哀恸；沉重、静止、无事件发生——不是灾难现场，是灾难之后的寂静</dd>
-              <dt>画面元素</dt>
-              <dd>自上压下的铅灰阴影、下方排列的暗色棺形块面、两个相依的极小人形（不露脸）、无城市、无火焰</dd>
-              <dt>时代感</dt>
-              <dd>无明确时代，1900年前后的抽象空间</dd>
-              <dt>推荐风格</dt>
-              <dd>表现主义绘画质感，铅灰与深蓝为主，大块面、低对比、边缘柔化</dd>
-              <dt>比例</dt>
-              <dd>4:3（横版）</dd>
-              <dt>禁忌</dt>
-              <dd>
-                ★不得画成范·霍迪斯《世界末日》那类具体的都市灾难场景（不得出现帽子、屋顶工、火车、桥）——两首诗必须在视觉上一眼可分；不得出现十字架等明确宗教符号；不得画出可辨识的人脸；不得出现文字水印
-              </dd>
-            </dl>
-            <p class="image-slot__caption">
-              当前部署环境未接入 AI 图像生成模型，此处保留 image brief 供后续以受信任工具（并遵循上方“禁忌”与“比例
-              4:3”约束）补图；上线后应在图下标注“图片由 AI 生成”。
-            </p>
-          </div>
+          </dialog>
         </header>
         <section class="section reveal section--parallel">
           <header class="section__head">
@@ -742,7 +766,7 @@
             <li>公版年份复算：1945 + 71 = 2016</li>
             <li>image brief 禁忌含「不得画成编号33 的都市灾难场景」</li>
             <li>目录页两首同名诗均可见（浏览器实测）</li>
-            <li class="pending">生成 AI 配图</li>
+            <li>生成 AI 配图</li>
             <li class="pending">页面视觉检查</li>
             <li class="pending">回核首刊出处与题献对象身份</li>
             <li class="pending">最终人工复核说明（AI 辅助完成，建议表现主义专业人士复核）</li>

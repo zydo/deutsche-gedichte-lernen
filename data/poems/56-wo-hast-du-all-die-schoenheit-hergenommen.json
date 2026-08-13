@@ -75,7 +75,7 @@
   "cultural_notes": "里卡尔达·胡赫（1864—1947）在德语文学史上身份特殊：她既是小说家与诗人，又是受过正规训练的历史学家——1891年在苏黎世取得历史学博士学位（当时德国大学尚不接收女性正式注册，瑞士是少数选择之一）。她写过《浪漫派的盛期》《浪漫派的扩散与衰落》，也写过关于三十年战争、关于斯泰因、关于华伦斯坦的大部头历史著作。\n\n1926年，她成为普鲁士艺术科学院文学部的第一位女性院士。1933年纳粹上台、科学院开始清洗作家名单时，她主动退出以示抗议——这是她生平中最常被引用的一件事，也是有据可查的一件事。她在战后的1947年去世。\n\n★本页原计划收录的是她1944年诗集《Herbstfeuer》（Insel, Leipzig）的同名标题诗，但核查后未能证实该诗集中存在一首题为《Herbstfeuer》的诗——「Herbstfeuer」是诗集名而非诗名；且该诗集至今没有可用的数字化本，无法配齐本站要求的来源。故改选本诗，理由与被放弃的候选已在校对记录中写明。\n\n本诗出自《Liebesgedichte》（1907），是她中期爱情诗的代表。它填补的是本站1900年前后女性作者的空白：在此之前，本站的女性作者只有德罗斯特-徽尔斯霍夫（19世纪中）与拉斯克-许勒（表现主义），世纪之交这一段是空的。\n\n★关于托马斯·曼称她为「德国第一夫人」一类的评价：这一说法流传极广，但本次未能回核到可靠出处，故不写入本页（同本站《思想是自由的》编号39 对索菲·朔尔一说的处理方式）。",
   "translation_notes": "中文译文为本站学习译文（AI 辅助），采用直译。说明：(1) 正文照录《Liebesgedichte》（Insel, Leipzig 1907）S.5 的读法，包括旧拼法 muß 与阳性的 ein Scherben，不作现代化改写；(2) 后五行的 weil-排比在译文中一律译作「因为你……，……就……」，以便与德文的从句—主句倒装结构逐行对齐；(3) Wortschatz 词条按现代规范立目（die Scherbe），诗中的阳性形 der Scherben 在词条注中说明；(4) 本诗在原版中排作不分节的八行，本站照此处理，未按语义切成 3+5。",
   "image_prompt": {"imagery": "一个被强光照亮的人形轮廓占据画面中心，周围的一切（房屋、树、器物）都因这道光而显得褪色、变旧、失去分量；不画五官，只画光与被夺走颜色的世界", "mood": "赞美之中含着掏空感——被爱者越完满，世界越贫瘠；不是甜美的爱情画面", "elements": "中心的高光人形（无五官）、四周褪色发灰的静物与建筑轮廓、光线从中心向外扩散、边缘出现细小的裂纹质感", "era": "1900年前后，室内或庭院，器物简洁", "taboos": "不得画出可辨识的人脸；不得出现文字水印；不得画成宗教圣像（诗中的「天堂」是比喻，不是神学命题）；不得出现秋景或落叶（本页不是秋天题材）", "style": "世纪之交象征主义绘画质感，米金与灰蓝，中心高光、边缘低饱和"},
-  "image_path": null,
+  "image_path": "/images/wo-hast-du-all-die-schoenheit-hergenommen.png",
   "german_sources": [
     {"name": "Project Gutenberg — Ricarda Huch: Liebesgedichte（eBook #31658）", "url": "https://www.gutenberg.org/ebooks/31658", "tier": 1, "citation": "Ricarda Huch: Liebesgedichte. Im Insel-Verlag zu Leipzig [1907], S. 5（校对转录本，Distributed Proofreaders 制作）", "note": "一级来源（经志愿者逐字校对的数字化本，转录说明称保留原书拼写与标点，仅改正明显印刷错误）。本站正文以此为准。"},
     {"name": "Internet Archive — Liebesgedichte（Insel-Verlag, Leipzig 1907）扫描本", "url": "https://archive.org/details/liebesgedichte00huchiala", "tier": 1, "citation": "Ricarda Huch: Liebesgedichte. Leipzig: Insel-Verlag 1907, S. 5（原书扫描，卷末「Die Anfänge der Gedichte」目录标本诗页码为 5）", "note": "一级来源（原书扫描，独立运营方 archive.org）。用于核实版本、出版社与页码：卷末首行索引确认本诗在 S. 5。"},
@@ -102,7 +102,7 @@
     {"label": "与《特里斯坦》（编号61）的「美」对照已接线", "done": true},
     {"label": "跨页断言经结构化 cross_references 验证", "done": true},
     {"label": "公版年份复算：1947 + 71 = 2018", "done": true},
-    {"label": "生成 AI 配图", "done": false},
+    {"label": "生成 AI 配图", "done": true},
     {"label": "页面视觉检查", "done": false},
     {"label": "回核成诗年份与科学院进退两事的一手出处", "done": false},
     {"label": "最终人工复核说明（AI 辅助完成，建议世纪之交德语文学专业人士复核）", "done": false}
