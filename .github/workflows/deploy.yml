@@ -24,8 +24,12 @@ jobs:
           node-version: 20
       - name: 来源与内容 lint（规则见 SOURCES.md / EDITORIAL_WORKFLOW.md）
         run: npm run check
+      - name: 回归测试（含 SEO 元信息与 sitemap）
+        run: npm test
       - name: 构建静态站点
         run: npm run build
+        env:
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

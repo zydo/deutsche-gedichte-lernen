@@ -8,6 +8,7 @@
 // ==========================================================================
 
 import { ARRAY_ITEM_SCHEMAS } from "./validate-content.js";
+import { renderSeoHead, indexStructuredData, poemStructuredData, aboutStructuredData } from "./seo.js";
 
 const FONT_LINK = `<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@ const FONT_LINK = `<link rel="preconnect" href="https://fonts.googleapis.com">
 
 function esc(str) {
   if (str === undefined || str === null) return "";
-  return String(str).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+  return String(str).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
 
 function hasTemplateValue(item, field) {
@@ -96,14 +97,14 @@ function renderParallel(deStanzas, zhStanzas, findNote, nhdStanzas = null) {
       const deAttr = noteN ? ` data-noteref="${noteN}"` : "";
       if (trilingual) {
         rows.push(`        <div class="pline pline--trilingual">
-          <div class="pline__de pline__mhd vline"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
-          <div class="pline__nhd">${esc(nhdLine)}</div>
-          <div class="pline__zh">${esc(zhLine)}</div>
+          <div class="pline__de pline__mhd vline" lang="gmh"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
+          <div class="pline__nhd" lang="de">${esc(nhdLine)}</div>
+          <div class="pline__zh" lang="zh-CN">${esc(zhLine)}</div>
         </div>`);
       } else {
         rows.push(`        <div class="pline">
-          <div class="pline__de vline"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
-          <div class="pline__zh">${esc(zhLine)}</div>
+          <div class="pline__de vline" lang="de"${deAttr}><span class="linetext">${esc(deLine)}${mark}</span></div>
+          <div class="pline__zh" lang="zh-CN">${esc(zhLine)}</div>
         </div>`);
       }
     }
@@ -341,7 +342,7 @@ const SITE_SCRIPT = `<script>
   })();
   </script>`;
 
-function renderLayout({ title, description = "", bodyHtml, active = "", root: rootOverride }) {
+function renderLayout({ title, description = "", bodyHtml, active = "", root: rootOverride, ...seo }) {
   const root = rootOverride !== undefined ? rootOverride : active === "poem" ? "../" : "";
   return `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -363,14 +364,16 @@ function renderLayout({ title, description = "", bodyHtml, active = "", root: ro
   </script>
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+${renderSeoHead({ title, description, ...seo })}
   <link rel="icon" type="image/svg+xml" href="${root}favicon.svg">
   ${FONT_LINK}
   <link rel="stylesheet" href="${root}style.css">
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="brand" href="${root}index.html">
+      <a class="brand" href="${root || "./"}">
         <span class="brand__de">Gedichte</span>
       </a>
       <div class="site-header__right">
@@ -463,7 +466,7 @@ function renderIndex(poems) {
         .map((p) => {
           const period = periodLabels(p.period);
           return `        <a class="toc-row" href="poems/${p.slug}.html">
-          <span class="toc-title">${esc(p.title_de)}<span class="toc-title-zh">${esc(p.title_zh)}</span></span>
+          <span class="toc-title" lang="de">${esc(p.title_de)}<span class="toc-title-zh" lang="zh-CN">${esc(p.title_zh)}</span></span>
           <span class="toc-leader" aria-hidden="true"></span>
           <span class="toc-meta">
             <span class="toc-period" lang="zh-CN">${esc(period.zh)}</span>
@@ -474,7 +477,7 @@ function renderIndex(poems) {
         .join("\n");
       return `      <section class="author-group">
         <header class="author-group__head">
-          <span class="author-group__name">${esc(g.author)}</span>
+          <h3 class="author-group__name" lang="de">${esc(g.author)}</h3>
           <span class="author-group__zh">${esc(g.author_zh || "")}</span>
           <span class="author-group__count">${g.items.length} ${g.items.length === 1 ? "Gedicht" : "Gedichte"}</span>
         </header>
@@ -485,11 +488,11 @@ ${rows}
 
   const body = `
     <header class="masthead reveal">
-      <h1 class="masthead__title">Deutsche<span class="masthead__amp"> · </span>Gedichte</h1>
+      <h1 class="masthead__title" lang="de">Deutsche<span class="masthead__amp"> · </span>Gedichte</h1>
       <p class="masthead__zh">德　语　诗　歌　学　习　画　册</p>
       <p class="masthead__lede">德文原诗 · 学习译文 · 逐行注释 · 词汇与变位 · 语法与文化背景</p>
       <figure class="epigraph">
-        <p class="epigraph__text">Über allen Gipfeln<br>Ist Ruh’,</p>
+        <p class="epigraph__text" lang="de">Über allen Gipfeln<br>Ist Ruh’,</p>
         <figcaption class="epigraph__attr">Goethe · Wandrers Nachtlied</figcaption>
       </figure>
     </header>
@@ -499,9 +502,17 @@ ${rows}
 ${groupHtml}
     </section>`;
 
+  const title = "德语诗歌学习画册：德文原文、中文译文与逐行注释 | Deutsche Gedichte";
+  const description = `免费学习 ${poems.length} 首经典德语诗歌，涵盖歌德、海涅、里尔克等诗人。提供德文原文与中文学习译文对照、逐行注释、词汇、动词变位、语法讲解和可核验出处，按 CEFR 难度选读。`;
+  const orderedPoems = groups.flatMap((g) =>
+    [...g.items].sort(
+      (a, b) => difficultyRank(a.difficulty) - difficultyRank(b.difficulty) || Number(a.id) - Number(b.id),
+    ),
+  );
   return renderLayout({
-    title: "德语诗歌学习画册 · Deutsche Gedichte",
-    description: "面向德语学习者与文学爱好者的诗歌学习网站：德文原诗、出处校对、学习译文、词汇语法注释。",
+    title,
+    description,
+    structuredData: indexStructuredData(orderedPoems, title, description),
     bodyHtml: body,
   });
 }
@@ -724,6 +735,8 @@ ${rows.map(([k, v]) => `          <tr><th scope="row">${k}</th><td>${v}</td></tr
     description: `${snap.url} 在 ${snapDate(snap)} 的本地存档，用于德文原文出处核验。`,
     bodyHtml: body,
     root: "../",
+    pagePath: `snapshots/${snap.id}.html`,
+    indexable: false,
   });
 }
 
@@ -751,7 +764,7 @@ function renderBriefDL(prompt, aspect) {
       </dl>`;
 }
 
-function renderImageSlot(prompt, imagePath, root = "") {
+function renderImageSlot(prompt, imagePath, root = "", title = "") {
   // 全站统一排版：配图比例默认 4:3（横版）；单首诗可在 image_prompt.aspect 覆盖
   const aspect = prompt?.aspect || "4:3";
   // image_path 按站点根（如 /images/x.png）书写，渲染时换算成相对当前页的路径，兼容 file:// 与子路径部署
@@ -762,7 +775,7 @@ function renderImageSlot(prompt, imagePath, root = "") {
   // 有配图：4:3 画框；图下方居中一行“图片由 AI 生成 查看提示词”（仅“查看提示词”可点）+ 自定义弹窗
   if (imgSrc) {
     return `    <figure class="image-slot image-slot--filled">
-      <img src="${esc(imgSrc)}" alt="受诗歌启发生成的插图 / AI-generated illustration inspired by the poem" loading="lazy">
+      <img src="${esc(imgSrc)}" alt="${esc(`《${title}》AI 插图：${prompt?.imagery || "受诗歌意象启发的画面"}`)}" loading="eager" fetchpriority="high" decoding="async">
     </figure>
     <p class="image-caption-line">图片由 AI 生成　<button class="brief-trigger" type="button" data-modal="brief-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="brief-modal">查看提示词</button></p>
     <dialog class="modal" id="brief-modal" aria-labelledby="brief-modal-title">
@@ -799,7 +812,7 @@ function renderSections(secs) {
         return `    <details class="${cls} section--fold">
       <summary class="section__head">
         <span class="section__zh">${esc(s.zh)}</span>
-        <span class="section__de">${esc(s.de)}</span>
+        <span class="section__de" lang="de">${esc(s.de)}</span>
         <span class="section__toggle" aria-hidden="true"><span class="section__toggle-text"></span><span class="section__caret"></span></span>
       </summary>
       ${s.html}
@@ -807,8 +820,8 @@ function renderSections(secs) {
       }
       return `    <section class="${cls}">
       <header class="section__head">
-        <span class="section__zh">${esc(s.zh)}</span>
-        <span class="section__de">${esc(s.de)}</span>
+        <h2 class="section__zh">${esc(s.zh)}</h2>
+        <span class="section__de" lang="de">${esc(s.de)}</span>
       </header>
       ${s.html}
     </section>`;
@@ -836,10 +849,11 @@ ${nextLink}
     </nav>`;
 
   const titleBlock = `
+    <nav class="breadcrumbs" aria-label="面包屑导航"><a href="../">诗歌目录</a><span aria-hidden="true">/</span><span aria-current="page">${esc(p.title_de)} · ${esc(p.title_zh)}</span></nav>
 ${poemNav}
     <header class="poem-titleblock reveal">
-      <h1 class="poem-titleblock__de${(p.title_de || "").length >= 24 ? " poem-titleblock__de--long" : ""}">${esc(p.title_de)}</h1>
-      <p class="poem-titleblock__author">${esc(p.author)}</p>
+      <h1 class="poem-titleblock__de${(p.title_de || "").length >= 24 ? " poem-titleblock__de--long" : ""}" lang="de">${esc(p.title_de)}</h1>
+      <p class="poem-titleblock__author" lang="de">${esc(p.author)}</p>
       <p class="poem-titleblock__zh">${esc(p.title_zh)}</p>
       <p class="poem-titleblock__author-zh">${esc(p.author_zh)}</p>
       <div class="poem-titleblock__biblio">
@@ -852,7 +866,7 @@ ${poemNav}
         ${annotationDensityTag(p)}
         ${(p.tags || []).map((t) => tag(t)).join("\n        ")}
       </div>
-      ${renderImageSlot(p.image_prompt, p.image_path, "../")}
+      ${renderImageSlot(p.image_prompt, p.image_path, "../", `${p.title_zh} · ${p.title_de}`)}
     </header>`;
 
   const trilingual = Array.isArray(p.text_nhd);
@@ -921,9 +935,14 @@ ${titleBlock}
 ${renderSections(secs)}
     </div>`;
 
+  const title = `${p.title_de}（${p.title_zh}）— ${p.author} | 德语诗歌学习画册`;
+  const description = `阅读${p.author_zh || p.author}的《${p.title_zh}》（${p.title_de}），德文原文与中文学习译文逐行对照，附词汇、动词变位、语法讲解、文学背景与出处校对。适合 ${p.difficulty} 德语学习者。`;
   return renderLayout({
-    title: `${p.title_de} · ${p.title_zh} — ${p.author} | 德语诗歌学习画册`,
-    description: `${p.title_de}（${p.title_zh}）— ${p.author}。德文原诗、学习译文、词汇语法注释与出处校对。`,
+    title,
+    description,
+    pagePath: `poems/${p.slug}.html`,
+    imagePath: p.image_path,
+    structuredData: poemStructuredData(p, title, description),
     bodyHtml: body,
     active: "poem",
   });
@@ -953,6 +972,7 @@ function renderAbout(poems) {
   const illustrated = poemList.filter((p) => p.image_path).length;
 
   const titleBlock = `
+    <nav class="breadcrumbs" aria-label="面包屑导航"><a href="./">诗歌目录</a><span aria-hidden="true">/</span><span aria-current="page">关于本站 · 校对说明</span></nav>
     <header class="poem-titleblock reveal">
       <p class="poem-titleblock__eyebrow">Vorwort · 编者前言</p>
       <h1 class="poem-titleblock__de" style="font-size: clamp(2rem,5vw,3rem);">关于本站 · 校对说明</h1>
@@ -1016,9 +1036,14 @@ ${titleBlock}
 ${renderSections(secs)}
     </div>`;
 
+  const title = "关于本站 / 校对说明 | 德语诗歌学习画册";
+  const description =
+    "了解德语诗歌学习画册的资料来源、原文校对原则、AI 辅助中文学习译文、插图说明与编辑规范。所有诗歌均保留出处和校对记录，供学习者核验。";
   return renderLayout({
-    title: "关于本站 / 校对说明 | 德语诗歌学习画册",
-    description: "关于本站的语料结构、资料来源、校对原则、译文版权策略与配图说明。",
+    title,
+    description,
+    pagePath: "about.html",
+    structuredData: aboutStructuredData(title, description),
     bodyHtml: body,
   });
 }

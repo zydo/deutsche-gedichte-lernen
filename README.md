@@ -38,6 +38,7 @@
   - [如何安装依赖](#如何安装依赖)
   - [如何本地运行](#如何本地运行)
   - [如何构建静态网站](#如何构建静态网站)
+  - [SEO 与搜索收录](#seo-与搜索收录)
   - [如何添加一首新诗](#如何添加一首新诗)
   - [如何添加或替换配图](#如何添加或替换配图)
   - [如何记录来源](#如何记录来源)
@@ -85,7 +86,7 @@
 ├── snapshots/                   # 德文原文出处的网页存档（npm run snapshot 生成）
 │   ├── raw/                     # 抓取到的原始 HTML 正本
 │   └── manifest.json            # 清单：URL → 抓取时间 / HTTP 状态 / SHA-256
-├── dist/                        # 构建产物（HTML + CSS），可直接部署到任意静态托管
+├── dist/                        # 构建产物（HTML + CSS + sitemap），Git 忽略，部署时生成
 ├── SOURCES.md                   # ★ 来源独立性规范（强制性，新增诗歌前必读）
 ├── package.json
 └── README.md（本文件）
@@ -163,6 +164,23 @@ node src/build.js
 构建产物 `dist/` 是完全独立的静态文件集合，可以直接拖拽到 Netlify / Vercel / GitHub Pages / 任意静态文件服务器上部署，无需服务端运行环境。
 
 `build.js` 不会清空整个 `dist/`，只同步由构建脚本全权管理的三个子目录；因此重命名 slug、删除诗歌或撤下图片后不会遗留旧页面或旧资源，也不会误删 `dist/` 根目录的其他文件。
+
+## SEO 与搜索收录
+
+`src/seo.js` 的 `SITE_URL` 是公开地址的统一来源，当前为 `https://zydo.github.io/deutsche-gedichte-lernen/`。迁移域名或项目路径时先更新它，再重新构建。
+
+- 首页、关于页和已发布诗歌页生成 canonical、搜索描述、Open Graph / Twitter 分享信息及 JSON-LD。首页目录、学习资料、原诗作者与面包屑均从实际页面数据生成；匿名民歌不虚构作者，不把学习注释归给原诗作者。
+- `dist/sitemap.xml` 自动列出首页、关于页与全部已发布诗歌的规范 URL。`index.html` 别名、pending 条目和出处快照不收录；没有可靠修改日期时不输出 `lastmod`。
+- 出处快照保留访问与核验功能，使用 `noindex, follow` 避免外站存档进入本站搜索结果。不得用 robots.txt 禁止抓取这些页面，否则爬虫无法读取 `noindex`。
+- 详情页为原文和译文注明语言，提供面包屑、章节标题和诗歌专属插图描述。页面在禁用 JavaScript 时也可阅读。
+
+首次配置 [Google Search Console](https://search.google.com/search-console) 时，添加 URL 前缀属性 `https://zydo.github.io/deutsche-gedichte-lernen/`，选择 HTML 标签验证。将 Google 给出的 `google-site-verification` 的 `content` 值保存为 GitHub 仓库 Actions 变量 `GOOGLE_SITE_VERIFICATION`（Settings → Secrets and variables → Actions → Variables），再重跑部署工作流；构建会把验证标签写入首页。没有该变量时不输出验证标签，本地构建也可通过同名环境变量传入。
+
+完成所有权验证后，在 Search Console 提交 `https://zydo.github.io/deutsche-gedichte-lernen/sitemap.xml`，通过网页检查与站点地图报告查看抓取、索引和搜索表现。
+
+GitHub Pages 项目站点不能在此仓库设置生效的 robots.txt：爬虫只读取源站根目录的 `https://zydo.github.io/robots.txt`，不会读取项目子路径中的文件。如维护源站根站点，可在其 robots.txt 中添加 `Sitemap: https://zydo.github.io/deutsche-gedichte-lernen/sitemap.xml`；否则直接在 Search Console 提交。HTML 的 `rel="sitemap"` 链接不能代替 Google 的站点地图提交。
+
+规则依据：[Google sitemap 指南](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)、[noindex 指南](https://developers.google.com/search/docs/crawling-indexing/block-indexing)与 [canonical 指南](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)。SEO 回归测试随 `npm test` 在部署工作流中运行；`dist/` 由 CI 构建，不提交生成文件。
 
 ---
 

@@ -17,6 +17,7 @@ const MIME = {
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".json": "application/json; charset=utf-8",
+  ".xml": "application/xml; charset=utf-8",
 };
 
 const server = http.createServer(async (req, res) => {

@@ -14,6 +14,7 @@ import {
 } from "./templates.js";
 import { loadPoemRecords } from "./poem-data.js";
 import { formatContentErrors, validateContent } from "./validate-content.js";
+import { renderSitemap } from "./seo.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -137,6 +138,7 @@ function build() {
 
   // about
   writeFileSync(path.join(DIST_DIR, "about.html"), renderAbout(poems), "utf-8");
+  writeFileSync(path.join(DIST_DIR, "sitemap.xml"), renderSitemap(poems), "utf-8");
 
   const snapshots = loadSnapshots();
   const snapshotMap = snapshots || {};
